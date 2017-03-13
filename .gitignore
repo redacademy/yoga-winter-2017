@@ -22,19 +22,19 @@ access_log
 # ================================================================================ #
 /*
 !.gitignore
-!plugins/yoga_outreach_functionality
-!themes/yoga_outreach
+!plugins/
+!themes/
 !README.md
 
 # Ignore everything in "plugins" except certain plugins. #
 # ========================================================== #
 plugins/*
-!plugins/yoga_outreach_functionality/
+!plugins/yoga_outreach_functionality
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
 themes/*
-!themes/yoga_outreach/
+!themes/yoga_outreach
 
 # Ignore npm packages #
 # =================== #
