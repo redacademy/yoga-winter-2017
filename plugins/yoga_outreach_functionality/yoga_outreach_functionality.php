@@ -7,7 +7,7 @@
  * @copyright 2015 Your Name or Company
  *
  * @wordpress-plugin
- * Plugin Name: yoga_outreach_unctionality
+ * Plugin Name: yoga_outreach_functionality
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
  * Author:      InHye Choi
