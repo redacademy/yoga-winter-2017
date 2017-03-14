@@ -1,0 +1,51 @@
+//General template
+
+.general-template-section{
+	height:400px;
+	background-color:lightgreen;
+	width:100%;
+	position:relative;
+
+}
+
+.entry-title{
+	text-align:center;
+    color:white;
+    padding-top:49px;
+}
+
+.entry-content{
+	p{
+		text-align:center;
+        color:white;
+	}
+}
+
+.general-button-container{
+	position: absolute;
+    bottom: 0;
+	width:100%;
+}
+
+.general-first-button, .general-second-button{
+	width:230px;
+	height:44px;
+	display:block;
+	margin:0 auto;
+	font-size:14px;
+	text-transform:uppercase;
+	margin-bottom:26px;
+    box-shadow:none;
+    text-shadow:none;
+    color:white;
+    
+}
+
+.general-first-button{
+    background-color:#94BFD1
+}
+
+.general-second-button{
+    background-color:#6CFFFE;
+    }
+

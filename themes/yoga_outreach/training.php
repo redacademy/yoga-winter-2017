@@ -1,4 +1,4 @@
-<?php /* Template Name: General Template ?>
+<?php /* Template Name: Training Template?>
 
 <?php
 /**
