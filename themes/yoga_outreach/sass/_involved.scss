@@ -185,3 +185,40 @@
         }
     }
 }
+
+
+
+
+/* Volunteer */
+
+ol { 
+    counter-reset: item;
+    list-style-type: none;
+    display: flex; 
+    flex-direction: column;
+    margin: 0;
+    padding: 5%;
+    div{
+        width: 50%;
+        &:nth-child(odd){
+            align-self: flex-start;
+            }
+        &:nth-child(even){
+            align-self: flex-end;
+        }
+    }
+    li { 
+        &:before { 
+            content: counter(item) "  "; 
+            counter-increment: item;
+            font-size: 4rem;
+            background-color: white;
+            border-radius: 100%;
+            padding: 10% 22%;
+        }
+        p{
+            padding-top:10%;
+            margin: 0;
+        }
+    }
+}

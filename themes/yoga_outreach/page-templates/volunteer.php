@@ -35,7 +35,17 @@ get_header(); ?>
             </section>
             <section class="volunteer-yoga">
                 <h2 class="h2-holder">Volunteer as a Yoga Instructor</h2>
-                <p></p>
+                <ol>
+                <?php
+                    $fields = CFS()->get( 'volunteer_steps' ); // returns an array of posts
+                        foreach ( $fields as $field ):?>
+                            <div class="volunteer-steps">
+                                <li>
+                                <p class="volunteer-step"><?php echo $field['volunteer_step']; ?></p>
+                                </li>
+                            </div>
+                <?php endforeach; ?>
+                </ol>
                 <div class="button-case-holder"><button class="button-holder">Apply Now</button></div>
             </section>
             <section class="volunteer-community">
