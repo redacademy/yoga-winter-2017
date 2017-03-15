@@ -656,3 +656,165 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.button-holder {
+  background-color: blue;
+  color: white; }
+
+.page-template-volunteer .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  text-align: center; }
+  .page-template-volunteer .site-main .entry-header .button-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 10px; }
+  .page-template-volunteer .site-main header, .page-template-volunteer .site-main section {
+    width: 100%; }
+  .page-template-volunteer .site-main .volunteer-ops {
+    background-color: lightsalmon; }
+    .page-template-volunteer .site-main .volunteer-ops .list-container {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+    .page-template-volunteer .site-main .volunteer-ops .decorative-line-case {
+      width: 10%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      .page-template-volunteer .site-main .volunteer-ops .decorative-line-case .decorative-line {
+        width: 25%;
+        height: 90%;
+        border-radius: 30px;
+        background-color: red; }
+    .page-template-volunteer .site-main .volunteer-ops ul {
+      width: 90%;
+      margin: 0; }
+  .page-template-volunteer .site-main .volunteer-yoga {
+    background-color: lightgreen; }
+    .page-template-volunteer .site-main .volunteer-yoga .button-case-holder {
+      background-color: lightblue;
+      margin-bottom: 5%; }
+  .page-template-volunteer .site-main .volunteer-community {
+    background-color: lightpink; }
+  .page-template-volunteer .site-main .volunteer-advisor {
+    background-color: lightyellow; }
+  .page-template-volunteer .site-main .volunteer-opportun {
+    background-color: lightgreen; }
+
+.page-template-support .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  text-align: center; }
+  .page-template-support .site-main .entry-header .button-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 10px; }
+  .page-template-support .site-main header, .page-template-support .site-main section {
+    width: 100%; }
+  .page-template-support .site-main .volunteer-ops {
+    background-color: lightsalmon; }
+    .page-template-support .site-main .volunteer-ops .list-container {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+    .page-template-support .site-main .volunteer-ops .decorative-line-case {
+      width: 10%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      .page-template-support .site-main .volunteer-ops .decorative-line-case .decorative-line {
+        width: 25%;
+        height: 90%;
+        border-radius: 30px;
+        background-color: red; }
+    .page-template-support .site-main .volunteer-ops ul {
+      width: 90%;
+      margin: 0; }
+  .page-template-support .site-main .volunteer-yoga {
+    background-color: lightgreen; }
+    .page-template-support .site-main .volunteer-yoga .button-case-holder {
+      background-color: lightblue;
+      margin-bottom: 5%; }
+  .page-template-support .site-main .volunteer-community {
+    background-color: lightpink; }
+  .page-template-support .site-main .volunteer-advisor {
+    background-color: lightyellow; }
+  .page-template-support .site-main .volunteer-opportun {
+    background-color: lightgreen; }
+
+.page-template-partner .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  text-align: center; }
+  .page-template-partner .site-main .entry-header .button-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 10px; }
+  .page-template-partner .site-main header, .page-template-partner .site-main section {
+    width: 100%; }
+  .page-template-partner .site-main .volunteer-ops {
+    background-color: lightsalmon; }
+    .page-template-partner .site-main .volunteer-ops .list-container {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+    .page-template-partner .site-main .volunteer-ops .decorative-line-case {
+      width: 10%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      .page-template-partner .site-main .volunteer-ops .decorative-line-case .decorative-line {
+        width: 25%;
+        height: 90%;
+        border-radius: 30px;
+        background-color: red; }
+    .page-template-partner .site-main .volunteer-ops ul {
+      width: 90%;
+      margin: 0; }
+  .page-template-partner .site-main .volunteer-yoga {
+    background-color: lightgreen; }
+    .page-template-partner .site-main .volunteer-yoga .button-case-holder {
+      background-color: lightblue;
+      margin-bottom: 5%; }
+  .page-template-partner .site-main .volunteer-community {
+    background-color: lightpink; }
+  .page-template-partner .site-main .volunteer-advisor {
+    background-color: lightyellow; }
+  .page-template-partner .site-main .volunteer-opportun {
+    background-color: lightgreen; }
