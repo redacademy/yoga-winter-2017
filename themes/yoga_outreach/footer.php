@@ -10,10 +10,12 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<form class="e-news-signup">
-				<label for="e-news">Sign Up for E-News</label>
-				<input type="email" id="e-news">
-				<input type="submit" value="join" onclick="sendMail()">
-			</form>
+                <label for="e-news">Sign Up for E-News</label>
+                <label class="input-bar">
+                    <input type="email" id="e-news">
+                    <input type="submit" id="submit-button" value="join" onclick="sendMail()">
+                </label>
+            </form>
 			<div class="site-info">
 				<div class="siteinfo-text">
 				<p>contact</p>

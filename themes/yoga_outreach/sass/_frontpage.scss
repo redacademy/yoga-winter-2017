@@ -6,10 +6,12 @@
     h2{
         text-transform: capitalize;
         font-weight: normal;
+        font-size: 24px;
     }
     h1{
         font-weight: lighter;
         text-transform: uppercase;
+        font-size: 26px;
     }
     h4{
         text-transform: uppercase;
@@ -18,30 +20,31 @@
     #site-navigation{
         display: flex;
         justify-content: flex-end;
+        height: 80px;
         .logo-image{
             width: 90px;
-            padding: 0 10px;
+            padding: 0 10%;
         }   
     }
     .hero-banner{
         position: relative;
         color: white;
         .hero-image{
-            height: 450px;
+            height: 400px;
             width: 100%;
             object-fit: cover;
         }
         .herobanner-text{
             position: absolute;
-            top: 100px;
+            bottom: 7%;
             h2{
-                padding: 30px;
                 text-transform: capitalize;
-                font-size: 28px;
+                font-size: 24px;
             }
             p{
-                font-size: 20px;
-                padding: 20px;
+                font-size: 16px;
+                line-height: 2;
+                padding: 10%;
             }
         }
         .aboutus-button{
@@ -50,34 +53,35 @@
             background-color: #94BFD1;
             box-shadow:none;
             border:none;
-            margin-top: 60px;
+            margin-top: 15%;
             a {
                 color: white;
                 text-shadow: none;
                 text-decoration: none;
                 text-transform: uppercase;
-                font-size: 16px;
+                font-size: 14px;
             }
         }  
     }
     .trauma-approach{
-        padding: 20px;
+        padding: 7%;
         position: relative;
+        font-size: 14px;
         .accent-square{
             position: absolute;
             width: 230px;
             height: 30px;
             background-color:#96C2D4;
             opacity: 0.4;
-            bottom: 25px;
+            bottom: 10%;
             z-index: -1;
         }
     }
-    .training-program{
-        padding: 20px;
+    .training-programs{
+        padding: 5% 10%;
+        font-size: 14px;
     }
     .program-list{
-        padding: 20px 0;
         .core-training{
             position: relative;
             .background-accent{
@@ -121,6 +125,22 @@
             }
         }
     }
+    .get-involved{
+        position: relative;
+        img{
+            width: 90px;
+            height: 110px;
+        }
+        .accent-square{
+            position: absolute;
+            width: 100%;
+            height: 23px;
+            background-color:#E2D9C6;
+            opacity: 0.7;
+            bottom: 10%;
+            z-index: -1;
+        }
+    }
     .thankyou{
         height: 250px;
         background-color: #B7C8DA;
@@ -138,15 +158,51 @@
         flex-wrap: wrap;
         justify-content: center;
         text-transform: uppercase;
-        form{
-            display: flex;
-            flex-wrap: wrap;
+        form {
+            height: 81px;
             background-color: #9FABB7;
-            padding: 30px;
-            width: 100%;
-            label{
-                width: 100%;
-                color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            label {
+                font-size: .7rem;
+                font-family: Raleway;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            .input-bar{
+                font-size:0;
+                display: inline-flex;
+
+                #e-news {
+                    width: 229px;
+                    height: 40px;
+
+                    border: none;
+                    border-radius: 0;
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                }
+                #submit-button {
+                    height: 40px;
+                    width: 66px;
+                    padding: 0;
+
+                    font-weight: lighter;
+                    text-shadow: none;
+                    text-transform: uppercase;
+                    color: #4A4A4A;
+
+                    background-color: #C1D3DA;
+                    border: none;
+                    box-shadow: none;
+                    border-radius: 0;
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
             }
         }
         .siteinfo-text{
