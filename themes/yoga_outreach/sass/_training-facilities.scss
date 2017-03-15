@@ -1,6 +1,6 @@
 //General template
 
-//Global Clearfix
+//Global
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -8,13 +8,6 @@
   content: " ";
   clear: both;
   height: 0;
-}
-
-.general-template-section{
-	height:400px;
-	background-color:lightgreen;
-	width:100%;
-	position:relative;
 }
 
 .entry-title{
@@ -29,6 +22,17 @@
         color:white;
 	}
 }
+
+// ---------------------
+
+.general-template-section{
+	height:400px;
+	background-color:lightgreen;
+	width:100%;
+	position:relative;
+}
+
+
 
 .general-button-container{
 	position: absolute;
@@ -51,17 +55,11 @@
     
 }
 
-.general-first-button{
-    background-color:#94BFD1
-}
 
 .training-yoga-tools-section{
 	padding:0 4%;
 }
 
-.general-second-button{
-    background-color:#6CFFFE;
-}
 
 .training-h3-heading{
 	width:293px;

@@ -17,14 +17,14 @@ get_header(); ?>
 
 				<?php endwhile; // End of the loop. ?>
 				<div class ="general-button-container">
-					<button class = "general-first-button core">Core Training</button>
-					<button class = "general-second-button core">For Facilities</button>
-				</div>
+					<button class = "general-first-button teal-button">Core Training</button>
+					<button class = "general-second-button grey-button">For Facilities</button>
+				</div><!--general-button-container-->
 			</section><!--general-template-section-->
             <section class ="section-15px-padding">
 				<div class ="core-h3-container">
                 	<p class="core-header">Yoga Outreach Core Training</p>
-				</div>
+				</div><!--core-h3-container-->
 				<button class ="book-training-button">Register Online</button>
 				<p class ="small-para">- Yoga Alliance 24 Continuing Education Non-Contact hrs</p>
 				<p class ="small-para">- BCRPA Continuing Education Credits</p>
@@ -34,8 +34,9 @@ get_header(); ?>
 					violence, post-traumatic stress disorder, addictions, mental health challenges, 
 					and incarceration.
 				</p>
-			</section>
+			</section><!--section-15px-padding-->
 			<div class ="testimonal-slideshow-container">
+			<!--empty div-->
 			</div>
 			<section class ="section-15px-padding">
 			<!--Add Calender-->

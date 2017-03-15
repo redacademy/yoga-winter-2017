@@ -549,12 +549,6 @@ a {
   clear: both;
   height: 0; }
 
-.general-template-section {
-  height: 400px;
-  background-color: lightgreen;
-  width: 100%;
-  position: relative; }
-
 .entry-title {
   text-align: center;
   color: white;
@@ -563,6 +557,12 @@ a {
 .entry-content p {
   text-align: center;
   color: white; }
+
+.general-template-section {
+  height: 400px;
+  background-color: lightgreen;
+  width: 100%;
+  position: relative; }
 
 .general-button-container {
   position: absolute;
@@ -582,14 +582,8 @@ a {
   color: white;
   border-radius: 8px; }
 
-.general-first-button {
-  background-color: #94BFD1; }
-
 .training-yoga-tools-section {
   padding: 0 4%; }
-
-.general-second-button {
-  background-color: #6CFFFE; }
 
 .training-h3-heading {
   width: 293px;
@@ -656,10 +650,10 @@ a {
   background-color: #fff;
   color: #4A4A4A; }
 
-.general-first-button.core {
+.general-first-button.teal-button {
   background-color: #6CFFFE; }
 
-.general-second-button.core {
+.general-second-button.grey-button {
   background-color: #94BFD1; }
 
 .section-15px-padding {
@@ -677,6 +671,20 @@ a {
   font-size: 20px;
   line-height: 24px;
   margin-top: 39px; }
+
+.general-first-button.teal-button {
+  background-color: #6CFFFE; }
+
+.research-h3-container h3, .research-h3-container p {
+  width: 290px;
+  margin: 0 auto;
+  text-align: center; }
+
+.research-h3-container h3 {
+  margin-top: 35px; }
+
+.list-text-container p {
+  display: inline; }
 
 /*--------------------------------------------------------------
 # Widgets
