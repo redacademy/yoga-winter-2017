@@ -41,6 +41,7 @@ get_header(); ?>
         <h4>For facility staff</h4>
         <p>Skills for self-care and stress reduction</p>
         <div class="background-accent"></div>
+        <div class="accent-line"></div>
     </div>
 </section>
 <section class="get-involved">

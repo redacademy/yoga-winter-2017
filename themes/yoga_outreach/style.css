@@ -104,13 +104,47 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       height: 30px;
       background-color: #96C2D4;
       opacity: 0.4;
-      bottom: 25px; }
+      bottom: 25px;
+      z-index: -1; }
   .home .training-program {
     padding: 20px; }
   .home .program-list {
-    padding: 20px; }
+    padding: 20px 0; }
     .home .program-list .core-training {
       position: relative; }
+      .home .program-list .core-training .background-accent {
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        background-color: #F3F0E9;
+        z-index: -1;
+        bottom: 20px; }
+    .home .program-list .yoga-atwork {
+      position: relative; }
+      .home .program-list .yoga-atwork .background-accent {
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        background-color: #F3F0E9;
+        z-index: -1;
+        bottom: 0px; }
+    .home .program-list .yoga-foryouth {
+      position: relative; }
+      .home .program-list .yoga-foryouth .background-accent {
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        background-color: #F3F0E9;
+        z-index: -1;
+        bottom: 0px; }
+      .home .program-list .yoga-foryouth .accent-line {
+        position: absolute;
+        width: 6px;
+        height: 380px;
+        background-color: #AEC5DE;
+        bottom: 30px;
+        right: 80px;
+        z-index: -1; }
   .home .thankyou {
     height: 250px;
     background-color: #B7C8DA;
