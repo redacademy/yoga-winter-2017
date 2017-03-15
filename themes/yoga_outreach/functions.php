@@ -103,3 +103,10 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
+/**
+* Including jquery in javascript
+*/
+function my_theme_scripts() {
+    wp_enqueue_script( 'main', get_template_directory_uri() . '/build/js/main.min.js', array( 'jquery' ), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
