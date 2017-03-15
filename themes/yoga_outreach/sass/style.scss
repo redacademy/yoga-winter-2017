@@ -52,20 +52,25 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 // CSS included in style.css.
 
-@import "frontpage";
+
 @import "normalize";
 @import "fonts";
 @import "typography";
 @import "elements";
 @import "aboutus";
+@import "contact-us";
 @import "forms";
 @import "navigation";
 @import "modules";
 @import "training-facilities";
 @import "core-training";
+@import "resources";
 @import "widgets";
 @import "content";
 @import "media";
 @import "page-templates";
 @import "involved";
+@import "frontpage";
+@import "training-facilities";
+@import "core-training";
 

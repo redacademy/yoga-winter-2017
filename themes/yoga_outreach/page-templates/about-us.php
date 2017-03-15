@@ -1,4 +1,4 @@
-<?php /* Template Name: about-us*/ ?>
+<?php /* Template Name: About Us*/ ?>
 
 <?php
 /**
@@ -10,19 +10,18 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <h1>who we are</h1> 
-            <div class="hero-text">
-                <h2>who are we</h2>
+            <header class="entry-header custom-hero-image hero-text">
+                <h1 class="header-title"><?php the_title(); ?></h1>
                 <p>Yoga Outreach is possible thanks to the dedicated, hard-working team  running the programs.</p>
-            </div>
+            </header>
             <section class="team">
                 <h2>The YO Team</h2>
                 <p>Click on name for bio and contact info.</p>
 
                 <div class="staff">
                     <span>Staff <button>-</button></span>
-                    <div class="circle"></div>
-                    <p>Place holder name</p>
+                    <div class="circle"><?php echo CFS()->get( 'staff_photo' );?></div>
+                    <p>Place holder name<?php echo CFS()->get( 'staff_name' );?></p>
                     <div class="accent-name-shape"></div>
                 </div>
 
@@ -43,13 +42,13 @@ get_header(); ?>
 
             <form class="e-news-signup">
                 <label for="e-news">Sign Up for E-News</label>
-                <span class="input-bar">
+                <label class="input-bar">
                     <input type="email" id="e-news">
                     <input type="submit" id="submit-button" value="join" onclick="sendMail()">
-                </span>
+                </label>
             </form>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php /*get_footer(); ?>*/
