@@ -1,11 +1,20 @@
 //General template
 
+//Global Clearfix
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
 .general-template-section{
 	height:400px;
 	background-color:lightgreen;
 	width:100%;
 	position:relative;
-
 }
 
 .entry-title{
@@ -27,7 +36,7 @@
 	width:100%;
 }
 
-.general-first-button, .general-second-button{
+.general-first-button, .general-second-button, .book-training-button{
 	width:230px;
 	height:44px;
 	display:block;
@@ -38,6 +47,7 @@
     box-shadow:none;
     text-shadow:none;
     color:white;
+	border-radius:8px;
     
 }
 
@@ -45,7 +55,89 @@
     background-color:#94BFD1
 }
 
+.training-yoga-tools-section{
+	padding:0 4%;
+}
+
 .general-second-button{
     background-color:#6CFFFE;
-    }
+}
+
+.training-h3-heading{
+	width:293px;
+	height:50px;
+	margin:0 auto;
+	border-bottom: 2px solid #4A4A4A;
+	padding-bottom:16px;	
+}
+.train-plus-button, .train-minus-button{
+	background:transparent;
+	border:none;
+	box-shadow:none;
+	color:#6B747D;
+	font-weight:600;
+	float:right;
+}
+.small-para{
+	font-weight:300;
+	font-size: 11px;
+	margin-bottom:5px;
+}
+.under-skills-training-para{
+	color:#6B747D;
+	font-size: 14px;
+	min-width:290px;
+}
+.book-training-button{
+	background-color:#6B747D;
+	margin-top:18px;
+}
+
+.testimonal-slideshow-container{
+	min-width:320px;
+	height:100px;
+	background-color:#EBE5D8;
+
+}
+
+
+//Training Facilities List
+.training-list{
+	height:264px;
+	width:100%;
+	background-color: #95AFC9;
+	margin:0;
+	list-style:none;
+	padding:0 15px;
+}
+
+.training-list-item{
+	margin-bottom:30px;
+	font-weight:500;
+	font-size:14px;
+}
+
+.slide-para{
+	display:none;
+	background:#eee;
+	padding:10px;
+}
+
+.bottom-book-training-button-container{
+	height:85px;
+	width:100%;
+	background-color:#6B747D;
+	margin-top:29px;
+	display:flex;
+}
+
+.left-right-padddin
+
+.fill-white{
+	background-color:#fff;
+	color:#4A4A4A;
+}
+
+
+
 

@@ -1,4 +1,4 @@
-<?php /* Template Name: Training Template?>
+<?php /* Template Name: Core ?>
 
 <?php
 /**
@@ -17,11 +17,19 @@ get_header(); ?>
 
 				<?php endwhile; // End of the loop. ?>
 				<div class ="general-button-container">
-					<button class = "general-first-button">Core Training</button>
-					<button class = "general-second-button">For Facilities</button>
+					<button class = "general-first-button core">Core Training</button>
+					<button class = "general-second-button core">For Facilities</button>
 				</div>
 			</section><!--general-template-section-->
-			
+            <section class ="section-15px-padding">
+				<div class ="core-h3-container">
+                	<p class="core-header">Yoga Outreach Core Training</p>
+				</div>
+				<button class ="book-training-button">Register Online</button>
+				<p class ="small-para">- Yoga Alliance 24 Continuing Education Non-Contact hrs</p>
+				<p class ="small-para">- BCRPA Continuing Education Credits</p>
+			</section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
