@@ -1048,7 +1048,7 @@ object {
   background-color: blue;
   color: white; }
 
-.page-template-volunteer .site-main {
+.page-template-volunteer .site-main, .page-template-support .site-main, .page-template-partner .site-main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1059,152 +1059,50 @@ object {
       align-items: center;
   width: 100%;
   text-align: center; }
-  .page-template-volunteer .site-main .entry-header .button-wrap {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    padding: 10px; }
-  .page-template-volunteer .site-main header, .page-template-volunteer .site-main section {
+  .page-template-volunteer .site-main .entry-header, .page-template-support .site-main .entry-header, .page-template-partner .site-main .entry-header {
+    width: 100vw;
+    height: 100vh;
+    top: 0; }
+    .page-template-volunteer .site-main .entry-header .button-wrap, .page-template-support .site-main .entry-header .button-wrap, .page-template-partner .site-main .entry-header .button-wrap {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      padding: 10px; }
+  .page-template-volunteer .site-main header, .page-template-volunteer .site-main section, .page-template-support .site-main header, .page-template-support .site-main section, .page-template-partner .site-main header, .page-template-partner .site-main section {
     width: 100%; }
-  .page-template-volunteer .site-main .volunteer-ops {
+  .page-template-volunteer .site-main .volunteer-ops, .page-template-support .site-main .volunteer-ops, .page-template-partner .site-main .volunteer-ops {
     background-color: lightsalmon; }
-    .page-template-volunteer .site-main .volunteer-ops .list-container {
+    .page-template-volunteer .site-main .volunteer-ops .list-container, .page-template-support .site-main .volunteer-ops .list-container, .page-template-partner .site-main .volunteer-ops .list-container {
       width: 100%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: row;
           flex-direction: row; }
-    .page-template-volunteer .site-main .volunteer-ops .decorative-line-case {
+    .page-template-volunteer .site-main .volunteer-ops .decorative-line-case, .page-template-support .site-main .volunteer-ops .decorative-line-case, .page-template-partner .site-main .volunteer-ops .decorative-line-case {
       width: 10%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-      .page-template-volunteer .site-main .volunteer-ops .decorative-line-case .decorative-line {
+      .page-template-volunteer .site-main .volunteer-ops .decorative-line-case .decorative-line, .page-template-support .site-main .volunteer-ops .decorative-line-case .decorative-line, .page-template-partner .site-main .volunteer-ops .decorative-line-case .decorative-line {
         width: 25%;
         height: 90%;
         border-radius: 30px;
         background-color: red; }
-    .page-template-volunteer .site-main .volunteer-ops ul {
+    .page-template-volunteer .site-main .volunteer-ops ul, .page-template-support .site-main .volunteer-ops ul, .page-template-partner .site-main .volunteer-ops ul {
       width: 90%;
       margin: 0; }
-  .page-template-volunteer .site-main .volunteer-yoga {
+  .page-template-volunteer .site-main .volunteer-yoga, .page-template-support .site-main .volunteer-yoga, .page-template-partner .site-main .volunteer-yoga {
     background-color: lightgreen; }
-    .page-template-volunteer .site-main .volunteer-yoga .button-case-holder {
+    .page-template-volunteer .site-main .volunteer-yoga .button-case-holder, .page-template-support .site-main .volunteer-yoga .button-case-holder, .page-template-partner .site-main .volunteer-yoga .button-case-holder {
       background-color: lightblue;
       margin-bottom: 5%; }
-  .page-template-volunteer .site-main .volunteer-community {
+  .page-template-volunteer .site-main .volunteer-community, .page-template-support .site-main .volunteer-community, .page-template-partner .site-main .volunteer-community {
     background-color: lightpink; }
-  .page-template-volunteer .site-main .volunteer-advisor {
+  .page-template-volunteer .site-main .volunteer-advisor, .page-template-support .site-main .volunteer-advisor, .page-template-partner .site-main .volunteer-advisor {
     background-color: lightyellow; }
-  .page-template-volunteer .site-main .volunteer-opportun {
-    background-color: lightgreen; }
-
-.page-template-support .site-main {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100%;
-  text-align: center; }
-  .page-template-support .site-main .entry-header .button-wrap {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    padding: 10px; }
-  .page-template-support .site-main header, .page-template-support .site-main section {
-    width: 100%; }
-  .page-template-support .site-main .volunteer-ops {
-    background-color: lightsalmon; }
-    .page-template-support .site-main .volunteer-ops .list-container {
-      width: 100%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-    .page-template-support .site-main .volunteer-ops .decorative-line-case {
-      width: 10%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
-      .page-template-support .site-main .volunteer-ops .decorative-line-case .decorative-line {
-        width: 25%;
-        height: 90%;
-        border-radius: 30px;
-        background-color: red; }
-    .page-template-support .site-main .volunteer-ops ul {
-      width: 90%;
-      margin: 0; }
-  .page-template-support .site-main .volunteer-yoga {
-    background-color: lightgreen; }
-    .page-template-support .site-main .volunteer-yoga .button-case-holder {
-      background-color: lightblue;
-      margin-bottom: 5%; }
-  .page-template-support .site-main .volunteer-community {
-    background-color: lightpink; }
-  .page-template-support .site-main .volunteer-advisor {
-    background-color: lightyellow; }
-  .page-template-support .site-main .volunteer-opportun {
-    background-color: lightgreen; }
-
-.page-template-partner .site-main {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100%;
-  text-align: center; }
-  .page-template-partner .site-main .entry-header .button-wrap {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    padding: 10px; }
-  .page-template-partner .site-main header, .page-template-partner .site-main section {
-    width: 100%; }
-  .page-template-partner .site-main .volunteer-ops {
-    background-color: lightsalmon; }
-    .page-template-partner .site-main .volunteer-ops .list-container {
-      width: 100%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-    .page-template-partner .site-main .volunteer-ops .decorative-line-case {
-      width: 10%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
-      .page-template-partner .site-main .volunteer-ops .decorative-line-case .decorative-line {
-        width: 25%;
-        height: 90%;
-        border-radius: 30px;
-        background-color: red; }
-    .page-template-partner .site-main .volunteer-ops ul {
-      width: 90%;
-      margin: 0; }
-  .page-template-partner .site-main .volunteer-yoga {
-    background-color: lightgreen; }
-    .page-template-partner .site-main .volunteer-yoga .button-case-holder {
-      background-color: lightblue;
-      margin-bottom: 5%; }
-  .page-template-partner .site-main .volunteer-community {
-    background-color: lightpink; }
-  .page-template-partner .site-main .volunteer-advisor {
-    background-color: lightyellow; }
-  .page-template-partner .site-main .volunteer-opportun {
+  .page-template-volunteer .site-main .volunteer-opportun, .page-template-support .site-main .volunteer-opportun, .page-template-partner .site-main .volunteer-opportun {
     background-color: lightgreen; }
 
 /* Volunteer */
@@ -1235,3 +1133,30 @@ ol {
   ol li p {
     padding-top: 10%;
     margin: 0; }
+
+/* Partner Facility */
+.partner-facility h2 {
+  width: 70%;
+  margin: 0 auto; }
+
+.partner-facility .interested-facility {
+  text-align: left;
+  padding-left: 5%; }
+  .partner-facility .interested-facility h3 {
+    width: 85%; }
+  .partner-facility .interested-facility ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .partner-facility .interested-facility ul li {
+      display: -ms-flexbox;
+      display: flex; }
+      .partner-facility .interested-facility ul li p {
+        padding: 1% 0 0 3%;
+        margin: 5%; }
+
+.partners-container {
+  text-align: left;
+  padding-left: 5%; }
+  .partners-container h3 {
+    width: 85%; }

@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <header class="entry-header">
+            <header class="entry-header custom-hero-image">
                 <h1 class="header-title"><?php the_title(); ?></h1>
                 <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
                 <div class="button-wrap">

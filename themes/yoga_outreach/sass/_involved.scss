@@ -3,7 +3,7 @@
     color: white;
 }
 
-.page-template-volunteer {
+.page-template-volunteer, .page-template-support, .page-template-partner {
     .site-main {
         display: flex;
         justify-content: center;
@@ -12,6 +12,9 @@
         width: 100%;
         text-align: center;
         .entry-header{
+            width: 100vw;
+            height: 100vh;
+            top: 0;
             p{
             }
             .button-wrap{
@@ -63,131 +66,6 @@
         }
     }
 }
-
-.page-template-support {
-    .site-main {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-        .entry-header{
-            p{
-            }
-            .button-wrap{
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-            }
-        }
-        header, section{width: 100%;}
-
-        .volunteer-ops{
-            background-color: lightsalmon;
-            .list-container{
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-            }
-            .decorative-line-case{
-                width: 10%;
-                display: flex;
-                justify-content: flex-end;
-                .decorative-line{
-                    width: 25%;
-                    height: 90%;
-                    border-radius: 30px;
-                    background-color: red;
-                }
-            }
-            ul{
-                width: 90%;
-                margin: 0;
-            }
-        }
-        .volunteer-yoga{
-            background-color: lightgreen;
-            .button-case-holder{
-                background-color: lightblue;
-                margin-bottom: 5%;
-            }
-        }
-        .volunteer-community{
-            background-color: lightpink;
-        }
-        .volunteer-advisor{
-            background-color: lightyellow;
-        }
-        .volunteer-opportun{
-            background-color: lightgreen;
-        }
-    }
-}
-
-.page-template-partner {
-    .site-main {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-        .entry-header{
-            p{
-            }
-            .button-wrap{
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-            }
-        }
-        header, section{width: 100%;}
-
-        .volunteer-ops{
-            background-color: lightsalmon;
-            .list-container{
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-            }
-            .decorative-line-case{
-                width: 10%;
-                display: flex;
-                justify-content: flex-end;
-                .decorative-line{
-                    width: 25%;
-                    height: 90%;
-                    border-radius: 30px;
-                    background-color: red;
-                }
-            }
-            ul{
-                width: 90%;
-                margin: 0;
-            }
-        }
-        .volunteer-yoga{
-            background-color: lightgreen;
-            .button-case-holder{
-                background-color: lightblue;
-                margin-bottom: 5%;
-            }
-        }
-        .volunteer-community{
-            background-color: lightpink;
-        }
-        .volunteer-advisor{
-            background-color: lightyellow;
-        }
-        .volunteer-opportun{
-            background-color: lightgreen;
-        }
-    }
-}
-
-
-
 
 /* Volunteer */
 
@@ -221,4 +99,41 @@ ol {
             margin: 0;
         }
     }
+}
+
+/* Partner Facility */
+
+.partner-facility{
+    h2{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .interested-facility{
+        text-align: left;
+        padding-left: 5%;
+        h3{
+            width: 85%;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+            li{
+                display: flex;
+                p{
+                    padding: 1% 0 0 3%;
+                    margin: 5%;
+                }
+            }
+        }
+    }
+}
+
+.partners-container{
+    text-align: left;
+    padding-left: 5%;
+    h3{
+        width: 85%;
+    }
+    
 }
