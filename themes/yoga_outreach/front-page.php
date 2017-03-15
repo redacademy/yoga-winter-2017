@@ -50,6 +50,7 @@ get_header(); ?>
     <img src="<?php echo get_template_directory_uri() ?>/images/Home_Partner.png" alt="partner image">
     <img src="<?php echo get_template_directory_uri() ?>/images/Support_Us.png" alt="supportus image">
     <div class="accent-square"></div>
+    <p>Testing Deploy</p>
 </section>
 
 <section class="thankyou">
