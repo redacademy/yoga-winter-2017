@@ -1,9 +1,7 @@
+//Resources Research
+
 .general-first-button.teal-button{
     background-color:#6CFFFE
-}
-
-.general-second-button.grey-button{
-
 }
 
 .research-h3-container{
@@ -26,5 +24,14 @@
     p{
         display:inline;
     }
+}
+
+.resources-article-pdf-list-container{
+    height:371px;
+    background-color:$themecolor_two;
+}
+
+.resources-links-container{
+    height:380px;
 }
 

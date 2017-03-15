@@ -803,22 +803,29 @@ a {
 .entry-title {
   text-align: center;
   color: white;
-  padding-top: 49px; }
+  padding-top: 49px;
+  font-family: 'raleway',sans-serif;
+  font-weight: 500; }
 
 .entry-content p {
   text-align: center;
   color: white; }
 
+.teal-button {
+  background-color: #6CFFFE; }
+
+.grey-button {
+  background-color: #94BFD1; }
+
 .general-template-section {
   height: 400px;
   background-color: lightgreen;
-  width: 100%;
-  position: relative; }
+  width: 100%; }
 
 .general-button-container {
   position: absolute;
-  bottom: 0;
-  width: 100%; }
+  width: 100%;
+  top: 316px; }
 
 .general-first-button, .general-second-button, .book-training-button {
   width: 230px;
@@ -831,17 +838,30 @@ a {
   box-shadow: none;
   text-shadow: none;
   color: white;
-  border-radius: 8px; }
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px; }
+
+.button-black-text {
+  color: black; }
 
 .training-yoga-tools-section {
   padding: 0 4%; }
+
+.training-h3-heading:nth-child(1) {
+  padding-top: 39px; }
 
 .training-h3-heading {
   width: 293px;
   height: 50px;
   margin: 0 auto;
   border-bottom: 2px solid #4A4A4A;
-  padding-bottom: 16px; }
+  padding-bottom: 16px;
+  font-size: 20px;
+  font-family: 'raleway',sans-serif;
+  color: #6b747d;
+  font-weight: 600; }
 
 .train-plus-button, .train-minus-button {
   background: transparent;
@@ -896,7 +916,6 @@ a {
   display: -ms-flexbox;
   display: flex; }
 
-.left-right-padddin
 .fill-white {
   background-color: #fff;
   color: #4A4A4A; }
@@ -936,6 +955,13 @@ a {
 
 .list-text-container p {
   display: inline; }
+
+.resources-article-pdf-list-container {
+  height: 371px;
+  background-color: #f4f1ea; }
+
+.resources-links-container {
+  height: 380px; }
 
 /*--------------------------------------------------------------
 # Widgets

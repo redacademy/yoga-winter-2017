@@ -14,13 +14,22 @@
 	text-align:center;
     color:white;
     padding-top:49px;
+	font-family:'raleway',sans-serif;
+	font-weight:500;
 }
 
-.entry-content{
-	p{
+.page-title-header{
 		text-align:center;
         color:white;
 	}
+.teal-button{
+	background-color:#6CFFFE;
+    
+}
+
+.grey-button{
+	background-color:#94BFD1;
+
 }
 
 // ---------------------
@@ -29,15 +38,14 @@
 	height:400px;
 	background-color:lightgreen;
 	width:100%;
-	position:relative;
 }
 
 
 
 .general-button-container{
 	position: absolute;
-    bottom: 0;
 	width:100%;
+	top:316px;
 }
 
 .general-first-button, .general-second-button, .book-training-button{
@@ -52,12 +60,22 @@
     text-shadow:none;
     color:white;
 	border-radius:8px;
-    
+	border:none;
+	font-family:'raleway',sans-serif;
+	font-size:14px;
+}
+
+.button-black-text{
+	color:black;
 }
 
 
 .training-yoga-tools-section{
 	padding:0 4%;
+}
+
+.training-h3-heading:nth-child(1){
+	padding-top:39px;
 }
 
 
@@ -66,7 +84,11 @@
 	height:50px;
 	margin:0 auto;
 	border-bottom: 2px solid #4A4A4A;
-	padding-bottom:16px;	
+	padding-bottom:16px;
+	font-size:20px;
+	font-family:'raleway',sans-serif;
+	color:$mainfont_color;
+	font-weight:600;
 }
 .train-plus-button, .train-minus-button{
 	background:transparent;
@@ -129,7 +151,6 @@
 	display:flex;
 }
 
-.left-right-padddin
 
 .fill-white{
 	background-color:#fff;
