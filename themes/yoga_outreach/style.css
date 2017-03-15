@@ -43,154 +43,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-.home {
-  text-align: center;
-  font-family: raleway;
-  font-weight: lighter;
-  color: #6B747D; }
-  .home h2 {
-    text-transform: capitalize;
-    font-weight: normal; }
-  .home h1 {
-    font-weight: lighter;
-    text-transform: uppercase; }
-  .home h4 {
-    text-transform: uppercase;
-    font-weight: normal; }
-  .home #site-navigation {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end; }
-    .home #site-navigation .logo-image {
-      width: 90px;
-      padding: 0 10px; }
-  .home .hero-banner {
-    position: relative;
-    color: white; }
-    .home .hero-banner .hero-image {
-      height: 450px;
-      width: 100%;
-      object-fit: cover; }
-    .home .hero-banner .herobanner-text {
-      position: absolute;
-      top: 100px; }
-      .home .hero-banner .herobanner-text h2 {
-        padding: 30px;
-        text-transform: capitalize;
-        font-size: 28px; }
-      .home .hero-banner .herobanner-text p {
-        font-size: 20px;
-        padding: 20px; }
-    .home .hero-banner .aboutus-button {
-      width: 230px;
-      height: 44px;
-      background-color: #94BFD1;
-      box-shadow: none;
-      border: none;
-      margin-top: 60px; }
-      .home .hero-banner .aboutus-button a {
-        color: white;
-        text-shadow: none;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 16px; }
-  .home .trauma-approach {
-    padding: 20px;
-    position: relative; }
-    .home .trauma-approach .accent-square {
-      position: absolute;
-      width: 230px;
-      height: 30px;
-      background-color: #96C2D4;
-      opacity: 0.4;
-      bottom: 25px;
-      z-index: -1; }
-  .home .training-program {
-    padding: 20px; }
-  .home .program-list {
-    padding: 20px 0; }
-    .home .program-list .core-training {
-      position: relative; }
-      .home .program-list .core-training .background-accent {
-        position: absolute;
-        width: 100%;
-        height: 140px;
-        background-color: #F3F0E9;
-        z-index: -1;
-        bottom: 20px; }
-    .home .program-list .yoga-atwork {
-      position: relative; }
-      .home .program-list .yoga-atwork .background-accent {
-        position: absolute;
-        width: 100%;
-        height: 140px;
-        background-color: #F3F0E9;
-        z-index: -1;
-        bottom: 0px; }
-    .home .program-list .yoga-foryouth {
-      position: relative; }
-      .home .program-list .yoga-foryouth .background-accent {
-        position: absolute;
-        width: 100%;
-        height: 140px;
-        background-color: #F3F0E9;
-        z-index: -1;
-        bottom: 0px; }
-      .home .program-list .yoga-foryouth .accent-line {
-        position: absolute;
-        width: 6px;
-        height: 380px;
-        background-color: #AEC5DE;
-        bottom: 30px;
-        right: 80px;
-        z-index: -1; }
-  .home .thankyou {
-    height: 250px;
-    background-color: #B7C8DA;
-    color: #4A4A4A; }
-    .home .thankyou h1 {
-      padding: 40px 0 0 0; }
-    .home .thankyou p {
-      font-size: 1.8rem;
-      padding: 0 20px 20px 30px; }
-  .home footer {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    text-transform: uppercase; }
-    .home footer form {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      background-color: #9FABB7;
-      padding: 30px;
-      width: 100%; }
-      .home footer form label {
-        width: 100%;
-        color: #fff; }
-    .home footer .siteinfo-text {
-      margin-top: 50px; }
-    .home footer p {
-      margin: 0; }
-    .home footer .socialmedia-icons ul {
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      .home footer .socialmedia-icons ul li {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        background-color: pink;
-        margin: 20px 10px 30px 10px; }
-    .home footer .copyright {
-      text-transform: capitalize;
-      padding: 10px; }
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -824,143 +676,6 @@ a {
   content: "";
   display: table; }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0; }
-
-.general-template-section {
-  height: 400px;
-  background-color: lightgreen;
-  width: 100%;
-  position: relative; }
-
-.entry-title {
-  text-align: center;
-  color: white;
-  padding-top: 49px; }
-
-.entry-content p {
-  text-align: center;
-  color: white; }
-
-.general-button-container {
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
-
-.general-first-button, .general-second-button, .book-training-button {
-  width: 230px;
-  height: 44px;
-  display: block;
-  margin: 0 auto;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 26px;
-  box-shadow: none;
-  text-shadow: none;
-  color: white;
-  border-radius: 8px; }
-
-.general-first-button {
-  background-color: #94BFD1; }
-
-.training-yoga-tools-section {
-  padding: 0 4%; }
-
-.general-second-button {
-  background-color: #6CFFFE; }
-
-.training-h3-heading {
-  width: 293px;
-  height: 50px;
-  margin: 0 auto;
-  border-bottom: 2px solid #4A4A4A;
-  padding-bottom: 16px; }
-
-.train-plus-button, .train-minus-button {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  color: #6B747D;
-  font-weight: 600;
-  float: right; }
-
-.small-para {
-  font-weight: 300;
-  font-size: 11px;
-  margin-bottom: 5px; }
-
-.under-skills-training-para {
-  color: #6B747D;
-  font-size: 14px;
-  min-width: 290px; }
-
-.book-training-button {
-  background-color: #6B747D;
-  margin-top: 18px; }
-
-.testimonal-slideshow-container {
-  min-width: 320px;
-  height: 100px;
-  background-color: #EBE5D8; }
-
-.training-list {
-  height: auto;
-  width: 100%;
-  background-color: #95AFC9;
-  margin: 0;
-  list-style: none;
-  padding: 19px 15px; }
-
-.training-list-item {
-  margin-bottom: 30px;
-  font-weight: 500;
-  font-size: 14px; }
-
-.slide-para {
-  display: none;
-  background: #eee;
-  padding: 10px; }
-
-.bottom-button-container {
-  height: 85px;
-  width: 100%;
-  background-color: #6B747D;
-  margin-top: 29px;
-  display: -ms-flexbox;
-  display: flex; }
-
-.left-right-padddin
-.fill-white {
-  background-color: #fff;
-  color: #4A4A4A; }
-
-.general-first-button.core {
-  background-color: #6CFFFE; }
-
-.general-second-button.core {
-  background-color: #94BFD1; }
-
-.section-15px-padding {
-  padding: 0 15px; }
-
-.core-h3-container {
-  width: 100%;
-  border-bottom: 2px solid #4A4A4A;
-  padding-bottom: 16px; }
-
-.core-header {
-  margin: 0;
-  width: 175px;
-  color: #6B747D;
-  font-size: 20px;
-  line-height: 24px;
-  margin-top: 39px; }
-
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -1238,3 +953,340 @@ object {
     background-color: lightyellow; }
   .page-template-partner .site-main .volunteer-opportun {
     background-color: lightgreen; }
+
+p {
+  margin-bottom: 0;
+  margin: 0; }
+
+.home {
+  text-align: center;
+  font-family: raleway;
+  font-weight: lighter;
+  color: #6B747D; }
+  .home h2 {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 24px; }
+  .home h1 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 26px; }
+  .home h4 {
+    text-transform: uppercase;
+    font-weight: normal; }
+  .home #site-navigation {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    height: 80px; }
+    .home #site-navigation .logo-image {
+      width: 90px;
+      padding: 0 10%; }
+  .home .hero-banner {
+    position: relative;
+    color: white; }
+    .home .hero-banner .hero-image {
+      height: 400px;
+      width: 100%;
+      object-fit: cover; }
+    .home .hero-banner .herobanner-text {
+      position: absolute;
+      bottom: 7%;
+      left: 10%; }
+      .home .hero-banner .herobanner-text h2 {
+        text-transform: capitalize;
+        font-size: 24px; }
+      .home .hero-banner .herobanner-text p {
+        font-size: 16px;
+        line-height: 2;
+        padding: 15px;
+        width: 300px; }
+    .home .hero-banner .aboutus-button {
+      width: 230px;
+      height: 44px;
+      background-color: #94BFD1;
+      box-shadow: none;
+      border: none;
+      margin-top: 80px; }
+      .home .hero-banner .aboutus-button a {
+        color: white;
+        text-shadow: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px; }
+  .home .trauma-approach {
+    padding: 7%;
+    position: relative;
+    font-size: 14px; }
+    .home .trauma-approach .accent-square {
+      position: absolute;
+      width: 230px;
+      height: 30px;
+      background-color: #96C2D4;
+      opacity: 0.4;
+      bottom: 10%;
+      z-index: -1; }
+  .home .training-programs {
+    padding: 5% 10%;
+    font-size: 14px; }
+  .home .program-list .core-training {
+    position: relative; }
+    .home .program-list .core-training .background-accent {
+      position: absolute;
+      width: 100%;
+      height: 140px;
+      background-color: #F3F0E9;
+      z-index: -1;
+      bottom: 20px; }
+  .home .program-list .yoga-atwork {
+    position: relative; }
+    .home .program-list .yoga-atwork .background-accent {
+      position: absolute;
+      width: 100%;
+      height: 140px;
+      background-color: #F3F0E9;
+      z-index: -1;
+      bottom: 0px; }
+  .home .program-list .yoga-foryouth {
+    position: relative; }
+    .home .program-list .yoga-foryouth .background-accent {
+      position: absolute;
+      width: 100%;
+      height: 140px;
+      background-color: #F3F0E9;
+      z-index: -1;
+      bottom: 0px; }
+    .home .program-list .yoga-foryouth .accent-line {
+      position: absolute;
+      width: 6px;
+      height: 380px;
+      background-color: #AEC5DE;
+      bottom: 30px;
+      right: 80px;
+      z-index: -1; }
+  .home .get-involved {
+    position: relative; }
+    .home .get-involved img {
+      width: 90px;
+      height: 110px; }
+    .home .get-involved .accent-square {
+      position: absolute;
+      width: 100%;
+      height: 23px;
+      background-color: #E2D9C6;
+      opacity: 0.7;
+      bottom: 10%;
+      z-index: -1; }
+  .home .thankyou {
+    height: 250px;
+    background-color: #B7C8DA;
+    color: #4A4A4A; }
+    .home .thankyou h1 {
+      padding: 40px 0 0 0; }
+    .home .thankyou p {
+      font-size: 1.8rem;
+      padding: 0 20px 20px 30px; }
+  .home footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-transform: uppercase; }
+    .home footer form {
+      height: 81px;
+      background-color: #9FABB7;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .home footer form label {
+        font-size: .7rem;
+        font-family: Raleway;
+        color: white;
+        text-transform: uppercase; }
+      .home footer form .input-bar {
+        font-size: 0;
+        display: -ms-inline-flexbox;
+        display: inline-flex; }
+        .home footer form .input-bar #e-news {
+          width: 229px;
+          height: 40px;
+          border: none;
+          border-radius: 0;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px; }
+        .home footer form .input-bar #submit-button {
+          height: 40px;
+          width: 66px;
+          padding: 0;
+          font-weight: lighter;
+          text-shadow: none;
+          text-transform: uppercase;
+          color: #4A4A4A;
+          background-color: #C1D3DA;
+          border: none;
+          box-shadow: none;
+          border-radius: 0;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px; }
+    .home footer .siteinfo-text {
+      margin-top: 50px; }
+    .home footer p {
+      margin: 0; }
+    .home footer .socialmedia-icons ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .home footer .socialmedia-icons ul li {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: pink;
+        margin: 20px 10px 30px 10px; }
+    .home footer .copyright {
+      text-transform: capitalize;
+      padding: 10px; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.general-template-section {
+  height: 400px;
+  background-color: lightgreen;
+  width: 100%;
+  position: relative; }
+
+.entry-title {
+  text-align: center;
+  color: white;
+  padding-top: 49px; }
+
+.entry-content p {
+  text-align: center;
+  color: white; }
+
+.general-button-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.general-first-button, .general-second-button, .book-training-button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px; }
+
+.general-first-button {
+  background-color: #94BFD1; }
+
+.training-yoga-tools-section {
+  padding: 0 4%; }
+
+.general-second-button {
+  background-color: #6CFFFE; }
+
+.training-h3-heading {
+  width: 293px;
+  height: 50px;
+  margin: 0 auto;
+  border-bottom: 2px solid #4A4A4A;
+  padding-bottom: 16px; }
+
+.train-plus-button, .train-minus-button {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: #6B747D;
+  font-weight: 600;
+  float: right; }
+
+.small-para {
+  font-weight: 300;
+  font-size: 11px;
+  margin-bottom: 5px; }
+
+.under-skills-training-para {
+  color: #6B747D;
+  font-size: 14px;
+  min-width: 290px; }
+
+.book-training-button {
+  background-color: #6B747D;
+  margin-top: 18px; }
+
+.testimonal-slideshow-container {
+  min-width: 320px;
+  height: 100px;
+  background-color: #EBE5D8; }
+
+.training-list {
+  height: auto;
+  width: 100%;
+  background-color: #95AFC9;
+  margin: 0;
+  list-style: none;
+  padding: 19px 15px; }
+
+.training-list-item {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 14px; }
+
+.slide-para {
+  display: none;
+  background: #eee;
+  padding: 10px; }
+
+.bottom-button-container {
+  height: 85px;
+  width: 100%;
+  background-color: #6B747D;
+  margin-top: 29px;
+  display: -ms-flexbox;
+  display: flex; }
+
+.left-right-padddin
+.fill-white {
+  background-color: #fff;
+  color: #4A4A4A; }
+
+.general-first-button.core {
+  background-color: #6CFFFE; }
+
+.general-second-button.core {
+  background-color: #94BFD1; }
+
+.section-15px-padding {
+  padding: 0 15px; }
+
+.core-h3-container {
+  width: 100%;
+  border-bottom: 2px solid #4A4A4A;
+  padding-bottom: 16px; }
+
+.core-header {
+  margin: 0;
+  width: 175px;
+  color: #6B747D;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 39px; }
