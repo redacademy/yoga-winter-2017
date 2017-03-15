@@ -4,7 +4,7 @@
 /**
  * The template for displaying all pages.
  *
- * @package RED_Starter_Theme
+ * @package Yoga_Outreach
  */
 
 get_header(); ?>
