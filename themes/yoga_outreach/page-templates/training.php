@@ -23,14 +23,7 @@ get_header(); ?>
 			</section><!--general-template-section-->
 			<section class ="training-yoga-tools-section">
 					<h3 class ="training-h3-heading clearfix">Yoga Tools for Youth<button class ="train-plus-button" onClick="showContent()">+</button></h3>
-					<p id="slide-para">In either a half or full day format the curricula 
-					will provide youth with the skills they need to incorporate 
-					breathing, mindfulness, grounding, and rhythmic movement into 
-					their day. Backed by credible research into the benefits of mindfulness-based stress 
-					reduction techniques and trauma-informed teaching practices for youth these 
-					workshops will provide students with a solid foundation to use these tools. 
-					Highly experiential this program will guide youth through several simple yet 
-					powerful exercises that they will be able to utilize in their everyday life.
+					<p id="slide-para">
 					</p>
 					<h3 class ="training-h3-heading clearfix">Using Yoga in Your Work<button class="train-minus-button">-</button></h3>
 				<button class ="book-training-button">Book Training</button>
@@ -49,8 +42,8 @@ get_header(); ?>
 				<li class="training-list-item">Refund Policy</li>
 				<li class="training-list-item">Book a Training Section</li>
 			</ul>
-			<div class="bottom-book-training-button-container">
-				<button class="book-training-button fill-white">Book Training</button>
+			<div class="bottom-button-container">
+				<button class="white-book-training-button">Book Training</button>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

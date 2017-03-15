@@ -626,12 +626,12 @@ a {
   background-color: #EBE5D8; }
 
 .training-list {
-  height: 264px;
+  height: auto;
   width: 100%;
   background-color: #95AFC9;
   margin: 0;
   list-style: none;
-  padding: 0 15px; }
+  padding: 19px 15px; }
 
 .training-list-item {
   margin-bottom: 30px;
@@ -643,7 +643,7 @@ a {
   background: #eee;
   padding: 10px; }
 
-.bottom-book-training-button-container {
+.bottom-button-container {
   height: 85px;
   width: 100%;
   background-color: #6B747D;
