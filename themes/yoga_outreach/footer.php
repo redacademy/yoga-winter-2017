@@ -46,9 +46,5 @@
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
-<<<<<<< HEAD
-=======
-
->>>>>>> 4edc3728bcb4737d9977ce1a34b870a7834d6890
 	</body>
 </html>
