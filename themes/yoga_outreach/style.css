@@ -43,6 +43,154 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.home {
+  text-align: center;
+  font-family: raleway;
+  font-weight: lighter;
+  color: #6B747D; }
+  .home h2 {
+    text-transform: capitalize;
+    font-weight: normal; }
+  .home h1 {
+    font-weight: lighter;
+    text-transform: uppercase; }
+  .home h4 {
+    text-transform: uppercase;
+    font-weight: normal; }
+  .home #site-navigation {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+    .home #site-navigation .logo-image {
+      width: 90px;
+      padding: 0 10px; }
+  .home .hero-banner {
+    position: relative;
+    color: white; }
+    .home .hero-banner .hero-image {
+      height: 450px;
+      width: 100%;
+      object-fit: cover; }
+    .home .hero-banner .herobanner-text {
+      position: absolute;
+      top: 100px; }
+      .home .hero-banner .herobanner-text h2 {
+        padding: 30px;
+        text-transform: capitalize;
+        font-size: 28px; }
+      .home .hero-banner .herobanner-text p {
+        font-size: 20px;
+        padding: 20px; }
+    .home .hero-banner .aboutus-button {
+      width: 230px;
+      height: 44px;
+      background-color: #94BFD1;
+      box-shadow: none;
+      border: none;
+      margin-top: 60px; }
+      .home .hero-banner .aboutus-button a {
+        color: white;
+        text-shadow: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px; }
+  .home .trauma-approach {
+    padding: 20px;
+    position: relative; }
+    .home .trauma-approach .accent-square {
+      position: absolute;
+      width: 230px;
+      height: 30px;
+      background-color: #96C2D4;
+      opacity: 0.4;
+      bottom: 25px;
+      z-index: -1; }
+  .home .training-program {
+    padding: 20px; }
+  .home .program-list {
+    padding: 20px 0; }
+    .home .program-list .core-training {
+      position: relative; }
+      .home .program-list .core-training .background-accent {
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        background-color: #F3F0E9;
+        z-index: -1;
+        bottom: 20px; }
+    .home .program-list .yoga-atwork {
+      position: relative; }
+      .home .program-list .yoga-atwork .background-accent {
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        background-color: #F3F0E9;
+        z-index: -1;
+        bottom: 0px; }
+    .home .program-list .yoga-foryouth {
+      position: relative; }
+      .home .program-list .yoga-foryouth .background-accent {
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        background-color: #F3F0E9;
+        z-index: -1;
+        bottom: 0px; }
+      .home .program-list .yoga-foryouth .accent-line {
+        position: absolute;
+        width: 6px;
+        height: 380px;
+        background-color: #AEC5DE;
+        bottom: 30px;
+        right: 80px;
+        z-index: -1; }
+  .home .thankyou {
+    height: 250px;
+    background-color: #B7C8DA;
+    color: #4A4A4A; }
+    .home .thankyou h1 {
+      padding: 40px 0 0 0; }
+    .home .thankyou p {
+      font-size: 1.8rem;
+      padding: 0 20px 20px 30px; }
+  .home footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-transform: uppercase; }
+    .home footer form {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      background-color: #9FABB7;
+      padding: 30px;
+      width: 100%; }
+      .home footer form label {
+        width: 100%;
+        color: #fff; }
+    .home footer .siteinfo-text {
+      margin-top: 50px; }
+    .home footer p {
+      margin: 0; }
+    .home footer .socialmedia-icons ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .home footer .socialmedia-icons ul li {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: pink;
+        margin: 20px 10px 30px 10px; }
+    .home footer .copyright {
+      text-transform: capitalize;
+      padding: 10px; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -222,6 +370,34 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'raleway';
+  src: url("raleway-light-webfont.eot");
+  src: url("raleway-light-webfont.eot?#iefix") format("embedded-opentype"), url("raleway-light-webfont.woff") format("woff"), url("raleway-light-webfont.ttf") format("truetype"), url("raleway-light-webfont.svg#ralewaylight") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("raleway-lightitalic-webfont.eot");
+  src: url("raleway-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("raleway-lightitalic-webfont.woff") format("woff"), url("raleway-lightitalic-webfont.ttf") format("truetype"), url("raleway-lightitalic-webfont.svg#ralewaylight_italic") format("svg");
+  font-weight: lighter;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("raleway-medium-webfont.eot");
+  src: url("raleway-medium-webfont.eot?#iefix") format("embedded-opentype"), url("raleway-medium-webfont.woff") format("woff"), url("raleway-medium-webfont.ttf") format("truetype"), url("raleway-medium-webfont.svg#ralewaymedium") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("raleway-regular-webfont.eot");
+  src: url("raleway-regular-webfont.eot?#iefix") format("embedded-opentype"), url("raleway-regular-webfont.woff") format("woff"), url("raleway-regular-webfont.ttf") format("truetype"), url("raleway-regular-webfont.svg#ralewayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -338,6 +514,81 @@ img {
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
+
+.page-template-aboutus {
+  width: 100%;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .page-template-aboutus h1 {
+    display: none; }
+  .page-template-aboutus .hero-text {
+    height: 300px;
+    width: 100%;
+    color: #fff;
+    background-color: #95AFC9;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .page-template-aboutus .team {
+    max-width: 100%;
+    padding: 15px; }
+  .page-template-aboutus .staff {
+    position: relative; }
+    .page-template-aboutus .staff span {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .page-template-aboutus .staff span button {
+        border: none;
+        background: none;
+        box-shadow: none; }
+    .page-template-aboutus .staff .circle {
+      height: 160px;
+      width: 160px;
+      border-radius: 50%;
+      background-color: #9fabb7;
+      margin: 0 auto; }
+    .page-template-aboutus .staff .accent-name-shape {
+      height: 25px;
+      width: 250px;
+      border-radius: 8px;
+      background-color: #CBE8EA;
+      position: absolute;
+      right: 87px;
+      bottom: -12px;
+      z-index: -1; }
+  .page-template-aboutus form {
+    height: 81px;
+    width: 100%;
+    background-color: #9FABB7;
+    padding: 0 12px; }
+    .page-template-aboutus form label {
+      font-size: .8rem; }
+    .page-template-aboutus form .input-bar {
+      width: 100%; }
+      .page-template-aboutus form .input-bar #e-news {
+        width: 229px;
+        height: 40px;
+        border: none;
+        border-radius: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px; }
+      .page-template-aboutus form .input-bar #submit-button {
+        height: 40px;
+        width: 66px;
+        background-color: #C1D3DA;
+        border: none;
+        box-shadow: none; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -801,3 +1052,165 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.button-holder {
+  background-color: blue;
+  color: white; }
+
+.page-template-volunteer .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  text-align: center; }
+  .page-template-volunteer .site-main .entry-header .button-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 10px; }
+  .page-template-volunteer .site-main header, .page-template-volunteer .site-main section {
+    width: 100%; }
+  .page-template-volunteer .site-main .volunteer-ops {
+    background-color: lightsalmon; }
+    .page-template-volunteer .site-main .volunteer-ops .list-container {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+    .page-template-volunteer .site-main .volunteer-ops .decorative-line-case {
+      width: 10%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      .page-template-volunteer .site-main .volunteer-ops .decorative-line-case .decorative-line {
+        width: 25%;
+        height: 90%;
+        border-radius: 30px;
+        background-color: red; }
+    .page-template-volunteer .site-main .volunteer-ops ul {
+      width: 90%;
+      margin: 0; }
+  .page-template-volunteer .site-main .volunteer-yoga {
+    background-color: lightgreen; }
+    .page-template-volunteer .site-main .volunteer-yoga .button-case-holder {
+      background-color: lightblue;
+      margin-bottom: 5%; }
+  .page-template-volunteer .site-main .volunteer-community {
+    background-color: lightpink; }
+  .page-template-volunteer .site-main .volunteer-advisor {
+    background-color: lightyellow; }
+  .page-template-volunteer .site-main .volunteer-opportun {
+    background-color: lightgreen; }
+
+.page-template-support .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  text-align: center; }
+  .page-template-support .site-main .entry-header .button-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 10px; }
+  .page-template-support .site-main header, .page-template-support .site-main section {
+    width: 100%; }
+  .page-template-support .site-main .volunteer-ops {
+    background-color: lightsalmon; }
+    .page-template-support .site-main .volunteer-ops .list-container {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+    .page-template-support .site-main .volunteer-ops .decorative-line-case {
+      width: 10%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      .page-template-support .site-main .volunteer-ops .decorative-line-case .decorative-line {
+        width: 25%;
+        height: 90%;
+        border-radius: 30px;
+        background-color: red; }
+    .page-template-support .site-main .volunteer-ops ul {
+      width: 90%;
+      margin: 0; }
+  .page-template-support .site-main .volunteer-yoga {
+    background-color: lightgreen; }
+    .page-template-support .site-main .volunteer-yoga .button-case-holder {
+      background-color: lightblue;
+      margin-bottom: 5%; }
+  .page-template-support .site-main .volunteer-community {
+    background-color: lightpink; }
+  .page-template-support .site-main .volunteer-advisor {
+    background-color: lightyellow; }
+  .page-template-support .site-main .volunteer-opportun {
+    background-color: lightgreen; }
+
+.page-template-partner .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  text-align: center; }
+  .page-template-partner .site-main .entry-header .button-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 10px; }
+  .page-template-partner .site-main header, .page-template-partner .site-main section {
+    width: 100%; }
+  .page-template-partner .site-main .volunteer-ops {
+    background-color: lightsalmon; }
+    .page-template-partner .site-main .volunteer-ops .list-container {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+    .page-template-partner .site-main .volunteer-ops .decorative-line-case {
+      width: 10%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      .page-template-partner .site-main .volunteer-ops .decorative-line-case .decorative-line {
+        width: 25%;
+        height: 90%;
+        border-radius: 30px;
+        background-color: red; }
+    .page-template-partner .site-main .volunteer-ops ul {
+      width: 90%;
+      margin: 0; }
+  .page-template-partner .site-main .volunteer-yoga {
+    background-color: lightgreen; }
+    .page-template-partner .site-main .volunteer-yoga .button-case-holder {
+      background-color: lightblue;
+      margin-bottom: 5%; }
+  .page-template-partner .site-main .volunteer-community {
+    background-color: lightpink; }
+  .page-template-partner .site-main .volunteer-advisor {
+    background-color: lightyellow; }
+  .page-template-partner .site-main .volunteer-opportun {
+    background-color: lightgreen; }
