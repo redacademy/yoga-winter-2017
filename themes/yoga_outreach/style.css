@@ -339,6 +339,81 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+.page-template-aboutus {
+  width: 100%;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .page-template-aboutus h1 {
+    display: none; }
+  .page-template-aboutus .hero-text {
+    height: 300px;
+    width: 100%;
+    color: #fff;
+    background-color: #95AFC9;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .page-template-aboutus .team {
+    max-width: 100%;
+    padding: 15px; }
+  .page-template-aboutus .staff {
+    position: relative; }
+    .page-template-aboutus .staff span {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .page-template-aboutus .staff span button {
+        border: none;
+        background: none;
+        box-shadow: none; }
+    .page-template-aboutus .staff .circle {
+      height: 160px;
+      width: 160px;
+      border-radius: 50%;
+      background-color: #9fabb7;
+      margin: 0 auto; }
+    .page-template-aboutus .staff .accent-name-shape {
+      height: 25px;
+      width: 250px;
+      border-radius: 8px;
+      background-color: #CBE8EA;
+      position: absolute;
+      right: 87px;
+      bottom: -12px;
+      z-index: -1; }
+  .page-template-aboutus form {
+    height: 81px;
+    width: 100%;
+    background-color: #9FABB7;
+    padding: 0 12px; }
+    .page-template-aboutus form label {
+      font-size: .8rem; }
+    .page-template-aboutus form .input-bar {
+      width: 100%; }
+      .page-template-aboutus form .input-bar #e-news {
+        width: 229px;
+        height: 40px;
+        border: none;
+        border-radius: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px; }
+      .page-template-aboutus form .input-bar #submit-button {
+        height: 40px;
+        width: 66px;
+        background-color: #C1D3DA;
+        border: none;
+        box-shadow: none; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
