@@ -13,32 +13,22 @@ get_header(); ?>
             <header class="entry-header custom-hero-image hero-text">
                 <h1 class="header-title"><?php the_title(); ?></h1>
                 <p>We can be reached at</p>
+                <p><?php echo CFS()->get( 'phone_number' ); ?></p>
             </header>
             
-            <section class="team">
-                <h2>The YO Team</h2>
-                <p>Click on name for bio and contact info.</p>
+            <section class="email-inquiries">
+                <h2>Email Inquiries</h2>
+                <p>For staff directory, visit:</p>
+                <a href="<?php echo get_permalink() ?>">who we are</a>
 
-                <div class="staff">
-                    <span>Staff <button>-</button></span>
-                    <div class="circle"><?php echo CFS()->get( 'staff_photo' );?></div>
-                    <p>Place holder name<?php echo CFS()->get( 'staff_name' );?></p>
-                    <div class="accent-name-shape"></div>
-                </div>
+                <?php $fields= CFS()->get( 'emails' ); ?>  <!--variable to hold email from loop-->    
 
-                <div class="staff">
-                    <span>Board of Directors<button>+</button></span>
-                    <div class="circle"></div>
-                    <p>Place holder name</p>
-                    <div class="accent-name-shape"></div>
-                </div>
-
-                <div class="staff" >
-                    <span>Advisory Council<button>+</button></span>
-                    <div class="circle"></div>
-                    <p>Place holder name</p>
-                    <div class="accent-name-shape"></div>
-                </div>
+                <?php if(!empty($fields)): ?>
+                    <?php foreach( $fields as $field ): ?>
+                        <p><?php echo $field['email']; ?></p>
+                        <p><?php echo $field['email_for']; ?></p>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -1,22 +1,28 @@
-//colors
+//base colors
 $base_color: #fff;
-$accentcolor_one: #b6baff;
-$accentcolor_two: #aecfde;
 
-$themecolor_one: #95afc9;
-$themecolor_two: #f4f1ea;
-$themecolor_three: #9fabb7;
-$themecolor_four: #ebe5d8;
+//theme colors
+$darktheme_color:#4a4a4a;
+$logo_color: #95afc9;
+$lighttheme_color: #f4f1ea;
+$formtheme_color: #9fabb7;
 
-//button color
-$buttoncolor_one: #94bfd1;
-$buttoncolor_two:#c1d3da;
-$buttoncolor_hover: #6cfffe;
+//accent colors
+$accentcolor_box: #f3f0e9;
+$accentcolor_line: #95afc9;
+$accentcolor_bar: #94bfd1;
+$accentcolor_bar2: #cce8ea;
 
-//font color
-$basefont_color: #fff;
-$mainfont_color: #6b747d;
-$darkmainfont_color: #4a4a4a;
+//text colors
+$basetext_color: #fff;
+$darktext_color: #4a4a4a;
+$lighttext_color: #6b747d;
+
+//content colors
+$mainbutton_color: #94bfd1;
+$brightbutton_color: #6cfffe;
+$formbutton_color: #c1d3da;
+
 
 
 
