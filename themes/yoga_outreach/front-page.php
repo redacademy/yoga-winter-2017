@@ -25,31 +25,47 @@ get_header(); ?>
 </section>
 <section class="program-list">
     <div class="core-training">
+        <div class="programlist-text">
         <h1>yoga outreach core training™</h1>
         <h4>For yoga instructors</h4>
         <p>Get the skills to build trauma-informed classes.</p>
+        </div>
         <div class="background-accent"></div>
     </div>
     <div class="yoga-atwork">
+        <div class="programlist-text">
         <h1>using yoga in your work™</h1>
         <h4>For facility staff</h4>
         <p>Skills Training for Support Professionals</p>
+        </div>
         <div class="background-accent"></div>
     </div>
     <div class="yoga-foryouth">
+        <div class="programlist-text">
         <h1>yoga tools for youth™</h1>
         <h4>For facility staff</h4>
         <p>Skills for self-care and stress reduction</p>
+        </div>
         <div class="background-accent"></div>
         <div class="accent-line"></div>
     </div>
 </section>
 <section class="get-involved">
     <h2>Get Involed!</h2>
-    <img src="<?php echo get_template_directory_uri() ?>/images/Home_Volunteer.png" alt="volunteer image">
-    <img src="<?php echo get_template_directory_uri() ?>/images/Home_Partner.png" alt="partner image">
-    <img src="<?php echo get_template_directory_uri() ?>/images/Support_Us.png" alt="supportus image">
+     <div class="involvedWrap">
+               <div class="contain1">
+                   <p>volunteer</p>
+               </div>
+               <div class="contain2">
+                   <p>partner</p>
+               </div>
+               <div class="contain3">
+                   <p>support us</p>
+               </div>    
+               <div class="shapeThing"></div>
+           </div>
     <div class="accent-square"></div>
+    <p>Testing Deploy</p>
 </section>
 
 <section class="thankyou">

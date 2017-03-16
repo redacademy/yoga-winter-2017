@@ -37,14 +37,16 @@ get_header(); ?>
                 <h2 class="h2-holder">Volunteer as a Yoga Instructor</h2>
                 <ol>
                 <?php
-                    $fields = CFS()->get( 'volunteer_steps' ); // returns an array of posts
+                    $fields = CFS()->get( 'volunteer_steps' );
+                    if(!empty($fields)):
                         foreach ( $fields as $field ):?>
                             <div class="volunteer-steps">
                                 <li>
                                 <p class="volunteer-step"><?php echo $field['volunteer_step']; ?></p>
                                 </li>
                             </div>
-                <?php endforeach; ?>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </ol>
                 <div class="button-case-holder"><button class="button-holder">Apply Now</button></div>
             </section>
