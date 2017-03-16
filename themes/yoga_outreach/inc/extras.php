@@ -33,9 +33,9 @@ add_filter( 'body_class', 'red_starter_body_classes' );
  */
 function pagetemplate_styles() {
 
-    $pages = ['page-templates/support.php', 'page-templates/volunteer.php', 'page-templates/partner.php', 'page-templates/about-us.php', 'page-templates/training.php', 'page-templates/core-training.php', 'page-templates/resources-research.php'];
+    $pages = ['page-templates/support.php', 'page-templates/volunteer.php', 'page-templates/partner.php', 'page-templates/about-us.php', 'page-templates/training.php', 'page-templates/core-training.php', 'page-templates/resources-research.php', 'front-page.php'];
 
-    if(!is_page_template($template = $pages)){
+    if(!is_page_template($template = $pages) && !is_front_page()){
         return;
     }
 	$image = CFS()->get( 'hero_image' );
@@ -53,4 +53,3 @@ function pagetemplate_styles() {
     wp_add_inline_style( 'red-starter-style', $hero_css );
 }
 add_action( 'wp_enqueue_scripts', 'pagetemplate_styles' );
-

@@ -825,6 +825,16 @@ a {
   line-height: 24px;
   margin-top: 39px; }
 
+.avail-online-heading-container {
+  display: -ms-flexbox;
+  display: flex; }
+  .avail-online-heading-container .avail-online-h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'raleway';
+    font-weight: 1000; }
+
 .general-first-button.teal-button {
   background-color: #6CFFFE; }
 
@@ -833,14 +843,25 @@ a {
   margin: 0 auto;
   text-align: center; }
 
-.research-h3-container h3 {
-  margin-top: 35px; }
+.research-h3-container {
+  font-family: 'raleway'; }
+  .research-h3-container h3 {
+    margin-top: 35px;
+    font-size: 24px;
+    margin-bottom: 20px; }
+
+.research-h3-container p {
+  font-size: 14px;
+  padding-bottom: 22px;
+  width: 215px; }
 
 .list-text-container p {
   display: inline; }
 
 .resources-article-pdf-list-container {
   height: 371px;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
   background-color: black; }
 
 .resources-links-container {
@@ -961,9 +982,9 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.button-holder {
-  background-color: blue;
-  color: white; }
+.button-container {
+  background-color: #94bfd1;
+  color: #fff; }
 
 .page-template-volunteer .site-main, .page-template-support .site-main, .page-template-partner .site-main {
   display: -ms-flexbox;
@@ -975,11 +996,15 @@ object {
   -ms-flex-align: center;
       align-items: center;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  font-family: raleway, arial;
+  font-weight: lighter;
+  color: #6b747d; }
   .page-template-volunteer .site-main .entry-header, .page-template-support .site-main .entry-header, .page-template-partner .site-main .entry-header {
     width: 100vw;
     height: 100vh;
-    top: 0; }
+    top: 0;
+    color: #fff; }
     .page-template-volunteer .site-main .entry-header .button-wrap, .page-template-support .site-main .entry-header .button-wrap, .page-template-partner .site-main .entry-header .button-wrap {
       display: -ms-flexbox;
       display: flex;
@@ -988,31 +1013,33 @@ object {
       padding: 10px; }
   .page-template-volunteer .site-main header, .page-template-volunteer .site-main section, .page-template-support .site-main header, .page-template-support .site-main section, .page-template-partner .site-main header, .page-template-partner .site-main section {
     width: 100%; }
-  .page-template-volunteer .site-main .volunteer-ops, .page-template-support .site-main .volunteer-ops, .page-template-partner .site-main .volunteer-ops {
-    background-color: lightsalmon; }
-    .page-template-volunteer .site-main .volunteer-ops .list-container, .page-template-support .site-main .volunteer-ops .list-container, .page-template-partner .site-main .volunteer-ops .list-container {
+  .page-template-volunteer .site-main .container-one, .page-template-support .site-main .container-one, .page-template-partner .site-main .container-one {
+    background-color: #fff; }
+    .page-template-volunteer .site-main .container-one .list-container, .page-template-support .site-main .container-one .list-container, .page-template-partner .site-main .container-one .list-container {
       width: 100%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: row;
           flex-direction: row; }
-    .page-template-volunteer .site-main .volunteer-ops .decorative-line-case, .page-template-support .site-main .volunteer-ops .decorative-line-case, .page-template-partner .site-main .volunteer-ops .decorative-line-case {
+    .page-template-volunteer .site-main .container-one .decorative-line-case, .page-template-support .site-main .container-one .decorative-line-case, .page-template-partner .site-main .container-one .decorative-line-case {
       width: 10%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-      .page-template-volunteer .site-main .volunteer-ops .decorative-line-case .decorative-line, .page-template-support .site-main .volunteer-ops .decorative-line-case .decorative-line, .page-template-partner .site-main .volunteer-ops .decorative-line-case .decorative-line {
+      .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line, .page-template-support .site-main .container-one .decorative-line-case .decorative-line, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line {
         width: 25%;
         height: 90%;
         border-radius: 30px;
         background-color: red; }
-    .page-template-volunteer .site-main .volunteer-ops ul, .page-template-support .site-main .volunteer-ops ul, .page-template-partner .site-main .volunteer-ops ul {
+    .page-template-volunteer .site-main .container-one ul, .page-template-support .site-main .container-one ul, .page-template-partner .site-main .container-one ul {
       width: 90%;
       margin: 0; }
-  .page-template-volunteer .site-main .volunteer-yoga, .page-template-support .site-main .volunteer-yoga, .page-template-partner .site-main .volunteer-yoga {
-    background-color: lightgreen; }
-    .page-template-volunteer .site-main .volunteer-yoga .button-case-holder, .page-template-support .site-main .volunteer-yoga .button-case-holder, .page-template-partner .site-main .volunteer-yoga .button-case-holder {
+  .page-template-volunteer .site-main .container-two, .page-template-support .site-main .container-two, .page-template-partner .site-main .container-two {
+    background-color: #95afc9; }
+    .page-template-volunteer .site-main .container-two h2, .page-template-support .site-main .container-two h2, .page-template-partner .site-main .container-two h2 {
+      color: #4a4a4a; }
+    .page-template-volunteer .site-main .container-two .button-case-holder, .page-template-support .site-main .container-two .button-case-holder, .page-template-partner .site-main .container-two .button-case-holder {
       background-color: lightblue;
       margin-bottom: 5%; }
   .page-template-volunteer .site-main .volunteer-community, .page-template-support .site-main .volunteer-community, .page-template-partner .site-main .volunteer-community {
@@ -1046,7 +1073,8 @@ ol {
     font-size: 4rem;
     background-color: white;
     border-radius: 100%;
-    padding: 10% 22%; }
+    padding: 10% 22%;
+    color: #95afc9; }
   ol li p {
     padding-top: 10%;
     margin: 0; }
@@ -1109,13 +1137,11 @@ p {
       padding: 0 10%; }
   .home .hero-banner {
     position: relative;
-    color: white; }
-    .home .hero-banner .hero-image {
-      height: 400px;
-      width: 100%;
-      object-fit: cover; }
+    color: white;
+    height: 400px;
+    width: 100%; }
     .home .hero-banner .herobanner-text {
-      position: absolute;
+      margin: 0 auto;
       bottom: 7%;
       left: 10%; }
       .home .hero-banner .herobanner-text h2 {
@@ -1124,8 +1150,7 @@ p {
       .home .hero-banner .herobanner-text p {
         font-size: 16px;
         line-height: 2;
-        padding: 15px;
-        width: 300px; }
+        padding: 15px; }
     .home .hero-banner .aboutus-button {
       width: 230px;
       height: 44px;
@@ -1433,3 +1458,13 @@ p {
   font-size: 20px;
   line-height: 24px;
   margin-top: 39px; }
+
+.avail-online-heading-container {
+  display: -ms-flexbox;
+  display: flex; }
+  .avail-online-heading-container .avail-online-h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'raleway';
+    font-weight: 1000; }

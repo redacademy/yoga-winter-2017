@@ -6,7 +6,7 @@
  */
  
 get_header(); ?>
-
+ 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image">
@@ -19,7 +19,7 @@ get_header(); ?>
                     <button class="button-holder">Reaching Out with Yoga</button>
                 </div>
             </header><!-- .entry-header -->
-            <section class="volunteer-ops">
+            <section class="container-one">
                 <h2 class="h2-holder">Benefits for Volunteers</h2>
                 <div class = "list-container">
                     <div class = "decorative-line-case"><span class="decorative-line"></span></div>
@@ -33,7 +33,7 @@ get_header(); ?>
                     </ul>
                     </div>
             </section>
-            <section class="volunteer-yoga">
+            <section class="container-two">
                 <h2 class="h2-holder">Volunteer as a Yoga Instructor</h2>
                 <ol>
                 <?php
@@ -44,7 +44,7 @@ get_header(); ?>
                                 <li>
                                 <p class="volunteer-step"><?php echo $field['volunteer_step']; ?></p>
                                 </li>
-                            </div>
+                            </div> 
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </ol>

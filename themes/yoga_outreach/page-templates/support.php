@@ -25,7 +25,7 @@ get_header(); ?>
                     <div class = "decorative-line-case"><span class="decorative-line"></span></div>
                 </div>
             </section>
-            <section class="donate">
+            <section class="container-one">
                 <h2 class="h2-holder">Donate</h2>
                 <p>To make a donation today click HERE or give us a call to discuss your support at 604.385.3891 today. We gratefully acknowledge any contribution of $100 or more in our newsletter and via social media. “DONATE” leads to Canada Helps, and the number input going to show on Canada Helps input box.</p>
                 <div class="button-case-holder"><button class="button-holder">Apply Now</button></div>
@@ -39,10 +39,10 @@ get_header(); ?>
             <section class="volunteer-advisor">
                 <h2 class="h2-holder">Become an Event Sponsor</h2>
                 <p>Yoga Outreach hosts a number of events each year and you could be a sponsor. Our main events are the May Yoga Retreat and the October 30 Day Yoga Challenge. We are always looking for Corporate support to make these events as successful as possible. Your contribution will help us provide scholarships for Yoga Outreach students to attend, provide much needed publicity, and of course cover the cost of hosting an event! We provide varying levels of recognition based on your contribution. </p>
-                <p>To become an event sponsor big or small please contact Delanie   </p>
+                <h3>To become an event sponsor big or small please contact Delanie </h3>
                 <div><button class="button-holder">Contact</button></div>
             </section>
-            <section class="volunteer-opportun">
+            <section class="t-shirt-container">
                 <h2 class="h2-holder">Get a T-Shirt</h2>
                 <p>Our new t-shirts made by Fairware, these shirts are sustainably made, ethically sourced and absolutely gorgeous to wear! In a wide variety of colours and styles you are sure to find one you love and all proceeds support our programming.</p>
                 <button class="button-holder">Shop T-Shirts</button>

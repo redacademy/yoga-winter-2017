@@ -19,14 +19,14 @@ get_header(); ?>
                     <button class="button-holder">Our Current Partners</button>
                 </div>
             </header><!-- .entry-header -->
-            <section class="volunteer-ops">
+            <section class="container-one">
                 <h2 class="h2-holder">What We Provide</h2>
                 <p><?php echo CFS()->get( 'what_we_provide' ); ?></p>
                 <h3>Apply for Partnership</h3>
                 <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
                 <div class="button-case-holder"><button class="button-holder">Apply Now</button></div>  
             </section>
-            <section class="volunteer-yoga">
+            <section class="container-two">
                 <h2 class="h2-holder">A Facility Perspective</h2>
                 <img src="<?php echo CFS()->get( 'facility_video' ); ?>" />
             </section>
