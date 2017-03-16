@@ -35,7 +35,8 @@ get_header(); ?>
 					
 				</p>
 			</section>
-			<div class ="testimonal-slideshow-container">
+			<div class ="testimonal-container">
+					
 			</div>
 			<ul class="training-list">
 				<li class="training-list-item">Summary</li>

@@ -19,7 +19,7 @@ get_header(); ?>
                     <button class="button-holder">Our Current Partners</button>
                 </div>
             </header><!-- .entry-header -->
-            <section class="volunteer-ops">
+            <section class="container-one">
                 <h2 class="h2-holder">What We Provide</h2>
                 <p><?php echo CFS()->get( 'what_we_provide' ); ?></p>
                 <h3>Apply for Partnership</h3>
