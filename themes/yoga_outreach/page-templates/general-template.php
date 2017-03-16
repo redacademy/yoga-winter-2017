@@ -11,7 +11,7 @@ get_header(); ?>
 				<h1><?php the_title(); ?></h1>
 				<div class ="general-button-container">
 					<button class = "general-first-button">Insert Text Here</button>
-					<button class = "general-second-button">Inset Text Here</button>
+					<button class = "general-second-button">Insert Text Here</button>
 				</div>
 			</header><!--general-template-section-->
 			
