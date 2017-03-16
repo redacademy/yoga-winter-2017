@@ -1,6 +1,6 @@
-.button-holder{
-    background-color: blue;
-    color: white;
+.button-container{
+    background-color: $mainbutton_color;
+    color: $basetext_color;
 }
 
 .page-template-volunteer, .page-template-support, .page-template-partner {
@@ -11,12 +11,14 @@
         align-items: center;
         width: 100%;
         text-align: center;
+        font-family: raleway, arial;
+        font-weight: lighter;
+        color: $lighttext_color;
         .entry-header{
             width: 100vw;
             height: 100vh;
             top: 0;
-            p{
-            }
+            color: $basetext_color;
             .button-wrap{
                 display: flex;
                 flex-direction: column;
@@ -48,8 +50,11 @@
                 margin: 0;
             }
         }
-        .volunteer-yoga{
-            background-color: lightgreen;
+        .container-two{
+            background-color: $logo_color;
+            h2{
+                color: $darktext_color;
+            }
             .button-case-holder{
                 background-color: lightblue;
                 margin-bottom: 5%;
@@ -93,6 +98,7 @@ ol {
             background-color: white;
             border-radius: 100%;
             padding: 10% 22%;
+            color: $logo_color;
         }
         p{
             padding-top:10%;

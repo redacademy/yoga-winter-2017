@@ -33,13 +33,10 @@
     .hero-banner{
         position: relative;
         color: white;
-        .hero-image{
-            height: 400px;
-            width: 100%;
-            object-fit: cover;
-        }
+        height: 400px;
+        width: 100%;
         .herobanner-text{
-            position: absolute;
+            margin: 0 auto;
             bottom: 7%;
             left: 10%;
             h2{
@@ -50,7 +47,6 @@
                 font-size: 16px;
                 line-height: 2;
                 padding: 15px;
-                width: 300px; 
             }
         }
         .aboutus-button{

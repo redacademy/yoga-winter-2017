@@ -33,7 +33,7 @@ get_header(); ?>
                     </ul>
                     </div>
             </section>
-            <section class="volunteer-yoga">
+            <section class="container-two">
                 <h2 class="h2-holder">Volunteer as a Yoga Instructor</h2>
                 <ol>
                 <?php
