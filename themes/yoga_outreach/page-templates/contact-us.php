@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image hero-text">
                 <h1 class="header-title"><?php the_title(); ?></h1>
-                <p>Yoga Outreach is possible thanks to the dedicated, hard-working team  running the programs.</p>
+                <p>We can be reached at</p>
             </header>
             
             <section class="team">
