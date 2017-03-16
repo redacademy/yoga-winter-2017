@@ -860,13 +860,9 @@ a {
 
 .resources-article-pdf-list-container {
   height: 371px;
-<<<<<<< HEAD
-  background-color: #f4f1ea;
   font-family: 'raleway',sans-serif;
-  font-size: 14px; }
-=======
+  font-size: 14px;
   background-color: black; }
->>>>>>> 355fa73ab5d938509c8d620988f9e674598eb896
 
 .resources-links-container {
   height: 380px; }
