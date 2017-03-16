@@ -6,7 +6,7 @@
  */
  
 get_header(); ?>
-
+ 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image">
@@ -19,7 +19,7 @@ get_header(); ?>
                     <button class="button-holder">Reaching Out with Yoga</button>
                 </div>
             </header><!-- .entry-header -->
-            <section class="volunteer-ops">
+            <section class="container-one">
                 <h2 class="h2-holder">Benefits for Volunteers</h2>
                 <div class = "list-container">
                     <div class = "decorative-line-case"><span class="decorative-line"></span></div>
