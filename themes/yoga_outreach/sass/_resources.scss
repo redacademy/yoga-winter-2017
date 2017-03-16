@@ -15,8 +15,19 @@
 }
 
 .research-h3-container{
+    font-family:'raleway';
     h3{
         margin-top:35px;
+        font-size:24px;
+        margin-bottom:20px;
+    }
+}
+
+.research-h3-container{
+    p{
+        font-size:14px;
+        padding-bottom:22px;
+        width:215px;
     }
 }
 
@@ -29,9 +40,12 @@
 .resources-article-pdf-list-container{
     height:371px;
     background-color:$themecolor_two;
+    font-family:'raleway',sans-serif;
+    font-size:14px; 
 }
 
 .resources-links-container{
     height:380px;
 }
+
 

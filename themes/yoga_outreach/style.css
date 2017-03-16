@@ -844,15 +844,26 @@ a {
   margin: 0 auto;
   text-align: center; }
 
-.research-h3-container h3 {
-  margin-top: 35px; }
+.research-h3-container {
+  font-family: 'raleway'; }
+  .research-h3-container h3 {
+    margin-top: 35px;
+    font-size: 24px;
+    margin-bottom: 20px; }
+
+.research-h3-container p {
+  font-size: 14px;
+  padding-bottom: 22px;
+  width: 215px; }
 
 .list-text-container p {
   display: inline; }
 
 .resources-article-pdf-list-container {
   height: 371px;
-  background-color: #f4f1ea; }
+  background-color: #f4f1ea;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px; }
 
 .resources-links-container {
   height: 380px; }
