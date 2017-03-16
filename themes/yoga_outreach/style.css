@@ -1251,6 +1251,7 @@ p {
         justify-content: center;
     text-transform: uppercase; }
     .home footer form {
+      width: 100%;
       height: 81px;
       background-color: #9FABB7;
       display: -ms-flexbox;
