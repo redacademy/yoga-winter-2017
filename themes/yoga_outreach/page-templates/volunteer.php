@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <header class="entry-header">
+            <header class="entry-header custom-hero-image">
                 <h1 class="header-title"><?php the_title(); ?></h1>
                 <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
                 <div class="button-wrap">
@@ -35,7 +35,17 @@ get_header(); ?>
             </section>
             <section class="volunteer-yoga">
                 <h2 class="h2-holder">Volunteer as a Yoga Instructor</h2>
-                <p></p>
+                <ol>
+                <?php
+                    $fields = CFS()->get( 'volunteer_steps' ); // returns an array of posts
+                        foreach ( $fields as $field ):?>
+                            <div class="volunteer-steps">
+                                <li>
+                                <p class="volunteer-step"><?php echo $field['volunteer_step']; ?></p>
+                                </li>
+                            </div>
+                <?php endforeach; ?>
+                </ol>
                 <div class="button-case-holder"><button class="button-holder">Apply Now</button></div>
             </section>
             <section class="volunteer-community">

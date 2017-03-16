@@ -21,5 +21,34 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 
+//Training Hero Function
+
 //Animating Function on Train Facilities Page
+
+
+/**
+ * Custom hero image styles method
+ *
+ * 
+ */
+function pagetemplate_styles() {
+
+    if(!is_page_template($template = ['page-templates/support.php', 'page-templates/volunteer.php', 'page-templates/partner.php'])){
+        return;
+    }
+	$image = CFS()->get( 'hero_image' );
+
+    if(!$image){
+        return;
+    }
+
+    $hero_css = ".custom-hero-image {
+        background:
+            linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+            url({$image}) no-repeat center bottom;
+        background-size: cover, cover;
+        }"; 
+    wp_add_inline_style( 'red-starter-style', $hero_css );
+}
+add_action( 'wp_enqueue_scripts', 'pagetemplate_styles' );
 
