@@ -25,21 +25,27 @@ get_header(); ?>
 </section>
 <section class="program-list">
     <div class="core-training">
+        <div class="programlist-text">
         <h1>yoga outreach core training™</h1>
         <h4>For yoga instructors</h4>
         <p>Get the skills to build trauma-informed classes.</p>
+        </div>
         <div class="background-accent"></div>
     </div>
     <div class="yoga-atwork">
+        <div class="programlist-text">
         <h1>using yoga in your work™</h1>
         <h4>For facility staff</h4>
         <p>Skills Training for Support Professionals</p>
+        </div>
         <div class="background-accent"></div>
     </div>
     <div class="yoga-foryouth">
+        <div class="programlist-text">
         <h1>yoga tools for youth™</h1>
         <h4>For facility staff</h4>
         <p>Skills for self-care and stress reduction</p>
+        </div>
         <div class="background-accent"></div>
         <div class="accent-line"></div>
     </div>
