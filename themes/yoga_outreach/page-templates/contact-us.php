@@ -25,11 +25,30 @@ get_header(); ?>
 
                 <?php if(!empty($fields)): ?>
                     <?php foreach( $fields as $field ): ?>
-                        <p><?php echo $field['email']; ?></p>
-                        <p><?php echo $field['email_for']; ?></p>
+                        <div class="email-info">
+                            <h4><?php echo $field['email']; ?></h4>
+                            <p><?php echo $field['email_for']; ?></p>
+                        </div>
                     <?php endforeach; ?>
-                <?php endif; ?>
+                <?php endif; ?> 
             </section>
+            
+            <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold email from loop-->    
+
+                <?php if(!empty($fields)): ?>
+                    <?php foreach( $fields as $field ): ?>
+
+                        <div class="info-dropdown">
+                            <h3><?php echo $field['info_title']; ?></h3>
+                            <input type="button" id='hideshow' value="+">
+                        </div>
+                        <div class="info-field"> 
+                            <p><?php echo $field['info_field']; ?></p>
+                        </div>
+
+                    <?php endforeach; ?>
+                <?php endif; ?> 
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
