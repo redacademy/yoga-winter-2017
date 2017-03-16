@@ -33,7 +33,9 @@ add_filter( 'body_class', 'red_starter_body_classes' );
  */
 function pagetemplate_styles() {
 
-    if(!is_page_template($template = ['page-templates/support.php', 'page-templates/volunteer.php', 'page-templates/partner.php'])){
+    $pages = ['page-templates/support.php', 'page-templates/volunteer.php', 'page-templates/partner.php', 'page-templates/about-us.php', 'page-templates/training.php', 'page-templates/core-training.php', 'page-templates/resources-research.php'];
+
+    if(!is_page_template($template = $pages)){
         return;
     }
 	$image = CFS()->get( 'hero_image' );
