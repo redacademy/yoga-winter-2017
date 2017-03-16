@@ -44,7 +44,7 @@ get_header(); ?>
                                 <li>
                                 <p class="volunteer-step"><?php echo $field['volunteer_step']; ?></p>
                                 </li>
-                            </div>
+                            </div> 
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </ol>
