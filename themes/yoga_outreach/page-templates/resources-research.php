@@ -1,15 +1,15 @@
-<?php /* Template Name: Resources Research Mobile ?>
+<?php /* Template Name: Resources Research 
 
 /**
 
  * @package Yoga_Outreach
  */
-
+?>
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<header class = "general-template-section">
-				<h1><?php the_title(); ?></h1>
+				<h1 class ="page-title-header"><?php the_title(); ?></h1>
 				<div class ="general-button-container">
 					<button class = "general-first-button teal-button">Research</button>
 					<button class = "general-second-button grey-button">For Facilities</button>
