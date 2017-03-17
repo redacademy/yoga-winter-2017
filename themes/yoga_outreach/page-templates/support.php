@@ -52,15 +52,18 @@ get_header(); ?>
             <section id="current-sponsor" class="container-one">
                 <h2 class="h2-holder">Our Current Sponsors</h2>
                 <p>Yoga Outreach's past 20 years of community service has only been possible thanks to volunteers and individuals like YOU who donate to support the healing of your community.</p>
-                <h3>Program Sponsors, In-kind & Financial Support</h3>
-                <ul>
-                    <li>Program continuity for students, opportunity to integrate best practices for service yoga settings</li>
-                    <li>Peer networking & community building</li>
-                    <li>Ongoing program support & mentorship opportunities</li>
-                    <li>Continuing education training (access to affordable workshops)</li>
-                    <li>Opportunities to co-teach</li>
-                    <li>Facility screening and liaising with staff handled by us!</li>
-                </ul>
+                <div class="info-dropdown custom-info-container"><h3>Program Sponsors, In-kind & Financial Support</h3><span>+</span></div>
+                    <div class="info-field custom-info-container"><ul>
+                        <?php
+                        $fields = CFS()->get( 'current_sponsors' ); // returns an array of posts
+                            foreach ( $fields as $field ):?>
+                                <div>
+                                    <li>
+                                    <p><?php echo $field['current_sponsor']; ?></p>
+                                    </li>
+                                </div>
+                    <?php endforeach; ?>
+                    </ul></div>
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

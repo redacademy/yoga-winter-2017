@@ -497,6 +497,30 @@ button {
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px; }
 
+.info-dropdown {
+  height: 60px;
+  padding: 15px;
+  background-color: #f4f1ea;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .info-dropdown h3 {
+    font-weight: bold;
+    font-size: 1.3rem; }
+  .info-dropdown span {
+    font-size: 1.8rem; }
+
+.info-field {
+  display: none;
+  height: 100%;
+  padding: 0 15px 20px;
+  background-color: #f4f1ea;
+  font-size: .9rem;
+  font-weight: lighter; }
+
 .page-template-contact-us h1, .page-template-contact-us h2, .page-template-contact-us h3, .page-template-contact-us h4, .page-template-contact-us h5 {
   margin: 0;
   font-family: Raleway;
@@ -1232,6 +1256,8 @@ object {
       height: 200px;
       width: 50%;
       margin: 0 auto; }
+    .page-template-volunteer .site-main .container-one .custom-info-container, .page-template-support .site-main .container-one .custom-info-container, .page-template-partner .site-main .container-one .custom-info-container {
+      background-color: #fff; }
     .page-template-volunteer .site-main .container-one .list-container, .page-template-support .site-main .container-one .list-container, .page-template-partner .site-main .container-one .list-container {
       width: 100%;
       display: -ms-flexbox;
