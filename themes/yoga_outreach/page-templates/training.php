@@ -34,22 +34,16 @@ get_header(); ?>
 				</p>
 			</section>
 			<div class ="testimonal-container">
-				<ul class ="testimonial-list main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+				<ul class ="testimonial-list main-carousel">
 					<?php
 					$testimonials = CFS()->get('testimonial_item');
 					foreach ( $testimonials as $testimonial): ?>
-					<li><?php echo $testimonial ['testimonial'];?></li>
+					<li class ="carousel-cell"><?php echo $testimonial ['testimonial'];?></li>
 					<?php endforeach ?>
 				</ul>
 					
 			</div>
-			<ul class="training-list">
-				<li class="training-list-item">Summary</li>
-				<li class="training-list-item">Poster for Your Workplace</li>
-				<li class="training-list-item">Learning Objectives</li>
-				<li class="training-list-item">Refund Policy</li>
-				<li class="training-list-item">Book a Training Section</li>
-			</ul>
+			<!--Insert list here-->
 			<div class="bottom-button-container">
 				<button class="general-first-button">Book Training</button>
 			</div>

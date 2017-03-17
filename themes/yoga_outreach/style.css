@@ -1101,6 +1101,13 @@ a {
   .testimonial-list li {
     width: 100%; }
 
+.carousel-cell {
+  width: 100%;
+  /* full width */
+  height: 160px;
+  /* height of carousel */
+  margin-right: 10px; }
+
 .page-template-core-training {
   font-family: 'raleway',sans-serif; }
 
@@ -1810,6 +1817,13 @@ object {
   font-size: 12px; }
   .testimonial-list li {
     width: 100%; }
+
+.carousel-cell {
+  width: 100%;
+  /* full width */
+  height: 160px;
+  /* height of carousel */
+  margin-right: 10px; }
 
 .page-template-core-training {
   font-family: 'raleway',sans-serif; }
