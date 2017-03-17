@@ -518,6 +518,106 @@ button {
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px; }
 
+p {
+  margin-bottom: 0;
+  margin: 0; }
+
+#site-navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  height: 80px;
+  -ms-flex-align: center;
+      align-items: center; }
+  #site-navigation .fa-bars {
+    color: #9FABB7;
+    font-size: 2.3rem;
+    padding: 1rem; }
+  #site-navigation .logo-image {
+    width: 90px;
+    padding: 0.5rem 0.8rem; }
+
+footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-transform: uppercase; }
+  footer form {
+    width: 100%;
+    height: 81px;
+    background-color: #9FABB7;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    footer form label {
+      font-size: .7rem;
+      font-family: raleway;
+      color: white;
+      text-transform: uppercase; }
+    footer form .input-bar {
+      font-size: 0;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+      footer form .input-bar #e-news {
+        width: 229px;
+        height: 40px;
+        border: none;
+        border-radius: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px; }
+      footer form .input-bar #submit-button {
+        height: 40px;
+        width: 66px;
+        padding: 0;
+        font-weight: lighter;
+        text-shadow: none;
+        text-transform: uppercase;
+        color: #4A4A4A;
+        background-color: #C1D3DA;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px; }
+  footer .siteinfo-text {
+    margin-top: 50px; }
+  footer p {
+    margin: 0;
+    font-size: 14px; }
+  footer .socialmedia-icons {
+    color: #9FABB7;
+    font-size: 1.2rem; }
+    footer .socialmedia-icons ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      footer .socialmedia-icons ul li {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 20px 10px 20px 10px;
+        border: 1.5px solid #9FABB7;
+        border-radius: 50%;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  footer .copyright {
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 14px; }
+
 .info-dropdown {
   height: 60px;
   padding: 15px;
@@ -1414,10 +1514,6 @@ ol {
   .partners-container h3 {
     width: 85%; }
 
-p {
-  margin-bottom: 0;
-  margin: 0; }
-
 .home {
   text-align: center;
   font-family: raleway;
@@ -1434,21 +1530,6 @@ p {
   .home h4 {
     text-transform: uppercase;
     font-weight: normal; }
-  .home #site-navigation {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    height: 80px;
-    -ms-flex-align: center;
-        align-items: center; }
-    .home #site-navigation .fa-bars {
-      color: #9FABB7;
-      font-size: 2.3rem;
-      padding: 1rem; }
-    .home #site-navigation .logo-image {
-      width: 90px;
-      padding: 0.5rem 0.8rem; }
   .home .hero-banner {
     display: -ms-flexbox;
     display: flex;
@@ -1566,85 +1647,6 @@ p {
     .home .thankyou p {
       font-size: 1.5rem;
       padding: 0 20px 20px 30px; }
-  .home footer {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    text-transform: uppercase; }
-    .home footer form {
-      width: 100%;
-      height: 81px;
-      background-color: #9FABB7;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-      .home footer form label {
-        font-size: .7rem;
-        font-family: raleway;
-        color: white;
-        text-transform: uppercase; }
-      .home footer form .input-bar {
-        font-size: 0;
-        display: -ms-inline-flexbox;
-        display: inline-flex; }
-        .home footer form .input-bar #e-news {
-          width: 229px;
-          height: 40px;
-          border: none;
-          border-radius: 0;
-          border-top-left-radius: 4px;
-          border-bottom-left-radius: 4px; }
-        .home footer form .input-bar #submit-button {
-          height: 40px;
-          width: 66px;
-          padding: 0;
-          font-weight: lighter;
-          text-shadow: none;
-          text-transform: uppercase;
-          color: #4A4A4A;
-          background-color: #C1D3DA;
-          border: none;
-          box-shadow: none;
-          border-radius: 0;
-          border-top-right-radius: 4px;
-          border-bottom-right-radius: 4px; }
-    .home footer .siteinfo-text {
-      margin-top: 50px; }
-    .home footer p {
-      margin: 0;
-      font-size: 14px; }
-    .home footer .socialmedia-icons {
-      color: #9FABB7;
-      font-size: 1.2rem; }
-      .home footer .socialmedia-icons ul {
-        list-style: none;
-        margin: 0;
-        padding: 0; }
-        .home footer .socialmedia-icons ul li {
-          display: inline-block;
-          width: 40px;
-          height: 40px;
-          margin: 20px 10px 20px 10px;
-          border: 1.5px solid #9FABB7;
-          border-radius: 50%;
-          display: -ms-inline-flexbox;
-          display: inline-flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    .home footer .copyright {
-      text-transform: capitalize;
-      padding: 10px;
-      font-size: 14px; }
 
 .clearfix:after {
   visibility: hidden;
