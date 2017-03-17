@@ -19,11 +19,15 @@ get_header(); ?>
                     <button class="button-holder"><a href="#current-sponsor" class="button">Current Sponsor</a></button>
                 </div>
             </header><!-- .entry-header -->
-            <section class="volunteer-ops">
-                <h2 class="h2-holder">Benefits for Volunteers</h2>
-                <div class = "list-container">
-                    <div class = "decorative-line-case"><span class="decorative-line"></span></div>
-                </div>
+            <section class="main-carousel">
+                    <?php
+                    $fields = CFS()->get( 'donation_levels' ); // returns an array of posts
+                    foreach ( $fields as $field ):?>
+                        <div class="carousel-cell">
+                            <h1><?php echo $field['donation_level']; ?></h1>
+                            <p><?php echo $field['donation_description']; ?></p>
+                        </div>
+                    <?php endforeach; ?>
             </section>
             <section id="donate" class="container-one">
                 <h2 class="h2-holder">Donate</h2>
