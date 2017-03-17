@@ -34,7 +34,7 @@ get_header(); ?>
 				</p>
 			</section>
 			<div class ="testimonal-container">
-				<ul class ="testimonial-list">
+				<ul class ="testimonial-list main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
 					<?php
 					$testimonials = CFS()->get('testimonial_item');
 					foreach ( $testimonials as $testimonial): ?>
