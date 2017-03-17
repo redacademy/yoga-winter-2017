@@ -39,7 +39,19 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/images/earth_icon.svg" class = "earth-logo" alt = "earth_icon">
 				<h3><?php echo CFS()->get('training_date_header'); ?></h3>
 			</div>
+			<ul class ="training-list-header">
+				<?php $dates = CFS()->get('date_container');?>
+				<?php foreach ($dates as $date):?>
+				<li>
+					<p class ="training-date-text">Date<span><?php echo $date ['training_date'];?></span></p>
+					<p class ="training-date-text">Price<span><?php echo $date ['training_price'];?></span></p>
+				</li>
+				<?php endforeach ?>
+			</ul>
+				<p>Now you can take the training online in an eight week format.</p>
+				<p>This 8 week online training is comprised of weekly videos, reading, assignments and online interaction. Each week is a new section and will build on the previous . . .</p>
 			</section>
+			
 			<ul class = "training-list">
 				<li class="training-list-item">Learning Objectives</li>
 				<li class="training-list-item">Work-study Option for up to 50% off tuition</li>
