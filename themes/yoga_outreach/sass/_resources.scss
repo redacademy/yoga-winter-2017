@@ -9,14 +9,12 @@
         width:290px;
         margin: 0 auto;
         text-align: center;
-
-
     }
 }
 
 .research-h3-container{
     font-family:'raleway';
-    h3{
+        h3{
         margin-top:35px;
         font-size:24px;
         margin-bottom:20px;
@@ -39,17 +37,83 @@
 
 .resources-article-pdf-list-container{
     height:371px;
-<<<<<<< HEAD
-    background-color:$themecolor_two;
+    background-color:$lighttheme_color;
     font-family:'raleway',sans-serif;
-    font-size:14px; 
-=======
-    background-color:black;
->>>>>>> 355fa73ab5d938509c8d620988f9e674598eb896
+    font-size:14px;
+    } 
+
+// PDF List
+ 
+ 
+ .resource-pdf-list{
+    list-style:none;
+    padding:0;
+    margin-left:0;
+        li{
+            display:flex;
+                a{
+                    background-color:white;
+                    width:60px;
+                    height:33px;
+                    margin-bottom:7px;
+                    border:1px solid white;
+                    border-radius:8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration:none;
+                    font-family:'raleway',sans-serif;
+                }
+        }
 }
+
+.pdf-item{
+    p{
+        margin-left:14px;
+        color:$darktheme_color;
+        font-family:'raleway'sans-serif;
+        font-weight:300;
+    }
+}
+
+//Links
 
 .resources-links-container{
     height:380px;
+        div{
+            display:flex;
+            justify-content:space-between;
+                button{
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    padding: 0;
+                    border: none;
+                    background: none;
+                    box-shadow: none;
+                    color: #95AFC9;
+                }
+        }
 }
 
+.link-list{
+    padding:0;
+    margin:0;
+    list-style:none;
+        li{
+            margin-bottom:7px;
+            font-family:'raleway',sans-serif;
+            font-weight:500;
+            color:$lighttext_color;
+        }
+}
 
+.link-list{
+    p{
+        color:$darktheme_color;
+        font-family:'raleway',sans-serif;
+        font-size:14px;
+        width:14rem;
+        padding-bottom:15px;
+    }
+}
+ 

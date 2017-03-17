@@ -710,7 +710,7 @@ a {
   width: 100%;
   top: 316px; }
 
-.general-first-button, .general-second-button, .book-training-button {
+.general-button, .book-training-button {
   width: 230px;
   height: 44px;
   display: block;
@@ -860,16 +860,71 @@ a {
 
 .resources-article-pdf-list-container {
   height: 371px;
-<<<<<<< HEAD
   background-color: #f4f1ea;
   font-family: 'raleway',sans-serif;
   font-size: 14px; }
-=======
-  background-color: black; }
->>>>>>> 355fa73ab5d938509c8d620988f9e674598eb896
+
+.resource-pdf-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 0; }
+  .resource-pdf-list li {
+    display: -ms-flexbox;
+    display: flex; }
+    .resource-pdf-list li a {
+      background-color: white;
+      width: 60px;
+      height: 33px;
+      margin-bottom: 7px;
+      border: 1px solid white;
+      border-radius: 8px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      text-decoration: none;
+      font-family: 'raleway',sans-serif; }
+
+.pdf-item p {
+  margin-left: 14px;
+  color: #4a4a4a;
+  font-family: 'raleway'sans-serif;
+  font-weight: 300; }
 
 .resources-links-container {
   height: 380px; }
+  .resources-links-container div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .resources-links-container div button {
+      font-size: 2rem;
+      font-weight: lighter;
+      padding: 0;
+      border: none;
+      background: none;
+      box-shadow: none;
+      color: #95AFC9; }
+
+.link-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .link-list li {
+    margin-bottom: 7px;
+    font-family: 'raleway',sans-serif;
+    font-weight: 500;
+    color: #6b747d; }
+
+.link-list p {
+  color: #4a4a4a;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  width: 14rem;
+  padding-bottom: 15px; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -1344,7 +1399,7 @@ p {
   width: 100%;
   top: 316px; }
 
-.general-first-button, .general-second-button, .book-training-button {
+.general-button, .book-training-button {
   width: 230px;
   height: 44px;
   display: block;
