@@ -13,24 +13,24 @@ get_header(); ?>
                 <h1 class="header-title"><?php the_title(); ?></h1>
                 <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
                 <div>
-                    <button class="button-holder">What We Provide</button>
-                    <button class="button-holder">A Facility Perspective</button>
-                    <button class="button-holder">Receive your Program</button>
-                    <button class="button-holder">Our Current Partners</button>
+                    <button class="button-holder"><a href="#provide" class="button">What We Provide</a></button>
+                    <button class="button-holder"><a href="#perspective" class="button">A Facility Perspective</a></button>
+                    <button class="button-holder"><a href="#program" class="button">Receive your Program</a></button>
+                    <button class="button-holder"><a href="#partners" class="button">Our Current Partners</a></button>
                 </div>
             </header><!-- .entry-header -->
-            <section class="container-one">
+            <section id="provide" class="container-one">
                 <h2 class="h2-holder">What We Provide</h2>
                 <p><?php echo CFS()->get( 'what_we_provide' ); ?></p>
                 <h3>Apply for Partnership</h3>
                 <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
                 <div class="button-wrap"><button class="button-holder">Apply Now</button></div>  
             </section>
-            <section class="container-two">
+            <section id="perspective" class="container-two">
                 <h2 class="h2-holder">A Facility Perspective</h2>
                 <img src="<?php echo CFS()->get( 'facility_video' ); ?>" />
             </section>
-            <section class="container-one partner-facility">
+            <section id="program" class="container-one partner-facility">
                 <h2 class="h2-holder">Receive yoga for Outreach Programming</h2>
                 <div class = "interested-facility">
                     <h3> Interested in having a yoga program at your facility?</h3>
@@ -49,7 +49,7 @@ get_header(); ?>
                 </div>
                 <div class="button-wrap"><button class="button-holder">Apply Now</button></div>
             </section>
-            <section class="container-three">
+            <section id="partners" class="container-three">
                 <h2 class="h2-holder">Our Current Partners</h2>
                 <div class = "partners-container">
                     <h3>Current Facility Partners</h3>
