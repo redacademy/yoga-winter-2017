@@ -1,8 +1,3 @@
-.button-container{
-    background-color: $mainbutton_color;
-    color: $basetext_color;
-}
-
 .page-template-volunteer, .page-template-support, .page-template-partner {
     .site-main {
         display: flex;
@@ -14,16 +9,18 @@
         font-family: raleway, arial;
         font-weight: lighter;
         color: $lighttext_color;
+        .button-wrap{
+            display: flex;
+            flex-direction: column;
+            height: 10%;
+            padding: 10px;
+            background-color: $darktheme_color;
+        }
         .entry-header{
             width: 100vw;
             height: 100vh;
             top: 0;
             color: $basetext_color;
-            .button-wrap{
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-            }
         }
         header, section{width: 100%;}
 
@@ -42,7 +39,7 @@
                     width: 25%;
                     height: 90%;
                     border-radius: 30px;
-                    background-color: red;
+                    background-color: $accentcolor_bar2;
                 }
             }
             ul{
@@ -55,19 +52,17 @@
             h2{
                 color: $darktext_color;
             }
-            .button-case-holder{
-                background-color: lightblue;
-                margin-bottom: 5%;
-            }
         }
-        .volunteer-community{
-            background-color: lightpink;
+        .container-three{
+            background-color: $accentcolor_box;
         }
-        .volunteer-advisor{
-            background-color: lightyellow;
+        .container-four{
+            background-color: $accentcolor_bar2;
         }
-        .volunteer-opportun{
-            background-color: lightgreen;
+        .container-tshirt{
+        background: url("../../images/tshirt_mobile.png") no-repeat center bottom;
+        background-size: cover, cover;
+        color: $basetext_color;
         }
     }
 }
