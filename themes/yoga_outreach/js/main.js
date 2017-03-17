@@ -1,5 +1,9 @@
-(function($){
-    $('#hideshow').live('click', function() {
-        $('.info-field').toggle('show');
-    });
-})(jQuery);
+$('.info-dropdown').click(function () {
+    if ($(this).next('.info-field').is(':hidden')) {
+        $(this).next('.info-field').slideDown('slow');
+        $(this).children('span').text('-');
+    } else {
+        $(this).next('.info-field').slideUp('slow');
+        $(this).children('span').text('+');
+    }
+})(jQuery); 
