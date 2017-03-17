@@ -923,16 +923,30 @@ a {
 
 .earth-logo {
   width: 26px;
-  height: 26px; }
+  height: 26px;
+  margin-right: 9px; }
 
 .avail-online-heading-container {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 15px; }
   .avail-online-heading-container h3 {
     margin: 0;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 1000; }
+    font-weight: bold; }
+
+.light-training-para {
+  color: #6B747D;
+  font-size: 14px;
+  line-height: 2; }
+
+.dark-training-para {
+  color: #4A4A4A;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 35px; }
 
 .page-template-resources-research {
   font-family: 'raleway',sans-serif; }
@@ -1007,7 +1021,7 @@ a {
       border: none;
       background: none;
       box-shadow: none;
-      color: #95AFC9; }
+      color: #95afc9; }
 
 .link-list {
   padding: 0;
@@ -1023,6 +1037,9 @@ a {
   font-size: 14px;
   width: 14rem;
   padding-bottom: 15px; }
+
+.small-para:nth-child(2) {
+  margin-bottom: 20px; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -1626,13 +1643,27 @@ p {
 
 .earth-logo {
   width: 26px;
-  height: 26px; }
+  height: 26px;
+  margin-right: 9px; }
 
 .avail-online-heading-container {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 15px; }
   .avail-online-heading-container h3 {
     margin: 0;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 1000; }
+    font-weight: bold; }
+
+.light-training-para {
+  color: #6B747D;
+  font-size: 14px;
+  line-height: 2; }
+
+.dark-training-para {
+  color: #4A4A4A;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 35px; }
