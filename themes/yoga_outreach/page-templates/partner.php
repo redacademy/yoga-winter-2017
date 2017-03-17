@@ -22,9 +22,11 @@ get_header(); ?>
             <section id="provide" class="container-one">
                 <h2 class="h2-holder">What We Provide</h2>
                 <p><?php echo CFS()->get( 'what_we_provide' ); ?></p>
-                <h3>Apply for Partnership</h3>
-                <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
-                <div class="button-wrap"><button class="button-holder">Apply Now</button></div>  
+                <div class="info-dropdown custom-info-container"><h3>Apply for Partnership</h3><span>+</span></div>
+                <div class="info-field custom-info-container">
+                    <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
+                    <div class="button-wrap"><button class="button-holder">Apply Now</button></div>
+                </div>
             </section>
             <section id="perspective" class="container-two">
                 <h2 class="h2-holder">A Facility Perspective</h2>
@@ -52,8 +54,8 @@ get_header(); ?>
             <section id="partners" class="container-three">
                 <h2 class="h2-holder">Our Current Partners</h2>
                 <div class = "partners-container">
-                    <h3>Current Facility Partners</h3>
-                    <ul>
+                    <div class="info-dropdown"><h3>Current Facility Partners</h3><span>+</span></div>
+                    <div class="info-field"><ul>
                         <?php
                         $fields = CFS()->get( 'current_partners' ); // returns an array of posts
                             foreach ( $fields as $field ):?>
@@ -63,9 +65,9 @@ get_header(); ?>
                                     </li>
                                 </div>
                     <?php endforeach; ?>
-                    </ul>
-                    <h3>Affiliate Programs</h3>
-                    <ul>
+                    </ul></div>
+                    <div class="info-dropdown"><h3>Affiliate Programs</h3><span>+</span></div>
+                    <div class="info-field"><ul>
                         <?php
                         $fields = CFS()->get( 'affiliate_programs' ); // returns an array of posts
                             foreach ( $fields as $field ):?>
@@ -75,9 +77,9 @@ get_header(); ?>
                                     </li>
                                 </div>
                     <?php endforeach; ?>
-                    </ul>
-                    <h3>Past Programs Partners</h3>
-                    <ul>
+                    </ul></div>
+                    <div class="info-dropdown"><h3>Past Programs Partners</h3><span>+</span></div>
+                    <div class="info-field"><ul>
                         <?php
                         $fields = CFS()->get( 'past_program_partners' ); // returns an array of posts
                             foreach ( $fields as $field ):?>
@@ -87,7 +89,7 @@ get_header(); ?>
                                     </li>
                                 </div>
                     <?php endforeach; ?>
-                    </ul>
+                    </ul></div>
                 </div>
             </section>
 		</main><!-- #main -->
