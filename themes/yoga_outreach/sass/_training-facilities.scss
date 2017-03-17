@@ -10,17 +10,21 @@
   height: 0;
 }
 
+.page-template-training{
+	font-family:'raleway',sans-serif;
+}
+
 .entry-title{
 	text-align:center;
     color:white;
     padding-top:49px;
-	font-family:'raleway',sans-serif;
 	font-weight:500;
 }
 
 .page-title-header{
 		text-align:center;
         color:white;
+		padding-top:66px;
 	}
 .teal-button{
 	background-color:#6CFFFE;
@@ -30,6 +34,13 @@
 .grey-button{
 	background-color:#94BFD1;
 
+}
+
+.heading-subtitle{
+	color: white;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .general-template-section{
@@ -59,7 +70,6 @@
     color:white;
 	border-radius:8px;
 	border:none;
-	font-family:'raleway',sans-serif;
 	font-size:14px;
 }
 
@@ -88,7 +98,6 @@
 	border-bottom: 2px solid #4A4A4A;
 	padding-bottom:16px;
 	font-size:20px;
-	font-family:'raleway',sans-serif;
 	color: black;
 	font-weight:600;
 }

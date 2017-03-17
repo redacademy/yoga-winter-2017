@@ -9,7 +9,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<header class = "general-template-section custom-hero-image">
-				<?php the_title(); ?>
+				<h1 class ="page-title-header">
+					<?php the_title(); ?>
+				</h1>
+				<p class ="heading-subtitle"><?php echo CFS()->get('page_subtitle'); ?>
 				<div class ="general-button-container">
 					<button class = "general-button grey-button">Core Training</button>
 					<button class = "general-button teal-button button-black-text">For Facilities</button>
