@@ -26,8 +26,8 @@ get_header(); ?>
                 <?php if(!empty($fields)): ?>
                     <?php foreach( $fields as $field ): ?>
                         <div class="email-info">
-                            <h4><?php echo $field['email']; ?></h4>
-                            <p><?php echo $field['email_for']; ?></p>
+                            <h4><?php echo $field['email_for']; ?></h4>
+                            <p><?php echo $field['email']; ?></p>
                         </div>
                     <?php endforeach; ?>
                 <?php endif; ?> 
