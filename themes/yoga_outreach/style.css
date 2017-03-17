@@ -367,6 +367,22 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px; }
+
 .page-template-about-us {
   width: 100%;
   text-align: center;
@@ -1024,10 +1040,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.button-container {
-  background-color: #94bfd1;
-  color: #fff; }
-
 .page-template-volunteer .site-main, .page-template-support .site-main, .page-template-partner .site-main {
   display: -ms-flexbox;
   display: flex;
@@ -1042,17 +1054,19 @@ object {
   font-family: raleway, arial;
   font-weight: lighter;
   color: #6b747d; }
+  .page-template-volunteer .site-main .button-wrap, .page-template-support .site-main .button-wrap, .page-template-partner .site-main .button-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 10%;
+    padding: 10px;
+    background-color: #4a4a4a; }
   .page-template-volunteer .site-main .entry-header, .page-template-support .site-main .entry-header, .page-template-partner .site-main .entry-header {
     width: 100vw;
     height: 100vh;
     top: 0;
     color: #fff; }
-    .page-template-volunteer .site-main .entry-header .button-wrap, .page-template-support .site-main .entry-header .button-wrap, .page-template-partner .site-main .entry-header .button-wrap {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      padding: 10px; }
   .page-template-volunteer .site-main header, .page-template-volunteer .site-main section, .page-template-support .site-main header, .page-template-support .site-main section, .page-template-partner .site-main header, .page-template-partner .site-main section {
     width: 100%; }
   .page-template-volunteer .site-main .container-one, .page-template-support .site-main .container-one, .page-template-partner .site-main .container-one {
@@ -1073,7 +1087,7 @@ object {
         width: 25%;
         height: 90%;
         border-radius: 30px;
-        background-color: red; }
+        background-color: #cce8ea; }
     .page-template-volunteer .site-main .container-one ul, .page-template-support .site-main .container-one ul, .page-template-partner .site-main .container-one ul {
       width: 90%;
       margin: 0; }
@@ -1081,15 +1095,14 @@ object {
     background-color: #95afc9; }
     .page-template-volunteer .site-main .container-two h2, .page-template-support .site-main .container-two h2, .page-template-partner .site-main .container-two h2 {
       color: #4a4a4a; }
-    .page-template-volunteer .site-main .container-two .button-case-holder, .page-template-support .site-main .container-two .button-case-holder, .page-template-partner .site-main .container-two .button-case-holder {
-      background-color: lightblue;
-      margin-bottom: 5%; }
-  .page-template-volunteer .site-main .volunteer-community, .page-template-support .site-main .volunteer-community, .page-template-partner .site-main .volunteer-community {
-    background-color: lightpink; }
-  .page-template-volunteer .site-main .volunteer-advisor, .page-template-support .site-main .volunteer-advisor, .page-template-partner .site-main .volunteer-advisor {
-    background-color: lightyellow; }
-  .page-template-volunteer .site-main .volunteer-opportun, .page-template-support .site-main .volunteer-opportun, .page-template-partner .site-main .volunteer-opportun {
-    background-color: lightgreen; }
+  .page-template-volunteer .site-main .container-three, .page-template-support .site-main .container-three, .page-template-partner .site-main .container-three {
+    background-color: #f3f0e9; }
+  .page-template-volunteer .site-main .container-four, .page-template-support .site-main .container-four, .page-template-partner .site-main .container-four {
+    background-color: #cce8ea; }
+  .page-template-volunteer .site-main .container-tshirt, .page-template-support .site-main .container-tshirt, .page-template-partner .site-main .container-tshirt {
+    background: url("../../images/tshirt_mobile.png") no-repeat center bottom;
+    background-size: cover, cover;
+    color: #fff; }
 
 /* Volunteer */
 ol {
