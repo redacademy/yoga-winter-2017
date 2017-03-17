@@ -26,7 +26,7 @@ get_header(); ?>
                 <?php if(!empty($fields)): ?>
                     <?php foreach( $fields as $field ): ?>
                         <div class="email-info">
-                            <h4><?php echo $field['email_for']; ?></h4>
+                            <h5><?php echo $field['email_for']; ?></h5>
                             <p><?php echo $field['email']; ?></p>
                         </div>
                     <?php endforeach; ?>
@@ -50,6 +50,4 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
