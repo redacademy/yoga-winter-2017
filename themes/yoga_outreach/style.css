@@ -491,12 +491,14 @@ button {
         border-bottom-right-radius: 4px; }
 
 .page-template-contact-us h1, .page-template-contact-us h2, .page-template-contact-us h3, .page-template-contact-us h4 {
-  margin: 0; }
+  margin: 0;
+  font-family: Raleway;
+  font-weight: 300; }
 
 .page-template-contact-us .hero-text {
   height: 300px;
   width: 100%;
-  padding: 50px 10px 0 10px;
+  padding: 66px 10px 0 10px;
   color: #fff;
   background-color: #95AFC9;
   font-family: Raleway;
@@ -507,9 +509,29 @@ button {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+  .page-template-contact-us .hero-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 50px; }
+  .page-template-contact-us .hero-text .hero-phone {
+    font-size: 2rem; }
 
-.page-template-contact-us .email-inquiries .email-info {
-  padding: 10px 15px; }
+.page-template-contact-us .email-inquiries {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 40px 15px;
+  color: #6b747d; }
+  .page-template-contact-us .email-inquiries .email-info {
+    width: 100%; }
+  .page-template-contact-us .email-inquiries h2 {
+    font-size: 1.5rem;
+    padding-bottom: 15px; }
+  .page-template-contact-us .email-inquiries p {
+    font-size: .9rem;
+    padding-bottom: 8px; }
 
 .page-template-contact-us .info-dropdown {
   height: 100%;
