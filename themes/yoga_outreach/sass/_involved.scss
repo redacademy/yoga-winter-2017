@@ -26,6 +26,13 @@
 
         .container-one{
             background-color: $base_color;
+
+            .contributor{
+                background-color: $lighttext_color;
+                height: 200px;
+                width: 50%;
+                margin: 0 auto;
+            }
             .list-container{
                 width: 100%;
                 display: flex;

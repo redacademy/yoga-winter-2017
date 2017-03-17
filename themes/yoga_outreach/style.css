@@ -1038,14 +1038,14 @@ a {
   font-weight: 300;
   font-size: 14px; }
 
-.resources-links-container {
+.pdf-item .resources-links-container {
   height: 380px; }
-  .resources-links-container div {
+  .pdf-item .resources-links-container div {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    .resources-links-container div button {
+    .pdf-item .resources-links-container div button {
       font-size: 2rem;
       font-weight: lighter;
       padding: 0;
@@ -1054,16 +1054,16 @@ a {
       box-shadow: none;
       color: #95afc9; }
 
-.link-list {
+.pdf-item .link-list {
   padding: 0;
   margin: 0;
   list-style: none; }
-  .link-list li {
+  .pdf-item .link-list li {
     margin-bottom: 7px;
     font-weight: 500;
     color: #6b747d; }
 
-.link-list p {
+.pdf-item .link-list p {
   color: #4a4a4a;
   font-size: 14px;
   width: 14rem;
@@ -1218,6 +1218,11 @@ object {
     width: 100%; }
   .page-template-volunteer .site-main .container-one, .page-template-support .site-main .container-one, .page-template-partner .site-main .container-one {
     background-color: #fff; }
+    .page-template-volunteer .site-main .container-one .contributor, .page-template-support .site-main .container-one .contributor, .page-template-partner .site-main .container-one .contributor {
+      background-color: #6b747d;
+      height: 200px;
+      width: 50%;
+      margin: 0 auto; }
     .page-template-volunteer .site-main .container-one .list-container, .page-template-support .site-main .container-one .list-container, .page-template-partner .site-main .container-one .list-container {
       width: 100%;
       display: -ms-flexbox;
