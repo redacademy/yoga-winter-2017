@@ -367,7 +367,23 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
-.page-template-about-us {
+button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px; }
+
+.page-template-who-we-are {
   width: 100%;
   text-align: center;
   display: -ms-flexbox;
@@ -376,9 +392,11 @@ table {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center; }
-  .page-template-about-us h1 {
-    display: none; }
-  .page-template-about-us .hero-text {
+  .page-template-who-we-are h1, .page-template-who-we-are h2, .page-template-who-we-are h3, .page-template-who-we-are h4 {
+    margin: 0;
+    font-family: Raleway;
+    font-weight: 300; }
+  .page-template-who-we-are .hero-text {
     height: 300px;
     width: 100%;
     padding: 50px 10px 0 10px;
@@ -392,47 +410,52 @@ table {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column; }
-  .page-template-about-us .team {
+  .page-template-who-we-are .team {
     max-width: 100%;
     padding: 15px;
     font-family: Raleway;
     font-weight: lighter;
     color: #6B747D; }
-  .page-template-about-us .staff {
-    font-weight: bold;
-    position: relative;
-    color: #4A4A4A; }
-    .page-template-about-us .staff span {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-      .page-template-about-us .staff span button {
-        font-size: 2rem;
-        font-weight: lighter;
-        padding: 0;
-        border: none;
-        background: none;
-        box-shadow: none;
-        color: #95AFC9; }
-    .page-template-about-us .staff .circle {
-      height: 160px;
-      width: 160px;
-      border-radius: 50%;
-      background-color: #9fabb7;
-      margin: 0 auto; }
-    .page-template-about-us .staff p {
+  .page-template-who-we-are .info-dropdown {
+    height: 100%;
+    background-color: lightblue;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .page-template-who-we-are .info-dropdown #hideshow {
+      border: none;
+      border-radius: 0;
+      background: none;
+      box-shadow: none;
+      height: 50px;
+      padding: 0; }
+    .page-template-who-we-are .info-dropdown h3 {
+      text-transform: capitalize;
       font-weight: normal; }
-    .page-template-about-us .staff .accent-name-shape {
-      height: 25px;
-      width: 250px;
-      border-radius: 8px;
-      background-color: #CBE8EA;
-      position: absolute;
-      right: 87px;
-      bottom: -12px;
-      z-index: -1; }
-  .page-template-about-us form {
+  .page-template-who-we-are .info-field {
+    height: 200px;
+    background-color: #f4f1ea; }
+  .page-template-who-we-are .staff .circle {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: #9fabb7;
+    margin: 0 auto; }
+  .page-template-who-we-are .staff p {
+    font-weight: normal; }
+  .page-template-who-we-are .staff .accent-name-shape {
+    height: 25px;
+    width: 250px;
+    border-radius: 8px;
+    background-color: #CBE8EA;
+    position: absolute;
+    right: 87px;
+    bottom: -12px;
+    z-index: -1; }
+  .page-template-who-we-are form {
     height: 81px;
     background-color: #9FABB7;
     display: -ms-flexbox;
@@ -443,23 +466,23 @@ table {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center; }
-    .page-template-about-us form label {
+    .page-template-who-we-are form label {
       font-size: .7rem;
       font-family: Raleway;
       color: white;
       text-transform: uppercase; }
-    .page-template-about-us form .input-bar {
+    .page-template-who-we-are form .input-bar {
       font-size: 0;
       display: -ms-inline-flexbox;
       display: inline-flex; }
-      .page-template-about-us form .input-bar #e-news {
+      .page-template-who-we-are form .input-bar #e-news {
         width: 229px;
         height: 40px;
         border: none;
         border-radius: 0;
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px; }
-      .page-template-about-us form .input-bar #submit-button {
+      .page-template-who-we-are form .input-bar #submit-button {
         height: 40px;
         width: 66px;
         padding: 0;
@@ -473,6 +496,127 @@ table {
         border-radius: 0;
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px; }
+
+.info-dropdown {
+  height: 60px;
+  padding: 15px;
+  background-color: #f4f1ea;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .info-dropdown h3 {
+    font-weight: bold;
+    font-size: 1.3rem; }
+  .info-dropdown span {
+    font-size: 1.8rem; }
+
+.info-field {
+  display: none;
+  height: 100%;
+  padding: 0 15px 20px;
+  background-color: #f4f1ea;
+  font-size: .9rem;
+  font-weight: lighter; }
+
+.page-template-contact-us h1, .page-template-contact-us h2, .page-template-contact-us h3, .page-template-contact-us h4, .page-template-contact-us h5 {
+  margin: 0;
+  font-family: Raleway;
+  font-weight: 300; }
+
+.page-template-contact-us .hero-text {
+  height: 300px;
+  width: 100%;
+  padding: 66px 10px 0 10px;
+  color: #fff;
+  background-color: #95AFC9;
+  font-family: Raleway;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .page-template-contact-us .hero-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 50px; }
+  .page-template-contact-us .hero-text .hero-phone {
+    font-size: 2rem; }
+
+.page-template-contact-us .email-inquiries {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 40px 15px 10px;
+  color: #6b747d; }
+  .page-template-contact-us .email-inquiries h2 {
+    font-size: 1.5rem;
+    padding-bottom: 21px; }
+  .page-template-contact-us .email-inquiries p {
+    font-size: .9rem;
+    padding-bottom: 8px; }
+  .page-template-contact-us .email-inquiries a {
+    width: 230px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    background-color: #6B747D;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 54px; }
+  .page-template-contact-us .email-inquiries .email-info {
+    width: 100%; }
+    .page-template-contact-us .email-inquiries .email-info h5 {
+      text-transform: uppercase;
+      font-weight: bold; }
+    .page-template-contact-us .email-inquiries .email-info p {
+      font-size: 0.9rem;
+      font-weight: lighter;
+      padding-bottom: 20px; }
+
+.page-template-contact-us .info-dropdown {
+  padding: 20px 15px;
+  height: 100%;
+  background-color: #f4f1ea;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .page-template-contact-us .info-dropdown #hideshow {
+    border: none;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    height: 50px;
+    padding: 0; }
+  .page-template-contact-us .info-dropdown h3 {
+    font-weight: bold;
+    font-size: 1.2rem; }
+
+.page-template-contact-us .info-field {
+  padding: 0 15px;
+  display: none;
+  height: 100%;
+  background-color: #f4f1ea; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -675,6 +819,12 @@ a {
   content: "";
   display: table; }
 
+.page-template-training-main {
+  font-family: 'raleway',sans-serif; }
+
+.training-para-left {
+  text-align: left; }
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -683,22 +833,31 @@ a {
   clear: both;
   height: 0; }
 
+.page-template-training {
+  font-family: 'raleway',sans-serif; }
+
 .entry-title {
   text-align: center;
   color: white;
   padding-top: 49px;
-  font-family: 'raleway',sans-serif;
   font-weight: 500; }
 
 .page-title-header {
   text-align: center;
-  color: white; }
+  color: white;
+  padding-top: 66px; }
 
 .teal-button {
   background-color: #6CFFFE; }
 
 .grey-button {
   background-color: #94BFD1; }
+
+.heading-subtitle {
+  color: white;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto; }
 
 .general-template-section {
   height: 400px;
@@ -710,7 +869,7 @@ a {
   width: 100%;
   top: 316px; }
 
-.general-first-button, .general-second-button, .book-training-button {
+.general-button, .book-training-button {
   width: 230px;
   height: 44px;
   display: block;
@@ -723,8 +882,13 @@ a {
   color: white;
   border-radius: 8px;
   border: none;
-  font-family: 'raleway',sans-serif;
   font-size: 14px; }
+
+.general-first-button.teal-button {
+  background-color: #6CFFFE; }
+
+.general-second-button.grey-button {
+  background-color: #94BFD1; }
 
 .button-black-text {
   color: black; }
@@ -742,7 +906,6 @@ a {
   border-bottom: 2px solid #4A4A4A;
   padding-bottom: 16px;
   font-size: 20px;
-  font-family: 'raleway',sans-serif;
   color: black;
   font-weight: 600; }
 
@@ -803,11 +966,8 @@ a {
   background-color: #fff;
   color: #4A4A4A; }
 
-.general-first-button.teal-button {
-  background-color: #6CFFFE; }
-
-.general-second-button.grey-button {
-  background-color: #94BFD1; }
+.page-template-core-training {
+  font-family: 'raleway',sans-serif; }
 
 .section-15px-padding {
   padding: 0 15px; }
@@ -825,47 +985,125 @@ a {
   line-height: 24px;
   margin-top: 39px; }
 
+.earth-logo {
+  width: 26px;
+  height: 26px;
+  margin-right: 9px; }
+
 .avail-online-heading-container {
   display: -ms-flexbox;
-  display: flex; }
-  .avail-online-heading-container .avail-online-h3 {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 15px; }
+  .avail-online-heading-container h3 {
     margin: 0;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: 'raleway';
-    font-weight: 1000; }
+    font-weight: bold; }
+
+.light-training-para {
+  color: #6B747D;
+  font-size: 14px;
+  line-height: 2; }
+
+.dark-training-para {
+  color: #4A4A4A;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 35px; }
+
+.page-template-resources-research {
+  font-family: 'raleway',sans-serif; }
 
 .general-first-button.teal-button {
   background-color: #6CFFFE; }
 
-.research-h3-container h3, .research-h3-container p {
+.main-h3-container h3 {
   width: 290px;
   margin: 0 auto;
   text-align: center; }
 
-.research-h3-container {
-  font-family: 'raleway'; }
-  .research-h3-container h3 {
-    margin-top: 35px;
-    font-size: 24px;
-    margin-bottom: 20px; }
+.main-h3-container h3 {
+  margin-top: 35px;
+  font-size: 24px;
+  margin-bottom: 20px; }
 
-.research-h3-container p {
+.main-h3-container p {
   font-size: 14px;
   padding-bottom: 22px;
-  width: 215px; }
+  width: 262px;
+  margin: 0 auto; }
 
 .list-text-container p {
   display: inline; }
 
 .resources-article-pdf-list-container {
   height: 371px;
-  font-family: 'raleway',sans-serif;
-  font-size: 14px;
-  background-color: black; }
+  background-color: #f4f1ea;
+  font-size: 14px; }
+
+.resource-pdf-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 0; }
+  .resource-pdf-list li {
+    display: -ms-flexbox;
+    display: flex; }
+    .resource-pdf-list li a {
+      background-color: white;
+      width: 60px;
+      height: 33px;
+      margin-bottom: 7px;
+      border: 1px solid white;
+      border-radius: 8px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      text-decoration: none;
+      color: black; }
+
+.pdf-item p {
+  margin-left: 14px;
+  color: #4a4a4a;
+  font-weight: 300;
+  font-size: 14px; }
 
 .resources-links-container {
   height: 380px; }
+  .resources-links-container div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .resources-links-container div button {
+      font-size: 2rem;
+      font-weight: lighter;
+      padding: 0;
+      border: none;
+      background: none;
+      box-shadow: none;
+      color: #95afc9; }
+
+.link-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .link-list li {
+    margin-bottom: 7px;
+    font-weight: 500;
+    color: #6b747d; }
+
+.link-list p {
+  color: #4a4a4a;
+  font-size: 14px;
+  width: 14rem;
+  padding-bottom: 15px; }
+
+.small-para:nth-child(2) {
+  margin-bottom: 20px; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -982,10 +1220,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.button-container {
-  background-color: #94bfd1;
-  color: #fff; }
-
 .page-template-volunteer .site-main, .page-template-support .site-main, .page-template-partner .site-main {
   display: -ms-flexbox;
   display: flex;
@@ -1000,21 +1234,30 @@ object {
   font-family: raleway, arial;
   font-weight: lighter;
   color: #6b747d; }
+  .page-template-volunteer .site-main .button-wrap, .page-template-support .site-main .button-wrap, .page-template-partner .site-main .button-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 10%;
+    padding: 10px;
+    background-color: #4a4a4a; }
   .page-template-volunteer .site-main .entry-header, .page-template-support .site-main .entry-header, .page-template-partner .site-main .entry-header {
     width: 100vw;
     height: 100vh;
     top: 0;
     color: #fff; }
-    .page-template-volunteer .site-main .entry-header .button-wrap, .page-template-support .site-main .entry-header .button-wrap, .page-template-partner .site-main .entry-header .button-wrap {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      padding: 10px; }
   .page-template-volunteer .site-main header, .page-template-volunteer .site-main section, .page-template-support .site-main header, .page-template-support .site-main section, .page-template-partner .site-main header, .page-template-partner .site-main section {
     width: 100%; }
   .page-template-volunteer .site-main .container-one, .page-template-support .site-main .container-one, .page-template-partner .site-main .container-one {
     background-color: #fff; }
+    .page-template-volunteer .site-main .container-one .contributor, .page-template-support .site-main .container-one .contributor, .page-template-partner .site-main .container-one .contributor {
+      background-color: #6b747d;
+      height: 200px;
+      width: 50%;
+      margin: 0 auto; }
+    .page-template-volunteer .site-main .container-one .custom-info-container, .page-template-support .site-main .container-one .custom-info-container, .page-template-partner .site-main .container-one .custom-info-container {
+      background-color: #fff; }
     .page-template-volunteer .site-main .container-one .list-container, .page-template-support .site-main .container-one .list-container, .page-template-partner .site-main .container-one .list-container {
       width: 100%;
       display: -ms-flexbox;
@@ -1031,7 +1274,7 @@ object {
         width: 25%;
         height: 90%;
         border-radius: 30px;
-        background-color: red; }
+        background-color: #cce8ea; }
     .page-template-volunteer .site-main .container-one ul, .page-template-support .site-main .container-one ul, .page-template-partner .site-main .container-one ul {
       width: 90%;
       margin: 0; }
@@ -1039,15 +1282,14 @@ object {
     background-color: #95afc9; }
     .page-template-volunteer .site-main .container-two h2, .page-template-support .site-main .container-two h2, .page-template-partner .site-main .container-two h2 {
       color: #4a4a4a; }
-    .page-template-volunteer .site-main .container-two .button-case-holder, .page-template-support .site-main .container-two .button-case-holder, .page-template-partner .site-main .container-two .button-case-holder {
-      background-color: lightblue;
-      margin-bottom: 5%; }
-  .page-template-volunteer .site-main .volunteer-community, .page-template-support .site-main .volunteer-community, .page-template-partner .site-main .volunteer-community {
-    background-color: lightpink; }
-  .page-template-volunteer .site-main .volunteer-advisor, .page-template-support .site-main .volunteer-advisor, .page-template-partner .site-main .volunteer-advisor {
-    background-color: lightyellow; }
-  .page-template-volunteer .site-main .volunteer-opportun, .page-template-support .site-main .volunteer-opportun, .page-template-partner .site-main .volunteer-opportun {
-    background-color: lightgreen; }
+  .page-template-volunteer .site-main .container-three, .page-template-support .site-main .container-three, .page-template-partner .site-main .container-three {
+    background-color: #f3f0e9; }
+  .page-template-volunteer .site-main .container-four, .page-template-support .site-main .container-four, .page-template-partner .site-main .container-four {
+    background-color: #cce8ea; }
+  .page-template-volunteer .site-main .container-tshirt, .page-template-support .site-main .container-tshirt, .page-template-partner .site-main .container-tshirt {
+    background: url("../../images/tshirt_mobile.png") no-repeat center bottom;
+    background-size: cover, cover;
+    color: #fff; }
 
 /* Volunteer */
 ol {
@@ -1346,22 +1588,31 @@ p {
   clear: both;
   height: 0; }
 
+.page-template-training {
+  font-family: 'raleway',sans-serif; }
+
 .entry-title {
   text-align: center;
   color: white;
   padding-top: 49px;
-  font-family: 'raleway',sans-serif;
   font-weight: 500; }
 
 .page-title-header {
   text-align: center;
-  color: white; }
+  color: white;
+  padding-top: 66px; }
 
 .teal-button {
   background-color: #6CFFFE; }
 
 .grey-button {
   background-color: #94BFD1; }
+
+.heading-subtitle {
+  color: white;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto; }
 
 .general-template-section {
   height: 400px;
@@ -1373,7 +1624,7 @@ p {
   width: 100%;
   top: 316px; }
 
-.general-first-button, .general-second-button, .book-training-button {
+.general-button, .book-training-button {
   width: 230px;
   height: 44px;
   display: block;
@@ -1386,8 +1637,13 @@ p {
   color: white;
   border-radius: 8px;
   border: none;
-  font-family: 'raleway',sans-serif;
   font-size: 14px; }
+
+.general-first-button.teal-button {
+  background-color: #6CFFFE; }
+
+.general-second-button.grey-button {
+  background-color: #94BFD1; }
 
 .button-black-text {
   color: black; }
@@ -1405,7 +1661,6 @@ p {
   border-bottom: 2px solid #4A4A4A;
   padding-bottom: 16px;
   font-size: 20px;
-  font-family: 'raleway',sans-serif;
   color: black;
   font-weight: 600; }
 
@@ -1466,11 +1721,8 @@ p {
   background-color: #fff;
   color: #4A4A4A; }
 
-.general-first-button.teal-button {
-  background-color: #6CFFFE; }
-
-.general-second-button.grey-button {
-  background-color: #94BFD1; }
+.page-template-core-training {
+  font-family: 'raleway',sans-serif; }
 
 .section-15px-padding {
   padding: 0 15px; }
@@ -1488,12 +1740,29 @@ p {
   line-height: 24px;
   margin-top: 39px; }
 
+.earth-logo {
+  width: 26px;
+  height: 26px;
+  margin-right: 9px; }
+
 .avail-online-heading-container {
   display: -ms-flexbox;
-  display: flex; }
-  .avail-online-heading-container .avail-online-h3 {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 15px; }
+  .avail-online-heading-container h3 {
     margin: 0;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: 'raleway';
-    font-weight: 1000; }
+    font-weight: bold; }
+
+.light-training-para {
+  color: #6B747D;
+  font-size: 14px;
+  line-height: 2; }
+
+.dark-training-para {
+  color: #4A4A4A;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 35px; }

@@ -1,9 +1,5 @@
-.general-first-button.teal-button{
-    background-color:#6CFFFE;
-}
-
-.general-second-button.grey-button{
-    background-color:#94BFD1;
+.page-template-core-training{
+    font-family:'raleway',sans-serif;
 }
 
 .section-15px-padding{
@@ -27,15 +23,35 @@
     
 }
 
+.earth-logo{
+    width:26px;
+    height:26px;
+    margin-right:9px;
+}
+
 .avail-online-heading-container{
     display:flex;
-        .avail-online-h3{
+    margin-top:25px;
+    margin-bottom:15px;
+        h3{
             margin:0;
             text-transform:uppercase;
             font-size:14px;
-            font-family:'raleway';
-            font-weight:1000;
+            font-weight:bold;
     }
 
+}
+
+.light-training-para{
+    color:#6B747D;
+    font-size:14px;
+    line-height:2;
+}
+
+.dark-training-para{
+    color:#4A4A4A;
+    font-size:14px;
+    line-height:2;
+    margin-bottom:35px;
 }
 

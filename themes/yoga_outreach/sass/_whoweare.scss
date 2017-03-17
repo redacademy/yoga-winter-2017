@@ -1,12 +1,15 @@
-.page-template-about-us{
+.page-template-who-we-are{
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     
-    h1 {
-        display: none;
+    h1, h2, h3, h4{
+        margin: 0;
+
+        font-family: Raleway;
+        font-weight: 300;
     }
 
     .hero-text {
@@ -24,7 +27,6 @@
 
         display: flex;
         flex-direction: column;
-
     }
 
     .team {
@@ -37,24 +39,34 @@
 
     }
 
-    .staff {
-        font-weight: bold;
-        position: relative;
-        color: #4A4A4A;
-        span{
-            display: flex;
-            justify-content: space-between;
-            
-            button {
-                font-size: 2rem;
-                font-weight: lighter;
-                padding: 0;
-                border: none;
-                background: none;
-                box-shadow: none;
-                color: #95AFC9;
-            }
+    .info-dropdown {
+        height: 100%;
+        background-color: lightblue;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        #hideshow{
+            border: none;
+            border-radius: 0;
+            background: none;
+            box-shadow: none;
+            height: 50px;
+            padding: 0;
         }
+
+         h3 {
+            text-transform: capitalize;
+            font-weight: normal;
+        }
+
+    }
+    .info-field {
+        height: 200px;
+        background-color: $lighttheme_color;
+    }
+
+    .staff {
 
         .circle {
             height: 160px;

@@ -12,11 +12,11 @@ get_header(); ?>
             <header class="entry-header custom-hero-image">
                 <h1 class="header-title"><?php the_title(); ?></h1>
                 <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
-                <div class="button-wrap">
-                    <button class="button-holder">Become a Yoga Teacher</button>
-                    <button class="button-holder">Community Volunteer</button>
-                    <button class="button-holder">Advisory Council Member</button>
-                    <button class="button-holder">Reaching Out with Yoga</button>
+                <div>
+                    <button class="button-holder"><a href="#instructor" class="button">Become a Yoga Teacher</a></button>
+                    <button class="button-holder"><a href="#volunteer" class="button">Community Volunteer</a></button>
+                    <button class="button-holder"><a href="#council" class="button">Advisory Council Member</a></button>
+                    <button class="button-holder"><a href="#opportunities" class="button">Reaching Out with Yoga</a></button>
                 </div>
             </header><!-- .entry-header -->
             <section class="container-one">
@@ -33,7 +33,7 @@ get_header(); ?>
                     </ul>
                     </div>
             </section>
-            <section class="container-two">
+            <section id="instructor" class="container-two">
                 <h2 class="h2-holder">Volunteer as a Yoga Instructor</h2>
                 <ol>
                 <?php
@@ -48,19 +48,19 @@ get_header(); ?>
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </ol>
-                <div class="button-case-holder"><button class="button-holder">Apply Now</button></div>
+                <div class="button-wrap"><button class="button-holder">Apply Now</button></div>
             </section>
-            <section class="volunteer-community">
+            <section id="volunteer" class="container-one">
                 <h2 class="h2-holder">Volunteer for Community Engagement</h2>
                 <p>Are you passionate about Yoga? Do you love meeting new people? Are you short on cash but have enthusiasm to spare? Join our team of Community Engagement Volunteers today! We are looking for volunteers with strong communication skills and a passion for people to join our team, especially individuals with skills in fundraising, marketing, communications, and information technology. </p>
                 <button class="button-holder">Apply Now</button>
             </section>
-            <section class="volunteer-advisor">
+            <section id="council" class="container-three">
                 <h2 class="h2-holder">Volunteer for Advisory Council</h2>
                 <p>Yoga Outreach is seeking Advisory Council members who believe in our mission and wish to contribute expertise in the field of counseling psychology to the current and future work of the charity.</p>
                 <button class="button-holder">Contact Us</button>
             </section>
-            <section class="volunteer-opportun">
+            <section id="opportunities" class="container-four">
                 <h2 class="h2-holder">Volunteer Opportunities</h2>
                 <p></p>
                 <button class="button-holder">View Here</button>

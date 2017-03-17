@@ -1,3 +1,109 @@
 .page-template-contact-us {
+    h1, h2, h3, h4, h5{
+        margin: 0;
 
+        font-family: Raleway;
+        font-weight: 300;
+    }
+
+    .hero-text {
+        height: 300px;
+        width: 100%;
+        padding: 66px 10px 0 10px;
+
+        color: #fff;
+        background-color: #95AFC9;
+
+        font-family: Raleway;
+        font-weight: 500;
+        text-transform: capitalize;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+        }
+        .hero-phone {
+            font-size: 2rem;
+        }
+    }
+
+    .email-inquiries {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 40px 15px 10px;
+
+        color: $lighttext_color;
+    
+        h2 {
+            font-size: 1.5rem;
+            padding-bottom: 21px;
+        }
+
+        p{
+            font-size: .9rem;
+            padding-bottom: 8px;
+        }
+
+        a{
+            @include general-button;
+            background-color: #6B747D;
+            text-decoration: none;
+            text-align: center;
+            padding: 12px;
+            margin-bottom: 54px;
+            
+        }
+
+        .email-info {
+            width: 100%;
+
+            h5 {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 0.9rem;
+                font-weight: lighter;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .info-dropdown {
+        padding: 20px 15px;
+        height: 100%;
+
+        background-color: $lighttheme_color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        #hideshow{
+            border: none;
+            border-radius: 0;
+            background: none;
+            box-shadow: none;
+            height: 50px;
+            padding: 0;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+    }
+    .info-field {
+        padding: 0 15px;
+        display: none;
+        height: 100%;
+        background-color: $lighttheme_color;
+    }
 }

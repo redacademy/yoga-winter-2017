@@ -1,33 +1,35 @@
 //Resources Research
 
+.page-template-resources-research{
+    font-family:'raleway',sans-serif;
+}
+
 .general-first-button.teal-button{
     background-color:#6CFFFE
 }
 
-.research-h3-container{
-    h3, p{
+.main-h3-container{
+    h3{
         width:290px;
         margin: 0 auto;
         text-align: center;
-
-
     }
 }
 
-.research-h3-container{
-    font-family:'raleway';
-    h3{
+.main-h3-container{
+        h3{
         margin-top:35px;
         font-size:24px;
         margin-bottom:20px;
     }
 }
 
-.research-h3-container{
+.main-h3-container{
     p{
         font-size:14px;
         padding-bottom:22px;
-        width:215px;
+        width:262px;
+        margin:0 auto;
     }
 }
 
@@ -39,14 +41,82 @@
 
 .resources-article-pdf-list-container{
     height:371px;
-    font-family:'raleway',sans-serif;
-    font-size:14px; 
-    background-color:black;
+    background-color:$lighttheme_color;
+    font-size:14px;
+    } 
 
+// PDF List
+.resource-pdf-list{
+    list-style:none;
+    padding:0;
+    margin-left:0;
+        li{
+            display:flex;
+                a{
+                    background-color:white;
+                    width:60px;
+                    height:33px;
+                    margin-bottom:7px;
+                    border:1px solid white;
+                    border-radius:8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration:none;
+                    color:black;
+                }
+        }
 }
+
+.pdf-item{
+    p{
+        margin-left:14px;
+        color:$darktheme_color;
+        font-weight:300;
+        font-size:14px;
+    }
+}
+
+
+//Links
 
 .resources-links-container{
     height:380px;
+        div{
+            display:flex;
+            justify-content:space-between;
+                button{
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    padding: 0;
+                    border: none;
+                    background: none;
+                    box-shadow: none;
+                    color: $logo_color;
+                }
+        }
 }
 
+.link-list{
+    padding:0;
+    margin:0;
+    list-style:none;
+        li{
+            margin-bottom:7px;
+            font-weight:500;
+            color:$lighttext_color;
+        }
+}
 
+.link-list{
+    p{
+        color:$darktheme_color;
+        font-size:14px;
+        width:14rem;
+        padding-bottom:15px;
+    }
+}
+
+.small-para:nth-child(2){
+    margin-bottom:20px;
+}

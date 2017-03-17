@@ -9,14 +9,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<header class = "general-template-section custom-hero-image">
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-				<?php endwhile; // End of the loop. ?>
+				<h1 class ="page-title-header">
+					<?php the_title(); ?>
+				</h1>
+				<p class ="heading-subtitle"><?php echo CFS()->get('page_subtitle'); ?>
 				<div class ="general-button-container">
-					<button class = "general-first-button grey-button">Core Training</button>
-					<button class = "general-second-button teal-button button-black-text">For Facilities</button>
+					<button class = "general-button grey-button">Core Training</button>
+					<button class = "general-button teal-button button-black-text">For Facilities</button>
 				</div>
 			</header><!--general-template-section-->
 			<section class ="training-yoga-tools-section">
