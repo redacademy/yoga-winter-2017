@@ -1,5 +1,9 @@
 //Resources Research
 
+.page-template-resources-research{
+    font-family:'raleway',sans-serif;
+}
+
 .general-first-button.teal-button{
     background-color:#6CFFFE
 }
@@ -13,7 +17,6 @@
 }
 
 .research-h3-container{
-    font-family:'raleway';
         h3{
         margin-top:35px;
         font-size:24px;
@@ -62,7 +65,6 @@
                     justify-content: center;
                     align-items: center;
                     text-decoration:none;
-                    font-family:'raleway',sans-serif;
                 }
         }
 }
@@ -71,7 +73,6 @@
     p{
         margin-left:14px;
         color:$darktheme_color;
-        font-family:'raleway'sans-serif;
         font-weight:300;
     }
 }
@@ -101,7 +102,6 @@
     list-style:none;
         li{
             margin-bottom:7px;
-            font-family:'raleway',sans-serif;
             font-weight:500;
             color:$lighttext_color;
         }
@@ -110,7 +110,6 @@
 .link-list{
     p{
         color:$darktheme_color;
-        font-family:'raleway',sans-serif;
         font-size:14px;
         width:14rem;
         padding-bottom:15px;

@@ -835,6 +835,9 @@ a {
     font-family: 'raleway';
     font-weight: 1000; }
 
+.page-template-resources-research {
+  font-family: 'raleway',sans-serif; }
+
 .general-first-button.teal-button {
   background-color: #6CFFFE; }
 
@@ -843,12 +846,10 @@ a {
   margin: 0 auto;
   text-align: center; }
 
-.research-h3-container {
-  font-family: 'raleway'; }
-  .research-h3-container h3 {
-    margin-top: 35px;
-    font-size: 24px;
-    margin-bottom: 20px; }
+.research-h3-container h3 {
+  margin-top: 35px;
+  font-size: 24px;
+  margin-bottom: 20px; }
 
 .research-h3-container p {
   font-size: 14px;
@@ -884,13 +885,11 @@ a {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center;
-      text-decoration: none;
-      font-family: 'raleway',sans-serif; }
+      text-decoration: none; }
 
 .pdf-item p {
   margin-left: 14px;
   color: #4a4a4a;
-  font-family: 'raleway'sans-serif;
   font-weight: 300; }
 
 .resources-links-container {
@@ -915,13 +914,11 @@ a {
   list-style: none; }
   .link-list li {
     margin-bottom: 7px;
-    font-family: 'raleway',sans-serif;
     font-weight: 500;
     color: #6b747d; }
 
 .link-list p {
   color: #4a4a4a;
-  font-family: 'raleway',sans-serif;
   font-size: 14px;
   width: 14rem;
   padding-bottom: 15px; }
