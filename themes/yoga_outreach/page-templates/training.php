@@ -43,7 +43,7 @@ get_header(); ?>
 				</ul>
 					
 			</div>
-			<!--Put list here-->
+			<!--Insert list here-->
 			<div class="bottom-button-container">
 				<button class="general-first-button">Book Training</button>
 			</div>
