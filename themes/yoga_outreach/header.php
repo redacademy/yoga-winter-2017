@@ -27,7 +27,10 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<span class="responsive-menu">
+				    <i class="fa fa-bars" aria-hidden="true"></i>
+		    	</span>
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<div id="header-logo">
 					<img class="logo-image" src="<?php echo CFS()->get('logo_image'); ?>" alt="logo-image" />
 					</div>

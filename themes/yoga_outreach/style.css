@@ -1129,27 +1129,35 @@ p {
   .home #site-navigation {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
-    height: 80px; }
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    height: 80px;
+    -ms-flex-align: center;
+        align-items: center; }
+    .home #site-navigation .fa-bars {
+      color: #9FABB7;
+      font-size: 2.3rem;
+      padding: 1rem; }
     .home #site-navigation .logo-image {
       width: 90px;
-      padding: 0 10%; }
+      padding: 0.5rem 0.8rem; }
   .home .hero-banner {
-    position: relative;
-    color: white;
-    height: 400px;
-    width: 100%; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    height: 400px; }
     .home .hero-banner .herobanner-text {
-      margin: 0 auto;
+      margin: 50px auto;
       bottom: 7%;
-      left: 10%; }
+      left: 10%;
+      color: white; }
       .home .hero-banner .herobanner-text h2 {
         text-transform: capitalize;
         font-size: 24px; }
       .home .hero-banner .herobanner-text p {
         font-size: 16px;
-        line-height: 2;
+        line-height: 1.5;
         padding: 15px; }
     .home .hero-banner .aboutus-button {
       width: 230px;
@@ -1170,12 +1178,14 @@ p {
     font-size: 14px; }
     .home .trauma-approach .accent-square {
       position: absolute;
-      width: 230px;
+      width: 200px;
       height: 30px;
       background-color: #96C2D4;
       opacity: 0.4;
-      bottom: 10%;
-      z-index: -1; }
+      left: 10%;
+      bottom: 2%;
+      z-index: -1;
+      border-radius: 4px; }
   .home .training-programs {
     padding: 5% 10%;
     font-size: 14px; }
@@ -1219,12 +1229,18 @@ p {
       background-color: #AEC5DE;
       bottom: 100px;
       right: 30px;
-      z-index: -1; }
+      z-index: -1;
+      border-radius: 8px; }
   .home .get-involved {
     position: relative; }
-    .home .get-involved img {
-      width: 90px;
-      height: 110px; }
+    .home .get-involved .involvedimage_one {
+      width: 20%;
+      height: 28%;
+      border-radius: 8px;
+      margin: 0 1rem; }
+    .home .get-involved .involvedimage_two {
+      width: 23.6%;
+      border-radius: 8px; }
     .home .get-involved .accent-square {
       position: absolute;
       width: 100%;
@@ -1234,13 +1250,13 @@ p {
       bottom: 10%;
       z-index: -1; }
   .home .thankyou {
-    height: 250px;
+    height: 230px;
     background-color: #B7C8DA;
     color: #4A4A4A; }
     .home .thankyou h1 {
-      padding: 40px 0 0 0; }
+      padding: 30px 0 0 0; }
     .home .thankyou p {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       padding: 0 20px 20px 30px; }
   .home footer {
     display: -ms-flexbox;
@@ -1264,7 +1280,7 @@ p {
           justify-content: center; }
       .home footer form label {
         font-size: .7rem;
-        font-family: Raleway;
+        font-family: raleway;
         color: white;
         text-transform: uppercase; }
       .home footer form .input-bar {
@@ -1295,20 +1311,32 @@ p {
     .home footer .siteinfo-text {
       margin-top: 50px; }
     .home footer p {
-      margin: 0; }
-    .home footer .socialmedia-icons ul {
-      list-style: none;
       margin: 0;
-      padding: 0; }
-      .home footer .socialmedia-icons ul li {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        background-color: pink;
-        margin: 20px 10px 30px 10px; }
+      font-size: 14px; }
+    .home footer .socialmedia-icons {
+      color: #9FABB7;
+      font-size: 1.2rem; }
+      .home footer .socialmedia-icons ul {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .home footer .socialmedia-icons ul li {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          margin: 20px 10px 20px 10px;
+          border: 1.5px solid #9FABB7;
+          border-radius: 50%;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .home footer .copyright {
       text-transform: capitalize;
-      padding: 10px; }
+      padding: 10px;
+      font-size: 14px; }
 
 .clearfix:after {
   visibility: hidden;

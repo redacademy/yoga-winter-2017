@@ -24,14 +24,22 @@
 				<!--<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>-->
 				<section class ="socialmedia-icons">
 				<ul>
-					<li class="instagram-icon"></li>
-					<li class="facebook-icon"></li>
-					<li class="twitter-icon"></li>
-					<li class="youtube-icon"></li>
+					<li class="instagram-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </li>
+					<li class="facebook-icon">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </li>
+					<li class="twitter-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </li>
+					<li class="youtube-icon">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </li>
 				</ul>
 				</section>
 				<div class="copyright">
-					<p><?php echo 'copyright © 2017 Yoga Outreach' ?></p>
+					<p><?php echo '© 2017 Yoga Outreach' ?></p>
 				</div>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->

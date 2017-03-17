@@ -53,19 +53,15 @@ get_header(); ?>
 <section class="get-involved">
     <h2>Get Involed!</h2>
      <div class="involvedWrap">
-               <div class="contain1">
-                   <p>volunteer</p>
-               </div>
-               <div class="contain2">
-                   <p>partner</p>
-               </div>
-               <div class="contain3">
-                   <p>support us</p>
-               </div>    
+                  <img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/Volunteer_homepage.png"/>
+                  <img class ="involvedimage_two" src="<?php echo get_template_directory_uri(); ?>/images/Partner_homepageimg.png"/>
+                  <img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/SupportUs_homepage.png"/>   
                <div class="shapeThing"></div>
            </div>
     <div class="accent-square"></div>
-    <p>Testing Deploy</p>
+</section>
+<section class="testimonials">
+
 </section>
 
 <section class="thankyou">
