@@ -1,12 +1,10 @@
 (function($){
-
 //do something when the icon button is clicked
     $('.fa-bars').on('click', function(event){
         event.preventDefault();
         $('.fa-bars').toggleClass('menu');   
         // $('.menu-main-menu-container ul').toggleClass('menu');     
     });
-})(jQuery);
 
     $('.info-dropdown').click(function () {
         if ($(this).next('.info-field').is(':hidden')) {
@@ -17,4 +15,11 @@
             $(this).children('span').text('+');
         }
     });
-(jQuery); 
+
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+    });
+})(jQuery); 
