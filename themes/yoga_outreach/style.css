@@ -1413,6 +1413,19 @@ object {
     height: 100vh;
     top: 0;
     color: #fff; }
+  .page-template-volunteer .site-main .main-carousel, .page-template-support .site-main .main-carousel, .page-template-partner .site-main .main-carousel {
+    width: 50%;
+    padding: 30px;
+    margin: 0 auto; }
+    .page-template-volunteer .site-main .main-carousel .carousel-cell, .page-template-support .site-main .main-carousel .carousel-cell, .page-template-partner .site-main .main-carousel .carousel-cell {
+      width: 100%;
+      height: auto; }
+    .page-template-volunteer .site-main .main-carousel ol, .page-template-support .site-main .main-carousel ol, .page-template-partner .site-main .main-carousel ol {
+      display: none; }
+    .page-template-volunteer .site-main .main-carousel .flickity-prev-next-button, .page-template-support .site-main .main-carousel .flickity-prev-next-button, .page-template-partner .site-main .main-carousel .flickity-prev-next-button {
+      border: none;
+      background: none;
+      box-shadow: none; }
   .page-template-volunteer .site-main header, .page-template-volunteer .site-main section, .page-template-support .site-main header, .page-template-support .site-main section, .page-template-partner .site-main header, .page-template-partner .site-main section {
     width: 100%; }
   .page-template-volunteer .site-main .container-one, .page-template-support .site-main .container-one, .page-template-partner .site-main .container-one {
