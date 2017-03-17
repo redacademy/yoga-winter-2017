@@ -39,11 +39,7 @@
         padding: 40px 15px;
 
         color: $lighttext_color;
-
-        .email-info {
-            width: 100%;
-        }
-
+    
         h2 {
             font-size: 1.5rem;
             padding-bottom: 15px;
@@ -55,8 +51,26 @@
         }
 
         a{
+            @include general-button;
+            background-color: #6B747D;
+            text-decoration: none;
+            text-align: center;
+            padding: 12px;
+            
         }
 
+        .email-info {
+            width: 100%;
+
+            h4 {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            p {
+                font-weight: lighter;
+            }
+        }
     }
 
     .info-dropdown {

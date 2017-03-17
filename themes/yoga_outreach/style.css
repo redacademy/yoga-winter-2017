@@ -524,14 +524,38 @@ button {
       align-items: center;
   padding: 40px 15px;
   color: #6b747d; }
-  .page-template-contact-us .email-inquiries .email-info {
-    width: 100%; }
   .page-template-contact-us .email-inquiries h2 {
     font-size: 1.5rem;
     padding-bottom: 15px; }
   .page-template-contact-us .email-inquiries p {
     font-size: .9rem;
     padding-bottom: 8px; }
+  .page-template-contact-us .email-inquiries a {
+    width: 230px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    background-color: #6B747D;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px; }
+  .page-template-contact-us .email-inquiries .email-info {
+    width: 100%; }
+    .page-template-contact-us .email-inquiries .email-info h4 {
+      text-transform: uppercase;
+      font-weight: bold; }
+    .page-template-contact-us .email-inquiries .email-info p {
+      font-weight: lighter; }
 
 .page-template-contact-us .info-dropdown {
   height: 100%;
