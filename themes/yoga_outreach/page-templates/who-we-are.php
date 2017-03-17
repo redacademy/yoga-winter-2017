@@ -15,23 +15,28 @@ get_header(); ?>
                 <p>Yoga Outreach is possible thanks to the dedicated, hard-working team  running the programs.</p>
             </header>
             <section class="team">
-                <h2>The YO Team</h2>
-                <p>Click on name for bio and contact info.</p>
-            </section>
-            <?php $fields= CFS()->get( 'staff_members' ); ?>  <!--variable to hold email from loop-->
+                <div class="teamheader">
+                    <h2>The YO Team</h2>
+                    <p>Click on name for bio and contact info.</p>
+                </div>
+            
+                <?php $fields= CFS()->get( 'staff_members' ); ?>  <!--variable to hold staffs from loop-->
 
-            <?php if(!empty($fields)): ?>
-                <?php foreach( $fields as $field ): ?>
-                    <div class="info-dropdown">
-                        <h3>staff</h3><span>+</span>
-                    </div>
-                    <div class="info-field"> 
-                        <img src="<?php echo $field['staff_photo']; ?>" alt="staff photo" class="staffphoto">
-                        <p><?php echo $field['staff_name']; ?></p>
-                        <div class="accent-name-shape"></div>
-                    </div>
-                <?php endforeach; ?>
-            <?php endif; ?>        
+                <?php if(!empty($fields)): ?>
+                    <?php foreach( $fields as $field ): ?>
+                        <div class="info-dropdown">
+                            <h3>staff</h3><span>+</span>
+                        </div>
+                        <div class="info-field"> 
+                            <div class="imgframe">
+                                <img src="<?php echo $field['staff_photo']; ?>" alt="staff photo" class="staffphoto">
+                            </div>
+                            <p><?php echo $field['staff_name']; ?></p>
+                            <div class="accent-name-shape"></div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>  
+            </section>      
 
             <form class="e-news-signup">
                 <label for="e-news">Sign Up for E-News</label>
