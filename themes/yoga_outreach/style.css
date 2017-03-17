@@ -497,7 +497,7 @@ button {
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px; }
 
-.page-template-contact-us h1, .page-template-contact-us h2, .page-template-contact-us h3, .page-template-contact-us h4 {
+.page-template-contact-us h1, .page-template-contact-us h2, .page-template-contact-us h3, .page-template-contact-us h4, .page-template-contact-us h5 {
   margin: 0;
   font-family: Raleway;
   font-weight: 300; }
@@ -529,11 +529,11 @@ button {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  padding: 40px 15px;
+  padding: 40px 15px 10px;
   color: #6b747d; }
   .page-template-contact-us .email-inquiries h2 {
     font-size: 1.5rem;
-    padding-bottom: 15px; }
+    padding-bottom: 21px; }
   .page-template-contact-us .email-inquiries p {
     font-size: .9rem;
     padding-bottom: 8px; }
@@ -555,24 +555,28 @@ button {
     background-color: #6B747D;
     text-decoration: none;
     text-align: center;
-    padding: 12px; }
+    padding: 12px;
+    margin-bottom: 54px; }
   .page-template-contact-us .email-inquiries .email-info {
     width: 100%; }
-    .page-template-contact-us .email-inquiries .email-info h4 {
+    .page-template-contact-us .email-inquiries .email-info h5 {
       text-transform: uppercase;
       font-weight: bold; }
     .page-template-contact-us .email-inquiries .email-info p {
-      font-weight: lighter; }
+      font-size: 0.9rem;
+      font-weight: lighter;
+      padding-bottom: 20px; }
 
 .page-template-contact-us .info-dropdown {
+  padding: 20px 15px;
   height: 100%;
-  background-color: lightblue;
+  background-color: #f4f1ea;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .page-template-contact-us .info-dropdown #hideshow {
     border: none;
     border-radius: 0;
@@ -580,9 +584,14 @@ button {
     box-shadow: none;
     height: 50px;
     padding: 0; }
+  .page-template-contact-us .info-dropdown h3 {
+    font-weight: bold;
+    font-size: 1.2rem; }
 
 .page-template-contact-us .info-field {
-  height: 200px;
+  padding: 0 15px;
+  display: none;
+  height: 100%;
   background-color: #f4f1ea; }
 
 /*--------------------------------------------------------------
@@ -1038,14 +1047,14 @@ a {
   font-weight: 300;
   font-size: 14px; }
 
-.pdf-item .resources-links-container {
+.resources-links-container {
   height: 380px; }
-  .pdf-item .resources-links-container div {
+  .resources-links-container div {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    .pdf-item .resources-links-container div button {
+    .resources-links-container div button {
       font-size: 2rem;
       font-weight: lighter;
       padding: 0;
@@ -1054,16 +1063,16 @@ a {
       box-shadow: none;
       color: #95afc9; }
 
-.pdf-item .link-list {
+.link-list {
   padding: 0;
   margin: 0;
   list-style: none; }
-  .pdf-item .link-list li {
+  .link-list li {
     margin-bottom: 7px;
     font-weight: 500;
     color: #6b747d; }
 
-.pdf-item .link-list p {
+.link-list p {
   color: #4a4a4a;
   font-size: 14px;
   width: 14rem;
