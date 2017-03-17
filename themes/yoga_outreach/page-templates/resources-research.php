@@ -37,6 +37,7 @@ get_header(); ?>
 							<p><?php echo $pdf['name_of_pdf'];?></p>
 						</li>
 						<?php endforeach ?>
+				</ul>
 			</section>
 			<section class="resources-links-container section-15px-padding">
 				<div>
@@ -50,6 +51,7 @@ get_header(); ?>
 					foreach ( $links as $link): ?>
 					<li><?php echo $link ['link'];?></li>
 					<?php endforeach ?>
+				</ul>
 			</section>
 			
 		</main><!-- #main -->

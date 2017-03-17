@@ -27,7 +27,6 @@ get_header(); ?>
 						<button class="train-minus-button">-</button>
 					</h3>
 						<?php echo CFS()->get('yoga_in_your_work'); ?>
-
 				<button class ="book-training-button">Book Training</button>
 				<p class= "small-para">-Skills Training for Support Professionals</p>
 				<p class = "under-skills-training-para">
@@ -35,6 +34,13 @@ get_header(); ?>
 				</p>
 			</section>
 			<div class ="testimonal-container">
+				<ul class ="testimonial-list">
+					<?php
+					$testimonials = CFS()->get('testimonial_item');
+					foreach ( $testimonials as $testimonial): ?>
+					<li><?php echo $testimonial ['testimonial'];?></li>
+					<?php endforeach ?>
+				</ul>
 					
 			</div>
 			<ul class="training-list">
