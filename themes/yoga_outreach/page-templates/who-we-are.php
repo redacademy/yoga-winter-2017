@@ -1,4 +1,4 @@
-<?php /* Template Name: About Us*/ ?>
+<?php /* Template Name: Who We Are*/ ?>
 
 <?php
 /**
@@ -17,28 +17,21 @@ get_header(); ?>
             <section class="team">
                 <h2>The YO Team</h2>
                 <p>Click on name for bio and contact info.</p>
-
-                <div class="staff">
-                    <span>Staff <button>-</button></span>
-                    <div class="circle"><?php echo CFS()->get( 'staff_photo' );?></div>
-                    <p>Place holder name<?php echo CFS()->get( 'staff_name' );?></p>
-                    <div class="accent-name-shape"></div>
-                </div>
-
-                <div class="staff">
-                    <span>Board of Directors<button>+</button></span>
-                    <div class="circle"></div>
-                    <p>Place holder name</p>
-                    <div class="accent-name-shape"></div>
-                </div>
-
-                <div class="staff" >
-                    <span>Advisory Council<button>+</button></span>
-                    <div class="circle"></div>
-                    <p>Place holder name</p>
-                    <div class="accent-name-shape"></div>
-                </div>
             </section>
+            <?php $fields= CFS()->get( 'staff_members' ); ?>  <!--variable to hold email from loop-->
+
+            <?php if(!empty($fields)): ?>
+                <?php foreach( $fields as $field ): ?>
+                    <div class="info-dropdown">
+                        <h3>staff</h3><span>+</span>
+                    </div>
+                    <div class="info-field"> 
+                        <img src="<?php echo $field['staff_photo']; ?>" alt="staff photo" class="staffphoto">
+                        <p><?php echo $field['staff_name']; ?></p>
+                        <div class="accent-name-shape"></div>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>        
 
             <form class="e-news-signup">
                 <label for="e-news">Sign Up for E-News</label>

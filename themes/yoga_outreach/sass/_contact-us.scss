@@ -1,9 +1,9 @@
 .page-template-contact-us {
-    h1, h2, h3, h4, h5{
+    h1, h2, h3, h4{
         margin: 0;
 
         font-family: Raleway;
-        font-weight: normal;
+        font-weight: 300;
     }
 
     .hero-text {
@@ -36,7 +36,7 @@
         flex-direction: column;
         align-items: center;
 
-        padding: 40px 15px 10px;
+        padding: 40px 15px;
 
         color: $lighttext_color;
     
@@ -56,53 +56,42 @@
             text-decoration: none;
             text-align: center;
             padding: 12px;
-            margin-bottom: 54px;
             
         }
 
         .email-info {
             width: 100%;
 
-            h5 {
+            h4 {
                 text-transform: uppercase;
                 font-weight: bold;
             }
 
             p {
                 font-weight: lighter;
-                padding: 0;
-                margin-bottom: 20px;
             }
         }
     }
 
     .info-dropdown {
-        height: 60px;
-        padding: 15px;
-
-        background-color: $lighttheme_color;
-
+        height: 100%;
+        background-color: lightblue;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
 
-        h3 {
-            font-weight: bold;
-            font-size: 1.3rem;
+        #hideshow{
+            border: none;
+            border-radius: 0;
+            background: none;
+            box-shadow: none;
+            height: 50px;
+            padding: 0;
         }
 
-        span {
-            font-size: 1.8rem;
-        }
     }
-
     .info-field {
-        display: none;
-        height: 100%;
-        padding: 0 15px 20px;
+        height: 200px;
         background-color: $lighttheme_color;
-
-        font-size: .9rem;
-        font-weight: lighter;
     }
 }

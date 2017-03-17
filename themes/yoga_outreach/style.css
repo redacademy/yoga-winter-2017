@@ -383,7 +383,7 @@ button {
   font-family: 'raleway',sans-serif;
   font-size: 14px; }
 
-.page-template-about-us {
+.page-template-who-we-are {
   width: 100%;
   text-align: center;
   display: -ms-flexbox;
@@ -392,9 +392,11 @@ button {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center; }
-  .page-template-about-us h1 {
-    display: none; }
-  .page-template-about-us .hero-text {
+  .page-template-who-we-are h1, .page-template-who-we-are h2, .page-template-who-we-are h3, .page-template-who-we-are h4 {
+    margin: 0;
+    font-family: Raleway;
+    font-weight: 300; }
+  .page-template-who-we-are .hero-text {
     height: 300px;
     width: 100%;
     padding: 50px 10px 0 10px;
@@ -408,47 +410,52 @@ button {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column; }
-  .page-template-about-us .team {
+  .page-template-who-we-are .team {
     max-width: 100%;
     padding: 15px;
     font-family: Raleway;
     font-weight: lighter;
     color: #6B747D; }
-  .page-template-about-us .staff {
-    font-weight: bold;
-    position: relative;
-    color: #4A4A4A; }
-    .page-template-about-us .staff span {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-      .page-template-about-us .staff span button {
-        font-size: 2rem;
-        font-weight: lighter;
-        padding: 0;
-        border: none;
-        background: none;
-        box-shadow: none;
-        color: #95AFC9; }
-    .page-template-about-us .staff .circle {
-      height: 160px;
-      width: 160px;
-      border-radius: 50%;
-      background-color: #9fabb7;
-      margin: 0 auto; }
-    .page-template-about-us .staff p {
+  .page-template-who-we-are .info-dropdown {
+    height: 100%;
+    background-color: lightblue;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .page-template-who-we-are .info-dropdown #hideshow {
+      border: none;
+      border-radius: 0;
+      background: none;
+      box-shadow: none;
+      height: 50px;
+      padding: 0; }
+    .page-template-who-we-are .info-dropdown h3 {
+      text-transform: capitalize;
       font-weight: normal; }
-    .page-template-about-us .staff .accent-name-shape {
-      height: 25px;
-      width: 250px;
-      border-radius: 8px;
-      background-color: #CBE8EA;
-      position: absolute;
-      right: 87px;
-      bottom: -12px;
-      z-index: -1; }
-  .page-template-about-us form {
+  .page-template-who-we-are .info-field {
+    height: 200px;
+    background-color: #f4f1ea; }
+  .page-template-who-we-are .staff .circle {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: #9fabb7;
+    margin: 0 auto; }
+  .page-template-who-we-are .staff p {
+    font-weight: normal; }
+  .page-template-who-we-are .staff .accent-name-shape {
+    height: 25px;
+    width: 250px;
+    border-radius: 8px;
+    background-color: #CBE8EA;
+    position: absolute;
+    right: 87px;
+    bottom: -12px;
+    z-index: -1; }
+  .page-template-who-we-are form {
     height: 81px;
     background-color: #9FABB7;
     display: -ms-flexbox;
@@ -459,23 +466,23 @@ button {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center; }
-    .page-template-about-us form label {
+    .page-template-who-we-are form label {
       font-size: .7rem;
       font-family: Raleway;
       color: white;
       text-transform: uppercase; }
-    .page-template-about-us form .input-bar {
+    .page-template-who-we-are form .input-bar {
       font-size: 0;
       display: -ms-inline-flexbox;
       display: inline-flex; }
-      .page-template-about-us form .input-bar #e-news {
+      .page-template-who-we-are form .input-bar #e-news {
         width: 229px;
         height: 40px;
         border: none;
         border-radius: 0;
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px; }
-      .page-template-about-us form .input-bar #submit-button {
+      .page-template-who-we-are form .input-bar #submit-button {
         height: 40px;
         width: 66px;
         padding: 0;
@@ -490,10 +497,10 @@ button {
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px; }
 
-.page-template-contact-us h1, .page-template-contact-us h2, .page-template-contact-us h3, .page-template-contact-us h4, .page-template-contact-us h5 {
+.page-template-contact-us h1, .page-template-contact-us h2, .page-template-contact-us h3, .page-template-contact-us h4 {
   margin: 0;
   font-family: Raleway;
-  font-weight: normal; }
+  font-weight: 300; }
 
 .page-template-contact-us .hero-text {
   height: 300px;
@@ -522,7 +529,7 @@ button {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  padding: 40px 15px 10px;
+  padding: 40px 15px;
   color: #6b747d; }
   .page-template-contact-us .email-inquiries h2 {
     font-size: 1.5rem;
@@ -548,41 +555,35 @@ button {
     background-color: #6B747D;
     text-decoration: none;
     text-align: center;
-    padding: 12px;
-    margin-bottom: 54px; }
+    padding: 12px; }
   .page-template-contact-us .email-inquiries .email-info {
     width: 100%; }
-    .page-template-contact-us .email-inquiries .email-info h5 {
+    .page-template-contact-us .email-inquiries .email-info h4 {
       text-transform: uppercase;
       font-weight: bold; }
     .page-template-contact-us .email-inquiries .email-info p {
-      font-weight: lighter;
-      padding: 0;
-      margin-bottom: 20px; }
+      font-weight: lighter; }
 
 .page-template-contact-us .info-dropdown {
-  height: 60px;
-  padding: 15px;
-  background-color: #f4f1ea;
+  height: 100%;
+  background-color: lightblue;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .page-template-contact-us .info-dropdown h3 {
-    font-weight: bold;
-    font-size: 1.3rem; }
-  .page-template-contact-us .info-dropdown span {
-    font-size: 1.8rem; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .page-template-contact-us .info-dropdown #hideshow {
+    border: none;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    height: 50px;
+    padding: 0; }
 
 .page-template-contact-us .info-field {
-  display: none;
-  height: 100%;
-  padding: 0 15px 20px;
-  background-color: #f4f1ea;
-  font-size: .9rem;
-  font-weight: lighter; }
+  height: 200px;
+  background-color: #f4f1ea; }
 
 /*--------------------------------------------------------------
 # Forms
