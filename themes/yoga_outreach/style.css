@@ -755,6 +755,12 @@ a {
   content: "";
   display: table; }
 
+.page-template-training-main {
+  font-family: 'raleway',sans-serif; }
+
+.training-para-left {
+  text-align: left; }
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -783,6 +789,12 @@ a {
 .grey-button {
   background-color: #94BFD1; }
 
+.heading-subtitle {
+  color: white;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto; }
+
 .general-template-section {
   height: 400px;
   background-color: lightgreen;
@@ -807,6 +819,12 @@ a {
   border-radius: 8px;
   border: none;
   font-size: 14px; }
+
+.general-first-button.teal-button {
+  background-color: #6CFFFE; }
+
+.general-second-button.grey-button {
+  background-color: #94BFD1; }
 
 .button-black-text {
   color: black; }
@@ -884,11 +902,8 @@ a {
   background-color: #fff;
   color: #4A4A4A; }
 
-.general-first-button.teal-button {
-  background-color: #6CFFFE; }
-
-.general-second-button.grey-button {
-  background-color: #94BFD1; }
+.page-template-core-training {
+  font-family: 'raleway',sans-serif; }
 
 .section-15px-padding {
   padding: 0 15px; }
@@ -906,14 +921,17 @@ a {
   line-height: 24px;
   margin-top: 39px; }
 
+.earth-logo {
+  width: 26px;
+  height: 26px; }
+
 .avail-online-heading-container {
   display: -ms-flexbox;
   display: flex; }
-  .avail-online-heading-container .avail-online-h3 {
+  .avail-online-heading-container h3 {
     margin: 0;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: 'raleway';
     font-weight: 1000; }
 
 .page-template-resources-research {
@@ -922,20 +940,21 @@ a {
 .general-first-button.teal-button {
   background-color: #6CFFFE; }
 
-.research-h3-container h3, .research-h3-container p {
+.main-h3-container h3 {
   width: 290px;
   margin: 0 auto;
   text-align: center; }
 
-.research-h3-container h3 {
+.main-h3-container h3 {
   margin-top: 35px;
   font-size: 24px;
   margin-bottom: 20px; }
 
-.research-h3-container p {
+.main-h3-container p {
   font-size: 14px;
   padding-bottom: 22px;
-  width: 215px; }
+  width: 262px;
+  margin: 0 auto; }
 
 .list-text-container p {
   display: inline; }
@@ -965,7 +984,8 @@ a {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center;
-      text-decoration: none; }
+      text-decoration: none;
+      color: black; }
 
 .pdf-item p {
   margin-left: 14px;
@@ -1472,6 +1492,12 @@ p {
 .grey-button {
   background-color: #94BFD1; }
 
+.heading-subtitle {
+  color: white;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto; }
+
 .general-template-section {
   height: 400px;
   background-color: lightgreen;
@@ -1496,6 +1522,12 @@ p {
   border-radius: 8px;
   border: none;
   font-size: 14px; }
+
+.general-first-button.teal-button {
+  background-color: #6CFFFE; }
+
+.general-second-button.grey-button {
+  background-color: #94BFD1; }
 
 .button-black-text {
   color: black; }
@@ -1573,11 +1605,8 @@ p {
   background-color: #fff;
   color: #4A4A4A; }
 
-.general-first-button.teal-button {
-  background-color: #6CFFFE; }
-
-.general-second-button.grey-button {
-  background-color: #94BFD1; }
+.page-template-core-training {
+  font-family: 'raleway',sans-serif; }
 
 .section-15px-padding {
   padding: 0 15px; }
@@ -1595,12 +1624,15 @@ p {
   line-height: 24px;
   margin-top: 39px; }
 
+.earth-logo {
+  width: 26px;
+  height: 26px; }
+
 .avail-online-heading-container {
   display: -ms-flexbox;
   display: flex; }
-  .avail-online-heading-container .avail-online-h3 {
+  .avail-online-heading-container h3 {
     margin: 0;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: 'raleway';
     font-weight: 1000; }

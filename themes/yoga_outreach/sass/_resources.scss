@@ -8,15 +8,15 @@
     background-color:#6CFFFE
 }
 
-.research-h3-container{
-    h3, p{
+.main-h3-container{
+    h3{
         width:290px;
         margin: 0 auto;
         text-align: center;
     }
 }
 
-.research-h3-container{
+.main-h3-container{
         h3{
         margin-top:35px;
         font-size:24px;
@@ -24,11 +24,12 @@
     }
 }
 
-.research-h3-container{
+.main-h3-container{
     p{
         font-size:14px;
         padding-bottom:22px;
-        width:215px;
+        width:262px;
+        margin:0 auto;
     }
 }
 
@@ -64,6 +65,7 @@
                     justify-content: center;
                     align-items: center;
                     text-decoration:none;
+                    color:black;
                 }
         }
 }

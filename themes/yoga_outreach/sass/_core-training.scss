@@ -1,9 +1,5 @@
-.general-first-button.teal-button{
-    background-color:#6CFFFE;
-}
-
-.general-second-button.grey-button{
-    background-color:#94BFD1;
+.page-template-core-training{
+    font-family:'raleway',sans-serif;
 }
 
 .section-15px-padding{
@@ -27,13 +23,17 @@
     
 }
 
+.earth-logo{
+    width:26px;
+    height:26px;
+}
+
 .avail-online-heading-container{
     display:flex;
-        .avail-online-h3{
+        h3{
             margin:0;
             text-transform:uppercase;
             font-size:14px;
-            font-family:'raleway';
             font-weight:1000;
     }
 

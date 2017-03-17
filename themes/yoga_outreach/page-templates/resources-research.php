@@ -20,7 +20,7 @@ get_header(); ?>
 					<button class = "general-button grey-button">For Facilities</button>
 				</div>
 			</header><!--general-template-section-->
-            <div class ="research-h3-container section-15px-padding">
+            <div class ="main-h3-container section-15px-padding">
                 <h3>Research</h3>
                 <p>Trauma sensitive yoga research from around the globe.</p>
             </div><!--research-h3-container-->
