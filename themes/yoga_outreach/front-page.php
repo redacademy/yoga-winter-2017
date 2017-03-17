@@ -6,8 +6,8 @@
  */
 
 get_header(); ?>
-<section class="hero-banner">
-    <img class="hero-image" src="<?php echo CFS()->get('hero_image'); ?>" alt="hero-image" />
+<section class="hero-banner custom-hero-image">
+    <!--<img class="hero-image" src="<?php echo CFS()->get('hero_image'); ?>" alt="hero-image" />-->
     <div class="herobanner-text">
         <h2>what we do</h2>
         <p>Our mission is to expand access to trauma-informed yoga programs to heal and connect communities</p>

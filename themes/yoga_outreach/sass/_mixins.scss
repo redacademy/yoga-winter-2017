@@ -1,3 +1,10 @@
+
+@mixin desktop {
+  @media (min-width: $desktop_breakpoint) {
+    @content;
+  }
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
@@ -9,4 +16,23 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+
+//general button template
+@mixin general-button {
+	width:230px;
+	height:44px;
+	display:block;
+	margin:0 auto;
+	font-size:14px;
+	text-transform:uppercase;
+	margin-bottom:26px;
+    box-shadow:none;
+    text-shadow:none;
+    color:white;
+	border-radius:8px;
+	border:none;
+	font-family:'raleway',sans-serif;
+	font-size:14px;
 }

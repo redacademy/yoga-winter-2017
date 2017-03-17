@@ -367,6 +367,22 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px; }
+
 .page-template-about-us {
   width: 100%;
   text-align: center;
@@ -473,6 +489,70 @@ table {
         border-radius: 0;
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px; }
+
+.page-template-contact-us h1, .page-template-contact-us h2, .page-template-contact-us h3, .page-template-contact-us h4 {
+  margin: 0;
+  font-family: Raleway;
+  font-weight: 300; }
+
+.page-template-contact-us .hero-text {
+  height: 300px;
+  width: 100%;
+  padding: 66px 10px 0 10px;
+  color: #fff;
+  background-color: #95AFC9;
+  font-family: Raleway;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .page-template-contact-us .hero-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 50px; }
+  .page-template-contact-us .hero-text .hero-phone {
+    font-size: 2rem; }
+
+.page-template-contact-us .email-inquiries {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 40px 15px;
+  color: #6b747d; }
+  .page-template-contact-us .email-inquiries .email-info {
+    width: 100%; }
+  .page-template-contact-us .email-inquiries h2 {
+    font-size: 1.5rem;
+    padding-bottom: 15px; }
+  .page-template-contact-us .email-inquiries p {
+    font-size: .9rem;
+    padding-bottom: 8px; }
+
+.page-template-contact-us .info-dropdown {
+  height: 100%;
+  background-color: lightblue;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .page-template-contact-us .info-dropdown #hideshow {
+    border: none;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    height: 50px;
+    padding: 0; }
+
+.page-template-contact-us .info-field {
+  height: 200px;
+  background-color: #f4f1ea; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -861,6 +941,7 @@ a {
 
 .resources-article-pdf-list-container {
   height: 371px;
+<<<<<<< HEAD
   background-color: #f4f1ea;
   font-family: 'raleway',sans-serif;
   font-size: 14px; }
@@ -890,7 +971,10 @@ a {
 .pdf-item p {
   margin-left: 14px;
   color: #4a4a4a;
-  font-weight: 300; }
+  font-weight: 300; 
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  background-color: black; }
 
 .resources-links-container {
   height: 380px; }
@@ -1038,10 +1122,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.button-holder {
-  background-color: blue;
-  color: white; }
-
 .page-template-volunteer .site-main, .page-template-support .site-main, .page-template-partner .site-main {
   display: -ms-flexbox;
   display: flex;
@@ -1052,52 +1132,59 @@ object {
   -ms-flex-align: center;
       align-items: center;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  font-family: raleway, arial;
+  font-weight: lighter;
+  color: #6b747d; }
+  .page-template-volunteer .site-main .button-wrap, .page-template-support .site-main .button-wrap, .page-template-partner .site-main .button-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 10%;
+    padding: 10px;
+    background-color: #4a4a4a; }
   .page-template-volunteer .site-main .entry-header, .page-template-support .site-main .entry-header, .page-template-partner .site-main .entry-header {
     width: 100vw;
     height: 100vh;
-    top: 0; }
-    .page-template-volunteer .site-main .entry-header .button-wrap, .page-template-support .site-main .entry-header .button-wrap, .page-template-partner .site-main .entry-header .button-wrap {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      padding: 10px; }
+    top: 0;
+    color: #fff; }
   .page-template-volunteer .site-main header, .page-template-volunteer .site-main section, .page-template-support .site-main header, .page-template-support .site-main section, .page-template-partner .site-main header, .page-template-partner .site-main section {
     width: 100%; }
-  .page-template-volunteer .site-main .volunteer-ops, .page-template-support .site-main .volunteer-ops, .page-template-partner .site-main .volunteer-ops {
-    background-color: lightsalmon; }
-    .page-template-volunteer .site-main .volunteer-ops .list-container, .page-template-support .site-main .volunteer-ops .list-container, .page-template-partner .site-main .volunteer-ops .list-container {
+  .page-template-volunteer .site-main .container-one, .page-template-support .site-main .container-one, .page-template-partner .site-main .container-one {
+    background-color: #fff; }
+    .page-template-volunteer .site-main .container-one .list-container, .page-template-support .site-main .container-one .list-container, .page-template-partner .site-main .container-one .list-container {
       width: 100%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: row;
           flex-direction: row; }
-    .page-template-volunteer .site-main .volunteer-ops .decorative-line-case, .page-template-support .site-main .volunteer-ops .decorative-line-case, .page-template-partner .site-main .volunteer-ops .decorative-line-case {
+    .page-template-volunteer .site-main .container-one .decorative-line-case, .page-template-support .site-main .container-one .decorative-line-case, .page-template-partner .site-main .container-one .decorative-line-case {
       width: 10%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-      .page-template-volunteer .site-main .volunteer-ops .decorative-line-case .decorative-line, .page-template-support .site-main .volunteer-ops .decorative-line-case .decorative-line, .page-template-partner .site-main .volunteer-ops .decorative-line-case .decorative-line {
+      .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line, .page-template-support .site-main .container-one .decorative-line-case .decorative-line, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line {
         width: 25%;
         height: 90%;
         border-radius: 30px;
-        background-color: red; }
-    .page-template-volunteer .site-main .volunteer-ops ul, .page-template-support .site-main .volunteer-ops ul, .page-template-partner .site-main .volunteer-ops ul {
+        background-color: #cce8ea; }
+    .page-template-volunteer .site-main .container-one ul, .page-template-support .site-main .container-one ul, .page-template-partner .site-main .container-one ul {
       width: 90%;
       margin: 0; }
-  .page-template-volunteer .site-main .volunteer-yoga, .page-template-support .site-main .volunteer-yoga, .page-template-partner .site-main .volunteer-yoga {
-    background-color: lightgreen; }
-    .page-template-volunteer .site-main .volunteer-yoga .button-case-holder, .page-template-support .site-main .volunteer-yoga .button-case-holder, .page-template-partner .site-main .volunteer-yoga .button-case-holder {
-      background-color: lightblue;
-      margin-bottom: 5%; }
-  .page-template-volunteer .site-main .volunteer-community, .page-template-support .site-main .volunteer-community, .page-template-partner .site-main .volunteer-community {
-    background-color: lightpink; }
-  .page-template-volunteer .site-main .volunteer-advisor, .page-template-support .site-main .volunteer-advisor, .page-template-partner .site-main .volunteer-advisor {
-    background-color: lightyellow; }
-  .page-template-volunteer .site-main .volunteer-opportun, .page-template-support .site-main .volunteer-opportun, .page-template-partner .site-main .volunteer-opportun {
-    background-color: lightgreen; }
+  .page-template-volunteer .site-main .container-two, .page-template-support .site-main .container-two, .page-template-partner .site-main .container-two {
+    background-color: #95afc9; }
+    .page-template-volunteer .site-main .container-two h2, .page-template-support .site-main .container-two h2, .page-template-partner .site-main .container-two h2 {
+      color: #4a4a4a; }
+  .page-template-volunteer .site-main .container-three, .page-template-support .site-main .container-three, .page-template-partner .site-main .container-three {
+    background-color: #f3f0e9; }
+  .page-template-volunteer .site-main .container-four, .page-template-support .site-main .container-four, .page-template-partner .site-main .container-four {
+    background-color: #cce8ea; }
+  .page-template-volunteer .site-main .container-tshirt, .page-template-support .site-main .container-tshirt, .page-template-partner .site-main .container-tshirt {
+    background: url("../../images/tshirt_mobile.png") no-repeat center bottom;
+    background-size: cover, cover;
+    color: #fff; }
 
 /* Volunteer */
 ol {
@@ -1123,7 +1210,8 @@ ol {
     font-size: 4rem;
     background-color: white;
     border-radius: 100%;
-    padding: 10% 22%; }
+    padding: 10% 22%;
+    color: #95afc9; }
   ol li p {
     padding-top: 10%;
     margin: 0; }
@@ -1186,13 +1274,11 @@ p {
       padding: 0 10%; }
   .home .hero-banner {
     position: relative;
-    color: white; }
-    .home .hero-banner .hero-image {
-      height: 400px;
-      width: 100%;
-      object-fit: cover; }
+    color: white;
+    height: 400px;
+    width: 100%; }
     .home .hero-banner .herobanner-text {
-      position: absolute;
+      margin: 0 auto;
       bottom: 7%;
       left: 10%; }
       .home .hero-banner .herobanner-text h2 {
@@ -1201,8 +1287,7 @@ p {
       .home .hero-banner .herobanner-text p {
         font-size: 16px;
         line-height: 2;
-        padding: 15px;
-        width: 300px; }
+        padding: 15px; }
     .home .hero-banner .aboutus-button {
       width: 230px;
       height: 44px;
@@ -1303,6 +1388,7 @@ p {
         justify-content: center;
     text-transform: uppercase; }
     .home footer form {
+      width: 100%;
       height: 81px;
       background-color: #9FABB7;
       display: -ms-flexbox;
