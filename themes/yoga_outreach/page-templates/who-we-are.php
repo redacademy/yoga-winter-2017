@@ -14,39 +14,65 @@ get_header(); ?>
                 <h1 class="header-title"><?php the_title(); ?></h1>
                 <p>Yoga Outreach is possible thanks to the dedicated, hard-working team  running the programs.</p>
             </header>
+            
             <section class="team">
                 <div class="teamheader">
                     <h2>The YO Team</h2>
                     <p>Click on name for bio and contact info.</p>
                 </div>
             
-                <?php $fields= CFS()->get( 'staff_members' ); ?>  <!--variable to hold staffs from loop-->
+                <div class="info-dropdown">
+                    <h3>staff</h3><span>+</span>
+                </div>
+                <div class="info-field">
+                    <?php $fields= CFS()->get( 'staff_members' ); ?>  <!--variable to hold staffs from loop-->
 
-                <?php if(!empty($fields)): ?>
-                    <?php foreach( $fields as $field ): ?>
-                        <div class="info-dropdown">
-                            <h3>staff</h3><span>+</span>
-                        </div>
-                        <div class="info-field"> 
-                            <div class="imgframe">
+                    <?php if(!empty($fields)): ?>
+                        <?php foreach( $fields as $field ): ?>
+                            <div class="stafflist"> 
                                 <img src="<?php echo $field['staff_photo']; ?>" alt="staff photo" class="staffphoto">
+                                <p><?php echo $field['staff_name']; ?></p>
+                                <div class="accent-name-shape"></div>
                             </div>
-                            <p><?php echo $field['staff_name']; ?></p>
-                            <div class="accent-name-shape"></div>
-                        </div>
-                    <?php endforeach; ?>
-                <?php endif; ?>  
-            </section>      
+                        <?php endforeach; ?>
+                    <?php endif; ?>  
+                </div>
 
-            <form class="e-news-signup">
-                <label for="e-news">Sign Up for E-News</label>
-                <label class="input-bar">
-                    <input type="email" id="e-news">
-                    <input type="submit" id="submit-button" value="join" onclick="sendMail()">
-                </label>
-            </form>
+                <div class="info-dropdown">
+                    <h3>Board of Directors</h3><span>+</span>
+                </div>
+                <div class="info-field">
+                    <?php $fields= CFS()->get( 'board_of_directors' ); ?>  <!--variable to hold staffs from loop-->
+
+                    <?php if(!empty($fields)): ?>
+                        <?php foreach( $fields as $field ): ?>
+                            <div class="stafflist"> 
+                                <img src="<?php echo $field['directors_photo']; ?>" alt="staff photo" class="staffphoto">
+                                <p><?php echo $field['directors']; ?></p>
+                                <div class="accent-name-shape"></div>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>  
+                </div>
+
+                <div class="info-dropdown">
+                    <h3>Advisory Council</h3><span>+</span>
+                </div>
+                <div class="info-field">
+                    <?php $fields= CFS()->get( 'council' ); ?>  <!--variable to hold staffs from loop-->
+
+                    <?php if(!empty($fields)): ?>
+                        <?php foreach( $fields as $field ): ?>
+                            <div class="stafflist"> 
+                                <img src="<?php echo $field['council_photo']; ?>" alt="staff photo" class="staffphoto">
+                                <p><?php echo $field['council_name']; ?></p>
+                                <div class="accent-name-shape"></div>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>  
+                </div>
+
+            </section>   
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php /*get_footer(); ?>*/
+<?php get_footer(); ?>
