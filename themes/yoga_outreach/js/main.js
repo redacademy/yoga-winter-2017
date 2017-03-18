@@ -8,10 +8,10 @@
 
     $('.info-dropdown').click(function () {
         if ($(this).next('.info-field').is(':hidden')) {
-            $(this).next('.info-field').slideDown('fast');
+            $(this).next('.info-field').slideDown('normal');
             $(this).children('span').text('-');
         } else {
-            $(this).next('.info-field').slideUp('fast');
+            $(this).next('.info-field').slideUp('normal');
             $(this).children('span').text('+');
         }
     });
