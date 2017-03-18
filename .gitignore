@@ -32,6 +32,7 @@ plugins/*
 !plugins/yoga_outreach_functionality
 !plugins/custom-field-suite
 !plugins/responsive-menu
+!plugins/easylogo
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
