@@ -43,7 +43,27 @@ get_header(); ?>
 				</ul>
 					
 			</div>
-			<!--Insert list here-->
+			<ul class="training-list">
+                <?php
+                    $infoItems = CFS()->get('yoga_info_list');
+                    foreach ( $infoItems as $infoItem ):
+                    $infoPDF = $infoItem['list_file_upload'];
+                    $infoContent = $infoItem['list_content'];
+                ?>
+                <li class="training-list-item">
+					<div id = "training-pdf-container">
+                    	<p><?php echo $infoItem ['list_title'];?></p>
+                    	<?php if(!empty($infoPDF)): ?>
+                   		<a href ="<?php echo $infoPDF;?>">PDF</a>
+					</div>
+					<?php endif; ?>
+                    <?php if(!empty($infoContent)): ?>
+                    <p><?php echo $infoContent;?></p>
+					<?php endif; ?>
+                </li><!--training-list-item-->
+                  
+			 <?php endforeach; ?>
+            </ul>
 			<div class="bottom-button-container">
 				<button class="general-first-button">Book Training</button>
 			</div>
