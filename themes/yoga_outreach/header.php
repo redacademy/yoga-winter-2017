@@ -32,7 +32,7 @@
 		    	</span>
           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<div id="header-logo">
-					<img class="logo-image" src="<?php echo CFS()->get('logo_image'); ?>" alt="logo-image" />
+					<div class="logo-image"><?php show_easylogo(); ?></div>
 					</div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->

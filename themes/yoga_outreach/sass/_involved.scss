@@ -1,3 +1,36 @@
+.main-carousel{
+            width: 90%;
+            padding: 30px;
+            margin: 0 auto;
+            .carousel-cell{
+                width: 100%;
+                height: auto;
+                p{
+                    margin-top: 20px;
+                }
+                h1{
+                    color: $darktext_color;
+                }
+            }
+            ol{
+                display: none;
+            }
+            .flickity-prev-next-button{
+                border: none;
+                background: none;
+                box-shadow: none;
+                padding: 0;
+                top: 25%;
+            }
+            .flickity-prev-next-button.next {
+                right: 5%;
+            }
+            .flickity-prev-next-button.previous {
+                left: 5%;
+            }
+        }
+
+
 .page-template-volunteer, .page-template-support, .page-template-partner {
     .site-main {
         display: flex;
@@ -14,6 +47,7 @@
             flex-direction: column;
             height: 10%;
             padding: 10px;
+            width: 100vw;
             background-color: $darktheme_color;
         }
         .entry-header{
@@ -22,24 +56,11 @@
             top: 0;
             color: $basetext_color;
         }
-        .main-carousel{
-            width: 50%;
-            padding: 30px;
-            margin: 0 auto;
-            .carousel-cell{
-                width: 100%;
-                height: auto;
-            }
-            ol{
-                display: none;
-            }
-            .flickity-prev-next-button{
-                border: none;
-                background: none;
-                box-shadow: none;
-            }
+
+        header, section > *{
+            width: 100vw;
+            padding: 15px;
         }
-        header, section{width: 100%;}
 
         .container-one{
             background-color: $base_color;
@@ -160,9 +181,8 @@ ol {
 
 .partners-container{
     text-align: left;
-    padding-left: 5%;
     h3{
         width: 85%;
-    }
-    
+    } 
 }
+
