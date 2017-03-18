@@ -19,7 +19,7 @@
 			<div class="site-info">
 				<div class="siteinfo-text">
 				<p>contact</p>
-				<p>private policy</p>
+				<p>privacy policy</p>
 				</div>
 				<!--<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>-->
 				<section class ="socialmedia-icons">
@@ -55,6 +55,6 @@
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
-		<?php wp_footer(); ?>
+	<?php wp_footer(); ?>
 	</body>
 </html>

@@ -1,0 +1,80 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform: uppercase;
+    form {
+        width: 100%;
+        height: 81px;
+        background-color: #9FABB7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        label {
+            font-size: .7rem;
+            font-family: raleway;
+            color: white;
+            text-transform: uppercase;
+        }
+        .input-bar{
+            font-size:0;
+            display: inline-flex;
+            #e-news {
+                width: 229px;
+                height: 40px;
+                border: none;
+                border-radius: 0;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+            #submit-button {
+                height: 40px;
+                width: 66px;
+                padding: 0;
+                font-weight: lighter;
+                text-shadow: none;
+                text-transform: uppercase;
+                color: #4A4A4A;
+                background-color: #C1D3DA;
+                border: none;
+                box-shadow: none;
+                border-radius: 0;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+        }
+    }
+    .siteinfo-text{
+        margin-top: 50px;
+    }
+    p{
+        margin: 0;
+        font-size: 14px;
+    }
+    .socialmedia-icons{
+        color:#9FABB7;
+        font-size: 1.2rem;
+        ul{
+            list-style: none;
+            margin:0;
+            padding:0;
+            li{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                margin: 20px 10px 20px 10px;
+                border: 1.5px solid #9FABB7;
+                border-radius: 50%;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .copyright{
+        text-transform: capitalize;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
