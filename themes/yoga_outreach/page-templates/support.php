@@ -19,13 +19,13 @@ get_header(); ?>
                     <button class="button-holder"><a href="#current-sponsor" class="button">Current Sponsor</a></button>
                 </div>
             </header><!-- .entry-header -->
-            <section>
+            <section class="container-three">
                 <div class="main-carousel">
                     <?php
                     $fields = CFS()->get( 'donation_levels' ); // returns an array of posts
                     foreach ( $fields as $field ):?>
                         <div class="carousel-cell">
-                            <h1><?php echo $field['donation_level']; ?></h1>
+                            <h1>$<?php echo $field['donation_level']; ?></h1>
                             <p><?php echo $field['donation_description']; ?></p>
                         </div>
                     <?php endforeach; ?>
@@ -42,7 +42,7 @@ get_header(); ?>
                         <img src="<?php CFS()->get( 'monthly_contributor' ); ?>" alt="">
                     </div> 
                 <p>For as little as $15 a month, less than a drop in yoga class, you can ensure that youth and adults in mental health facilities, prison or youth custody, alcohol and drug treatment centers, women and children who have experienced violence, or adults suffering from early onset dementia, have access to the powerful and healing practices of yoga and meditation, providing a method to reclaim their minds and bodies, to self regulate, and to connect with people in their community.</p>
-                <button class="button-holder">Donate Now</button>
+                <div><button class="button-holder">Donate Now</button></div>
             </section>
             <section id="sponsor" class="container-three">
                 <h2 class="h2-holder">Become an Event Sponsor</h2>
@@ -53,9 +53,9 @@ get_header(); ?>
             <section id="tshirt" class="container-tshirt">
                 <h2 class="h2-holder">Get a T-Shirt</h2>
                 <p>Our new t-shirts made by Fairware, these shirts are sustainably made, ethically sourced and absolutely gorgeous to wear! In a wide variety of colours and styles you are sure to find one you love and all proceeds support our programming.</p>
-                <button class="button-holder">Shop T-Shirts</button>
+                <div><button class="button-holder">Shop T-Shirts</button></div>
             </section>
-            <section id="current-sponsor" class="container-one">
+            <section id="current-sponsor" class="container-one partners-container">
                 <h2 class="h2-holder">Our Current Sponsors</h2>
                 <p>Yoga Outreach's past 20 years of community service has only been possible thanks to volunteers and individuals like YOU who donate to support the healing of your community.</p>
                 <div class="info-dropdown custom-info-container"><h3>Program Sponsors, In-kind & Financial Support</h3><span>+</span></div>
