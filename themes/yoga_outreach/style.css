@@ -726,6 +726,50 @@ footer {
     padding: 10px;
     font-size: 14px; }
 
+<<<<<<< HEAD
+=======
+.info-dropdown {
+  height: 60px;
+  padding: 15px;
+  background-color: #f4f1ea;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .info-dropdown h3 {
+    font-weight: bold;
+    font-size: 1.3rem; }
+  .info-dropdown span {
+    font-size: 1.8rem; }
+
+.info-field {
+  display: none;
+  height: 100%;
+  padding: 0 15px 20px;
+  background-color: #f4f1ea;
+  font-size: .9rem;
+  font-weight: lighter; }
+
+.entry-title {
+  text-align: center;
+  color: white;
+  padding-top: 49px;
+  font-weight: 500; }
+
+.page-title-header {
+  text-align: center;
+  color: white;
+  padding-top: 66px; }
+
+.teal-button {
+  background-color: #6CFFFE; }
+
+.grey-button {
+  background-color: #94BFD1; }
+
+>>>>>>> core-training
 .page-template-contact-us h1, .page-template-contact-us h2, .page-template-contact-us h3, .page-template-contact-us h4, .page-template-contact-us h5 {
   margin: 0;
   font-family: Raleway;
@@ -1046,23 +1090,6 @@ a {
 .page-template-training {
   font-family: 'raleway',sans-serif; }
 
-.entry-title {
-  text-align: center;
-  color: white;
-  padding-top: 49px;
-  font-weight: 500; }
-
-.page-title-header {
-  text-align: center;
-  color: white;
-  padding-top: 66px; }
-
-.teal-button {
-  background-color: #6CFFFE; }
-
-.grey-button {
-  background-color: #94BFD1; }
-
 .heading-subtitle {
   color: white;
   width: 200px;
@@ -1093,12 +1120,6 @@ a {
   border-radius: 8px;
   border: none;
   font-size: 14px; }
-
-.general-first-button.teal-button {
-  background-color: #6CFFFE; }
-
-.general-second-button.grey-button {
-  background-color: #94BFD1; }
 
 .button-black-text {
   color: black; }
@@ -1155,7 +1176,6 @@ a {
   padding: 19px 15px; }
 
 .training-list-item {
-  margin-bottom: 30px;
   font-weight: 500;
   font-size: 14px; }
 
@@ -1183,7 +1203,33 @@ a {
   text-align: center;
   font-size: 12px; }
   .testimonial-list li {
-    width: 100%; }
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex; }
+
+#training-pdf-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 5px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  #training-pdf-container a {
+    background-color: #fff;
+    width: 80px;
+    height: 44px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid white; }
 
 .carousel-cell {
   width: 100%;
@@ -1775,23 +1821,6 @@ object {
 .page-template-training {
   font-family: 'raleway',sans-serif; }
 
-.entry-title {
-  text-align: center;
-  color: white;
-  padding-top: 49px;
-  font-weight: 500; }
-
-.page-title-header {
-  text-align: center;
-  color: white;
-  padding-top: 66px; }
-
-.teal-button {
-  background-color: #6CFFFE; }
-
-.grey-button {
-  background-color: #94BFD1; }
-
 .heading-subtitle {
   color: white;
   width: 200px;
@@ -1822,12 +1851,6 @@ object {
   border-radius: 8px;
   border: none;
   font-size: 14px; }
-
-.general-first-button.teal-button {
-  background-color: #6CFFFE; }
-
-.general-second-button.grey-button {
-  background-color: #94BFD1; }
 
 .button-black-text {
   color: black; }
@@ -1884,7 +1907,6 @@ object {
   padding: 19px 15px; }
 
 .training-list-item {
-  margin-bottom: 30px;
   font-weight: 500;
   font-size: 14px; }
 
@@ -1912,7 +1934,33 @@ object {
   text-align: center;
   font-size: 12px; }
   .testimonial-list li {
-    width: 100%; }
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex; }
+
+#training-pdf-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 5px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  #training-pdf-container a {
+    background-color: #fff;
+    width: 80px;
+    height: 44px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid white; }
 
 .carousel-cell {
   width: 100%;
