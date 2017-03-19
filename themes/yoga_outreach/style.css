@@ -519,13 +519,30 @@ button {
 .page-title-header {
   text-align: center;
   color: white;
-  padding-top: 66px; }
+  padding-top: 66px;
+  font-weight: 300;
+  font-size: 24px; }
 
 .teal-button {
   background-color: #6CFFFE; }
 
 .grey-button {
   background-color: #94BFD1; }
+
+.general-button:hover {
+  box-shadow: none; }
+
+.testimonial-list.main-carousel {
+  padding: 20px 0;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  background-color: #EBE5D8; }
+  .testimonial-list.main-carousel li {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex; }
 
 p {
   margin-bottom: 0;
@@ -976,12 +993,13 @@ a {
 .general-template-section {
   height: 400px;
   background-color: lightgreen;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .general-button-container {
   position: absolute;
   width: 100%;
-  top: 316px; }
+  bottom: 0; }
 
 .general-button, .book-training-button {
   width: 230px;
@@ -1065,24 +1083,14 @@ a {
   height: 85px;
   width: 100%;
   background-color: #6B747D;
-  margin-top: 29px;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .fill-white {
   background-color: #fff;
   color: #4A4A4A; }
-
-.testimonial-list {
-  padding: 0;
-  list-style: none;
-  margin: 0;
-  text-align: center;
-  font-size: 12px; }
-  .testimonial-list li {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex; }
 
 #training-pdf-container {
   display: -ms-flexbox;
@@ -1108,12 +1116,10 @@ a {
     border-radius: 8px;
     border: 1px solid white; }
 
-.carousel-cell {
-  width: 100%;
-  /* full width */
-  height: 160px;
-  /* height of carousel */
-  margin-right: 10px; }
+.bottom-button-container .general-button {
+  color: #4A4A4A;
+  background-color: #fff;
+  margin-bottom: 0; }
 
 .page-template-core-training {
   font-family: 'raleway',sans-serif; }
@@ -1230,16 +1236,35 @@ table, tr {
   margin: 0 auto;
   text-align: center; }
 
+.page-subtitle {
+  color: white;
+  font-size: 16px;
+  margin-top: 44px;
+  padding: 0 1rem;
+  text-align: center;
+  line-height: 25px; }
+
+.page-template-resources-research .info-heading {
+  font-size: 16px;
+  font-weight: 100; }
+
+.info-heading-subtitle {
+  color: #4A4A4A; }
+
 .main-h3-container h3 {
   margin-top: 35px;
   font-size: 24px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #6B747D; }
 
 .main-h3-container p {
   font-size: 14px;
   padding-bottom: 22px;
   width: 262px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #6B747D;
+  text-align: center; }
 
 .list-text-container p {
   display: inline; }
@@ -1271,7 +1296,8 @@ table, tr {
       -ms-flex-align: center;
           align-items: center;
       text-decoration: none;
-      color: black; }
+      color: black;
+      font-size: 10px; }
 
 .pdf-item p {
   margin-left: 14px;
@@ -1295,6 +1321,10 @@ table, tr {
       box-shadow: none;
       color: #95afc9; }
 
+.links-button-container {
+  height: 50px;
+  background-color: #fff; }
+
 .link-list {
   padding: 0;
   margin: 0;
@@ -1303,7 +1333,7 @@ table, tr {
     margin-bottom: 7px; }
     .link-list li a {
       color: #6b747d;
-      font-weight: 800; }
+      font-weight: 200; }
 
 .link-list p {
   color: #4a4a4a;
@@ -1765,12 +1795,13 @@ object {
 .general-template-section {
   height: 400px;
   background-color: lightgreen;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .general-button-container {
   position: absolute;
   width: 100%;
-  top: 316px; }
+  bottom: 0; }
 
 .general-button, .book-training-button {
   width: 230px;
@@ -1854,24 +1885,14 @@ object {
   height: 85px;
   width: 100%;
   background-color: #6B747D;
-  margin-top: 29px;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .fill-white {
   background-color: #fff;
   color: #4A4A4A; }
-
-.testimonial-list {
-  padding: 0;
-  list-style: none;
-  margin: 0;
-  text-align: center;
-  font-size: 12px; }
-  .testimonial-list li {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex; }
 
 #training-pdf-container {
   display: -ms-flexbox;
@@ -1897,12 +1918,10 @@ object {
     border-radius: 8px;
     border: 1px solid white; }
 
-.carousel-cell {
-  width: 100%;
-  /* full width */
-  height: 160px;
-  /* height of carousel */
-  margin-right: 10px; }
+.bottom-button-container .general-button {
+  color: #4A4A4A;
+  background-color: #fff;
+  margin-bottom: 0; }
 
 .page-template-core-training {
   font-family: 'raleway',sans-serif; }

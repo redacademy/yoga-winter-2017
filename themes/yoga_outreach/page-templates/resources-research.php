@@ -12,12 +12,10 @@ get_header(); ?>
 				<h1 class ="page-title-header">
 					<?php the_title(); ?>
 				</h1>
-				<!--<p>
-					<?php the_content(); ?> Get entry-content
-				</p>-->
+				<p class ="page-subtitle">Find more information about trauma-informed yoga, studies, articles and videos here.</p>
 				<div class ="general-button-container">
-					<button class = "general-button teal-button">Research</button>
-					<button class = "general-button grey-button">For Facilities</button>
+					<button class = "general-button teal-button black-text">Research</button>
+					<button class = "general-button grey-button black-text">For Facilities</button>
 				</div>
 			</header><!--general-template-section-->
             <div class ="main-h3-container section-15px-padding">
@@ -25,24 +23,28 @@ get_header(); ?>
                 <p>Trauma sensitive yoga research from around the globe.</p>
             </div><!--research-h3-container-->
 			<section class ="resources-article-pdf-list-container section-15px-padding">
-				<p>Articles</p>
-				<p>+</p>
-				<p>Research papers & interesting articles about trauma-sensitive yoga</p>
+				<div class ="info-dropdown">
+					<h3 class ="info-heading">Articles</h3>
+					<p>+</p>
+				</div>
+				<p class ="info-heading-subtitle">Research papers & interesting articles about trauma-sensitive yoga</p>
+				<div>
 				<ul class ="resource-pdf-list">
 					<?php 
-						$pdfs = CFS()->get('pdf_list');
-						foreach ( $pdfs as $pdf ):?>
-						<li class ="pdf-item">
-							<a href ="<?php echo $pdf ['pdf_item'];?>" class ="pdf-button">PDF</a>
-							<p><?php echo $pdf['name_of_pdf'];?></p>
-						</li>
-						<?php endforeach ?>
+					$pdfs = CFS()->get('pdf_list');
+					foreach ( $pdfs as $pdf ):?>
+					<li class ="pdf-item">
+						<a href ="<?php echo $pdf ['pdf_item'];?>" class ="pdf-button">PDF</a>
+						<p><?php echo $pdf['name_of_pdf'];?></p>
+					</li>
+					<?php endforeach ?>
 				</ul>
+				</div><!--info-field-->
 			</section>
 			<section class="resources-links-container section-15px-padding">
-				<div>
+				<div class ="links-button-container info-dropdown">
 					<p>Links</p>
-					<button>-</button>
+					<span>-</span>
 				</div>
 				<ul class ="link-list">
 					<p><?php echo CFS()->get('link_text'); ?></p>
