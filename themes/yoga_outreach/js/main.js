@@ -7,7 +7,6 @@ $('.menu-main-menu-container').hide();
         $('.menu-main-menu-container').toggleClass('submenu');   
         $('.menu-main-menu-container').show();    
     });
-})(jQuery);
 
 
     $('.info-dropdown').click(function () {
@@ -19,7 +18,6 @@ $('.menu-main-menu-container').hide();
             $(this).children('span').text('+');
         }
     });
-(jQuery); 
 
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
@@ -27,10 +25,5 @@ $('.menu-main-menu-container').hide();
             scrollTop: $( $.attr(this, 'href') ).offset().top
         }, 500);
     });
-<<<<<<< HEAD
-(jQuery); 
-=======
 })(jQuery); 
 
-
->>>>>>> 97b4189f09a7305a311811f0935b5236397fc209
