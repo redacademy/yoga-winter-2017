@@ -10,8 +10,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image">
-                <h1 class="header-title"><?php the_title(); ?></h1>
-                <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
+                <div>   
+                    <h1 class="header-title"><?php the_title(); ?></h1>
+                    <p><?php echo CFS()->get( 'about_volunteer_ops' ); ?></p>
+                </div>
                 <div>
                     <button class="button-holder"><a href="#provide" class="button">What We Provide</a></button>
                     <button class="button-holder"><a href="#perspective" class="button">A Facility Perspective</a></button>
@@ -21,6 +23,7 @@ get_header(); ?>
             </header><!-- .entry-header -->
             <section id="provide" class="container-one">
                 <h2 class="h2-holder">What We Provide</h2>
+                <p><?php echo CFS()->get( 'about_facility_partners' ); ?></p>
                 <p><?php echo CFS()->get( 'what_we_provide' ); ?></p>
                 <div class="info-dropdown custom-info-container"><h3>Apply for Partnership</h3><span>+</span></div>
                 <div class="info-field custom-info-container">
@@ -30,7 +33,8 @@ get_header(); ?>
             </section>
             <section id="perspective" class="container-two">
                 <h2 class="h2-holder">A Facility Perspective</h2>
-                <img src="<?php echo CFS()->get( 'facility_video' ); ?>" />
+                <?php if(!empty(CFS()->get( 'facility_video' ))): ?><iframe width="420" height="315" src="<?php echo CFS()->get( 'facility_video' ); ?>"></iframe><?php endif; ?>
+                <?php if(empty(CFS()->get( 'facility_video' ))): ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/video-placeholder.jpg" /><?php endif; ?>
             </section>
             <section id="program" class="container-one partner-facility">
                 <h2 class="h2-holder">Receive yoga for Outreach Programming</h2>
@@ -39,6 +43,7 @@ get_header(); ?>
                     <ul>
                     <?php
                         $fields = CFS()->get( 'facility_requirements' ); // returns an array of posts
+                        if(!empty($fields)):
                             foreach ( $fields as $field ):?>
                                 <div>
                                     <li>
@@ -46,7 +51,8 @@ get_header(); ?>
                                     <p><?php echo $field['facility_requirement']; ?></p>
                                     </li>
                                 </div>
-                    <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                     </ul>
                 </div>
                 <div class="button-wrap"><button class="button-holder">Apply Now</button></div>
@@ -58,37 +64,43 @@ get_header(); ?>
                     <div class="info-field"><ul>
                         <?php
                         $fields = CFS()->get( 'current_partners' ); // returns an array of posts
+                        if(!empty($fields)):
                             foreach ( $fields as $field ):?>
                                 <div>
                                     <li>
                                     <p><?php echo $field['current_partner']; ?></p>
                                     </li>
                                 </div>
-                    <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                     </ul></div>
                     <div class="info-dropdown"><h3>Affiliate Programs</h3><span>+</span></div>
                     <div class="info-field"><ul>
                         <?php
                         $fields = CFS()->get( 'affiliate_programs' ); // returns an array of posts
+                        if(!empty($fields)):
                             foreach ( $fields as $field ):?>
                                 <div>
                                     <li>
                                     <p><?php echo $field['affiliate_program']; ?></p>
                                     </li>
                                 </div>
-                    <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                     </ul></div>
                     <div class="info-dropdown"><h3>Past Programs Partners</h3><span>+</span></div>
                     <div class="info-field"><ul>
                         <?php
                         $fields = CFS()->get( 'past_program_partners' ); // returns an array of posts
+                        if(!empty($fields)):
                             foreach ( $fields as $field ):?>
                                 <div>
                                     <li>
                                     <p><?php echo $field['past_program_partner']; ?></p>
                                     </li>
                                 </div>
-                    <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                     </ul></div>
                 </div>
             </section>

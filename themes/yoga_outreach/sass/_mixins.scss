@@ -36,3 +36,10 @@
 	font-family:'raleway',sans-serif;
 	font-size:14px;
 }
+
+
+//basic flex display
+@mixin flex-column{
+	display: flex;
+	flex-direction: column;
+}
