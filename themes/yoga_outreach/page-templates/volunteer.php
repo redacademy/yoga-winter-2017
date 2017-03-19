@@ -10,8 +10,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image">
-                <h1 class="header-title"><?php the_title(); ?></h1>
-                <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
+                <div>
+                    <h1 class="header-title"><?php the_title(); ?></h1>
+                    <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
+                </div>
                 <div>
                     <button class="button-holder"><a href="#instructor" class="button">Become a Yoga Teacher</a></button>
                     <button class="button-holder"><a href="#volunteer" class="button">Community Volunteer</a></button>
@@ -24,12 +26,15 @@ get_header(); ?>
                 <div class = "list-container">
                     <div class = "decorative-line-case"><span class="decorative-line"></span></div>
                     <ul>
-                        <li>Program continuity for students, opportunity to integrate best practices for service yoga settings</li>
-                        <li>Peer networking & community building</li>
-                        <li>Ongoing program support & mentorship opportunities</li>
-                        <li>Continuing education training (access to affordable workshops)</li>
-                        <li>Opportunities to co-teach</li>
-                        <li>Facility screening and liaising with staff handled by us!</li>
+                        <?php
+                        $fields = CFS()->get( 'volunteer_benefits' ); // returns an array of posts
+                        if(!empty($fields)):
+                            foreach ( $fields as $field ):?>
+                                <li>
+                                    <p><?php echo $field['volunteer_benefit']; ?></p>
+                                </li>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                     </ul>
                     </div>
             </section>
@@ -52,12 +57,12 @@ get_header(); ?>
             </section>
             <section id="volunteer" class="container-one">
                 <h2 class="h2-holder">Volunteer for Community Engagement</h2>
-                <p>Are you passionate about Yoga? Do you love meeting new people? Are you short on cash but have enthusiasm to spare? Join our team of Community Engagement Volunteers today! We are looking for volunteers with strong communication skills and a passion for people to join our team, especially individuals with skills in fundraising, marketing, communications, and information technology. </p>
+                <p><?php echo CFS()->get( 'community_engagement' ); ?></p>
                 <button class="button-holder">Apply Now</button>
             </section>
             <section id="council" class="container-three">
                 <h2 class="h2-holder">Volunteer for Advisory Council</h2>
-                <p>Yoga Outreach is seeking Advisory Council members who believe in our mission and wish to contribute expertise in the field of counseling psychology to the current and future work of the charity.</p>
+                <p><?php echo CFS()->get( 'advisory_council' ); ?></p>
                 <button class="button-holder">Contact Us</button>
             </section>
             <section id="opportunities" class="container-four">
