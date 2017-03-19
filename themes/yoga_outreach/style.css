@@ -1453,17 +1453,21 @@ object {
 .page-template-volunteer .site-main, .page-template-support .site-main, .page-template-partner .site-main {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
   -ms-flex-direction: column;
       flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: center;
       align-items: center;
   width: 100%;
   text-align: center;
   font-family: raleway, arial;
   font-weight: lighter;
-  color: #6b747d; }
+  color: #6b747d;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  flex-direction: column; }
   .page-template-volunteer .site-main .button-wrap, .page-template-support .site-main .button-wrap, .page-template-partner .site-main .button-wrap {
     display: -ms-flexbox;
     display: flex;
@@ -1477,39 +1481,65 @@ object {
     width: 100vw;
     height: 100vh;
     top: 0;
-    color: #fff; }
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
   .page-template-volunteer .site-main header, .page-template-volunteer .site-main section > *, .page-template-support .site-main header, .page-template-support .site-main section > *, .page-template-partner .site-main header, .page-template-partner .site-main section > * {
     width: 100vw;
     padding: 15px; }
-  .page-template-volunteer .site-main .container-one, .page-template-support .site-main .container-one, .page-template-partner .site-main .container-one {
+  .page-template-volunteer .site-main .container-one .contributor, .page-template-support .site-main .container-one .contributor, .page-template-partner .site-main .container-one .contributor {
+    background-color: #6b747d;
+    height: 200px;
+    width: 50%;
+    margin: 0 auto; }
+  .page-template-volunteer .site-main .container-one .custom-info-container, .page-template-support .site-main .container-one .custom-info-container, .page-template-partner .site-main .container-one .custom-info-container {
     background-color: #fff; }
-    .page-template-volunteer .site-main .container-one .contributor, .page-template-support .site-main .container-one .contributor, .page-template-partner .site-main .container-one .contributor {
-      background-color: #6b747d;
-      height: 200px;
-      width: 50%;
-      margin: 0 auto; }
-    .page-template-volunteer .site-main .container-one .custom-info-container, .page-template-support .site-main .container-one .custom-info-container, .page-template-partner .site-main .container-one .custom-info-container {
-      background-color: #fff; }
-    .page-template-volunteer .site-main .container-one .list-container, .page-template-support .site-main .container-one .list-container, .page-template-partner .site-main .container-one .list-container {
+  .page-template-volunteer .site-main .container-one .list-container, .page-template-support .site-main .container-one .list-container, .page-template-partner .site-main .container-one .list-container {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .page-template-volunteer .site-main .container-one .accent-background, .page-template-support .site-main .container-one .accent-background, .page-template-partner .site-main .container-one .accent-background {
+    position: relative;
+    padding: 0; }
+    .page-template-volunteer .site-main .container-one .accent-background .background-accent, .page-template-support .site-main .container-one .accent-background .background-accent, .page-template-partner .site-main .container-one .accent-background .background-accent {
+      position: absolute;
       width: 100%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-    .page-template-volunteer .site-main .container-one .decorative-line-case, .page-template-support .site-main .container-one .decorative-line-case, .page-template-partner .site-main .container-one .decorative-line-case {
-      width: 10%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
-      .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line, .page-template-support .site-main .container-one .decorative-line-case .decorative-line, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line {
-        width: 25%;
-        height: 90%;
-        border-radius: 30px;
-        background-color: #cce8ea; }
-    .page-template-volunteer .site-main .container-one ul, .page-template-support .site-main .container-one ul, .page-template-partner .site-main .container-one ul {
-      width: 90%;
-      margin: 0; }
+      height: 400px;
+      background-color: #f4f1ea;
+      z-index: -1;
+      top: -10px; }
+  .page-template-volunteer .site-main .container-one .decorative-line-case, .page-template-support .site-main .container-one .decorative-line-case, .page-template-partner .site-main .container-one .decorative-line-case {
+    position: relative;
+    width: 10%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+    .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line, .page-template-support .site-main .container-one .decorative-line-case .decorative-line, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line {
+      width: 25%;
+      height: 90%;
+      border-radius: 30px;
+      background-color: #cce8ea; }
+    .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line2, .page-template-support .site-main .container-one .decorative-line-case .decorative-line2, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line2 {
+      position: absolute;
+      width: 150px;
+      height: 20px;
+      background-color: #94bfd1;
+      opacity: .8;
+      left: 70%;
+      bottom: 50%;
+      z-index: -1;
+      border-radius: 8px; }
+  .page-template-volunteer .site-main .container-one ul, .page-template-support .site-main .container-one ul, .page-template-partner .site-main .container-one ul {
+    width: 90%;
+    margin: 0;
+    text-align: left; }
   .page-template-volunteer .site-main .container-two, .page-template-support .site-main .container-two, .page-template-partner .site-main .container-two {
     background-color: #95afc9; }
     .page-template-volunteer .site-main .container-two h2, .page-template-support .site-main .container-two h2, .page-template-partner .site-main .container-two h2 {
@@ -1578,6 +1608,8 @@ object {
   text-align: left; }
   .partners-container h3 {
     width: 85%; }
+  .partners-container h2, .partners-container p {
+    text-align: center; }
 
 .home {
   text-align: center;
