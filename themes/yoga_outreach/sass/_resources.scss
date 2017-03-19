@@ -50,6 +50,7 @@
     list-style:none;
     padding:0;
     margin-left:0;
+    margin-top:21px;
         li{
             display:flex;
                 a{
@@ -71,7 +72,7 @@
 .pdf-item{
     p{
         margin-left:14px;
-        color:$darktheme_color;
+        color:$darktext_color;
         font-weight:300;
         font-size:14px;
     }
@@ -103,8 +104,10 @@
     list-style:none;
         li{
             margin-bottom:7px;
-            font-weight:500;
-            color:$lighttext_color;
+                a{
+                    color:$lighttext_color;
+                    font-weight:800;
+                }
         }
 }
 
@@ -116,3 +119,5 @@
         padding-bottom:15px;
     }
 }
+
+//Researouces Media

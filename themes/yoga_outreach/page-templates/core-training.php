@@ -28,11 +28,17 @@ get_header(); ?>
 					<img src ="<?php echo get_template_directory_uri(); ?>/images/earth_icon.svg" class = "earth-logo"alt ="earth_icon">
 					<h3 class ="avail-online-h3">available online and in-classroom format!</h3>
 				</div>
-				<p class = "light-training-para"><?php echo CFS()->get('light_paragraph'); ?></p>
-				<p class = "dark-training-para"><?php echo CFS()->get('dark_paragraph'); ?></p>
+				<p class = "light-training-para"><?php echo CFS()->get('light_training_para'); ?></p>
+				<p class = "dark-training-para"><?php echo CFS()->get('dark_training_para'); ?></p>
 			</section><!--section-15px-padding-->
 			<div class ="testimonal-container">
-			<!--empty div-->
+				<ul class ="testimonial-list main-carousel">
+					<?php
+					$testimonials = CFS()->get('testimonial_item');
+					foreach ( $testimonials as $testimonial): ?>
+					<li class ="carousel-cell"><?php echo $testimonial ['testimonial'];?></li>
+					<?php endforeach ?>
+				</ul>
 			</div>
 			<section class ="section-15px-padding dates-section">
 			<div class ="icon-heading-container">
@@ -50,6 +56,25 @@ get_header(); ?>
 			</ul>
 				<p>Now you can take the training online in an eight week format.</p>
 				<p>This 8 week online training is comprised of weekly videos, reading, assignments and online interaction. Each week is a new section and will build on the previous . . .</p>
+			</section>
+			<section class ="18-hour-core-section section-15px-padding">
+				<div class ="core-training-text-image-container">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/house_icon.svg" class ="house-logo" alt="house logo">
+					<h3>2017 Training Dates Classroom (18 hours)</h3>
+				</div>
+				<table class ="full-time-training-table">
+					<tr>
+						<td>
+							<span class ="table-heading">Date</span><span class ="table-content">March 17 - 19, 2017</span>
+						</td>
+						<td>
+							<span class ="table-heading">Location</span><span class ="table-content">Croatian Cultural Centre 3250 Commercial Drive, Vancouver, BC</span>
+						</td>
+						<td>
+							<span class ="table-heading">Price (CAD)</span><span class ="table-content">$360.00</span>
+						</td>
+					</tr>
+				</table>
 			</section>
 			
 			<ul class = "training-list">

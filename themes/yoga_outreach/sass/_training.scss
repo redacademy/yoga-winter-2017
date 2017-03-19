@@ -1,5 +1,12 @@
 .page-template-training-main{
     font-family:'raleway',sans-serif;
+        .main-h3-container{
+            h3, p{
+                color:$lighttext_color;
+                font-weight:200;
+                line-height:24px;
+            }
+        }
 }
 
 .training-para-left{

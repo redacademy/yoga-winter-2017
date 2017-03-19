@@ -1,17 +1,16 @@
 .page-template-core-training{
     font-family:'raleway',sans-serif;
-}
+    }
 
 .section-15px-padding{
     padding:0 15px;
-}
+    }
 
 .core-h3-container{
     width:100%;
     border-bottom: 2px solid #4A4A4A;
 	padding-bottom:16px;
-    
-}
+    }
 
 .core-header{
     margin:0;
@@ -20,27 +19,26 @@
     font-size:20px;
     line-height:24px;
     margin-top:39px;
-    
-}
+    }
 
 .earth-logo{
     width:26px;
     height:26px;
     margin-right:9px;
-}
+    }
 
-.avail-online-heading-container{
+.avail-online-heading-container, .core-training-text-image-container{
     display:flex;
     margin-top:25px;
     margin-bottom:15px;
+    align-items:center;
         h3{
             margin:0;
             text-transform:uppercase;
-            font-size:14px;
+            font-size:18px;
             font-weight:bold;
-    }
-
-}
+            }
+        }
 
 .light-training-para{
     color:#6B747D;
@@ -75,7 +73,9 @@
             margin-bottom:5px;
             padding-left:5px;
         }
-        .training-date-text{
+}
+        
+.training-date-text{
             font-size:11px;
             color:#4A4A4A;
             line-height:2;
@@ -87,7 +87,6 @@
                     margin-left:45px;
                 }
         }
-}
 
 .training-date-list{
     span{
@@ -96,4 +95,33 @@
         text-transform:normal;
     }
 
+}
+
+.house-logo{
+    width:27.94px;
+    height:28.92px;
+    margin-right:9px;
+}
+
+table, tr{
+    border:1px solid black;
+}
+
+.full-time-training-table{
+    td{
+        display:block;
+            span{
+                margin-left:10px;
+            }
+    }
+}
+
+
+.table-heading{
+    display:inline-block;
+    width:50px;
+    margin-right:10px;
+}
+.table-content{
+    font-size:11px;
 }
