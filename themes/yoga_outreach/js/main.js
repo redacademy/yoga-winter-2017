@@ -7,10 +7,6 @@ $('.menu-main-menu-container').hide();
         $('.menu-main-menu-container').toggleClass('submenu');   
         $('.menu-main-menu-container').show();    
     });
-<<<<<<< HEAD
-=======
-
->>>>>>> 966e8edc7f6a7cf7a3588b24302b7e55655da071
 
     $('.info-dropdown').click(function () {
         if ($(this).next('.info-field').is(':hidden')) {
@@ -20,11 +16,7 @@ $('.menu-main-menu-container').hide();
             $(this).next('.info-field').slideUp('normal');
             $(this).children('span').text('+');
         }
-<<<<<<< HEAD
     }); 
-=======
-    });
->>>>>>> 966e8edc7f6a7cf7a3588b24302b7e55655da071
 
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
@@ -32,13 +24,4 @@ $('.menu-main-menu-container').hide();
             scrollTop: $( $.attr(this, 'href') ).offset().top
         }, 500);
     });
-<<<<<<< HEAD
-
 })(jQuery); 
-=======
-(jQuery); 
-(jQuery); 
-
-})(jQuery); 
-
->>>>>>> 966e8edc7f6a7cf7a3588b24302b7e55655da071
