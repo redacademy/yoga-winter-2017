@@ -7,8 +7,6 @@ $('.menu-main-menu-container').hide();
         $('.menu-main-menu-container').toggleClass('submenu');   
         $('.menu-main-menu-container').show();    
     });
-})(jQuery);
-
 
     $('.info-dropdown').click(function () {
         if ($(this).next('.info-field').is(':hidden')) {
@@ -19,7 +17,6 @@ $('.menu-main-menu-container').hide();
             $(this).children('span').text('+');
         }
     });
-(jQuery); 
 
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
