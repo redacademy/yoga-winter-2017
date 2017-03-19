@@ -7,6 +7,12 @@ p{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    a{
+      color: $lighttext_color;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
     .fa-bars{
       color: #9FABB7;
       font-size: 2.3rem;
@@ -19,9 +25,21 @@ p{
       background-color: #F6FCFF;
       z-index: 2;
       order:3;
-      display: flex;
       ul{
         display:block;
+        display: flex;
+        flex-direction: column;
+      }
+      li{
+        width:100%;
+        padding: 1rem;
+      }
+      #menu-item-73{
+        background: #B6EAFF;
+        width: 150px;
+        height: 45px;
+        border-radius: 8px;
+        align-self: center;
       }
     }
    

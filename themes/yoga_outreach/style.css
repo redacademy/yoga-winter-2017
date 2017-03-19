@@ -43,6 +43,44 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'raleway';
+  src: url("../../fonts/raleway-semibold-webfont.eot");
+  src: url("../../fonts/raleway-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-semibold-webfont.woff") format("woff"), url("../../fonts/raleway-semibold-webfont.ttf") format("truetype"), url("../../fonts/raleway-semibold-webfont.svg#ralewaysemibold") format("svg");
+  font-weight: bolder;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../../fonts/raleway-light-webfont.eot");
+  src: url("../../fonts/raleway-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-light-webfont.woff") format("woff"), url("../../fonts/raleway-light-webfont.ttf") format("truetype"), url("../../fonts/raleway-light-webfont.svg#ralewaylight") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../../fonts/raleway-lightitalic-webfont.eot");
+  src: url("../../fonts/raleway-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-lightitalic-webfont.woff") format("woff"), url("../../fonts/raleway-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic") format("svg");
+  font-weight: lighter;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../../fonts/raleway-regular-webfont.eot");
+  src: url("../../fonts/raleway-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-regular-webfont.woff") format("woff"), url("../../fonts/raleway-regular-webfont.ttf") format("truetype"), url("../../fonts/raleway-regular-webfont.svg#ralewayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../../fonts/raleway-medium-webfont.eot");
+  src: url("../../fonts/raleway-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-medium-webfont.woff") format("woff"), url("../../fonts/raleway-medium-webfont.ttf") format("truetype"), url("../../fonts/raleway-medium-webfont.svg#ralewaymedium") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -218,37 +256,6 @@ table {
 td,
 th {
   padding: 0; }
-
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
-@font-face {
-  font-family: 'raleway';
-  src: url("../../fonts/raleway-light-webfont.eot");
-  src: url("../../fonts/raleway-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-light-webfont.woff") format("woff"), url("../../fonts/raleway-light-webfont.ttf") format("truetype"), url("../../fonts/raleway-light-webfont.svg#ralewaylight") format("svg");
-  font-weight: lighter;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'raleway';
-  src: url("../../fonts/raleway-lightitalic-webfont.eot");
-  src: url("../../fonts/raleway-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-lightitalic-webfont.woff") format("woff"), url("../../fonts/raleway-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic") format("svg");
-  font-weight: lighter;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'raleway';
-  src: url("../../fonts/raleway-medium-webfont.eot");
-  src: url("../../fonts/raleway-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-medium-webfont.woff") format("woff"), url("../../fonts/raleway-medium-webfont.ttf") format("truetype"), url("../../fonts/raleway-medium-webfont.svg#ralewaymedium") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'raleway';
-  src: url("../../fonts/raleway-regular-webfont.eot");
-  src: url("../../fonts/raleway-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-regular-webfont.woff") format("woff"), url("../../fonts/raleway-regular-webfont.ttf") format("truetype"), url("../../fonts/raleway-regular-webfont.svg#ralewayregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -558,6 +565,11 @@ p {
       flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center; }
+  #site-navigation a {
+    color: #6b747d;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem; }
   #site-navigation .fa-bars {
     color: #9FABB7;
     font-size: 2.3rem;
@@ -570,11 +582,24 @@ p {
     background-color: #F6FCFF;
     z-index: 2;
     -ms-flex-order: 3;
-        order: 3;
-    display: -ms-flexbox;
-    display: flex; }
+        order: 3; }
     #site-navigation .submenu ul {
-      display: block; }
+      display: block;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+    #site-navigation .submenu li {
+      width: 100%;
+      padding: 1rem; }
+    #site-navigation .submenu #menu-item-73 {
+      background: #B6EAFF;
+      width: 150px;
+      height: 45px;
+      border-radius: 8px;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; }
   #site-navigation .logo-image {
     width: 90px;
     padding: 0.5rem 0.8rem;
@@ -1572,7 +1597,6 @@ object {
   color: #6B747D; }
   .home h2 {
     text-transform: capitalize;
-    font-weight: normal;
     font-size: 24px; }
   .home h1 {
     font-weight: lighter;
@@ -1598,7 +1622,8 @@ object {
       .home .hero-banner .herobanner-text p {
         font-size: 16px;
         line-height: 1.5;
-        padding: 15px; }
+        padding: 15px;
+        font-weight: lighter; }
     .home .hero-banner .aboutus-button {
       width: 230px;
       height: 44px;
@@ -1672,7 +1697,10 @@ object {
       z-index: -1;
       border-radius: 8px; }
   .home .get-involved {
-    position: relative; }
+    position: relative;
+    padding: 1rem 0; }
+    .home .get-involved h2 {
+      padding: 1rem; }
     .home .get-involved .involvedimage_one {
       width: 28%;
       height: 30%;

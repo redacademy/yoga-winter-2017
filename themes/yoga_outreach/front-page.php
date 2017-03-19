@@ -50,6 +50,8 @@ get_header(); ?>
         <div class="accent-line"></div>
     </div>
 </section>
+<section class="video-section">
+</section>
 <section class="get-involved">
     <h2>Get Involed!</h2>
      <div class="involvedWrap">

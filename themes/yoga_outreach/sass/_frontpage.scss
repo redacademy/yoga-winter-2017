@@ -5,7 +5,6 @@
     color:#6B747D;
     h2{
         text-transform: capitalize;
-        font-weight: normal;
         font-size: 24px;
     }
     h1{
@@ -35,6 +34,7 @@
                 font-size: 16px;
                 line-height: 1.5;
                 padding: 15px;
+                font-weight: lighter;
             }
         }
         .aboutus-button{
@@ -128,7 +128,9 @@
     }
     .get-involved{
         position: relative;
-        .involvedWrap{
+        padding: 1rem 0;
+        h2{
+            padding: 1rem;
         }
         .involvedimage_one{
             width: 28%;

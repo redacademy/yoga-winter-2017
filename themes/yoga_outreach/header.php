@@ -30,7 +30,7 @@
 					<span class="responsive-menu">
 				    <i class="fa fa-bars" aria-hidden="true"></i>
 		    	</span>
-          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
 					<div id="header-logo">
 					<div class="logo-image"><?php show_easylogo(); ?></div>
 					</div>
