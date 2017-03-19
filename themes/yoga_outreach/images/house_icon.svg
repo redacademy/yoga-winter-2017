@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="47px" viewBox="0 0 46 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Home (Selected)</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M571.570372,1587.92342 L571.570372,1611.06285 C571.570372,1611.61696 571.127367,1612.06615 570.576895,1612.06615 L535.421197,1612.06615 C534.872515,1612.06615 534.42772,1611.61487 534.42772,1611.06285 L534.42772,1587.92342 L531.861923,1587.92342 C530.204093,1587.92342 529.851438,1587.00825 531.066325,1585.88665 L551.525507,1566.99835 C552.33939,1566.24696 553.657353,1566.24548 554.47284,1566.99835 L574.932021,1585.88665 C576.150455,1587.01153 575.796571,1587.92342 574.136424,1587.92342 L571.570372,1587.92342 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="45.3123764" height="45.6318974" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Training-Page---Core---2" transform="translate(-530.000000, -1566.000000)" stroke="#979797" stroke-width="6">
+            <use id="Home-(Selected)" mask="url(#mask-2)" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

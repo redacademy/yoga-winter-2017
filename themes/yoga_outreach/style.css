@@ -485,106 +485,6 @@ button {
       bottom: -10px;
       z-index: -1; }
 
-p {
-  margin-bottom: 0;
-  margin: 0; }
-
-#site-navigation {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  height: 80px;
-  -ms-flex-align: center;
-      align-items: center; }
-  #site-navigation .fa-bars {
-    color: #9FABB7;
-    font-size: 2.3rem;
-    padding: 1rem; }
-  #site-navigation .logo-image {
-    width: 90px;
-    padding: 0.5rem 0.8rem; }
-
-footer {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  text-transform: uppercase; }
-  footer form {
-    width: 100%;
-    height: 81px;
-    background-color: #9FABB7;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center; }
-    footer form label {
-      font-size: .7rem;
-      font-family: raleway;
-      color: white;
-      text-transform: uppercase; }
-    footer form .input-bar {
-      font-size: 0;
-      display: -ms-inline-flexbox;
-      display: inline-flex; }
-      footer form .input-bar #e-news {
-        width: 229px;
-        height: 40px;
-        border: none;
-        border-radius: 0;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px; }
-      footer form .input-bar #submit-button {
-        height: 40px;
-        width: 66px;
-        padding: 0;
-        font-weight: lighter;
-        text-shadow: none;
-        text-transform: uppercase;
-        color: #4A4A4A;
-        background-color: #C1D3DA;
-        border: none;
-        box-shadow: none;
-        border-radius: 0;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px; }
-  footer .siteinfo-text {
-    margin-top: 50px; }
-  footer p {
-    margin: 0;
-    font-size: 14px; }
-  footer .socialmedia-icons {
-    color: #9FABB7;
-    font-size: 1.2rem; }
-    footer .socialmedia-icons ul {
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      footer .socialmedia-icons ul li {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        margin: 20px 10px 20px 10px;
-        border: 1.5px solid #9FABB7;
-        border-radius: 50%;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  footer .copyright {
-    text-transform: capitalize;
-    padding: 10px;
-    font-size: 14px; }
-
 .info-dropdown {
   height: 60px;
   padding: 15px;
@@ -609,6 +509,23 @@ footer {
   background-color: #f4f1ea;
   font-size: .9rem;
   font-weight: lighter; }
+
+.entry-title {
+  text-align: center;
+  color: white;
+  padding-top: 49px;
+  font-weight: 500; }
+
+.page-title-header {
+  text-align: center;
+  color: white;
+  padding-top: 66px; }
+
+.teal-button {
+  background-color: #6CFFFE; }
+
+.grey-button {
+  background-color: #94BFD1; }
 
 p {
   margin-bottom: 0;
@@ -726,50 +643,6 @@ footer {
     padding: 10px;
     font-size: 14px; }
 
-<<<<<<< HEAD
-=======
-.info-dropdown {
-  height: 60px;
-  padding: 15px;
-  background-color: #f4f1ea;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .info-dropdown h3 {
-    font-weight: bold;
-    font-size: 1.3rem; }
-  .info-dropdown span {
-    font-size: 1.8rem; }
-
-.info-field {
-  display: none;
-  height: 100%;
-  padding: 0 15px 20px;
-  background-color: #f4f1ea;
-  font-size: .9rem;
-  font-weight: lighter; }
-
-.entry-title {
-  text-align: center;
-  color: white;
-  padding-top: 49px;
-  font-weight: 500; }
-
-.page-title-header {
-  text-align: center;
-  color: white;
-  padding-top: 66px; }
-
-.teal-button {
-  background-color: #6CFFFE; }
-
-.grey-button {
-  background-color: #94BFD1; }
-
->>>>>>> core-training
 .page-template-contact-us h1, .page-template-contact-us h2, .page-template-contact-us h3, .page-template-contact-us h4, .page-template-contact-us h5 {
   margin: 0;
   font-family: Raleway;
@@ -1075,6 +948,10 @@ a {
 
 .page-template-training-main {
   font-family: 'raleway',sans-serif; }
+  .page-template-training-main .main-h3-container h3, .page-template-training-main .main-h3-container p {
+    color: #6b747d;
+    font-weight: 200;
+    line-height: 24px; }
 
 .training-para-left {
   text-align: left; }
@@ -1262,15 +1139,17 @@ a {
   height: 26px;
   margin-right: 9px; }
 
-.avail-online-heading-container {
+.avail-online-heading-container, .core-training-text-image-container {
   display: -ms-flexbox;
   display: flex;
   margin-top: 25px;
-  margin-bottom: 15px; }
-  .avail-online-heading-container h3 {
+  margin-bottom: 15px;
+  -ms-flex-align: center;
+      align-items: center; }
+  .avail-online-heading-container h3, .core-training-text-image-container h3 {
     margin: 0;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold; }
 
 .light-training-para {
@@ -1302,21 +1181,30 @@ a {
     border: 1px solid black;
     margin-bottom: 5px;
     padding-left: 5px; }
-  .training-list-header .training-date-text {
-    font-size: 11px;
-    color: #4A4A4A;
-    line-height: 2;
-    font-weight: bold;
-    text-transform: uppercase; }
-    .training-list-header .training-date-text span {
-      text-transform: none;
-      font-weight: 300;
-      margin-left: 45px; }
+
+.training-date-text {
+  font-size: 11px;
+  color: #4A4A4A;
+  line-height: 2;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .training-date-text span {
+    text-transform: none;
+    font-weight: 300;
+    margin-left: 45px; }
 
 .training-date-list span {
   font-weight: 300;
   margin-left: 45px;
   text-transform: normal; }
+
+.house-logo {
+  width: 27.94px;
+  height: 28.92px;
+  margin-right: 9px; }
+
+table, tr {
+  border: 1px solid black; }
 
 .page-template-resources-research {
   font-family: 'raleway',sans-serif; }
@@ -1351,7 +1239,8 @@ a {
 .resource-pdf-list {
   list-style: none;
   padding: 0;
-  margin-left: 0; }
+  margin-left: 0;
+  margin-top: 21px; }
   .resource-pdf-list li {
     display: -ms-flexbox;
     display: flex; }
@@ -1398,9 +1287,10 @@ a {
   margin: 0;
   list-style: none; }
   .link-list li {
-    margin-bottom: 7px;
-    font-weight: 500;
-    color: #6b747d; }
+    margin-bottom: 7px; }
+    .link-list li a {
+      color: #6b747d;
+      font-weight: 800; }
 
 .link-list p {
   color: #4a4a4a;
@@ -1993,15 +1883,17 @@ object {
   height: 26px;
   margin-right: 9px; }
 
-.avail-online-heading-container {
+.avail-online-heading-container, .core-training-text-image-container {
   display: -ms-flexbox;
   display: flex;
   margin-top: 25px;
-  margin-bottom: 15px; }
-  .avail-online-heading-container h3 {
+  margin-bottom: 15px;
+  -ms-flex-align: center;
+      align-items: center; }
+  .avail-online-heading-container h3, .core-training-text-image-container h3 {
     margin: 0;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold; }
 
 .light-training-para {
@@ -2033,21 +1925,30 @@ object {
     border: 1px solid black;
     margin-bottom: 5px;
     padding-left: 5px; }
-  .training-list-header .training-date-text {
-    font-size: 11px;
-    color: #4A4A4A;
-    line-height: 2;
-    font-weight: bold;
-    text-transform: uppercase; }
-    .training-list-header .training-date-text span {
-      text-transform: none;
-      font-weight: 300;
-      margin-left: 45px; }
+
+.training-date-text {
+  font-size: 11px;
+  color: #4A4A4A;
+  line-height: 2;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .training-date-text span {
+    text-transform: none;
+    font-weight: 300;
+    margin-left: 45px; }
 
 .training-date-list span {
   font-weight: 300;
   margin-left: 45px;
   text-transform: normal; }
+
+.house-logo {
+  width: 27.94px;
+  height: 28.92px;
+  margin-right: 9px; }
+
+table, tr {
+  border: 1px solid black; }
 
 /*! Flickity v2.0.5
 http://flickity.metafizzy.co

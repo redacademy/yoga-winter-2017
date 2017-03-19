@@ -27,10 +27,7 @@ $('.menu-main-menu-container').hide();
             scrollTop: $( $.attr(this, 'href') ).offset().top
         }, 500);
     });
-<<<<<<< HEAD
 (jQuery); 
-=======
-})(jQuery); 
+(jQuery); 
 
 
->>>>>>> 97b4189f09a7305a311811f0935b5236397fc209
