@@ -62,12 +62,16 @@ get_header(); ?>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/house_icon.svg" class ="house-logo" alt="house logo">
 					<h3>2017 Training Dates Classroom (18 hours)</h3>
 				</div>
-				<table>
+				<table class ="full-time-training-table">
 					<tr>
 						<td>
-							<p class ="table-data-header">Data1</p>
-							<span class="table-data-entry">Data1 Entry</span>
-							
+							<span class ="table-heading">Date</span><span class ="table-content">March 17 - 19, 2017</span>
+						</td>
+						<td>
+							<span class ="table-heading">Location</span><span class ="table-content">Croatian Cultural Centre 3250 Commercial Drive, Vancouver, BC</span>
+						</td>
+						<td>
+							<span class ="table-heading">Price (CAD)</span><span class ="table-content">$360.00</span>
 						</td>
 					</tr>
 				</table>

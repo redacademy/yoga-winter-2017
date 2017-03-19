@@ -1206,6 +1206,19 @@ a {
 table, tr {
   border: 1px solid black; }
 
+.full-time-training-table td {
+  display: block; }
+  .full-time-training-table td span {
+    margin-left: 10px; }
+
+.table-heading {
+  display: inline-block;
+  width: 50px;
+  margin-right: 10px; }
+
+.table-content {
+  font-size: 11px; }
+
 .page-template-resources-research {
   font-family: 'raleway',sans-serif; }
 
@@ -1949,6 +1962,19 @@ object {
 
 table, tr {
   border: 1px solid black; }
+
+.full-time-training-table td {
+  display: block; }
+  .full-time-training-table td span {
+    margin-left: 10px; }
+
+.table-heading {
+  display: inline-block;
+  width: 50px;
+  margin-right: 10px; }
+
+.table-content {
+  font-size: 11px; }
 
 /*! Flickity v2.0.5
 http://flickity.metafizzy.co

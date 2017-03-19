@@ -106,3 +106,22 @@
 table, tr{
     border:1px solid black;
 }
+
+.full-time-training-table{
+    td{
+        display:block;
+            span{
+                margin-left:10px;
+            }
+    }
+}
+
+
+.table-heading{
+    display:inline-block;
+    width:50px;
+    margin-right:10px;
+}
+.table-content{
+    font-size:11px;
+}
