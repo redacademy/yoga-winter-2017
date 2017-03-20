@@ -549,6 +549,9 @@ button {
 .grey-button {
   background-color: #94BFD1; }
 
+.white-button {
+  background-color: #fff; }
+
 .general-button:hover {
   box-shadow: none; }
 
@@ -1670,6 +1673,15 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-template-archive-events {
+  background-color: lightblue; }
+  .page-template-archive-events tbody {
+    border: 1px solid black;
+    background-color: #fff; }
+  .page-template-archive-events .booking-button button {
+    width: 173px;
+    color: #4a4a4a; }
+
 .main-carousel {
   width: 90%;
   padding: 30px;

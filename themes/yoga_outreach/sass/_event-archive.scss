@@ -1,0 +1,16 @@
+.page-template-archive-events {
+    background-color: lightblue;
+    
+    tbody {
+        border: 1px solid black;
+        background-color: $basetext_color;
+    }
+
+    .booking-button {
+        
+        button {
+            width: 173px;
+            color: $darktext_color;
+        }
+    }
+}

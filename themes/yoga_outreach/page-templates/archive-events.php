@@ -30,20 +30,51 @@ get_header(); ?>
                     <h2>work shop title</h2>
                     <div class="accent-name-shape"></div>
                     <img src="" alt="workshopimg">
+
                     <table>
                         <tr>
-                            <td>Date</td>
-                            <td>Doe</td>
+                            <td><h4>Date</h4></td>
+                            <td><p>Doe</p></td>
                         </tr>
                         <tr>
-                            <td>Location</td>
-                            <td>Doe</td>
+                            <td><h4>Location</h4></td>
+                            <td><p>Doe</p></td>
                         </tr>
                         <tr>
-                            <td>Price (CAD)</td>
-                            <td>Doe</td>
+                            <td><h4>Price (CAD)</h4></td>
+                            <td><p>Doe</p></td>
                         </tr>
                     </table>
+
+                    <article>
+                        <p>
+                            Most teacher trainings provide teachers with the essential foundations for conducting public classes but often leave graduates without more in-depth training in negotiating the teacher/student relationship . 
+                        </p>
+                        <p>
+                            Yoga teachers may lack an understanding community to address questions about their work, debrief difficult teacher/student relationships and discuss ethics. In this workshop participants will gain a theoretical and experiential foundation in the unique qualities of the teacher/student relationship as it pertains to yoga teaching in diverse settings, personal and professional boundaries, self care and what it means to teach from a strengths-based, trauma-informed place.
+                        </p>
+                    </article>
+
+                    <div class="info-dropdown">
+                        <h3>About the facilitator</h3><span>+</span>
+                    </div>
+                    <div class="info-field">
+                    <?php $fields= CFS()->get( 'staff_members' ); ?>  <!--variable to hold staffs from loop-->
+
+                    <?php if(!empty($fields)): ?>
+                        <?php foreach( $fields as $field ): ?>
+                            <div class="stafflist"> 
+                                <img src="<?php echo $field['']; ?>" alt="staff photo" class="staffphoto">
+                                <p><?php echo $field['']; ?></p>
+                                <div class="accent-name-shape"></div>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>  
+                    <div>
+                        
+                    </div>
+                </div>
+                    <button class="general-button white-button">book workshop</button>
                 </div>
             </section>
 			
