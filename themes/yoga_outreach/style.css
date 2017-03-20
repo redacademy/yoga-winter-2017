@@ -81,6 +81,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: 'raleway';
+  src: url("../../fonts/raleway-regular-webfont.eot");
+  src: url("../../fonts/raleway-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-regular-webfont.woff") format("woff"), url("../../fonts/raleway-regular-webfont.ttf") format("truetype"), url("../../fonts/raleway-regular-webfont.svg#ralewayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -459,38 +466,6 @@ button {
     .page-template-who-we-are .info-dropdown span {
       font-size: 1.5rem; }
   .page-template-who-we-are .info-field {
-<<<<<<< HEAD
-    height: 200px;
-    background-color: #f4f1ea; }
-    .page-template-who-we-are .info-field .imgframe {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      background-color: red;
-      overflow: hidden; }
-      .page-template-who-we-are .info-field .imgframe .staffphoto {
-        width: 600px; }
-  .page-template-who-we-are .staff .circle {
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    background-color: #9fabb7;
-    margin: 0 auto; }
-  .page-template-who-we-are .staff p {
-    font-weight: normal; }
-  .page-template-who-we-are .staff .accent-name-shape {
-    height: 25px;
-    width: 250px;
-    border-radius: 8px;
-    background-color: #CBE8EA;
-    position: absolute;
-    right: 87px;
-    bottom: -12px;
-    z-index: -1; }
-  .page-template-who-we-are form {
-    height: 81px;
-    background-color: #9FABB7;
-=======
     height: 100%;
     background-color: transparent; }
   .page-template-who-we-are .stafflist {
@@ -499,47 +474,12 @@ button {
     padding-bottom: 0;
     margin-bottom: 60px;
     position: relative;
->>>>>>> 966e8edc7f6a7cf7a3588b24302b7e55655da071
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
-<<<<<<< HEAD
-    -ms-flex-pack: center;
-        justify-content: center; }
-    .page-template-who-we-are form label {
-      font-size: .7rem;
-      font-family: Raleway;
-      color: white;
-      text-transform: uppercase; }
-    .page-template-who-we-are form .input-bar {
-      font-size: 0;
-      display: -ms-inline-flexbox;
-      display: inline-flex; }
-      .page-template-who-we-are form .input-bar #e-news {
-        width: 229px;
-        height: 40px;
-        border: none;
-        border-radius: 0;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px; }
-      .page-template-who-we-are form .input-bar #submit-button {
-        height: 40px;
-        width: 66px;
-        padding: 0;
-        font-weight: lighter;
-        text-shadow: none;
-        text-transform: uppercase;
-        color: #4A4A4A;
-        background-color: #C1D3DA;
-        border: none;
-        box-shadow: none;
-        border-radius: 0;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px; }
-=======
     -ms-flex-pack: justify;
         justify-content: space-between; }
     .page-template-who-we-are .stafflist .staffphoto {
@@ -558,7 +498,6 @@ button {
       right: 87px;
       bottom: -10px;
       z-index: -1; }
->>>>>>> 966e8edc7f6a7cf7a3588b24302b7e55655da071
 
 .info-dropdown {
   height: 60px;
@@ -590,6 +529,9 @@ button {
   color: white;
   padding-top: 49px;
   font-weight: 500; }
+
+* {
+  font-family: 'raleway',sans-serif; }
 
 .page-title-header {
   text-align: center;
@@ -1066,26 +1008,11 @@ a {
 .training-para-left {
   text-align: left; }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0; }
-
-.page-template-training {
-  font-family: 'raleway',sans-serif; }
-
 .heading-subtitle {
   color: white;
   width: 200px;
   text-align: center;
   margin: 0 auto; }
-
-.hero-container {
-  height: 400px;
-  overflow-x: hidden; }
 
 .general-template-section {
   height: 400px;
@@ -1218,9 +1145,6 @@ a {
   background-color: #fff;
   margin-bottom: 0; }
 
-.page-template-core-training {
-  font-family: 'raleway',sans-serif; }
-
 .section-15px-padding {
   padding: 0 15px; }
 
@@ -1306,21 +1230,31 @@ a {
   height: 28.92px;
   margin-right: 9px; }
 
-table, tr {
-  border: 1px solid black; }
-
-.full-time-training-table td {
-  display: block; }
-  .full-time-training-table td span {
-    margin-left: 10px; }
-
 .table-heading {
   display: inline-block;
-  width: 50px;
-  margin-right: 10px; }
+  min-width: 100px;
+  font-size: 11px;
+  margin-left: 6px; }
+
+.training-table-data {
+  display: -ms-flexbox;
+  display: flex; }
 
 .table-content {
   font-size: 11px; }
+
+tr {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  margin: 0;
+  height: 85px;
+  padding-top: 9px; }
+  tr td {
+    margin-top: 9px; }
+
+table {
+  border-bottom: 1px solid black; }
 
 .page-template-resources-research {
   font-family: 'raleway',sans-serif; }
@@ -1875,26 +1809,11 @@ object {
       font-size: 1.5rem;
       padding: 0 20px 20px 30px; }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0; }
-
-.page-template-training {
-  font-family: 'raleway',sans-serif; }
-
 .heading-subtitle {
   color: white;
   width: 200px;
   text-align: center;
   margin: 0 auto; }
-
-.hero-container {
-  height: 400px;
-  overflow-x: hidden; }
 
 .general-template-section {
   height: 400px;
@@ -2027,9 +1946,6 @@ object {
   background-color: #fff;
   margin-bottom: 0; }
 
-.page-template-core-training {
-  font-family: 'raleway',sans-serif; }
-
 .section-15px-padding {
   padding: 0 15px; }
 
@@ -2115,21 +2031,31 @@ object {
   height: 28.92px;
   margin-right: 9px; }
 
-table, tr {
-  border: 1px solid black; }
-
-.full-time-training-table td {
-  display: block; }
-  .full-time-training-table td span {
-    margin-left: 10px; }
-
 .table-heading {
   display: inline-block;
-  width: 50px;
-  margin-right: 10px; }
+  min-width: 100px;
+  font-size: 11px;
+  margin-left: 6px; }
+
+.training-table-data {
+  display: -ms-flexbox;
+  display: flex; }
 
 .table-content {
   font-size: 11px; }
+
+tr {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  margin: 0;
+  height: 85px;
+  padding-top: 9px; }
+  tr td {
+    margin-top: 9px; }
+
+table {
+  border-bottom: 1px solid black; }
 
 /*! Flickity v2.0.5
 http://flickity.metafizzy.co
