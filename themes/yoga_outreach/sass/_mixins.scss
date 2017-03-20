@@ -1,8 +1,8 @@
 
 @mixin desktop {
-  @media (min-width: $desktop_breakpoint) {
-    @content;
-  }
+@media (min-width: $desktop_breakpoint) {
+	@content;
+}
 }
 
 // Rem output with px fallback
