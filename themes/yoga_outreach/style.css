@@ -697,8 +697,10 @@ footer {
       font-size: .7rem;
       font-family: raleway;
       color: white;
-      text-transform: uppercase;
-      padding: 0.3rem; }
+      text-transform: uppercase; }
+      @media (min-width: 720px) {
+        footer form label {
+          padding: 0 0.5rem; } }
     footer form .input-bar {
       font-size: 0;
       display: -ms-inline-flexbox;
@@ -774,6 +776,10 @@ footer {
             justify-content: center;
         -ms-flex-align: center;
             align-items: center; }
+      footer .socialmedia-icons ul a {
+        color: #9FABB7; }
+        footer .socialmedia-icons ul a:hover {
+          color: #C1D3DA; }
   footer .copyright {
     text-transform: capitalize;
     padding: 10px;
@@ -1919,7 +1925,7 @@ object {
       .home .hero-banner {
         height: 642px; } }
     .home .hero-banner .herobanner-text {
-      margin: 50px auto;
+      margin: 70px auto;
       bottom: 7%;
       left: 10%;
       color: white; }
@@ -1935,6 +1941,7 @@ object {
       .home .hero-banner .herobanner-text p {
         font-size: 16px;
         line-height: 1.5;
+        margin-top: 5%;
         padding: 15px;
         font-weight: lighter; }
         @media (min-width: 720px) {
@@ -1970,6 +1977,10 @@ object {
     @media (min-width: 720px) {
       .home .trauma-approach {
         font-size: 24px; } }
+    @media (min-width: 720px) {
+      .home .trauma-approach p {
+        max-width: 672px;
+        margin: auto; } }
     .home .trauma-approach .accent-square {
       position: absolute;
       width: 200px;
@@ -1987,7 +1998,8 @@ object {
           position: absolute;
           left: 0;
           right: 0;
-          margin: auto; } }
+          margin: auto;
+          bottom: 10%; } }
   .home .training-programs {
     padding: 5% 10%;
     font-size: 14px; }
@@ -2064,27 +2076,62 @@ object {
     padding: 1rem 0; }
     .home .get-involved h2 {
       padding: 1rem; }
+    @media (min-width: 720px) {
+      .home .get-involved .involedWarp {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center; } }
     .home .get-involved .involvedimage_one {
-      background: url("../../images/PartnerIcon.png") no-repeat;
-      background-size: contain;
-      width: 28%;
+      width: 23.8%;
       height: 30%;
       border-radius: 8px;
       margin: 0 0.5rem; }
+      @media (min-width: 720px) {
+        .home .get-involved .involvedimage_one {
+          margin: 0 2.5rem 5% 2.5rem; } }
     .home .get-involved .involvedimage_two {
       width: 28%;
       border-radius: 8px; }
+      @media (min-width: 720px) {
+        .home .get-involved .involvedimage_two {
+          margin-top: 3%; } }
     .home .get-involved .accent-square {
       position: absolute;
       width: 100%;
       height: 23px;
       background-color: #E2D9C6;
       opacity: 0.7;
-      bottom: 10%;
+      bottom: 15%;
       z-index: -1; }
       @media (min-width: 720px) {
         .home .get-involved .accent-square {
           height: 130px; } }
+  .home .testimonial-list.main-carousel {
+    background-color: white; }
+  .home .main-carousel {
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto; }
+    .home .main-carousel .carousel-cell {
+      width: 100%;
+      height: auto; }
+      .home .main-carousel .carousel-cell p {
+        margin-top: 20px; }
+      .home .main-carousel .carousel-cell h1 {
+        color: #4a4a4a; }
+    .home .main-carousel ol {
+      display: none; }
+    .home .main-carousel .flickity-prev-next-button {
+      border: none;
+      background: none;
+      box-shadow: none;
+      padding: 0;
+      top: 25%; }
+    .home .main-carousel .flickity-prev-next-button.next {
+      right: 5%; }
+    .home .main-carousel .flickity-prev-next-button.previous {
+      left: 5%; }
   .home .thankyou {
     height: 230px;
     background-color: #B7C8DA;
@@ -2101,7 +2148,9 @@ object {
       @media (min-width: 720px) {
         .home .thankyou p {
           font-size: 35px;
-          padding: 0 20px 20px 20px; } }
+          padding: 0 20px 20px 20px;
+          max-width: 700px;
+          margin: auto; } }
 
 .page-template-training .main-carousel {
   width: 100%;

@@ -25,16 +25,24 @@
 				<section class ="socialmedia-icons">
 				<ul>
 					<li class="instagram-icon">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <a class="instagram" href="https://www.instagram.com/yogaoutreach/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
           </li>
 					<li class="facebook-icon">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <a class="facebook" href="https://www.facebook.com/YogaOutreach1">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
           </li>
 					<li class="twitter-icon">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a class="twitter" href="https://twitter.com/yogaoutreach">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
           </li>
 					<li class="youtube-icon">
-            <i class="fa fa-youtube" aria-hidden="true"></i>
+            <a class="youtube" href="https://www.youtube.com/channel/UCO_O3tRBrsydpb1rEIxkG2g">
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
           </li>
 				</ul>
 				</section>

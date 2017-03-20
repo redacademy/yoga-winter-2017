@@ -55,23 +55,23 @@ get_header(); ?>
 <section class="get-involved">
     <h2>Get Involed!</h2>
      <div class="involvedWrap">
-        <div class="involvedimage_one">
-        </div>
-        <div class="involvedimage_two">
-        </div>
-        <div class="involvedimage_one">
-        </div>
-                  <!--<img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/VolunteerIcon.png"/>
-                  <img class ="involvedimage_two" src="<?php echo get_template_directory_uri(); ?>/images/PartnerIcon.png"/>
-                  <img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/SupportUsIcon.png"/>   -->
+ 
+          <img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/Volunteer_desktop.svg"/>
+          <img class ="involvedimage_two" src="<?php echo get_template_directory_uri(); ?>/images/Partner_desktop.svg"/>
+          <img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/SupportUs_desktop.svg"/>   
         <div class="shapeThing"></div>
       </div>
     <div class="accent-square"></div>
 </section>
-<section class="testimonials">
-
-</section>
-
+<div class ="testimonal-container">
+				<ul class ="testimonial-list main-carousel">
+					<?php
+					$testimonials = CFS()->get('testimonial_item');
+					foreach ( $testimonials as $testimonial): ?>
+					<li class ="carousel-cell"><?php echo $testimonial ['testimonial'];?></li>
+					<?php endforeach ?>
+				</ul>
+			</div><!--testimonial-container-->
 <section class="thankyou">
     <h1>thank you</h1>
     <p>to our sponsors and volunteers - you make our programs possible.</p>
