@@ -21,7 +21,6 @@
                     background: none;
                     box-shadow: none;
                     padding: 0;
-                    top: 25%;
                 }
                 .flickity-prev-next-button.next {
                     right: 5%;
@@ -30,7 +29,8 @@
                     left: 5%;
                 }
             }
-        .section-15px-padding{
+
+    .section-15px-padding{
         padding:0 15px;
         }
 
@@ -93,8 +93,6 @@
         }
     }
 
-
-
     .earth-logo{
         width:26px;
         height:26px;
@@ -130,6 +128,13 @@
                 }
             }
 
+    .avail-online-h3{
+        @include desktop{
+            margin-top: 12px;
+
+        }
+    }
+    
     .light-training-para{
         color:#6B747D;
         font-size:14px;
