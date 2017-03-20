@@ -547,6 +547,10 @@ p {
       flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center; }
+  @media (min-width: 720px) {
+    #site-navigation {
+      position: absolute;
+      display: block; } }
   #site-navigation a {
     color: #6b747d;
     font-weight: bold;
@@ -558,6 +562,23 @@ p {
     padding: 1rem;
     -ms-flex-order: 1;
         order: 1; }
+    @media (min-width: 720px) {
+      #site-navigation .fa-bars {
+        display: none; } }
+  @media (min-width: 720px) {
+    #site-navigation .menu-main-menu-container {
+      position: absolute;
+      top: 150px; } }
+  @media (min-width: 720px) {
+    #site-navigation .menu-main-menu-container #menu-item-73 {
+      bottom: 100px;
+      left: 80%; } }
+  @media (min-width: 720px) {
+    #site-navigation .menu-main-menu-container a {
+      color: white;
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: lighter; } }
   #site-navigation .submenu {
     width: 100%;
     height: 500px;
@@ -582,6 +603,9 @@ p {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center; }
+  @media (min-width: 720px) {
+    #site-navigation #header-logo {
+      z-index: 1; } }
   #site-navigation .logo-image {
     width: 90px;
     padding: 0.5rem 0.8rem;
@@ -1693,12 +1717,15 @@ object {
     height: 400px; }
     @media (min-width: 720px) {
       .home .hero-banner {
-        opacity: 0.7; } }
+        height: 642px; } }
     .home .hero-banner .herobanner-text {
       margin: 50px auto;
       bottom: 7%;
       left: 10%;
       color: white; }
+      @media (min-width: 720px) {
+        .home .hero-banner .herobanner-text {
+          margin: 270px auto; } }
       .home .hero-banner .herobanner-text h2 {
         text-transform: capitalize;
         font-size: 24px; }
@@ -1713,7 +1740,7 @@ object {
         @media (min-width: 720px) {
           .home .hero-banner .herobanner-text p {
             font-size: 24px;
-            max-width: 600px; } }
+            max-width: 650px; } }
     .home .hero-banner .aboutus-button {
       width: 230px;
       height: 44px;

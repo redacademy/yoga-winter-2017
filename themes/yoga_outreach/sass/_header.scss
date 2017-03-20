@@ -7,6 +7,10 @@ p{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    @include desktop{
+      position:absolute;
+      display: block;
+    }
     a{
       color: $lighttext_color;
       font-weight: bold;
@@ -18,6 +22,30 @@ p{
       font-size: 2.3rem;
       padding: 1rem;
       order:1;
+      @include desktop{
+        display: none;
+      }
+    }
+    .menu-main-menu-container{
+      @include desktop{
+        position: absolute;
+        top: 150px;
+        // left: 5%;
+      } 
+      #menu-item-73{
+        @include desktop{
+          bottom: 100px;
+          left: 80%;
+        }
+      }
+      a{
+        @include desktop{
+          color:white;
+          padding: 0 1rem;
+          font-size: 16px;
+          font-weight: lighter;
+        } 
+      }
     }
     .submenu{
       width: 100%;
@@ -42,10 +70,15 @@ p{
         align-self: center;
       }
     }
-   
+    #header-logo{
+      @include desktop{
+          z-index: 1;
+      }
+    }
     .logo-image{
       width: 90px;
       padding: 0.5rem 0.8rem;
       order: 2;
+    
     }   
 }
