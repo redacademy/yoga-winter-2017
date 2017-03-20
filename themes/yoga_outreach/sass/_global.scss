@@ -46,13 +46,14 @@
 	}
 
 .teal-button{
-	background-color:#6CFFFE;
-    
+	background-color: $brightbutton_color;
 }
 
 .grey-button{
-	background-color:#94BFD1;
-
+	background-color: $mainbutton_color;
+}
+.white-button{
+	background-color: $base_color;
 }
 
 .general-button:hover{

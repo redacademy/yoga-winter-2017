@@ -541,10 +541,13 @@ button {
   font-size: 24px; }
 
 .teal-button {
-  background-color: #6CFFFE; }
+  background-color: #6cfffe; }
 
 .grey-button {
-  background-color: #94BFD1; }
+  background-color: #94bfd1; }
+
+.white-button {
+  background-color: #fff; }
 
 .general-button:hover {
   box-shadow: none; }
@@ -1518,30 +1521,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.main-carousel {
-  width: 90%;
-  padding: 30px;
-  margin: 0 auto; }
-  .main-carousel .carousel-cell {
-    width: 100%;
-    height: auto; }
-    .main-carousel .carousel-cell p {
-      margin-top: 20px; }
-    .main-carousel .carousel-cell h1 {
-      color: #4a4a4a; }
-  .main-carousel ol {
-    display: none; }
-  .main-carousel .flickity-prev-next-button {
-    border: none;
-    background: none;
-    box-shadow: none;
-    padding: 0;
-    top: 25%; }
-  .main-carousel .flickity-prev-next-button.next {
-    right: 5%; }
-  .main-carousel .flickity-prev-next-button.previous {
-    left: 5%; }
-
 .page-template-volunteer .site-main, .page-template-support .site-main, .page-template-partner .site-main {
   display: -ms-flexbox;
   display: flex;
@@ -1560,15 +1539,67 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   flex-direction: column; }
+  .page-template-volunteer .site-main .main-button, .page-template-support .site-main .main-button, .page-template-partner .site-main .main-button {
+    width: 230px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px; }
+    .page-template-volunteer .site-main .main-button a, .page-template-support .site-main .main-button a, .page-template-partner .site-main .main-button a {
+      color: white;
+      text-decoration: none; }
+  .page-template-volunteer .site-main .small-button, .page-template-support .site-main .small-button, .page-template-partner .site-main .small-button {
+    width: 173px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px; }
+    .page-template-volunteer .site-main .small-button a, .page-template-support .site-main .small-button a, .page-template-partner .site-main .small-button a {
+      color: white;
+      text-decoration: none; }
+  .page-template-volunteer .site-main .white-button a, .page-template-support .site-main .white-button a, .page-template-partner .site-main .white-button a {
+    color: #6b747d;
+    text-decoration: none; }
   .page-template-volunteer .site-main .button-wrap, .page-template-support .site-main .button-wrap, .page-template-partner .site-main .button-wrap {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
     height: 10%;
     padding: 10px;
-    width: 100vw;
-    background-color: #4a4a4a; }
+    background-color: #6b747d; }
+  .page-template-volunteer .site-main #instructor, .page-template-support .site-main #instructor, .page-template-partner .site-main #instructor {
+    position: relative; }
+    .page-template-volunteer .site-main #instructor ol, .page-template-support .site-main #instructor ol, .page-template-partner .site-main #instructor ol {
+      margin-bottom: 165px; }
+    .page-template-volunteer .site-main #instructor .button-wrap, .page-template-support .site-main #instructor .button-wrap, .page-template-partner .site-main #instructor .button-wrap {
+      position: absolute;
+      -ms-flex-pack: center;
+          justify-content: center;
+      bottom: 40px;
+      width: 100vw; }
+      .page-template-volunteer .site-main #instructor .button-wrap .small-button, .page-template-support .site-main #instructor .button-wrap .small-button, .page-template-partner .site-main #instructor .button-wrap .small-button {
+        margin: 0 auto; }
   .page-template-volunteer .site-main .entry-header, .page-template-support .site-main .entry-header, .page-template-partner .site-main .entry-header {
     width: 100vw;
     height: 100vh;
@@ -1581,69 +1612,100 @@ object {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
   .page-template-volunteer .site-main header, .page-template-volunteer .site-main section > *, .page-template-support .site-main header, .page-template-support .site-main section > *, .page-template-partner .site-main header, .page-template-partner .site-main section > * {
-    width: 100vw;
     padding: 15px; }
-  .page-template-volunteer .site-main .container-one .contributor, .page-template-support .site-main .container-one .contributor, .page-template-partner .site-main .container-one .contributor {
-    background-color: #6b747d;
-    height: 200px;
-    width: 50%;
-    margin: 0 auto; }
-  .page-template-volunteer .site-main .container-one .custom-info-container, .page-template-support .site-main .container-one .custom-info-container, .page-template-partner .site-main .container-one .custom-info-container {
-    background-color: #fff; }
-  .page-template-volunteer .site-main .container-one .list-container, .page-template-support .site-main .container-one .list-container, .page-template-partner .site-main .container-one .list-container {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row; }
-  .page-template-volunteer .site-main .container-one .accent-background, .page-template-support .site-main .container-one .accent-background, .page-template-partner .site-main .container-one .accent-background {
-    position: relative;
-    padding: 0; }
-    .page-template-volunteer .site-main .container-one .accent-background .background-accent, .page-template-support .site-main .container-one .accent-background .background-accent, .page-template-partner .site-main .container-one .accent-background .background-accent {
-      position: absolute;
-      width: 100%;
-      height: 400px;
-      background-color: #f4f1ea;
-      z-index: -1;
-      top: -10px; }
-  .page-template-volunteer .site-main .container-one .decorative-line-case, .page-template-support .site-main .container-one .decorative-line-case, .page-template-partner .site-main .container-one .decorative-line-case {
-    position: relative;
-    width: 10%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end; }
-    .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line, .page-template-support .site-main .container-one .decorative-line-case .decorative-line, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line {
-      width: 25%;
-      height: 90%;
-      border-radius: 30px;
-      background-color: #cce8ea; }
-    .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line2, .page-template-support .site-main .container-one .decorative-line-case .decorative-line2, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line2 {
-      position: absolute;
-      width: 150px;
-      height: 20px;
-      background-color: #94bfd1;
-      opacity: .8;
-      left: 70%;
-      bottom: 50%;
-      z-index: -1;
-      border-radius: 8px; }
-  .page-template-volunteer .site-main .container-one ul, .page-template-support .site-main .container-one ul, .page-template-partner .site-main .container-one ul {
-    width: 90%;
-    margin: 0;
+  .page-template-volunteer .site-main section .info-paragraph, .page-template-support .site-main section .info-paragraph, .page-template-partner .site-main section .info-paragraph {
     text-align: left; }
+  .page-template-volunteer .site-main .container-one, .page-template-support .site-main .container-one, .page-template-partner .site-main .container-one {
+    width: 100vw; }
+    .page-template-volunteer .site-main .container-one .contributor, .page-template-support .site-main .container-one .contributor, .page-template-partner .site-main .container-one .contributor {
+      background-color: #6b747d;
+      height: 200px;
+      width: 50%;
+      margin: 0 auto; }
+    .page-template-volunteer .site-main .container-one .custom-info-container, .page-template-support .site-main .container-one .custom-info-container, .page-template-partner .site-main .container-one .custom-info-container {
+      background-color: #fff; }
+    .page-template-volunteer .site-main .container-one .list-container, .page-template-support .site-main .container-one .list-container, .page-template-partner .site-main .container-one .list-container {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+    .page-template-volunteer .site-main .container-one .accent-background, .page-template-support .site-main .container-one .accent-background, .page-template-partner .site-main .container-one .accent-background {
+      position: relative;
+      padding: 0; }
+      .page-template-volunteer .site-main .container-one .accent-background .background-accent, .page-template-support .site-main .container-one .accent-background .background-accent, .page-template-partner .site-main .container-one .accent-background .background-accent {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        background-color: #f4f1ea;
+        z-index: -1;
+        top: -10px; }
+    .page-template-volunteer .site-main .container-one .decorative-line-case, .page-template-support .site-main .container-one .decorative-line-case, .page-template-partner .site-main .container-one .decorative-line-case {
+      position: relative;
+      width: 10%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line, .page-template-support .site-main .container-one .decorative-line-case .decorative-line, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line {
+        width: 25%;
+        height: 90%;
+        border-radius: 30px;
+        background-color: #cce8ea; }
+      .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line2, .page-template-support .site-main .container-one .decorative-line-case .decorative-line2, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line2 {
+        position: absolute;
+        width: 150px;
+        height: 20px;
+        background-color: #94bfd1;
+        opacity: .8;
+        left: 70%;
+        bottom: 50%;
+        z-index: -1;
+        border-radius: 8px; }
+    .page-template-volunteer .site-main .container-one ul, .page-template-support .site-main .container-one ul, .page-template-partner .site-main .container-one ul {
+      width: 90%;
+      margin: 0;
+      text-align: left; }
   .page-template-volunteer .site-main .container-two, .page-template-support .site-main .container-two, .page-template-partner .site-main .container-two {
+    width: 100vw;
     background-color: #95afc9; }
     .page-template-volunteer .site-main .container-two h2, .page-template-support .site-main .container-two h2, .page-template-partner .site-main .container-two h2 {
       color: #4a4a4a; }
   .page-template-volunteer .site-main .container-three, .page-template-support .site-main .container-three, .page-template-partner .site-main .container-three {
+    width: 100vw;
     background-color: #f3f0e9; }
   .page-template-volunteer .site-main .container-four, .page-template-support .site-main .container-four, .page-template-partner .site-main .container-four {
+    width: 100vw;
     background-color: #cce8ea; }
   .page-template-volunteer .site-main .container-tshirt, .page-template-support .site-main .container-tshirt, .page-template-partner .site-main .container-tshirt {
     background: url("../../images/tshirt_mobile.png") no-repeat center bottom;
     background-size: cover, cover;
     color: #fff; }
+
+.page-template-volunteer .main-carousel, .page-template-support .main-carousel, .page-template-partner .main-carousel {
+  width: 90%;
+  padding: 30px;
+  margin: 0 auto; }
+  .page-template-volunteer .main-carousel .carousel-cell, .page-template-support .main-carousel .carousel-cell, .page-template-partner .main-carousel .carousel-cell {
+    width: 100%;
+    height: auto; }
+    .page-template-volunteer .main-carousel .carousel-cell p, .page-template-support .main-carousel .carousel-cell p, .page-template-partner .main-carousel .carousel-cell p {
+      margin-top: 20px; }
+    .page-template-volunteer .main-carousel .carousel-cell h1, .page-template-support .main-carousel .carousel-cell h1, .page-template-partner .main-carousel .carousel-cell h1 {
+      color: #4a4a4a; }
+  .page-template-volunteer .main-carousel ol, .page-template-support .main-carousel ol, .page-template-partner .main-carousel ol {
+    display: none;
+    margin-bottom: 165px; }
+  .page-template-volunteer .main-carousel .flickity-prev-next-button, .page-template-support .main-carousel .flickity-prev-next-button, .page-template-partner .main-carousel .flickity-prev-next-button {
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    top: 25%; }
+  .page-template-volunteer .main-carousel .flickity-prev-next-button.next, .page-template-support .main-carousel .flickity-prev-next-button.next, .page-template-partner .main-carousel .flickity-prev-next-button.next {
+    right: 5%; }
+  .page-template-volunteer .main-carousel .flickity-prev-next-button.previous, .page-template-support .main-carousel .flickity-prev-next-button.previous, .page-template-partner .main-carousel .flickity-prev-next-button.previous {
+    left: 5%; }
 
 /* Volunteer */
 .page-template-volunteer ol {
@@ -1669,10 +1731,10 @@ object {
     font-size: 4rem;
     background-color: white;
     border-radius: 100%;
-    padding: 10% 22%;
+    padding: 10% 24% 14%;
     color: #95afc9; }
   .page-template-volunteer ol li p {
-    padding-top: 10%;
+    padding-top: 16%;
     margin: 0; }
 
 /* Partner Facility */
