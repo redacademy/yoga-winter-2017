@@ -22,37 +22,7 @@
     .info-heading{
         font-size:16px;
         font-weight:100;
-            .main-carousel{
-            width: 100%;
-            padding: 30px;
-            margin: 0 auto;
-            .carousel-cell{
-                width: 100%;
-                height: auto;
-                p{
-                    margin-top: 20px;
-                }
-                h1{
-                    color: $darktext_color;
-                }
-            }
-            ol{
-                display: none;
-            }
-            .flickity-prev-next-button{
-                border: none;
-                background: none;
-                box-shadow: none;
-                padding: 0;
-                top: 25%;
-            }
-            .flickity-prev-next-button.next {
-                right: 5%;
-            }
-            .flickity-prev-next-button.previous {
-                left: 5%;
-            }
-        }
+            
     }
 }
 
