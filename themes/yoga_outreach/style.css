@@ -635,11 +635,17 @@ footer {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center; }
+    @media (min-width: 720px) {
+      footer form {
+        -ms-flex-direction: row;
+            flex-direction: row;
+        height: 50px; } }
     footer form label {
       font-size: .7rem;
       font-family: raleway;
       color: white;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding: 0.3rem; }
     footer form .input-bar {
       font-size: 0;
       display: -ms-inline-flexbox;
@@ -651,6 +657,10 @@ footer {
         border-radius: 0;
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px; }
+        @media (min-width: 720px) {
+          footer form .input-bar #e-news {
+            width: 383px;
+            height: 20px; } }
       footer form .input-bar #submit-button {
         height: 40px;
         width: 66px;
@@ -665,11 +675,32 @@ footer {
         border-radius: 0;
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px; }
+        @media (min-width: 720px) {
+          footer form .input-bar #submit-button {
+            width: 47px;
+            height: 20px; } }
+  @media (min-width: 720px) {
+    footer .site-info {
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-align: center;
+          align-items: center;
+      width: 100%;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
   footer .siteinfo-text {
     margin-top: 50px; }
+    @media (min-width: 720px) {
+      footer .siteinfo-text {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin: 0; } }
   footer p {
     margin: 0;
     font-size: 14px; }
+    @media (min-width: 720px) {
+      footer p {
+        padding: 1rem; } }
   footer .socialmedia-icons {
     color: #9FABB7;
     font-size: 1.2rem; }
@@ -1680,6 +1711,9 @@ object {
   .home h2 {
     text-transform: capitalize;
     font-size: 24px; }
+    @media (min-width: 720px) {
+      .home h2 {
+        font-size: 40px; } }
   .home h1 {
     font-weight: lighter;
     text-transform: uppercase;
@@ -1693,6 +1727,9 @@ object {
     -ms-flex-pack: center;
         justify-content: center;
     height: 400px; }
+    @media (min-width: 720px) {
+      .home .hero-banner {
+        opacity: 0.7; } }
     .home .hero-banner .herobanner-text {
       margin: 50px auto;
       bottom: 7%;
@@ -1701,11 +1738,18 @@ object {
       .home .hero-banner .herobanner-text h2 {
         text-transform: capitalize;
         font-size: 24px; }
+        @media (min-width: 720px) {
+          .home .hero-banner .herobanner-text h2 {
+            font-size: 40px; } }
       .home .hero-banner .herobanner-text p {
         font-size: 16px;
         line-height: 1.5;
         padding: 15px;
         font-weight: lighter; }
+        @media (min-width: 720px) {
+          .home .hero-banner .herobanner-text p {
+            font-size: 24px;
+            max-width: 600px; } }
     .home .hero-banner .aboutus-button {
       width: 230px;
       height: 44px;
@@ -1713,16 +1757,28 @@ object {
       box-shadow: none;
       border: none;
       margin-top: 80px; }
+      @media (min-width: 720px) {
+        .home .hero-banner .aboutus-button {
+          width: 150px;
+          height: 45px;
+          background-color: #B6EAFF;
+          border-radius: 8px; } }
       .home .hero-banner .aboutus-button a {
         color: white;
         text-shadow: none;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 14px; }
+        @media (min-width: 720px) {
+          .home .hero-banner .aboutus-button a {
+            color: #4a4a4a; } }
   .home .trauma-approach {
     padding: 7%;
     position: relative;
     font-size: 14px; }
+    @media (min-width: 720px) {
+      .home .trauma-approach {
+        font-size: 24px; } }
     .home .trauma-approach .accent-square {
       position: absolute;
       width: 200px;
@@ -1733,13 +1789,33 @@ object {
       bottom: 2%;
       z-index: -1;
       border-radius: 4px; }
+      @media (min-width: 720px) {
+        .home .trauma-approach .accent-square {
+          width: 574px;
+          height: 75px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto; } }
   .home .training-programs {
     padding: 5% 10%;
     font-size: 14px; }
+    @media (min-width: 720px) {
+      .home .training-programs p {
+        font-size: 18px;
+        max-width: 340px;
+        margin: 0 auto 20px auto; } }
+  @media (min-width: 720px) {
+    .home .program-list {
+      display: -ms-inline-flexbox;
+      display: inline-flex; } }
   .home .program-list .programlist-text {
     padding: 0 8%; }
     .home .program-list .programlist-text h4 {
       margin-bottom: 0; }
+      @media (min-width: 720px) {
+        .home .program-list .programlist-text h4 {
+          margin: 15px; } }
   .home .program-list .core-training {
     position: relative;
     margin-bottom: 10%; }
@@ -1750,6 +1826,9 @@ object {
       background-color: #F3F0E9;
       z-index: -1;
       bottom: 27px; }
+      @media (min-width: 720px) {
+        .home .program-list .core-training .background-accent {
+          display: none; } }
   .home .program-list .yoga-atwork {
     position: relative;
     margin-bottom: 10%; }
@@ -1760,6 +1839,9 @@ object {
       background-color: #F3F0E9;
       z-index: -1;
       bottom: 27px; }
+      @media (min-width: 720px) {
+        .home .program-list .yoga-atwork .background-accent {
+          display: none; } }
   .home .program-list .yoga-foryouth {
     position: relative; }
     .home .program-list .yoga-foryouth .background-accent {
@@ -1769,6 +1851,9 @@ object {
       background-color: #F3F0E9;
       z-index: -1;
       bottom: 27px; }
+      @media (min-width: 720px) {
+        .home .program-list .yoga-foryouth .background-accent {
+          display: none; } }
     .home .program-list .yoga-foryouth .accent-line {
       position: absolute;
       width: 6px;
@@ -1778,12 +1863,19 @@ object {
       right: 30px;
       z-index: -1;
       border-radius: 8px; }
+      @media (min-width: 720px) {
+        .home .program-list .yoga-foryouth .accent-line {
+          width: 473px;
+          height: 75px;
+          right: 0; } }
   .home .get-involved {
     position: relative;
     padding: 1rem 0; }
     .home .get-involved h2 {
       padding: 1rem; }
     .home .get-involved .involvedimage_one {
+      background: url("../../images/PartnerIcon.png") no-repeat;
+      background-size: contain;
       width: 28%;
       height: 30%;
       border-radius: 8px;
@@ -1799,15 +1891,26 @@ object {
       opacity: 0.7;
       bottom: 10%;
       z-index: -1; }
+      @media (min-width: 720px) {
+        .home .get-involved .accent-square {
+          height: 130px; } }
   .home .thankyou {
     height: 230px;
     background-color: #B7C8DA;
     color: #4A4A4A; }
     .home .thankyou h1 {
       padding: 30px 0 0 0; }
+      @media (min-width: 720px) {
+        .home .thankyou h1 {
+          padding: 25px 0 0 0;
+          font-size: 40px; } }
     .home .thankyou p {
       font-size: 1.5rem;
       padding: 0 20px 20px 30px; }
+      @media (min-width: 720px) {
+        .home .thankyou p {
+          font-size: 35px;
+          padding: 0 20px 20px 20px; } }
 
 .heading-subtitle {
   color: white;
