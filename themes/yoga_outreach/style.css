@@ -390,7 +390,6 @@ button {
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
   box-shadow: none;
   text-shadow: none;
   color: white;
@@ -556,7 +555,7 @@ button {
   box-shadow: none; }
 
 .testimonial-list.main-carousel {
-  padding: 20px 0;
+  height: 100px;
   list-style: none;
   margin: 0;
   text-align: center;
@@ -802,7 +801,6 @@ footer {
     margin: 0 auto;
     font-size: 14px;
     text-transform: uppercase;
-    margin-bottom: 26px;
     box-shadow: none;
     text-shadow: none;
     color: white;
@@ -1069,7 +1067,7 @@ a {
   text-align: left; }
 
 .page-template-training .main-carousel {
-  width: 100%;
+  width: 107%;
   padding: 30px;
   margin: 0 auto; }
   .page-template-training .main-carousel .carousel-cell {
@@ -1085,8 +1083,7 @@ a {
     border: none;
     background: none;
     box-shadow: none;
-    padding: 0;
-    top: 25%; }
+    padding: 0; }
   .page-template-training .main-carousel .flickity-prev-next-button.next {
     right: 5%; }
   .page-template-training .main-carousel .flickity-prev-next-button.previous {
@@ -1098,20 +1095,9 @@ a {
   text-align: center;
   margin: 0 auto; }
 
-.page-template-training .general-template-section {
-  height: 400px;
-  background-color: lightgreen;
-  width: 100%;
-  position: relative; }
-
-.page-template-training .general-button-container {
-  position: absolute;
-  width: 100%;
-  bottom: 0; }
-  @media (min-width: 720px) {
-    .page-template-training .general-button-container {
-      display: -ms-flexbox;
-      display: flex; } }
+@media (min-width: 720px) {
+  .page-template-training .avail-online-h3 {
+    font-size: 16px; } }
 
 .page-template-training .general-button, .page-template-training .book-training-button {
   width: 230px;
@@ -1120,7 +1106,6 @@ a {
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
   box-shadow: none;
   text-shadow: none;
   color: white;
@@ -1131,18 +1116,19 @@ a {
 .page-template-training .button-black-text {
   color: black; }
 
-.page-template-training .training-yoga-tools-section {
-  padding: 0 4%; }
+.page-template-training .info-dropdown {
+  background-color: #fff;
+  border-bottom: 2px solid #4A4A4A;
+  width: 90vw;
+  margin: 0 auto; }
 
-.page-template-training .training-h3-heading:nth-child(1) {
-  padding-top: 39px; }
+.page-template-training .info-field {
+  background-color: #fff; }
 
 .page-template-training .training-h3-heading {
   width: 293px;
   height: 50px;
   margin: 0 auto;
-  border-bottom: 2px solid #4A4A4A;
-  padding-bottom: 16px;
   font-size: 20px;
   color: black;
   font-weight: 600; }
@@ -1157,13 +1143,18 @@ a {
 
 .page-template-training .small-para {
   font-weight: 300;
-  font-size: 11px;
+  font-size: 1rem;
   margin-bottom: 5px; }
 
 .page-template-training .under-skills-training-para {
   color: #6B747D;
   font-size: 14px;
-  min-width: 290px; }
+  min-width: 290px;
+  line-height: 24px;
+  margin-bottom: 20px; }
+
+.page-template-training .section-15px-padding {
+  padding: 0 15px; }
 
 .page-template-training .book-training-button {
   background-color: #6B747D;
@@ -1185,6 +1176,14 @@ a {
 .page-template-training .training-list-item {
   font-weight: 500;
   font-size: 14px; }
+  .page-template-training .training-list-item .info-field, .page-template-training .training-list-item .info-dropdown {
+    background-color: #95AFC9;
+    border-bottom: none;
+    width: 100vw;
+    padding: 0; }
+    .page-template-training .training-list-item .info-field span, .page-template-training .training-list-item .info-dropdown span {
+      color: #4a4a4a;
+      font-weight: 200; }
 
 .page-template-training .slide-para {
   display: none;
@@ -1228,6 +1227,9 @@ a {
     border-radius: 8px;
     border: 1px solid white; }
 
+.page-template-training .yoga-info-title {
+  font-size: 16.38px; }
+
 .page-template-training .bottom-button-container .general-button {
   color: #4A4A4A;
   background-color: #fff;
@@ -1250,8 +1252,7 @@ a {
     border: none;
     background: none;
     box-shadow: none;
-    padding: 0;
-    top: 25%; }
+    padding: 0; }
   .page-template-core-training .main-carousel .flickity-prev-next-button.next {
     right: 5%; }
   .page-template-core-training .main-carousel .flickity-prev-next-button.previous {
@@ -1284,7 +1285,6 @@ a {
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
   box-shadow: none;
   text-shadow: none;
   color: white;
@@ -1353,6 +1353,10 @@ a {
     @media (min-width: 720px) {
       .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
         width: 50vw; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .avail-online-h3 {
+    margin-top: 12px; } }
 
 .page-template-core-training .light-training-para {
   color: #6B747D;
@@ -2077,7 +2081,7 @@ object {
           padding: 0 20px 20px 20px; } }
 
 .page-template-training .main-carousel {
-  width: 100%;
+  width: 107%;
   padding: 30px;
   margin: 0 auto; }
   .page-template-training .main-carousel .carousel-cell {
@@ -2093,8 +2097,7 @@ object {
     border: none;
     background: none;
     box-shadow: none;
-    padding: 0;
-    top: 25%; }
+    padding: 0; }
   .page-template-training .main-carousel .flickity-prev-next-button.next {
     right: 5%; }
   .page-template-training .main-carousel .flickity-prev-next-button.previous {
@@ -2106,20 +2109,9 @@ object {
   text-align: center;
   margin: 0 auto; }
 
-.page-template-training .general-template-section {
-  height: 400px;
-  background-color: lightgreen;
-  width: 100%;
-  position: relative; }
-
-.page-template-training .general-button-container {
-  position: absolute;
-  width: 100%;
-  bottom: 0; }
-  @media (min-width: 720px) {
-    .page-template-training .general-button-container {
-      display: -ms-flexbox;
-      display: flex; } }
+@media (min-width: 720px) {
+  .page-template-training .avail-online-h3 {
+    font-size: 16px; } }
 
 .page-template-training .general-button, .page-template-training .book-training-button {
   width: 230px;
@@ -2128,7 +2120,6 @@ object {
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
   box-shadow: none;
   text-shadow: none;
   color: white;
@@ -2139,18 +2130,19 @@ object {
 .page-template-training .button-black-text {
   color: black; }
 
-.page-template-training .training-yoga-tools-section {
-  padding: 0 4%; }
+.page-template-training .info-dropdown {
+  background-color: #fff;
+  border-bottom: 2px solid #4A4A4A;
+  width: 90vw;
+  margin: 0 auto; }
 
-.page-template-training .training-h3-heading:nth-child(1) {
-  padding-top: 39px; }
+.page-template-training .info-field {
+  background-color: #fff; }
 
 .page-template-training .training-h3-heading {
   width: 293px;
   height: 50px;
   margin: 0 auto;
-  border-bottom: 2px solid #4A4A4A;
-  padding-bottom: 16px;
   font-size: 20px;
   color: black;
   font-weight: 600; }
@@ -2165,13 +2157,18 @@ object {
 
 .page-template-training .small-para {
   font-weight: 300;
-  font-size: 11px;
+  font-size: 1rem;
   margin-bottom: 5px; }
 
 .page-template-training .under-skills-training-para {
   color: #6B747D;
   font-size: 14px;
-  min-width: 290px; }
+  min-width: 290px;
+  line-height: 24px;
+  margin-bottom: 20px; }
+
+.page-template-training .section-15px-padding {
+  padding: 0 15px; }
 
 .page-template-training .book-training-button {
   background-color: #6B747D;
@@ -2193,6 +2190,14 @@ object {
 .page-template-training .training-list-item {
   font-weight: 500;
   font-size: 14px; }
+  .page-template-training .training-list-item .info-field, .page-template-training .training-list-item .info-dropdown {
+    background-color: #95AFC9;
+    border-bottom: none;
+    width: 100vw;
+    padding: 0; }
+    .page-template-training .training-list-item .info-field span, .page-template-training .training-list-item .info-dropdown span {
+      color: #4a4a4a;
+      font-weight: 200; }
 
 .page-template-training .slide-para {
   display: none;
@@ -2236,6 +2241,9 @@ object {
     border-radius: 8px;
     border: 1px solid white; }
 
+.page-template-training .yoga-info-title {
+  font-size: 16.38px; }
+
 .page-template-training .bottom-button-container .general-button {
   color: #4A4A4A;
   background-color: #fff;
@@ -2258,8 +2266,7 @@ object {
     border: none;
     background: none;
     box-shadow: none;
-    padding: 0;
-    top: 25%; }
+    padding: 0; }
   .page-template-core-training .main-carousel .flickity-prev-next-button.next {
     right: 5%; }
   .page-template-core-training .main-carousel .flickity-prev-next-button.previous {
@@ -2292,7 +2299,6 @@ object {
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
   box-shadow: none;
   text-shadow: none;
   color: white;
@@ -2361,6 +2367,10 @@ object {
     @media (min-width: 720px) {
       .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
         width: 50vw; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .avail-online-h3 {
+    margin-top: 12px; } }
 
 .page-template-core-training .light-training-para {
   color: #6B747D;

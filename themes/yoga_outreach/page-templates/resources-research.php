@@ -24,12 +24,11 @@ get_header(); ?>
             </div><!--research-h3-container-->
 			<section class ="resources-article-pdf-list-container section-15px-padding">
 				<div class ="info-dropdown">
-					<h3 class ="info-heading">Articles</h3>
-					<p>+</p>
+					<h3>Articles</h3>
+					<span>-</span>
 				</div>
-				<p class ="info-heading-subtitle">Research papers & interesting articles about trauma-sensitive yoga</p>
-				<div>
-				<ul class ="resource-pdf-list">
+				<div class ="info-field">
+				<ul class ="resource-pdf-list inf">
 					<?php 
 					$pdfs = CFS()->get('pdf_list');
 					foreach ( $pdfs as $pdf ):?>
@@ -38,7 +37,7 @@ get_header(); ?>
 						<p><?php echo $pdf['name_of_pdf'];?></p>
 					</li>
 					<?php endforeach ?>
-				</ul>
+				</ul><!--resource-pdf-list-->
 				</div><!--info-field-->
 			</section>
 			<section class="resources-links-container section-15px-padding">
@@ -46,7 +45,7 @@ get_header(); ?>
 					<p>Links</p>
 					<span>-</span>
 				</div>
-				<ul class ="link-list">
+				<ul class ="link-list info-field">
 					<p><?php echo CFS()->get('link_text'); ?></p>
 					<?php
 					$links = CFS()->get('link_list');
