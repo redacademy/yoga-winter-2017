@@ -1,7 +1,6 @@
 (function($){
 
 //do something when the icon button is clicked
-$('.menu-main-menu-container').hide();
     $('.fa-bars').on('click', function(event){
         event.preventDefault();
         $('.menu-main-menu-container').toggleClass('submenu');   

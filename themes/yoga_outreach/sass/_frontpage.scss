@@ -26,13 +26,16 @@
         justify-content: center;
         height: 400px;
         @include desktop{
-          opacity: 0.7;
+           height: 642px;
         }
         .herobanner-text{
             margin: 50px auto;
             bottom: 7%;
             left: 10%;
             color: white;
+            @include desktop{
+              margin: 270px auto;
+            }
             h2{
                 text-transform: capitalize;
                 font-size: 24px;
@@ -47,7 +50,7 @@
                 font-weight: lighter;
                 @include desktop{
                   font-size: 24px;
-                  max-width:600px;
+                  max-width:650px;
                 }
             }
         }
