@@ -12,7 +12,16 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image hero-text">
                 <h1 class="header-title"><?php the_title(); ?></h1>
-                <p>Yoga Outreach is possible thanks to the dedicated, hard-working team  running the programs.</p>
+                <?php
+                    // TO SHOW THE PAGE CONTENTS
+                    while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
+                        <div class="entry-content-page">
+                            <?php the_content(); ?> <!-- Page Content -->
+                        </div>
+                    <?php
+                    endwhile; //resetting the page loop
+                    wp_reset_query(); //resetting the page query
+                    ?>
             </header>
             
             <section class="team">
