@@ -21,6 +21,12 @@
             }
 }
 
+.table-section-container{
+    @include desktop{
+        display:flex;
+    }
+}
+
 .classroom-dates-section, .online-dates-section{
     @include desktop{
         width:350px;

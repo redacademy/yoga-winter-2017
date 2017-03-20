@@ -1055,6 +1055,10 @@ a {
   position: absolute;
   width: 100%;
   bottom: 0; }
+  @media (min-width: 720px) {
+    .general-button-container {
+      display: -ms-flexbox;
+      display: flex; } }
 
 .general-button, .book-training-button {
   width: 230px;
@@ -1197,6 +1201,11 @@ a {
       width: 700px; } }
 
 @media (min-width: 720px) {
+  .table-section-container {
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media (min-width: 720px) {
   .classroom-dates-section, .online-dates-section {
     width: 350px; } }
 
@@ -1311,12 +1320,6 @@ tr {
 table {
   border-bottom: 1px solid black; }
 
-.page-template-resources-research {
-  font-family: 'raleway',sans-serif; }
-
-.general-first-button.teal-button {
-  background-color: #6CFFFE; }
-
 .main-h3-container h3 {
   width: 290px;
   margin: 0 auto;
@@ -1343,6 +1346,9 @@ table {
   margin-bottom: 20px;
   font-weight: 300;
   color: #6B747D; }
+  @media (min-width: 720px) {
+    .main-h3-container h3 {
+      font-size: 40px; } }
 
 .main-h3-container p {
   font-size: 14px;
@@ -1351,6 +1357,10 @@ table {
   margin: 0 auto;
   color: #6B747D;
   text-align: center; }
+  @media (min-width: 720px) {
+    .main-h3-container p {
+      font-size: 24px;
+      width: 70%; } }
 
 .list-text-container p {
   display: inline; }
@@ -1952,6 +1962,10 @@ object {
   position: absolute;
   width: 100%;
   bottom: 0; }
+  @media (min-width: 720px) {
+    .general-button-container {
+      display: -ms-flexbox;
+      display: flex; } }
 
 .general-button, .book-training-button {
   width: 230px;
@@ -2092,6 +2106,11 @@ object {
     .core-header {
       font-size: 40px;
       width: 700px; } }
+
+@media (min-width: 720px) {
+  .table-section-container {
+    display: -ms-flexbox;
+    display: flex; } }
 
 @media (min-width: 720px) {
   .classroom-dates-section, .online-dates-section {
