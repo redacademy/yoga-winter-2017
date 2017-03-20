@@ -38,15 +38,25 @@ get_header(); ?>
                 <?php if(!empty($fields)): ?>
                     <?php foreach( $fields as $field ): ?>
 
-                        <div class="info-dropdown">
-                            <h3><?php echo $field['info_title']; ?></h3><span>+</span>
-                        </div>
-                        <div class="info-field"> 
-                            <p><?php echo $field['info_field']; ?></p>
-                        </div>
+                    <div class="info-dropdown">
+                        <h3><?php echo $field['info_title']; ?></h3><span>+</span>
+                    </div>
+                        
+                    <div class="info-field"> 
+                        <p>hello</p>
 
-                    <?php endforeach; ?>
-                <?php endif; ?> 
+                        <?php $rows = CFS()->get( 'info_row' ); ?>
+                        
+                        <?php if(!empty($rows)): ?>
+                            <?php foreach( $rows as $row): ?>
+                                <p><?php echo CFS()->get( 'info_field' ); ?></p>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+
+                    </div>
+
+                <?php endforeach; ?>
+            <?php endif; ?> 
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
