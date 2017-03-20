@@ -14,11 +14,11 @@ get_header(); ?>
                     <h1 class="header-title"><?php the_title(); ?></h1>
                     <p><?php echo CFS()->get( 'about_sponsors' ); ?></p>
                 </div>
-                <div>
-                    <button class="button-holder"><a href="#donate" class="button">Donate</a></button>
-                    <button class="button-holder"><a href="#sponsor" class="button">Become Event Sponsor</a></button>
-                    <button class="button-holder"><a href="#tshirt" class="button">Shop T-Shirts</a></button>
-                    <button class="button-holder"><a href="#current-sponsor" class="button">Current Sponsor</a></button>
+                <div class="main-button-holder">
+                    <button class="grey-button main-button"><a href="#donate" class="button">Donate</a></button>
+                    <button class="grey-button main-button"><a href="#sponsor" class="button">Become Event Sponsor</a></button>
+                    <button class="grey-button main-button"><a href="#tshirt" class="button">Shop T-Shirts</a></button>
+                    <button class="grey-button main-button"><a href="#current-sponsor" class="button">Current Sponsor</a></button>
                 </div>
             </header><!-- .entry-header -->
             <section class="container-three">
@@ -37,7 +37,7 @@ get_header(); ?>
                 <h2 class="h2-holder">Donate</h2>
                 <p><?php echo CFS()->get( 'donation_information' ); ?></p>
                 <div class="decorative-line-case"><div class= "decorative-line2"></div></div>
-                <div class="button-wrap"><button class="button-holder"><a href="<?php echo CFS()->get( 'donation_page_url' );?>">Donate</a></button></div>
+                <button class="main-button dark-button"><a href="<?php echo CFS()->get( 'donation_page_url' );?>">Donate</a></button>
             </section>
             <section class="container-one">
                 <h2 class="h2-holder">Become a Monthly Contributor</h2>
@@ -45,19 +45,19 @@ get_header(); ?>
                         <img src="<?php echo CFS()->get( 'monthly_contributor_image' ); ?>" alt="">
                     </div> 
                 <p><?php echo CFS()->get( 'monthly_contributor_info' ); ?></p>
-                <div><button class="button-holder"><a href="<?php echo CFS()->get( 'donation_page_url' );?>">Donate Now</a></button></div>
+                <div><button class="main-button dark-button"><a href="<?php echo CFS()->get( 'donation_page_url' );?>">Donate Now</a></button></div>
             </section>
             <section id="sponsor" class="container-one">
                 <div class="accent-background"><div class="background-accent"></div></div>
                 <h2 class="h2-holder">Become an Event Sponsor</h2>
                 <p><?php echo CFS()->get( 'event_sponsor' ); ?></p>
                 <h3>To become an event sponsor big or small please contact Delanie </h3>
-                <div class="button-wrap"><button class="button-holder"><a href="/contact-us" class="button">Contact</a></button></div>
+                <div class="button-wrap"><button class="small-button white-button"><a href="/contact-us" class="button">Contact</a></button></div>
             </section>
             <section id="tshirt" class="container-tshirt">
                 <h2 class="h2-holder">Get a T-Shirt</h2>
                 <p><?php echo CFS()->get( 't_shirt_about' ); ?></p>
-                <div><button class="button-holder"><a href="<?php echo CFS()->get( 't_shirt_shop_url' );?>">Shop T-Shirts</a></button></div>
+                <div><button class="main-button white-button"><a href="<?php echo CFS()->get( 't_shirt_shop_url' );?>">Shop T-Shirts</a></button></div>
             </section>
             <section id="current-sponsor" class="container-one partners-container">
                 <h2 class="h2-holder">Our Current Sponsors</h2>

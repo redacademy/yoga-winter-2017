@@ -39,17 +39,16 @@ get_header(); ?>
                     <?php foreach( $fields as $field ): ?>
 
                     <div class="info-dropdown">
-                        <h3><?php echo $field['info_title']; ?></h3><span>+</span>
+                        <h3><?php echo $field[ 'info_title' ]; ?></h3><span>+</span>
                     </div>
                         
                     <div class="info-field"> 
                         <p>hello</p>
-
-                        <?php $rows = CFS()->get( 'info_row' ); ?>
                         
-                        <?php if(!empty($rows)): ?>
-                            <?php foreach( $rows as $row): ?>
-                                <p><?php echo CFS()->get( 'info_field' ); ?></p>
+                        <?php if(!empty($field['info_rows'])): ?>
+                            <?php foreach( $field['info_rows'] as $row): ?>
+                                <?php echo CFS()->get( 'info_field' ) ?>
+                                    <p><?php echo $row['info_field'] ?></p>
                             <?php endforeach; ?>
                         <?php endif; ?>
 
@@ -57,7 +56,7 @@ get_header(); ?>
 
                 <?php endforeach; ?>
             <?php endif; ?> 
-
+            
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>

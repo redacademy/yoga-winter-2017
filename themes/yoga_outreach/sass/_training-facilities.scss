@@ -1,6 +1,6 @@
 .page-template-training{
 	 	.main-carousel{
-        	width: 100%;
+        	width: 107%;
             padding: 30px;
             margin: 0 auto;
                 .carousel-cell{
@@ -21,7 +21,6 @@
                     background: none;
                     box-shadow: none;
                     padding: 0;
-                    top: 25%;
                 }
                 .flickity-prev-next-button.next {
                     right: 5%;
@@ -38,30 +37,20 @@
 			margin: 0 auto;
 		}
 
-		.general-template-section{
-			height:400px;
-			background-color:lightgreen;
-			width:100%;
-			position:relative;
+		.avail-online-h3{
+			@include desktop{
+				font-size:16px;
+			}
 		}
 
-		.general-button-container{
-			position: absolute;
-			width:100%;
-			bottom:0;
-				@include desktop{
-					display:flex;
-				}
-		}
-
-		.general-button,.book-training-button{
+		.general-button, .book-training-button{
 			width:230px;
 			height:44px;
 			display:block;
 			margin:0 auto;
 			font-size:14px;
-			text-transform:uppercase;
 			margin-bottom:26px;
+			text-transform:uppercase;
 			box-shadow:none;
 			text-shadow:none;
 			color:white;
@@ -74,13 +63,19 @@
 			color:black;
 		}
 
-
-		.training-yoga-tools-section{
-			padding:0 4%;
+		.training-yoga-tools-section,.training-yoga-work-section{
+			margin-top:39px;
 		}
 
-		.training-h3-heading:nth-child(1){
-			padding-top:39px;
+		.info-dropdown{
+			background-color:#fff;
+			border-bottom:2px solid #4A4A4A;
+    		width: 90vw;
+			margin: 0 auto;
+		}
+
+		.info-field{
+			background-color:#fff;
 		}
 
 
@@ -88,12 +83,11 @@
 			width:293px;
 			height:50px;
 			margin:0 auto;
-			border-bottom: 2px solid #4A4A4A;
-			padding-bottom:16px;
 			font-size:20px;
 			color: black;
 			font-weight:600;
 		}
+
 		.train-plus-button, .train-minus-button{
 			background:transparent;
 			border:none;
@@ -104,14 +98,21 @@
 		}
 		.small-para{
 			font-weight:300;
-			font-size: 11px;
+			font-size:11px;
 			margin-bottom:5px;
 		}
 		.under-skills-training-para{
 			color:#6B747D;
 			font-size: 14px;
 			min-width:290px;
+			line-height:24px;
+			margin-bottom:20px;
 		}
+
+		.section-15px-padding{
+        	padding:0 15px;
+        }
+		
 		.book-training-button{
 			background-color:#6B747D;
 			margin-top:18px;
@@ -138,6 +139,17 @@
 		.training-list-item{
 			font-weight:500;
 			font-size:14px;
+				.info-field, .info-dropdown{
+					background-color:#95AFC9;
+					border-bottom:none;
+					width:100vw;
+					padding:0;
+						span{
+							color:$darktheme_color;
+							font-weight:200;
+						}
+
+				}
 		}
 
 		.slide-para{
@@ -179,6 +191,10 @@
 					border-radius:8px;
 					border:1px solid white;
 				}
+		}
+
+		.yoga-info-title{
+			font-size:16.38px;
 		}
 
 		.bottom-button-container{

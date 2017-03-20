@@ -390,7 +390,8 @@ button {
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  box-shadow: none;
+  text-shadow: none;
   box-shadow: none;
   text-shadow: none;
   color: white;
@@ -544,19 +545,22 @@ button {
   padding: 44px 20px; }
 
 .teal-button {
-  background-color: #6CFFFE; }
+  background-color: #6cfffe; }
 
 .grey-button {
-  background-color: #94BFD1; }
+  background-color: #94bfd1; }
 
 .white-button {
   background-color: #fff; }
+
+.dark-button {
+  background-color: #6b747d; }
 
 .general-button:hover {
   box-shadow: none; }
 
 .testimonial-list.main-carousel {
-  padding: 20px 0;
+  height: 100px;
   list-style: none;
   margin: 0;
   text-align: center;
@@ -708,9 +712,12 @@ footer {
       font-family: raleway;
       color: white;
       text-transform: uppercase; }
+<<<<<<< HEAD
       @media (min-width: 720px) {
         footer form label {
           padding: 0 0.5rem; } }
+=======
+>>>>>>> b4055e01843467c361f7acde445eefd72dba9573
     footer form .input-bar {
       font-size: 0;
       display: -ms-inline-flexbox;
@@ -842,7 +849,8 @@ footer {
     margin: 0 auto;
     font-size: 14px;
     text-transform: uppercase;
-    margin-bottom: 26px;
+    box-shadow: none;
+    text-shadow: none;
     box-shadow: none;
     text-shadow: none;
     color: white;
@@ -1100,16 +1108,67 @@ a {
 
 .page-template-training-main {
   font-family: 'raleway',sans-serif; }
-  .page-template-training-main .main-h3-container h3, .page-template-training-main .main-h3-container p {
+  .page-template-training-main .main-h3-container h3 {
     color: #6b747d;
     font-weight: 200;
-    line-height: 24px; }
-
-.training-para-left {
-  text-align: left; }
+    line-height: 29px;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 35px;
+    width: 290px; }
+    @media (min-width: 720px) {
+      .page-template-training-main .main-h3-container h3 {
+        font-size: 34px;
+        color: #000;
+        width: 60vw;
+        text-align: left; } }
+  .page-template-training-main .main-h3-container p {
+    color: #6b747d;
+    line-height: 24px;
+    margin-top: 21px; }
+    @media (min-width: 720px) {
+      .page-template-training-main .main-h3-container p {
+        font-size: 24px;
+        line-height: 34px; } }
+    .page-template-training-main .main-h3-container p a {
+      color: #000;
+      font-weight: bold; }
+  .page-template-training-main .desktop-margin {
+    margin-left: 6%; }
+  .page-template-training-main .training-para-left {
+    text-align: left; }
+  .page-template-training-main .for-training-section {
+    margin-top: 31px; }
+    @media (min-width: 720px) {
+      .page-template-training-main .for-training-section {
+        padding-bottom: 20rem; } }
+    .page-template-training-main .for-training-section img {
+      height: 60px; }
+      @media (min-width: 720px) {
+        .page-template-training-main .for-training-section img {
+          height: auto; } }
+  .page-template-training-main .section-15px-padding {
+    padding: 0 15px; }
+  .page-template-training-main .general-button {
+    width: 230px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    margin-bottom: 29px; }
 
 .page-template-training .main-carousel {
-  width: 100%;
+  width: 107%;
   padding: 30px;
   margin: 0 auto; }
   .page-template-training .main-carousel .carousel-cell {
@@ -1125,8 +1184,7 @@ a {
     border: none;
     background: none;
     box-shadow: none;
-    padding: 0;
-    top: 25%; }
+    padding: 0; }
   .page-template-training .main-carousel .flickity-prev-next-button.next {
     right: 5%; }
   .page-template-training .main-carousel .flickity-prev-next-button.previous {
@@ -1138,20 +1196,9 @@ a {
   text-align: center;
   margin: 0 auto; }
 
-.page-template-training .general-template-section {
-  height: 400px;
-  background-color: lightgreen;
-  width: 100%;
-  position: relative; }
-
-.page-template-training .general-button-container {
-  position: absolute;
-  width: 100%;
-  bottom: 0; }
-  @media (min-width: 720px) {
-    .page-template-training .general-button-container {
-      display: -ms-flexbox;
-      display: flex; } }
+@media (min-width: 720px) {
+  .page-template-training .avail-online-h3 {
+    font-size: 16px; } }
 
 .page-template-training .general-button, .page-template-training .book-training-button {
   width: 230px;
@@ -1159,8 +1206,8 @@ a {
   display: block;
   margin: 0 auto;
   font-size: 14px;
-  text-transform: uppercase;
   margin-bottom: 26px;
+  text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
   color: white;
@@ -1171,18 +1218,22 @@ a {
 .page-template-training .button-black-text {
   color: black; }
 
-.page-template-training .training-yoga-tools-section {
-  padding: 0 4%; }
+.page-template-training .training-yoga-tools-section, .page-template-training .training-yoga-work-section {
+  margin-top: 39px; }
 
-.page-template-training .training-h3-heading:nth-child(1) {
-  padding-top: 39px; }
+.page-template-training .info-dropdown {
+  background-color: #fff;
+  border-bottom: 2px solid #4A4A4A;
+  width: 90vw;
+  margin: 0 auto; }
+
+.page-template-training .info-field {
+  background-color: #fff; }
 
 .page-template-training .training-h3-heading {
   width: 293px;
   height: 50px;
   margin: 0 auto;
-  border-bottom: 2px solid #4A4A4A;
-  padding-bottom: 16px;
   font-size: 20px;
   color: black;
   font-weight: 600; }
@@ -1203,7 +1254,12 @@ a {
 .page-template-training .under-skills-training-para {
   color: #6B747D;
   font-size: 14px;
-  min-width: 290px; }
+  min-width: 290px;
+  line-height: 24px;
+  margin-bottom: 20px; }
+
+.page-template-training .section-15px-padding {
+  padding: 0 15px; }
 
 .page-template-training .book-training-button {
   background-color: #6B747D;
@@ -1225,6 +1281,14 @@ a {
 .page-template-training .training-list-item {
   font-weight: 500;
   font-size: 14px; }
+  .page-template-training .training-list-item .info-field, .page-template-training .training-list-item .info-dropdown {
+    background-color: #95AFC9;
+    border-bottom: none;
+    width: 100vw;
+    padding: 0; }
+    .page-template-training .training-list-item .info-field span, .page-template-training .training-list-item .info-dropdown span {
+      color: #4a4a4a;
+      font-weight: 200; }
 
 .page-template-training .slide-para {
   display: none;
@@ -1268,6 +1332,9 @@ a {
     border-radius: 8px;
     border: 1px solid white; }
 
+.page-template-training .yoga-info-title {
+  font-size: 16.38px; }
+
 .page-template-training .bottom-button-container .general-button {
   color: #4A4A4A;
   background-color: #fff;
@@ -1290,8 +1357,7 @@ a {
     border: none;
     background: none;
     box-shadow: none;
-    padding: 0;
-    top: 25%; }
+    padding: 0; }
   .page-template-core-training .main-carousel .flickity-prev-next-button.next {
     right: 5%; }
   .page-template-core-training .main-carousel .flickity-prev-next-button.previous {
@@ -1324,7 +1390,8 @@ a {
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  box-shadow: none;
+  text-shadow: none;
   box-shadow: none;
   text-shadow: none;
   color: white;
@@ -1393,6 +1460,10 @@ a {
     @media (min-width: 720px) {
       .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
         width: 50vw; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .avail-online-h3 {
+    margin-top: 12px; } }
 
 .page-template-core-training .light-training-para {
   color: #6B747D;
@@ -1498,6 +1569,27 @@ a {
   font-size: 16px;
   font-weight: 100; }
 
+.page-template-resources-research .info-dropdown h3 {
+  font-size: 14px; }
+
+.page-template-resources-research .teal-button.black-text {
+  color: black; }
+
+.page-template-resources-research .general-button, .page-template-resources-research .book-training-button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  margin-bottom: 26px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px; }
+
 .page-template-resources-research .info-heading-subtitle {
   color: #4A4A4A; }
 
@@ -1527,7 +1619,6 @@ a {
   display: inline; }
 
 .page-template-resources-research .resources-article-pdf-list-container {
-  height: 371px;
   background-color: #f4f1ea;
   font-size: 14px; }
 
@@ -1562,21 +1653,19 @@ a {
   font-weight: 300;
   font-size: 14px; }
 
-.page-template-resources-research .resources-links-container {
-  height: 380px; }
-  .page-template-resources-research .resources-links-container div {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .page-template-resources-research .resources-links-container div button {
-      font-size: 2rem;
-      font-weight: lighter;
-      padding: 0;
-      border: none;
-      background: none;
-      box-shadow: none;
-      color: #95afc9; }
+.page-template-resources-research .resources-links-container div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .page-template-resources-research .resources-links-container div button {
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+    color: #95afc9; }
 
 .page-template-resources-research .links-button-container {
   height: 50px;
@@ -1713,38 +1802,89 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.page-template-archive-events {
-  background-color: lightblue; }
-  .page-template-archive-events tbody {
+.page-template-archive-events button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px; }
+
+.page-template-archive-events .teal-button {
+  color: #4a4a4a; }
+
+.page-template-archive-events .container, .page-template-archive-events .container2 {
+  color: #6b747d; }
+  .page-template-archive-events .container h2, .page-template-archive-events .container2 h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 35px; }
+  .page-template-archive-events .container .body-info, .page-template-archive-events .container2 .body-info {
+    background-color: #f4f1ea;
+    padding: 17px 15px;
+    position: relative; }
+    .page-template-archive-events .container .body-info .title-contain, .page-template-archive-events .container2 .body-info .title-contain {
+      position: relative;
+      margin-bottom: 35px; }
+    .page-template-archive-events .container .body-info h3, .page-template-archive-events .container2 .body-info h3 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      border-bottom: 1px solid #6b747d; }
+    .page-template-archive-events .container .body-info .accent-name-shape, .page-template-archive-events .container2 .body-info .accent-name-shape {
+      width: 157px;
+      height: 27px;
+      border-radius: 8px;
+      background-color: #EBE5D8;
+      position: absolute;
+      bottom: -9px;
+      z-index: -1; }
+    .page-template-archive-events .container .body-info .img-contain, .page-template-archive-events .container2 .body-info .img-contain {
+      height: 161px;
+      margin-bottom: 47px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-template-archive-events .container table, .page-template-archive-events .container2 table {
+    height: 100%;
     border: 1px solid black;
     background-color: #fff; }
+    .page-template-archive-events .container table h4, .page-template-archive-events .container2 table h4 {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      padding-left: 5px; }
+    .page-template-archive-events .container table p, .page-template-archive-events .container2 table p {
+      font-size: 0.6rem; }
+
+.page-template-archive-events .container2 .body-info {
+  background-color: #F2FBFF; }
+
+.page-template-archive-events .booking-button {
+  height: 85px;
+  background-color: #6B747D;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
   .page-template-archive-events .booking-button button {
     width: 173px;
-    color: #4a4a4a; }
-
-.main-carousel {
-  width: 90%;
-  padding: 30px;
-  margin: 0 auto; }
-  .main-carousel .carousel-cell {
-    width: 100%;
-    height: auto; }
-    .main-carousel .carousel-cell p {
-      margin-top: 20px; }
-    .main-carousel .carousel-cell h1 {
-      color: #4a4a4a; }
-  .main-carousel ol {
-    display: none; }
-  .main-carousel .flickity-prev-next-button {
+    margin: 0;
     border: none;
-    background: none;
-    box-shadow: none;
-    padding: 0;
-    top: 25%; }
-  .main-carousel .flickity-prev-next-button.next {
-    right: 5%; }
-  .main-carousel .flickity-prev-next-button.previous {
-    left: 5%; }
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #4a4a4a; }
 
 .page-template-volunteer .site-main, .page-template-support .site-main, .page-template-partner .site-main {
   display: -ms-flexbox;
@@ -1764,15 +1904,71 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   flex-direction: column; }
+  .page-template-volunteer .site-main .main-button-holder, .page-template-support .site-main .main-button-holder, .page-template-partner .site-main .main-button-holder {
+    padding: 10px; }
+  .page-template-volunteer .site-main .main-button, .page-template-support .site-main .main-button, .page-template-partner .site-main .main-button {
+    width: 230px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    margin-bottom: 26px; }
+    .page-template-volunteer .site-main .main-button a, .page-template-support .site-main .main-button a, .page-template-partner .site-main .main-button a {
+      color: white;
+      text-decoration: none; }
+  .page-template-volunteer .site-main .small-button, .page-template-support .site-main .small-button, .page-template-partner .site-main .small-button {
+    width: 173px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    margin: 0 auto; }
+    .page-template-volunteer .site-main .small-button a, .page-template-support .site-main .small-button a, .page-template-partner .site-main .small-button a {
+      color: white;
+      text-decoration: none; }
+  .page-template-volunteer .site-main #volunteer .small-button, .page-template-support .site-main #volunteer .small-button, .page-template-partner .site-main #volunteer .small-button {
+    margin-bottom: 26px; }
+  .page-template-volunteer .site-main .white-button a, .page-template-support .site-main .white-button a, .page-template-partner .site-main .white-button a {
+    color: #6b747d;
+    text-decoration: none; }
   .page-template-volunteer .site-main .button-wrap, .page-template-support .site-main .button-wrap, .page-template-partner .site-main .button-wrap {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
     height: 10%;
     padding: 10px;
-    width: 100vw;
-    background-color: #4a4a4a; }
+    background-color: #6b747d; }
+  .page-template-volunteer .site-main #instructor, .page-template-support .site-main #instructor, .page-template-partner .site-main #instructor {
+    position: relative; }
+    .page-template-volunteer .site-main #instructor ol, .page-template-support .site-main #instructor ol, .page-template-partner .site-main #instructor ol {
+      margin-bottom: 165px; }
+    .page-template-volunteer .site-main #instructor .button-wrap, .page-template-support .site-main #instructor .button-wrap, .page-template-partner .site-main #instructor .button-wrap {
+      position: absolute;
+      -ms-flex-pack: center;
+          justify-content: center;
+      bottom: 40px;
+      width: 100vw; }
   .page-template-volunteer .site-main .entry-header, .page-template-support .site-main .entry-header, .page-template-partner .site-main .entry-header {
     width: 100vw;
     height: 100vh;
@@ -1784,70 +1980,105 @@ object {
         flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-  .page-template-volunteer .site-main header, .page-template-volunteer .site-main section > *, .page-template-support .site-main header, .page-template-support .site-main section > *, .page-template-partner .site-main header, .page-template-partner .site-main section > * {
-    width: 100vw;
-    padding: 15px; }
-  .page-template-volunteer .site-main .container-one .contributor, .page-template-support .site-main .container-one .contributor, .page-template-partner .site-main .container-one .contributor {
-    background-color: #6b747d;
-    height: 200px;
-    width: 50%;
-    margin: 0 auto; }
-  .page-template-volunteer .site-main .container-one .custom-info-container, .page-template-support .site-main .container-one .custom-info-container, .page-template-partner .site-main .container-one .custom-info-container {
-    background-color: #fff; }
-  .page-template-volunteer .site-main .container-one .list-container, .page-template-support .site-main .container-one .list-container, .page-template-partner .site-main .container-one .list-container {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row; }
-  .page-template-volunteer .site-main .container-one .accent-background, .page-template-support .site-main .container-one .accent-background, .page-template-partner .site-main .container-one .accent-background {
-    position: relative;
+  .page-template-volunteer .site-main .drop-down-info, .page-template-support .site-main .drop-down-info, .page-template-partner .site-main .drop-down-info {
     padding: 0; }
-    .page-template-volunteer .site-main .container-one .accent-background .background-accent, .page-template-support .site-main .container-one .accent-background .background-accent, .page-template-partner .site-main .container-one .accent-background .background-accent {
-      position: absolute;
-      width: 100%;
-      height: 400px;
-      background-color: #f4f1ea;
-      z-index: -1;
-      top: -10px; }
-  .page-template-volunteer .site-main .container-one .decorative-line-case, .page-template-support .site-main .container-one .decorative-line-case, .page-template-partner .site-main .container-one .decorative-line-case {
-    position: relative;
-    width: 10%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end; }
-    .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line, .page-template-support .site-main .container-one .decorative-line-case .decorative-line, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line {
-      width: 25%;
-      height: 90%;
-      border-radius: 30px;
-      background-color: #cce8ea; }
-    .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line2, .page-template-support .site-main .container-one .decorative-line-case .decorative-line2, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line2 {
-      position: absolute;
-      width: 150px;
-      height: 20px;
-      background-color: #94bfd1;
-      opacity: .8;
-      left: 70%;
-      bottom: 50%;
-      z-index: -1;
-      border-radius: 8px; }
-  .page-template-volunteer .site-main .container-one ul, .page-template-support .site-main .container-one ul, .page-template-partner .site-main .container-one ul {
-    width: 90%;
-    margin: 0;
+    .page-template-volunteer .site-main .drop-down-info p, .page-template-support .site-main .drop-down-info p, .page-template-partner .site-main .drop-down-info p {
+      padding: 15px; }
+  .page-template-volunteer .site-main header, .page-template-volunteer .site-main section > *, .page-template-support .site-main header, .page-template-support .site-main section > *, .page-template-partner .site-main header, .page-template-partner .site-main section > * {
+    padding: 15px; }
+  .page-template-volunteer .site-main section .info-paragraph, .page-template-support .site-main section .info-paragraph, .page-template-partner .site-main section .info-paragraph {
     text-align: left; }
+  .page-template-volunteer .site-main .container-one, .page-template-support .site-main .container-one, .page-template-partner .site-main .container-one {
+    width: 100vw; }
+    .page-template-volunteer .site-main .container-one .contributor, .page-template-support .site-main .container-one .contributor, .page-template-partner .site-main .container-one .contributor {
+      background-color: lightgrey;
+      height: 200px;
+      width: 50%;
+      margin: 0 auto; }
+    .page-template-volunteer .site-main .container-one .custom-info-container, .page-template-support .site-main .container-one .custom-info-container, .page-template-partner .site-main .container-one .custom-info-container {
+      background-color: #fff; }
+    .page-template-volunteer .site-main .container-one .list-container, .page-template-support .site-main .container-one .list-container, .page-template-partner .site-main .container-one .list-container {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+    .page-template-volunteer .site-main .container-one .accent-background, .page-template-support .site-main .container-one .accent-background, .page-template-partner .site-main .container-one .accent-background {
+      position: relative;
+      padding: 0; }
+      .page-template-volunteer .site-main .container-one .accent-background .background-accent, .page-template-support .site-main .container-one .accent-background .background-accent, .page-template-partner .site-main .container-one .accent-background .background-accent {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        background-color: #f4f1ea;
+        z-index: -1;
+        top: -10px; }
+    .page-template-volunteer .site-main .container-one .decorative-line-case, .page-template-support .site-main .container-one .decorative-line-case, .page-template-partner .site-main .container-one .decorative-line-case {
+      position: relative;
+      width: 10%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line, .page-template-support .site-main .container-one .decorative-line-case .decorative-line, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line {
+        width: 25%;
+        height: 90%;
+        border-radius: 30px;
+        background-color: #cce8ea; }
+      .page-template-volunteer .site-main .container-one .decorative-line-case .decorative-line2, .page-template-support .site-main .container-one .decorative-line-case .decorative-line2, .page-template-partner .site-main .container-one .decorative-line-case .decorative-line2 {
+        position: absolute;
+        width: 150px;
+        height: 20px;
+        background-color: #94bfd1;
+        opacity: .8;
+        left: 70%;
+        bottom: 50%;
+        z-index: -1;
+        border-radius: 8px; }
+    .page-template-volunteer .site-main .container-one ul, .page-template-support .site-main .container-one ul, .page-template-partner .site-main .container-one ul {
+      width: 90%;
+      margin: 0;
+      text-align: left; }
   .page-template-volunteer .site-main .container-two, .page-template-support .site-main .container-two, .page-template-partner .site-main .container-two {
+    width: 100vw;
     background-color: #95afc9; }
     .page-template-volunteer .site-main .container-two h2, .page-template-support .site-main .container-two h2, .page-template-partner .site-main .container-two h2 {
       color: #4a4a4a; }
   .page-template-volunteer .site-main .container-three, .page-template-support .site-main .container-three, .page-template-partner .site-main .container-three {
+    width: 100vw;
     background-color: #f3f0e9; }
   .page-template-volunteer .site-main .container-four, .page-template-support .site-main .container-four, .page-template-partner .site-main .container-four {
+    width: 100vw;
     background-color: #cce8ea; }
   .page-template-volunteer .site-main .container-tshirt, .page-template-support .site-main .container-tshirt, .page-template-partner .site-main .container-tshirt {
     background: url("../../images/tshirt_mobile.png") no-repeat center bottom;
     background-size: cover, cover;
     color: #fff; }
+
+.page-template-volunteer .main-carousel, .page-template-support .main-carousel, .page-template-partner .main-carousel {
+  width: 90%;
+  padding: 30px;
+  margin: 0 auto; }
+  .page-template-volunteer .main-carousel .carousel-cell, .page-template-support .main-carousel .carousel-cell, .page-template-partner .main-carousel .carousel-cell {
+    width: 100%;
+    height: auto; }
+    .page-template-volunteer .main-carousel .carousel-cell p, .page-template-support .main-carousel .carousel-cell p, .page-template-partner .main-carousel .carousel-cell p {
+      margin-top: 20px; }
+    .page-template-volunteer .main-carousel .carousel-cell h1, .page-template-support .main-carousel .carousel-cell h1, .page-template-partner .main-carousel .carousel-cell h1 {
+      color: #4a4a4a; }
+  .page-template-volunteer .main-carousel ol, .page-template-support .main-carousel ol, .page-template-partner .main-carousel ol {
+    display: none;
+    margin-bottom: 165px; }
+  .page-template-volunteer .main-carousel .flickity-prev-next-button, .page-template-support .main-carousel .flickity-prev-next-button, .page-template-partner .main-carousel .flickity-prev-next-button {
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    top: 25%; }
+  .page-template-volunteer .main-carousel .flickity-prev-next-button.next, .page-template-support .main-carousel .flickity-prev-next-button.next, .page-template-partner .main-carousel .flickity-prev-next-button.next {
+    right: 5%; }
+  .page-template-volunteer .main-carousel .flickity-prev-next-button.previous, .page-template-support .main-carousel .flickity-prev-next-button.previous, .page-template-partner .main-carousel .flickity-prev-next-button.previous {
+    left: 5%; }
 
 /* Volunteer */
 .page-template-volunteer ol {
@@ -1873,10 +2104,10 @@ object {
     font-size: 4rem;
     background-color: white;
     border-radius: 100%;
-    padding: 10% 22%;
+    padding: 10% 24% 14%;
     color: #95afc9; }
   .page-template-volunteer ol li p {
-    padding-top: 10%;
+    padding-top: 16%;
     margin: 0; }
 
 /* Partner Facility */
@@ -1906,6 +2137,10 @@ object {
     width: 85%; }
   .partners-container h2, .partners-container p {
     text-align: center; }
+  .partners-container ul {
+    margin: 0; }
+    .partners-container ul li p {
+      text-align: left; }
 
 .home {
   text-align: center;
@@ -2162,7 +2397,7 @@ object {
           margin: auto; } }
 
 .page-template-training .main-carousel {
-  width: 100%;
+  width: 107%;
   padding: 30px;
   margin: 0 auto; }
   .page-template-training .main-carousel .carousel-cell {
@@ -2178,8 +2413,7 @@ object {
     border: none;
     background: none;
     box-shadow: none;
-    padding: 0;
-    top: 25%; }
+    padding: 0; }
   .page-template-training .main-carousel .flickity-prev-next-button.next {
     right: 5%; }
   .page-template-training .main-carousel .flickity-prev-next-button.previous {
@@ -2191,20 +2425,9 @@ object {
   text-align: center;
   margin: 0 auto; }
 
-.page-template-training .general-template-section {
-  height: 400px;
-  background-color: lightgreen;
-  width: 100%;
-  position: relative; }
-
-.page-template-training .general-button-container {
-  position: absolute;
-  width: 100%;
-  bottom: 0; }
-  @media (min-width: 720px) {
-    .page-template-training .general-button-container {
-      display: -ms-flexbox;
-      display: flex; } }
+@media (min-width: 720px) {
+  .page-template-training .avail-online-h3 {
+    font-size: 16px; } }
 
 .page-template-training .general-button, .page-template-training .book-training-button {
   width: 230px;
@@ -2212,8 +2435,8 @@ object {
   display: block;
   margin: 0 auto;
   font-size: 14px;
-  text-transform: uppercase;
   margin-bottom: 26px;
+  text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
   color: white;
@@ -2224,18 +2447,22 @@ object {
 .page-template-training .button-black-text {
   color: black; }
 
-.page-template-training .training-yoga-tools-section {
-  padding: 0 4%; }
+.page-template-training .training-yoga-tools-section, .page-template-training .training-yoga-work-section {
+  margin-top: 39px; }
 
-.page-template-training .training-h3-heading:nth-child(1) {
-  padding-top: 39px; }
+.page-template-training .info-dropdown {
+  background-color: #fff;
+  border-bottom: 2px solid #4A4A4A;
+  width: 90vw;
+  margin: 0 auto; }
+
+.page-template-training .info-field {
+  background-color: #fff; }
 
 .page-template-training .training-h3-heading {
   width: 293px;
   height: 50px;
   margin: 0 auto;
-  border-bottom: 2px solid #4A4A4A;
-  padding-bottom: 16px;
   font-size: 20px;
   color: black;
   font-weight: 600; }
@@ -2256,7 +2483,12 @@ object {
 .page-template-training .under-skills-training-para {
   color: #6B747D;
   font-size: 14px;
-  min-width: 290px; }
+  min-width: 290px;
+  line-height: 24px;
+  margin-bottom: 20px; }
+
+.page-template-training .section-15px-padding {
+  padding: 0 15px; }
 
 .page-template-training .book-training-button {
   background-color: #6B747D;
@@ -2278,6 +2510,14 @@ object {
 .page-template-training .training-list-item {
   font-weight: 500;
   font-size: 14px; }
+  .page-template-training .training-list-item .info-field, .page-template-training .training-list-item .info-dropdown {
+    background-color: #95AFC9;
+    border-bottom: none;
+    width: 100vw;
+    padding: 0; }
+    .page-template-training .training-list-item .info-field span, .page-template-training .training-list-item .info-dropdown span {
+      color: #4a4a4a;
+      font-weight: 200; }
 
 .page-template-training .slide-para {
   display: none;
@@ -2321,6 +2561,9 @@ object {
     border-radius: 8px;
     border: 1px solid white; }
 
+.page-template-training .yoga-info-title {
+  font-size: 16.38px; }
+
 .page-template-training .bottom-button-container .general-button {
   color: #4A4A4A;
   background-color: #fff;
@@ -2343,8 +2586,7 @@ object {
     border: none;
     background: none;
     box-shadow: none;
-    padding: 0;
-    top: 25%; }
+    padding: 0; }
   .page-template-core-training .main-carousel .flickity-prev-next-button.next {
     right: 5%; }
   .page-template-core-training .main-carousel .flickity-prev-next-button.previous {
@@ -2377,7 +2619,8 @@ object {
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  box-shadow: none;
+  text-shadow: none;
   box-shadow: none;
   text-shadow: none;
   color: white;
@@ -2446,6 +2689,10 @@ object {
     @media (min-width: 720px) {
       .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
         width: 50vw; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .avail-online-h3 {
+    margin-top: 12px; } }
 
 .page-template-core-training .light-training-para {
   color: #6B747D;
