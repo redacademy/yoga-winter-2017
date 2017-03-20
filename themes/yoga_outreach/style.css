@@ -1088,13 +1088,64 @@ a {
 
 .page-template-training-main {
   font-family: 'raleway',sans-serif; }
-  .page-template-training-main .main-h3-container h3, .page-template-training-main .main-h3-container p {
+  .page-template-training-main .main-h3-container h3 {
     color: #6b747d;
     font-weight: 200;
-    line-height: 24px; }
-
-.training-para-left {
-  text-align: left; }
+    line-height: 29px;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 35px;
+    width: 290px; }
+    @media (min-width: 720px) {
+      .page-template-training-main .main-h3-container h3 {
+        font-size: 34px;
+        color: #000;
+        width: 60vw;
+        text-align: left; } }
+  .page-template-training-main .main-h3-container p {
+    color: #6b747d;
+    line-height: 24px;
+    margin-top: 21px; }
+    @media (min-width: 720px) {
+      .page-template-training-main .main-h3-container p {
+        font-size: 24px;
+        line-height: 34px; } }
+    .page-template-training-main .main-h3-container p a {
+      color: #000;
+      font-weight: bold; }
+  .page-template-training-main .desktop-margin {
+    margin-left: 6%; }
+  .page-template-training-main .training-para-left {
+    text-align: left; }
+  .page-template-training-main .for-training-section {
+    margin-top: 31px; }
+    @media (min-width: 720px) {
+      .page-template-training-main .for-training-section {
+        padding-bottom: 20rem; } }
+    .page-template-training-main .for-training-section img {
+      height: 60px; }
+      @media (min-width: 720px) {
+        .page-template-training-main .for-training-section img {
+          height: auto; } }
+  .page-template-training-main .section-15px-padding {
+    padding: 0 15px; }
+  .page-template-training-main .general-button {
+    width: 230px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    margin-bottom: 29px; }
 
 .page-template-training .main-carousel {
   width: 107%;
@@ -1135,6 +1186,7 @@ a {
   display: block;
   margin: 0 auto;
   font-size: 14px;
+  margin-bottom: 26px;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -1145,6 +1197,9 @@ a {
 
 .page-template-training .button-black-text {
   color: black; }
+
+.page-template-training .training-yoga-tools-section, .page-template-training .training-yoga-work-section {
+  margin-top: 39px; }
 
 .page-template-training .info-dropdown {
   background-color: #fff;
@@ -1173,7 +1228,7 @@ a {
 
 .page-template-training .small-para {
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 11px;
   margin-bottom: 5px; }
 
 .page-template-training .under-skills-training-para {
@@ -1494,6 +1549,27 @@ a {
   font-size: 16px;
   font-weight: 100; }
 
+.page-template-resources-research .info-dropdown h3 {
+  font-size: 14px; }
+
+.page-template-resources-research .teal-button.black-text {
+  color: black; }
+
+.page-template-resources-research .general-button, .page-template-resources-research .book-training-button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  margin-bottom: 26px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px; }
+
 .page-template-resources-research .info-heading-subtitle {
   color: #4A4A4A; }
 
@@ -1523,7 +1599,6 @@ a {
   display: inline; }
 
 .page-template-resources-research .resources-article-pdf-list-container {
-  height: 371px;
   background-color: #f4f1ea;
   font-size: 14px; }
 
@@ -1558,21 +1633,19 @@ a {
   font-weight: 300;
   font-size: 14px; }
 
-.page-template-resources-research .resources-links-container {
-  height: 380px; }
-  .page-template-resources-research .resources-links-container div {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .page-template-resources-research .resources-links-container div button {
-      font-size: 2rem;
-      font-weight: lighter;
-      padding: 0;
-      border: none;
-      background: none;
-      box-shadow: none;
-      color: #95afc9; }
+.page-template-resources-research .resources-links-container div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .page-template-resources-research .resources-links-container div button {
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+    color: #95afc9; }
 
 .page-template-resources-research .links-button-container {
   height: 50px;
@@ -2300,6 +2373,7 @@ object {
   display: block;
   margin: 0 auto;
   font-size: 14px;
+  margin-bottom: 26px;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -2310,6 +2384,9 @@ object {
 
 .page-template-training .button-black-text {
   color: black; }
+
+.page-template-training .training-yoga-tools-section, .page-template-training .training-yoga-work-section {
+  margin-top: 39px; }
 
 .page-template-training .info-dropdown {
   background-color: #fff;
@@ -2338,7 +2415,7 @@ object {
 
 .page-template-training .small-para {
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 11px;
   margin-bottom: 5px; }
 
 .page-template-training .under-skills-training-para {
