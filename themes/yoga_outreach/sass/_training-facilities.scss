@@ -17,17 +17,17 @@
     text-align: center;
     margin: 0 auto;
 }
-
 .general-template-section{
 	height:400px;
 	background-color:lightgreen;
 	width:100%;
+	position:relative;
 }
 
 .general-button-container{
 	position: absolute;
 	width:100%;
-	top:316px;
+	bottom:0;
 }
 
 .general-button,.book-training-button{
@@ -126,8 +126,8 @@
 	height:85px;
 	width:100%;
 	background-color:#6B747D;
-	margin-top:29px;
 	display:flex;
+	align-items:center;
 }
 
 
@@ -136,17 +136,7 @@
 	color:#4A4A4A;
 }
 
-.testimonial-list{
-	padding:0;
-	list-style:none;
-	margin:0;
-	text-align:center;
-	font-size:12px;
-		li{
-			width:100%;
-			display:flex;
-		}
-}
+
 
 #training-pdf-container{
 	display:flex;
@@ -166,10 +156,13 @@
 			border:1px solid white;
 		}
 }
-.carousel-cell {
-  width: 100%; /* full width */
-  height: 160px; /* height of carousel */
-  margin-right: 10px;
+
+.bottom-button-container{
+	.general-button{
+		color:#4A4A4A;
+		background-color:#fff;
+		margin-bottom:0;
+	}
 }
 
 
