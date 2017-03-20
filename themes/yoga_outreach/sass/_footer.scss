@@ -23,6 +23,9 @@ footer{
             font-family: raleway;
             color: white;
             text-transform: uppercase;
+            @include desktop{
+              padding: 0 0.5rem;
+            }
         }
         .input-bar{
             font-size:0;
@@ -101,6 +104,13 @@ footer{
                 justify-content: center;
                 align-items: center;
             }
+            a{
+              color: #9FABB7;
+              &:hover{
+                color:#C1D3DA;
+              }
+            }
+
         }
     }
     .copyright{

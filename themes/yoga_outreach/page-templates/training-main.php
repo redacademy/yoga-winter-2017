@@ -16,22 +16,24 @@ get_header(); ?>
 					<button class = "general-button grey-button">For Facilities</button>
 				</div>
 			</header><!--general-template-section-->
-            <section class ="main-h3-container section-15px-padding">
-                <h3>Trauma Informed Approach</h3>
-                <p>Creating a safe and healing environment with a no-touch, 
-                    no-assist approach that inspires and empowers participants to reconnect 
-                    with their body.</p>
-				<p class ="training-find-out-para">Find out more on our <a href ="#">resource page.</a>
-            </section><!--main-h3-container-->
-			<section class ="for-training-section section-15px-padding">
-				<h3>For Yoga Instructors</h3>
-				<img src ="<?php echo get_template_directory_uri(); ?>/images/training_f_yoga.svg" alt="training for yoga">
-				<h3>For Training Facilities</h3>
-				<img src ="<?php echo get_template_directory_uri(); ?>/images/training_f_work.svg" alt="training for work">
-				<img src ="<?php echo get_template_directory_uri(); ?>/images/training_f_youth.svg" alt="training for youth">
-
-			<section>
-			
+			<div class = "desktop-margin">
+				<section class ="main-h3-container section-15px-padding">
+					<h3>Trauma Informed Approach</h3>
+					<p>Creating a safe and healing environment with a no-touch, 
+						no-assist approach that inspires and empowers participants to reconnect 
+						with their body.</p>
+					<p class ="training-find-out-para">Find out more on our <a href ="#">resource page.</a></p>
+				</section><!--main-h3-container-->
+				<section class ="for-training-section section-15px-padding">
+					<h3>For Yoga Instructors</h3>
+					<img src ="<?php echo get_template_directory_uri(); ?>/images/training_f_yoga.svg" alt="training for yoga">
+					<h3>For Training Facilities</h3>
+					<img src ="<?php echo get_template_directory_uri(); ?>/images/training_f_work.svg" alt="training for work">
+					<div>
+						<img src ="<?php echo get_template_directory_uri(); ?>/images/training_f_youth.svg" alt="training for youth">
+					</div>
+				<section><!--for-training-section-->
+			</div><!--desktop-margin-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
