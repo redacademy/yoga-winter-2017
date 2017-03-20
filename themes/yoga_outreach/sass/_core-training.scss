@@ -15,7 +15,45 @@
     font-size:20px;
     line-height:24px;
     margin-top:39px;
+        @include desktop{
+            font-size:40px;
+            width:700px;
+            }
+}
+
+.table-section-container{
+    @include desktop{
+        display:flex;
     }
+}
+
+.classroom-dates-section, .online-dates-section{
+    @include desktop{
+        width:350px;
+    }
+}
+
+.dates-table{
+    @include desktop{
+        max-width:400px
+    }
+}
+
+
+.register-online-button{
+    @include desktop{
+        display:inline;
+    }
+}
+
+.register-button-para-container{
+    @include desktop{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+
 
 .earth-logo{
     width:26px;
@@ -49,8 +87,9 @@
     margin-bottom:35px;
 }
 
-.icon-heading-container{
+.online-class-icon-heading-container{
     display:flex;
+    margin-top:35px;
         h3{
             margin:0;
             font-size:20px;

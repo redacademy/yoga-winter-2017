@@ -16,6 +16,9 @@
 	position: absolute;
 	width:100%;
 	bottom:0;
+		@include desktop{
+			display:flex;
+		}
 }
 
 .general-button,.book-training-button{
