@@ -7,7 +7,7 @@
 
 get_header(); ?>
 <section class="hero-banner custom-hero-image">
-    <!--<img class="hero-image" src="<?php echo CFS()->get('hero_image'); ?>" alt="hero-image" />-->
+    
     <div class="herobanner-text">
         <h2>what we do</h2>
         <p>Our mission is to expand access to trauma-informed yoga programs to heal and connect communities</p>
@@ -55,11 +55,17 @@ get_header(); ?>
 <section class="get-involved">
     <h2>Get Involed!</h2>
      <div class="involvedWrap">
-                  <img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/VolunteerIcon.png"/>
+        <div class="involvedimage_one">
+        </div>
+        <div class="involvedimage_two">
+        </div>
+        <div class="involvedimage_one">
+        </div>
+                  <!--<img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/VolunteerIcon.png"/>
                   <img class ="involvedimage_two" src="<?php echo get_template_directory_uri(); ?>/images/PartnerIcon.png"/>
-                  <img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/SupportUsIcon.png"/>   
-               <div class="shapeThing"></div>
-           </div>
+                  <img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/SupportUsIcon.png"/>   -->
+        <div class="shapeThing"></div>
+      </div>
     <div class="accent-square"></div>
 </section>
 <section class="testimonials">
