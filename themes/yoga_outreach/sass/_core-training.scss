@@ -53,6 +53,11 @@
                 }
     }
 
+    .register-online-button{
+        @include general-button;
+        background-color:#6B747D;
+    }
+
     .table-section-container{
         @include desktop{
             display:flex;
@@ -83,6 +88,8 @@
         @include desktop{
             display: flex;
             flex-direction: row-reverse;
+            margin-top: 12px;
+
         }
     }
 
@@ -97,6 +104,10 @@
                 height:60px;
             }
         }
+
+    .core-training-text-image-container{
+        width: 16rem;
+    }
 
     .avail-online-heading-container, .core-training-text-image-container{
         display:flex;
@@ -135,6 +146,10 @@
     .online-class-icon-heading-container{
         display:flex;
         padding-top:35px;
+        align-items:center;
+            @include desktop{
+                margin-bottom:45px;
+            }
             h3{
                 margin:0;
                 font-size:20px;
@@ -228,4 +243,4 @@
                 width:45vw;
             }
         }
-}
+}//Core Training Wrapper

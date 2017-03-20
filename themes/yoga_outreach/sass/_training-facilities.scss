@@ -1,160 +1,194 @@
-.heading-subtitle{
-	color: white;
-    width: 200px;
-    text-align: center;
-    margin: 0 auto;
-}
+.page-template-training{
+	 	.main-carousel{
+        	width: 100%;
+            padding: 30px;
+            margin: 0 auto;
+                .carousel-cell{
+                    width: 100%;
+                    height: auto;
+                    p{
+                        margin-top: 20px;
+                    }
+                    h1{
+                        color: $darktext_color;
+                    }
+                }
+                ol{
+                    display: none;
+                }
+                .flickity-prev-next-button{
+                    border: none;
+                    background: none;
+                    box-shadow: none;
+                    padding: 0;
+                    top: 25%;
+                }
+                .flickity-prev-next-button.next {
+                    right: 5%;
+                }
+                .flickity-prev-next-button.previous {
+                    left: 5%;
+                }
+            }
 
-.general-template-section{
-	height:400px;
-	background-color:lightgreen;
-	width:100%;
-	position:relative;
-}
-
-.general-button-container{
-	position: absolute;
-	width:100%;
-	bottom:0;
-		@include desktop{
-			display:flex;
+		.heading-subtitle{
+			color: white;
+			width: 200px;
+			text-align: center;
+			margin: 0 auto;
 		}
-}
 
-.general-button,.book-training-button{
-	width:230px;
-	height:44px;
-	display:block;
-	margin:0 auto;
-	font-size:14px;
-	text-transform:uppercase;
-	margin-bottom:26px;
-    box-shadow:none;
-    text-shadow:none;
-    color:white;
-	border-radius:8px;
-	border:none;
-	font-size:14px;
-}
+		.general-template-section{
+			height:400px;
+			background-color:lightgreen;
+			width:100%;
+			position:relative;
+		}
 
-.button-black-text{
-	color:black;
-}
+		.general-button-container{
+			position: absolute;
+			width:100%;
+			bottom:0;
+				@include desktop{
+					display:flex;
+				}
+		}
 
-
-.training-yoga-tools-section{
-	padding:0 4%;
-}
-
-.training-h3-heading:nth-child(1){
-	padding-top:39px;
-}
-
-
-.training-h3-heading{
-	width:293px;
-	height:50px;
-	margin:0 auto;
-	border-bottom: 2px solid #4A4A4A;
-	padding-bottom:16px;
-	font-size:20px;
-	color: black;
-	font-weight:600;
-}
-.train-plus-button, .train-minus-button{
-	background:transparent;
-	border:none;
-	box-shadow:none;
-	color:#6B747D;
-	font-weight:600;
-	float:right;
-}
-.small-para{
-	font-weight:300;
-	font-size: 11px;
-	margin-bottom:5px;
-}
-.under-skills-training-para{
-	color:#6B747D;
-	font-size: 14px;
-	min-width:290px;
-}
-.book-training-button{
-	background-color:#6B747D;
-	margin-top:18px;
-}
-
-.testimonal-slideshow-container{
-	min-width:320px;
-	height:100px;
-	background-color:#EBE5D8;
-
-}
-
-
-//Training Facilities List
-.training-list{
-	height:auto;
-	width:100%;
-	background-color: #95AFC9;
-	margin:0;
-	list-style:none;
-	padding:19px 15px;
-}
-
-.training-list-item{
-	font-weight:500;
-	font-size:14px;
-}
-
-.slide-para{
-	display:none;
-	background:#eee;
-	padding:10px;
-}
-
-.bottom-button-container{
-	height:85px;
-	width:100%;
-	background-color:#6B747D;
-	display:flex;
-	align-items:center;
-}
-
-
-.fill-white{
-	background-color:#fff;
-	color:#4A4A4A;
-}
-
-
-
-#training-pdf-container{
-	display:flex;
-	justify-content:space-between;
-	margin-bottom:5px;
-	align-items:center;
-	flex-wrap:wrap;
-		a{
-			background-color:#fff;
-			width:80px;
+		.general-button,.book-training-button{
+			width:230px;
 			height:44px;
-			display: flex;
-    		justify-content: center;
-    		align-items: center;
-    		text-decoration: none;
+			display:block;
+			margin:0 auto;
+			font-size:14px;
+			text-transform:uppercase;
+			margin-bottom:26px;
+			box-shadow:none;
+			text-shadow:none;
+			color:white;
 			border-radius:8px;
-			border:1px solid white;
+			border:none;
+			font-size:14px;
 		}
-}
 
-.bottom-button-container{
-	.general-button{
-		color:#4A4A4A;
-		background-color:#fff;
-		margin-bottom:0;
-	}
-}
+		.button-black-text{
+			color:black;
+		}
 
+
+		.training-yoga-tools-section{
+			padding:0 4%;
+		}
+
+		.training-h3-heading:nth-child(1){
+			padding-top:39px;
+		}
+
+
+		.training-h3-heading{
+			width:293px;
+			height:50px;
+			margin:0 auto;
+			border-bottom: 2px solid #4A4A4A;
+			padding-bottom:16px;
+			font-size:20px;
+			color: black;
+			font-weight:600;
+		}
+		.train-plus-button, .train-minus-button{
+			background:transparent;
+			border:none;
+			box-shadow:none;
+			color:#6B747D;
+			font-weight:600;
+			float:right;
+		}
+		.small-para{
+			font-weight:300;
+			font-size: 11px;
+			margin-bottom:5px;
+		}
+		.under-skills-training-para{
+			color:#6B747D;
+			font-size: 14px;
+			min-width:290px;
+		}
+		.book-training-button{
+			background-color:#6B747D;
+			margin-top:18px;
+		}
+
+		.testimonal-slideshow-container{
+			min-width:320px;
+			height:100px;
+			background-color:#EBE5D8;
+
+		}
+
+
+		//Training Facilities List
+		.training-list{
+			height:auto;
+			width:100%;
+			background-color: #95AFC9;
+			margin:0;
+			list-style:none;
+			padding:19px 15px;
+		}
+
+		.training-list-item{
+			font-weight:500;
+			font-size:14px;
+		}
+
+		.slide-para{
+			display:none;
+			background:#eee;
+			padding:10px;
+		}
+
+		.bottom-button-container{
+			height:85px;
+			width:100%;
+			background-color:#6B747D;
+			display:flex;
+			align-items:center;
+		}
+
+
+		.fill-white{
+			background-color:#fff;
+			color:#4A4A4A;
+		}
+
+
+
+		#training-pdf-container{
+			display:flex;
+			justify-content:space-between;
+			margin-bottom:5px;
+			align-items:center;
+			flex-wrap:wrap;
+				a{
+					background-color:#fff;
+					width:80px;
+					height:44px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-decoration: none;
+					border-radius:8px;
+					border:1px solid white;
+				}
+		}
+
+		.bottom-button-container{
+			.general-button{
+				color:#4A4A4A;
+				background-color:#fff;
+				margin-bottom:0;
+			}
+		}
+
+}//Training Facilities Wrapper
 
 

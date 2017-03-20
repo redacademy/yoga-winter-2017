@@ -77,3 +77,28 @@
 			display:flex;
 		}
 }
+
+.page-subtitle{
+    color:white;
+    font-size:16px;
+    margin-top:44px;
+    padding:0 1rem;
+    text-align:center;
+    line-height:25px;
+    }
+
+.general-template-section{
+	height:400px;
+	background-color:lightgreen;
+	width:100%;
+	position:relative;
+	}
+
+.general-button-container{
+	position: absolute;
+	width:100%;
+	bottom:0;
+		@include desktop{
+			display:flex;
+			}
+	}
