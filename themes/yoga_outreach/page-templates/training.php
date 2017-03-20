@@ -13,6 +13,7 @@ get_header(); ?>
 					<h1 class ="page-title-header">
 						<?php the_title(); ?>
 					</h1>
+					<p class ="page-subtitle">Trauma-informed training for your staff.</p>
 					<p class ="heading-subtitle"><?php echo CFS()->get('page_subtitle'); ?>
 					<div class ="general-button-container">
 						<button class = "general-button grey-button">Core Training</button>
@@ -66,7 +67,7 @@ get_header(); ?>
 			 <?php endforeach; ?>
             </ul>
 			<div class="bottom-button-container">
-				<button class="general-first-button">Book Training</button>
+				<button class="general-button">Book Training</button>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

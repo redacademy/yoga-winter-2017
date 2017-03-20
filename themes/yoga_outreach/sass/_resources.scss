@@ -8,6 +8,7 @@
     background-color:#6CFFFE
 }
 
+
 .main-h3-container{
     h3{
         width:290px;
@@ -15,14 +16,38 @@
         text-align: center;
     }
 }
+//Global
+    .page-subtitle{
+        color:white;
+        font-size:16px;
+        margin-top:44px;
+        padding:0 1rem;
+        text-align:center;
+        line-height:25px;
 
+    }
+
+.page-template-resources-research{
+    .info-heading{
+        font-size:16px;
+        font-weight:100;
+    }
+}
+
+.info-heading-subtitle{
+    color:#4A4A4A;
+}
+//-------------
 .main-h3-container{
         h3{
         margin-top:35px;
         font-size:24px;
         margin-bottom:20px;
+        font-weight:300;
+        color:#6B747D;
     }
 }
+
 
 .main-h3-container{
     p{
@@ -30,6 +55,8 @@
         padding-bottom:22px;
         width:262px;
         margin:0 auto;
+        color:#6B747D;
+        text-align:center;
     }
 }
 
@@ -65,6 +92,7 @@
                     align-items: center;
                     text-decoration:none;
                     color:black;
+                    font-size:10px;
                 }
         }
 }
@@ -98,6 +126,11 @@
         }
 }
 
+.links-button-container{
+    height:50px;
+    background-color:#fff;
+}
+
 .link-list{
     padding:0;
     margin:0;
@@ -106,7 +139,7 @@
             margin-bottom:7px;
                 a{
                     color:$lighttext_color;
-                    font-weight:800;
+                    font-weight:200;
                 }
         }
 }
