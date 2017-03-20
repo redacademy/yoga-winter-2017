@@ -11,19 +11,30 @@
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+        .main-button-holder{
+            padding: 10px;
+        }
         .main-button{
             @include general-button;
+            margin-bottom: 26px;
             a{
                 color: white;
                 text-decoration: none;
             }
         }
+        
         .small-button{
             @include small-button;
             margin: 0 auto;
             a{
                 color: white;
                 text-decoration: none;
+            }
+        }
+
+        #volunteer{
+            .small-button{
+                margin-bottom: 26px;
             }
         }
         .white-button{
@@ -61,6 +72,12 @@
             justify-content: space-around;
         }
 
+        .drop-down-info{
+            padding: 0;
+            p{
+                padding: 15px;
+            }
+        }
         header, section > *{ 
             padding: 15px;
         }
@@ -72,7 +89,7 @@
         .container-one{
             width: 100vw;
             .contributor{
-                background-color: $lighttext_color;
+                background-color: lightgrey;
                 height: 200px;
                 width: 50%;
                 margin: 0 auto;
@@ -254,6 +271,12 @@ ol {
     } 
     h2, p{
         text-align: center;
+    }
+    ul{
+        margin: 0;
+        li p{
+            text-align: left;
+        }
     }
 }
 

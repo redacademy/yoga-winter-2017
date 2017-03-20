@@ -58,13 +58,13 @@
 .grey-button{
 	background-color: $mainbutton_color;
 }
+
 .white-button{
 	background-color: $base_color;
 }
 
-.white-button{
-	background-color:#fff;
-
+.dark-button{
+	background-color: $mediumtheme_color;
 }
 
 .general-button:hover{

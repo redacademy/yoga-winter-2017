@@ -390,7 +390,6 @@ button {
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
   box-shadow: none;
   text-shadow: none;
   color: white;
@@ -552,8 +551,8 @@ button {
 .white-button {
   background-color: #fff; }
 
-.white-button {
-  background-color: #fff; }
+.dark-button {
+  background-color: #6b747d; }
 
 .general-button:hover {
   box-shadow: none; }
@@ -700,8 +699,7 @@ footer {
       font-size: .7rem;
       font-family: raleway;
       color: white;
-      text-transform: uppercase;
-      padding: 0.3rem; }
+      text-transform: uppercase; }
     footer form .input-bar {
       font-size: 0;
       display: -ms-inline-flexbox;
@@ -829,7 +827,6 @@ footer {
     margin: 0 auto;
     font-size: 14px;
     text-transform: uppercase;
-    margin-bottom: 26px;
     box-shadow: none;
     text-shadow: none;
     color: white;
@@ -1311,7 +1308,6 @@ a {
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
   box-shadow: none;
   text-shadow: none;
   color: white;
@@ -1709,30 +1705,6 @@ object {
     width: 173px;
     color: #4a4a4a; }
 
-.main-carousel {
-  width: 90%;
-  padding: 30px;
-  margin: 0 auto; }
-  .main-carousel .carousel-cell {
-    width: 100%;
-    height: auto; }
-    .main-carousel .carousel-cell p {
-      margin-top: 20px; }
-    .main-carousel .carousel-cell h1 {
-      color: #4a4a4a; }
-  .main-carousel ol {
-    display: none; }
-  .main-carousel .flickity-prev-next-button {
-    border: none;
-    background: none;
-    box-shadow: none;
-    padding: 0;
-    top: 25%; }
-  .main-carousel .flickity-prev-next-button.next {
-    right: 5%; }
-  .main-carousel .flickity-prev-next-button.previous {
-    left: 5%; }
-
 .page-template-volunteer .site-main, .page-template-support .site-main, .page-template-partner .site-main {
   display: -ms-flexbox;
   display: flex;
@@ -1751,6 +1723,8 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   flex-direction: column; }
+  .page-template-volunteer .site-main .main-button-holder, .page-template-support .site-main .main-button-holder, .page-template-partner .site-main .main-button-holder {
+    padding: 10px; }
   .page-template-volunteer .site-main .main-button, .page-template-support .site-main .main-button, .page-template-partner .site-main .main-button {
     width: 230px;
     height: 44px;
@@ -1758,14 +1732,14 @@ object {
     margin: 0 auto;
     font-size: 14px;
     text-transform: uppercase;
-    margin-bottom: 26px;
     box-shadow: none;
     text-shadow: none;
     color: white;
     border-radius: 8px;
     border: none;
     font-family: 'raleway',sans-serif;
-    font-size: 14px; }
+    font-size: 14px;
+    margin-bottom: 26px; }
     .page-template-volunteer .site-main .main-button a, .page-template-support .site-main .main-button a, .page-template-partner .site-main .main-button a {
       color: white;
       text-decoration: none; }
@@ -1776,17 +1750,19 @@ object {
     margin: 0 auto;
     font-size: 14px;
     text-transform: uppercase;
-    margin-bottom: 26px;
     box-shadow: none;
     text-shadow: none;
     color: white;
     border-radius: 8px;
     border: none;
     font-family: 'raleway',sans-serif;
-    font-size: 14px; }
+    font-size: 14px;
+    margin: 0 auto; }
     .page-template-volunteer .site-main .small-button a, .page-template-support .site-main .small-button a, .page-template-partner .site-main .small-button a {
       color: white;
       text-decoration: none; }
+  .page-template-volunteer .site-main #volunteer .small-button, .page-template-support .site-main #volunteer .small-button, .page-template-partner .site-main #volunteer .small-button {
+    margin-bottom: 26px; }
   .page-template-volunteer .site-main .white-button a, .page-template-support .site-main .white-button a, .page-template-partner .site-main .white-button a {
     color: #6b747d;
     text-decoration: none; }
@@ -1810,8 +1786,6 @@ object {
           justify-content: center;
       bottom: 40px;
       width: 100vw; }
-      .page-template-volunteer .site-main #instructor .button-wrap .small-button, .page-template-support .site-main #instructor .button-wrap .small-button, .page-template-partner .site-main #instructor .button-wrap .small-button {
-        margin: 0 auto; }
   .page-template-volunteer .site-main .entry-header, .page-template-support .site-main .entry-header, .page-template-partner .site-main .entry-header {
     width: 100vw;
     height: 100vh;
@@ -1823,6 +1797,10 @@ object {
         flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+  .page-template-volunteer .site-main .drop-down-info, .page-template-support .site-main .drop-down-info, .page-template-partner .site-main .drop-down-info {
+    padding: 0; }
+    .page-template-volunteer .site-main .drop-down-info p, .page-template-support .site-main .drop-down-info p, .page-template-partner .site-main .drop-down-info p {
+      padding: 15px; }
   .page-template-volunteer .site-main header, .page-template-volunteer .site-main section > *, .page-template-support .site-main header, .page-template-support .site-main section > *, .page-template-partner .site-main header, .page-template-partner .site-main section > * {
     padding: 15px; }
   .page-template-volunteer .site-main section .info-paragraph, .page-template-support .site-main section .info-paragraph, .page-template-partner .site-main section .info-paragraph {
@@ -1830,7 +1808,7 @@ object {
   .page-template-volunteer .site-main .container-one, .page-template-support .site-main .container-one, .page-template-partner .site-main .container-one {
     width: 100vw; }
     .page-template-volunteer .site-main .container-one .contributor, .page-template-support .site-main .container-one .contributor, .page-template-partner .site-main .container-one .contributor {
-      background-color: #6b747d;
+      background-color: lightgrey;
       height: 200px;
       width: 50%;
       margin: 0 auto; }
@@ -1976,6 +1954,10 @@ object {
     width: 85%; }
   .partners-container h2, .partners-container p {
     text-align: center; }
+  .partners-container ul {
+    margin: 0; }
+    .partners-container ul li p {
+      text-align: left; }
 
 .home {
   text-align: center;
@@ -2405,7 +2387,6 @@ object {
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
   box-shadow: none;
   text-shadow: none;
   color: white;

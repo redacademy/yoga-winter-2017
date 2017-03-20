@@ -14,7 +14,7 @@ get_header(); ?>
                     <h1 class="header-title"><?php the_title(); ?></h1>
                     <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
                 </div>
-                <div>
+                <div class="main-button-holder">
                     <button class="grey-button main-button"><a href="#instructor" class="button">Become a Yoga Teacher</a></button>
                     <button class="grey-button main-button"><a href="#volunteer" class="button">Community Volunteer</a></button>
                     <button class="grey-button main-button"><a href="#council" class="button">Advisory Council Member</a></button>
@@ -63,12 +63,12 @@ get_header(); ?>
             <section id="council" class="container-three">
                 <h2>Volunteer for Advisory Council</h2>
                 <p class="info-paragraph"><?php echo CFS()->get( 'advisory_council' ); ?></p>
-                <button class="general-button white-button"><a href="" class="button">Contact Us</a></button>
+                <button class="white-button main-button"><a href="" class="button">Contact Us</a></button>
             </section>
             <section id="opportunities" class="container-four">
                 <h2>Volunteer Opportunities</h2>
                 <p></p>
-                <button class="general-button white-button"><a href="" class="button">View Here</a></button>
+                <button class="white-button main-button"><a href="" class="button">View Here</a></button>
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
