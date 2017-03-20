@@ -530,6 +530,9 @@ button {
   padding-top: 49px;
   font-weight: 500; }
 
+* {
+  font-family: 'raleway',sans-serif; }
+
 .page-title-header {
   text-align: center;
   color: white;
@@ -1036,17 +1039,6 @@ a {
 .training-para-left {
   text-align: left; }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0; }
-
-.page-template-training {
-  font-family: 'raleway',sans-serif; }
-
 .heading-subtitle {
   color: white;
   width: 200px;
@@ -1184,9 +1176,6 @@ a {
   background-color: #fff;
   margin-bottom: 0; }
 
-.page-template-core-training {
-  font-family: 'raleway',sans-serif; }
-
 .section-15px-padding {
   padding: 0 15px; }
 
@@ -1272,21 +1261,31 @@ a {
   height: 28.92px;
   margin-right: 9px; }
 
-table, tr {
-  border: 1px solid black; }
-
-.full-time-training-table td {
-  display: block; }
-  .full-time-training-table td span {
-    margin-left: 10px; }
-
 .table-heading {
   display: inline-block;
-  width: 50px;
-  margin-right: 10px; }
+  min-width: 100px;
+  font-size: 11px;
+  margin-left: 6px; }
+
+.training-table-data {
+  display: -ms-flexbox;
+  display: flex; }
 
 .table-content {
   font-size: 11px; }
+
+tr {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  margin: 0;
+  height: 85px;
+  padding-top: 9px; }
+  tr td {
+    margin-top: 9px; }
+
+table {
+  border-bottom: 1px solid black; }
 
 .page-template-resources-research {
   font-family: 'raleway',sans-serif; }
@@ -1913,17 +1912,6 @@ object {
           font-size: 35px;
           padding: 0 20px 20px 20px; } }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0; }
-
-.page-template-training {
-  font-family: 'raleway',sans-serif; }
-
 .heading-subtitle {
   color: white;
   width: 200px;
@@ -2061,9 +2049,6 @@ object {
   background-color: #fff;
   margin-bottom: 0; }
 
-.page-template-core-training {
-  font-family: 'raleway',sans-serif; }
-
 .section-15px-padding {
   padding: 0 15px; }
 
@@ -2149,21 +2134,31 @@ object {
   height: 28.92px;
   margin-right: 9px; }
 
-table, tr {
-  border: 1px solid black; }
-
-.full-time-training-table td {
-  display: block; }
-  .full-time-training-table td span {
-    margin-left: 10px; }
-
 .table-heading {
   display: inline-block;
-  width: 50px;
-  margin-right: 10px; }
+  min-width: 100px;
+  font-size: 11px;
+  margin-left: 6px; }
+
+.training-table-data {
+  display: -ms-flexbox;
+  display: flex; }
 
 .table-content {
   font-size: 11px; }
+
+tr {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  margin: 0;
+  height: 85px;
+  padding-top: 9px; }
+  tr td {
+    margin-top: 9px; }
+
+table {
+  border-bottom: 1px solid black; }
 
 /*! Flickity v2.0.5
 http://flickity.metafizzy.co

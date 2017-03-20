@@ -63,18 +63,26 @@ get_header(); ?>
 					<h3>2017 Training Dates Classroom (18 hours)</h3>
 				</div>
 				<table class ="full-time-training-table">
-					<tr>
-						<td>
-							<span class ="table-heading">Date</span><span class ="table-content">March 17 - 19, 2017</span>
-						</td>
-						<td>
-							<span class ="table-heading">Location</span><span class ="table-content">Croatian Cultural Centre 3250 Commercial Drive, Vancouver, BC</span>
-						</td>
-						<td>
-							<span class ="table-heading">Price (CAD)</span><span class ="table-content">$360.00</span>
-						</td>
-					</tr>
-				</table>
+					<?php $classroomDates = CFS()->get('classroom_dates_container');?>
+					<?php foreach ($classroomDates as $classroomDate):?>
+						<tr>
+							<td class ="training-table-data">
+								<p class ="table-heading">Date</p>
+								<p class ="table-content"><?php echo $classroomDate ['date'];?></p>
+							</td>
+							<td class ="training-table-data">
+								<p class ="table-heading">Location</p>
+								<p class ="table-content"><?php echo $classroomDate ['location'];?></p>
+							</td>
+							<td class ="training-table-data">
+								<p class ="table-heading">Price (CAD)</p>
+								<p class ="table-content"><?php echo $classroomDate ['price'];?></p>
+							</td>
+						</tr>
+
+						<?php endforeach ?>
+					</table>
+				
 			</section>
 			
 			<ul class = "training-list">
