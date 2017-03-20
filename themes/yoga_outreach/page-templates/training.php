@@ -29,7 +29,7 @@ get_header(); ?>
 					<p><?php echo CFS()->get('tools_for_youth'); ?></p>
 				<div><!--info-field-->
 			</section>
-			<section>
+			<section class ="training-yoga-work-section">
 				<div class = "info-dropdown">
 					<h3 class ="training-h3-heading">Using Yoga in Your Work</h3>
 					<span>+</span>
@@ -69,7 +69,7 @@ get_header(); ?>
 					</div><!--training-pdf-container-->
 					<?php endif; ?>
                     <?php if(!empty($infoContent)): ?>
-					<div class ="info-dropdown">
+					<div class ="info-dropdown tools-first-heading">
 						<h3 class = "yoga-info-title"><?php echo $infoItem ['list_title']; ?></h3>
 						<span>+</span>
 					</div>

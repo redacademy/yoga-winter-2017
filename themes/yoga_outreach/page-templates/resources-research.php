@@ -15,7 +15,7 @@ get_header(); ?>
 				<p class ="page-subtitle">Find more information about trauma-informed yoga, studies, articles and videos here.</p>
 				<div class ="general-button-container">
 					<button class = "general-button teal-button black-text">Research</button>
-					<button class = "general-button grey-button black-text">For Facilities</button>
+					<button class = "general-button grey-button">For Facilities</button>
 				</div>
 			</header><!--general-template-section-->
             <div class ="main-h3-container section-15px-padding">
@@ -27,6 +27,7 @@ get_header(); ?>
 					<h3>Articles</h3>
 					<span>-</span>
 				</div>
+				
 				<div class ="info-field">
 				<ul class ="resource-pdf-list inf">
 					<?php 
@@ -43,7 +44,7 @@ get_header(); ?>
 			<section class="resources-links-container section-15px-padding">
 				<div class ="links-button-container info-dropdown">
 					<p>Links</p>
-					<span>-</span>
+					<span>+</span>
 				</div>
 				<ul class ="link-list info-field">
 					<p><?php echo CFS()->get('link_text'); ?></p>
@@ -54,8 +55,7 @@ get_header(); ?>
 					<?php endforeach ?>
 				</ul>
 			</section>
-			
-		</main><!-- #main -->
+			</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
