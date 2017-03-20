@@ -1180,15 +1180,39 @@ a {
   background-color: #fff;
   margin-bottom: 0; }
 
-.section-15px-padding {
+.page-template-core-training .main-carousel {
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto; }
+  .page-template-core-training .main-carousel .carousel-cell {
+    width: 100%;
+    height: auto; }
+    .page-template-core-training .main-carousel .carousel-cell p {
+      margin-top: 20px; }
+    .page-template-core-training .main-carousel .carousel-cell h1 {
+      color: #4a4a4a; }
+  .page-template-core-training .main-carousel ol {
+    display: none; }
+  .page-template-core-training .main-carousel .flickity-prev-next-button {
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    top: 25%; }
+  .page-template-core-training .main-carousel .flickity-prev-next-button.next {
+    right: 5%; }
+  .page-template-core-training .main-carousel .flickity-prev-next-button.previous {
+    left: 5%; }
+
+.page-template-core-training .section-15px-padding {
   padding: 0 15px; }
 
-.core-h3-container {
+.page-template-core-training .core-h3-container {
   width: 100%;
   border-bottom: 2px solid #4A4A4A;
   padding-bottom: 16px; }
 
-.core-header {
+.page-template-core-training .core-header {
   margin: 0;
   width: 175px;
   color: #6B747D;
@@ -1196,129 +1220,155 @@ a {
   line-height: 24px;
   margin-top: 39px; }
   @media (min-width: 720px) {
-    .core-header {
+    .page-template-core-training .core-header {
       font-size: 40px;
       width: 700px; } }
 
 @media (min-width: 720px) {
-  .table-section-container {
+  .page-template-core-training .table-section-container {
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
 
 @media (min-width: 720px) {
-  .classroom-dates-section, .online-dates-section {
+  .page-template-core-training .classroom-dates-section, .page-template-core-training .online-dates-section {
     width: 350px; } }
 
 @media (min-width: 720px) {
-  .dates-table {
+  .page-template-core-training .dates-table {
     max-width: 400px; } }
 
 @media (min-width: 720px) {
-  .register-online-button {
+  .page-template-core-training .register-online-button {
     display: inline; } }
 
 @media (min-width: 720px) {
-  .register-button-para-container {
+  .page-template-core-training .register-button-para-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse; } }
 
-.earth-logo {
+.page-template-core-training .earth-logo {
   width: 26px;
   height: 26px;
   margin-right: 9px; }
+  @media (min-width: 720px) {
+    .page-template-core-training .earth-logo {
+      width: 60px;
+      height: 60px; } }
 
-.avail-online-heading-container, .core-training-text-image-container {
+.page-template-core-training .avail-online-heading-container, .page-template-core-training .core-training-text-image-container {
   display: -ms-flexbox;
   display: flex;
   margin-top: 25px;
-  margin-bottom: 15px;
   -ms-flex-align: center;
       align-items: center; }
-  .avail-online-heading-container h3, .core-training-text-image-container h3 {
+  @media (min-width: 720px) {
+    .page-template-core-training .avail-online-heading-container, .page-template-core-training .core-training-text-image-container {
+      width: 40vw;
+      margin-left: 0;
+      max-width: 400px;
+      margin-bottom: 59px; } }
+  .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
     margin: 0;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: bold; }
+    @media (min-width: 720px) {
+      .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
+        width: 50vw; } }
 
-.light-training-para {
+.page-template-core-training .light-training-para {
   color: #6B747D;
   font-size: 14px;
   line-height: 2; }
 
-.dark-training-para {
+.page-template-core-training .dark-training-para {
   color: #4A4A4A;
   font-size: 14px;
   line-height: 2;
   margin-bottom: 35px; }
 
-.online-class-icon-heading-container {
+.page-template-core-training .online-class-icon-heading-container {
   display: -ms-flexbox;
   display: flex;
-  margin-top: 35px; }
-  .online-class-icon-heading-container h3 {
+  padding-top: 35px; }
+  .page-template-core-training .online-class-icon-heading-container h3 {
     margin: 0;
     font-size: 20px;
     color: #4A4A4A;
-    transform: translatey(-18px);
     width: 200px; }
 
-.training-list-header {
+.page-template-core-training .training-list-header {
   padding: 0;
   margin: 0;
   list-style: none; }
-  .training-list-header li {
+  .page-template-core-training .training-list-header li {
     border: 1px solid black;
     margin-bottom: 5px;
     padding-left: 5px; }
 
-.training-date-text {
+.page-template-core-training .training-date-text {
   font-size: 11px;
   color: #4A4A4A;
   line-height: 2;
   font-weight: bold;
   text-transform: uppercase; }
-  .training-date-text span {
+  .page-template-core-training .training-date-text span {
     text-transform: none;
     font-weight: 300;
     margin-left: 45px; }
 
-.training-date-list span {
+.page-template-core-training .training-date-list span {
   font-weight: 300;
   margin-left: 45px;
   text-transform: normal; }
 
-.house-logo {
+.page-template-core-training .house-logo {
   width: 27.94px;
   height: 28.92px;
   margin-right: 9px; }
+  @media (min-width: 720px) {
+    .page-template-core-training .house-logo {
+      width: 45.63px;
+      height: 45.65px; } }
 
-.table-heading {
+.page-template-core-training .table-heading {
   display: inline-block;
   min-width: 100px;
   font-size: 11px;
   margin-left: 6px; }
 
-.training-table-data {
+.page-template-core-training .training-table-data {
   display: -ms-flexbox;
   display: flex; }
 
-.table-content {
+@media (min-width: 720px) {
+  .page-template-core-training .online-dates-section, .page-template-core-training .classroom-dates-section {
+    width: 45vw;
+    padding: 0;
+    max-width: 400px; } }
+
+.page-template-core-training .table-content {
   font-size: 11px; }
 
-tr {
+.page-template-core-training tr {
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-left: 1px solid black;
   margin: 0;
   height: 85px;
   padding-top: 9px; }
-  tr td {
+  .page-template-core-training tr td {
     margin-top: 9px; }
 
-table {
+.page-template-core-training .dates-table {
   border-bottom: 1px solid black; }
+  @media (min-width: 720px) {
+    .page-template-core-training .dates-table {
+      width: 45vw; } }
 
 .main-h3-container h3 {
   width: 290px;
@@ -1336,6 +1386,29 @@ table {
 .page-template-resources-research .info-heading {
   font-size: 16px;
   font-weight: 100; }
+  .page-template-resources-research .info-heading .main-carousel {
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto; }
+    .page-template-resources-research .info-heading .main-carousel .carousel-cell {
+      width: 100%;
+      height: auto; }
+      .page-template-resources-research .info-heading .main-carousel .carousel-cell p {
+        margin-top: 20px; }
+      .page-template-resources-research .info-heading .main-carousel .carousel-cell h1 {
+        color: #4a4a4a; }
+    .page-template-resources-research .info-heading .main-carousel ol {
+      display: none; }
+    .page-template-resources-research .info-heading .main-carousel .flickity-prev-next-button {
+      border: none;
+      background: none;
+      box-shadow: none;
+      padding: 0;
+      top: 25%; }
+    .page-template-resources-research .info-heading .main-carousel .flickity-prev-next-button.next {
+      right: 5%; }
+    .page-template-resources-research .info-heading .main-carousel .flickity-prev-next-button.previous {
+      left: 5%; }
 
 .info-heading-subtitle {
   color: #4A4A4A; }
@@ -2087,15 +2160,39 @@ object {
   background-color: #fff;
   margin-bottom: 0; }
 
-.section-15px-padding {
+.page-template-core-training .main-carousel {
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto; }
+  .page-template-core-training .main-carousel .carousel-cell {
+    width: 100%;
+    height: auto; }
+    .page-template-core-training .main-carousel .carousel-cell p {
+      margin-top: 20px; }
+    .page-template-core-training .main-carousel .carousel-cell h1 {
+      color: #4a4a4a; }
+  .page-template-core-training .main-carousel ol {
+    display: none; }
+  .page-template-core-training .main-carousel .flickity-prev-next-button {
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    top: 25%; }
+  .page-template-core-training .main-carousel .flickity-prev-next-button.next {
+    right: 5%; }
+  .page-template-core-training .main-carousel .flickity-prev-next-button.previous {
+    left: 5%; }
+
+.page-template-core-training .section-15px-padding {
   padding: 0 15px; }
 
-.core-h3-container {
+.page-template-core-training .core-h3-container {
   width: 100%;
   border-bottom: 2px solid #4A4A4A;
   padding-bottom: 16px; }
 
-.core-header {
+.page-template-core-training .core-header {
   margin: 0;
   width: 175px;
   color: #6B747D;
@@ -2103,129 +2200,155 @@ object {
   line-height: 24px;
   margin-top: 39px; }
   @media (min-width: 720px) {
-    .core-header {
+    .page-template-core-training .core-header {
       font-size: 40px;
       width: 700px; } }
 
 @media (min-width: 720px) {
-  .table-section-container {
+  .page-template-core-training .table-section-container {
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
 
 @media (min-width: 720px) {
-  .classroom-dates-section, .online-dates-section {
+  .page-template-core-training .classroom-dates-section, .page-template-core-training .online-dates-section {
     width: 350px; } }
 
 @media (min-width: 720px) {
-  .dates-table {
+  .page-template-core-training .dates-table {
     max-width: 400px; } }
 
 @media (min-width: 720px) {
-  .register-online-button {
+  .page-template-core-training .register-online-button {
     display: inline; } }
 
 @media (min-width: 720px) {
-  .register-button-para-container {
+  .page-template-core-training .register-button-para-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse; } }
 
-.earth-logo {
+.page-template-core-training .earth-logo {
   width: 26px;
   height: 26px;
   margin-right: 9px; }
+  @media (min-width: 720px) {
+    .page-template-core-training .earth-logo {
+      width: 60px;
+      height: 60px; } }
 
-.avail-online-heading-container, .core-training-text-image-container {
+.page-template-core-training .avail-online-heading-container, .page-template-core-training .core-training-text-image-container {
   display: -ms-flexbox;
   display: flex;
   margin-top: 25px;
-  margin-bottom: 15px;
   -ms-flex-align: center;
       align-items: center; }
-  .avail-online-heading-container h3, .core-training-text-image-container h3 {
+  @media (min-width: 720px) {
+    .page-template-core-training .avail-online-heading-container, .page-template-core-training .core-training-text-image-container {
+      width: 40vw;
+      margin-left: 0;
+      max-width: 400px;
+      margin-bottom: 59px; } }
+  .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
     margin: 0;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: bold; }
+    @media (min-width: 720px) {
+      .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
+        width: 50vw; } }
 
-.light-training-para {
+.page-template-core-training .light-training-para {
   color: #6B747D;
   font-size: 14px;
   line-height: 2; }
 
-.dark-training-para {
+.page-template-core-training .dark-training-para {
   color: #4A4A4A;
   font-size: 14px;
   line-height: 2;
   margin-bottom: 35px; }
 
-.online-class-icon-heading-container {
+.page-template-core-training .online-class-icon-heading-container {
   display: -ms-flexbox;
   display: flex;
-  margin-top: 35px; }
-  .online-class-icon-heading-container h3 {
+  padding-top: 35px; }
+  .page-template-core-training .online-class-icon-heading-container h3 {
     margin: 0;
     font-size: 20px;
     color: #4A4A4A;
-    transform: translatey(-18px);
     width: 200px; }
 
-.training-list-header {
+.page-template-core-training .training-list-header {
   padding: 0;
   margin: 0;
   list-style: none; }
-  .training-list-header li {
+  .page-template-core-training .training-list-header li {
     border: 1px solid black;
     margin-bottom: 5px;
     padding-left: 5px; }
 
-.training-date-text {
+.page-template-core-training .training-date-text {
   font-size: 11px;
   color: #4A4A4A;
   line-height: 2;
   font-weight: bold;
   text-transform: uppercase; }
-  .training-date-text span {
+  .page-template-core-training .training-date-text span {
     text-transform: none;
     font-weight: 300;
     margin-left: 45px; }
 
-.training-date-list span {
+.page-template-core-training .training-date-list span {
   font-weight: 300;
   margin-left: 45px;
   text-transform: normal; }
 
-.house-logo {
+.page-template-core-training .house-logo {
   width: 27.94px;
   height: 28.92px;
   margin-right: 9px; }
+  @media (min-width: 720px) {
+    .page-template-core-training .house-logo {
+      width: 45.63px;
+      height: 45.65px; } }
 
-.table-heading {
+.page-template-core-training .table-heading {
   display: inline-block;
   min-width: 100px;
   font-size: 11px;
   margin-left: 6px; }
 
-.training-table-data {
+.page-template-core-training .training-table-data {
   display: -ms-flexbox;
   display: flex; }
 
-.table-content {
+@media (min-width: 720px) {
+  .page-template-core-training .online-dates-section, .page-template-core-training .classroom-dates-section {
+    width: 45vw;
+    padding: 0;
+    max-width: 400px; } }
+
+.page-template-core-training .table-content {
   font-size: 11px; }
 
-tr {
+.page-template-core-training tr {
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-left: 1px solid black;
   margin: 0;
   height: 85px;
   padding-top: 9px; }
-  tr td {
+  .page-template-core-training tr td {
     margin-top: 9px; }
 
-table {
+.page-template-core-training .dates-table {
   border-bottom: 1px solid black; }
+  @media (min-width: 720px) {
+    .page-template-core-training .dates-table {
+      width: 45vw; } }
 
 /*! Flickity v2.0.5
 http://flickity.metafizzy.co

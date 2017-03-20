@@ -1,170 +1,231 @@
-.section-15px-padding{
-    padding:0 15px;
-    }
-
-.core-h3-container{
-    width:100%;
-    border-bottom: 2px solid #4A4A4A;
-	padding-bottom:16px;
-    }
-
-.core-header{
-    margin:0;
-    width:175px;
-    color:#6B747D;
-    font-size:20px;
-    line-height:24px;
-    margin-top:39px;
-        @include desktop{
-            font-size:40px;
-            width:700px;
+.page-template-core-training {
+        .main-carousel{
+                width: 100%;
+                padding: 30px;
+                margin: 0 auto;
+                .carousel-cell{
+                    width: 100%;
+                    height: auto;
+                    p{
+                        margin-top: 20px;
+                    }
+                    h1{
+                        color: $darktext_color;
+                    }
+                }
+                ol{
+                    display: none;
+                }
+                .flickity-prev-next-button{
+                    border: none;
+                    background: none;
+                    box-shadow: none;
+                    padding: 0;
+                    top: 25%;
+                }
+                .flickity-prev-next-button.next {
+                    right: 5%;
+                }
+                .flickity-prev-next-button.previous {
+                    left: 5%;
+                }
             }
-}
+        .section-15px-padding{
+        padding:0 15px;
+        }
 
-.table-section-container{
-    @include desktop{
+    .core-h3-container{
+        width:100%;
+        border-bottom: 2px solid #4A4A4A;
+        padding-bottom:16px;
+        }
+
+    .core-header{
+        margin:0;
+        width:175px;
+        color:#6B747D;
+        font-size:20px;
+        line-height:24px;
+        margin-top:39px;
+            @include desktop{
+                font-size:40px;
+                width:700px;
+                }
+    }
+
+    .table-section-container{
+        @include desktop{
+            display:flex;
+            justify-content:space-around;
+        }
+    }
+
+    .classroom-dates-section, .online-dates-section{
+        @include desktop{
+            width:350px;
+        }
+    }
+
+    .dates-table{
+        @include desktop{
+            max-width:400px
+        }
+    }
+
+
+    .register-online-button{
+        @include desktop{
+            display:inline;
+        }
+    }
+
+    .register-button-para-container{
+        @include desktop{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+
+
+    .earth-logo{
+        width:26px;
+        height:26px;
+        margin-right:9px;
+            @include desktop{
+                width:60px;
+                height:60px;
+            }
+        }
+
+    .avail-online-heading-container, .core-training-text-image-container{
+        display:flex;
+        margin-top:25px;
+        align-items:center;
+            @include desktop{
+                width: 40vw;
+                margin-left: 0;
+                max-width:400px;
+                margin-bottom:59px;
+            }
+            h3{
+                margin:0;
+                text-transform:uppercase;
+                font-size:18px;
+                font-weight:bold;
+                    @include desktop{
+                        width:50vw;
+                    }
+                }
+            }
+
+    .light-training-para{
+        color:#6B747D;
+        font-size:14px;
+        line-height:2;
+    }
+
+    .dark-training-para{
+        color:#4A4A4A;
+        font-size:14px;
+        line-height:2;
+        margin-bottom:35px;
+    }
+
+    .online-class-icon-heading-container{
+        display:flex;
+        padding-top:35px;
+            h3{
+                margin:0;
+                font-size:20px;
+                color:#4A4A4A;
+                width: 200px;
+            }
+    }
+
+    .training-list-header{
+        padding:0;
+        margin:0;
+        list-style:none;
+            li{
+                border:1px solid black;
+                margin-bottom:5px;
+                padding-left:5px;
+            }
+    }
+            
+    .training-date-text{
+                font-size:11px;
+                color:#4A4A4A;
+                line-height:2;
+                font-weight:bold;
+                text-transform:uppercase;
+                    span{
+                        text-transform:none;
+                        font-weight:300;
+                        margin-left:45px;
+                    }
+            }
+
+    .training-date-list{
+        span{
+            font-weight:300;
+            margin-left:45px;
+            text-transform:normal;
+        }
+
+    }
+
+    .house-logo{
+        width:27.94px;
+        height:28.92px;
+        margin-right:9px;
+            @include desktop{
+                width:45.63px;
+                height:45.65px;
+            }
+            
+    }
+
+    .table-heading{
+        display:inline-block;
+        min-width:100px;
+        font-size:11px;
+        margin-left:6px;
+    }
+
+    .training-table-data{
         display:flex;
     }
-}
 
-.classroom-dates-section, .online-dates-section{
-    @include desktop{
-        width:350px;
-    }
-}
-
-.dates-table{
-    @include desktop{
-        max-width:400px
-    }
-}
-
-
-.register-online-button{
-    @include desktop{
-        display:inline;
-    }
-}
-
-.register-button-para-container{
-    @include desktop{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-}
-
-
-
-.earth-logo{
-    width:26px;
-    height:26px;
-    margin-right:9px;
+    .online-dates-section,.classroom-dates-section{
+        @include desktop{
+            width:45vw;
+            padding:0;
+            max-width:400px;
+        }
     }
 
-.avail-online-heading-container, .core-training-text-image-container{
-    display:flex;
-    margin-top:25px;
-    margin-bottom:15px;
-    align-items:center;
-        h3{
-            margin:0;
-            text-transform:uppercase;
-            font-size:18px;
-            font-weight:bold;
+    .table-content{
+        font-size:11px;
+    }
+
+    tr{
+        border-top:1px solid black;
+        border-right:1px solid black;
+        border-left:1px solid black;
+        margin:0;
+        height:85px;
+        padding-top:9px;
+            td{
+                margin-top:9px;
+            }
+    }
+
+    .dates-table{
+        border-bottom:1px solid black;
+            @include desktop{
+                width:45vw;
             }
         }
-
-.light-training-para{
-    color:#6B747D;
-    font-size:14px;
-    line-height:2;
-}
-
-.dark-training-para{
-    color:#4A4A4A;
-    font-size:14px;
-    line-height:2;
-    margin-bottom:35px;
-}
-
-.online-class-icon-heading-container{
-    display:flex;
-    margin-top:35px;
-        h3{
-            margin:0;
-            font-size:20px;
-            color:#4A4A4A;
-            transform: translatey(-18px);
-            width: 200px;
-        }
-}
-
-.training-list-header{
-    padding:0;
-    margin:0;
-    list-style:none;
-        li{
-            border:1px solid black;
-            margin-bottom:5px;
-            padding-left:5px;
-        }
-}
-        
-.training-date-text{
-            font-size:11px;
-            color:#4A4A4A;
-            line-height:2;
-            font-weight:bold;
-            text-transform:uppercase;
-                span{
-                    text-transform:none;
-                    font-weight:300;
-                    margin-left:45px;
-                }
-        }
-
-.training-date-list{
-    span{
-        font-weight:300;
-        margin-left:45px;
-        text-transform:normal;
-    }
-
-}
-
-.house-logo{
-    width:27.94px;
-    height:28.92px;
-    margin-right:9px;
-}
-
-.table-heading{
-    display:inline-block;
-    min-width:100px;
-    font-size:11px;
-    margin-left:6px;
-}
-
-.training-table-data{
-    display:flex;
-}
-
-.table-content{
-    font-size:11px;
-}
-
-tr{
-    border-top:1px solid black;
-    border-right:1px solid black;
-    border-left:1px solid black;
-    margin:0;
-    height:85px;
-    padding-top:9px;
-        td{
-            margin-top:9px;
-        }
-}
-
-table{
-    border-bottom:1px solid black;
 }
