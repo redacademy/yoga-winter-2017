@@ -15,10 +15,10 @@ get_header(); ?>
                     <p><?php echo CFS()->get( 'about_volunteer_ops' ); ?></p>
                 </div>
                 <div>
-                    <button class="button-holder"><a href="#provide" class="button">What We Provide</a></button>
-                    <button class="button-holder"><a href="#perspective" class="button">A Facility Perspective</a></button>
-                    <button class="button-holder"><a href="#program" class="button">Receive your Program</a></button>
-                    <button class="button-holder"><a href="#partners" class="button">Our Current Partners</a></button>
+                    <button class="grey-button main-button"><a href="#provide" class="button">What We Provide</a></button>
+                    <button class="grey-button main-button"><a href="#perspective" class="button">A Facility Perspective</a></button>
+                    <button class="grey-button main-button"><a href="#program" class="button">Receive your Program</a></button>
+                    <button class="grey-button main-button"><a href="#partners" class="button">Our Current Partners</a></button>
                 </div>
             </header><!-- .entry-header -->
             <section id="provide" class="container-one">
@@ -28,7 +28,7 @@ get_header(); ?>
                 <div class="info-dropdown custom-info-container"><h3>Apply for Partnership</h3><span>+</span></div>
                 <div class="info-field custom-info-container">
                     <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
-                    <div class="button-wrap"><button class="button-holder">Apply Now</button></div>
+                    <div class="button-wrap"><button class="small-button white-button"><a href="" class="button">Apply Now</a></button></div>
                 </div>
             </section>
             <section id="perspective" class="container-two">
@@ -55,7 +55,7 @@ get_header(); ?>
                         <?php endif; ?>
                     </ul>
                 </div>
-                <div class="button-wrap"><button class="button-holder">Apply Now</button></div>
+                <div class="button-wrap"><button class="small-button white-button"><a href="" class="button">Apply Now</a></button></div>
             </section>
             <section id="partners" class="container-three">
                 <h2 class="h2-holder">Our Current Partners</h2>

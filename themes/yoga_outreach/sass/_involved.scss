@@ -20,6 +20,7 @@
         }
         .small-button{
             @include small-button;
+            margin: 0 auto;
             a{
                 color: white;
                 text-decoration: none;
@@ -49,9 +50,6 @@
                 justify-content: center;
                 bottom: 40px;
                 width: 100vw;
-                .small-button{
-                    margin: 0 auto;
-                }
             }
         }
         .entry-header{ 
