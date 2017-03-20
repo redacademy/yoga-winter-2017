@@ -1,35 +1,3 @@
-.main-carousel{
-            width: 90%;
-            padding: 30px;
-            margin: 0 auto;
-            .carousel-cell{
-                width: 100%;
-                height: auto;
-                p{
-                    margin-top: 20px;
-                }
-                h1{
-                    color: $darktext_color;
-                }
-            }
-            ol{
-                display: none;
-            }
-            .flickity-prev-next-button{
-                border: none;
-                background: none;
-                box-shadow: none;
-                padding: 0;
-                top: 25%;
-            }
-            .flickity-prev-next-button.next {
-                right: 5%;
-            }
-            .flickity-prev-next-button.previous {
-                left: 5%;
-            }
-        }
-
 .page-template-volunteer, .page-template-support, .page-template-partner {
     .site-main {
         @include flex-column;
@@ -43,15 +11,50 @@
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+        .main-button{
+            @include general-button;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .small-button{
+            @include small-button;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .white-button{
+            a{
+                color: $lighttext_color;
+                text-decoration: none;
+            }
+        }
         .button-wrap{
             display: flex;
             flex-direction: column;
+            justify-content: center;
             height: 10%;
             padding: 10px;
-            width: 100vw;
-            background-color: $darktheme_color;
+            background-color: $mediumtheme_color;
         }
-        .entry-header{
+        #instructor{
+            position: relative;
+            ol{
+                margin-bottom: 165px;
+            }
+            .button-wrap{
+                position: absolute;
+                justify-content: center;
+                bottom: 40px;
+                width: 100vw;
+                .small-button{
+                    margin: 0 auto;
+                }
+            }
+        }
+        .entry-header{ 
             width: 100vw;
             height: 100vh;
             top: 0;
@@ -60,12 +63,16 @@
             justify-content: space-around;
         }
 
-        header, section > *{
-            width: 100vw;
+        header, section > *{ 
             padding: 15px;
         }
 
+        section .info-paragraph{
+            text-align: left;
+        }
+
         .container-one{
+            width: 100vw;
             .contributor{
                 background-color: $lighttext_color;
                 height: 200px;
@@ -123,21 +130,57 @@
             }
         }
         .container-two{
+            width: 100vw;
             background-color: $logo_color;
             h2{
                 color: $darktext_color;
             }
         }
         .container-three{
+            width: 100vw;
             background-color: $accentcolor_box;
         }
         .container-four{
+            width: 100vw;
             background-color: $accentcolor_bar2;
         }
         .container-tshirt{
         background: url("../../images/tshirt_mobile.png") no-repeat center bottom;
         background-size: cover, cover;
         color: $basetext_color;
+        }
+    }
+
+    .main-carousel{
+        width: 90%;
+        padding: 30px;
+        margin: 0 auto;
+        .carousel-cell{
+            width: 100%;
+            height: auto;
+            p{
+                margin-top: 20px;
+            }
+            h1{
+                color: $darktext_color;
+            }
+        }
+        ol{
+            display: none;
+            margin-bottom:165px;
+        }
+        .flickity-prev-next-button{
+            border: none;
+            background: none;
+            box-shadow: none;
+            padding: 0;
+            top: 25%;
+        }
+        .flickity-prev-next-button.next {
+            right: 5%;
+        }
+        .flickity-prev-next-button.previous {
+            left: 5%;
         }
     }
 }
@@ -167,11 +210,11 @@ ol {
             font-size: 4rem;
             background-color: white;
             border-radius: 100%;
-            padding: 10% 22%;
+            padding: 10% 24% 14%;
             color: $logo_color;
         }
         p{
-            padding-top:10%;
+            padding-top:16%;
             margin: 0;
         }
     }
