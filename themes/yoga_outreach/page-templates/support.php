@@ -32,7 +32,7 @@ get_header(); ?>
                         </div>
                     <?php endforeach; ?>
                 </div>
-            </section>
+            </section> 
             <section id="donate" class="container-one">
                 <h2 class="h2-holder">Donate</h2>
                 <p><?php echo CFS()->get( 'donation_information' ); ?></p>
