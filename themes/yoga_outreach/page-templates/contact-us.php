@@ -34,7 +34,6 @@ get_header(); ?>
             </section>
             
             <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold email from loop-->    
-
                 <?php if(!empty($fields)): ?>
                     <?php foreach( $fields as $field ): ?>
 
@@ -42,21 +41,18 @@ get_header(); ?>
                         <h3><?php echo $field[ 'info_title' ]; ?></h3><span>+</span>
                     </div>
                         
-                    <div class="info-field"> 
-                        <p>hello</p>
-                        
+                    <div class="info-field">
                         <?php if(!empty($field['info_rows'])): ?>
                             <?php foreach( $field['info_rows'] as $row): ?>
                                 <?php echo CFS()->get( 'info_field' ) ?>
-                                    <p><?php echo $row['info_field'] ?></p>
+                                <p><?php echo $row['info_field'] ?></p>
                             <?php endforeach; ?>
                         <?php endif; ?>
-
                     </div>
 
                 <?php endforeach; ?>
             <?php endif; ?> 
-            
+        
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
