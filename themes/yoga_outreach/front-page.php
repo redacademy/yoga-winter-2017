@@ -51,7 +51,7 @@ get_header(); ?>
     </div>
 </section>
 <section class="video-section">
-  <?php if(!empty(CFS()->get( 'video' ))): ?><iframe width="420" height="315" src="<?php echo CFS()->get( 'frontpage_video' ); ?>"></iframe><?php endif; ?>
+  <?php if(!empty(CFS()->get( 'video' ))): ?><span class="video-link"><?php echo CFS()->get( 'frontpage_video' )?></span><?php endif; ?>
   <?php if(empty(CFS()->get( 'video' ))): ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/video-placeholder.jpg" /><?php endif; ?>
 </section>
 <section class="get-involved">

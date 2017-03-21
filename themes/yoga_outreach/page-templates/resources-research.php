@@ -12,7 +12,16 @@ get_header(); ?>
 				<h1 class ="page-title-header">
 					<?php the_title(); ?>
 				</h1>
-				<p class ="page-subtitle">Find more information about trauma-informed yoga, studies, articles and videos here.</p>
+				<?php
+                // TO SHOW THE PAGE CONTENTS
+                while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
+                    <div class="entry-content-page">
+                        <p class ="page-subtitle"><?php the_content(); ?></p>	
+                    </div>
+                <?php
+                endwhile; //resetting the page loop
+                wp_reset_query(); //resetting the page query
+                ?>
 				<div class ="general-button-container">
 					<button class = "general-button teal-button black-text">Research</button>
 					<button class = "general-button grey-button">For Facilities</button>
@@ -25,7 +34,7 @@ get_header(); ?>
 			<section class ="resources-article-pdf-list-container section-15px-padding">
 				<div class ="info-dropdown">
 					<h3>Articles</h3>
-					<span>-</span>
+					<span>+</span>
 				</div>
 				
 				<div class ="info-field">

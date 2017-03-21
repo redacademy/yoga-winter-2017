@@ -8,6 +8,16 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 				<header class = "general-template-section custom-hero-image">
 					<h1 class ="page-title-header"><?php the_title(); ?></h1>
+					    <?php
+                    // TO SHOW THE PAGE CONTENTS
+                    while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
+                        <div class="entry-content-page">
+                            <?php the_content(); ?> <!-- Page Content -->
+                        </div>
+                    <?php
+                    endwhile; //resetting the page loop
+                    wp_reset_query(); //resetting the page query
+                    ?>
 					<div class ="general-button-container">
 						<button class = "general-button teal-button">Core Training</button>
 						<button class = "general-button grey-button">For Facilities</button>

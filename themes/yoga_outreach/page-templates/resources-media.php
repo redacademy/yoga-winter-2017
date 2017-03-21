@@ -11,9 +11,6 @@ get_header(); ?>
 				<h1 class ="page-title-header">
                         <?php the_title(); ?>
                 </h1>
-				<p>
-					<?php the_subtitle();?>
-				</p>
 				<div class ="general-button-container">
 					<button class = "general-button grey-button">Research</button>
 					<button class = "general-button teal-button">Media and Videos</button>
