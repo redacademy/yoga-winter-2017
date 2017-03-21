@@ -941,6 +941,11 @@ footer {
 .page-template-forms-template .entry-header {
   display: none; }
 
+@media (min-width: 720px) {
+  .page-template-forms-template .app-form ul.gfield_radio {
+    display: -ms-flexbox;
+    display: flex; } }
+
 .page-template-forms-template .app-form .gform_heading {
   max-width: 1020px;
   width: 100%;
@@ -1368,9 +1373,6 @@ a:hover, a:active {
   min-width: 290px;
   line-height: 24px;
   margin-bottom: 20px; }
-
-.page-template-training .section-15px-padding {
-  padding: 0 15px; }
 
 .page-template-training .book-training-button {
   background-color: #6B747D;
@@ -2740,9 +2742,6 @@ object {
   line-height: 24px;
   margin-bottom: 20px; }
 
-.page-template-training .section-15px-padding {
-  padding: 0 15px; }
-
 .page-template-training .book-training-button {
   background-color: #6B747D;
   margin-top: 18px; }
@@ -3176,3 +3175,23 @@ http://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1; }
+
+/*--------------------------------------------------------------
+# Current Ops
+--------------------------------------------------------------*/
+.page-template-current-ops .site-main {
+  padding-top: 20%;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto; }
+  .page-template-current-ops .site-main h1 {
+    margin: 0 auto;
+    width: 480px; }
+  .page-template-current-ops .site-main li {
+    position: relative;
+    height: 500px;
+    width: 70%; }
+    .page-template-current-ops .site-main li .opps-header {
+      position: absolute; }
+    .page-template-current-ops .site-main li .opps-info {
+      position: absolute; }

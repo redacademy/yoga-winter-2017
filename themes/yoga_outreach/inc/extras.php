@@ -28,7 +28,7 @@ add_filter( 'body_class', 'red_starter_body_classes' );
  */
 function pagetemplate_styles() {
 
-    $pages = ['page-templates/support.php', 'page-templates/volunteer.php', 'page-templates/partner.php', 'page-templates/about-us.php', 'page-templates/training.php', 'page-templates/core-training.php', 'page-templates/resources-research.php', 'front-page.php'];
+    $pages = ['page-templates/support.php', 'page-templates/volunteer.php', 'page-templates/partner.php', 'page-templates/about-us.php', 'page-templates/training.php', 'page-templates/core-training.php', 'page-templates/resources-research.php', 'front-page.php', 'page-templates/archive-events.php',];
 
     if(!is_page_template($template = $pages) && !is_front_page()){
         return;

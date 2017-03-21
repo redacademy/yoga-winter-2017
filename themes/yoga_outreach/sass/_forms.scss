@@ -7,6 +7,11 @@
 		display: none;
 	}
 	.app-form{
+		ul.gfield_radio{
+			@include desktop{
+				display: flex;
+			}
+		}
 		.gform_heading{
 			max-width: 1020px;
 			width: 100%;
