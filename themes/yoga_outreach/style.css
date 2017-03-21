@@ -438,7 +438,13 @@ button {
     color: #6B747D; }
   .page-template-who-we-are .teamheader {
     height: 80px;
-    font-weight: lighter; }
+    font-weight: lighter;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
     .page-template-who-we-are .teamheader h2 {
       font-size: 1.5rem; }
     .page-template-who-we-are .teamheader p {
@@ -467,36 +473,32 @@ button {
       font-size: 1.5rem; }
   .page-template-who-we-are .info-field {
     height: 100%;
-    background-color: transparent; }
-  .page-template-who-we-are .stafflist {
-    display: none;
-    height: 210px;
-    padding-bottom: 0;
-    margin-bottom: 60px;
     position: relative;
+    background-color: transparent;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .page-template-who-we-are .stafflist .staffphoto {
+        align-items: center; }
+    .page-template-who-we-are .info-field .staffphoto {
       width: 160px;
       height: 160px;
       object-fit: cover;
-      border-radius: 50%; }
-    .page-template-who-we-are .stafflist p {
-      font-size: 1.2rem; }
-    .page-template-who-we-are .stafflist .accent-name-shape {
+      border-radius: 50%;
+      margin-bottom: 15px; }
+    .page-template-who-we-are .info-field a {
+      color: #4a4a4a;
+      font-size: 1.2rem;
+      text-decoration: none; }
+    .page-template-who-we-are .info-field .accent-name-shape {
       height: 25px;
       width: 250px;
       border-radius: 8px;
       background-color: #CBE8EA;
       position: absolute;
       right: 87px;
-      bottom: -10px;
+      bottom: 8px;
       z-index: -1; }
 
 .info-dropdown {

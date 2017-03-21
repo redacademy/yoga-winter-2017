@@ -29,58 +29,28 @@ get_header(); ?>
                     <h2>The YO Team</h2>
                     <p>Click on name for bio and contact info.</p>
                 </div>
-            
-                <div class="info-dropdown">
-                    <h3>staff</h3><span>+</span>
-                </div>
-                <div class="info-field">
-                    <?php $fields= CFS()->get( 'staff_members' ); ?>  <!--variable to hold staffs from loop-->
 
+                <?php $fields= CFS()->get( 'staff_groups' ); ?>  <!--variable to hold staff from loop-->    
                     <?php if(!empty($fields)): ?>
                         <?php foreach( $fields as $field ): ?>
-                            <div class="stafflist"> 
-                                <img src="<?php echo $field['staff_photo']; ?>" alt="staff photo" class="staffphoto">
-                                <p><?php echo $field['staff_name']; ?></p>
-                                <div class="accent-name-shape"></div>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php endif; ?>  
-                </div>
 
-                <div class="info-dropdown">
-                    <h3>Board of Directors</h3><span>+</span>
-                </div>
-                <div class="info-field">
-                    <?php $fields= CFS()->get( 'board_of_directors' ); ?>  <!--variable to hold staffs from loop-->
+                        <div class="info-dropdown">
+                            <h3><?php echo $field[ 'title' ]; ?></h3><span>+</span>
+                        </div>
+                            
+                        <div class="info-field">
+                            <?php if(!empty($field['staff_member'])): ?>
+                                <?php foreach( $field['staff_member'] as $member): ?>
+                                    <?php echo CFS()->get( 'staff_photo','staff_name' ) ?>
+                                    <img src="<?php echo $member['staff_photo']; ?>" alt="staff photo" class="staffphoto">
+                                    <a href=""><?php echo $member['staff_name'] ?></a>
+                                    <div class="accent-name-shape"></div>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </div>
 
-                    <?php if(!empty($fields)): ?>
-                        <?php foreach( $fields as $field ): ?>
-                            <div class="stafflist"> 
-                                <img src="<?php echo $field['directors_photo']; ?>" alt="staff photo" class="staffphoto">
-                                <p><?php echo $field['directors']; ?></p>
-                                <div class="accent-name-shape"></div>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php endif; ?>  
-                </div>
-
-                <div class="info-dropdown">
-                    <h3>Advisory Council</h3><span>+</span>
-                </div>
-                <div class="info-field">
-                    <?php $fields= CFS()->get( 'council' ); ?>  <!--variable to hold staffs from loop-->
-
-                    <?php if(!empty($fields)): ?>
-                        <?php foreach( $fields as $field ): ?>
-                            <div class="stafflist"> 
-                                <img src="<?php echo $field['council_photo']; ?>" alt="staff photo" class="staffphoto">
-                                <p><?php echo $field['council_name']; ?></p>
-                                <div class="accent-name-shape"></div>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php endif; ?>  
-                </div>
-
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </section>   
 		</main><!-- #main -->
 	</div><!-- #primary -->
