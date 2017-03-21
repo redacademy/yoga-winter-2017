@@ -894,7 +894,7 @@ footer {
     font-size: 1.5rem; }
 
 .page-template-contact-us .info-field {
-  padding: 0 15px;
+  padding: 0 15px 15px;
   display: none;
   height: 100%;
   background-color: #f4f1ea; }
@@ -1902,7 +1902,16 @@ object {
       justify-content: space-around;
   flex-direction: column; }
   .page-template-volunteer .site-main .main-button-holder, .page-template-support .site-main .main-button-holder, .page-template-partner .site-main .main-button-holder {
-    padding: 10px; }
+    padding: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    @media (min-width: 720px) {
+      .page-template-volunteer .site-main .main-button-holder, .page-template-support .site-main .main-button-holder, .page-template-partner .site-main .main-button-holder {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        height: 37.5%; } }
   .page-template-volunteer .site-main .main-button, .page-template-support .site-main .main-button, .page-template-partner .site-main .main-button {
     width: 230px;
     height: 44px;
@@ -1977,6 +1986,13 @@ object {
         flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+    .page-template-volunteer .site-main .entry-header div, .page-template-support .site-main .entry-header div, .page-template-partner .site-main .entry-header div {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1020px; }
+    @media (min-width: 720px) {
+      .page-template-volunteer .site-main .entry-header, .page-template-support .site-main .entry-header, .page-template-partner .site-main .entry-header {
+        padding-top: 25%; } }
   .page-template-volunteer .site-main .drop-down-info, .page-template-support .site-main .drop-down-info, .page-template-partner .site-main .drop-down-info {
     padding: 0; }
     .page-template-volunteer .site-main .drop-down-info p, .page-template-support .site-main .drop-down-info p, .page-template-partner .site-main .drop-down-info p {
@@ -1987,6 +2003,10 @@ object {
     text-align: left; }
   .page-template-volunteer .site-main .container-one, .page-template-support .site-main .container-one, .page-template-partner .site-main .container-one {
     width: 100vw; }
+    .page-template-volunteer .site-main .container-one h2, .page-template-volunteer .site-main .container-one p, .page-template-volunteer .site-main .container-one .info-dropdown, .page-template-support .site-main .container-one h2, .page-template-support .site-main .container-one p, .page-template-support .site-main .container-one .info-dropdown, .page-template-partner .site-main .container-one h2, .page-template-partner .site-main .container-one p, .page-template-partner .site-main .container-one .info-dropdown {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1020px; }
     .page-template-volunteer .site-main .container-one .contributor, .page-template-support .site-main .container-one .contributor, .page-template-partner .site-main .container-one .contributor {
       background-color: lightgrey;
       height: 200px;
@@ -2113,6 +2133,9 @@ object {
   margin: 0 auto; }
 
 .partner-facility .interested-facility {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1020px;
   text-align: left;
   padding-left: 5%; }
   .partner-facility .interested-facility h3 {
@@ -2127,8 +2150,14 @@ object {
       .partner-facility .interested-facility ul li p {
         padding: 1% 0 0 3%;
         margin: 5%; }
+        @media (min-width: 720px) {
+          .partner-facility .interested-facility ul li p {
+            margin: 3%; } }
 
 .partners-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1020px;
   text-align: left; }
   .partners-container h3 {
     width: 85%; }

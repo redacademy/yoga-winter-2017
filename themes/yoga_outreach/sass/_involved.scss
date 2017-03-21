@@ -13,6 +13,12 @@
         flex-direction: column;
         .main-button-holder{
             padding: 10px;
+            display: flex;
+            flex-direction: column;
+            @include desktop {
+                flex-wrap: wrap;
+                height: 37.5%;
+            }
         }
         .main-button{
             @include general-button;
@@ -54,7 +60,7 @@
         #instructor{
             position: relative;
             ol{
-                margin-bottom: 165px;
+                margin-bottom: 165px; 
             }
             .button-wrap{
                 position: absolute;
@@ -70,6 +76,14 @@
             color: $basetext_color;
             @include flex-column;
             justify-content: space-around;
+            div{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1020px;
+            }
+            @include desktop {
+                padding-top: 25%;
+            }
         }
 
         .drop-down-info{
@@ -88,6 +102,11 @@
 
         .container-one{
             width: 100vw;
+            h2, p, .info-dropdown{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1020px;
+            }
             .contributor{
                 background-color: lightgrey;
                 height: 200px;
@@ -160,9 +179,9 @@
             background-color: $accentcolor_bar2;
         }
         .container-tshirt{
-        background: url("../../images/tshirt_mobile.png") no-repeat center bottom;
-        background-size: cover, cover;
-        color: $basetext_color;
+            background: url("../../images/tshirt_mobile.png") no-repeat center bottom;
+            background-size: cover, cover;
+            color: $basetext_color;
         }
     }
 
@@ -244,6 +263,9 @@ ol {
         margin: 0 auto;
     }
     .interested-facility{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1020px;
         text-align: left;
         padding-left: 5%;
         h3{
@@ -258,6 +280,9 @@ ol {
                 p{
                     padding: 1% 0 0 3%;
                     margin: 5%;
+                    @include desktop {
+                        margin: 3%;
+                    }
                 }
             }
         }
@@ -265,6 +290,9 @@ ol {
 }
 
 .partners-container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1020px;
     text-align: left;
     h3{
         width: 85%;

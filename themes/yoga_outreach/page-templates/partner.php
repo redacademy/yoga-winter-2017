@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image">
-                <div>   
+                <div class="header-info">   
                     <h1 class="header-title"><?php the_title(); ?></h1>
                     <p><?php echo CFS()->get( 'about_facility_partners' ); ?></p>
                 </div>
