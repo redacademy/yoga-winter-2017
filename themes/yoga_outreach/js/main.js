@@ -25,23 +25,22 @@
     });
 
 
+
+    $( '.gfield_radio li label' ).prepend( '<span></span>');
+})(jQuery); 
+
+(function ($) {
     var $window = $(window),
-    $infoField = $('.info-field');
+        $infoField = $('.info-field');
     function resize() {
         if ($window.width() > 720) {
-            $infoField.removeClass('info-field');
-        }else{
-            $infoField.addClass('info-field');
+            return $infoField.removeClass('info-field');
+        } else {
+            return $infoField.addClass('info-field');
         }
     }
-        $window
-            .resize(resize)
-            .trigger('resize');
-
+    $window
+        .resize(resize)
+        .trigger('resize');
 })(jQuery);
 
-
-
-
-
-(jQuery); 

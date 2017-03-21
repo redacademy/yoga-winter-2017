@@ -5,6 +5,12 @@
 }
 }
 
+@mixin larger-desktop {
+@media (min-width: $site_container) {
+	@content;
+}
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;

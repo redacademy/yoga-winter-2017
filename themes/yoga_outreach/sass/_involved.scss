@@ -21,7 +21,7 @@
             }
         }
         .main-button{
-            @include general-button;
+            @include general-button; 
             &.clear-button{
                 border: 1px solid white;
             }
