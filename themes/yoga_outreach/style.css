@@ -921,6 +921,93 @@ footer {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+/* Custom */
+.page-template-forms-template .entry-header {
+  display: none; }
+
+.page-template-forms-template .app-form .gform_heading {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px; }
+  .page-template-forms-template .app-form .gform_heading h3 {
+    font-size: 2rem; }
+
+.page-template-forms-template .app-form .gform_body li:not(.gfield_html), .page-template-forms-template .app-form .gform_body .gfield_error {
+  padding: 10px;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto !important; }
+  .page-template-forms-template .app-form .gform_body li:not(.gfield_html) label, .page-template-forms-template .app-form .gform_body .gfield_error label {
+    text-transform: uppercase; }
+
+.page-template-forms-template .app-form .gform_body .gfield_select, .page-template-forms-template .app-form .gform_body .address_state select {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 34px;
+  margin-top: 0; }
+
+.page-template-forms-template .app-form .gform_body ul li input[type="radio"] {
+  display: none; }
+
+.page-template-forms-template .app-form .gform_body ul li input[type="radio"] + label {
+  color: #6b747d;
+  font-family: Arial, sans-serif;
+  font-size: 14px; }
+
+.page-template-forms-template .app-form .gform_body ul li input[type="radio"] + label span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #6b747d;
+  border-radius: 50%; }
+
+.page-template-forms-template .app-form .gform_body ul li input[type="radio"] + label span {
+  background-color: transparent;
+  margin: 10px; }
+
+.page-template-forms-template .app-form .gform_body ul li input[type="radio"]:checked + label span {
+  background-color: #4a4a4a; }
+
+.page-template-forms-template .app-form .gform_body .form-sub-heading {
+  padding: 10px;
+  background-color: #94bfd1;
+  color: #fff;
+  max-width: 100vw;
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+  @media (min-width: 1020px) {
+    .page-template-forms-template .app-form .gform_body .form-sub-heading {
+      padding-left: 14%; } }
+
+.page-template-forms-template .app-form .gform_footer {
+  background-color: #f3f0e9; }
+  .page-template-forms-template .app-form .gform_footer input.gform_button {
+    width: 230px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    color: #6b747d;
+    background-color: #fff; }
+
+.forms-header {
+  height: 30vh; }
+
 /* Buttons */
 button,
 input[type="button"],
