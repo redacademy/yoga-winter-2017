@@ -6,7 +6,8 @@
         $('.menu-main-menu-container').toggleClass('submenu');
         $('.menu-main-menu-container').show();
     });
-
+    
+    // Drop down category
     $('.info-dropdown').click(function () {
         if ($(this).next('.info-field').is(':hidden')) {
             $(this).next('.info-field').slideDown('normal');

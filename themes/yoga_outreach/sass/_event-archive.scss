@@ -1,5 +1,11 @@
 .page-template-archive-events {
-    
+    .general-button-container {
+        height: 130px;
+        bottom: 17px;
+        
+        @include flex-column;
+        justify-content: space-around;
+    }
     button {
         @include general-button;
     }
@@ -75,12 +81,21 @@
                 font-size: 0.6rem;
             }
         }
+
+        article {
+            p {
+                font-size: 0.9rem;
+            }
+        }
     }
 
     .container2 {
         @extend .container;
         .body-info {
             background-color: #F2FBFF;
+            .accent-name-shape {
+                background-color: $brightbutton_color;
+            }
         }
     }
 
@@ -102,15 +117,21 @@
             color: $darktext_color;
         }
     }
+    .info-dropdown {
+        h3 {
+            font-size: 0.9rem;
+        }
+    }
     .info-field {
         .facilitator{
             display: flex;
             padding: 10px;
+            margin-bottom: 25px;
             position: relative;
 
             img {
-                width: 80px;
-                height: 80px;
+                width: 75px;
+                height: 75px;
                 border-radius: 50%;
                 object-fit: cover;
                 z-index: 1;
@@ -125,7 +146,7 @@
                 width: 271px;
                 height: 25px;
                 border-radius: 8px;
-                background-color: $accentcolor_line;
+                background-color: #CBE8EA;
                 position: absolute;
                 left: -40px;
                 bottom: 8px;

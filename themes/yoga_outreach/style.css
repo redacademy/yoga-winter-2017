@@ -1362,9 +1362,6 @@ a:hover, a:active {
   line-height: 24px;
   margin-bottom: 20px; }
 
-.page-template-training .section-15px-padding {
-  padding: 0 15px; }
-
 .page-template-training .book-training-button {
   background-color: #6B747D;
   margin-top: 18px; }
@@ -2010,6 +2007,16 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-template-archive-events .general-button-container {
+  height: 130px;
+  bottom: 17px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
 .page-template-archive-events button {
   width: 230px;
   height: 44px;
@@ -2080,9 +2087,13 @@ object {
       padding-left: 5px; }
     .page-template-archive-events .container table p, .page-template-archive-events .container2 table p {
       font-size: 0.6rem; }
+  .page-template-archive-events .container article p, .page-template-archive-events .container2 article p {
+    font-size: 0.9rem; }
 
 .page-template-archive-events .container2 .body-info {
   background-color: #F2FBFF; }
+  .page-template-archive-events .container2 .body-info .accent-name-shape {
+    background-color: #6cfffe; }
 
 .page-template-archive-events .booking-button {
   height: 85px;
@@ -2101,14 +2112,18 @@ object {
     font-size: 0.9rem;
     color: #4a4a4a; }
 
+.page-template-archive-events .info-dropdown h3 {
+  font-size: 0.9rem; }
+
 .page-template-archive-events .info-field .facilitator {
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
+  margin-bottom: 25px;
   position: relative; }
   .page-template-archive-events .info-field .facilitator img {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     object-fit: cover;
     z-index: 1; }
@@ -2121,7 +2136,7 @@ object {
     width: 271px;
     height: 25px;
     border-radius: 8px;
-    background-color: #95afc9;
+    background-color: #CBE8EA;
     position: absolute;
     left: -40px;
     bottom: 8px; }
@@ -2815,9 +2830,6 @@ object {
   min-width: 290px;
   line-height: 24px;
   margin-bottom: 20px; }
-
-.page-template-training .section-15px-padding {
-  padding: 0 15px; }
 
 .page-template-training .book-training-button {
   background-color: #6B747D;

@@ -20,12 +20,12 @@ get_header(); ?>
                     wp_reset_query(); //resetting the page query
                     ?>
 				<div class="general-button-container">
-					<button class="general-button grey-button">workshops</button>
-					<button class="general-button teal-button">retreat</button>
+					<button class="general-button grey-button"><a href="#workshop" class="button">workshop</a></button>
+					<button class="general-button teal-button"><a href="#retreat">retreat</a></button>
 				</div>
 			</header><!--general-template-section-->
 
-            <section class="container">
+            <section id="workshop" class="container">
                 <?php $events= CFS()->get( 'new_event' ); ?>  <!--variable to hold email from loop-->    
 
                 <?php if(!empty($events)): ?>
@@ -91,6 +91,51 @@ get_header(); ?>
                 <button class="general-button white-button">book workshop</button>
             </div>
 
+            <section id="retreat" class="container2">
+                <?php $retreats= CFS()->get( 'new_retreats' ); ?>  <!--variable to hold email from loop-->    
+
+                <?php if(!empty($retreats)): ?>
+                    <?php foreach( $retreats as $retreat ): ?>
+                        <h2><?php echo $retreat['retreat_header']; ?></h2>
+
+                        <div class="body-info">
+                            <div class="title-contain">
+                                <h3><?php echo $retreat['retreat_title']; ?></h3>
+                                <div class="accent-name-shape"></div>
+                            </div>
+
+                            <div class="img-contain">
+                                <?php if(!empty($retreat['retreat_image'])): ?> <!--if there is no image upload do not display anything-->
+                                    <img src="<?php echo $retreat['retreat_image'] ?>" alt="retreat-image" class="event-img">
+                                <?php endif; ?>
+                            </div>
+
+                            <?php if(!empty($retreat['retreat_booking_info'])): ?>
+                                <?php foreach( $retreat['retreat_booking_info'] as $info): ?>
+                                    <table>
+                                        <tr>
+                                            <td><h4>Date</h4></td>
+                                            <td><p><?php echo $info['retreat_date']; ?></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>Location</h4></td>
+                                            <td><p><?php echo $info['retreat_location']; ?></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>Price (CAD)</h4></td>
+                                            <td><p><?php echo $info['retreat_price']; ?></p></td>
+                                        </tr>
+                                    </table>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+
+                            <article>
+                                <p><?php echo $info['retreat_info']; ?></p>
+                            </article>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif; ?> 
+            </section>
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->
