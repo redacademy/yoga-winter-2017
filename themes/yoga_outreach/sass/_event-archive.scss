@@ -21,6 +21,7 @@
             background-color: $lighttheme_color;
             padding: 17px 15px;
             position: relative;
+            z-index: -2;
 
             .title-contain {
                 position: relative;
@@ -29,8 +30,10 @@
 
             h3{
                 font-size: 1.5rem;
+                font-weight: 300;
                 text-transform: uppercase;
                 border-bottom: 1px solid $lighttext_color;
+                z-index: 1;
             }
 
             .accent-name-shape{
@@ -44,16 +47,21 @@
                 bottom: -9px;  
                 z-index: -1;
             }
-            .img-contain {
-                height: 161px;
-                margin-bottom: 47px;
+            .img-contain{
                 display: flex;
                 justify-content: center;
+            }
+            .event-img {
+                height: 161px;
+                width: 161px;
+                border-radius: 50%;
+                margin-bottom: 47px;
+                object-fit: cover;
             }
         }
 
         table {
-            height: 100%;
+            height: 90px;
             border: 1px solid black;
             background-color: $basetext_color;
 
@@ -92,6 +100,36 @@
 
             font-size: 0.9rem;
             color: $darktext_color;
+        }
+    }
+    .info-field {
+        .facilitator{
+            display: flex;
+            padding: 10px;
+            position: relative;
+
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+                z-index: 1;
+            }
+            p {
+                margin: 40px 0 0 10px;
+                font-size: 1.3rem;
+                color: $darktext_color;
+                z-index: 1;
+            }
+            .accent-name-shape {
+                width: 271px;
+                height: 25px;
+                border-radius: 8px;
+                background-color: $accentcolor_line;
+                position: absolute;
+                left: -40px;
+                bottom: 8px;
+            }
         }
     }
 }

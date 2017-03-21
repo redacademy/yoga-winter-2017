@@ -2040,14 +2040,17 @@ object {
   .page-template-archive-events .container .body-info, .page-template-archive-events .container2 .body-info {
     background-color: #f4f1ea;
     padding: 17px 15px;
-    position: relative; }
+    position: relative;
+    z-index: -2; }
     .page-template-archive-events .container .body-info .title-contain, .page-template-archive-events .container2 .body-info .title-contain {
       position: relative;
       margin-bottom: 35px; }
     .page-template-archive-events .container .body-info h3, .page-template-archive-events .container2 .body-info h3 {
       font-size: 1.5rem;
+      font-weight: 300;
       text-transform: uppercase;
-      border-bottom: 1px solid #6b747d; }
+      border-bottom: 1px solid #6b747d;
+      z-index: 1; }
     .page-template-archive-events .container .body-info .accent-name-shape, .page-template-archive-events .container2 .body-info .accent-name-shape {
       width: 157px;
       height: 27px;
@@ -2057,14 +2060,18 @@ object {
       bottom: -9px;
       z-index: -1; }
     .page-template-archive-events .container .body-info .img-contain, .page-template-archive-events .container2 .body-info .img-contain {
-      height: 161px;
-      margin-bottom: 47px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
           justify-content: center; }
+    .page-template-archive-events .container .body-info .event-img, .page-template-archive-events .container2 .body-info .event-img {
+      height: 161px;
+      width: 161px;
+      border-radius: 50%;
+      margin-bottom: 47px;
+      object-fit: cover; }
   .page-template-archive-events .container table, .page-template-archive-events .container2 table {
-    height: 100%;
+    height: 90px;
     border: 1px solid black;
     background-color: #fff; }
     .page-template-archive-events .container table h4, .page-template-archive-events .container2 table h4 {
@@ -2093,6 +2100,31 @@ object {
     border-radius: 8px;
     font-size: 0.9rem;
     color: #4a4a4a; }
+
+.page-template-archive-events .info-field .facilitator {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  position: relative; }
+  .page-template-archive-events .info-field .facilitator img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1; }
+  .page-template-archive-events .info-field .facilitator p {
+    margin: 40px 0 0 10px;
+    font-size: 1.3rem;
+    color: #4a4a4a;
+    z-index: 1; }
+  .page-template-archive-events .info-field .facilitator .accent-name-shape {
+    width: 271px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #95afc9;
+    position: absolute;
+    left: -40px;
+    bottom: 8px; }
 
 .page-template-volunteer .site-main, .page-template-support .site-main, .page-template-partner .site-main {
   display: -ms-flexbox;
