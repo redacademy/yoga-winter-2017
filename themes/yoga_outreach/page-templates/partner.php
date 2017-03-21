@@ -33,7 +33,7 @@ get_header(); ?>
             </section>
             <section id="perspective" class="container-two">
                 <h2 class="h2-holder">A Facility Perspective</h2>
-                <?php if(!empty(CFS()->get( 'facility_video' ))): ?><iframe width="420" height="315" src="<?php echo CFS()->get( 'facility_video' ); ?>"></iframe><?php endif; ?>
+                <?php if(!empty(CFS()->get( 'facility_video' ))): ?><span class="video-link"><?php echo CFS()->get( 'facility_video' )?></span><?php endif; ?>
                 <?php if(empty(CFS()->get( 'facility_video' ))): ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/video-placeholder.jpg" /><?php endif; ?>
             </section>
             <section id="program" class="container-one partner-facility">
