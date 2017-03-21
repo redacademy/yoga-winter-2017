@@ -934,6 +934,11 @@ footer {
 .page-template-forms-template .entry-header {
   display: none; }
 
+@media (min-width: 720px) {
+  .page-template-forms-template .app-form ul.gfield_radio {
+    display: -ms-flexbox;
+    display: flex; } }
+
 .page-template-forms-template .app-form .gform_heading {
   max-width: 1020px;
   width: 100%;
@@ -3264,3 +3269,23 @@ http://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1; }
+
+/*--------------------------------------------------------------
+# Current Ops
+--------------------------------------------------------------*/
+.page-template-current-ops .site-main {
+  padding-top: 20%;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto; }
+  .page-template-current-ops .site-main h1 {
+    margin: 0 auto;
+    width: 480px; }
+  .page-template-current-ops .site-main li {
+    position: relative;
+    height: 500px;
+    width: 70%; }
+    .page-template-current-ops .site-main li .opps-header {
+      position: absolute; }
+    .page-template-current-ops .site-main li .opps-info {
+      position: absolute; }

@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Current Ops
+--------------------------------------------------------------*/
+
+
+.page-template-current-ops{
+    .site-main{
+        padding-top: 20%;
+        max-width: 1020px;
+        width: 100%;
+        margin: 0 auto;
+        h1{
+            margin: 0 auto;
+            width: 480px;
+        }
+        li{
+            position: relative;
+            height: 500px;
+            width: 70%;
+            .opps-header{
+                position: absolute;
+            }
+            .opps-info{
+                position: absolute;
+            }
+
+        }
+    }
+}
