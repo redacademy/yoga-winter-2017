@@ -40,8 +40,8 @@ function pagetemplate_styles() {
     }
 
     $hero_css = ".custom-hero-image {
-        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$image}) no-repeat center bottom;
-        background-size: cover, cover;
+        background:url({$image}) no-repeat center top;
+        background-size: cover;
         }"; 
     wp_add_inline_style( 'red-starter-style', $hero_css );
 }

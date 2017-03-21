@@ -1,44 +1,25 @@
 .page-template-resources-research{
-        .main-h3-container{
-            h3{
-                width:290px;
-                margin: 0 auto;
-                text-align: center;
-            }
+    
+    .info-heading{
+        font-size:16px;
+        font-weight:100;
         }
 
-        .page-template-resources-research{
-            .info-heading{
-                font-size:16px;
-                font-weight:100;
-                    
-            }
-        }
-
+        
         .info-dropdown{
-            h3{
-                font-size:14px;
+            @include desktop{
+                padding:0;
             }
         }
+
 
         .teal-button.black-text{
             color:black;
         }
 
         .general-button, .book-training-button{
-			width:230px;
-			height:44px;
-			display:block;
-			margin:0 auto;
-			font-size:14px;
-			margin-bottom:26px;
-			text-transform:uppercase;
-			box-shadow:none;
-			text-shadow:none;
-			color:white;
-			border-radius:8px;
-			border:none;
-			font-size:14px;
+			@include general-button;
+            margin-bottom:29px;
 		}
 
 
@@ -47,14 +28,7 @@
         }
         .main-h3-container{
                 h3{
-                margin-top:35px;
-                font-size:24px;
-                margin-bottom:20px;
-                font-weight:300;
-                color:#6B747D;
-                    @include desktop{
-                        font-size:40px;
-                    }
+                @include main-h3;
             }
         }
 
@@ -91,6 +65,9 @@
             padding:0;
             margin-left:0;
             margin-top:21px;
+                @include desktop{
+                    margin-top:0;
+                }
                 li{
                     display:flex;
                         a{
@@ -106,9 +83,26 @@
                             text-decoration:none;
                             color:black;
                             font-size:10px;
+                                @include desktop{
+                                    width:80px;
+                                    height:44px;
+                                    margin-bottom:26px;
+                                    font-size:14px;
+                                }
                         }
                 }
         }
+
+        .resource-link-text{
+            color:$darktheme_color;
+            font-size:14px;
+            width:14rem;
+            padding-bottom:15px;
+                @include desktop{
+                    font-size:18px;
+                    width:100%;
+                    }
+            }
 
         .pdf-item{
             p{
@@ -116,8 +110,12 @@
                 color:$darktext_color;
                 font-weight:300;
                 font-size:14px;
+                    @include desktop{
+                        font-size:18px;
+                        margin-top:6px;
+                    }
+                }
             }
-        }
 
 
         //Links
@@ -149,6 +147,10 @@
             list-style:none;
                 li{
                     margin-bottom:7px;
+                        @include desktop{
+                            font-size:18px;
+                            line-height:30px;
+                        }
                         a{
                             color:$lighttext_color;
                             font-weight:200;
@@ -156,21 +158,20 @@
                 }
         }
 
-        .link-list{
+        .link-list,{
             p{
                 color:$darktheme_color;
                 font-size:14px;
                 width:14rem;
                 padding-bottom:15px;
+                    @include desktop{
+                        font-size:18px;
+                        width:100%;
+                    }
             }
         }
 
-    .show-field{
-        display:block;
-    }
-
-    .noshow-field{
-        display:none;
-    }
 
 }//Resource Wrapper
+
+

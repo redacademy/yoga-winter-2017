@@ -514,9 +514,15 @@ button {
   .info-dropdown h3 {
     font-weight: bold;
     font-size: 1.3rem; }
+    @media (min-width: 720px) {
+      .info-dropdown h3 {
+        font-size: 24px; } }
   .info-dropdown span {
     font-size: 4rem;
     color: #95afc9; }
+    @media (min-width: 720px) {
+      .info-dropdown span {
+        display: none; } }
 
 .info-field {
   display: none;
@@ -599,7 +605,11 @@ button {
   height: 400px;
   background-color: lightgreen;
   width: 100%;
-  position: relative; }
+  position: relative;
+  z-index: -1; }
+  @media (min-width: 720px) {
+    .general-template-section {
+      height: 642px; } }
 
 .general-button-container {
   position: absolute;
@@ -609,6 +619,12 @@ button {
     .general-button-container {
       display: -ms-flexbox;
       display: flex; } }
+
+.section-15px-padding {
+  padding: 0 4%; }
+  @media (min-width: 720px) {
+    .section-15px-padding {
+      padding: 0 7%; } }
 
 p {
   margin-bottom: 0;
@@ -1424,6 +1440,24 @@ a:hover, a:active {
   .page-template-core-training .dates-table {
     max-width: 400px; } }
 
+.page-template-core-training .general-button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  margin-bottom: 29px; }
+
 @media (min-width: 720px) {
   .page-template-core-training .register-online-button {
     display: inline; } }
@@ -1568,17 +1602,13 @@ a:hover, a:active {
     .page-template-core-training .dates-table {
       width: 45vw; } }
 
-.page-template-resources-research .main-h3-container h3 {
-  width: 290px;
-  margin: 0 auto;
-  text-align: center; }
-
-.page-template-resources-research .page-template-resources-research .info-heading {
+.page-template-resources-research .info-heading {
   font-size: 16px;
   font-weight: 100; }
 
-.page-template-resources-research .info-dropdown h3 {
-  font-size: 14px; }
+@media (min-width: 720px) {
+  .page-template-resources-research .info-dropdown {
+    padding: 0; } }
 
 .page-template-resources-research .teal-button.black-text {
   color: black; }
@@ -1589,24 +1619,30 @@ a:hover, a:active {
   display: block;
   margin: 0 auto;
   font-size: 14px;
-  margin-bottom: 26px;
   text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
   box-shadow: none;
   text-shadow: none;
   color: white;
   border-radius: 8px;
   border: none;
-  font-size: 14px; }
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  margin-bottom: 29px; }
 
 .page-template-resources-research .info-heading-subtitle {
   color: #4A4A4A; }
 
 .page-template-resources-research .main-h3-container h3 {
-  margin-top: 35px;
+  padding-top: 35px;
   font-size: 24px;
   margin-bottom: 20px;
   font-weight: 300;
-  color: #6B747D; }
+  color: #6B747D;
+  width: 290px;
+  margin: 0 auto;
+  text-align: center; }
   @media (min-width: 720px) {
     .page-template-resources-research .main-h3-container h3 {
       font-size: 40px; } }
@@ -1635,6 +1671,9 @@ a:hover, a:active {
   padding: 0;
   margin-left: 0;
   margin-top: 21px; }
+  @media (min-width: 720px) {
+    .page-template-resources-research .resource-pdf-list {
+      margin-top: 0; } }
   .page-template-resources-research .resource-pdf-list li {
     display: -ms-flexbox;
     display: flex; }
@@ -1654,12 +1693,32 @@ a:hover, a:active {
       text-decoration: none;
       color: black;
       font-size: 10px; }
+      @media (min-width: 720px) {
+        .page-template-resources-research .resource-pdf-list li a {
+          width: 80px;
+          height: 44px;
+          margin-bottom: 26px;
+          font-size: 14px; } }
+
+.page-template-resources-research .resource-link-text {
+  color: #4a4a4a;
+  font-size: 14px;
+  width: 14rem;
+  padding-bottom: 15px; }
+  @media (min-width: 720px) {
+    .page-template-resources-research .resource-link-text {
+      font-size: 18px;
+      width: 100%; } }
 
 .page-template-resources-research .pdf-item p {
   margin-left: 14px;
   color: #4a4a4a;
   font-weight: 300;
   font-size: 14px; }
+  @media (min-width: 720px) {
+    .page-template-resources-research .pdf-item p {
+      font-size: 18px;
+      margin-top: 6px; } }
 
 .page-template-resources-research .resources-links-container div {
   display: -ms-flexbox;
@@ -1685,6 +1744,10 @@ a:hover, a:active {
   list-style: none; }
   .page-template-resources-research .link-list li {
     margin-bottom: 7px; }
+    @media (min-width: 720px) {
+      .page-template-resources-research .link-list li {
+        font-size: 18px;
+        line-height: 30px; } }
     .page-template-resources-research .link-list li a {
       color: #6b747d;
       font-weight: 200; }
@@ -1694,12 +1757,63 @@ a:hover, a:active {
   font-size: 14px;
   width: 14rem;
   padding-bottom: 15px; }
+  @media (min-width: 720px) {
+    .page-template-resources-research .link-list p {
+      font-size: 18px;
+      width: 100%; } }
 
-.page-template-resources-research .show-field {
-  display: block; }
+.page-template-resources-media .general-button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  margin-bottom: 29px; }
 
-.page-template-resources-research .noshow-field {
-  display: none; }
+.page-template-resources-media .main-h3-container h3 {
+  padding-top: 35px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #6B747D;
+  width: 290px;
+  margin: 0 auto;
+  text-align: center; }
+  @media (min-width: 720px) {
+    .page-template-resources-media .main-h3-container h3 {
+      font-size: 40px; } }
+
+.page-template-resources-media .main-h3-container p {
+  font-size: 14px;
+  padding-bottom: 22px;
+  width: 262px;
+  margin: 0 auto;
+  color: #6B747D;
+  text-align: center; }
+  @media (min-width: 720px) {
+    .page-template-resources-media .main-h3-container p {
+      font-size: 24px;
+      width: 100%; } }
+
+.page-template-resources-media .media-article-section {
+  background-color: #f4f1ea; }
+
+.page-template-resources-media .media-article-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .page-template-resources-media .media-article-list li {
+    margin-bottom: 12px; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -2696,6 +2810,24 @@ object {
 @media (min-width: 720px) {
   .page-template-core-training .dates-table {
     max-width: 400px; } }
+
+.page-template-core-training .general-button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  margin-bottom: 29px; }
 
 @media (min-width: 720px) {
   .page-template-core-training .register-online-button {

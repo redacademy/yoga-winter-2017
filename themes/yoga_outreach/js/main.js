@@ -25,27 +25,23 @@
     });
 
 
-    (function ($) {
-        var $window = $(window),
-            $infoField = $('.info-field');
-
-        function resize() {
-            if ($window.width() > 720) {
-                return $infoField.removeClass('info-field');
-            } else {
-                return $infoField.addClass('info-field');
-            }
-
+    var $window = $(window),
+    $infoField = $('.info-field');
+    function resize() {
+        if ($window.width() > 720) {
+            $infoField.removeClass('info-field');
+        }else{
+            $infoField.addClass('info-field');
         }
+    }
         $window
             .resize(resize)
             .trigger('resize');
 
-
-    })(jQuery);
-
+})(jQuery);
 
 
 
 
-})(jQuery); 
+
+(jQuery); 
