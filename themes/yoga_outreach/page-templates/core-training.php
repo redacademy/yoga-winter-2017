@@ -40,7 +40,7 @@ get_header(); ?>
 				</div><!--avail-online-heading-container-->
 				<p class = "light-training-para"><?php echo CFS()->get('light_training_para'); ?></p>
 				<p class = "dark-training-para"><?php echo CFS()->get('dark_training_para'); ?></p>
-			</section><!--section-15px-padding-->
+				</section><!--section-15px-padding-->
 			<div class ="testimonal-container">
 				<ul class ="testimonial-list main-carousel">
 					<?php

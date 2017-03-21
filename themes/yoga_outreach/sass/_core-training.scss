@@ -73,8 +73,13 @@
 
     .dates-table{
         @include desktop{
-            max-width:400px
+            max-width:400px;
         }
+    }
+
+    .general-button{
+        @include general-button;
+        margin-bottom:29px;
     }
 
 

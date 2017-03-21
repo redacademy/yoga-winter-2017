@@ -10,10 +10,16 @@
     h3 {
         font-weight: bold;
         font-size: 1.3rem;
+            @include desktop{
+                font-size:24px;
+            }
     }
     span {
         font-size: 4rem;
         color: $accentcolor_line;
+            @include desktop{
+                display:none;
+            }
     }
 }
 
@@ -99,6 +105,10 @@
 	background-color:lightgreen;
 	width:100%;
 	position:relative;
+    z-index:-1;
+        @include desktop{
+            height:642px;   
+        }
 	}
 
 .general-button-container{
@@ -109,3 +119,10 @@
 			display:flex;
 			}
 	}
+
+.section-15px-padding{
+    padding:0 4%;
+        @include desktop{
+            padding: 0 7%;
+        }
+    }
