@@ -42,23 +42,27 @@ get_header(); ?>
                                 <img src="<?php echo $event['event_image'] ?>" alt="event-image" class="event-img">
                             </div>
 
-                            <table>
-                                <tr>
-                                    <td><h4>Date</h4></td>
-                                    <td><p><?php echo $event['event_date']; ?></p></td>
-                                </tr>
-                                <tr>
-                                    <td><h4>Location</h4></td>
-                                    <td><p><?php echo $event['event_location']; ?></p></td>
-                                </tr>
-                                <tr>
-                                    <td><h4>Price (CAD)</h4></td>
-                                    <td><p><?php echo $event['event_price']; ?></p></td>
-                                </tr>
-                            </table>
+                            <?php if(!empty($event['event_booking_info'])): ?>
+                                <?php foreach( $event['event_booking_info'] as $info): ?>
+                                    <table>
+                                        <tr>
+                                            <td><h4>Date</h4></td>
+                                            <td><p><?php echo $info['event_date']; ?></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>Location</h4></td>
+                                            <td><p><?php echo $info['event_location']; ?></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>Price (CAD)</h4></td>
+                                            <td><p><?php echo $info['event_price']; ?></p></td>
+                                        </tr>
+                                    </table>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
 
                             <article>
-                                <p><?php echo $event['event_info']; ?></p>
+                                <p><?php echo $info['event_info']; ?></p>
                             </article>
                         </div>
 
@@ -67,51 +71,26 @@ get_header(); ?>
                         </div>
                                 
                         <div class="info-field">
-                            <div class="facilitator">
-                                <img src="<?php echo $event['facilitator_image'] ?>" alt="event-image">
-                                <p><?php echo $event['facilitator_name']; ?></p>
-                                <div class="accent-name-shape"></div>
-                            </div>
-                            <p><?php echo $event['facilitator_bio']; ?></p>
+                            <?php if(!empty($info['event_facilitator'])): ?>
+                                <?php foreach( $info['event_facilitator'] as $facilitator): ?>
+                                    <div class="facilitator">
+                                        <img src="<?php echo $facilitator['facilitator_image'] ?>" alt="event-image">
+                                        <p><?php echo $facilitator['facilitator_name']; ?></p>
+                                        <div class="accent-name-shape"></div>
+                                    </div>
+                                    <p><?php echo $facilitator['facilitator_bio']; ?></p>
+                                <?php endforeach ?>
+                            <?php endif; ?>
                         </div>
+
                     <?php endforeach; ?>
                 <?php endif; ?> 
             </section>
+
             <div class="booking-button">
                 <button class="general-button white-button">book workshop</button>
             </div>
 
-            
-         <section class="container2">
-                <h2>Retreat heading</h2>
-                <div class="body-info">
-                    <div class="title-contain">
-                        <h3>retreat title</h3>
-                        <div class="accent-name-shape"></div>
-                    </div>
-
-                    <table>
-                        <tr>
-                            <td><h4>Date</h4></td>
-                            <td><p>Doe</p></td>
-                        </tr>
-                        <tr>
-                            <td><h4>Location</h4></td>
-                            <td><p>Doe</p></td>
-                        </tr>
-                        <tr>
-                            <td><h4>Price (CAD)</h4></td>
-                            <td><p>Doe</p></td>
-                        </tr>
-                    </table>
-
-                    <article>
-                        <p>
-                           Yoga teachers may lack an understanding community to address questions about their work, debrief difficult teacher/student relationships and discuss ethics. In this workshop participants will gain a theoretical and experiential foundation in the unique qualities of the teacher/student relationship as it pertains to yoga teaching in diverse settings, personal and professional boundaries, self care and what it means to teach from a strengths-based, trauma-informed place.
-                        </p>
-                    </article>
-                </div>
-            </section>
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->
