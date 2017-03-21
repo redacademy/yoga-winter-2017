@@ -551,12 +551,26 @@ button {
 
 .grey-button {
   background-color: #94bfd1; }
+  .grey-button a {
+    color: white; }
 
 .white-button {
   background-color: #fff; }
 
 .dark-button {
   background-color: #6b747d; }
+  .dark-button a {
+    color: white; }
+
+.clear-button {
+  border: 1px solid white;
+  background-color: transparent; }
+  .clear-button a {
+    color: white; }
+  .clear-button:hover {
+    background-color: white; }
+    .clear-button:hover a {
+      color: black; }
 
 .general-button:hover {
   box-shadow: none; }
@@ -972,16 +986,11 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
 
 /* Menus */
 .main-navigation {
@@ -1919,7 +1928,7 @@ object {
       .page-template-volunteer .site-main .main-button-holder, .page-template-support .site-main .main-button-holder, .page-template-partner .site-main .main-button-holder {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        height: 37.5%; } }
+        height: 44.5%; } }
   .page-template-volunteer .site-main .main-button, .page-template-support .site-main .main-button, .page-template-partner .site-main .main-button {
     width: 230px;
     height: 44px;
@@ -1937,9 +1946,15 @@ object {
     font-family: 'raleway',sans-serif;
     font-size: 14px;
     margin-bottom: 26px; }
+    .page-template-volunteer .site-main .main-button.clear-button, .page-template-support .site-main .main-button.clear-button, .page-template-partner .site-main .main-button.clear-button {
+      border: 1px solid white; }
+    @media (min-width: 720px) {
+      .page-template-volunteer .site-main .main-button, .page-template-support .site-main .main-button, .page-template-partner .site-main .main-button {
+        margin-bottom: 35px; } }
     .page-template-volunteer .site-main .main-button a, .page-template-support .site-main .main-button a, .page-template-partner .site-main .main-button a {
-      color: white;
       text-decoration: none; }
+      .page-template-volunteer .site-main .main-button a a:visited, .page-template-support .site-main .main-button a a:visited, .page-template-partner .site-main .main-button a a:visited {
+        color: #fff; }
   .page-template-volunteer .site-main .small-button, .page-template-support .site-main .small-button, .page-template-partner .site-main .small-button {
     width: 173px;
     height: 44px;
@@ -1955,6 +1970,9 @@ object {
     font-family: 'raleway',sans-serif;
     font-size: 14px;
     margin: 0 auto; }
+    @media (min-width: 720px) {
+      .page-template-volunteer .site-main .small-button, .page-template-support .site-main .small-button, .page-template-partner .site-main .small-button {
+        width: 230px; } }
     .page-template-volunteer .site-main .small-button a, .page-template-support .site-main .small-button a, .page-template-partner .site-main .small-button a {
       color: white;
       text-decoration: none; }

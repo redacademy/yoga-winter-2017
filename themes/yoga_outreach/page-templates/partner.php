@@ -15,10 +15,10 @@ get_header(); ?>
                     <p><?php echo CFS()->get( 'about_facility_partners' ); ?></p>
                 </div>
                 <div class="main-button-holder">
-                    <button class="grey-button main-button"><a href="#provide" class="button">What We Provide</a></button>
-                    <button class="grey-button main-button"><a href="#perspective" class="button">A Facility Perspective</a></button>
-                    <button class="grey-button main-button"><a href="#program" class="button">Receive your Program</a></button>
-                    <button class="grey-button main-button"><a href="#partners" class="button">Our Current Partners</a></button>
+                    <button class="main-button clear-button"><a href="#provide" class="button">What We Provide</a></button>
+                    <button class="main-button clear-button"><a href="#perspective" class="button">A Facility Perspective</a></button>
+                    <button class="main-button clear-button"><a href="#program" class="button">Receive your Program</a></button>
+                    <button class="main-button clear-button"><a href="#partners" class="button">Our Current Partners</a></button>
                 </div>
             </header><!-- .entry-header -->
             <section id="provide" class="container-one">
@@ -53,7 +53,7 @@ get_header(); ?>
                                 </div>
                             <?php endforeach; ?>
                         <?php endif; ?>
-                    </ul>
+                    </ul> 
                 </div>
                 <div class="button-wrap"><button class="small-button white-button"><a href="" class="button">Apply Now</a></button></div>
             </section>

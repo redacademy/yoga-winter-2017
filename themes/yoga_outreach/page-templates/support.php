@@ -15,10 +15,10 @@ get_header(); ?>
                     <p><?php echo CFS()->get( 'about_sponsors' ); ?></p>
                 </div>
                 <div class="main-button-holder">
-                    <button class="grey-button main-button"><a href="#donate" class="button">Donate</a></button>
-                    <button class="grey-button main-button"><a href="#sponsor" class="button">Become Event Sponsor</a></button>
-                    <button class="grey-button main-button"><a href="#tshirt" class="button">Shop T-Shirts</a></button>
-                    <button class="grey-button main-button"><a href="#current-sponsor" class="button">Current Sponsor</a></button>
+                    <button class="main-button clear-button"><a href="#donate" class="button">Donate</a></button>
+                    <button class="main-button clear-button"><a href="#sponsor" class="button">Become Event Sponsor</a></button>
+                    <button class="main-button clear-button"><a href="#tshirt" class="button">Shop T-Shirts</a></button>
+                    <button class="main-button clear-button"><a href="#current-sponsor" class="button">Current Sponsor</a></button>
                 </div>
             </header><!-- .entry-header -->
             <section class="container-three">
