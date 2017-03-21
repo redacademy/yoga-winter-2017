@@ -70,10 +70,28 @@ get_header(); ?>
 					<?php
 					$testimonials = CFS()->get('testimonial_item');
 					foreach ( $testimonials as $testimonial): ?>
-					<li class ="carousel-cell"><?php echo $testimonial ['testimonial'];?></li>
+					<li class ="carousel-cell"><?php echo $testimonial ['testimonial'];?>
+            <div class="carousel-picture">
+              <img src="<?php echo CFS()->get( 'testimonial_image' );?>" />
+            </div>
+          </li>
 					<?php endforeach ?>
 				</ul>
 			</div><!--testimonial-container-->
+<div class ="team-container">
+      <h2>Get to Know the team</h2>
+				<ul class ="team-list main-carousel">
+					<?php
+					$teams = CFS()->get('team_item');
+					foreach ( $teams as $team): ?>
+          <div class="carousel-picture"><img src="<?php echo CFS()->get( 'team_image' );?>" /></div>
+					<li class ="carousel-cell"><?php echo $team ['team'];?>
+          </li>
+					<?php endforeach ?>
+				</ul>
+			</div>
+
+
 <section class="thankyou">
     <h1>thank you</h1>
     <p>to our sponsors and volunteers - you make our programs possible.</p>

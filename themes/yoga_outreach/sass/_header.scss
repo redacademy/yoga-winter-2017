@@ -9,7 +9,7 @@ p{
     align-items: center;
     @include desktop{
       position:absolute;
-      display: block;
+      display: flex;
     }
     a{
       color: $lighttext_color;
@@ -21,29 +21,24 @@ p{
       color: #9FABB7;
       font-size: 2.3rem;
       padding: 1rem;
-      order:1;
+      order:3;
       @include desktop{
         display: none;
       }
     }
+    .responsive-menu{
+
+    }
     .menu-main-menu-container{
       @include desktop{
-        position: absolute;
-        top: 150px;
+        order:2;
+        // position: absolute;
+        // top: 150px;
         // left: 5%;
       } 
       #menu-item-73{
         @include desktop{
-          bottom: 100px;
-          left: 80%;
-          a{
-            color:$lighttext_color;
-            width: 150px;
-            height: 45px;
-            background-color: #B6EAFF;
-            border-radius: 8px;
-            padding-top: 10px;
-          }
+          display:none;
         }
       }
       a{
@@ -60,7 +55,7 @@ p{
       height: 500px;
       background-color: #F6FCFF;
       z-index: 2;
-      order:3;
+      order:2;
       ul{
         display:block;
         display: flex;
@@ -90,6 +85,6 @@ p{
     .logo-image{
       width: 90px;
       padding: 0.5rem 0.8rem;
-      order: 2;
+      order: 1;
     }   
 }

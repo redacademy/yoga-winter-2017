@@ -237,38 +237,113 @@
       }
     }
   }
-  .testimonial-list.main-carousel{
-    background-color:white;
-  }
-  .main-carousel{
-    width: 100%;
-    padding: 30px;
-    margin: 0 auto;
-    .carousel-cell{
+  .testimonal-container{
+    .testimonial-list.main-carousel{
+      background-color:white;
+      @include desktop{
+        background-color:#CBE8EA;
+      }
+    }
+    .main-carousel{
       width: 100%;
-      height: auto;
-      p{
-        margin-top: 20px;
+      padding: 30px;
+      margin: 40px auto;
+      @include desktop{
+          height: 240px;
+          font-size: 24px;
+        }
+      .carousel-cell{
+        width: 100%;
+        height: auto;
+        @include desktop{
+          width:100%;
+        }
       }
-      h1{
-        color: $darktext_color;
+      .carousel-picture{
+        display:none;
+        @include desktop{
+        display: block;
+        width: 450px;
+        height: 450px;
+        margin-right: 10%;
+        }
+      }
+      ol{
+        display: none;
+      }
+      .flickity-prev-next-button{
+        border: none;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        top: 25%;
+      }
+      .flickity-prev-next-button.next {
+        right: 5%;
+        @include desktop{
+
+        }
+      }
+      .flickity-prev-next-button.previous {
+        left: 5%;
+        @include desktop{
+          
+        }
       }
     }
-    ol{
-      display: none;
+  }
+  .team-container{
+    .team-list.main-carousel{
+      background-color:white;
+
     }
-    .flickity-prev-next-button{
-      border: none;
-      background: none;
-      box-shadow: none;
-      padding: 0;
-      top: 25%;
-    }
-    .flickity-prev-next-button.next {
-      right: 5%;
-    }
-    .flickity-prev-next-button.previous {
-      left: 5%;
+    .main-carousel{
+      width: 100%;
+      padding: 30px;
+      margin: 0 auto;
+      @include desktop{
+          height: 500px;
+          font-size: 18px;
+        }
+      .carousel-cell{
+        width: 100%;
+        height: auto;
+        @include desktop{
+          width:100%;
+        }
+      }
+      .carousel-picture{
+        display: block;
+        width: 118px;
+        height: 118px;
+        margin: 0 auto;
+        @include desktop{
+          width: 370px;
+          height: 370px;
+        }
+      }
+      ol{
+        display: none;
+      }
+      .flickity-prev-next-button{
+        border: none;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        top: 25%;
+      }
+      .flickity-prev-next-button.next {
+        right: 5%;
+        @include desktop{
+
+        }
+      }
+      .flickity-prev-next-button.previous {
+        left: 5%;
+        @include desktop{
+          
+        }
+      }
     }
   }
   .thankyou{
