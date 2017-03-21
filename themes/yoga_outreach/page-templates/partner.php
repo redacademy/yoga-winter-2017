@@ -28,12 +28,12 @@ get_header(); ?>
                 <div class="info-dropdown custom-info-container"><h3>Apply for Partnership</h3><span>+</span></div>
                 <div class="info-field custom-info-container drop-down-info">
                     <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
-                    <div class="button-wrap"><button class="small-button white-button"><a href="" class="button">Apply Now</a></button></div>
+                    <div class="button-wrap"><button class="small-button white-button"><a href="<?php echo get_page_link(174); ?>" class="button">Apply Now</a></button></div>
                 </div>
             </section>
             <section id="perspective" class="container-two">
                 <h2 class="h2-holder">A Facility Perspective</h2>
-                <?php if(!empty(CFS()->get( 'facility_video' ))): ?><iframe width="420" height="315" src="<?php echo CFS()->get( 'facility_video' ); ?>"></iframe><?php endif; ?>
+                <?php if(!empty(CFS()->get( 'facility_video' ))): ?><span class="video-link"><?php echo CFS()->get( 'facility_video' )?></span><?php endif; ?>
                 <?php if(empty(CFS()->get( 'facility_video' ))): ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/video-placeholder.jpg" /><?php endif; ?>
             </section>
             <section id="program" class="container-one partner-facility">
@@ -55,7 +55,7 @@ get_header(); ?>
                         <?php endif; ?>
                     </ul> 
                 </div>
-                <div class="button-wrap"><button class="small-button white-button"><a href="" class="button">Apply Now</a></button></div>
+                <div class="button-wrap"><button class="small-button white-button"><a href="<?php echo get_page_link(174); ?>" class="button">Apply Now</a></button></div>
             </section>
             <section id="partners" class="container-three partner-facility">
                 <h2 class="h2-holder">Our Current Partners</h2>
@@ -69,6 +69,7 @@ get_header(); ?>
                                 <div>
                                     <li>
                                     <p><?php echo $field['current_partner']; ?></p>
+
                                     </li>
                                 </div>
                             <?php endforeach; ?>
