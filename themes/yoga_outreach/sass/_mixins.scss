@@ -51,6 +51,9 @@
 	border:none;
 	font-family:'raleway',sans-serif;
 	font-size:14px;
+	@include desktop {
+		width: 230px;
+	}
 }
 
 //basic flex display

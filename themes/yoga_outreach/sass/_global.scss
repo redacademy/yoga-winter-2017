@@ -57,6 +57,9 @@
 
 .grey-button{
 	background-color: $mainbutton_color;
+    a{
+        color: white;
+    }
 }
 
 .white-button{
@@ -65,6 +68,23 @@
 
 .dark-button{
 	background-color: $mediumtheme_color;
+    a{
+        color: white;
+    }
+}
+
+.clear-button{
+    border: 1px solid white;
+    background-color: transparent;
+    a{
+        color: white;
+    }
+    &:hover{
+        background-color: white;
+        a{
+            color: black
+        }
+    }
 }
 
 .general-button:hover{

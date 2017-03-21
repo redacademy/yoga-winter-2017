@@ -17,15 +17,23 @@
             flex-direction: column;
             @include desktop {
                 flex-wrap: wrap;
-                height: 37.5%;
+                height: 44.5%;
             }
         }
         .main-button{
             @include general-button;
+            &.clear-button{
+                border: 1px solid white;
+            }
             margin-bottom: 26px;
+            @include desktop {
+                margin-bottom: 35px;
+            }
             a{
-                color: white;
                 text-decoration: none;
+                a:visited{
+                    color: $base_color;
+                }
             }
         }
         
