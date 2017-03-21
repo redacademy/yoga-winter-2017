@@ -712,12 +712,9 @@ footer {
       font-family: raleway;
       color: white;
       text-transform: uppercase; }
-<<<<<<< HEAD
       @media (min-width: 720px) {
         footer form label {
           padding: 0 0.5rem; } }
-=======
->>>>>>> b4055e01843467c361f7acde445eefd72dba9573
     footer form .input-bar {
       font-size: 0;
       display: -ms-inline-flexbox;
