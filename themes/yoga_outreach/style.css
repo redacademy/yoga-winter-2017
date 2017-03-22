@@ -1212,9 +1212,10 @@ a:hover, a:active {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
+    @media (min-width: 720px) {
+      .main-navigation ul li:hover > ul,
+      .main-navigation ul li.focus > ul {
+        left: auto; } }
   .main-navigation li {
     float: left;
     position: relative; }
