@@ -24,6 +24,7 @@
                 @include desktop{
                     font-size:24px;
                     line-height:34px;
+                    max-width:700px;
                 }
             }
         a{
@@ -47,20 +48,55 @@
         }
     margin-top:31px;
     img{
-        height:60px;
+        height:80px;
+        width:80px;
+        z-index:2;
             @include desktop{
                 height:auto;
             }
         }
     }//for-training-section
 
-    .section-15px-padding{
-        padding:0 15px;
-    }
 
     .general-button{
         @include general-button;
         margin-bottom:29px;
     }
+
+    .training-image-bar-container{
+        position:relative;
+        margin-top:1.5rem;
+            h3{
+                position: absolute;
+                top: 0.5rem;
+                left: 6rem;
+                text-transform: uppercase;
+                width: 159px;
+                    @include desktop{
+                        font-size:26px;
+                        width:auto;
+                        top:17px;
+                    }
+            }
+    }
+
+    .training-color-bar{
+        height:35px;
+        width:250px;
+        background-color:#CBE8EA;
+        position:absolute;
+        top: 2rem;
+        z-index:-1;
+        border-radius:8px;
+            @include desktop{
+                width:320px;
+            }
+    }
+
+    .training-color-bar.grey-bar{
+        background-color:#C0DAE5;
+    }
+
+    
 
 }//Training Main Wrapper

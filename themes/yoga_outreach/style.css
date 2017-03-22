@@ -1268,7 +1268,8 @@ a:hover, a:active {
     @media (min-width: 720px) {
       .page-template-training-main .main-h3-container p {
         font-size: 24px;
-        line-height: 34px; } }
+        line-height: 34px;
+        max-width: 700px; } }
   .page-template-training-main .main-h3-container a {
     color: #000;
     font-weight: bold; }
@@ -1282,12 +1283,12 @@ a:hover, a:active {
       .page-template-training-main .for-training-section {
         padding-bottom: 20rem; } }
     .page-template-training-main .for-training-section img {
-      height: 60px; }
+      height: 80px;
+      width: 80px;
+      z-index: 2; }
       @media (min-width: 720px) {
         .page-template-training-main .for-training-section img {
           height: auto; } }
-  .page-template-training-main .section-15px-padding {
-    padding: 0 15px; }
   .page-template-training-main .general-button {
     width: 230px;
     height: 44px;
@@ -1305,6 +1306,33 @@ a:hover, a:active {
     font-family: 'raleway',sans-serif;
     font-size: 14px;
     margin-bottom: 29px; }
+  .page-template-training-main .training-image-bar-container {
+    position: relative;
+    margin-top: 1.5rem; }
+    .page-template-training-main .training-image-bar-container h3 {
+      position: absolute;
+      top: 0.5rem;
+      left: 6rem;
+      text-transform: uppercase;
+      width: 159px; }
+      @media (min-width: 720px) {
+        .page-template-training-main .training-image-bar-container h3 {
+          font-size: 26px;
+          width: auto;
+          top: 17px; } }
+  .page-template-training-main .training-color-bar {
+    height: 35px;
+    width: 250px;
+    background-color: #CBE8EA;
+    position: absolute;
+    top: 2rem;
+    z-index: -1;
+    border-radius: 8px; }
+    @media (min-width: 720px) {
+      .page-template-training-main .training-color-bar {
+        width: 320px; } }
+  .page-template-training-main .training-color-bar.grey-bar {
+    background-color: #C0DAE5; }
 
 .page-template-training .main-carousel {
   width: 107%;
@@ -1408,26 +1436,6 @@ a:hover, a:active {
   min-width: 320px;
   height: 100px;
   background-color: #EBE5D8; }
-
-.page-template-training .training-list {
-  height: auto;
-  width: 100%;
-  background-color: #95AFC9;
-  margin: 0;
-  list-style: none;
-  padding: 19px 15px; }
-
-.page-template-training .training-list-item {
-  font-weight: 500;
-  font-size: 14px; }
-  .page-template-training .training-list-item .info-field, .page-template-training .training-list-item .info-dropdown {
-    background-color: #95AFC9;
-    border-bottom: none;
-    width: 100vw;
-    padding: 0; }
-    .page-template-training .training-list-item .info-field span, .page-template-training .training-list-item .info-dropdown span {
-      color: #4a4a4a;
-      font-weight: 200; }
 
 .page-template-training .bottom-button-container {
   height: 85px;
@@ -1623,6 +1631,8 @@ a:hover, a:active {
         .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
           font-size: 18px;
           text-transform: none; } }
+  .page-template-core-training .avail-online-heading-container h3 {
+    text-transform: uppercase; }
   .page-template-core-training .core-training-text-image-container {
     width: 16rem;
     margin-bottom: 1rem; }
@@ -3000,26 +3010,6 @@ object {
   height: 100px;
   background-color: #EBE5D8; }
 
-.page-template-training .training-list {
-  height: auto;
-  width: 100%;
-  background-color: #95AFC9;
-  margin: 0;
-  list-style: none;
-  padding: 19px 15px; }
-
-.page-template-training .training-list-item {
-  font-weight: 500;
-  font-size: 14px; }
-  .page-template-training .training-list-item .info-field, .page-template-training .training-list-item .info-dropdown {
-    background-color: #95AFC9;
-    border-bottom: none;
-    width: 100vw;
-    padding: 0; }
-    .page-template-training .training-list-item .info-field span, .page-template-training .training-list-item .info-dropdown span {
-      color: #4a4a4a;
-      font-weight: 200; }
-
 .page-template-training .bottom-button-container {
   height: 85px;
   width: 100%;
@@ -3214,6 +3204,8 @@ object {
         .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
           font-size: 18px;
           text-transform: none; } }
+  .page-template-core-training .avail-online-heading-container h3 {
+    text-transform: uppercase; }
   .page-template-core-training .core-training-text-image-container {
     width: 16rem;
     margin-bottom: 1rem; }
