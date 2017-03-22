@@ -1895,9 +1895,6 @@ a:hover, a:active {
 .page-template-resources-media .info-dropdown {
   padding: 0; }
 
-.page-template-resources-media .media-article-section {
-  background-color: #f4f1ea; }
-
 .page-template-resources-media .media-article-list, .page-template-resources-media .media-video-list, .page-template-resources-media .press-article-list {
   padding: 0;
   margin: 0;
@@ -1928,26 +1925,38 @@ a:hover, a:active {
     margin-bottom: 25px; }
 
 .page-template-resources-media .media-article-section {
-  z-index: -2; }
+  z-index: -2;
+  background-color: #f4f1ea; }
+  @media (min-width: 720px) {
+    .page-template-resources-media .media-article-section {
+      padding-top: 2rem; } }
 
 @media (min-width: 720px) {
   .page-template-resources-media .media-date {
     position: relative;
     font-size: 20px;
     margin-top: 1rem;
-    z-index: 10; } }
+    z-index: 10;
+    padding-bottom: 1rem; } }
 
 @media (min-width: 720px) {
-  .page-template-resources-media .media-color-blue {
+  .page-template-resources-media .media-color {
     height: 20px;
     position: absolute;
-    background-color: #CBE8EA;
     top: -6%;
     border-radius: 8px;
     height: 35px;
     width: 305.17px;
     z-index: -1;
     left: -4rem; } }
+
+@media (min-width: 720px) {
+  .page-template-resources-media .media-blue {
+    background-color: #CBE8EA; } }
+
+@media (min-width: 720px) {
+  .page-template-resources-media .media-purple {
+    background-color: #CFDCEB; } }
 
 .page-template-resources-media .read-more, .page-template-resources-media .read-less {
   font-size: 10px; }
@@ -1959,7 +1968,8 @@ a:hover, a:active {
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: start;
-        align-items: flex-start; } }
+        align-items: flex-start;
+    margin-bottom: 2.5rem; } }
 
 .page-template-resources-media .research-paper-para {
   display: none; }
