@@ -351,9 +351,9 @@
         }
       }
       .flickity-prev-next-button.previous {
-        left: 20%;
+        left: 5%;
         @include desktop{
-          
+          left:20%;
         }
       }
     }
