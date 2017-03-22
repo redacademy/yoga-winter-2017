@@ -37,10 +37,6 @@
               <?php show_easylogo(); ?>
             </div>
 					</div>
-				</nav><!-- #site-navigation -->
-					<div class="logo-image"><?php show_easylogo(); ?></div>
-					
-          </div>
           <div class="signin-section">
           <button class="signin-button"><a href="">sign in</a></button>
           </div>
