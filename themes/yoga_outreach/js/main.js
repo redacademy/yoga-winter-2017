@@ -18,6 +18,7 @@
         }
     });
 
+    // Smooth Scroll between sections on a page
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
@@ -25,8 +26,7 @@
         }, 500);
     });
 
-
-
+    // Changes radio buttons on forms
     $( '.gfield_radio li label' ).prepend( '<span></span>');
 })(jQuery); 
 
