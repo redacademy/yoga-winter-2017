@@ -1,4 +1,6 @@
 .home{
+  max-width: 1240px;
+  margin: 0 auto;
   text-align: center;
   font-family: raleway;
   font-weight: lighter;
@@ -237,14 +239,7 @@
       }
     }
   }
-  .testimonial-list.main-carousel{
-    background-color:$base_color;
-  }
-  .main-carousel{
-    width: 100%;
-    padding: 30px;
-    margin: 0 auto;
-    .carousel-cell{
+
   .testimonal-container{
     .testimonial-list.main-carousel{
       background-color:white;
@@ -384,3 +379,4 @@
     }
   }  
 }
+
