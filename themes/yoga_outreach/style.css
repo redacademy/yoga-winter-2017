@@ -1041,7 +1041,28 @@ footer {
 
 .page-template-about-us {
   text-align: center;
-  color: #4a4a4a; }
+  color: #6b747d; }
+  .page-template-about-us .general-button-container {
+    height: 130px;
+    bottom: 17px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center; }
+    .page-template-about-us .general-button-container .main-button {
+      height: 44px;
+      width: 230px;
+      border-radius: 8px;
+      padding: 14px 30px;
+      font-size: 0.8rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      background-color: #94bfd1; }
   .page-template-about-us .subtext {
     font-size: 0.8rem;
     line-height: 24px;
@@ -1074,7 +1095,7 @@ footer {
     color: #6b747d;
     font-weight: 100;
     text-align: left;
-    padding: 0; }
+    padding: 0 0 30px 0; }
     .page-template-about-us .info-field p {
       padding: 0 15px; }
   .page-template-about-us .article {
