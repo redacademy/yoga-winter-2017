@@ -20,12 +20,12 @@ get_header(); ?>
                                 <li>
                                     <h2 class="opps-header"><?php echo $field['opportunity_name']; ?></h2>
                                     <div class="opps-info">
-                                        <p><?php echo $field['opportunity_date']; ?></p>
-                                        <p><?php echo $field['opportunity_time']; ?></p>
-                                        <p><?php echo $field['volunteer_position']; ?></p>
-                                        <p><?php echo $field['opportunity_description']; ?></p>
+                                        <p> Date: <?php echo $field['opportunity_date']; ?></p>
+                                        <p>Time: <?php echo $field['opportunity_time']; ?></p>
+                                        <p>Position: <?php echo $field['volunteer_position']; ?></p>
+                                        <p>Description: <?php echo $field['opportunity_description']; ?></p>
                                     </div>
-                                    <a href="<?php echo get_page_link(176); ?>" class="small-button white-button">Apply Now</a>
+                                    <button class="small-button white-button"><a href="<?php echo get_page_link(176); ?>" class="button">Apply Now</a></button>
                                 </li>
                             <?php endforeach; ?>
                         <?php endif; ?>

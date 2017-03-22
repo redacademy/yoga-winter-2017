@@ -13,17 +13,82 @@
             margin: 0 auto;
             width: 480px;
         }
-        li{
-            position: relative;
-            height: 500px;
-            width: 70%;
-            .opps-header{
-                position: absolute;
+        ul{
+            list-style: none;
+            padding: 0;
+            padding-top: 5%;
+            margin: 0 auto;
+            li{
+                position: relative;
+                height: 500px;
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                @include desktop {
+                    height: 500px;
+                    width: 70%;
+                }
+                .opps-header{
+                    position: absolute;
+                    background-color: $another_color;
+                    width: 85%;
+                    height: 15%;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    @include desktop {
+                        height: 20%;
+                        width: 50%;
+                    }
+                }
+                &:nth-child(odd){
+                    .opps-info{
+                        background-color: rgba(149, 175, 201, 0.57);
+                    }
+                }
+                &:nth-child(even){
+                    .opps-info{
+                        background-color: rgba(148, 191, 209, 0.57);
+                    }
+                }
+                .opps-info{
+                    position: absolute;
+                    z-index: -1;
+                    height: 80%;
+                    width: 100%;
+                    top: 5%;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    p{
+                        width: 85%;
+                        text-transform: uppercase;
+                        font-size: 1.1rem;
+                        @include desktop {
+                            width: 70%;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+                .small-button{
+                    position: absolute;
+                    bottom: 20%;
+                    @include desktop {
+                        bottom: 25%;
+                    }
+                    @include small-button;
+                    margin: 0 auto;
+                    a{
+                        color: $lighttext_color;
+                        text-decoration: none;
+                    }
+                }
             }
-            .opps-info{
-                position: absolute;
-            }
-
         }
     }
 }

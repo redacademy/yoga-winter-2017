@@ -3281,11 +3281,91 @@ http://flickity.metafizzy.co
   .page-template-current-ops .site-main h1 {
     margin: 0 auto;
     width: 480px; }
-  .page-template-current-ops .site-main li {
-    position: relative;
-    height: 500px;
-    width: 70%; }
-    .page-template-current-ops .site-main li .opps-header {
-      position: absolute; }
-    .page-template-current-ops .site-main li .opps-info {
-      position: absolute; }
+  .page-template-current-ops .site-main ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 5%;
+    margin: 0 auto; }
+    .page-template-current-ops .site-main ul li {
+      position: relative;
+      height: 500px;
+      width: 100%;
+      margin: 0 auto;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      @media (min-width: 720px) {
+        .page-template-current-ops .site-main ul li {
+          height: 500px;
+          width: 70%; } }
+      .page-template-current-ops .site-main ul li .opps-header {
+        position: absolute;
+        background-color: #ebe5d8;
+        width: 85%;
+        height: 15%;
+        border-radius: 8px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        text-align: center; }
+        @media (min-width: 720px) {
+          .page-template-current-ops .site-main ul li .opps-header {
+            height: 20%;
+            width: 50%; } }
+      .page-template-current-ops .site-main ul li:nth-child(odd) .opps-info {
+        background-color: rgba(149, 175, 201, 0.57); }
+      .page-template-current-ops .site-main ul li:nth-child(even) .opps-info {
+        background-color: rgba(148, 191, 209, 0.57); }
+      .page-template-current-ops .site-main ul li .opps-info {
+        position: absolute;
+        z-index: -1;
+        height: 80%;
+        width: 100%;
+        top: 5%;
+        border-radius: 8px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        .page-template-current-ops .site-main ul li .opps-info p {
+          width: 85%;
+          text-transform: uppercase;
+          font-size: 1.1rem; }
+          @media (min-width: 720px) {
+            .page-template-current-ops .site-main ul li .opps-info p {
+              width: 70%;
+              font-size: 1.2rem; } }
+      .page-template-current-ops .site-main ul li .small-button {
+        position: absolute;
+        bottom: 20%;
+        width: 173px;
+        height: 44px;
+        display: block;
+        margin: 0 auto;
+        font-size: 14px;
+        text-transform: uppercase;
+        box-shadow: none;
+        text-shadow: none;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        font-family: 'raleway',sans-serif;
+        font-size: 14px;
+        margin: 0 auto; }
+        @media (min-width: 720px) {
+          .page-template-current-ops .site-main ul li .small-button {
+            bottom: 25%; } }
+        @media (min-width: 720px) {
+          .page-template-current-ops .site-main ul li .small-button {
+            width: 230px; } }
+        .page-template-current-ops .site-main ul li .small-button a {
+          color: #6b747d;
+          text-decoration: none; }
