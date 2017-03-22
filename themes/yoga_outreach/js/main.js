@@ -6,7 +6,8 @@
         $('.menu-main-menu-container').toggleClass('submenu');
         $('.menu-main-menu-container').show();
     });
-
+    
+    // Drop down category
     $('.info-dropdown').click(function () {
         if ($(this).next('.info-field').is(':hidden')) {
             $(this).next('.info-field').slideDown('normal');
@@ -17,6 +18,7 @@
         }
     });
 
+    // Smooth Scroll between sections on a page
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
@@ -24,8 +26,7 @@
         }, 500);
     });
 
-
-
+    // Changes radio buttons on forms
     $( '.gfield_radio li label' ).prepend( '<span></span>');
 })(jQuery); 
 

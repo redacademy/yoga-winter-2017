@@ -473,7 +473,6 @@ button {
       font-size: 1.5rem; }
   .page-template-who-we-are .info-field {
     height: 100%;
-    position: relative;
     background-color: transparent;
     display: -ms-flexbox;
     display: flex;
@@ -481,25 +480,33 @@ button {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center; }
-    .page-template-who-we-are .info-field .staffphoto {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 15px; }
-    .page-template-who-we-are .info-field a {
-      color: #4a4a4a;
-      font-size: 1.2rem;
-      text-decoration: none; }
-    .page-template-who-we-are .info-field .accent-name-shape {
-      height: 25px;
-      width: 250px;
-      border-radius: 8px;
-      background-color: #CBE8EA;
-      position: absolute;
-      right: 87px;
-      bottom: 8px;
-      z-index: -1; }
+    .page-template-who-we-are .info-field .member-contain {
+      margin-bottom: 40px;
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .page-template-who-we-are .info-field .member-contain .staffphoto {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 15px; }
+      .page-template-who-we-are .info-field .member-contain a {
+        color: #4a4a4a;
+        font-size: 1.2rem;
+        text-decoration: none; }
+      .page-template-who-we-are .info-field .member-contain .accent-name-shape {
+        height: 25px;
+        width: 250px;
+        border-radius: 8px;
+        background-color: #CBE8EA;
+        position: absolute;
+        right: 87px;
+        bottom: -10px;
+        left: -100px;
+        z-index: -1; }
 
 .info-dropdown {
   height: 60px;
@@ -933,6 +940,11 @@ footer {
 /* Custom */
 .page-template-forms-template .entry-header {
   display: none; }
+
+@media (min-width: 720px) {
+  .page-template-forms-template .app-form ul.gfield_radio {
+    display: -ms-flexbox;
+    display: flex; } }
 
 .page-template-forms-template .app-form .gform_heading {
   max-width: 1020px;
@@ -2007,6 +2019,16 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-template-archive-events .general-button-container {
+  height: 130px;
+  bottom: 17px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
 .page-template-archive-events button {
   width: 230px;
   height: 44px;
@@ -2037,14 +2059,17 @@ object {
   .page-template-archive-events .container .body-info, .page-template-archive-events .container2 .body-info {
     background-color: #f4f1ea;
     padding: 17px 15px;
-    position: relative; }
+    position: relative;
+    z-index: -2; }
     .page-template-archive-events .container .body-info .title-contain, .page-template-archive-events .container2 .body-info .title-contain {
       position: relative;
       margin-bottom: 35px; }
     .page-template-archive-events .container .body-info h3, .page-template-archive-events .container2 .body-info h3 {
       font-size: 1.5rem;
+      font-weight: 300;
       text-transform: uppercase;
-      border-bottom: 1px solid #6b747d; }
+      border-bottom: 1px solid #6b747d;
+      z-index: 1; }
     .page-template-archive-events .container .body-info .accent-name-shape, .page-template-archive-events .container2 .body-info .accent-name-shape {
       width: 157px;
       height: 27px;
@@ -2054,14 +2079,18 @@ object {
       bottom: -9px;
       z-index: -1; }
     .page-template-archive-events .container .body-info .img-contain, .page-template-archive-events .container2 .body-info .img-contain {
-      height: 161px;
-      margin-bottom: 47px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
           justify-content: center; }
+    .page-template-archive-events .container .body-info .event-img, .page-template-archive-events .container2 .body-info .event-img {
+      height: 161px;
+      width: 161px;
+      border-radius: 50%;
+      margin-bottom: 47px;
+      object-fit: cover; }
   .page-template-archive-events .container table, .page-template-archive-events .container2 table {
-    height: 100%;
+    height: 90px;
     border: 1px solid black;
     background-color: #fff; }
     .page-template-archive-events .container table h4, .page-template-archive-events .container2 table h4 {
@@ -2070,9 +2099,13 @@ object {
       padding-left: 5px; }
     .page-template-archive-events .container table p, .page-template-archive-events .container2 table p {
       font-size: 0.6rem; }
+  .page-template-archive-events .container article p, .page-template-archive-events .container2 article p {
+    font-size: 0.9rem; }
 
 .page-template-archive-events .container2 .body-info {
   background-color: #F2FBFF; }
+  .page-template-archive-events .container2 .body-info .accent-name-shape {
+    background-color: #6cfffe; }
 
 .page-template-archive-events .booking-button {
   height: 85px;
@@ -2090,6 +2123,35 @@ object {
     border-radius: 8px;
     font-size: 0.9rem;
     color: #4a4a4a; }
+
+.page-template-archive-events .info-dropdown h3 {
+  font-size: 0.9rem; }
+
+.page-template-archive-events .info-field .facilitator {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 25px;
+  position: relative; }
+  .page-template-archive-events .info-field .facilitator img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1; }
+  .page-template-archive-events .info-field .facilitator p {
+    margin: 40px 0 0 10px;
+    font-size: 1.3rem;
+    color: #4a4a4a;
+    z-index: 1; }
+  .page-template-archive-events .info-field .facilitator .accent-name-shape {
+    width: 271px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #CBE8EA;
+    position: absolute;
+    left: -40px;
+    bottom: 8px; }
 
 .page-template-volunteer .site-main, .page-template-support .site-main, .page-template-partner .site-main {
   display: -ms-flexbox;
@@ -3217,3 +3279,103 @@ http://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1; }
+
+/*--------------------------------------------------------------
+# Current Ops
+--------------------------------------------------------------*/
+.page-template-current-ops .site-main {
+  padding-top: 20%;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto; }
+  .page-template-current-ops .site-main h1 {
+    margin: 0 auto;
+    width: 480px; }
+  .page-template-current-ops .site-main ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 5%;
+    margin: 0 auto; }
+    .page-template-current-ops .site-main ul li {
+      position: relative;
+      height: 500px;
+      width: 100%;
+      margin: 0 auto;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      @media (min-width: 720px) {
+        .page-template-current-ops .site-main ul li {
+          height: 500px;
+          width: 70%; } }
+      .page-template-current-ops .site-main ul li .opps-header {
+        position: absolute;
+        background-color: #ebe5d8;
+        width: 85%;
+        height: 15%;
+        border-radius: 8px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        text-align: center; }
+        @media (min-width: 720px) {
+          .page-template-current-ops .site-main ul li .opps-header {
+            height: 20%;
+            width: 50%; } }
+      .page-template-current-ops .site-main ul li:nth-child(odd) .opps-info {
+        background-color: rgba(149, 175, 201, 0.57); }
+      .page-template-current-ops .site-main ul li:nth-child(even) .opps-info {
+        background-color: rgba(148, 191, 209, 0.57); }
+      .page-template-current-ops .site-main ul li .opps-info {
+        position: absolute;
+        z-index: -1;
+        height: 80%;
+        width: 100%;
+        top: 5%;
+        border-radius: 8px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        .page-template-current-ops .site-main ul li .opps-info p {
+          width: 85%;
+          text-transform: uppercase;
+          font-size: 1.1rem; }
+          @media (min-width: 720px) {
+            .page-template-current-ops .site-main ul li .opps-info p {
+              width: 70%;
+              font-size: 1.2rem; } }
+      .page-template-current-ops .site-main ul li .small-button {
+        position: absolute;
+        bottom: 20%;
+        width: 173px;
+        height: 44px;
+        display: block;
+        margin: 0 auto;
+        font-size: 14px;
+        text-transform: uppercase;
+        box-shadow: none;
+        text-shadow: none;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        font-family: 'raleway',sans-serif;
+        font-size: 14px;
+        margin: 0 auto; }
+        @media (min-width: 720px) {
+          .page-template-current-ops .site-main ul li .small-button {
+            bottom: 25%; } }
+        @media (min-width: 720px) {
+          .page-template-current-ops .site-main ul li .small-button {
+            width: 230px; } }
+        .page-template-current-ops .site-main ul li .small-button a {
+          color: #6b747d;
+          text-decoration: none; }
