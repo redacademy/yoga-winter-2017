@@ -481,12 +481,15 @@ button {
     -ms-flex-align: center;
         align-items: center; }
     .page-template-who-we-are .info-field .member-contain {
+      width: 100%;
       margin-bottom: 40px;
       position: relative;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; }
       .page-template-who-we-are .info-field .member-contain .staffphoto {
         width: 160px;
         height: 160px;
@@ -933,6 +936,9 @@ footer {
   .page-template-contact-us .info-field p {
     font-size: 0.9rem;
     font-weight: lighter; }
+
+.page-template-about-us {
+  background-color: lightgrey; }
 
 /*--------------------------------------------------------------
 # Forms
