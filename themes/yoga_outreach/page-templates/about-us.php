@@ -20,8 +20,8 @@ get_header(); ?>
                     wp_reset_query(); //resetting the page query
                     ?>
 				<div class="general-button-container">
-					<button class="general-button grey-button"><a href="#whoweare" class="button">who we are</a></button>
-					<button class="general-button teal-button"><a href="#contactus">contact us</a></button>
+					<a href="<?php echo get_page_link(69); ?>"class="button main-button">who we are</a>
+					<a href="<?php echo get_page_link(67); ?>"class="button main-button">contact us</a>
 				</div>
 			</header><!--general-template-section-->
 
