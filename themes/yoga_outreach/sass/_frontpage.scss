@@ -56,7 +56,7 @@
     .aboutus-button{
       width: 230px;
       height: 44px;
-      background-color: #94BFD1;
+      background-color: $accentcolor_bar;
       box-shadow:none;
       border:none;
       margin-top: 80px;
@@ -95,7 +95,7 @@
         position: absolute;
         width: 200px;
         height: 30px;
-        background-color:#96C2D4;
+        background-color:$accentcolor_bar;
         opacity: 0.4;
         left: 10%;
         bottom: 2%;
@@ -143,7 +143,7 @@
         position: absolute;
         width: 100%;
         height: 123px;
-        background-color: #F3F0E9;
+        background-color: $accentcolor_box;
         z-index: -1;
         bottom: 27px;
         @include desktop{
@@ -158,7 +158,7 @@
         position: absolute;
         width: 100%;
         height: 123px;
-        background-color: #F3F0E9;
+        background-color: $accentcolor_box;
         z-index: -1;
         bottom: 27px;
         @include desktop{
@@ -172,7 +172,7 @@
         position: absolute;
         width: 100%;
         height: 123px;
-        background-color: #F3F0E9;
+        background-color: $accentcolor_box;
         z-index: -1;
         bottom: 27px;
         @include desktop{
@@ -183,7 +183,7 @@
         position: absolute;
         width: 6px;
         height: 380px;
-        background-color:#AEC5DE;
+        background-color:$accentcolor_line;
         bottom: 100px;
         right: 30px;
         z-index:-1;
@@ -228,8 +228,8 @@
       position: absolute;
       width: 100%;
       height: 23px;
-      background-color:#E2D9C6;
-      opacity: 0.7;
+      background-color:$accentcolor_box;
+      opacity: 0.9;
       bottom: 15%;
       z-index: -1;
       @include desktop{
@@ -237,6 +237,14 @@
       }
     }
   }
+  .testimonial-list.main-carousel{
+    background-color:$base_color;
+  }
+  .main-carousel{
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    .carousel-cell{
   .testimonal-container{
     .testimonial-list.main-carousel{
       background-color:white;
@@ -254,18 +262,21 @@
         }
       .carousel-cell{
         width: 100%;
+        padding: 0 10%;
         height: auto;
         @include desktop{
           width:100%;
+          padding: 0 8%;
         }
+      }
+      img{
+        border-radius: 50%;
       }
       .carousel-picture{
         display:none;
         @include desktop{
         display: block;
         width: 450px;
-        height: 450px;
-        margin-right: 10%;
         }
       }
       ol{
@@ -276,7 +287,6 @@
         background: none;
         box-shadow: none;
         padding: 0;
-        top: 25%;
       }
       .flickity-prev-next-button.next {
         right: 5%;
@@ -293,6 +303,7 @@
     }
   }
   .team-container{
+    
     .team-list.main-carousel{
       background-color:white;
 
@@ -322,6 +333,9 @@
           height: 370px;
         }
       }
+      li{
+        list-style:none;
+      }
       ol{
         display: none;
       }
@@ -330,7 +344,7 @@
         background: none;
         box-shadow: none;
         padding: 0;
-        top: 25%;
+        top: 40%;
       }
       .flickity-prev-next-button.next {
         right: 5%;
@@ -348,8 +362,9 @@
   }
   .thankyou{
     height: 230px;
-    background-color: #B7C8DA;
-    color: #4A4A4A;
+    background-color: $logo_color;
+    opacity: 0.8;
+    color: $darktheme_color;
     h1{
       padding: 30px 0 0 0;
       @include desktop{

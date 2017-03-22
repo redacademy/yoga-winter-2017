@@ -15,7 +15,6 @@
 
 	<?php wp_head(); ?>
 	</head>
-
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
@@ -30,13 +29,18 @@
 					<span class="responsive-menu">
 				    <i class="fa fa-bars" aria-hidden="true"></i>
 		    	</span>
-          
+           
           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
 				
           <div id="header-logo">
-					<div class="logo-image"><?php show_easylogo(); ?></div>
+            <div class="logo-image">
+              <?php show_easylogo(); ?>
+            </div>
 					</div>
-				</nav><!-- #site-navigation -->
+          <div class="signin-section">
+          <button class="signin-button"><a href="">sign in</a></button>
+          </div>
+        </nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
