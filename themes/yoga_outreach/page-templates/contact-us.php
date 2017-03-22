@@ -19,7 +19,7 @@ get_header(); ?>
             <section class="email-inquiries">
                 <h2>Email Inquiries</h2>
                 <p>For staff directory, visit:</p>
-                <a href="<?php echo get_permalink() ?>">who we are</a>
+                <a href="<?php echo get_page_link(69); ?>"class="button main-button">who we are</a>
 
                 <?php $fields= CFS()->get( 'emails' ); ?>  <!--variable to hold email from loop-->    
 

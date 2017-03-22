@@ -1,4 +1,6 @@
 (function ($) {
+    var $window = $(window);
+    var $infoField = $('.info-field');
 
     //dropdown submenu on clicking hamburger icon
     $('.fa-bars').on('click', function (event) {
@@ -24,6 +26,21 @@
         }
     });
 
+
+    function resize() {
+        if ($window.width() > 720) {
+            $infoField.removeClass('info-field');
+            $infoField.css('display','block');
+            
+
+    } else {
+            $infoField.addClass('info-field');
+            $infoField.css('display','none');
+        }
+    }
+    $window.resize(resize).trigger('resize');
+
+
     // Smooth Scroll between sections on a page
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
@@ -36,18 +53,5 @@
     $( '.gfield_radio li label' ).prepend( '<span></span>');
 })(jQuery); 
 
-(function ($) {
-    var $window = $(window),
-        $infoField = $('.info-field');
-    function resize() {
-        if ($window.width() > 720) {
-            return $infoField.removeClass('info-field');
-        } else {
-            return $infoField.addClass('info-field');
-        }
-    }
-    $window
-        .resize(resize)
-        .trigger('resize');
-})(jQuery);
 
+    

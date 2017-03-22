@@ -1,0 +1,112 @@
+.page-template-about-us {
+    text-align: center;
+    color: $lighttext_color;
+
+    .general-button-container {
+        height: 130px;
+        bottom: 17px;
+        
+        @include flex-column;
+        justify-content: space-around;
+        align-items: center;
+
+        .main-button {
+            height: 44px;
+            width: 230px;
+            border-radius: 8px;
+            padding: 14px 30px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            background-color: $accentcolor_bar;
+        }
+    }
+
+    .subtext {
+        h2 {
+            font-size: 1.4rem;
+            padding-bottom: 22px;
+        }
+        font-size: 0.8rem;
+        line-height: 24px;
+        margin: 40px 23px;
+    }
+
+    .mid-sub-text {
+        position: relative;
+        .accent-name-shape{
+            width: 200px;
+            height: 25px;
+            border-radius: 8px;
+            background-color: $accentcolor_bar2;
+            position: absolute;
+            bottom: 50px;
+            left: 35px;
+            z-index: -1
+        }
+    }
+    .bottom-sub-text {
+        background-color: $accentcolor_bar2;
+        padding: 23px;
+        p {
+            line-height: 16px;
+            font-size: 0.7rem;
+            margin: 0
+        }
+    }
+
+    .info-dropdown {
+        height: 100%;
+        text-align: left;
+    }
+
+    .info-field {
+        color: $lighttext_color;
+        font-weight: 100;
+        text-align: left;
+        padding: 0;
+
+        ul {
+            margin: 0 0 .5rem 1rem;
+        }
+
+        li {
+            padding: 5px 0;
+            font-weight: 100;
+        }
+
+        p {
+            padding: 15px;
+        }
+    }
+
+    .article {
+        text-align: center;
+        padding: 30px 0px;
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 100;
+            padding: 0 50px 10px;
+        }
+
+        .imgcontain {
+            overflow: hidden;
+            height: 245px;
+            width: 100%;
+            margin-bottom: 30px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        p {
+            padding-bottom: 20px;
+        }
+    }
+    .article:nth-child(even) {
+        background-color: $base_color;
+    }
+}
