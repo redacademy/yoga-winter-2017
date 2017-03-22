@@ -100,7 +100,7 @@ function modules() {
 		'label'                 => 'Training Module',
 		'description'           => 'Training Modules',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', ),
+		'supports'              => array( 'title', 'comments', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
