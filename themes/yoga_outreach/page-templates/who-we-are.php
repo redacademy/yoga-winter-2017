@@ -42,9 +42,11 @@ get_header(); ?>
                             <?php if(!empty($field['staff_member'])): ?>
                                 <?php foreach( $field['staff_member'] as $member): ?>
                                     <?php echo CFS()->get( 'staff_photo','staff_name' ) ?>
-                                    <img src="<?php echo $member['staff_photo']; ?>" alt="staff photo" class="staffphoto">
-                                    <a href=""><?php echo $member['staff_name'] ?></a>
-                                    <div class="accent-name-shape"></div>
+                                    <div class="member-contain">
+                                        <img src="<?php echo $member['staff_photo']; ?>" alt="staff photo" class="staffphoto">
+                                        <a href=""><?php echo $member['staff_name'] ?></a>
+                                        <div class="accent-name-shape"></div>
+                                    </div>
                                 <?php endforeach; ?>
                             <?php endif; ?>
                         </div>
