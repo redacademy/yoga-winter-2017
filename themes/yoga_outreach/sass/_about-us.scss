@@ -10,7 +10,7 @@
         justify-content: space-around;
         align-items: center;
 
-        .main-button {
+        .main-button {  // Style for a href buttons
             height: 44px;
             width: 230px;
             border-radius: 8px;
@@ -49,6 +49,7 @@
     .bottom-sub-text {
         background-color: $accentcolor_bar2;
         padding: 23px;
+
         p {
             line-height: 16px;
             font-size: 0.7rem;
@@ -69,11 +70,11 @@
 
         ul {
             margin: 0 0 .5rem 1rem;
-        }
 
-        li {
-            padding: 5px 0;
-            font-weight: 100;
+            li {
+                padding: 5px 0;
+                font-weight: 100;
+            }
         }
 
         p {
