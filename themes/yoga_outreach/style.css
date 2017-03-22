@@ -661,7 +661,10 @@ p {
     height: 350px;
     margin-top: 40px;
     background-color: #F6FCFF;
-    border-radius: 8px; }
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    right: 130px; }
     #site-navigation .popup .form-signin {
       padding: 40px 28px 45px;
       margin: 0 auto; }
