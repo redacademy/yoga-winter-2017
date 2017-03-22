@@ -94,6 +94,8 @@ function red_starter_scripts() {
 
 	wp_enqueue_script( 'yoga-outreach-slider', get_template_directory_uri() . '/build/js/donation-slider.min.js', array('jquery'), '20130115', true );
 
+	wp_enqueue_script( 'yoga-outreach-training-modules', get_template_directory_uri() . '/build/js/training-modules.min.js', array('jquery'), '20130115', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
