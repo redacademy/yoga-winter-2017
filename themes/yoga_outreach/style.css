@@ -618,6 +618,9 @@ button {
     .general-template-section {
       height: 642px; } }
 
+.black-text {
+  color: black; }
+
 .general-button-container {
   position: absolute;
   width: 100%;
@@ -632,6 +635,10 @@ button {
   @media (min-width: 720px) {
     .section-15px-padding {
       padding: 0 7%; } }
+
+.show-content {
+  display: block;
+  background-color: red; }
 
 p {
   margin-bottom: 0;

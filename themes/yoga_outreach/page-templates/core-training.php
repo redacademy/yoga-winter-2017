@@ -19,7 +19,7 @@ get_header(); ?>
                     wp_reset_query(); //resetting the page query
                     ?>
 					<div class ="general-button-container">
-						<button class = "general-button teal-button">Core Training</button>
+						<button class = "general-button teal-button black-text">Core Training</button>
 						<button class = "general-button grey-button">For Facilities</button>
 					</div><!--general-button-container-->
 				</header><!--general-template-section core-hero-->

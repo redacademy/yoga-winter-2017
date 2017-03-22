@@ -131,6 +131,10 @@
         }
 	}
 
+.black-text{
+    color:black;
+}
+
 .general-button-container{
 	position: absolute;
 	width:100%;
@@ -146,3 +150,8 @@
             padding: 0 7%;
         }
     }
+
+.show-content{
+    display:block;
+    background-color:red;
+}
