@@ -82,7 +82,7 @@ get_header(); ?>
 					<table class ="dates-table">
 						<?php $classroomDates = CFS()->get('classroom_dates_container');?>
 						<?php foreach ($classroomDates as $classroomDate):?>
-							<tr>
+							<tr class ="classroom-tr">
 								<td class ="training-table-data">
 									<p class ="table-heading">Date</p>
 									<p class ="table-content"><?php echo $classroomDate ['date'];?></p>

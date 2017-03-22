@@ -1517,7 +1517,12 @@ a:hover, a:active {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around; } }
+        justify-content: space-around;
+    margin-top: 3rem; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .book-training {
+    margin-right: 0; } }
 
 @media (min-width: 720px) {
   .page-template-core-training .classroom-dates-section, .page-template-core-training .online-dates-section {
@@ -1526,6 +1531,15 @@ a:hover, a:active {
 @media (min-width: 720px) {
   .page-template-core-training .dates-table {
     max-width: 400px; } }
+
+.page-template-core-training .classroom-tr {
+  height: 140px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .page-template-core-training .general-button {
   width: 230px;
@@ -1668,7 +1682,8 @@ a:hover, a:active {
   .page-template-core-training .online-dates-section, .page-template-core-training .classroom-dates-section {
     width: 45vw;
     padding: 0;
-    max-width: 400px; } }
+    max-width: 400px;
+    border-top: 1px solid #979797; } }
 
 .page-template-core-training .table-content {
   font-size: 11px; }
@@ -3062,7 +3077,12 @@ object {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around; } }
+        justify-content: space-around;
+    margin-top: 3rem; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .book-training {
+    margin-right: 0; } }
 
 @media (min-width: 720px) {
   .page-template-core-training .classroom-dates-section, .page-template-core-training .online-dates-section {
@@ -3071,6 +3091,15 @@ object {
 @media (min-width: 720px) {
   .page-template-core-training .dates-table {
     max-width: 400px; } }
+
+.page-template-core-training .classroom-tr {
+  height: 140px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .page-template-core-training .general-button {
   width: 230px;
@@ -3213,7 +3242,8 @@ object {
   .page-template-core-training .online-dates-section, .page-template-core-training .classroom-dates-section {
     width: 45vw;
     padding: 0;
-    max-width: 400px; } }
+    max-width: 400px;
+    border-top: 1px solid #979797; } }
 
 .page-template-core-training .table-content {
   font-size: 11px; }

@@ -37,31 +37,30 @@
             }
     }
 
-  .video-list-section{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding-top:29px;
-    padding: 29px 1rem;
-        h3{
-            font-weight:300;
-            margin-bottom:10px;
-            margin-top:40px;
+    .video-list-section{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding-top:29px;
+        padding: 29px 1rem;
+            h3{
+                font-weight:300;
+                margin-bottom:10px;
+                margin-top:40px;
+                }
+            li{
+                margin-bottom:25px;
+            }
+    }
 
-        }
-        li{
-            margin-bottom:25px;
-        }
-  }
-
-  .media-article-section{
-      z-index:-2;
-      background-color: #f4f1ea;
-        @include desktop{
-            padding-top:2rem;
-        }
-  }
+    .media-article-section{
+        z-index:-2;
+        background-color: #f4f1ea;
+            @include desktop{
+                padding-top:2rem;
+            }
+    }
 
 
   .media-date{
