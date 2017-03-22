@@ -35,11 +35,13 @@ get_header(); ?>
 					</div><!--small-para-container"-->
 				</div><!--register-button-para-cotnainer-->
 				<div class ="avail-online-heading-container">
-					<img src ="<?php echo get_template_directory_uri(); ?>/images/earth_icon.svg" class = "earth-logo"alt ="earth_icon">
+					<div class ="earth-logo-change"></div>
 					<h3 class ="avail-online-h3">available online and in-classroom format!</h3>
 				</div><!--avail-online-heading-container-->
-				<p class = "light-training-para"><?php echo CFS()->get('light_training_para'); ?></p>
-				<p class = "dark-training-para"><?php echo CFS()->get('dark_training_para'); ?></p>
+				<div>
+					<p class = "light-training-para"><?php echo CFS()->get('light_training_para'); ?></p>
+					<p class = "dark-training-para"><?php echo CFS()->get('dark_training_para'); ?></p>
+				</div>
 				</section><!--section-15px-padding-->
 			<div class ="testimonal-container">
 				<ul class ="testimonial-list main-carousel">
@@ -100,12 +102,34 @@ get_header(); ?>
 					</table>
 				</section>
 			</div>
-			<ul class = "training-list">
-				<li class="training-list-item">Learning Objectives</li>
-				<li class="training-list-item">Work-study Option for up to 50% off tuition</li>
-				<li class="training-list-item">Refund Policy</li>
-				<li class="training-list-item">Register for Next Class</li>
-			</ul>
+			<ul class="training-list">
+            	<?php
+        		$infoItems = CFS()->get('yoga_info_list');
+        		foreach ( $infoItems as $infoItem ):
+                $infoPDF = $infoItem ['list_file_upload'];
+                $infoContent = $infoItem ['list_content'];
+				?>
+                <li class="training-list-item">
+					<div id = "training-pdf-container">
+						<?php if(!empty($infoPDF)): ?>
+						<h3><?php echo $infoItem ['list_title'];?></h3>
+                    	<a href ="<?php echo $infoItem ['list_file_upload'];?>">PDF</a>
+					</div><!--training-pdf-container-->
+					<?php 
+					endif; 
+					?>
+                    <?php if(!empty($infoContent)): ?>
+					<div class ="info-dropdown tools-first-heading">
+						<h3 class = "yoga-info-title"><?php echo $infoItem ['list_title']; ?></h3>
+						<span>+</span>
+					</div><!--tools-first-heading-->
+					<div class ="info-field">
+                    	<p><?php echo $infoItem ['list_content']; ?></p>
+					</div>
+					<?php endif; ?>
+                </li><!--training-list-item-->
+                <?php endforeach; ?>
+            </ul>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

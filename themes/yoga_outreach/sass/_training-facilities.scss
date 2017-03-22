@@ -112,31 +112,7 @@
 }
 
 
-		//Training Facilities List
-	.training-list{
-		height:auto;
-		width:100%;
-		background-color: #95AFC9;
-		margin:0;
-		list-style:none;
-		padding:19px 15px;
-	}
-
-	.training-list-item{
-		font-weight:500;
-		font-size:14px;
-			.info-field, .info-dropdown{
-				background-color:#95AFC9;
-				border-bottom:none;
-				width:100vw;
-				padding:0;
-					span{
-						color:$darktheme_color;
-						font-weight:200;
-					}
-
-			}
-	}
+	
 
 	.bottom-button-container{
 		height:85px;

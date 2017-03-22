@@ -26,7 +26,7 @@
         }
     });
 
-
+    // Remove infoField Class
     function resize() {
         if ($window.width() > 720) {
             $infoField.removeClass('info-field');
@@ -47,6 +47,16 @@
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
+    });
+
+
+    //Click Read More dropdown
+    $('.show-videos li:gt(2)').hide();
+    $('.read-more').click(function() {
+        $('.show-videos li:gt(2)').show('2000','swing');
+        $('.read-less').click(function(){
+            $('.show-videos li:gt(2)').hide('2000','linear');
+        })
     });
 
     // Changes radio buttons on forms
