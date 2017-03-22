@@ -26,8 +26,7 @@
         }
     });
 
-<<<<<<< HEAD
-=======
+
     function resize() {
         if ($window.width() > 720) {
             $infoField.removeClass('info-field');
@@ -42,7 +41,6 @@
     $window.resize(resize).trigger('resize');
 
 
->>>>>>> core-training
     // Smooth Scroll between sections on a page
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
