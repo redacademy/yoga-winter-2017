@@ -3,97 +3,164 @@
     .info-heading{
         font-size:16px;
         font-weight:100;
-        }
+    }
 
         
-        .info-dropdown{
-            @include desktop{
-                padding:0;
-            }
-        }
-
-
-        .teal-button.black-text{
-            color:black;
-        }
-
-        .general-button, .book-training-button{
-			@include general-button;
-            margin-bottom:29px;
-		}
-
-
-        .info-heading-subtitle{
-            color:#4A4A4A;
-        }
-        .main-h3-container{
-                h3{
-                @include main-h3;
-            }
-        }
-
-
-        .main-h3-container{
-            p{
-                font-size:14px;
-                padding-bottom:22px;
-                width:262px;
-                margin:0 auto;
-                color:#6B747D;
-                text-align:center;
-                    @include desktop{
-                        font-size:24px;
-                        width:70%;
-                    }
-            }
-        }
-
-        .list-text-container{
-            p{
-                display:inline;
-            }
-        }
-
-        .resources-article-pdf-list-container{
-            background-color:$lighttheme_color;
-            font-size:14px;
-            } 
-
-        // PDF List
-        .resource-pdf-list{
-            list-style:none;
+    .info-dropdown{
+        @include desktop{
             padding:0;
-            margin-left:0;
-            margin-top:21px;
+        }
+    }
+
+
+    .teal-button.black-text{
+        color:black;
+    }
+
+    .general-button, .book-training-button{
+		@include general-button;
+            margin-bottom:29px;
+	}
+
+
+    .info-heading-subtitle{
+        color:#4A4A4A;
+    }
+        
+    .main-h3-container{
+        h3{
+            @include main-h3;
+        }
+    }
+
+
+    .main-h3-container{
+        p{
+            font-size:14px;
+            padding-bottom:22px;
+            width:262px;
+            margin:0 auto;
+            color:#6B747D;
+            text-align:center;
                 @include desktop{
-                    margin-top:0;
-                }
-                li{
-                    display:flex;
-                        a{
-                            background-color:white;
-                            width:60px;
-                            height:33px;
-                            margin-bottom:7px;
-                            border:1px solid white;
-                            border-radius:8px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            text-decoration:none;
-                            color:black;
-                            font-size:10px;
-                                @include desktop{
-                                    width:80px;
-                                    height:44px;
-                                    margin-bottom:26px;
-                                    font-size:14px;
-                                }
-                        }
+                    font-size:24px;
+                    width:70%;
                 }
         }
+    }
 
-        .resource-link-text{
+    .list-text-container{
+        p{
+            display:inline;
+        }
+    }
+
+    .resources-article-pdf-list-container{
+        background-color:$lighttheme_color;
+        font-size:14px;
+    } 
+
+    // PDF List
+    .resource-pdf-list{
+        list-style:none;
+        padding:0;
+        margin-left:0;
+        margin-top:21px;
+            @include desktop{
+                margin-top:0;
+            }
+        li{
+            display:flex;
+        a{
+            background-color:white;
+            width:60px;
+            height:33px;
+            margin-bottom:7px;
+            border:1px solid white;
+            border-radius:8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration:none;
+            color:black;
+            font-size:10px;
+                @include desktop{
+                     width:80px;
+                     height:44px;
+                     margin-bottom:26px;
+                     font-size:14px;
+                }
+        }
+        }
+    }
+
+    .resource-link-text{
+        color:$darktheme_color;
+        font-size:14px;
+        width:14rem;
+        padding-bottom:15px;
+            @include desktop{
+                font-size:18px;
+                width:100%;
+            }
+    }
+
+    .pdf-item{
+        p{
+        margin-left:14px;
+        color:$darktext_color;
+        font-weight:300;
+        font-size:14px;
+             @include desktop{
+                font-size:18px;
+                margin-top:6px;
+            }
+        }
+    }
+
+
+//Links
+
+    .resources-links-container{
+        div{
+            display:flex;
+            justify-content:space-between;
+                button{
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    padding: 0;
+                    border: none;
+                    background: none;
+                    box-shadow: none;
+                    color: $logo_color;
+            }
+        }
+    }
+
+    .links-button-container{
+        height:50px;
+        background-color:#fff;
+    }
+
+    .link-list{
+        padding:0;
+        margin:0;
+        list-style:none;
+            li{
+                margin-bottom:7px;
+                    @include desktop{
+                        font-size:18px;
+                        line-height:30px;
+                    }
+            a{
+                color:$lighttext_color;
+                font-weight:200;
+            }
+            }
+    }
+
+    .link-list,{
+        p{
             color:$darktheme_color;
             font-size:14px;
             width:14rem;
@@ -101,75 +168,9 @@
                 @include desktop{
                     font-size:18px;
                     width:100%;
-                    }
-            }
-
-        .pdf-item{
-            p{
-                margin-left:14px;
-                color:$darktext_color;
-                font-weight:300;
-                font-size:14px;
-                    @include desktop{
-                        font-size:18px;
-                        margin-top:6px;
-                    }
-                }
-            }
-
-
-        //Links
-
-        .resources-links-container{
-                div{
-                    display:flex;
-                    justify-content:space-between;
-                        button{
-                            font-size: 2rem;
-                            font-weight: lighter;
-                            padding: 0;
-                            border: none;
-                            background: none;
-                            box-shadow: none;
-                            color: $logo_color;
-                        }
                 }
         }
-
-        .links-button-container{
-            height:50px;
-            background-color:#fff;
-        }
-
-        .link-list{
-            padding:0;
-            margin:0;
-            list-style:none;
-                li{
-                    margin-bottom:7px;
-                        @include desktop{
-                            font-size:18px;
-                            line-height:30px;
-                        }
-                        a{
-                            color:$lighttext_color;
-                            font-weight:200;
-                        }
-                }
-        }
-
-        .link-list,{
-            p{
-                color:$darktheme_color;
-                font-size:14px;
-                width:14rem;
-                padding-bottom:15px;
-                    @include desktop{
-                        font-size:18px;
-                        width:100%;
-                    }
-            }
-        }
+    }
 
 
 }//Resource Wrapper

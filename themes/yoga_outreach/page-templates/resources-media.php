@@ -33,7 +33,7 @@ get_header(); ?>
 					?>
 						<li class ="media-item">
 							<h4 class ="media-date"><?php echo $media ['date'];?>
-								<div class ="media-color-blue"></div>
+								<div class ="media-color media-blue"></div>
 							</h4>
 							<p><?php echo $media['content'];?></p>
 						</li>
@@ -53,6 +53,9 @@ get_header(); ?>
 					foreach ( $articles as $article ):
 					?>
 						<li class ="press-item">
+							<h4 class ="media-date"><?php echo $article ['date'];?>
+								<div class ="media-color media-purple"></div>
+							</h4>
 							<p><?php echo $article ['content'];?></p>
 						</li>
 					<?php endforeach ?>

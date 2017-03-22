@@ -22,9 +22,6 @@
         padding:0;
     }
 
-    .media-article-section{
-        background-color: #f4f1ea;
-    }
 
     .media-article-list, .media-video-list, .press-article-list{
         padding:0;
@@ -40,27 +37,30 @@
             }
     }
 
-  .video-list-section{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding-top:29px;
-    padding: 29px 1rem;
-        h3{
-            font-weight:300;
-            margin-bottom:10px;
-            margin-top:40px;
+    .video-list-section{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding-top:29px;
+        padding: 29px 1rem;
+            h3{
+                font-weight:300;
+                margin-bottom:10px;
+                margin-top:40px;
+                }
+            li{
+                margin-bottom:25px;
+            }
+    }
 
-        }
-        li{
-            margin-bottom:25px;
-        }
-  }
-
-  .media-article-section{
-      z-index:-2;
-  }
+    .media-article-section{
+        z-index:-2;
+        background-color: #f4f1ea;
+            @include desktop{
+                padding-top:2rem;
+            }
+    }
 
 
   .media-date{
@@ -69,15 +69,15 @@
           font-size:20px;
           margin-top:1rem;
           z-index:10;
+          padding-bottom:1rem;
 
       }
   }
 
-    .media-color-blue{
+    .media-color{
         @include desktop{
             height:20px;
             position:absolute;
-            background-color: #CBE8EA;
             top:-6%;
             border-radius: 8px;
             height: 35px;
@@ -85,6 +85,19 @@
             z-index:-1;
             left:-4rem;
             }
+    }
+
+    .media-blue{
+        @include desktop{
+            background-color: #CBE8EA;
+        }
+
+    }
+
+    .media-purple{
+        @include desktop{
+            background-color:#CFDCEB;
+        }
     }
 
   .read-more,.read-less{
@@ -97,6 +110,7 @@
           display: flex;
           flex-direction: column;
           align-items: flex-start;
+          margin-bottom:2.5rem;
       }
   }
 
@@ -109,10 +123,6 @@
             padding-bottom:36px;
         }
   }
-
-
- 
-
 
 
 }//Resources Media Wrapper
