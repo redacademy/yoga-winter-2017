@@ -52,7 +52,7 @@ get_header(); ?>
                                     <?php foreach( $items as $item ): ?>
                                         <div class="list">
                                             <ul>
-                                                <li><p><?php echo $item[ 'list_item' ]; ?></p></li>
+                                                <li><?php echo $item[ 'list_item' ]; ?></li>
                                             </ul>
                                         </div>
                                     <?php endforeach ?>

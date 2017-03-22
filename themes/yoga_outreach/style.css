@@ -508,7 +508,7 @@ button {
         position: absolute;
         right: 87px;
         bottom: -10px;
-        left: -100px;
+        left: -30px;
         z-index: -1; }
 
 .info-dropdown {
@@ -1082,7 +1082,7 @@ footer {
       left: 35px;
       z-index: -1; }
   .page-template-about-us .bottom-sub-text {
-    background-color: #94bfd1;
+    background-color: #cce8ea;
     padding: 23px; }
     .page-template-about-us .bottom-sub-text p {
       line-height: 16px;
@@ -1095,16 +1095,21 @@ footer {
     color: #6b747d;
     font-weight: 100;
     text-align: left;
-    padding: 0 0 30px 0; }
+    padding: 0; }
+    .page-template-about-us .info-field ul {
+      margin: 0 0 .5rem 1rem; }
+    .page-template-about-us .info-field li {
+      padding: 5px 0;
+      font-weight: 100; }
     .page-template-about-us .info-field p {
-      padding: 0 15px; }
+      padding: 15px; }
   .page-template-about-us .article {
     text-align: center;
-    margin: 30px 0px; }
+    padding: 30px 0px; }
     .page-template-about-us .article h2 {
       font-size: 1.6rem;
       font-weight: 100;
-      padding-bottom: 10px; }
+      padding: 0 50px 10px; }
     .page-template-about-us .article .imgcontain {
       overflow: hidden;
       height: 245px;
@@ -1114,6 +1119,8 @@ footer {
         height: 100%; }
     .page-template-about-us .article p {
       padding-bottom: 20px; }
+  .page-template-about-us .article:nth-child(even) {
+    background-color: #fff; }
 
 /*--------------------------------------------------------------
 # Forms
