@@ -6,18 +6,14 @@
     }
     
     .main-h3-container{
-            h3{
-                @include main-h3;
-            }
+        h3{
+            @include main-h3;
         }
-
-
-    .main-h3-container{
         p{
             @include main-p;
-            }
         }
-    
+    }       
+
     .info-dropdown{
         padding:0;
     }
@@ -48,7 +44,7 @@
                 font-weight:300;
                 margin-bottom:10px;
                 margin-top:40px;
-                }
+            }
             li{
                 margin-bottom:25px;
             }
@@ -70,9 +66,8 @@
           margin-top:1rem;
           z-index:10;
           padding-bottom:1rem;
-
-      }
-  }
+        }
+    }
 
     .media-color{
         @include desktop{
@@ -84,14 +79,13 @@
             width: 305.17px;
             z-index:-1;
             left:-4rem;
-            }
+        }
     }
 
     .media-blue{
         @include desktop{
             background-color: #CBE8EA;
         }
-
     }
 
     .media-purple{
@@ -100,10 +94,9 @@
         }
     }
 
-  .read-more,.read-less{
+    .read-more,.read-less{
       font-size:10px;
-  
-  }
+    }
 
   .media-heading-flex{
       @include desktop{
