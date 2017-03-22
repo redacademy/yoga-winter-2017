@@ -1,5 +1,4 @@
 .home{
-  max-width: 1240px;
   margin: 0 auto;
   text-align: center;
   font-family: raleway;
@@ -128,6 +127,7 @@
   .program-list{
     @include desktop{
       display: inline-flex;
+      max-width: $site_container;
     }
     .programlist-text{
       padding: 0 8%;
@@ -203,10 +203,12 @@
     h2{
       padding: 1rem;
     }
-    .involedWarp{
+    .involvedWrap{
       @include desktop{
         display: flex;
         justify-content: center;
+        max-width: $site_container;
+        margin: 0 auto;
       }
     }
     .involvedimage_one{
@@ -241,6 +243,7 @@
   }
 
   .testimonal-container{
+    
     .testimonial-list.main-carousel{
       background-color:white;
       @include desktop{

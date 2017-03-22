@@ -3,7 +3,6 @@ footer{
   flex-wrap: wrap;
   justify-content: center;
   text-transform: uppercase;
-  max-width: 1240px;
   margin: 0 auto;
   form {
     width: 100%;
@@ -68,10 +67,12 @@ footer{
       align-items: center;
       width: 100%;
       justify-content: space-between;
+      max-width: $site_container;
     }
   }
   .siteinfo-text{
     margin-top: 50px;
+    text-align: center;
     @include desktop{
       display: inline-flex;
       margin: 0;

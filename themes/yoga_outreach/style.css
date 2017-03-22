@@ -823,7 +823,7 @@ p {
     padding: 0.5rem 0.8rem;
     -ms-flex-order: 1;
         order: 1;
-    margin-left: 80%; }
+    margin-left: 63%; }
     @media (min-width: 720px) {
       #site-navigation .logo-image {
         margin-left: 0; } }
@@ -836,7 +836,6 @@ footer {
   -ms-flex-pack: center;
       justify-content: center;
   text-transform: uppercase;
-  max-width: 1240px;
   margin: 0 auto; }
   footer form {
     width: 100%;
@@ -904,9 +903,11 @@ footer {
           align-items: center;
       width: 100%;
       -ms-flex-pack: justify;
-          justify-content: space-between; } }
+          justify-content: space-between;
+      max-width: 1020px; } }
   footer .siteinfo-text {
-    margin-top: 50px; }
+    margin-top: 50px;
+    text-align: center; }
     @media (min-width: 720px) {
       footer .siteinfo-text {
         display: -ms-inline-flexbox;
@@ -1369,9 +1370,10 @@ a:hover, a:active {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
+    @media (min-width: 720px) {
+      .main-navigation ul li:hover > ul,
+      .main-navigation ul li.focus > ul {
+        left: auto; } }
   .main-navigation li {
     float: left;
     position: relative; }
@@ -2834,7 +2836,6 @@ object {
   padding: 0; }
 
 .home {
-  max-width: 1240px;
   margin: 0 auto;
   text-align: center;
   font-family: raleway;
@@ -2949,7 +2950,8 @@ object {
   @media (min-width: 720px) {
     .home .program-list {
       display: -ms-inline-flexbox;
-      display: inline-flex; } }
+      display: inline-flex;
+      max-width: 1020px; } }
   .home .program-list .programlist-text {
     padding: 0 8%; }
     .home .program-list .programlist-text h4 {
@@ -3014,11 +3016,13 @@ object {
     .home .get-involved h2 {
       padding: 1rem; }
     @media (min-width: 720px) {
-      .home .get-involved .involedWarp {
+      .home .get-involved .involvedWrap {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center;
+        max-width: 1020px;
+        margin: 0 auto; } }
     .home .get-involved .involvedimage_one {
       width: 23.8%;
       height: 30%;
