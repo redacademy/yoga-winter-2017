@@ -473,7 +473,6 @@ button {
       font-size: 1.5rem; }
   .page-template-who-we-are .info-field {
     height: 100%;
-    position: relative;
     background-color: transparent;
     display: -ms-flexbox;
     display: flex;
@@ -481,25 +480,33 @@ button {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center; }
-    .page-template-who-we-are .info-field .staffphoto {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 15px; }
-    .page-template-who-we-are .info-field a {
-      color: #4a4a4a;
-      font-size: 1.2rem;
-      text-decoration: none; }
-    .page-template-who-we-are .info-field .accent-name-shape {
-      height: 25px;
-      width: 250px;
-      border-radius: 8px;
-      background-color: #CBE8EA;
-      position: absolute;
-      right: 87px;
-      bottom: 8px;
-      z-index: -1; }
+    .page-template-who-we-are .info-field .member-contain {
+      margin-bottom: 40px;
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .page-template-who-we-are .info-field .member-contain .staffphoto {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 15px; }
+      .page-template-who-we-are .info-field .member-contain a {
+        color: #4a4a4a;
+        font-size: 1.2rem;
+        text-decoration: none; }
+      .page-template-who-we-are .info-field .member-contain .accent-name-shape {
+        height: 25px;
+        width: 250px;
+        border-radius: 8px;
+        background-color: #CBE8EA;
+        position: absolute;
+        right: 87px;
+        bottom: -10px;
+        left: -100px;
+        z-index: -1; }
 
 .info-dropdown {
   height: 60px;
