@@ -167,3 +167,15 @@
     display:block;
     background-color:red;
 }
+
+.main-button {  // Style for a href buttons
+    height: 44px;
+    width: 230px;
+    border-radius: 8px;
+    padding: 14px 30px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: $accentcolor_bar;
+}
