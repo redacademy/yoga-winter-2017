@@ -25,32 +25,89 @@ get_header(); ?>
 				</div>
 			</header><!--general-template-section-->
 
+            <?php $subs = CFS()->get( 'subtexts' ); ?>  <!--variable to hold sub texts from loop--> 
+            <?php $items = CFS()->get( 'list_of_items' ); ?>  <!--variable to hold list items from loop-->
+            <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop--> 
+            <?php $articles= CFS()->get( 'training_articles' ); ?>  <!--variable to hold training articles from loop--> 
+
             <section class="container">
-                <h2>what we do</h2>
-                <p>Yoga Outreach has been supporting adults and youth through trauma-informed yoga programming within community service facilities, across British Columbia, since 1996.</p>
-            </section>
-            
-            <section>
-                <div class="info-dropdown">
-                    <h3><?php echo CFS()->get( 'dropdown_title' ); ?></h3><span>+</span>
+
+                <?php if(!empty($subs)): ?>
+                    <?php foreach( $subs as $sub ): ?>
+
+                        <div class="subtext">
+                            <h2><?php echo CFS()->get( 'what_we_do' ); ?></h2>
+                            <p><?php echo $sub[ 'subtext_one' ]; ?></p>
+                        </div>
+
+                        <section>
+                            <div class="info-dropdown">
+                                <h3><?php echo CFS()->get( 'dropdown_title' ); ?></h3><span>+</span>
+                            </div>
+
+                            <div class="info-field">
+                                <p class="list-title"><?php echo CFS()->get( 'list_title' ); ?>:</p>
+
+                                <?php if(!empty($items)): ?>
+                                    <?php foreach( $items as $item ): ?>
+                                        <div class="list">
+                                            <ul>
+                                                <li><p><?php echo $item[ 'list_item' ]; ?></p></li>
+                                            </ul>
+                                        </div>
+                                    <?php endforeach ?>
+                                <?php endif; ?>
+
+                                <p><?php echo CFS()->get( 'dropdown_description' ); ?></p>
+                            </div>
+                        </section>
+
+                    <?php endforeach; ?>
+                <?php endif; ?>
+
+                <div class="mid-sub-text">
+                    <p class="subtext" ><?php echo $sub[ 'subtext_two' ]; ?></p>
+                    <div class="accent-name-shape"></div>
                 </div>
 
-            
-                <div class="info-field">
-                    <p class="list-title"><?php echo CFS()->get( 'list_title' ); ?>:</p>
-                
-                    <?php $items = CFS()->get( 'list_of_items' ); ?>  <!--variable to hold email from loop-->    
-                        <?php if(!empty($items)): ?>
-                            <?php foreach( $items as $item ): ?>
-                            <div class="list">
-                                <ul>
-                                    <li><p><?php echo $item[ 'list_item' ]; ?></p></li>
-                                </ul>
-                                <?php endforeach ?>
-                            <?php endif; ?>
+                <?php if(!empty($fields)): ?>
+                    <?php foreach( $fields as $field ): ?>
+
+                    <div class="info-dropdown">
+                        <h3><?php echo $field[ 'info_title' ]; ?></h3><span>+</span>
                     </div>
-                    <?php echo CFS()->get( 'dropdown_description' ); ?>
-                </div>
+                        
+                    <div class="info-field">
+                        <?php if(!empty($field['info_rows'])): ?>
+                            <?php foreach( $field['info_rows'] as $row): ?>
+
+                                <?php echo CFS()->get( 'info_field' ) ?>
+                                <p><?php echo $row['info_field'] ?></p>
+
+                                <?php if(!empty($articles)): ?>
+                                    <?php foreach( $articles as $article ): ?>
+                                        <article class="article">
+                                            <h2><?php echo $article['article_title']; ?></h2>
+                                            <div class="imgcontain">
+                                                <img src="<?php echo $article['article_image']; ?>" alt="article image">
+                                            </div>
+                                            <p><?php echo $article['article_content']; ?></p>
+                                            <h5>read more</h5>
+                                        </article>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
+
+                    <div class="bottom-sub-text">
+                        <p class="subtext" ><?php echo $sub[ 'subtext_three' ]; ?></p>
+                    </div>
+
+                    <?php endforeach; ?>
+                <?php endif; ?>
+                
             </section>
 
 		</main><!-- #main -->
