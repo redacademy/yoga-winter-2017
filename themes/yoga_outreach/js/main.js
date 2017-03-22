@@ -48,6 +48,15 @@
         }, 500);
     });
 
+    $('.show-videos li:gt(2)').hide();
+    $('.read-more').click(function() {
+    $('.show-videos li:gt(2)').show('2000','swing');
+    $('.read-less').click(function(){
+    $('.show-videos li:gt(2)').hide('2000','linear');
+    })
+});
+(jQuery);
+
     // Changes radio buttons on forms
     $( '.gfield_radio li label' ).prepend( '<span></span>');
 })(jQuery); 
