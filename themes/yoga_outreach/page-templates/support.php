@@ -36,10 +36,11 @@ get_header(); ?>
             <section id="donate" class="container-one">
                 <h2 class="h2-holder">Donate</h2>
                 <p><?php echo CFS()->get( 'donation_information' ); ?></p>
-                <div class="decorative-line-case"><div class= "decorative-line2"></div></div>
+                <div class= "decorative-line2"></div>
                 <button class="main-button dark-button"><a href="<?php echo CFS()->get( 'donation_page_url' );?>">Donate Now</a></button>
             </section>
             <section class="container-one">
+                <div class="accent-background monthly"><div class="background-accent"></div></div>
                 <h2 class="h2-holder">Become a Monthly Contributor</h2>
                     <div class="contributor">
                         <img src="<?php echo CFS()->get( 'monthly_contributor_image' ); ?>" alt="">

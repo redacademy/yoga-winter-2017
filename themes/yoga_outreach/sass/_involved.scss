@@ -11,6 +11,11 @@
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+        @include desktop{
+            h2{
+                font-size: 2rem;
+            }
+        }
         .main-button-holder{
             padding: 10px;
             display: flex;
@@ -59,22 +64,29 @@
         }
         .button-wrap{
             display: flex;
+            width: 100vw;
             flex-direction: column;
             justify-content: center;
             height: 10%;
-            padding: 10px;
+            padding: 3% 0;
             background-color: $mediumtheme_color;
         }
         #instructor{
             position: relative;
             ol{
-                margin-bottom: 165px; 
+                margin-bottom: 165px;
+                @include desktop{
+                    margin-bottom: 50px;
+                } 
             }
             .button-wrap{
                 position: absolute;
                 justify-content: center;
                 bottom: 40px;
                 width: 100vw;
+                @include desktop{
+                    position: relative;
+                }
             }
         }
         .entry-header{ 
@@ -90,7 +102,7 @@
                 max-width: 1020px;
             }
             @include desktop {
-                padding-top: 25%;
+                padding-top: 15%;
             }
         }
 
@@ -109,12 +121,14 @@
         }
 
         .container-one{
-            width: 100vw;
+            padding: 5% 0;
+            position: relative;
             h2, p, .info-dropdown{
                 margin: 0 auto;
                 width: 100%;
                 max-width: 1020px;
             }
+        
             .contributor{
                 background-color: lightgrey;
                 height: 200px;
@@ -128,10 +142,19 @@
                 width: 100%;
                 display: flex;
                 flex-direction: row;
+                @include desktop{
+                    font-size: 1.5rem;
+                }
             }
             .accent-background{
                 position: relative;
                 padding: 0;
+                width: 100vw;
+                &.monthly{
+                    .background-accent{
+                        background-color: rgba(159,171,183,0.6);
+                    }
+                }
                 .background-accent{
                     position: absolute;
                     width: 100%;
@@ -141,55 +164,78 @@
                     top: -10px;
                 }
             }    
-            .decorative-line-case{
-                position: relative;
-                width: 10%;
-                display: flex;
-                justify-content: flex-end;
-                .decorative-line{
-                    width: 25%;
-                    height: 90%;
-                    border-radius: 30px;
-                    background-color: $accentcolor_bar2;
-                }
+            .decorative-line{
+                position: absolute;
+                top: 230px;
+                width: 13px;
+                height: 250px;
+                border-radius: 30px;
+                background-color: $accentcolor_bar2;
+            }
 
-                .decorative-line2{
-                    position: absolute;
-                    width: 150px;
-                    height: 20px;
-                    background-color: $accentcolor_bar;
-                    opacity: .8;
-                    left: 70%;
-                    bottom: 50%;
-                    z-index: -1;
-                    border-radius: 8px;
-                }
+            .decorative-line2{
+                position: absolute;
+                width: 150px;
+                height: 20px;
+                background-color: $accentcolor_bar;
+                opacity: .8;
+                left: 70%;
+                bottom: 50%;
+                z-index: -1;
+                border-radius: 8px;
             }
             ul{
                 width: 90%;
-                margin: 0;
+                margin: 0 auto;
                 text-align: left;
+                padding: 30px;
+                p{margin:0;}
             }
         }
         .container-two{
+            padding: 5% 0;
             width: 100vw;
             background-color: $logo_color;
             h2{
                 color: $darktext_color;
             }
+            h2, p, ol, .info-dropdown{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1020px;
+            }
         }
         .container-three{
+            padding: 5% 0;
             width: 100vw;
             background-color: $accentcolor_box;
+            h2, p, .info-dropdown{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1020px;
+            }
         }
         .container-four{
+            padding: 5% 0;
             width: 100vw;
             background-color: $accentcolor_bar2;
+            h2, p, .info-dropdown{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1020px;
+            }
         }
         .container-tshirt{
+            padding: 5% 0;
             background: url("../../images/tshirt_mobile.png") no-repeat center bottom;
             background-size: cover, cover;
+            width: 100vw;
             color: $basetext_color;
+            h2, p, .info-dropdown{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1020px;
+            }
         }
     }
 
@@ -236,13 +282,19 @@ ol {
     flex-direction: column;
     margin: 0;
     padding: 5%;
+    @include desktop{
+        flex-direction: row;
+    }
     div{
         width: 50%;
         &:nth-child(odd){
             align-self: flex-start;
-            }
+        }
         &:nth-child(even){
             align-self: flex-end;
+            @include desktop{
+                align-self: flex-start;
+            }
         }
     }
     li { 
@@ -283,6 +335,7 @@ ol {
             list-style-type: none;
             margin: 0;
             padding:0;
+            div{margin: 1% 0;}
             li{
                 display: flex;
                 p{
@@ -290,6 +343,7 @@ ol {
                     margin: 5%;
                     @include desktop {
                         margin: 3%;
+                        font-size: 1.25rem;
                     }
                 }
             }
@@ -314,5 +368,11 @@ ol {
             text-align: left;
         }
     }
+}
+
+/* Partner Facility */
+
+#sponsor{
+    padding: 0;
 }
 
