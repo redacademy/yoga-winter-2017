@@ -15,11 +15,7 @@
       $('.wrapper').show();
       $('.signin-button').hide();
     });
-    // $('.btn-primary').on('click', function (event) {
-    //   event.preventDefault();
-    //   $('.wrapper').hide();
-    //   $('.signin-button').text('hello');
-    // });
+
 
     // Drop down category
     $('.info-dropdown').click(function () {
