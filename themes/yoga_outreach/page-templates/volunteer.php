@@ -53,17 +53,17 @@ get_header(); ?>
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </ol>
-                <div class="button-wrap"><button class="small-button white-button"><a href="" class="button">Apply Now</a></button></div>
+                <div class="button-wrap"><button class="small-button white-button"><a href="<?php echo get_page_link(176); ?>" class="button">Apply Now</a></button></div>
             </section>
             <section id="volunteer" class="container-one">
                 <h2>Volunteer for Community Engagement</h2>
                 <p class="info-paragraph"><?php echo CFS()->get( 'community_engagement' ); ?></p>
-                <button class="grey-button small-button"><a href="" class="button">Apply Now</a></button>
+                <button class="grey-button small-button"><a href="<?php echo get_page_link(176); ?>" class="button">Apply Now</a></button>
             </section>
             <section id="council" class="container-three">
                 <h2>Volunteer for Advisory Council</h2>
                 <p class="info-paragraph"><?php echo CFS()->get( 'advisory_council' ); ?></p>
-                <button class="white-button main-button"><a href="" class="button">Contact Us</a></button>
+                <button class="white-button main-button"><a href="<?php echo get_page_link(67); ?>" class="button">Contact Us</a></button>
             </section>
             <section id="opportunities" class="container-four">
                 <h2>Volunteer Opportunities</h2>

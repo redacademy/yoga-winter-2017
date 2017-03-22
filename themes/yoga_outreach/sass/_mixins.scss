@@ -5,6 +5,12 @@
 }
 }
 
+@mixin larger-desktop {
+@media (min-width: $site_container) {
+	@content;
+}
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
@@ -63,3 +69,35 @@
 	display: flex;
 	flex-direction: column;
 }
+
+//main-h3 under hero
+
+@mixin main-h3{
+	padding-top:35px;
+    font-size:24px;
+    margin-bottom:20px;
+    font-weight:300;
+    color:#6B747D;
+    width:290px;
+    margin: 0 auto;
+    text-align: center;
+    	@include desktop{
+        	font-size:40px;
+	}
+}
+
+// paragraph under main-h3
+
+@mixin main-p{
+	font-size:14px;
+    padding-bottom:22px;
+    width:262px;
+    margin:0 auto;
+    color:#6B747D;
+    text-align:center;
+        @include desktop{
+            font-size:24px;
+            width:100%;
+            }
+	}
+

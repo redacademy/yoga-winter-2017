@@ -1,7 +1,98 @@
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+/* Custom */
+.page-template-forms-template{
+	.entry-header{
+		display: none;
+	}
+	.app-form{
+		ul.gfield_radio{
+			@include desktop{
+				display: flex;
+			}
+		}
+		.gform_heading{
+			max-width: 1020px;
+			width: 100%;
+			margin: 0 auto;
+			padding: 10px;
+			h3{
+				font-size: 2rem;
+			}
+		}
+		.gform_body{
+			li:not(.gfield_html), .gfield_error{
+				padding: 10px;
+				max-width: 1020px;
+				width: 100%;
+				margin: 0 auto!important;
+				label{
+					text-transform: uppercase;
+				}
+			}
+			.gfield_select, .address_state select{
+				background: transparent;
+				border: 1px solid #ccc;
+				border-radius: 3px;
+				height: 34px;
+				margin-top: 0;
+			}
+			ul li {
+				input[type="radio"] {
+					display:none;
+				}
+				input[type="radio"] + label {
+					color: $lighttext_color;
+					font-family:Arial, sans-serif;
+					font-size:14px;
+				}
+				input[type="radio"] + label span {
+					display:inline-block;
+					width:30px;
+					height:30px;
+					margin:-1px 4px 0 0;
+					vertical-align:middle;
+					cursor:pointer;
+					border: 1px solid $lighttext_color;
+					border-radius:  50%;
+				}
 
+				input[type="radio"] + label span{
+					background-color:transparent;
+					margin: 10px;
+				}
+
+				input[type="radio"]:checked + label span{
+					background-color:$darktext_color;
+				}
+			} 
+			.form-sub-heading{
+				padding: 10px;
+				background-color: $accentcolor_bar;
+				color: $base_color;
+				max-width: 100vw;
+				text-transform: uppercase;
+				font-size: 1.5rem;
+				@include larger-desktop{
+					padding-left: 14%;
+				}
+			}
+		}
+		.gform_footer{
+			background-color: $accentcolor_box;
+			input.gform_button{
+				@include general-button;
+				color: $lighttext_color;
+				background-color: $base_color;
+			}
+		}
+	}
+}
+
+.forms-header{
+	height: 30vh;
+}
 
 
 /* Buttons */
@@ -62,3 +153,5 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+

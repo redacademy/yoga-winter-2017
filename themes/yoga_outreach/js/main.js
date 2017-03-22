@@ -1,12 +1,19 @@
 (function ($) {
 
-    //do something when the icon button is clicked
+    //dropdown submenu on clicking hamburger icon
     $('.fa-bars').on('click', function (event) {
         event.preventDefault();
         $('.menu-main-menu-container').toggleClass('submenu');
         $('.menu-main-menu-container').show();
     });
+    //dropdown signin section on clicking signin button
+     $('.signin-button').on('click', function (event) {
+        event.preventDefault();
+        $('.signin-section').toggleClass('popup');
+        $('.signin-section').show();
+    });
 
+    // Drop down category
     $('.info-dropdown').click(function () {
         if ($(this).next('.info-field').is(':hidden')) {
             $(this).next('.info-field').slideDown('normal');
@@ -17,6 +24,7 @@
         }
     });
 
+    // Smooth Scroll between sections on a page
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
@@ -24,28 +32,22 @@
         }, 500);
     });
 
-
-    (function ($) {
-        var $window = $(window),
-            $infoField = $('.info-field');
-
-        function resize() {
-            if ($window.width() > 720) {
-                return $infoField.removeClass('info-field');
-            } else {
-                return $infoField.addClass('info-field');
-            }
-
-        }
-        $window
-            .resize(resize)
-            .trigger('resize');
-
-
-    })(jQuery);
-
-
-
-
-
+    // Changes radio buttons on forms
+    $( '.gfield_radio li label' ).prepend( '<span></span>');
 })(jQuery); 
+
+(function ($) {
+    var $window = $(window),
+        $infoField = $('.info-field');
+    function resize() {
+        if ($window.width() > 720) {
+            return $infoField.removeClass('info-field');
+        } else {
+            return $infoField.addClass('info-field');
+        }
+    }
+    $window
+        .resize(resize)
+        .trigger('resize');
+})(jQuery);
+

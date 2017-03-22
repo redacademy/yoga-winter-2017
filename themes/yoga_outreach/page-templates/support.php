@@ -37,7 +37,7 @@ get_header(); ?>
                 <h2 class="h2-holder">Donate</h2>
                 <p><?php echo CFS()->get( 'donation_information' ); ?></p>
                 <div class="decorative-line-case"><div class= "decorative-line2"></div></div>
-                <button class="main-button dark-button"><a href="<?php echo CFS()->get( 'donation_page_url' );?>">Donate</a></button>
+                <button class="main-button dark-button"><a href="<?php echo CFS()->get( 'donation_page_url' );?>">Donate Now</a></button>
             </section>
             <section class="container-one">
                 <h2 class="h2-holder">Become a Monthly Contributor</h2>
@@ -52,7 +52,7 @@ get_header(); ?>
                 <h2 class="h2-holder">Become an Event Sponsor</h2>
                 <p><?php echo CFS()->get( 'event_sponsor' ); ?></p>
                 <h3>To become an event sponsor big or small please contact Delanie </h3>
-                <div class="button-wrap"><button class="small-button white-button"><a href="/contact-us" class="button">Contact</a></button></div>
+                <div class="button-wrap"><button class="small-button white-button"><a href="<?php echo get_page_link(67); ?>" class="button">Contact</a></button></div>
             </section>
             <section id="tshirt" class="container-tshirt">
                 <h2 class="h2-holder">Get a T-Shirt</h2>

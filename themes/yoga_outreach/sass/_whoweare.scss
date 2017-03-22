@@ -89,34 +89,40 @@
 
     .info-field {
         height: 100%;
-        position: relative;
         background-color: transparent;
         @include flex-column;
         align-items: center;
 
-        .staffphoto {
-            width: 160px;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
+        .member-contain {
+            margin-bottom: 40px;
+            position: relative;
+            @include flex-column;
 
-        a {
-            color: $darktext_color;
-            font-size: 1.2rem;
-            text-decoration: none;
-        }
+            .staffphoto {
+                width: 160px;
+                height: 160px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-bottom: 15px;
+            }
 
-         .accent-name-shape {
-            height: 25px;
-            width: 250px;
-            border-radius: 8px;
-            background-color: #CBE8EA;
-            position: absolute;
-            right: 87px;
-            bottom: 8px;
-            z-index: -1;
+            a {
+                color: $darktext_color;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+
+            .accent-name-shape {
+                height: 25px;
+                width: 250px;
+                border-radius: 8px;
+                background-color: #CBE8EA;
+                position: absolute;
+                right: 87px;
+                bottom: -10px;
+                left: -100px;
+                z-index: -1;
+            }
         }
     }
 }
