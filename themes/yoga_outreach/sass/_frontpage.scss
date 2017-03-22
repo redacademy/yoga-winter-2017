@@ -254,18 +254,21 @@
         }
       .carousel-cell{
         width: 100%;
+        padding: 0 10%;
         height: auto;
         @include desktop{
           width:100%;
+          padding: 0 8%;
         }
+      }
+      img{
+        border-radius: 50%;
       }
       .carousel-picture{
         display:none;
         @include desktop{
         display: block;
         width: 450px;
-        height: 450px;
-        margin-right: 10%;
         }
       }
       ol{
@@ -276,7 +279,6 @@
         background: none;
         box-shadow: none;
         padding: 0;
-        top: 25%;
       }
       .flickity-prev-next-button.next {
         right: 5%;
@@ -293,6 +295,7 @@
     }
   }
   .team-container{
+    
     .team-list.main-carousel{
       background-color:white;
 
@@ -322,6 +325,9 @@
           height: 370px;
         }
       }
+      li{
+        list-style:none;
+      }
       ol{
         display: none;
       }
@@ -330,7 +336,7 @@
         background: none;
         box-shadow: none;
         padding: 0;
-        top: 25%;
+        top: 40%;
       }
       .flickity-prev-next-button.next {
         right: 5%;

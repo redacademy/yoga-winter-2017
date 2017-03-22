@@ -1362,9 +1362,6 @@ a:hover, a:active {
   line-height: 24px;
   margin-bottom: 20px; }
 
-.page-template-training .section-15px-padding {
-  padding: 0 15px; }
-
 .page-template-training .book-training-button {
   background-color: #6B747D;
   margin-top: 18px; }
@@ -2612,26 +2609,27 @@ object {
         font-size: 24px; } }
     .home .testimonal-container .main-carousel .carousel-cell {
       width: 100%;
+      padding: 0 10%;
       height: auto; }
       @media (min-width: 720px) {
         .home .testimonal-container .main-carousel .carousel-cell {
-          width: 100%; } }
+          width: 100%;
+          padding: 0 8%; } }
+    .home .testimonal-container .main-carousel img {
+      border-radius: 50%; }
     .home .testimonal-container .main-carousel .carousel-picture {
       display: none; }
       @media (min-width: 720px) {
         .home .testimonal-container .main-carousel .carousel-picture {
           display: block;
-          width: 450px;
-          height: 450px;
-          margin-right: 10%; } }
+          width: 450px; } }
     .home .testimonal-container .main-carousel ol {
       display: none; }
     .home .testimonal-container .main-carousel .flickity-prev-next-button {
       border: none;
       background: none;
       box-shadow: none;
-      padding: 0;
-      top: 25%; }
+      padding: 0; }
     .home .testimonal-container .main-carousel .flickity-prev-next-button.next {
       right: 5%; }
     .home .testimonal-container .main-carousel .flickity-prev-next-button.previous {
@@ -2661,6 +2659,8 @@ object {
         .home .team-container .main-carousel .carousel-picture {
           width: 370px;
           height: 370px; } }
+    .home .team-container .main-carousel li {
+      list-style: none; }
     .home .team-container .main-carousel ol {
       display: none; }
     .home .team-container .main-carousel .flickity-prev-next-button {
@@ -2668,7 +2668,7 @@ object {
       background: none;
       box-shadow: none;
       padding: 0;
-      top: 25%; }
+      top: 40%; }
     .home .team-container .main-carousel .flickity-prev-next-button.next {
       right: 5%; }
     .home .team-container .main-carousel .flickity-prev-next-button.previous {
@@ -2783,9 +2783,6 @@ object {
   min-width: 290px;
   line-height: 24px;
   margin-bottom: 20px; }
-
-.page-template-training .section-15px-padding {
-  padding: 0 15px; }
 
 .page-template-training .book-training-button {
   background-color: #6B747D;
