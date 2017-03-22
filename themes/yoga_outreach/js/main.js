@@ -38,10 +38,23 @@
             .resize(resize)
             .trigger('resize');
 
+//Read More Read Less Function 
+    $('.show-videos li:gt(2)').hide();
+    $('.read-more').click(function() {
+    $('.show-videos li:gt(2)').show();
+    $('.read-less').click(function(){
+    $('.show-videos li:gt(2)').hide();
+    })
+});
+
+
 })(jQuery);
 
+    
 
 
 
 
-(jQuery); 
+(jQuery);
+
+   
