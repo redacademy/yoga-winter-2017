@@ -55,7 +55,6 @@
     $('.show-videos li:gt(2)').hide('2000','linear');
     })
 });
-(jQuery);
 
     // Changes radio buttons on forms
     $( '.gfield_radio li label' ).prepend( '<span></span>');
