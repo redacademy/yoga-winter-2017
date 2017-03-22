@@ -347,11 +347,11 @@
       .flickity-prev-next-button.next {
         right: 5%;
         @include desktop{
-
+          right:20%;
         }
       }
       .flickity-prev-next-button.previous {
-        left: 5%;
+        left: 20%;
         @include desktop{
           
         }

@@ -3114,8 +3114,11 @@ object {
       top: 40%; }
     .home .team-container .main-carousel .flickity-prev-next-button.next {
       right: 5%; }
+      @media (min-width: 720px) {
+        .home .team-container .main-carousel .flickity-prev-next-button.next {
+          right: 20%; } }
     .home .team-container .main-carousel .flickity-prev-next-button.previous {
-      left: 5%; }
+      left: 20%; }
   .home .thankyou {
     height: 230px;
     background-color: #95afc9;
