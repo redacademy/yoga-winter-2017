@@ -9,12 +9,12 @@
         $('.menu-main-menu-container').show();
     });
     //dropdown signin section on clicking signin button
-     $('.signin-button').on('click', function (event) {
-        event.preventDefault();
-        $('.signin-section').toggleClass('popup');
-        $('.signin-section').show();
+    $('.signin-button').on('click', function (event) {
+      event.preventDefault();
+      $('.wrapper').toggleClass('popup');
+      $('.wrapper').show();
+      $('.signin-button').hide();
     });
-
     // Drop down category
     $('.info-dropdown').click(function () {
         if ($(this).next('.info-field').is(':hidden')) {

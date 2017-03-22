@@ -38,8 +38,21 @@
             </div>
 					</div>
           <div class="signin-section">
+            <div class="wrapper">
+            <form class="form-signin">       
+              <h3>username</h3>
+              <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+              <h3>password</h3>
+              <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+              <label class="checkbox">
+                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+              </label>
+              <button class="btn btn-lg btn-primary btn-block" type="submit"><a href="">sign in</a></button>   
+            </form>
+          </div>
           <button class="signin-button"><a href="">sign in</a></button>
           </div>
+          
         </nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
