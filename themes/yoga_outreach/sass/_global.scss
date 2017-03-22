@@ -34,7 +34,7 @@
 
 .entry-title{
 	text-align:center;
-    color:white;
+    color:$base_color;
     padding-top:49px;
 	font-weight:500;
 }
@@ -45,7 +45,7 @@
 
 .page-title-header{
 	text-align:center;
-    color:white;
+    color:$base_color;
 	padding-top:66px;
     font-weight:300;
     font-size:24px;
@@ -64,7 +64,13 @@
 .grey-button{
 	background-color: $mainbutton_color;
     a{
-        color: white;
+        color: $base_color;
+    }
+    &:hover{
+        background-color: $brightbutton_color;
+        a{
+            color: $darktext_color;
+        }
     }
 }
 
@@ -75,20 +81,26 @@
 .dark-button{
 	background-color: $mediumtheme_color;
     a{
-        color: white;
+        color: $base_color;
+    }
+    &:hover{
+        background-color: $formbutton_color;
+        a{
+            color: $darktext_color;
+        }
     }
 }
 
 .clear-button{
-    border: 1px solid white;
+    border: 1px solid $base_color;
     background-color: transparent;
     a{
-        color: white;
+        color: $base_color;
     }
     &:hover{
-        background-color: white;
+        background-color: $base_color;
         a{
-            color: black
+            color: $darktext_color;
         }
     }
 }

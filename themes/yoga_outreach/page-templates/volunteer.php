@@ -24,7 +24,7 @@ get_header(); ?>
             <section class="container-one">
                 <h2>Benefits for Volunteers</h2>
                 <div class = "list-container">
-                    <div class = "decorative-line-case"><span class="decorative-line"></span></div>
+                    <div class="decorative-line"></div>
                     <ul>
                         <?php
                         $fields = CFS()->get( 'volunteer_benefits' ); // returns an array of posts
@@ -65,10 +65,19 @@ get_header(); ?>
                 <p class="info-paragraph"><?php echo CFS()->get( 'advisory_council' ); ?></p>
                 <button class="white-button main-button"><a href="<?php echo get_page_link(67); ?>" class="button">Contact Us</a></button>
             </section>
+
+            <?php if(!empty(CFS()->get( 'new_initiative_title' ))): ?>
+                <section id="council" class="container-one">
+                    <h2><?php echo CFS()->get( 'new_initiative_title' ) ?></h2>
+                    <p class="info-paragraph"><?php echo CFS()->get( 'new_initiative_description' ) ?></p>
+                    <button class="dark-button main-button"><a href="<?php echo get_page_link(67); ?>" class="button">Contact Us</a></button>
+                </section>
+            <?php endif; ?>
+
             <section id="opportunities" class="container-four">
                 <h2>Volunteer Opportunities</h2>
                 <p></p>
-                <button class="white-button main-button"><a href="" class="button">View Here</a></button>
+                <button class="white-button main-button"><a href="<?php echo get_page_link(203); ?>" class="button">View Here</a></button>
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
