@@ -30,13 +30,17 @@
 					<span class="responsive-menu">
 				    <i class="fa fa-bars" aria-hidden="true"></i>
 		    	</span>
-          
+           
           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
 				
           <div id="header-logo">
 					<div class="logo-image"><?php show_easylogo(); ?></div>
-					</div>
-				</nav><!-- #site-navigation -->
+					
+          </div>
+          <div class="signin-section">
+          <button class="signin-button"><a href="">sign in</a></button>
+          </div>
+        </nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

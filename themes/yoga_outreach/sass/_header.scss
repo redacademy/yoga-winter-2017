@@ -10,6 +10,37 @@ p{
     @include desktop{
       position:absolute;
       display: flex;
+      justify-content: center;
+    }
+    .popup{
+      width: 250px;
+      height: 350px;
+      background-color: white;
+      z-index: 3;
+    }
+    .signinbutton-container{
+      @include desktop{
+        width:50%;
+      }
+    }
+    .signin-button{
+      display:none;
+      @include desktop{
+        display:block;
+        width: 150px;
+        height: 45px;
+        background-color: #B6EAFF;
+        border-radius: 8px;
+        box-shadow:none;
+        border:none;
+        a {
+          text-shadow: none;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 14px;
+          color:$darktext_color;
+        }
+      }
     }
     a{
       color: $lighttext_color;
@@ -26,15 +57,10 @@ p{
         display: none;
       }
     }
-    .responsive-menu{
-
-    }
     .menu-main-menu-container{
       @include desktop{
         order:2;
-        // position: absolute;
-        // top: 150px;
-        // left: 5%;
+        margin: 0 auto;
       } 
       #menu-item-73{
         @include desktop{
@@ -79,7 +105,8 @@ p{
     }
     #header-logo{
       @include desktop{
-          z-index: 1;
+        z-index: 1;
+        width: 50%;
       }
     }
     .logo-image{

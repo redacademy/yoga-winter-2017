@@ -1,12 +1,18 @@
 (function ($) {
 
-    //do something when the icon button is clicked
+    //dropdown submenu on clicking hamburger icon
     $('.fa-bars').on('click', function (event) {
         event.preventDefault();
         $('.menu-main-menu-container').toggleClass('submenu');
         $('.menu-main-menu-container').show();
     });
-    
+    //dropdown signin section on clicking signin button
+     $('.signin-button').on('click', function (event) {
+        event.preventDefault();
+        $('.signin-section').toggleClass('popup');
+        $('.signin-section').show();
+    });
+
     // Drop down category
     $('.info-dropdown').click(function () {
         if ($(this).next('.info-field').is(':hidden')) {

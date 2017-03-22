@@ -650,7 +650,34 @@ p {
     #site-navigation {
       position: absolute;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; } }
+  #site-navigation .popup {
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    z-index: 3; }
+  @media (min-width: 720px) {
+    #site-navigation .signinbutton-container {
+      width: 50%; } }
+  #site-navigation .signin-button {
+    display: none; }
+    @media (min-width: 720px) {
+      #site-navigation .signin-button {
+        display: block;
+        width: 150px;
+        height: 45px;
+        background-color: #B6EAFF;
+        border-radius: 8px;
+        box-shadow: none;
+        border: none; }
+        #site-navigation .signin-button a {
+          text-shadow: none;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 14px;
+          color: #4a4a4a; } }
   #site-navigation a {
     color: #6b747d;
     font-weight: bold;
@@ -668,7 +695,8 @@ p {
   @media (min-width: 720px) {
     #site-navigation .menu-main-menu-container {
       -ms-flex-order: 2;
-          order: 2; } }
+          order: 2;
+      margin: 0 auto; } }
   @media (min-width: 720px) {
     #site-navigation .menu-main-menu-container #menu-item-73 {
       display: none; } }
@@ -707,7 +735,8 @@ p {
         font-weight: lighter; }
   @media (min-width: 720px) {
     #site-navigation #header-logo {
-      z-index: 1; } }
+      z-index: 1;
+      width: 50%; } }
   #site-navigation .logo-image {
     width: 90px;
     padding: 0.5rem 0.8rem;
