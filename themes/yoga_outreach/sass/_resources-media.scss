@@ -6,7 +6,7 @@
     }
     
     .main-h3-container{
-                h3{
+            h3{
                 @include main-h3;
             }
         }
@@ -17,20 +17,101 @@
             @include main-p;
             }
         }
+    
+    .info-dropdown{
+        padding:0;
+    }
 
     .media-article-section{
         background-color: #f4f1ea;
     }
 
-    .media-article-list{
+    .media-article-list, .media-video-list, .press-article-list{
         padding:0;
         margin:0;
         list-style:none;
+        padding-bottom:20px;
             li{
                 margin-bottom:12px;
+                    @include desktop{
+                        border-top:2px solid #4A4A4A;
+                        padding-bottom:11px;
+                    }
             }
     }
 
+  .video-list-section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top:29px;
+    padding: 29px 1rem;
+        h3{
+            font-weight:300;
+            margin-bottom:10px;
+            margin-top:40px;
+
+        }
+        li{
+            margin-bottom:25px;
+        }
+  }
+
+  .media-article-section{
+      z-index:-2;
+  }
+
+
+  .media-date{
+      @include desktop{
+          position:relative;
+          font-size:20px;
+          margin-top:1rem;
+          z-index:10;
+
+      }
+  }
+
+    .media-color-blue{
+        @include desktop{
+            height:20px;
+            position:absolute;
+            background-color: #CBE8EA;
+            top:-6%;
+            border-radius: 8px;
+            height: 35px;
+            width: 305.17px;
+            z-index:-1;
+            left:-4rem;
+            }
+    }
+
+  .read-more,.read-less{
+      font-size:10px;
+  
+  }
+
+  .media-heading-flex{
+      @include desktop{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+      }
+  }
+
+  .research-paper-para{
+      display:none;
+        @include desktop{
+            display:block;
+            color:#4A4A4A;
+            font-size:20px;
+            padding-bottom:36px;
+        }
+  }
+
+
+ 
 
 
 
