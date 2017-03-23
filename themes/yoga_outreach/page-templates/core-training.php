@@ -38,8 +38,8 @@ get_header(); ?>
 					<h3 class ="avail-online-h3">available online and in-classroom format!</h3>
 				</div><!--avail-online-heading-container-->
 				<div class ="main-paragraph-container">
-					<p>xvdddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdf</p>
-					<p class = "dark-training-para"><?php echo CFS()->get('dark_training_para'); ?></p>
+					<p class = "light-first-para"><?php echo CFS()->get('first_core_para'); ?></p>
+					<p class = "dark-second-para"><?php echo CFS()->get('second_core_para'); ?></p>
 				</div><!--main-paragraph-container-->
 			</section><!--section-15px-padding-->
 			<div class ="testimonal-container">
