@@ -258,6 +258,11 @@
           height: 240px;
           font-size: 24px;
         }
+      .flickity-viewport{
+        @include desktop{
+          height: 100%;
+        }
+      }
       .carousel-cell{
         width: 100%;
         padding: 0 10%;
@@ -266,14 +271,26 @@
           width:100%;
           padding: 3% 13%;
         }
+        p{
+          @include desktop{
+          flex: 0 0 80%;
+          align-self:center;
+          font-size: 1.2rem;
+          }
+        }
       }
       img{
         border-radius: 50%;
+        align-self: center;
+        width: 80%;
       }
       .carousel-picture{
         display:none;
         @include desktop{
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 20%;
         width: 360px;
         }
       }

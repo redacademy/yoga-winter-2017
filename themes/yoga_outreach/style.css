@@ -3360,6 +3360,9 @@ object {
       .home .testimonal-container .main-carousel {
         height: 240px;
         font-size: 24px; } }
+    @media (min-width: 720px) {
+      .home .testimonal-container .main-carousel .flickity-viewport {
+        height: 100%; } }
     .home .testimonal-container .main-carousel .carousel-cell {
       width: 100%;
       padding: 0 10%;
@@ -3368,13 +3371,32 @@ object {
         .home .testimonal-container .main-carousel .carousel-cell {
           width: 100%;
           padding: 3% 13%; } }
+      @media (min-width: 720px) {
+        .home .testimonal-container .main-carousel .carousel-cell p {
+          -ms-flex: 0 0 80%;
+              flex: 0 0 80%;
+          -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center;
+          font-size: 1.2rem; } }
     .home .testimonal-container .main-carousel img {
-      border-radius: 50%; }
+      border-radius: 50%;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      width: 80%; }
     .home .testimonal-container .main-carousel .carousel-picture {
       display: none; }
       @media (min-width: 720px) {
         .home .testimonal-container .main-carousel .carousel-picture {
-          display: block;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex: 0 0 20%;
+              flex: 0 0 20%;
           width: 360px; } }
     .home .testimonal-container .main-carousel ol {
       display: none; }

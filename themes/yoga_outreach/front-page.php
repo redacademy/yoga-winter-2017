@@ -58,9 +58,9 @@ get_header(); ?>
     <h2>Get Involed!</h2>
      <div class="involvedWrap">
  
-          <img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/Volunteer_desktop.svg"/>
-          <img class ="involvedimage_two" src="<?php echo get_template_directory_uri(); ?>/images/Partner_desktop.svg"/>
-          <img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/SupportUs_desktop.svg"/>   
+          <img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/Volunteer_desktop.png"/>
+          <img class ="involvedimage_two" src="<?php echo get_template_directory_uri(); ?>/images/Partner_desktop.png"/>
+          <img class="involvedimage_one" src="<?php echo get_template_directory_uri(); ?>/images/SupportUs_desktop.png"/>   
         <div class="shapeThing"></div>
       </div>
     <div class="accent-square"></div>
