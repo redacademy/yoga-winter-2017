@@ -358,4 +358,9 @@
             justify-content: space-around;
         }
     }
+
+    .carousel-cell.is-selected{
+        width:70;
+        text-align:center;
+    }
 }//Core Training Wrapper

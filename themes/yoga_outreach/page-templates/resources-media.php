@@ -61,7 +61,6 @@ get_header(); ?>
 					</ul><!--media-article-list-->
 				</div><!--info-field-->
 			</section><!--media-article-section-->
-				
 			<section class = "video-list-section">
 				<h2 class ="video-list-heading">Why Yoga Outreach</h2>
 				<ul class ="media-video-list show-videos">
