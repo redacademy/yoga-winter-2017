@@ -1687,7 +1687,7 @@ a:hover, a:active {
     background-color: #C0DAE5; }
 
 .page-template-training .main-carousel {
-  width: 107%;
+  width: 100%;
   padding: 30px;
   margin: 0 auto; }
   .page-template-training .main-carousel .carousel-cell {
@@ -1877,6 +1877,9 @@ a:hover, a:active {
     .page-template-core-training .core-header {
       font-size: 40px;
       width: 700px; } }
+
+.page-template-core-training .light-first-para, .page-template-core-training .dark-second-para {
+  word-break: break-all; }
 
 .page-template-core-training .register-online-button {
   width: 230px;
@@ -3375,7 +3378,7 @@ object {
           margin: auto; } }
 
 .page-template-training .main-carousel {
-  width: 107%;
+  width: 100%;
   padding: 30px;
   margin: 0 auto; }
   .page-template-training .main-carousel .carousel-cell {
@@ -3565,6 +3568,9 @@ object {
     .page-template-core-training .core-header {
       font-size: 40px;
       width: 700px; } }
+
+.page-template-core-training .light-first-para, .page-template-core-training .dark-second-para {
+  word-break: break-all; }
 
 .page-template-core-training .register-online-button {
   width: 230px;

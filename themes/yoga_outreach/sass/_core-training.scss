@@ -54,6 +54,10 @@
             }
     }
 
+    .light-first-para, .dark-second-para{
+        word-break:break-all;
+    }
+
     .register-online-button{
             @include general-button;
                 background-color:#6B747D;
