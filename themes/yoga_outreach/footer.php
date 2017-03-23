@@ -47,7 +47,7 @@
         </ul>
       </section>
       <div class="copyright">
-        <p><?php echo '© 2017 Yoga Outreach' ?></p>
+        <p>© 2017 Yoga Outreach</p>
       </div>
     </div><!-- .site-info -->
   </footer><!-- #colophon -->
