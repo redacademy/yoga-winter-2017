@@ -1,20 +1,36 @@
-.blog-header {
-    /* carousel height */
-    .carousel {
-        height: 300px;
-        width: 100%;
-        background-color: lightcoral;
-    }
+.general-template-section {
+    background-color: #fff;
+}
 
-    /* cell inherit height from carousel */
-    .carousel-cell {
-        height: 100%;
-        width: 100%;
-        background-color: white;
-    }
+.article-slider {
+    height: 300px;
+    background-color: $logo_color;
+}
 
-    /* move page dots into carousel */
-    .flickity-page-dots { 
-        bottom: 10px;
+    
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* carousel height */
+.carousel {
+    height: 100%;
+    width: 100%;
+}
+
+/* cell inherit height from carousel */
+.carousel-cell {
+    height: 100%;
+    width: 150px;
+    background-color: white;
+    .postcell {
+        height: 175px;
+        width: 125px;
     }
+}
+
+/* move page dots into carousel */
+.flickity-page-dots { 
+    bottom: 10px;
 }
