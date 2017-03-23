@@ -1270,6 +1270,21 @@ footer {
   .page-template-about-us .article:nth-child(even) {
     background-color: #fff; }
 
+.blog-header {
+  /* carousel height */
+  /* cell inherit height from carousel */
+  /* move page dots into carousel */ }
+  .blog-header .carousel {
+    height: 300px;
+    width: 100%;
+    background-color: lightcoral; }
+  .blog-header .carousel-cell {
+    height: 100%;
+    width: 100%;
+    background-color: white; }
+  .blog-header .flickity-page-dots {
+    bottom: 10px; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
