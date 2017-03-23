@@ -10,9 +10,7 @@ get_header(); ?>
 			<header class = "general-template-section blog-header">
 
             <section class="article-slider">
-
-                <ul class="carousel main-carousel"
-                data-flickity='{ "accessibility": false }'>
+                <ul class="carousel main-carousel">
                     <?php if ( have_posts() ) : ?>   
                         <?php while ( have_posts() ) : the_post(); ?> <!--start loop-->
                             <li class="carousel-cell">
@@ -33,7 +31,6 @@ get_header(); ?>
                         <?php endwhile; ?>
                     <?php endif; ?>
                 </ul>
-
             </section>
 
 			</header><!--general-template-section-->
