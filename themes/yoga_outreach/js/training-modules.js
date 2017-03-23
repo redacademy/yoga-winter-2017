@@ -34,18 +34,14 @@
                     .removeClass('todo').addClass('in-progress').children('.progress')
                     .children('.progress-icon').removeClass('incomplete').addClass('half-way');
         }
-
-        if(!$(this).parent().parent().children('.individual-lesson').children('.lesson-dropdown').not(".completed").length == 0){
-            console.log('hello');
-            // var moduleComp = $(this).next().val();
-            // $(".tablinks").val(moduleComp).addClass('start-module');
+        if($(this).parent().parent().parent().children('.individual-lesson:last-child').children('.lesson-dropdown').hasClass('completed')){
+            console.log($(this).parent().parent().parent().next().children('.individual-lesson').first().children('.lesson-field').addClass('start-lesson'));
+            var moduleComp = $(this).parent().parent().parent().next().prop('id');
+            $(".tablinks[value= '"+ moduleComp +"']").addClass('start-module');
         }
     });
 
 })(jQuery); 
-
-
-
 
 function openTab(evt, moduleID) {
     // Declare all variables

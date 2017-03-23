@@ -62,9 +62,15 @@ get_header(); ?>
 							</div>
 							<?php if(!empty($contents)): ?>
 								<?php foreach( $contents as $content): ?>
+								<?php
+									$quizzes = $content['module_quiz'];
+									foreach ( $quizzes as $key => $label ) {
+										$quiz = $label;
+									}
+								?>
 									<div class="lesson-field">
 										<?php if(!empty($content['video_file'])): ?><iframe width="560" height="315" src="<?php echo $content['video_file']?>" frameborder="0" allowfullscreen></iframe><?php endif; ?>
-										<?php if(!empty($content['module_quiz'])): ?><button class="main-button grey-button"><a href="" class="button">Proceed to Quiz <?php the_title() ?></a></button><?php endif; ?>
+										<?php if(!empty($quiz)): ?><button class="main-button grey-button"><a href="" class="button">Proceed to Quiz <?php the_title() ?></a></button><?php endif; ?>
 										<?php if(!empty($content['module_homework'])): ?><p><?php echo $content['module_homework'] ?></p><?php endif; ?>
 										<?php if(!empty($content['slides'])): ?>
 											<div class="main-carousel">
