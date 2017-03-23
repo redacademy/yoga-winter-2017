@@ -10,7 +10,7 @@ get_header(); ?>
             <header class="entry-header custom-hero-image">
                     <h1 class="header-title">Welcome to your online course</h1>
                     <button class="main-button grey-button"><a href="<?php echo get_page_link(203); ?>" class="button">Go to Modules</a></button>
-            </header><!-- .entry-header -->
+            </header><!-- .entry-header --> 
             <section class="container-one">
                 <div class="decorative-line"></div>
                 <div class="info-dropdown custom-info-container"><h2>Yoga Outreach Core Training</h2><span>+</span></div>

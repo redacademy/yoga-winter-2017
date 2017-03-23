@@ -1,7 +1,8 @@
 .page-template-core-training {
+    overflow-x:hidden;
         .main-carousel{
                 width: 100%;
-                padding: 30px;
+                padding:10 20px;
                 margin: 0 auto;
                 .carousel-cell{
                     width: 100%;
@@ -28,17 +29,18 @@
                 .flickity-prev-next-button.previous {
                     left: 5%;
                 }
-            }
+    }
 
     .section-15px-padding{
         padding:0 15px;
-        }
+    }
 
     .core-h3-container{
         width:100%;
         border-bottom: 2px solid #4A4A4A;
         padding-bottom:16px;
-        }
+        margin-bottom:18px;
+    }
 
     .core-header{
         margin:0;
@@ -50,12 +52,12 @@
             @include desktop{
                 font-size:40px;
                 width:700px;
-                }
+            }
     }
 
     .register-online-button{
-        @include general-button;
-        background-color:#6B747D;
+            @include general-button;
+                background-color:#6B747D;
     }
 
     .table-section-container{
@@ -66,10 +68,14 @@
         }
     }
 
-    .book-training{
+    .book-training.register-button{
         @include desktop{
             margin-right:0;
         }
+    }
+
+    .small-para-container{
+        margin-top:2rem;
     }
 
     .classroom-dates-section, .online-dates-section{
@@ -84,12 +90,13 @@
         }
     }
 
-    .classroom-tr{
-        height:140px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    .core-training-info-list{
+        margin:0;
+        padding:0 15px;
+        list-style:none;
     }
+
+ 
 
     .general-button{
         @include general-button;
@@ -112,40 +119,76 @@
         }
     }
 
+    .earth-logo-change{
+        width: 70px;
+        height: 30px;
+        background-image:url('../../images/earth_icon.svg');
+        background-size:contain;
+        background-repeat:no-repeat;
+            @include desktop{
+                background-image:url('../../images/blue_earth_icon.svg');
+                width:30px;
+                height:30px;
+                margin-right:10px;
+            }
+    }
+
     .earth-logo{
-        width:26px;
-        height:26px;
-        margin-right:9px;
+        width:2rem;
+        height:2rem;
             @include desktop{
                 width:60px;
                 height:60px;
+                margin-right:9px;
             }
-        }
-
-    .core-training-text-image-container{
-        width: 16rem;
     }
+
 
     .avail-online-heading-container, .core-training-text-image-container{
         display:flex;
         margin-top:25px;
         align-items:center;
+        max-width: 35rem;
             @include desktop{
-                width: 40vw;
                 margin-left: 0;
-                max-width:400px;
                 margin-bottom:59px;
+                min-width:10rem;
             }
             h3{
                 margin:0;
                 text-transform:uppercase;
-                font-size:18px;
+                font-size:14px;
                 font-weight:bold;
                     @include desktop{
-                        width:50vw;
+                        font-size:18px;
+                        text-transform:none;
                     }
-                }
             }
+    }
+
+    .avail-online-heading-container{
+        h3{
+            text-transform:uppercase;
+        }
+    }
+
+      .core-training-text-image-container{
+        width: 16rem;
+        margin-bottom:1rem;
+            @include desktop{
+                width:19rem;
+                margin-bottom: 3.2rem;
+            }
+            h3{
+                font-size:17px;
+                    @include desktop{
+                        font-size:20px;
+                    }
+            }
+    }
+
+
+
 
     .avail-online-h3{
         @include desktop{
@@ -171,6 +214,7 @@
         display:flex;
         padding-top:35px;
         align-items:center;
+        margin-bottom:1rem;
             @include desktop{
                 margin-bottom:45px;
             }
@@ -179,6 +223,7 @@
                 font-size:20px;
                 color:#4A4A4A;
                 width: 200px;
+                margin-left:1rem;
             }
     }
 
@@ -215,12 +260,32 @@
 
     }
 
+    #training-pdf-container{
+		display:flex;
+		justify-content:space-between;
+		margin-bottom:5px;
+		align-items:center;
+		flex-wrap:wrap;
+			a{
+				background-color:#fff;
+				width:80px;
+				height:44px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-decoration: none;
+				border-radius:8px;
+				border:1px solid white;
+			}
+	}
+
+
     .house-logo{
         width:27.94px;
         height:28.92px;
         margin-right:9px;
             @include desktop{
-                width:45.63px;
+                width:6rem;
                 height:45.65px;
             }
             
@@ -228,7 +293,7 @@
 
     .table-heading{
         display:inline-block;
-        min-width:100px;
+        width:70px;
         font-size:11px;
         margin-left:6px;
     }
@@ -250,13 +315,12 @@
         font-size:11px;
     }
 
+    .yoga-info-title{
+		font-size:16.38px;
+	}
+
     tr{
-        border-top:1px solid black;
-        border-right:1px solid black;
-        border-left:1px solid black;
-        margin:0;
-        height:85px;
-        padding-top:9px;
+       
             td{
                 margin-top:9px;
             }
@@ -264,8 +328,27 @@
 
     .dates-table{
         border-bottom:1px solid black;
-            @include desktop{
-                width:45vw;
+            tr{
+                height:60px;
+                border-top:1px solid black;
+                border-right:1px solid black;
+                border-left:1px solid black;
+                margin:0;
+                padding-top:9px;
             }
+                @include desktop{
+                    width:45vw;
+
+                }
+    }
+
+    .dates-table{
+        .classroom-tr{
+            height: 100px;
+            padding-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
         }
+    }
 }//Core Training Wrapper
