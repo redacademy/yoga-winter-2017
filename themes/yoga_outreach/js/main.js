@@ -72,6 +72,8 @@
 
     // Changes radio buttons on forms
     $( '.gfield_radio li label' ).prepend( '<span></span>');
+
+
 })(jQuery); 
 
 

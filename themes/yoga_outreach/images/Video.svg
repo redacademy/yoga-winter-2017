@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 552.8 552.8" style="enable-background:new 0 0 552.8 552.8;" xml:space="preserve">
-<style type="text/css">
-	.st0{opacity:0.8;fill:#424143;}
-	.st1{fill:#FFFFFF;}
-</style>
-<g>
-	<circle class="st0" cx="275.3" cy="275.3" r="264.2"/>
-	<path class="st1" d="M424,260.2L213.5,138.6c-12.5-7.2-28.1,1.8-28.1,16.2v243c0,14.4,15.6,23.4,28.1,16.2L424,292.6
-		C436.5,285.4,436.5,267.4,424,260.2z"/>
-	<path class="st1" d="M276.4,0C124,0,0,124,0,276.4s124,276.4,276.4,276.4s276.4-124,276.4-276.4S428.8,0,276.4,0z M275.9,525.6
-		c-136.6,0-247.2-110.7-247.2-247.2S139.4,31.1,275.9,31.1s247.2,110.7,247.2,247.2S412.5,525.6,275.9,525.6z"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Video Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Course-Modules---1" transform="translate(-24.000000, -679.000000)">
+            <g id="Video-Icon" transform="translate(24.000000, 679.000000)">
+                <ellipse id="Oval" fill="#6B747D" cx="12" cy="12" rx="12" ry="12"></ellipse>
+                <polygon id="Triangle-2" fill="#FFFFFF" transform="translate(13.500000, 11.500000) rotate(-270.000000) translate(-13.500000, -11.500000) " points="13.5 7 18 16 9 16"></polygon>
+            </g>
+        </g>
+    </g>
 </svg>

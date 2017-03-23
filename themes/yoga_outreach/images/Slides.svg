@@ -1,1 +1,31 @@
-<?xml version="1.0" ?><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Google Slides" id="Google_Slides"><path d="M9.5,12H14V10H8v5H9V12.5A.5.5,0,0,1,9.5,12Z" style="fill:#303c42"/><rect height="5" style="fill:#303c42" width="6" x="10" y="13"/><path d="M20.85,5.15l-5-5A.5.5,0,0,0,15.5,0H5A2,2,0,0,0,3,2V22a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V5.5A.5.5,0,0,0,20.85,5.15ZM17,18.5a.5.5,0,0,1-.5.5h-7a.5.5,0,0,1-.5-.5V16H7.5a.5.5,0,0,1-.5-.5v-6A.5.5,0,0,1,7.5,9h7a.5.5,0,0,1,.5.5V12h1.5a.5.5,0,0,1,.5.5ZM17,5a1,1,0,0,1-1-1V1.71L19.29,5Z" style="fill:#303c42"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Slides Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="21" height="21" rx="1"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="21" height="21" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="3" y="3" width="21" height="21" rx="1"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="21" height="21" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="6" y="6" width="21" height="21" rx="1"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="21" height="21" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Course-Modules---1" transform="translate(-24.000000, -617.000000)" stroke="#FFFFFF" fill="#6B747D">
+            <g id="Slides-Icon" transform="translate(24.000000, 617.000000)">
+                <g id="Group-2">
+                    <use id="Rectangle-6" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                    <use id="Rectangle-6" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-3"></use>
+                    <use id="Rectangle-6" mask="url(#mask-6)" stroke-width="2" xlink:href="#path-5"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

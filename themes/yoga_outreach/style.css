@@ -534,7 +534,7 @@ button {
       .info-dropdown span {
         display: none; } }
 
-.info-field, .module-field {
+.info-field, .lesson-field {
   display: none;
   height: 100%;
   padding: 0 15px 20px;
@@ -4071,32 +4071,96 @@ http://flickity.metafizzy.co
   /* Create an active/current tablink class */
   /* Style the tab content */ }
   .post-type-archive-training_modules .entry-header {
-    padding-top: 25%;
+    padding-top: 210px;
     max-width: 1020px;
     width: 100%;
     margin: 0 auto; }
   .post-type-archive-training_modules .course-modules {
     max-width: 1020px;
     width: 100%;
-    margin: 0 auto; }
+    margin: 5% auto 15% auto; }
+  .post-type-archive-training_modules .to-do {
+    background-color: #fff; }
+    .post-type-archive-training_modules .to-do .progress-text:before {
+      content: "To Do"; }
+  .post-type-archive-training_modules .in-progress {
+    background-color: #ebe5d8; }
+    .post-type-archive-training_modules .in-progress .progress-text:before {
+      content: "In Progress"; }
+  .post-type-archive-training_modules .completed {
+    background-color: #95afc9; }
+    .post-type-archive-training_modules .completed .progress-text:before {
+      content: "Completed"; }
+  .post-type-archive-training_modules .info-dropdown {
+    border-bottom: 1px solid #6b747d;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    height: 100px; }
+    .post-type-archive-training_modules .info-dropdown .info-content {
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%; }
+      .post-type-archive-training_modules .info-dropdown .info-content img {
+        width: 50px;
+        margin-right: 20px; }
+      .post-type-archive-training_modules .info-dropdown .info-content .info-container {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        .post-type-archive-training_modules .info-dropdown .info-content .info-container p {
+          font-size: 1.25rem; }
+    .post-type-archive-training_modules .info-dropdown .progress {
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
+      .post-type-archive-training_modules .info-dropdown .progress .progress-icon {
+        margin-right: 10px;
+        height: 45px;
+        width: 45px;
+        background-size: cover, cover; }
+      .post-type-archive-training_modules .info-dropdown .progress .incomplete {
+        background: url("../../images/todo.svg") no-repeat center bottom; }
+      .post-type-archive-training_modules .info-dropdown .progress .half-way {
+        background: url("../../images/progress.svg") no-repeat center bottom; }
+      .post-type-archive-training_modules .info-dropdown .progress .complete {
+        background: url("../../images/complete.svg") no-repeat center bottom; }
+      .post-type-archive-training_modules .info-dropdown .progress .progress-text {
+        font-size: 0.75rem;
+        font-style: italic; }
+  .post-type-archive-training_modules .dec-space {
+    height: 100px;
+    background-color: #fff;
+    border-bottom: 1px solid #6b747d; }
   .post-type-archive-training_modules div.tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: rgba(216, 216, 216, 0.6); }
+    background-color: rgba(235, 229, 216, 0.6);
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
   .post-type-archive-training_modules div.tab button {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
     background-color: inherit;
-    float: left;
-    border: none;
+    border: 1px solid #6b747d;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s; }
+    transition: 0.3s;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #6b747d;
+    box-shadow: none;
+    border-radius: 0; }
   .post-type-archive-training_modules div.tab button:hover {
     background-color: #ddd; }
   .post-type-archive-training_modules div.tab button.active {
-    background-color: #ccc; }
+    background-color: #fff;
+    font-weight: bold;
+    border-bottom: none; }
   .post-type-archive-training_modules .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #6b747d;
     border-top: none; }

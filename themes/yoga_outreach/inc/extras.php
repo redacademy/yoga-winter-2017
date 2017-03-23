@@ -73,3 +73,20 @@ function formstemplate_styles() {
     wp_add_inline_style( 'red-starter-style', $hero_css );
 }
 add_action( 'wp_enqueue_scripts', 'formstemplate_styles' );
+
+
+ /**
+ * Sort Archive by ascending title
+ *
+ * 
+ */
+function change_sort_order($query){
+    if(is_post_type_archive()):
+        //If you wanted it for the archive of a custom post type use: is_post_type_archive( $post_type )
+        //Set the order ASC or DESC
+        $query->set( 'order', 'ASC' );
+        //Set the orderby
+        $query->set( 'orderby', 'title' );
+    endif;    
+};
+add_action( 'pre_get_posts', 'change_sort_order');
