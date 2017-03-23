@@ -29,13 +29,13 @@
 					<span class="responsive-menu">
 				    <i class="fa fa-bars" aria-hidden="true"></i>
 		    	</span>
-            <div class="submenu">
-              
-              <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
+
+              <!--<img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>-->
+
               <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
-              <div class="subsubmenu">
-              </div>
-            </div>
+              <!--<div class="subsubmenu">
+              </div>-->
+ 
           <div id="header-logo">
             <div class="logo-image">
               <?php show_easylogo(); ?>
