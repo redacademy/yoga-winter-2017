@@ -1,5 +1,4 @@
 .page-template-core-training {
-    overflow-x:hidden;
         .main-carousel{
                 width: 100%;
                 padding:10 20px;
@@ -58,6 +57,7 @@
     .register-online-button{
             @include general-button;
                 background-color:#6B747D;
+                margin-right:0;
     }
 
     .table-section-container{
@@ -76,6 +76,9 @@
 
     .small-para-container{
         margin-top:2rem;
+            @include desktop{
+                margin-top:0;
+            }
     }
 
     .classroom-dates-section, .online-dates-section{
@@ -144,7 +147,7 @@
     }
 
 
-    .avail-online-heading-container, .core-training-text-image-container{
+    .avail-online-heading-container{
         display:flex;
         margin-top:25px;
         align-items:center;
@@ -177,7 +180,7 @@
         margin-bottom:1rem;
             @include desktop{
                 width:19rem;
-                margin-bottom: 3.2rem;
+                // margin-bottom: 3.2rem;
             }
             h3{
                 font-size:17px;
@@ -201,6 +204,7 @@
         color:#6B747D;
         font-size:14px;
         line-height:2;
+        max-width:1024px;
     }
 
     .dark-training-para{
@@ -210,7 +214,7 @@
         margin-bottom:35px;
     }
 
-    .online-class-icon-heading-container{
+    .online-class-icon-heading-container, .core-training-text-image-container{
         display:flex;
         padding-top:35px;
         align-items:center;
@@ -224,6 +228,9 @@
                 color:#4A4A4A;
                 width: 200px;
                 margin-left:1rem;
+                    @include desktop{
+                        width:100%;
+                    }
             }
     }
 

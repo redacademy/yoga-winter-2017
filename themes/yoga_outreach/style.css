@@ -1718,291 +1718,331 @@ a:hover, a:active {
   background-color: #fff;
   margin-bottom: 0; }
 
-.page-template-core-training {
-  overflow-x: hidden; }
-  .page-template-core-training .main-carousel {
+.page-template-core-training .main-carousel {
+  width: 100%;
+  padding: 10 20px;
+  margin: 0 auto; }
+  .page-template-core-training .main-carousel .carousel-cell {
     width: 100%;
-    padding: 10 20px;
-    margin: 0 auto; }
-    .page-template-core-training .main-carousel .carousel-cell {
-      width: 100%;
-      height: auto; }
-      .page-template-core-training .main-carousel .carousel-cell p {
-        margin-top: 20px; }
-      .page-template-core-training .main-carousel .carousel-cell h1 {
-        color: #4a4a4a; }
-    .page-template-core-training .main-carousel ol {
-      display: none; }
-    .page-template-core-training .main-carousel .flickity-prev-next-button {
-      border: none;
-      background: none;
-      box-shadow: none;
-      padding: 0; }
-    .page-template-core-training .main-carousel .flickity-prev-next-button.next {
-      right: 5%; }
-    .page-template-core-training .main-carousel .flickity-prev-next-button.previous {
-      left: 5%; }
-  .page-template-core-training .section-15px-padding {
-    padding: 0 15px; }
-  .page-template-core-training .core-h3-container {
-    width: 100%;
-    border-bottom: 2px solid #4A4A4A;
-    padding-bottom: 16px;
-    margin-bottom: 18px; }
-  .page-template-core-training .core-header {
-    margin: 0;
-    width: 175px;
-    color: #6B747D;
-    font-size: 20px;
-    line-height: 24px;
-    margin-top: 39px; }
-    @media (min-width: 720px) {
-      .page-template-core-training .core-header {
-        font-size: 40px;
-        width: 700px; } }
-  .page-template-core-training .register-online-button {
-    width: 230px;
-    height: 44px;
-    display: block;
-    margin: 0 auto;
-    font-size: 14px;
-    text-transform: uppercase;
-    box-shadow: none;
-    text-shadow: none;
-    box-shadow: none;
-    text-shadow: none;
-    color: white;
-    border-radius: 8px;
+    height: auto; }
+    .page-template-core-training .main-carousel .carousel-cell p {
+      margin-top: 20px; }
+    .page-template-core-training .main-carousel .carousel-cell h1 {
+      color: #4a4a4a; }
+  .page-template-core-training .main-carousel ol {
+    display: none; }
+  .page-template-core-training .main-carousel .flickity-prev-next-button {
     border: none;
-    font-family: 'raleway',sans-serif;
+    background: none;
+    box-shadow: none;
+    padding: 0; }
+  .page-template-core-training .main-carousel .flickity-prev-next-button.next {
+    right: 5%; }
+  .page-template-core-training .main-carousel .flickity-prev-next-button.previous {
+    left: 5%; }
+
+.page-template-core-training .section-15px-padding {
+  padding: 0 15px; }
+
+.page-template-core-training .core-h3-container {
+  width: 100%;
+  border-bottom: 2px solid #4A4A4A;
+  padding-bottom: 16px;
+  margin-bottom: 18px; }
+
+.page-template-core-training .core-header {
+  margin: 0;
+  width: 175px;
+  color: #6B747D;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 39px; }
+  @media (min-width: 720px) {
+    .page-template-core-training .core-header {
+      font-size: 40px;
+      width: 700px; } }
+
+.page-template-core-training .register-online-button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  background-color: #6B747D;
+  margin-right: 0; }
+
+@media (min-width: 720px) {
+  .page-template-core-training .table-section-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 3rem; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .book-training.register-button {
+    margin-right: 0; } }
+
+.page-template-core-training .small-para-container {
+  margin-top: 2rem; }
+  @media (min-width: 720px) {
+    .page-template-core-training .small-para-container {
+      margin-top: 0; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .classroom-dates-section, .page-template-core-training .online-dates-section {
+    width: 350px; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .dates-table {
+    max-width: 400px; } }
+
+.page-template-core-training .core-training-info-list {
+  margin: 0;
+  padding: 0 15px;
+  list-style: none; }
+
+.page-template-core-training .general-button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  margin-bottom: 29px; }
+
+@media (min-width: 720px) {
+  .page-template-core-training .register-online-button {
+    display: inline; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .register-button-para-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    margin-top: 12px; } }
+
+.page-template-core-training .earth-logo-change {
+  width: 70px;
+  height: 30px;
+  background-image: url("../../images/earth_icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (min-width: 720px) {
+    .page-template-core-training .earth-logo-change {
+      background-image: url("../../images/blue_earth_icon.svg");
+      width: 30px;
+      height: 30px;
+      margin-right: 10px; } }
+
+.page-template-core-training .earth-logo {
+  width: 2rem;
+  height: 2rem; }
+  @media (min-width: 720px) {
+    .page-template-core-training .earth-logo {
+      width: 60px;
+      height: 60px;
+      margin-right: 9px; } }
+
+.page-template-core-training .avail-online-heading-container {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  -ms-flex-align: center;
+      align-items: center;
+  max-width: 35rem; }
+  @media (min-width: 720px) {
+    .page-template-core-training .avail-online-heading-container {
+      margin-left: 0;
+      margin-bottom: 59px;
+      min-width: 10rem; } }
+  .page-template-core-training .avail-online-heading-container h3 {
+    margin: 0;
+    text-transform: uppercase;
     font-size: 14px;
-    background-color: #6B747D; }
+    font-weight: bold; }
+    @media (min-width: 720px) {
+      .page-template-core-training .avail-online-heading-container h3 {
+        font-size: 18px;
+        text-transform: none; } }
+
+.page-template-core-training .avail-online-heading-container h3 {
+  text-transform: uppercase; }
+
+.page-template-core-training .core-training-text-image-container {
+  width: 16rem;
+  margin-bottom: 1rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .table-section-container {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      margin-top: 3rem; } }
+    .page-template-core-training .core-training-text-image-container {
+      width: 19rem; } }
+  .page-template-core-training .core-training-text-image-container h3 {
+    font-size: 17px; }
+    @media (min-width: 720px) {
+      .page-template-core-training .core-training-text-image-container h3 {
+        font-size: 20px; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .avail-online-h3 {
+    margin-top: 12px; } }
+
+.page-template-core-training .light-training-para {
+  color: #6B747D;
+  font-size: 14px;
+  line-height: 2;
+  max-width: 1024px; }
+
+.page-template-core-training .dark-training-para {
+  color: #4A4A4A;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 35px; }
+
+.page-template-core-training .online-class-icon-heading-container, .page-template-core-training .core-training-text-image-container {
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 35px;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 1rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .book-training.register-button {
-      margin-right: 0; } }
-  .page-template-core-training .small-para-container {
-    margin-top: 2rem; }
+    .page-template-core-training .online-class-icon-heading-container, .page-template-core-training .core-training-text-image-container {
+      margin-bottom: 45px; } }
+  .page-template-core-training .online-class-icon-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #4A4A4A;
+    width: 200px;
+    margin-left: 1rem; }
+    @media (min-width: 720px) {
+      .page-template-core-training .online-class-icon-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
+        width: 100%; } }
+
+.page-template-core-training .training-list-header {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .page-template-core-training .training-list-header li {
+    border: 1px solid black;
+    margin-bottom: 5px;
+    padding-left: 5px; }
+
+.page-template-core-training .training-date-text {
+  font-size: 11px;
+  color: #4A4A4A;
+  line-height: 2;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .page-template-core-training .training-date-text span {
+    text-transform: none;
+    font-weight: 300;
+    margin-left: 45px; }
+
+.page-template-core-training .training-date-list span {
+  font-weight: 300;
+  margin-left: 45px;
+  text-transform: normal; }
+
+.page-template-core-training #training-pdf-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 5px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .page-template-core-training #training-pdf-container a {
+    background-color: #fff;
+    width: 80px;
+    height: 44px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid white; }
+
+.page-template-core-training .house-logo {
+  width: 27.94px;
+  height: 28.92px;
+  margin-right: 9px; }
   @media (min-width: 720px) {
-    .page-template-core-training .classroom-dates-section, .page-template-core-training .online-dates-section {
-      width: 350px; } }
+    .page-template-core-training .house-logo {
+      width: 6rem;
+      height: 45.65px; } }
+
+.page-template-core-training .table-heading {
+  display: inline-block;
+  width: 70px;
+  font-size: 11px;
+  margin-left: 6px; }
+
+.page-template-core-training .training-table-data {
+  display: -ms-flexbox;
+  display: flex; }
+
+@media (min-width: 720px) {
+  .page-template-core-training .online-dates-section, .page-template-core-training .classroom-dates-section {
+    width: 45vw;
+    padding: 0;
+    max-width: 400px;
+    border-top: 1px solid #979797; } }
+
+.page-template-core-training .table-content {
+  font-size: 11px; }
+
+.page-template-core-training .yoga-info-title {
+  font-size: 16.38px; }
+
+.page-template-core-training tr td {
+  margin-top: 9px; }
+
+.page-template-core-training .dates-table {
+  border-bottom: 1px solid black; }
+  .page-template-core-training .dates-table tr {
+    height: 60px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    margin: 0;
+    padding-top: 9px; }
   @media (min-width: 720px) {
     .page-template-core-training .dates-table {
-      max-width: 400px; } }
-  .page-template-core-training .core-training-info-list {
-    margin: 0;
-    padding: 0 15px;
-    list-style: none; }
-  .page-template-core-training .general-button {
-    width: 230px;
-    height: 44px;
-    display: block;
-    margin: 0 auto;
-    font-size: 14px;
-    text-transform: uppercase;
-    box-shadow: none;
-    text-shadow: none;
-    box-shadow: none;
-    text-shadow: none;
-    color: white;
-    border-radius: 8px;
-    border: none;
-    font-family: 'raleway',sans-serif;
-    font-size: 14px;
-    margin-bottom: 29px; }
-  @media (min-width: 720px) {
-    .page-template-core-training .register-online-button {
-      display: inline; } }
-  @media (min-width: 720px) {
-    .page-template-core-training .register-button-para-container {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-      margin-top: 12px; } }
-  .page-template-core-training .earth-logo-change {
-    width: 70px;
-    height: 30px;
-    background-image: url("../../images/earth_icon.svg");
-    background-size: contain;
-    background-repeat: no-repeat; }
-    @media (min-width: 720px) {
-      .page-template-core-training .earth-logo-change {
-        background-image: url("../../images/blue_earth_icon.svg");
-        width: 30px;
-        height: 30px;
-        margin-right: 10px; } }
-  .page-template-core-training .earth-logo {
-    width: 2rem;
-    height: 2rem; }
-    @media (min-width: 720px) {
-      .page-template-core-training .earth-logo {
-        width: 60px;
-        height: 60px;
-        margin-right: 9px; } }
-  .page-template-core-training .avail-online-heading-container, .page-template-core-training .core-training-text-image-container {
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 25px;
-    -ms-flex-align: center;
-        align-items: center;
-    max-width: 35rem; }
-    @media (min-width: 720px) {
-      .page-template-core-training .avail-online-heading-container, .page-template-core-training .core-training-text-image-container {
-        margin-left: 0;
-        margin-bottom: 59px;
-        min-width: 10rem; } }
-    .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
-      margin: 0;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: bold; }
-      @media (min-width: 720px) {
-        .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
-          font-size: 18px;
-          text-transform: none; } }
-  .page-template-core-training .avail-online-heading-container h3 {
-    text-transform: uppercase; }
-  .page-template-core-training .core-training-text-image-container {
-    width: 16rem;
-    margin-bottom: 1rem; }
-    @media (min-width: 720px) {
-      .page-template-core-training .core-training-text-image-container {
-        width: 19rem;
-        margin-bottom: 3.2rem; } }
-    .page-template-core-training .core-training-text-image-container h3 {
-      font-size: 17px; }
-      @media (min-width: 720px) {
-        .page-template-core-training .core-training-text-image-container h3 {
-          font-size: 20px; } }
-  @media (min-width: 720px) {
-    .page-template-core-training .avail-online-h3 {
-      margin-top: 12px; } }
-  .page-template-core-training .light-training-para {
-    color: #6B747D;
-    font-size: 14px;
-    line-height: 2; }
-  .page-template-core-training .dark-training-para {
-    color: #4A4A4A;
-    font-size: 14px;
-    line-height: 2;
-    margin-bottom: 35px; }
-  .page-template-core-training .online-class-icon-heading-container {
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 35px;
-    -ms-flex-align: center;
-        align-items: center;
-    margin-bottom: 1rem; }
-    @media (min-width: 720px) {
-      .page-template-core-training .online-class-icon-heading-container {
-        margin-bottom: 45px; } }
-    .page-template-core-training .online-class-icon-heading-container h3 {
-      margin: 0;
-      font-size: 20px;
-      color: #4A4A4A;
-      width: 200px;
-      margin-left: 1rem; }
-  .page-template-core-training .training-list-header {
-    padding: 0;
-    margin: 0;
-    list-style: none; }
-    .page-template-core-training .training-list-header li {
-      border: 1px solid black;
-      margin-bottom: 5px;
-      padding-left: 5px; }
-  .page-template-core-training .training-date-text {
-    font-size: 11px;
-    color: #4A4A4A;
-    line-height: 2;
-    font-weight: bold;
-    text-transform: uppercase; }
-    .page-template-core-training .training-date-text span {
-      text-transform: none;
-      font-weight: 300;
-      margin-left: 45px; }
-  .page-template-core-training .training-date-list span {
-    font-weight: 300;
-    margin-left: 45px;
-    text-transform: normal; }
-  .page-template-core-training #training-pdf-container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    margin-bottom: 5px;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .page-template-core-training #training-pdf-container a {
-      background-color: #fff;
-      width: 80px;
-      height: 44px;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
-          align-items: center;
-      text-decoration: none;
-      border-radius: 8px;
-      border: 1px solid white; }
-  .page-template-core-training .house-logo {
-    width: 27.94px;
-    height: 28.92px;
-    margin-right: 9px; }
-    @media (min-width: 720px) {
-      .page-template-core-training .house-logo {
-        width: 6rem;
-        height: 45.65px; } }
-  .page-template-core-training .table-heading {
-    display: inline-block;
-    width: 70px;
-    font-size: 11px;
-    margin-left: 6px; }
-  .page-template-core-training .training-table-data {
-    display: -ms-flexbox;
-    display: flex; }
-  @media (min-width: 720px) {
-    .page-template-core-training .online-dates-section, .page-template-core-training .classroom-dates-section {
-      width: 45vw;
-      padding: 0;
-      max-width: 400px;
-      border-top: 1px solid #979797; } }
-  .page-template-core-training .table-content {
-    font-size: 11px; }
-  .page-template-core-training .yoga-info-title {
-    font-size: 16.38px; }
-  .page-template-core-training tr td {
-    margin-top: 9px; }
-  .page-template-core-training .dates-table {
-    border-bottom: 1px solid black; }
-    .page-template-core-training .dates-table tr {
-      height: 60px;
-      border-top: 1px solid black;
-      border-right: 1px solid black;
-      border-left: 1px solid black;
-      margin: 0;
-      padding-top: 9px; }
-    @media (min-width: 720px) {
-      .page-template-core-training .dates-table {
-        width: 45vw; } }
-  .page-template-core-training .dates-table .classroom-tr {
-    height: 100px;
-    padding-bottom: 1rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+      width: 45vw; } }
+
+.page-template-core-training .dates-table .classroom-tr {
+  height: 100px;
+  padding-bottom: 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .page-template-resources-research .info-heading {
   font-size: 16px;
@@ -3362,291 +3402,331 @@ object {
   background-color: #fff;
   margin-bottom: 0; }
 
-.page-template-core-training {
-  overflow-x: hidden; }
-  .page-template-core-training .main-carousel {
+.page-template-core-training .main-carousel {
+  width: 100%;
+  padding: 10 20px;
+  margin: 0 auto; }
+  .page-template-core-training .main-carousel .carousel-cell {
     width: 100%;
-    padding: 10 20px;
-    margin: 0 auto; }
-    .page-template-core-training .main-carousel .carousel-cell {
-      width: 100%;
-      height: auto; }
-      .page-template-core-training .main-carousel .carousel-cell p {
-        margin-top: 20px; }
-      .page-template-core-training .main-carousel .carousel-cell h1 {
-        color: #4a4a4a; }
-    .page-template-core-training .main-carousel ol {
-      display: none; }
-    .page-template-core-training .main-carousel .flickity-prev-next-button {
-      border: none;
-      background: none;
-      box-shadow: none;
-      padding: 0; }
-    .page-template-core-training .main-carousel .flickity-prev-next-button.next {
-      right: 5%; }
-    .page-template-core-training .main-carousel .flickity-prev-next-button.previous {
-      left: 5%; }
-  .page-template-core-training .section-15px-padding {
-    padding: 0 15px; }
-  .page-template-core-training .core-h3-container {
-    width: 100%;
-    border-bottom: 2px solid #4A4A4A;
-    padding-bottom: 16px;
-    margin-bottom: 18px; }
-  .page-template-core-training .core-header {
-    margin: 0;
-    width: 175px;
-    color: #6B747D;
-    font-size: 20px;
-    line-height: 24px;
-    margin-top: 39px; }
-    @media (min-width: 720px) {
-      .page-template-core-training .core-header {
-        font-size: 40px;
-        width: 700px; } }
-  .page-template-core-training .register-online-button {
-    width: 230px;
-    height: 44px;
-    display: block;
-    margin: 0 auto;
-    font-size: 14px;
-    text-transform: uppercase;
-    box-shadow: none;
-    text-shadow: none;
-    box-shadow: none;
-    text-shadow: none;
-    color: white;
-    border-radius: 8px;
+    height: auto; }
+    .page-template-core-training .main-carousel .carousel-cell p {
+      margin-top: 20px; }
+    .page-template-core-training .main-carousel .carousel-cell h1 {
+      color: #4a4a4a; }
+  .page-template-core-training .main-carousel ol {
+    display: none; }
+  .page-template-core-training .main-carousel .flickity-prev-next-button {
     border: none;
-    font-family: 'raleway',sans-serif;
+    background: none;
+    box-shadow: none;
+    padding: 0; }
+  .page-template-core-training .main-carousel .flickity-prev-next-button.next {
+    right: 5%; }
+  .page-template-core-training .main-carousel .flickity-prev-next-button.previous {
+    left: 5%; }
+
+.page-template-core-training .section-15px-padding {
+  padding: 0 15px; }
+
+.page-template-core-training .core-h3-container {
+  width: 100%;
+  border-bottom: 2px solid #4A4A4A;
+  padding-bottom: 16px;
+  margin-bottom: 18px; }
+
+.page-template-core-training .core-header {
+  margin: 0;
+  width: 175px;
+  color: #6B747D;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 39px; }
+  @media (min-width: 720px) {
+    .page-template-core-training .core-header {
+      font-size: 40px;
+      width: 700px; } }
+
+.page-template-core-training .register-online-button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  background-color: #6B747D;
+  margin-right: 0; }
+
+@media (min-width: 720px) {
+  .page-template-core-training .table-section-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 3rem; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .book-training.register-button {
+    margin-right: 0; } }
+
+.page-template-core-training .small-para-container {
+  margin-top: 2rem; }
+  @media (min-width: 720px) {
+    .page-template-core-training .small-para-container {
+      margin-top: 0; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .classroom-dates-section, .page-template-core-training .online-dates-section {
+    width: 350px; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .dates-table {
+    max-width: 400px; } }
+
+.page-template-core-training .core-training-info-list {
+  margin: 0;
+  padding: 0 15px;
+  list-style: none; }
+
+.page-template-core-training .general-button {
+  width: 230px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  margin-bottom: 29px; }
+
+@media (min-width: 720px) {
+  .page-template-core-training .register-online-button {
+    display: inline; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .register-button-para-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    margin-top: 12px; } }
+
+.page-template-core-training .earth-logo-change {
+  width: 70px;
+  height: 30px;
+  background-image: url("../../images/earth_icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (min-width: 720px) {
+    .page-template-core-training .earth-logo-change {
+      background-image: url("../../images/blue_earth_icon.svg");
+      width: 30px;
+      height: 30px;
+      margin-right: 10px; } }
+
+.page-template-core-training .earth-logo {
+  width: 2rem;
+  height: 2rem; }
+  @media (min-width: 720px) {
+    .page-template-core-training .earth-logo {
+      width: 60px;
+      height: 60px;
+      margin-right: 9px; } }
+
+.page-template-core-training .avail-online-heading-container {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  -ms-flex-align: center;
+      align-items: center;
+  max-width: 35rem; }
+  @media (min-width: 720px) {
+    .page-template-core-training .avail-online-heading-container {
+      margin-left: 0;
+      margin-bottom: 59px;
+      min-width: 10rem; } }
+  .page-template-core-training .avail-online-heading-container h3 {
+    margin: 0;
+    text-transform: uppercase;
     font-size: 14px;
-    background-color: #6B747D; }
+    font-weight: bold; }
+    @media (min-width: 720px) {
+      .page-template-core-training .avail-online-heading-container h3 {
+        font-size: 18px;
+        text-transform: none; } }
+
+.page-template-core-training .avail-online-heading-container h3 {
+  text-transform: uppercase; }
+
+.page-template-core-training .core-training-text-image-container {
+  width: 16rem;
+  margin-bottom: 1rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .table-section-container {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      margin-top: 3rem; } }
+    .page-template-core-training .core-training-text-image-container {
+      width: 19rem; } }
+  .page-template-core-training .core-training-text-image-container h3 {
+    font-size: 17px; }
+    @media (min-width: 720px) {
+      .page-template-core-training .core-training-text-image-container h3 {
+        font-size: 20px; } }
+
+@media (min-width: 720px) {
+  .page-template-core-training .avail-online-h3 {
+    margin-top: 12px; } }
+
+.page-template-core-training .light-training-para {
+  color: #6B747D;
+  font-size: 14px;
+  line-height: 2;
+  max-width: 1024px; }
+
+.page-template-core-training .dark-training-para {
+  color: #4A4A4A;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 35px; }
+
+.page-template-core-training .online-class-icon-heading-container, .page-template-core-training .core-training-text-image-container {
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 35px;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 1rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .book-training.register-button {
-      margin-right: 0; } }
-  .page-template-core-training .small-para-container {
-    margin-top: 2rem; }
+    .page-template-core-training .online-class-icon-heading-container, .page-template-core-training .core-training-text-image-container {
+      margin-bottom: 45px; } }
+  .page-template-core-training .online-class-icon-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #4A4A4A;
+    width: 200px;
+    margin-left: 1rem; }
+    @media (min-width: 720px) {
+      .page-template-core-training .online-class-icon-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
+        width: 100%; } }
+
+.page-template-core-training .training-list-header {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .page-template-core-training .training-list-header li {
+    border: 1px solid black;
+    margin-bottom: 5px;
+    padding-left: 5px; }
+
+.page-template-core-training .training-date-text {
+  font-size: 11px;
+  color: #4A4A4A;
+  line-height: 2;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .page-template-core-training .training-date-text span {
+    text-transform: none;
+    font-weight: 300;
+    margin-left: 45px; }
+
+.page-template-core-training .training-date-list span {
+  font-weight: 300;
+  margin-left: 45px;
+  text-transform: normal; }
+
+.page-template-core-training #training-pdf-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 5px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .page-template-core-training #training-pdf-container a {
+    background-color: #fff;
+    width: 80px;
+    height: 44px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid white; }
+
+.page-template-core-training .house-logo {
+  width: 27.94px;
+  height: 28.92px;
+  margin-right: 9px; }
   @media (min-width: 720px) {
-    .page-template-core-training .classroom-dates-section, .page-template-core-training .online-dates-section {
-      width: 350px; } }
+    .page-template-core-training .house-logo {
+      width: 6rem;
+      height: 45.65px; } }
+
+.page-template-core-training .table-heading {
+  display: inline-block;
+  width: 70px;
+  font-size: 11px;
+  margin-left: 6px; }
+
+.page-template-core-training .training-table-data {
+  display: -ms-flexbox;
+  display: flex; }
+
+@media (min-width: 720px) {
+  .page-template-core-training .online-dates-section, .page-template-core-training .classroom-dates-section {
+    width: 45vw;
+    padding: 0;
+    max-width: 400px;
+    border-top: 1px solid #979797; } }
+
+.page-template-core-training .table-content {
+  font-size: 11px; }
+
+.page-template-core-training .yoga-info-title {
+  font-size: 16.38px; }
+
+.page-template-core-training tr td {
+  margin-top: 9px; }
+
+.page-template-core-training .dates-table {
+  border-bottom: 1px solid black; }
+  .page-template-core-training .dates-table tr {
+    height: 60px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    margin: 0;
+    padding-top: 9px; }
   @media (min-width: 720px) {
     .page-template-core-training .dates-table {
-      max-width: 400px; } }
-  .page-template-core-training .core-training-info-list {
-    margin: 0;
-    padding: 0 15px;
-    list-style: none; }
-  .page-template-core-training .general-button {
-    width: 230px;
-    height: 44px;
-    display: block;
-    margin: 0 auto;
-    font-size: 14px;
-    text-transform: uppercase;
-    box-shadow: none;
-    text-shadow: none;
-    box-shadow: none;
-    text-shadow: none;
-    color: white;
-    border-radius: 8px;
-    border: none;
-    font-family: 'raleway',sans-serif;
-    font-size: 14px;
-    margin-bottom: 29px; }
-  @media (min-width: 720px) {
-    .page-template-core-training .register-online-button {
-      display: inline; } }
-  @media (min-width: 720px) {
-    .page-template-core-training .register-button-para-container {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-      margin-top: 12px; } }
-  .page-template-core-training .earth-logo-change {
-    width: 70px;
-    height: 30px;
-    background-image: url("../../images/earth_icon.svg");
-    background-size: contain;
-    background-repeat: no-repeat; }
-    @media (min-width: 720px) {
-      .page-template-core-training .earth-logo-change {
-        background-image: url("../../images/blue_earth_icon.svg");
-        width: 30px;
-        height: 30px;
-        margin-right: 10px; } }
-  .page-template-core-training .earth-logo {
-    width: 2rem;
-    height: 2rem; }
-    @media (min-width: 720px) {
-      .page-template-core-training .earth-logo {
-        width: 60px;
-        height: 60px;
-        margin-right: 9px; } }
-  .page-template-core-training .avail-online-heading-container, .page-template-core-training .core-training-text-image-container {
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 25px;
-    -ms-flex-align: center;
-        align-items: center;
-    max-width: 35rem; }
-    @media (min-width: 720px) {
-      .page-template-core-training .avail-online-heading-container, .page-template-core-training .core-training-text-image-container {
-        margin-left: 0;
-        margin-bottom: 59px;
-        min-width: 10rem; } }
-    .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
-      margin: 0;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: bold; }
-      @media (min-width: 720px) {
-        .page-template-core-training .avail-online-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
-          font-size: 18px;
-          text-transform: none; } }
-  .page-template-core-training .avail-online-heading-container h3 {
-    text-transform: uppercase; }
-  .page-template-core-training .core-training-text-image-container {
-    width: 16rem;
-    margin-bottom: 1rem; }
-    @media (min-width: 720px) {
-      .page-template-core-training .core-training-text-image-container {
-        width: 19rem;
-        margin-bottom: 3.2rem; } }
-    .page-template-core-training .core-training-text-image-container h3 {
-      font-size: 17px; }
-      @media (min-width: 720px) {
-        .page-template-core-training .core-training-text-image-container h3 {
-          font-size: 20px; } }
-  @media (min-width: 720px) {
-    .page-template-core-training .avail-online-h3 {
-      margin-top: 12px; } }
-  .page-template-core-training .light-training-para {
-    color: #6B747D;
-    font-size: 14px;
-    line-height: 2; }
-  .page-template-core-training .dark-training-para {
-    color: #4A4A4A;
-    font-size: 14px;
-    line-height: 2;
-    margin-bottom: 35px; }
-  .page-template-core-training .online-class-icon-heading-container {
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 35px;
-    -ms-flex-align: center;
-        align-items: center;
-    margin-bottom: 1rem; }
-    @media (min-width: 720px) {
-      .page-template-core-training .online-class-icon-heading-container {
-        margin-bottom: 45px; } }
-    .page-template-core-training .online-class-icon-heading-container h3 {
-      margin: 0;
-      font-size: 20px;
-      color: #4A4A4A;
-      width: 200px;
-      margin-left: 1rem; }
-  .page-template-core-training .training-list-header {
-    padding: 0;
-    margin: 0;
-    list-style: none; }
-    .page-template-core-training .training-list-header li {
-      border: 1px solid black;
-      margin-bottom: 5px;
-      padding-left: 5px; }
-  .page-template-core-training .training-date-text {
-    font-size: 11px;
-    color: #4A4A4A;
-    line-height: 2;
-    font-weight: bold;
-    text-transform: uppercase; }
-    .page-template-core-training .training-date-text span {
-      text-transform: none;
-      font-weight: 300;
-      margin-left: 45px; }
-  .page-template-core-training .training-date-list span {
-    font-weight: 300;
-    margin-left: 45px;
-    text-transform: normal; }
-  .page-template-core-training #training-pdf-container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    margin-bottom: 5px;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .page-template-core-training #training-pdf-container a {
-      background-color: #fff;
-      width: 80px;
-      height: 44px;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
-          align-items: center;
-      text-decoration: none;
-      border-radius: 8px;
-      border: 1px solid white; }
-  .page-template-core-training .house-logo {
-    width: 27.94px;
-    height: 28.92px;
-    margin-right: 9px; }
-    @media (min-width: 720px) {
-      .page-template-core-training .house-logo {
-        width: 6rem;
-        height: 45.65px; } }
-  .page-template-core-training .table-heading {
-    display: inline-block;
-    width: 70px;
-    font-size: 11px;
-    margin-left: 6px; }
-  .page-template-core-training .training-table-data {
-    display: -ms-flexbox;
-    display: flex; }
-  @media (min-width: 720px) {
-    .page-template-core-training .online-dates-section, .page-template-core-training .classroom-dates-section {
-      width: 45vw;
-      padding: 0;
-      max-width: 400px;
-      border-top: 1px solid #979797; } }
-  .page-template-core-training .table-content {
-    font-size: 11px; }
-  .page-template-core-training .yoga-info-title {
-    font-size: 16.38px; }
-  .page-template-core-training tr td {
-    margin-top: 9px; }
-  .page-template-core-training .dates-table {
-    border-bottom: 1px solid black; }
-    .page-template-core-training .dates-table tr {
-      height: 60px;
-      border-top: 1px solid black;
-      border-right: 1px solid black;
-      border-left: 1px solid black;
-      margin: 0;
-      padding-top: 9px; }
-    @media (min-width: 720px) {
-      .page-template-core-training .dates-table {
-        width: 45vw; } }
-  .page-template-core-training .dates-table .classroom-tr {
-    height: 100px;
-    padding-bottom: 1rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+      width: 45vw; } }
+
+.page-template-core-training .dates-table .classroom-tr {
+  height: 100px;
+  padding-bottom: 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 /*! Flickity v2.0.5
 http://flickity.metafizzy.co

@@ -6,24 +6,23 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-				<header class = "general-template-section custom-hero-image">
-					<h1 class ="page-title-header"><?php the_title(); ?></h1>
-					    <?php
-                    // TO SHOW THE PAGE CONTENTS
-                    while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
-                        <div class="entry-content-page">
-                            <?php the_content(); ?> <!-- Page Content -->
-                        </div>
+			<header class = "general-template-section custom-hero-image">
+				<h1 class ="page-title-header"><?php the_title(); ?></h1>
+				<?php
+                while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
+                    <div class="entry-content-page">
+                    	<?php the_content(); ?> <!-- Page Content -->
+                    </div><!--entry-content-page-->
                     <?php
-                    endwhile; //resetting the page loop
-                    wp_reset_query(); //resetting the page query
-                    ?>
-					<div class ="general-button-container">
-						<button class = "general-button teal-button black-text">Core Training</button>
-						<button class = "general-button grey-button">For Facilities</button>
-					</div><!--general-button-container-->
-				</header><!--general-template-section core-hero-->
-            	<section class ="section-15px-padding">
+                endwhile; //resetting the page loop
+                wp_reset_query(); //resetting the page query
+                ?>
+				<div class ="general-button-container">
+					<button class = "general-button teal-button black-text">Core Training</button>
+					<button class = "general-button grey-button">For Facilities</button>
+				</div><!--general-button-container-->
+			</header><!--general-template-section core-hero-->
+            <section class ="section-15px-padding">
 				<div class ="core-h3-container">
                 	<p class="core-header">Yoga Outreach Core Training ™</p>
 				</div><!--core-h3-container-->
@@ -38,11 +37,11 @@ get_header(); ?>
 					<div class ="earth-logo-change"></div>
 					<h3 class ="avail-online-h3">available online and in-classroom format!</h3>
 				</div><!--avail-online-heading-container-->
-				<div>
-					<p class = "light-training-para"><?php echo CFS()->get('light_training_para'); ?></p>
+				<div class ="main-paragraph-container">
+					<p>xvdddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdfddfdfsdfsdfsdf</p>
 					<p class = "dark-training-para"><?php echo CFS()->get('dark_training_para'); ?></p>
-				</div>
-				</section><!--section-15px-padding-->
+				</div><!--main-paragraph-container-->
+			</section><!--section-15px-padding-->
 			<div class ="testimonal-container">
 				<ul class ="testimonial-list main-carousel">
 					<?php
@@ -57,14 +56,14 @@ get_header(); ?>
 					<div class ="online-class-icon-heading-container">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/earth_icon.svg" class = "earth-logo" alt = "earth_icon">
 						<h3>2017 Training Dates Online (8 weeks)</h3>
-					</div>
+					</div><!--online-class-icon-heading-container-->
 					<table class ="dates-table">
 					<?php $dates = CFS()->get('online_dates_container');?>
 					<?php foreach ($dates as $date):?>
 						<tr>
 							<td class ="training-table-data">
 								<p class ="table-heading">Date</p>
-								<p class ="table-content"><?php echo $date ['date'];?></>
+								<p class ="table-content"><?php echo $date ['date'];?></p>
 							</td>
 							<td class ="training-table-data">
 								<p class ="table-heading">Price</p>
@@ -80,7 +79,7 @@ get_header(); ?>
 					<div class ="core-training-text-image-container">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/house_icon.svg" class ="house-logo" alt="house logo">
 						<h3>2017 Training Dates Classroom (18 hours)</h3>
-					</div>
+					</div><!--core-training-text-iamge-container-->
 					<table class ="dates-table">
 						<?php $classroomDates = CFS()->get('classroom_dates_container');?>
 						<?php foreach ($classroomDates as $classroomDate):?>
@@ -100,8 +99,8 @@ get_header(); ?>
 							</tr>
 							<?php endforeach ?>
 					</table>
-				</section>
-			</div>
+				</section><!--classroom-dates-section-->
+			</div><!--table-section-->
 			<ul class="training-list">
             	<?php
         		$infoItems = CFS()->get('yoga_info_list');
@@ -125,7 +124,7 @@ get_header(); ?>
 					</div><!--tools-first-heading-->
 					<div class ="info-field">
                     	<p><?php echo $infoItem ['list_content']; ?></p>
-					</div>
+					</div><!--info-field-->
 					<?php endif; ?>
                 </li><!--training-list-item-->
                 <?php endforeach; ?>
@@ -133,5 +132,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
