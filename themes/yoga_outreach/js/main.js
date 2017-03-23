@@ -9,14 +9,17 @@
         $('.menu-dropdown').show();
         $('.wrapper').hide();
     });
-
-      $('.signin-button-dropdown').on('click', function (event) {
-        event.preventDefault();
-        $('.wrapper').toggleClass('popup');
-        $('.wrapper').show();
-        $('.signin-button-dropdown').hide();
-        $('.signin-button-dropdown').hide();
-        $('.dropdown-menu-list').hide();
+    //when on clicking signin button rest of content hides
+    $('.signin-button-dropdown').on('click', function (event) {
+      event.preventDefault();
+      $('.wrapper').toggleClass('popup');
+      $('.wrapper').show();
+      $('.signin-button-dropdown').hide();
+      $('.dropdown-menu-list').hide();
+      $('.fa-bars').hide();
+      $('.logo-image').hide();
+      $('#content').hide();
+      $('#colophon').hide();
     });
 
     //dropdown signin section on clicking signin button
@@ -29,28 +32,26 @@
 
     // Drop down category
     $('.info-dropdown').click(function () {
-        if ($(this).next('.info-field').is(':hidden')) {
-            $(this).next('.info-field').slideDown('normal');
-            $(this).children('span').text('-');
-        } else {
-            $(this).next('.info-field').slideUp('normal');
-            $(this).children('span').text('+');
-        }
+      if ($(this).next('.info-field').is(':hidden')) {
+        $(this).next('.info-field').slideDown('normal');
+        $(this).children('span').text('-');
+      } else {
+        $(this).next('.info-field').slideUp('normal');
+        $(this).children('span').text('+');
+      }
     });
 
     // Remove infoField Class
     function resize() {
-        if ($window.width() > 720) {
-            $infoField.removeClass('info-field');
-            $infoField.css('display','block'); 
-
-    } else {
-            $infoField.addClass('info-field');
-            $infoField.css('display','none');
-        }
+      if ($window.width() > 720) {
+        $infoField.removeClass('info-field');
+        $infoField.css('display','block'); 
+      } else {
+        $infoField.addClass('info-field');
+        $infoField.css('display','none');
+      }
     }
     $window.resize(resize).trigger('resize');
-
 
     // Smooth Scroll between sections on a page
     $('a[href^="#"]').on('click', function (e) {
@@ -59,7 +60,6 @@
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
     });
-
 
     //Click Read More dropdown
     $('.show-videos li:gt(2)').hide();
@@ -70,7 +70,6 @@
 
     // Changes radio buttons on forms
     $( '.gfield_radio li label' ).prepend( '<span></span>');
-
 
 })(jQuery); 
 
