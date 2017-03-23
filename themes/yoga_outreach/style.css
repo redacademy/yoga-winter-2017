@@ -818,12 +818,16 @@ p {
     #site-navigation #header-logo {
       z-index: 1;
       width: 50%; } }
+  #site-navigation .signin-section {
+    display: none; }
+    @media (min-width: 720px) {
+      #site-navigation .signin-section {
+        display: block; } }
   #site-navigation .logo-image {
     width: 90px;
     padding: 0.5rem 0.8rem;
     -ms-flex-order: 1;
-        order: 1;
-    margin-left: 63%; }
+        order: 1; }
     @media (min-width: 720px) {
       #site-navigation .logo-image {
         margin-left: 0; } }
@@ -3055,7 +3059,7 @@ object {
         background-color: #CBE8EA; } }
   .home .testimonal-container .main-carousel {
     width: 100%;
-    padding: 30px;
+    padding: 15px;
     margin: 40px auto; }
     @media (min-width: 720px) {
       .home .testimonal-container .main-carousel {
@@ -3068,7 +3072,7 @@ object {
       @media (min-width: 720px) {
         .home .testimonal-container .main-carousel .carousel-cell {
           width: 100%;
-          padding: 0 8%; } }
+          padding: 3% 13%; } }
     .home .testimonal-container .main-carousel img {
       border-radius: 50%; }
     .home .testimonal-container .main-carousel .carousel-picture {
@@ -3076,7 +3080,7 @@ object {
       @media (min-width: 720px) {
         .home .testimonal-container .main-carousel .carousel-picture {
           display: block;
-          width: 450px; } }
+          width: 360px; } }
     .home .testimonal-container .main-carousel ol {
       display: none; }
     .home .testimonal-container .main-carousel .flickity-prev-next-button {
@@ -3086,8 +3090,14 @@ object {
       padding: 0; }
     .home .testimonal-container .main-carousel .flickity-prev-next-button.next {
       right: 5%; }
+      @media (min-width: 720px) {
+        .home .testimonal-container .main-carousel .flickity-prev-next-button.next {
+          right: 10%; } }
     .home .testimonal-container .main-carousel .flickity-prev-next-button.previous {
       left: 5%; }
+      @media (min-width: 720px) {
+        .home .testimonal-container .main-carousel .flickity-prev-next-button.previous {
+          left: 10%; } }
   .home .team-container .team-list.main-carousel {
     background-color: white; }
   .home .team-container .main-carousel {

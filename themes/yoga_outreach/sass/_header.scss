@@ -167,17 +167,21 @@ p{
     }
   }
   #header-logo{
-    
     @include desktop{
       z-index: 1;
       width: 50%;
+    }
+  }
+  .signin-section{
+    display:none;
+    @include desktop{
+      display: block;
     }
   }
   .logo-image{
     width: 90px;
     padding: 0.5rem 0.8rem;
     order: 1;
-    margin-left: 63%;
     @include desktop{
       margin-left:0;
     }

@@ -252,7 +252,7 @@
     }
     .main-carousel{
       width: 100%;
-      padding: 30px;
+      padding: 15px;
       margin: 40px auto;
       @include desktop{
           height: 240px;
@@ -264,7 +264,7 @@
         height: auto;
         @include desktop{
           width:100%;
-          padding: 0 8%;
+          padding: 3% 13%;
         }
       }
       img{
@@ -274,7 +274,7 @@
         display:none;
         @include desktop{
         display: block;
-        width: 450px;
+        width: 360px;
         }
       }
       ol{
@@ -289,13 +289,14 @@
       .flickity-prev-next-button.next {
         right: 5%;
         @include desktop{
+          right: 10%;
 
         }
       }
       .flickity-prev-next-button.previous {
         left: 5%;
         @include desktop{
-          
+          left: 10%;
         }
       }
     }
