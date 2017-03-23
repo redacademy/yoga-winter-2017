@@ -11,7 +11,7 @@ get_header(); ?>
     <div class="herobanner-text">
         <h2>what we do</h2>
         <p>Our mission is to expand access to trauma-informed yoga programs to heal and connect communities</p>
-        <button class="aboutus-button"><a href="">about us</a></button>
+        <button class="aboutus-button"><a href="yoga_outreach/about-us">about us</a></button>
     </div>
 </section>  
 <section class="trauma-approach">

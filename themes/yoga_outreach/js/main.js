@@ -30,6 +30,7 @@
       $('.signin-button').hide();
     });
 
+
     // Drop down category
     $('.info-dropdown').click(function () {
       if ($(this).next('.info-field').is(':hidden')) {
