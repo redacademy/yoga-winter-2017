@@ -1334,87 +1334,130 @@ footer {
       color: #6b747d;
       text-decoration: none; }
 
-.page-template-forms-template {
-  /* Scholarship CSS */ }
-  .page-template-forms-template .entry-header {
-    display: none; }
-  @media (min-width: 720px) {
-    .page-template-forms-template .app-form ul.gfield_radio {
-      display: -ms-flexbox;
-      display: flex; } }
-  .page-template-forms-template .app-form .gform_heading {
-    max-width: 1020px;
-    width: 100%;
+.page-template-forms-template .entry-header {
+  display: none; }
+
+@media (min-width: 720px) {
+  .page-template-forms-template .app-form ul.gfield_radio {
+    display: -ms-flexbox;
+    display: flex; } }
+
+.page-template-forms-template .app-form .gform_heading {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px; }
+  .page-template-forms-template .app-form .gform_heading h3 {
+    font-size: 42px;
+    margin: 0 auto; }
+
+.page-template-forms-template .app-form .gform_body li:not(.gfield_html), .page-template-forms-template .app-form .gform_body .gfield_error {
+  padding: 10px;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto !important; }
+  .page-template-forms-template .app-form .gform_body li:not(.gfield_html) label, .page-template-forms-template .app-form .gform_body .gfield_error label {
+    text-transform: uppercase; }
+
+.page-template-forms-template .app-form .gform_body .gfield_select, .page-template-forms-template .app-form .gform_body .address_state select {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 34px;
+  margin-top: 0; }
+
+.page-template-forms-template .app-form .gform_body ul li input[type="radio"] {
+  display: none; }
+
+.page-template-forms-template .app-form .gform_body ul li input[type="radio"] + label {
+  color: #6b747d;
+  font-family: Arial, sans-serif;
+  font-size: 14px; }
+
+.page-template-forms-template .app-form .gform_body ul li input[type="radio"] + label span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #6b747d;
+  border-radius: 50%; }
+
+.page-template-forms-template .app-form .gform_body ul li input[type="radio"] + label span {
+  background-color: transparent;
+  margin: 10px; }
+
+.page-template-forms-template .app-form .gform_body ul li input[type="radio"]:checked + label span {
+  background-color: #4a4a4a; }
+
+.page-template-forms-template .app-form .gform_body .form-sub-heading {
+  padding: 10px;
+  background-color: #94bfd1;
+  color: #fff;
+  max-width: 100vw;
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+  @media (min-width: 1020px) {
+    .page-template-forms-template .app-form .gform_body .form-sub-heading {
+      padding-left: 14%; } }
+
+.page-template-forms-template .app-form .gform_footer {
+  background-color: #f3f0e9; }
+  .page-template-forms-template .app-form .gform_footer input.gform_button {
+    width: 230px;
+    height: 44px;
+    display: block;
     margin: 0 auto;
-    padding: 10px; }
-    .page-template-forms-template .app-form .gform_heading h3 {
-      font-size: 2rem; }
-  .page-template-forms-template .app-form .gform_body li:not(.gfield_html), .page-template-forms-template .app-form .gform_body .gfield_error {
-    padding: 10px;
-    max-width: 1020px;
-    width: 100%;
-    margin: 0 auto !important; }
-    .page-template-forms-template .app-form .gform_body li:not(.gfield_html) label, .page-template-forms-template .app-form .gform_body .gfield_error label {
-      text-transform: uppercase; }
-  .page-template-forms-template .app-form .gform_body .gfield_select, .page-template-forms-template .app-form .gform_body .address_state select {
-    background: transparent;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    height: 34px;
-    margin-top: 0; }
-  .page-template-forms-template .app-form .gform_body ul li input[type="radio"] {
-    display: none; }
-  .page-template-forms-template .app-form .gform_body ul li input[type="radio"] + label {
-    color: #6b747d;
-    font-family: Arial, sans-serif;
-    font-size: 14px; }
-  .page-template-forms-template .app-form .gform_body ul li input[type="radio"] + label span {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin: -1px 4px 0 0;
-    vertical-align: middle;
-    cursor: pointer;
-    border: 1px solid #6b747d;
-    border-radius: 50%; }
-  .page-template-forms-template .app-form .gform_body ul li input[type="radio"] + label span {
-    background-color: transparent;
-    margin: 10px; }
-  .page-template-forms-template .app-form .gform_body ul li input[type="radio"]:checked + label span {
-    background-color: #4a4a4a; }
-  .page-template-forms-template .app-form .gform_body .form-sub-heading {
-    padding: 10px;
-    background-color: #94bfd1;
-    color: #fff;
-    max-width: 100vw;
+    font-size: 14px;
     text-transform: uppercase;
-    font-size: 1.5rem; }
-    @media (min-width: 1020px) {
-      .page-template-forms-template .app-form .gform_body .form-sub-heading {
-        padding-left: 14%; } }
-  .page-template-forms-template .app-form .gform_footer {
-    background-color: #f3f0e9; }
-    .page-template-forms-template .app-form .gform_footer input.gform_button {
-      width: 230px;
-      height: 44px;
-      display: block;
-      margin: 0 auto;
-      font-size: 14px;
-      text-transform: uppercase;
-      box-shadow: none;
-      text-shadow: none;
-      box-shadow: none;
-      text-shadow: none;
-      color: white;
-      border-radius: 8px;
-      border: none;
-      font-family: 'raleway',sans-serif;
-      font-size: 14px;
-      color: #6b747d;
-      background-color: #fff; }
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    color: #6b747d;
+    background-color: #fff; }
 
 .forms-header {
   height: 30vh; }
+
+/* Core Scholarship Training */
+#gform_7 .gform_title, #gform_7 .gform_description {
+  max-width: 752px;
+  margin: 0 auto;
+  margin-bottom: 29px; }
+
+#gform_7 body, #gform_7 li:not(.form-sub-heading) {
+  max-width: 828px;
+  margin: 0 auto; }
+
+#gform_7 .core-schol-main-p {
+  color: #6b747d;
+  line-height: 24px;
+  font-size: 14px;
+  max-width: 828px;
+  margin: 0 auto;
+  margin-left: auto !important; }
+  #gform_7 .core-schol-main-p span {
+    display: block;
+    font-weight: bold; }
+
+#gform_7 .core-schol-list {
+  color: #6b747d;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: auto !important; }
+
+#gform_7 .core-details {
+  background-color: #94bfd1;
+  color: #fff;
+  font-size: 20px;
+  max-width: 100vw; }
 
 /* Buttons */
 button,
@@ -1804,6 +1847,13 @@ a:hover, a:active {
   height: 100px;
   background-color: #EBE5D8; }
 
+.page-template-training .training-list-item {
+  background-color: #95afc9; }
+
+.page-template-training .info-list-content, .page-template-training .info-list-title {
+  background-color: #95afc9;
+  margin-left: 0; }
+
 .page-template-training .bottom-button-container {
   height: 85px;
   width: 100%;
@@ -1851,8 +1901,8 @@ a:hover, a:active {
 
 .page-template-core-training .main-carousel {
   width: 100%;
-  padding: 10 20px;
-  margin: 0 auto; }
+  padding-top: 20px;
+  margin-top: 2rem; }
   .page-template-core-training .main-carousel .carousel-cell {
     width: 100%;
     height: auto; }
@@ -1867,10 +1917,6 @@ a:hover, a:active {
     background: none;
     box-shadow: none;
     padding: 0; }
-  .page-template-core-training .main-carousel .flickity-prev-next-button.next {
-    right: 5%; }
-  .page-template-core-training .main-carousel .flickity-prev-next-button.previous {
-    left: 5%; }
 
 .page-template-core-training .section-15px-padding {
   padding: 0 15px; }
@@ -1880,6 +1926,9 @@ a:hover, a:active {
   border-bottom: 2px solid #4A4A4A;
   padding-bottom: 16px;
   margin-bottom: 18px; }
+
+.page-template-core-training .carousel-cell.is-selected {
+  max-width: 90vw; }
 
 .page-template-core-training .core-header {
   margin: 0;
@@ -1912,8 +1961,7 @@ a:hover, a:active {
   border: none;
   font-family: 'raleway',sans-serif;
   font-size: 14px;
-  background-color: #6B747D;
-  margin-right: 0; }
+  background-color: #6B747D; }
 
 @media (min-width: 720px) {
   .page-template-core-training .table-section-container {
@@ -1923,9 +1971,11 @@ a:hover, a:active {
         justify-content: space-around;
     margin-top: 3rem; } }
 
-@media (min-width: 720px) {
-  .page-template-core-training .book-training.register-button {
-    margin-right: 0; } }
+.page-template-core-training .book-training.register-button {
+  margin: 0 auto; }
+  @media (min-width: 720px) {
+    .page-template-core-training .book-training.register-button {
+      margin-right: 0; } }
 
 .page-template-core-training .small-para-container {
   margin-top: 2rem; }
@@ -1977,7 +2027,7 @@ a:hover, a:active {
     margin-top: 12px; } }
 
 .page-template-core-training .earth-logo-change {
-  width: 70px;
+  width: 40px;
   height: 30px;
   background-image: url("../../images/earth_icon.svg");
   background-size: contain;
@@ -2035,9 +2085,12 @@ a:hover, a:active {
       .page-template-core-training .core-training-text-image-container h3 {
         font-size: 20px; } }
 
-@media (min-width: 720px) {
-  .page-template-core-training .avail-online-h3 {
-    margin-top: 12px; } }
+.page-template-core-training .avail-online-h3 {
+  width: 11rem; }
+  @media (min-width: 720px) {
+    .page-template-core-training .avail-online-h3 {
+      width: 100%;
+      margin-top: 12px; } }
 
 .page-template-core-training .light-training-para {
   color: #6B747D;
@@ -3495,6 +3548,13 @@ object {
   height: 100px;
   background-color: #EBE5D8; }
 
+.page-template-training .training-list-item {
+  background-color: #95afc9; }
+
+.page-template-training .info-list-content, .page-template-training .info-list-title {
+  background-color: #95afc9;
+  margin-left: 0; }
+
 .page-template-training .bottom-button-container {
   height: 85px;
   width: 100%;
@@ -3542,8 +3602,8 @@ object {
 
 .page-template-core-training .main-carousel {
   width: 100%;
-  padding: 10 20px;
-  margin: 0 auto; }
+  padding-top: 20px;
+  margin-top: 2rem; }
   .page-template-core-training .main-carousel .carousel-cell {
     width: 100%;
     height: auto; }
@@ -3558,10 +3618,6 @@ object {
     background: none;
     box-shadow: none;
     padding: 0; }
-  .page-template-core-training .main-carousel .flickity-prev-next-button.next {
-    right: 5%; }
-  .page-template-core-training .main-carousel .flickity-prev-next-button.previous {
-    left: 5%; }
 
 .page-template-core-training .section-15px-padding {
   padding: 0 15px; }
@@ -3571,6 +3627,9 @@ object {
   border-bottom: 2px solid #4A4A4A;
   padding-bottom: 16px;
   margin-bottom: 18px; }
+
+.page-template-core-training .carousel-cell.is-selected {
+  max-width: 90vw; }
 
 .page-template-core-training .core-header {
   margin: 0;
@@ -3603,8 +3662,7 @@ object {
   border: none;
   font-family: 'raleway',sans-serif;
   font-size: 14px;
-  background-color: #6B747D;
-  margin-right: 0; }
+  background-color: #6B747D; }
 
 @media (min-width: 720px) {
   .page-template-core-training .table-section-container {
@@ -3614,9 +3672,11 @@ object {
         justify-content: space-around;
     margin-top: 3rem; } }
 
-@media (min-width: 720px) {
-  .page-template-core-training .book-training.register-button {
-    margin-right: 0; } }
+.page-template-core-training .book-training.register-button {
+  margin: 0 auto; }
+  @media (min-width: 720px) {
+    .page-template-core-training .book-training.register-button {
+      margin-right: 0; } }
 
 .page-template-core-training .small-para-container {
   margin-top: 2rem; }
@@ -3668,7 +3728,7 @@ object {
     margin-top: 12px; } }
 
 .page-template-core-training .earth-logo-change {
-  width: 70px;
+  width: 40px;
   height: 30px;
   background-image: url("../../images/earth_icon.svg");
   background-size: contain;
@@ -3726,9 +3786,12 @@ object {
       .page-template-core-training .core-training-text-image-container h3 {
         font-size: 20px; } }
 
-@media (min-width: 720px) {
-  .page-template-core-training .avail-online-h3 {
-    margin-top: 12px; } }
+.page-template-core-training .avail-online-h3 {
+  width: 11rem; }
+  @media (min-width: 720px) {
+    .page-template-core-training .avail-online-h3 {
+      width: 100%;
+      margin-top: 12px; } }
 
 .page-template-core-training .light-training-para {
   color: #6B747D;
