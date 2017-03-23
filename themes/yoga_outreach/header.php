@@ -29,12 +29,61 @@
 					<span class="responsive-menu">
 				    <i class="fa fa-bars" aria-hidden="true"></i>
 		    	</span>
-
-              <!--<img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>-->
+            <div class="menu-dropdown">
+              <div class="wrapper">
+            <form class="form-signin">       
+              <h3>username</h3>
+              <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+              <h3>password</h3>
+              <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+              <label class="checkbox">
+                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+              </label>
+              <button class="btn btn-lg btn-primary btn-block dropdown-btn" type="submit"><a href="">sign in</a></button>   
+            </form>
+          </div>
+              <ul class="dropdown-menu-list">
+                <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+                  <fieldset>
+                    <button class="search-submit">
+                      <span class="icon-search" aria-hidden="true">
+                        <i class="fa fa-search"></i>
+                      </span>
+                    </button>
+                    <label>
+                      <input type="search" class="search-field" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+                      <span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
+                    </label>
+                  </fieldset>
+                </form>
+                <button class="signin-button-dropdown"><a href="">sign in</a></button>
+                <li>
+                  <h2>Training</h2>
+                  <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
+                </li>
+                <li>
+                  <h2>Get involed</h2>
+                  <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
+                </li>
+                <li>
+                  <h2>Events</h2>
+                </li>
+                <li>
+                  <h2>About us</h2>
+                  <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
+                </li>
+                <li>
+                  <h2>Resources</h2>
+                  <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
+                </li>
+                <li>
+                  <h2>Blog</h2>
+                </li>
+              </ul>
+            </div>
+      
 
               <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
-              <!--<div class="subsubmenu">
-              </div>-->
  
           <div id="header-logo">
             <div class="logo-image">

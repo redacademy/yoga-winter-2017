@@ -5,8 +5,17 @@
     //dropdown submenu on clicking hamburger icon
     $('.fa-bars').on('click', function (event) {
         event.preventDefault();
-        $('.menu-main-menu-container').toggleClass('submenu');
-        $('.menu-main-menu-container').show();
+        $('.menu-dropdown').toggleClass('show-dropdown');
+        $('.menu-dropdown').show();
+    });
+
+      $('.signin-button-dropdown').on('click', function (event) {
+        event.preventDefault();
+        $('.wrapper').toggleClass('popup');
+        $('.wrapper').show();
+        $('.signin-button-dropdown').hide();
+        $('.signin-button-dropdown').hide();
+        $('.dropdown-menu-list').hide();
     });
 
     //dropdown signin section on clicking signin button
@@ -16,7 +25,6 @@
       $('.wrapper').show();
       $('.signin-button').hide();
     });
-
 
     // Drop down category
     $('.info-dropdown').click(function () {
@@ -33,8 +41,7 @@
     function resize() {
         if ($window.width() > 720) {
             $infoField.removeClass('info-field');
-            $infoField.css('display','block');
-            
+            $infoField.css('display','block'); 
 
     } else {
             $infoField.addClass('info-field');
