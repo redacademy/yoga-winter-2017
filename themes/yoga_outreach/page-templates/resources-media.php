@@ -39,8 +39,7 @@ get_header(); ?>
 						</li>
 					<?php endforeach ?>
 					</ul><!--media-article-list-->
-					<p class ="read-more">Read More...</p>
-					<p class ="read-less">Read Less...</p>
+					<p class ="read-more">Read More</p>
 				</div><!--info-field-->
 				<div class ="info-dropdown">
 					<h3>In the Press</h3>
