@@ -1,21 +1,50 @@
 (function ($) {
+    
+    $( '.tablinks' ).first().addClass('start-module');
+    
+    //opening Module tabs
     $('.tablinks').on('click', function (event) {
         event.preventDefault();
-        openTab(event, $(this).val());
+        if ($(this).hasClass('start-module')) {
+            openTab(event, $(this).val());
+        }
     });
 
-    // Drop down category
-    $('.info-dropdown').click(function () {
-        if ($(this).siblings('.module-field').is(':hidden')) {
-            $(this).siblings('.module-field').slideDown('normal');
-            $(this).children('span').text('-');
-        } else {
-            $(this).siblings('.module-field').slideUp('normal');
-            $(this).children('span').text('+');
+    $( '.lesson-field' ).first().addClass('start-lesson');
+
+
+    // Drop down lessons
+    $('.individual-lesson').on('click', '.lesson-dropdown', function() {
+        if ($(this).next('.lesson-field').hasClass('start-lesson')) {
+            $(this).next('.lesson-field').slideDown('normal').siblings()
+                    .removeClass('todo').addClass('in-progress').children('.progress')
+                    .children('.progress-icon').removeClass('incomplete').addClass('half-way');
+        }
+    });
+
+
+    // Complete Lesson
+    $('.lesson-field').on('change', '#completed', function() {
+        if(this.checked) {
+            $(this).parent().siblings('.lesson-dropdown').removeClass('in-progress')
+                    .addClass('completed').children('.progress').children('.progress-icon')
+                    .removeClass('half-way').addClass('complete');
+            $(this).parent('.lesson-field').slideUp('normal').parent().next()
+                    .children('.lesson-field').slideDown('normal').siblings()
+                    .removeClass('todo').addClass('in-progress').children('.progress')
+                    .children('.progress-icon').removeClass('incomplete').addClass('half-way');
+        }
+
+        if(!$(this).parent().parent().children('.individual-lesson').children('.lesson-dropdown').not(".completed").length == 0){
+            console.log('hello');
+            // var moduleComp = $(this).next().val();
+            // $(".tablinks").val(moduleComp).addClass('start-module');
         }
     });
 
 })(jQuery); 
+
+
 
 
 function openTab(evt, moduleID) {
