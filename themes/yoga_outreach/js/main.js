@@ -64,10 +64,8 @@
     //Click Read More dropdown
     $('.show-videos li:gt(2)').hide();
     $('.read-more').click(function() {
-        $('.show-videos li:gt(2)').show('2000','swing');
-        $('.read-less').click(function(){
-            $('.show-videos li:gt(2)').hide('2000','linear');
-        })
+        $('.show-videos li:gt(2)').slideToggle('2000','linear');
+        $(this).text($(this).text() == 'Read More' ? 'Read Less' : 'Read More');
     });
 
     // Changes radio buttons on forms

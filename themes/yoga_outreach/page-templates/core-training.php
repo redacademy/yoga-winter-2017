@@ -45,10 +45,12 @@ get_header(); ?>
 			<div class ="testimonal-container">
 				<ul class ="testimonial-list main-carousel">
 					<?php
-					$testimonials = CFS()->get('testimonial_item');
+					$testimonials = CFS()->get('testimonial_list');
+					if (!empty($testimonials)):
 					foreach ( $testimonials as $testimonial): ?>
 					<li class ="carousel-cell"><?php echo $testimonial ['testimonial'];?></li>
 					<?php endforeach ?>
+					<?php endif ?>
 				</ul>
 			</div><!--testimonial-container-->
 			<div class = "table-section-container">
@@ -59,7 +61,8 @@ get_header(); ?>
 					</div><!--online-class-icon-heading-container-->
 					<table class ="dates-table">
 					<?php $dates = CFS()->get('online_dates_container');?>
-					<?php foreach ($dates as $date):?>
+					<?php 	if (!empty($dates)):
+							foreach ($dates as $date):?>
 						<tr>
 							<td class ="training-table-data">
 								<p class ="table-heading">Date</p>
@@ -70,6 +73,7 @@ get_header(); ?>
 								<p class ="table-content"><?php echo $date ['price'];?></p>
 							</td>
 						<?php endforeach ?>
+						<?php endif ?>
 						</tr>
 					</table>
 					<p>Now you can take the training online in an eight week format.</p>
@@ -82,6 +86,7 @@ get_header(); ?>
 					</div><!--core-training-text-iamge-container-->
 					<table class ="dates-table">
 						<?php $classroomDates = CFS()->get('classroom_dates_container');?>
+						<?php if(!empty($classroomDates)): ?>
 						<?php foreach ($classroomDates as $classroomDate):?>
 							<tr class ="classroom-tr">
 								<td class ="training-table-data">
@@ -98,12 +103,14 @@ get_header(); ?>
 								</td>
 							</tr>
 							<?php endforeach ?>
+							<?php endif ?>
 					</table>
 				</section><!--classroom-dates-section-->
 			</div><!--table-section-->
 			<ul class="training-list">
             	<?php
         		$infoItems = CFS()->get('yoga_info_list');
+				// if (!empty($infoItems)): FIX TMR
         		foreach ( $infoItems as $infoItem ):
                 $infoPDF = $infoItem ['list_file_upload'];
                 $infoContent = $infoItem ['list_content'];

@@ -39,8 +39,7 @@ get_header(); ?>
 						</li>
 					<?php endforeach ?>
 					</ul><!--media-article-list-->
-					<p class ="read-more">Read More...</p>
-					<p class ="read-less">Read Less...</p>
+					<p class ="read-more">Read More</p>
 				</div><!--info-field-->
 				<div class ="info-dropdown">
 					<h3>In the Press</h3>
@@ -62,7 +61,6 @@ get_header(); ?>
 					</ul><!--media-article-list-->
 				</div><!--info-field-->
 			</section><!--media-article-section-->
-				
 			<section class = "video-list-section">
 				<h2 class ="video-list-heading">Why Yoga Outreach</h2>
 				<ul class ="media-video-list show-videos">
