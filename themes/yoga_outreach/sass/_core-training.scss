@@ -1,8 +1,8 @@
 .page-template-core-training {
         .main-carousel{
                 width: 100%;
-                padding:10 20px;
-                margin: 0 auto;
+                padding-top:20px;
+                margin-top:2rem;
                 .carousel-cell{
                     width: 100%;
                     height: auto;
@@ -23,10 +23,8 @@
                     padding: 0;
                 }
                 .flickity-prev-next-button.next {
-                    right: 5%;
                 }
                 .flickity-prev-next-button.previous {
-                    left: 5%;
                 }
     }
 
@@ -39,6 +37,10 @@
         border-bottom: 2px solid #4A4A4A;
         padding-bottom:16px;
         margin-bottom:18px;
+    }
+
+    .carousel-cell.is-selected{
+        max-width: 90vw;
     }
 
     .core-header{
@@ -59,9 +61,8 @@
     }
 
     .register-online-button{
-            @include general-button;
-                background-color:#6B747D;
-                margin-right:0;
+        @include general-button;
+             background-color:#6B747D;
     }
 
     .table-section-container{
@@ -73,8 +74,9 @@
     }
 
     .book-training.register-button{
-        @include desktop{
-            margin-right:0;
+        margin:0 auto;
+            @include desktop{
+                margin-right:0;
         }
     }
 
@@ -127,7 +129,7 @@
     }
 
     .earth-logo-change{
-        width: 70px;
+        width: 40px;
         height: 30px;
         background-image:url('../../images/earth_icon.svg');
         background-size:contain;
@@ -194,11 +196,10 @@
             }
     }
 
-
-
-
     .avail-online-h3{
+        width:11rem;
         @include desktop{
+            width:100%;
             margin-top: 12px;
 
         }

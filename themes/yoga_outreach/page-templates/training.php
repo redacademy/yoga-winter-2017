@@ -66,11 +66,11 @@ get_header(); ?>
 						</div><!--training-pdf-container-->
 							<?php endif; ?>
                     <?php if(!empty($infoContent)): ?>
-					<div class ="info-dropdown tools-first-heading">
+					<div class ="info-dropdown info-list-title">
 						<h3 class = "yoga-info-title"><?php echo $infoItem ['list_title']; ?></h3>
 						<span>+</span>
 					</div>
-					<div class ="info-field">
+					<div class ="info-field info-list-content">
                     	<p><?php echo $infoItem ['list_content']; ?></p>
 					</div>
 					<?php endif; ?>
