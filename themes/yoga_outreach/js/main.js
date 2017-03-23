@@ -8,6 +8,7 @@
         $('.menu-main-menu-container').toggleClass('submenu');
         $('.menu-main-menu-container').show();
     });
+    
     //dropdown signin section on clicking signin button
     $('.signin-button').on('click', function (event) {
       event.preventDefault();
@@ -15,6 +16,7 @@
       $('.wrapper').show();
       $('.signin-button').hide();
     });
+
     // Drop down category
     $('.info-dropdown').click(function () {
         if ($(this).next('.info-field').is(':hidden')) {
@@ -51,6 +53,8 @@
 
     // Changes radio buttons on forms
     $( '.gfield_radio li label' ).prepend( '<span></span>');
+
+
 })(jQuery); 
 
 
