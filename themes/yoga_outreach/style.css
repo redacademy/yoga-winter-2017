@@ -1942,7 +1942,8 @@ a:hover, a:active {
   margin-bottom: 18px; }
 
 .page-template-core-training .carousel-cell.is-selected {
-  max-width: 90vw; }
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
 .page-template-core-training .core-header {
   margin: 0;
@@ -3643,7 +3644,8 @@ object {
   margin-bottom: 18px; }
 
 .page-template-core-training .carousel-cell.is-selected {
-  max-width: 90vw; }
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
 .page-template-core-training .core-header {
   margin: 0;
