@@ -8,6 +8,13 @@
         $('.menu-main-menu-container').toggleClass('submenu');
         $('.menu-main-menu-container').show();
     });
+
+      $('#menu-item-123','.cross').on('click', function (event) {
+      event.preventDefault();
+   $('.menu-main-menu-container').toggleClass('submenu');
+        $('.menu-main-menu-container').show();
+    });
+
     //dropdown signin section on clicking signin button
     $('.signin-button').on('click', function (event) {
       event.preventDefault();
@@ -16,6 +23,7 @@
       $('.signin-button').hide();
     });
 
+    
 
     // Drop down category
     $('.info-dropdown').click(function () {
