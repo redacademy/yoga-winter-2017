@@ -7,6 +7,7 @@
         event.preventDefault();
         $('.menu-dropdown').toggleClass('show-dropdown');
         $('.menu-dropdown').show();
+        $('.wrapper').hide();
     });
 
       $('.signin-button-dropdown').on('click', function (event) {
