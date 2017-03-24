@@ -819,6 +819,7 @@ p {
     display: none; }
     @media (min-width: 720px) {
       #site-navigation .menu-main-menu-container {
+        display: block;
         -ms-flex-order: 2;
             order: 2;
         margin: 0 auto; } }
@@ -1566,50 +1567,7 @@ footer {
     text-align: center;
     margin: 10px; }
   .blog-content .full-article p {
-    padding: 0 15px;
-    text-decoration: none;
-    text-transform: uppercase; }
-  .article-slider ul {
-    /* carousel height */
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    list-style-type: none; }
-    .article-slider ul button {
-      display: none; }
-
-.full-article article {
-  display: none;
-  padding-bottom: 20px; }
-  .full-article article img {
-    height: 133px;
-    width: 100%;
-    object-fit: cover; }
-
-.full-article .article-head {
-  height: 100%;
-  background-color: #BFE9FD;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center; }
-
-.full-article h2 {
-  font-size: 4vh;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 15px; }
-
-.full-article h3 {
-  text-align: center;
-  margin: 10px; }
-
-.full-article p {
-  padding: 0 15px; }
->>>>>>> core-training
+    padding: 0 15px; }
 
 /*--------------------------------------------------------------
 # Forms

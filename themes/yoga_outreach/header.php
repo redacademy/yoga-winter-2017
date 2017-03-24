@@ -62,35 +62,11 @@
                   </fieldset>
                 </form>
                 <button class="signin-button-dropdown"><a href="">sign in</a></button>
-               
-                <li>
-                
-                  <h2>Training</h2>
-                  <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
-                </li>
-                <li>
-                  <h2>Get involed</h2>
-                  <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
-                </li>
-                <li>
-                  <h2>Events</h2>
-                </li>
-                <li>
-                  <h2>About us</h2>
-                  <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
-                </li>
-                <li>
-                  <h2>Resources</h2>
-                  <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
-                </li>
-                <li>
-                  <h2>Blog</h2>
-                </li>
-              </ul>
+               </ul>
             </div>
-              <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
        
-          
+
           <div class="signin-section">
             <div class="wrapper">
             <form class="form-signin">       
