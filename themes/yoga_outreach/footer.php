@@ -22,7 +22,7 @@
         <p><a href="yoga_outreach/privacy-policy">privacy policy</a></p>
       </div>
       <!--<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>-->
-      <section class ="socialmedia-icons">
+      <section class="socialmedia-icons">
         <ul>
           <li class="instagram-icon">
             <a class="instagram" href="https://www.instagram.com/yogaoutreach/">
