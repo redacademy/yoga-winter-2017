@@ -83,10 +83,7 @@
                 </li>
               </ul>
             </div>
-      
-
               <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
- 
           <div id="header-logo">
             <div class="logo-image">
               <?php show_easylogo(); ?>
