@@ -7,7 +7,9 @@ get_header(); ?>
 	<div id="primary" class="content-area training-content">
 		<main id="main" class="site-main" role="main">
 			<header class = "general-template-section custom-hero-image">
-				<h1 class ="page-title-header"><?php the_title(); ?></h1>
+				<div class="page-title-container">
+					<h1 class ="page-title-header"><?php the_title(); ?></h1>
+				<div class="page-title-container">
 				<div class ="general-button-container">
 					<button class="general-button grey-button">Core Training</button>
 					<button class="general-button grey-button">For Facilities</button>

@@ -29,9 +29,11 @@ add_filter( 'body_class', 'yoga_body_classes' );
 function yoga_pagetemplate_styles() {
 
 
-    $pages = ['support-us', 'volunteer', 'partner-facility', 'about-us', 'facility-training', 'core-training', 'resources-research', 'events', 'training-for-facilities'];
 
-    $pages = ['support-us', 'volunteer', 'partner-facility', 'about-us', 'facility-training', 'core-training', 'resources-research', 'events', 'resources-media', 'modules-home'];
+    $pages = ['support-us', 'volunteer', 'partner-facility', 'about-us', 'facility-training', 'core-training', 'resources-research', 'events', 'training-for-facilities', 'resources-media', 'modules-home', 'training'];
+
+
+
 
 
     if(!is_page($page = $pages) && !is_front_page()){

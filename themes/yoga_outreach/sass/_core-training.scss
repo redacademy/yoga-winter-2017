@@ -46,6 +46,7 @@
     }
 
     .general-button-container{
+        bottom:25px;
         @include desktop{
             top:0rem;
             bottom:30px;
