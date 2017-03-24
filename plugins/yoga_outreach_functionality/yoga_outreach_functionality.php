@@ -33,7 +33,7 @@ define( 'RF_DIR', dirname( __FILE__ ) );
  * @since 1.0.0
  */
 include_once( RF_DIR . '/lib/functions/general.php' );
-register_activation_hook( __FILE__, array( 'RF_General', 'plugin_activation' ) );
+register_activation_hook( __FILE__, array( 'RF_General', 'yoga_plugin_activation' ) );
 
 /**
  * Post types

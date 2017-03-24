@@ -6,7 +6,7 @@
     $('.tablinks').on('click', function (event) {
         event.preventDefault();
         if ($(this).hasClass('start-module')) {
-            openTab(event, $(this).val());
+            yoga_openTab(event, $(this).val());
         }
     });
 
@@ -43,7 +43,7 @@
 
 })(jQuery); 
 
-function openTab(evt, moduleID) {
+function yoga_openTab(evt, moduleID) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
