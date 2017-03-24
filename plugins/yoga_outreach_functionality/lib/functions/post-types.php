@@ -41,10 +41,10 @@ function modules() {
 	);
 	$args = array(
 		'label'                 => 'Training Module',
-		'description'           => 'Training Modules',
+		'description'           => 'Select your modules below',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'comments', ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
+		'taxonomies'            => array( ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

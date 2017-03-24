@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<header class="entry-header custom-hero-image">
                     <div>
-						<h1 class="header-title">Course Modules</h1>
+						<?php the_archive_title( '<h1 class="header-title">', '</h1>' ); ?>
 						<p>Select your modules below</P>
 					</div>
                     <button class="main-button grey-button"><a href="" class="button">Groups</a></button>
