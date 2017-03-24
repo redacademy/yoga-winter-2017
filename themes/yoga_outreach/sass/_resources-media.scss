@@ -96,6 +96,7 @@
 
     .read-more,.read-less{
       font-size:10px;
+      cursor:pointer;
     }
 
   .media-heading-flex{
@@ -119,6 +120,19 @@
 
   .video-item{
       display:block;
+  }
+  
+  .black-text{
+      color:black;
+        @include desktop{
+            color:white;
+        }
+  }
+
+  .teal-button{
+      @include desktop{
+          background-color: #94bfd1;
+      }
   }
 
 

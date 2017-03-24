@@ -18,8 +18,8 @@ get_header(); ?>
                 wp_reset_query(); //resetting the page query
                 ?>
 				<div class="general-button-container">
-					<a href ="resources" class="general-button grey-button">Research</a>
-					<a href ="#"class = "general-button teal-button">Media and Videos</a>
+					<a href ="resources-research" class="general-button grey-button">Research</a>
+					<a href ="#"class = "general-button teal-button black-text">Media and Videos</a>
 				</div>
 			</header><!--general-template-section-->
 			<div class="main-h3-container section-15px-padding">
