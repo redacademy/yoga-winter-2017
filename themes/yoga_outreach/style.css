@@ -712,7 +712,7 @@ button {
     .general-button-container {
       display: -ms-flexbox;
       display: flex;
-      bottom: 30px; } }
+      top: 11rem; } }
 
 .section-15px-padding {
   padding: 0 4%; }
@@ -1876,9 +1876,9 @@ a:hover, a:active {
   content: "";
   display: table; }
 
-.page-template-training-main {
+.training-content {
   font-family: 'raleway',sans-serif; }
-  .page-template-training-main .main-h3-container h3 {
+  .training-content .main-h3-container h3 {
     color: #6b747d;
     font-weight: 200;
     line-height: 29px;
@@ -1887,40 +1887,40 @@ a:hover, a:active {
     margin-top: 35px;
     width: 290px; }
     @media (min-width: 720px) {
-      .page-template-training-main .main-h3-container h3 {
+      .training-content .main-h3-container h3 {
         font-size: 34px;
         color: #000;
         width: 60vw;
         text-align: left; } }
-  .page-template-training-main .main-h3-container p {
+  .training-content .main-h3-container p {
     color: #6b747d;
     line-height: 24px;
     margin-top: 21px; }
     @media (min-width: 720px) {
-      .page-template-training-main .main-h3-container p {
+      .training-content .main-h3-container p {
         font-size: 24px;
         line-height: 34px;
         max-width: 700px; } }
-  .page-template-training-main .main-h3-container a {
+  .training-content .main-h3-container a {
     color: #000;
     font-weight: bold; }
-  .page-template-training-main .desktop-margin {
+  .training-content .desktop-margin {
     margin-left: 6%; }
-  .page-template-training-main .training-para-left {
+  .training-content .training-para-left {
     text-align: left; }
-  .page-template-training-main .for-training-section {
+  .training-content .for-training-section {
     margin-top: 31px; }
     @media (min-width: 720px) {
-      .page-template-training-main .for-training-section {
+      .training-content .for-training-section {
         padding-bottom: 20rem; } }
-    .page-template-training-main .for-training-section img {
+    .training-content .for-training-section img {
       height: 80px;
       width: 80px;
       z-index: 2; }
       @media (min-width: 720px) {
-        .page-template-training-main .for-training-section img {
+        .training-content .for-training-section img {
           height: auto; } }
-  .page-template-training-main .general-button {
+  .training-content .general-button {
     width: 230px;
     height: 44px;
     margin: 0 auto;
@@ -1943,21 +1943,21 @@ a:hover, a:active {
         align-items: center;
     text-decoration: none;
     margin-bottom: 29px; }
-  .page-template-training-main .training-image-bar-container {
+  .training-content .training-image-bar-container {
     position: relative;
     margin-top: 1.5rem; }
-    .page-template-training-main .training-image-bar-container h3 {
+    .training-content .training-image-bar-container h3 {
       position: absolute;
       top: 0.5rem;
       left: 6rem;
       text-transform: uppercase;
       width: 159px; }
       @media (min-width: 720px) {
-        .page-template-training-main .training-image-bar-container h3 {
+        .training-content .training-image-bar-container h3 {
           font-size: 26px;
           width: auto;
           top: 17px; } }
-  .page-template-training-main .training-color-bar {
+  .training-content .training-color-bar {
     height: 35px;
     width: 250px;
     background-color: #CBE8EA;
@@ -1966,11 +1966,11 @@ a:hover, a:active {
     z-index: -1;
     border-radius: 8px; }
     @media (min-width: 720px) {
-      .page-template-training-main .training-color-bar {
+      .training-content .training-color-bar {
         width: 320px; } }
-  .page-template-training-main .training-image-bar-container:nth-of-type(3) {
+  .training-content .training-image-bar-container:nth-of-type(3) {
     margin-bottom: 60px; }
-  .page-template-training-main .training-color-bar.grey-bar {
+  .training-content .training-color-bar.grey-bar {
     background-color: #C0DAE5; }
 
 .page-template-training .main-carousel {
@@ -2145,40 +2145,45 @@ a:hover, a:active {
   background-color: #fff;
   margin-bottom: 0; }
 
-.page-template-core-training .main-carousel {
+.core-training-content .main-carousel {
   width: 100%;
   padding-top: 20px;
   margin-top: 2rem;
   padding-bottom: 20px; }
-  .page-template-core-training .main-carousel .carousel-cell {
+  .core-training-content .main-carousel .carousel-cell {
     width: 100%;
     height: auto; }
-    .page-template-core-training .main-carousel .carousel-cell p {
+    .core-training-content .main-carousel .carousel-cell p {
       margin-top: 20px; }
-    .page-template-core-training .main-carousel .carousel-cell h1 {
+    .core-training-content .main-carousel .carousel-cell h1 {
       color: #4a4a4a; }
-  .page-template-core-training .main-carousel ol {
+  .core-training-content .main-carousel ol {
     display: none; }
-  .page-template-core-training .main-carousel .flickity-prev-next-button {
+  .core-training-content .main-carousel .flickity-prev-next-button {
     border: none;
     background: none;
     box-shadow: none;
     padding: 0; }
 
-.page-template-core-training .section-15px-padding {
+.core-training-content .section-15px-padding {
   padding: 0 15px; }
 
-.page-template-core-training .core-h3-container {
+.core-training-content .core-h3-container {
   width: 100%;
   border-bottom: 2px solid #4A4A4A;
   padding-bottom: 16px;
   margin-bottom: 18px; }
 
-.page-template-core-training .carousel-cell.is-selected {
+.core-training-content .carousel-cell.is-selected {
   padding-left: 2rem;
   padding-right: 2rem; }
 
-.page-template-core-training .core-header {
+@media (min-width: 720px) {
+  .core-training-content .general-button-container {
+    top: 0rem;
+    bottom: 30px; } }
+
+.core-training-content .core-header {
   margin: 0;
   width: 175px;
   color: #6B747D;
@@ -2186,14 +2191,14 @@ a:hover, a:active {
   line-height: 24px;
   margin-top: 39px; }
   @media (min-width: 720px) {
-    .page-template-core-training .core-header {
+    .core-training-content .core-header {
       font-size: 40px;
       width: 700px; } }
 
-.page-template-core-training .light-first-para, .page-template-core-training .dark-second-para {
+.core-training-content .light-first-para, .core-training-content .dark-second-para {
   word-break: break-all; }
 
-.page-template-core-training .register-online-button {
+.core-training-content .register-online-button {
   width: 230px;
   height: 44px;
   margin: 0 auto;
@@ -2218,43 +2223,44 @@ a:hover, a:active {
   background-color: #6B747D; }
 
 @media (min-width: 720px) {
-  .page-template-core-training .table-section-container {
+  .core-training-content .table-section-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-top: 3rem; } }
+    margin-top: 3rem;
+    margin-bottom: 6rem; } }
 
-.page-template-core-training .book-training.register-button {
+.core-training-content .book-training.register-button {
   margin: 0 auto; }
   @media (min-width: 720px) {
-    .page-template-core-training .book-training.register-button {
+    .core-training-content .book-training.register-button {
       margin-right: 0; } }
 
-.page-template-core-training .small-para-container {
+.core-training-content .small-para-container {
   margin-top: 2rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .small-para-container {
+    .core-training-content .small-para-container {
       margin-top: 0; } }
 
 @media (min-width: 720px) {
-  .page-template-core-training .classroom-dates-section, .page-template-core-training .online-dates-section {
+  .core-training-content .classroom-dates-section, .core-training-content .online-dates-section {
     width: 350px; } }
 
 @media (min-width: 720px) {
-  .page-template-core-training .dates-table {
+  .core-training-content .dates-table {
     max-width: 400px; } }
 
-.page-template-core-training .core-training-info-list {
+.core-training-content .core-training-info-list {
   margin: 0;
   padding: 0 15px;
   list-style: none; }
 
-.page-template-core-training .info-list-content {
+.core-training-content .info-list-content {
   font-size: 18px;
   line-height: 30px; }
 
-.page-template-core-training .general-button {
+.core-training-content .general-button {
   width: 230px;
   height: 44px;
   margin: 0 auto;
@@ -2279,40 +2285,40 @@ a:hover, a:active {
   margin-bottom: 29px; }
 
 @media (min-width: 720px) {
-  .page-template-core-training .register-online-button {
+  .core-training-content .register-online-button {
     display: inline; } }
 
 @media (min-width: 720px) {
-  .page-template-core-training .register-button-para-container {
+  .core-training-content .register-button-para-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
     margin-top: 12px; } }
 
-.page-template-core-training .earth-logo-change {
+.core-training-content .earth-logo-change {
   width: 40px;
   height: 30px;
   background-image: url("../../images/earth_icon.svg");
   background-size: contain;
   background-repeat: no-repeat; }
   @media (min-width: 720px) {
-    .page-template-core-training .earth-logo-change {
+    .core-training-content .earth-logo-change {
       background-image: url("../../images/blue_earth_icon.svg");
       width: 30px;
       height: 30px;
       margin-right: 10px; } }
 
-.page-template-core-training .earth-logo {
+.core-training-content .earth-logo {
   width: 2rem;
   height: 2rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .earth-logo {
+    .core-training-content .earth-logo {
       width: 60px;
       height: 60px;
       margin-right: 9px; } }
 
-.page-template-core-training .avail-online-heading-container {
+.core-training-content .avail-online-heading-container {
   display: -ms-flexbox;
   display: flex;
   margin: 15px 0;
@@ -2320,55 +2326,55 @@ a:hover, a:active {
       align-items: center;
   max-width: 35rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .avail-online-heading-container {
+    .core-training-content .avail-online-heading-container {
       margin-left: 0;
       margin-bottom: 59px;
       min-width: 10rem; } }
-  .page-template-core-training .avail-online-heading-container h3 {
+  .core-training-content .avail-online-heading-container h3 {
     margin: 0;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold; }
     @media (min-width: 720px) {
-      .page-template-core-training .avail-online-heading-container h3 {
+      .core-training-content .avail-online-heading-container h3 {
         font-size: 18px;
         text-transform: none; } }
 
-.page-template-core-training .avail-online-heading-container h3 {
+.core-training-content .avail-online-heading-container h3 {
   text-transform: uppercase; }
 
-.page-template-core-training .core-training-text-image-container {
+.core-training-content .core-training-text-image-container {
   width: 16rem;
   margin-bottom: 1rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .core-training-text-image-container {
+    .core-training-content .core-training-text-image-container {
       width: 19rem; } }
-  .page-template-core-training .core-training-text-image-container h3 {
+  .core-training-content .core-training-text-image-container h3 {
     font-size: 17px; }
     @media (min-width: 720px) {
-      .page-template-core-training .core-training-text-image-container h3 {
+      .core-training-content .core-training-text-image-container h3 {
         font-size: 20px; } }
 
-.page-template-core-training .avail-online-h3 {
+.core-training-content .avail-online-h3 {
   width: 11rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .avail-online-h3 {
+    .core-training-content .avail-online-h3 {
       width: 100%;
       margin-top: 12px; } }
 
-.page-template-core-training .light-training-para {
+.core-training-content .light-training-para {
   color: #6B747D;
   font-size: 14px;
   line-height: 2;
   max-width: 1024px; }
 
-.page-template-core-training .dark-training-para {
+.core-training-content .dark-training-para {
   color: #4A4A4A;
   font-size: 14px;
   line-height: 2;
   margin-bottom: 35px; }
 
-.page-template-core-training .online-class-icon-heading-container, .page-template-core-training .core-training-text-image-container {
+.core-training-content .online-class-icon-heading-container, .core-training-content .core-training-text-image-container {
   display: -ms-flexbox;
   display: flex;
   margin-top: 35px;
@@ -2376,48 +2382,48 @@ a:hover, a:active {
       align-items: center;
   margin-bottom: 1rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .online-class-icon-heading-container, .page-template-core-training .core-training-text-image-container {
+    .core-training-content .online-class-icon-heading-container, .core-training-content .core-training-text-image-container {
       margin-bottom: 45px; } }
-  .page-template-core-training .online-class-icon-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
+  .core-training-content .online-class-icon-heading-container h3, .core-training-content .core-training-text-image-container h3 {
     margin: 0;
     font-size: 20px;
     color: #4A4A4A;
     width: 200px;
     margin-left: 1rem; }
     @media (min-width: 720px) {
-      .page-template-core-training .online-class-icon-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
+      .core-training-content .online-class-icon-heading-container h3, .core-training-content .core-training-text-image-container h3 {
         width: 100%; } }
 
-.page-template-core-training .training-list-header {
+.core-training-content .training-list-header {
   padding: 0;
   margin: 0;
   list-style: none; }
-  .page-template-core-training .training-list-header li {
+  .core-training-content .training-list-header li {
     border: 1px solid black;
     margin-bottom: 5px;
     padding-left: 5px; }
 
 @media (min-width: 720px) {
-  .page-template-core-training .training-list {
+  .core-training-content .training-list {
     padding: 29px 87px; } }
 
-.page-template-core-training .training-date-text {
+.core-training-content .training-date-text {
   font-size: 11px;
   color: #4A4A4A;
   line-height: 2;
   font-weight: bold;
   text-transform: uppercase; }
-  .page-template-core-training .training-date-text span {
+  .core-training-content .training-date-text span {
     text-transform: none;
     font-weight: 300;
     margin-left: 45px; }
 
-.page-template-core-training .training-date-list span {
+.core-training-content .training-date-list span {
   font-weight: 300;
   margin-left: 45px;
   text-transform: normal; }
 
-.page-template-core-training #training-pdf-container {
+.core-training-content #training-pdf-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -2427,7 +2433,7 @@ a:hover, a:active {
       align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .page-template-core-training #training-pdf-container a {
+  .core-training-content #training-pdf-container a {
     background-color: #fff;
     width: 80px;
     height: 44px;
@@ -2441,47 +2447,47 @@ a:hover, a:active {
     border-radius: 8px;
     border: 1px solid white; }
     @media (min-width: 720px) {
-      .page-template-core-training #training-pdf-container a {
+      .core-training-content #training-pdf-container a {
         margin-top: 10px; } }
 
-.page-template-core-training .house-logo {
+.core-training-content .house-logo {
   width: 27.94px;
   height: 28.92px;
   margin-right: 9px; }
   @media (min-width: 720px) {
-    .page-template-core-training .house-logo {
+    .core-training-content .house-logo {
       width: 6rem;
       height: 45.65px; } }
 
-.page-template-core-training .table-heading {
+.core-training-content .table-heading {
   display: inline-block;
   width: 70px;
   font-size: 11px;
   margin-left: 6px; }
 
-.page-template-core-training .training-table-data {
+.core-training-content .training-table-data {
   display: -ms-flexbox;
   display: flex; }
 
 @media (min-width: 720px) {
-  .page-template-core-training .online-dates-section, .page-template-core-training .classroom-dates-section {
+  .core-training-content .online-dates-section, .core-training-content .classroom-dates-section {
     width: 45vw;
     padding: 0;
     max-width: 400px;
     border-top: 1px solid #979797; } }
 
-.page-template-core-training .table-content {
+.core-training-content .table-content {
   font-size: 11px; }
 
-.page-template-core-training .yoga-info-title {
+.core-training-content .yoga-info-title {
   font-size: 16.38px; }
 
-.page-template-core-training tr td {
+.core-training-content tr td {
   margin-top: 9px; }
 
-.page-template-core-training .dates-table {
+.core-training-content .dates-table {
   border-bottom: 1px solid black; }
-  .page-template-core-training .dates-table tr {
+  .core-training-content .dates-table tr {
     height: 60px;
     border-top: 1px solid black;
     border-right: 1px solid black;
@@ -2489,10 +2495,10 @@ a:hover, a:active {
     margin: 0;
     padding-top: 9px; }
   @media (min-width: 720px) {
-    .page-template-core-training .dates-table {
+    .core-training-content .dates-table {
       width: 45vw; } }
 
-.page-template-core-training .dates-table .classroom-tr {
+.core-training-content .dates-table .classroom-tr {
   height: 100px;
   padding-bottom: 1rem;
   display: -ms-flexbox;
@@ -2502,22 +2508,25 @@ a:hover, a:active {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-.page-template-core-training .carousel-cell.is-selected {
+.core-training-content .carousel-cell.is-selected {
   width: 70;
   text-align: center; }
 
-.page-template-resources-research .info-heading {
+.core-training-content .black-text {
+  color: black; }
+
+.resources-research-content .info-heading {
   font-size: 16px;
   font-weight: 100; }
 
 @media (min-width: 720px) {
-  .page-template-resources-research .info-dropdown {
+  .resources-research-content .info-dropdown {
     padding: 0; } }
 
-.page-template-resources-research .teal-button.black-text {
+.resources-research-content .teal-button.black-text {
   color: black; }
 
-.page-template-resources-research .general-button, .page-template-resources-research .book-training-button {
+.resources-research-content .general-button, .resources-research-content .book-training-button {
   width: 230px;
   height: 44px;
   margin: 0 auto;
@@ -2541,10 +2550,10 @@ a:hover, a:active {
   text-decoration: none;
   margin-bottom: 29px; }
 
-.page-template-resources-research .info-heading-subtitle {
+.resources-research-content .info-heading-subtitle {
   color: #4A4A4A; }
 
-.page-template-resources-research .main-h3-container h3 {
+.resources-research-content .main-h3-container h3 {
   padding-top: 35px;
   font-size: 24px;
   margin-bottom: 20px;
@@ -2554,10 +2563,10 @@ a:hover, a:active {
   margin: 0 auto;
   text-align: center; }
   @media (min-width: 720px) {
-    .page-template-resources-research .main-h3-container h3 {
+    .resources-research-content .main-h3-container h3 {
       font-size: 40px; } }
 
-.page-template-resources-research .main-h3-container p {
+.resources-research-content .main-h3-container p {
   font-size: 14px;
   padding-bottom: 22px;
   width: 262px;
@@ -2565,29 +2574,29 @@ a:hover, a:active {
   color: #6B747D;
   text-align: center; }
   @media (min-width: 720px) {
-    .page-template-resources-research .main-h3-container p {
+    .resources-research-content .main-h3-container p {
       font-size: 24px;
       width: 70%; } }
 
-.page-template-resources-research .list-text-container p {
+.resources-research-content .list-text-container p {
   display: inline; }
 
-.page-template-resources-research .resources-article-pdf-list-container {
+.resources-research-content .resources-article-pdf-list-container {
   background-color: #f4f1ea;
   font-size: 14px; }
 
-.page-template-resources-research .resource-pdf-list {
+.resources-research-content .resource-pdf-list {
   list-style: none;
   padding: 0;
   margin-left: 0;
   margin-top: 21px; }
   @media (min-width: 720px) {
-    .page-template-resources-research .resource-pdf-list {
+    .resources-research-content .resource-pdf-list {
       margin-top: 0; } }
-  .page-template-resources-research .resource-pdf-list li {
+  .resources-research-content .resource-pdf-list li {
     display: -ms-flexbox;
     display: flex; }
-    .page-template-resources-research .resource-pdf-list li a {
+    .resources-research-content .resource-pdf-list li a {
       background-color: white;
       width: 60px;
       height: 33px;
@@ -2604,38 +2613,38 @@ a:hover, a:active {
       color: black;
       font-size: 10px; }
       @media (min-width: 720px) {
-        .page-template-resources-research .resource-pdf-list li a {
+        .resources-research-content .resource-pdf-list li a {
           width: 80px;
           height: 44px;
           margin-bottom: 26px;
           font-size: 14px; } }
 
-.page-template-resources-research .resource-link-text {
+.resources-research-content .resource-link-text {
   color: #4a4a4a;
   font-size: 14px;
   width: 14rem;
   padding-bottom: 15px; }
   @media (min-width: 720px) {
-    .page-template-resources-research .resource-link-text {
+    .resources-research-content .resource-link-text {
       font-size: 18px;
       width: 100%; } }
 
-.page-template-resources-research .pdf-item p {
+.resources-research-content .pdf-item p {
   margin-left: 14px;
   color: #4a4a4a;
   font-weight: 300;
   font-size: 14px; }
   @media (min-width: 720px) {
-    .page-template-resources-research .pdf-item p {
+    .resources-research-content .pdf-item p {
       font-size: 18px;
       margin-top: 6px; } }
 
-.page-template-resources-research .resources-links-container div {
+.resources-research-content .resources-links-container div {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  .page-template-resources-research .resources-links-container div button {
+  .resources-research-content .resources-links-container div button {
     font-size: 2rem;
     font-weight: lighter;
     padding: 0;
@@ -2644,35 +2653,35 @@ a:hover, a:active {
     box-shadow: none;
     color: #95afc9; }
 
-.page-template-resources-research .links-button-container {
+.resources-research-content .links-button-container {
   height: 50px;
   background-color: #fff; }
 
-.page-template-resources-research .link-list {
+.resources-research-content .link-list {
   padding: 0;
   margin: 0;
   list-style: none; }
-  .page-template-resources-research .link-list li {
+  .resources-research-content .link-list li {
     margin-bottom: 7px; }
     @media (min-width: 720px) {
-      .page-template-resources-research .link-list li {
+      .resources-research-content .link-list li {
         font-size: 18px;
         line-height: 30px; } }
-    .page-template-resources-research .link-list li a {
+    .resources-research-content .link-list li a {
       color: #6b747d;
       font-weight: 200; }
 
-.page-template-resources-research .link-list p {
+.resources-research-content .link-list p {
   color: #4a4a4a;
   font-size: 14px;
   width: 14rem;
   padding-bottom: 15px; }
   @media (min-width: 720px) {
-    .page-template-resources-research .link-list p {
+    .resources-research-content .link-list p {
       font-size: 18px;
       width: 100%; } }
 
-.page-template-resources-media .general-button {
+.resources-media-content .general-button {
   width: 230px;
   height: 44px;
   margin: 0 auto;
@@ -2696,7 +2705,7 @@ a:hover, a:active {
   text-decoration: none;
   margin-bottom: 29px; }
 
-.page-template-resources-media .main-h3-container h3 {
+.resources-media-content .main-h3-container h3 {
   padding-top: 35px;
   font-size: 24px;
   margin-bottom: 20px;
@@ -2706,10 +2715,10 @@ a:hover, a:active {
   margin: 0 auto;
   text-align: center; }
   @media (min-width: 720px) {
-    .page-template-resources-media .main-h3-container h3 {
+    .resources-media-content .main-h3-container h3 {
       font-size: 40px; } }
 
-.page-template-resources-media .main-h3-container p {
+.resources-media-content .main-h3-container p {
   font-size: 14px;
   padding-bottom: 22px;
   width: 262px;
@@ -2717,26 +2726,26 @@ a:hover, a:active {
   color: #6B747D;
   text-align: center; }
   @media (min-width: 720px) {
-    .page-template-resources-media .main-h3-container p {
+    .resources-media-content .main-h3-container p {
       font-size: 24px;
       width: 100%; } }
 
-.page-template-resources-media .info-dropdown {
+.resources-media-content .info-dropdown {
   padding: 0; }
 
-.page-template-resources-media .media-article-list, .page-template-resources-media .media-video-list, .page-template-resources-media .press-article-list {
+.resources-media-content .media-article-list, .resources-media-content .media-video-list, .resources-media-content .press-article-list {
   padding: 0;
   margin: 0;
   list-style: none;
   padding-bottom: 20px; }
-  .page-template-resources-media .media-article-list li, .page-template-resources-media .media-video-list li, .page-template-resources-media .press-article-list li {
+  .resources-media-content .media-article-list li, .resources-media-content .media-video-list li, .resources-media-content .press-article-list li {
     margin-bottom: 12px; }
     @media (min-width: 720px) {
-      .page-template-resources-media .media-article-list li, .page-template-resources-media .media-video-list li, .page-template-resources-media .press-article-list li {
+      .resources-media-content .media-article-list li, .resources-media-content .media-video-list li, .resources-media-content .press-article-list li {
         border-top: 2px solid #4A4A4A;
         padding-bottom: 11px; } }
 
-.page-template-resources-media .video-list-section {
+.resources-media-content .video-list-section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -2746,22 +2755,22 @@ a:hover, a:active {
       flex-direction: column;
   padding-top: 29px;
   padding: 29px 1rem; }
-  .page-template-resources-media .video-list-section h3 {
+  .resources-media-content .video-list-section h3 {
     font-weight: 300;
     margin-bottom: 10px;
     margin-top: 40px; }
-  .page-template-resources-media .video-list-section li {
+  .resources-media-content .video-list-section li {
     margin-bottom: 25px; }
 
-.page-template-resources-media .media-article-section {
+.resources-media-content .media-article-section {
   z-index: -2;
   background-color: #f4f1ea; }
   @media (min-width: 720px) {
-    .page-template-resources-media .media-article-section {
+    .resources-media-content .media-article-section {
       padding-top: 2rem; } }
 
 @media (min-width: 720px) {
-  .page-template-resources-media .media-date {
+  .resources-media-content .media-date {
     position: relative;
     font-size: 20px;
     margin-top: 1rem;
@@ -2769,7 +2778,7 @@ a:hover, a:active {
     padding-bottom: 1rem; } }
 
 @media (min-width: 720px) {
-  .page-template-resources-media .media-color {
+  .resources-media-content .media-color {
     height: 20px;
     position: absolute;
     top: -6%;
@@ -2780,18 +2789,18 @@ a:hover, a:active {
     left: -4rem; } }
 
 @media (min-width: 720px) {
-  .page-template-resources-media .media-blue {
+  .resources-media-content .media-blue {
     background-color: #CBE8EA; } }
 
 @media (min-width: 720px) {
-  .page-template-resources-media .media-purple {
+  .resources-media-content .media-purple {
     background-color: #CFDCEB; } }
 
-.page-template-resources-media .read-more, .page-template-resources-media .read-less {
+.resources-media-content .read-more, .resources-media-content .read-less {
   font-size: 10px; }
 
 @media (min-width: 720px) {
-  .page-template-resources-media .media-heading-flex {
+  .resources-media-content .media-heading-flex {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -2800,16 +2809,16 @@ a:hover, a:active {
         align-items: flex-start;
     margin-bottom: 2.5rem; } }
 
-.page-template-resources-media .research-paper-para {
+.resources-media-content .research-paper-para {
   display: none; }
   @media (min-width: 720px) {
-    .page-template-resources-media .research-paper-para {
+    .resources-media-content .research-paper-para {
       display: block;
       color: #4A4A4A;
       font-size: 20px;
       padding-bottom: 36px; } }
 
-.page-template-resources-media .video-item {
+.resources-media-content .video-item {
   display: block; }
 
 /*--------------------------------------------------------------
@@ -3947,40 +3956,45 @@ object {
   background-color: #fff;
   margin-bottom: 0; }
 
-.page-template-core-training .main-carousel {
+.core-training-content .main-carousel {
   width: 100%;
   padding-top: 20px;
   margin-top: 2rem;
   padding-bottom: 20px; }
-  .page-template-core-training .main-carousel .carousel-cell {
+  .core-training-content .main-carousel .carousel-cell {
     width: 100%;
     height: auto; }
-    .page-template-core-training .main-carousel .carousel-cell p {
+    .core-training-content .main-carousel .carousel-cell p {
       margin-top: 20px; }
-    .page-template-core-training .main-carousel .carousel-cell h1 {
+    .core-training-content .main-carousel .carousel-cell h1 {
       color: #4a4a4a; }
-  .page-template-core-training .main-carousel ol {
+  .core-training-content .main-carousel ol {
     display: none; }
-  .page-template-core-training .main-carousel .flickity-prev-next-button {
+  .core-training-content .main-carousel .flickity-prev-next-button {
     border: none;
     background: none;
     box-shadow: none;
     padding: 0; }
 
-.page-template-core-training .section-15px-padding {
+.core-training-content .section-15px-padding {
   padding: 0 15px; }
 
-.page-template-core-training .core-h3-container {
+.core-training-content .core-h3-container {
   width: 100%;
   border-bottom: 2px solid #4A4A4A;
   padding-bottom: 16px;
   margin-bottom: 18px; }
 
-.page-template-core-training .carousel-cell.is-selected {
+.core-training-content .carousel-cell.is-selected {
   padding-left: 2rem;
   padding-right: 2rem; }
 
-.page-template-core-training .core-header {
+@media (min-width: 720px) {
+  .core-training-content .general-button-container {
+    top: 0rem;
+    bottom: 30px; } }
+
+.core-training-content .core-header {
   margin: 0;
   width: 175px;
   color: #6B747D;
@@ -3988,14 +4002,14 @@ object {
   line-height: 24px;
   margin-top: 39px; }
   @media (min-width: 720px) {
-    .page-template-core-training .core-header {
+    .core-training-content .core-header {
       font-size: 40px;
       width: 700px; } }
 
-.page-template-core-training .light-first-para, .page-template-core-training .dark-second-para {
+.core-training-content .light-first-para, .core-training-content .dark-second-para {
   word-break: break-all; }
 
-.page-template-core-training .register-online-button {
+.core-training-content .register-online-button {
   width: 230px;
   height: 44px;
   margin: 0 auto;
@@ -4020,43 +4034,44 @@ object {
   background-color: #6B747D; }
 
 @media (min-width: 720px) {
-  .page-template-core-training .table-section-container {
+  .core-training-content .table-section-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-top: 3rem; } }
+    margin-top: 3rem;
+    margin-bottom: 6rem; } }
 
-.page-template-core-training .book-training.register-button {
+.core-training-content .book-training.register-button {
   margin: 0 auto; }
   @media (min-width: 720px) {
-    .page-template-core-training .book-training.register-button {
+    .core-training-content .book-training.register-button {
       margin-right: 0; } }
 
-.page-template-core-training .small-para-container {
+.core-training-content .small-para-container {
   margin-top: 2rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .small-para-container {
+    .core-training-content .small-para-container {
       margin-top: 0; } }
 
 @media (min-width: 720px) {
-  .page-template-core-training .classroom-dates-section, .page-template-core-training .online-dates-section {
+  .core-training-content .classroom-dates-section, .core-training-content .online-dates-section {
     width: 350px; } }
 
 @media (min-width: 720px) {
-  .page-template-core-training .dates-table {
+  .core-training-content .dates-table {
     max-width: 400px; } }
 
-.page-template-core-training .core-training-info-list {
+.core-training-content .core-training-info-list {
   margin: 0;
   padding: 0 15px;
   list-style: none; }
 
-.page-template-core-training .info-list-content {
+.core-training-content .info-list-content {
   font-size: 18px;
   line-height: 30px; }
 
-.page-template-core-training .general-button {
+.core-training-content .general-button {
   width: 230px;
   height: 44px;
   margin: 0 auto;
@@ -4081,40 +4096,40 @@ object {
   margin-bottom: 29px; }
 
 @media (min-width: 720px) {
-  .page-template-core-training .register-online-button {
+  .core-training-content .register-online-button {
     display: inline; } }
 
 @media (min-width: 720px) {
-  .page-template-core-training .register-button-para-container {
+  .core-training-content .register-button-para-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
     margin-top: 12px; } }
 
-.page-template-core-training .earth-logo-change {
+.core-training-content .earth-logo-change {
   width: 40px;
   height: 30px;
   background-image: url("../../images/earth_icon.svg");
   background-size: contain;
   background-repeat: no-repeat; }
   @media (min-width: 720px) {
-    .page-template-core-training .earth-logo-change {
+    .core-training-content .earth-logo-change {
       background-image: url("../../images/blue_earth_icon.svg");
       width: 30px;
       height: 30px;
       margin-right: 10px; } }
 
-.page-template-core-training .earth-logo {
+.core-training-content .earth-logo {
   width: 2rem;
   height: 2rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .earth-logo {
+    .core-training-content .earth-logo {
       width: 60px;
       height: 60px;
       margin-right: 9px; } }
 
-.page-template-core-training .avail-online-heading-container {
+.core-training-content .avail-online-heading-container {
   display: -ms-flexbox;
   display: flex;
   margin: 15px 0;
@@ -4122,55 +4137,55 @@ object {
       align-items: center;
   max-width: 35rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .avail-online-heading-container {
+    .core-training-content .avail-online-heading-container {
       margin-left: 0;
       margin-bottom: 59px;
       min-width: 10rem; } }
-  .page-template-core-training .avail-online-heading-container h3 {
+  .core-training-content .avail-online-heading-container h3 {
     margin: 0;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold; }
     @media (min-width: 720px) {
-      .page-template-core-training .avail-online-heading-container h3 {
+      .core-training-content .avail-online-heading-container h3 {
         font-size: 18px;
         text-transform: none; } }
 
-.page-template-core-training .avail-online-heading-container h3 {
+.core-training-content .avail-online-heading-container h3 {
   text-transform: uppercase; }
 
-.page-template-core-training .core-training-text-image-container {
+.core-training-content .core-training-text-image-container {
   width: 16rem;
   margin-bottom: 1rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .core-training-text-image-container {
+    .core-training-content .core-training-text-image-container {
       width: 19rem; } }
-  .page-template-core-training .core-training-text-image-container h3 {
+  .core-training-content .core-training-text-image-container h3 {
     font-size: 17px; }
     @media (min-width: 720px) {
-      .page-template-core-training .core-training-text-image-container h3 {
+      .core-training-content .core-training-text-image-container h3 {
         font-size: 20px; } }
 
-.page-template-core-training .avail-online-h3 {
+.core-training-content .avail-online-h3 {
   width: 11rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .avail-online-h3 {
+    .core-training-content .avail-online-h3 {
       width: 100%;
       margin-top: 12px; } }
 
-.page-template-core-training .light-training-para {
+.core-training-content .light-training-para {
   color: #6B747D;
   font-size: 14px;
   line-height: 2;
   max-width: 1024px; }
 
-.page-template-core-training .dark-training-para {
+.core-training-content .dark-training-para {
   color: #4A4A4A;
   font-size: 14px;
   line-height: 2;
   margin-bottom: 35px; }
 
-.page-template-core-training .online-class-icon-heading-container, .page-template-core-training .core-training-text-image-container {
+.core-training-content .online-class-icon-heading-container, .core-training-content .core-training-text-image-container {
   display: -ms-flexbox;
   display: flex;
   margin-top: 35px;
@@ -4178,48 +4193,48 @@ object {
       align-items: center;
   margin-bottom: 1rem; }
   @media (min-width: 720px) {
-    .page-template-core-training .online-class-icon-heading-container, .page-template-core-training .core-training-text-image-container {
+    .core-training-content .online-class-icon-heading-container, .core-training-content .core-training-text-image-container {
       margin-bottom: 45px; } }
-  .page-template-core-training .online-class-icon-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
+  .core-training-content .online-class-icon-heading-container h3, .core-training-content .core-training-text-image-container h3 {
     margin: 0;
     font-size: 20px;
     color: #4A4A4A;
     width: 200px;
     margin-left: 1rem; }
     @media (min-width: 720px) {
-      .page-template-core-training .online-class-icon-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
+      .core-training-content .online-class-icon-heading-container h3, .core-training-content .core-training-text-image-container h3 {
         width: 100%; } }
 
-.page-template-core-training .training-list-header {
+.core-training-content .training-list-header {
   padding: 0;
   margin: 0;
   list-style: none; }
-  .page-template-core-training .training-list-header li {
+  .core-training-content .training-list-header li {
     border: 1px solid black;
     margin-bottom: 5px;
     padding-left: 5px; }
 
 @media (min-width: 720px) {
-  .page-template-core-training .training-list {
+  .core-training-content .training-list {
     padding: 29px 87px; } }
 
-.page-template-core-training .training-date-text {
+.core-training-content .training-date-text {
   font-size: 11px;
   color: #4A4A4A;
   line-height: 2;
   font-weight: bold;
   text-transform: uppercase; }
-  .page-template-core-training .training-date-text span {
+  .core-training-content .training-date-text span {
     text-transform: none;
     font-weight: 300;
     margin-left: 45px; }
 
-.page-template-core-training .training-date-list span {
+.core-training-content .training-date-list span {
   font-weight: 300;
   margin-left: 45px;
   text-transform: normal; }
 
-.page-template-core-training #training-pdf-container {
+.core-training-content #training-pdf-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -4229,7 +4244,7 @@ object {
       align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .page-template-core-training #training-pdf-container a {
+  .core-training-content #training-pdf-container a {
     background-color: #fff;
     width: 80px;
     height: 44px;
@@ -4243,47 +4258,47 @@ object {
     border-radius: 8px;
     border: 1px solid white; }
     @media (min-width: 720px) {
-      .page-template-core-training #training-pdf-container a {
+      .core-training-content #training-pdf-container a {
         margin-top: 10px; } }
 
-.page-template-core-training .house-logo {
+.core-training-content .house-logo {
   width: 27.94px;
   height: 28.92px;
   margin-right: 9px; }
   @media (min-width: 720px) {
-    .page-template-core-training .house-logo {
+    .core-training-content .house-logo {
       width: 6rem;
       height: 45.65px; } }
 
-.page-template-core-training .table-heading {
+.core-training-content .table-heading {
   display: inline-block;
   width: 70px;
   font-size: 11px;
   margin-left: 6px; }
 
-.page-template-core-training .training-table-data {
+.core-training-content .training-table-data {
   display: -ms-flexbox;
   display: flex; }
 
 @media (min-width: 720px) {
-  .page-template-core-training .online-dates-section, .page-template-core-training .classroom-dates-section {
+  .core-training-content .online-dates-section, .core-training-content .classroom-dates-section {
     width: 45vw;
     padding: 0;
     max-width: 400px;
     border-top: 1px solid #979797; } }
 
-.page-template-core-training .table-content {
+.core-training-content .table-content {
   font-size: 11px; }
 
-.page-template-core-training .yoga-info-title {
+.core-training-content .yoga-info-title {
   font-size: 16.38px; }
 
-.page-template-core-training tr td {
+.core-training-content tr td {
   margin-top: 9px; }
 
-.page-template-core-training .dates-table {
+.core-training-content .dates-table {
   border-bottom: 1px solid black; }
-  .page-template-core-training .dates-table tr {
+  .core-training-content .dates-table tr {
     height: 60px;
     border-top: 1px solid black;
     border-right: 1px solid black;
@@ -4291,10 +4306,10 @@ object {
     margin: 0;
     padding-top: 9px; }
   @media (min-width: 720px) {
-    .page-template-core-training .dates-table {
+    .core-training-content .dates-table {
       width: 45vw; } }
 
-.page-template-core-training .dates-table .classroom-tr {
+.core-training-content .dates-table .classroom-tr {
   height: 100px;
   padding-bottom: 1rem;
   display: -ms-flexbox;
@@ -4304,9 +4319,12 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-.page-template-core-training .carousel-cell.is-selected {
+.core-training-content .carousel-cell.is-selected {
   width: 70;
   text-align: center; }
+
+.core-training-content .black-text {
+  color: black; }
 
 /*! Flickity v2.0.5
 http://flickity.metafizzy.co

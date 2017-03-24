@@ -1,4 +1,4 @@
-.page-template-core-training {
+.core-training-content{
         .main-carousel{
             width: 100%;
             padding-top:20px;
@@ -45,6 +45,13 @@
         padding-right: 2rem;
     }
 
+    .general-button-container{
+        @include desktop{
+            top:0rem;
+            bottom:30px;
+        }
+    }
+
     .core-header{
         margin:0;
         width:175px;
@@ -72,6 +79,7 @@
             display:flex;
             justify-content:space-around;
             margin-top: 3rem;
+            margin-bottom: 6rem;
         }
     }
 
@@ -384,5 +392,9 @@
     .carousel-cell.is-selected{
         width:70;
         text-align:center;
+    }
+
+     .black-text{
+        color:black;
     }
 }//Core Training Wrapper
