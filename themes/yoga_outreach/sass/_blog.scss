@@ -60,7 +60,7 @@
         justify-content: center;
     }
 
-    a {
+    p {
         font-size: 3vh;
         color: $basetext_color;
         text-align: center;
@@ -80,6 +80,37 @@
     }
 }
 
-.pop {
-    display:none;
+.full-article {
+    article {
+        display: none;
+        padding-bottom: 20px;
+
+        img {
+            height: 133px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .article-head {
+        height: 100%;
+        background-color: #BFE9FD;
+        @include flex-column;
+        justify-content: center;
+    }
+    h2 {
+        font-size: 4vh;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 15px;
+
+    }
+    h3 {
+        text-align: center;
+        margin: 10px;
+    }
+    
+    p {
+        padding: 0 15px;
+    }
 }
