@@ -74,9 +74,22 @@ function formstemplate_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'formstemplate_styles' );
 
+/**
+ * Custom Training Modules archive title
+ *
+ */
+					
+function modify_modules_archive_title( $title ) {	
+    if(is_post_type_archive('training_modules')){
+        $title = "Course Modules";
+    }
+    return $title;
+}
+add_filter( 'get_the_archive_title', 'modify_modules_archive_title');
+
 
  /**
- * Sort Archive by ascending title
+ * Sort Training Modules by ascending title
  *
  * 
  */
