@@ -12,18 +12,18 @@
         height: 210px;
         width: 100%;
         margin: 45px;
-        
-        article {
-            height: 100%;
-            @include flex-column;
-            justify-content: space-between;
+    }
 
-            text-align: center;
-        }
+    article {
+        height: 100%;
+        @include flex-column;
+        justify-content: space-between;
 
-        .cell-head {
-            align-self: center;
-        }
+        text-align: center;
+    }
+
+    .cell-head {
+        align-self: center;
     }
 
     /* move page dots into carousel */
@@ -61,18 +61,21 @@
     }
 
     a {
-        font-size: 1.2rem;
+        font-size: 3vh;
         color: $basetext_color;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
     }
-}
 
-    
-ul { /* carousel height */
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    ul { /* carousel height */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        button {
+            display: none;
+        }
+    }
 }

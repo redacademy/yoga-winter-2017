@@ -12,7 +12,6 @@ get_header(); ?>
                     <?php if ( have_posts() ) : ?>   
                         <?php while ( have_posts() ) : the_post(); ?> <!--start loop-->
                             <li class="carousel-cell">
-
                                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                                     <div class="cell-head">
                                         <?php if ( has_post_thumbnail() ) : ?>
@@ -28,9 +27,7 @@ get_header(); ?>
                                             <?php the_date('M. d, Y', '<h3>', '</h3>'); ?>
                                         </div>
                                     <?php endif; ?>
-                            
                                 </article> <!-- #post-## -->
-
                             </li>
                         <?php endwhile; ?>
                     <?php endif; ?>
