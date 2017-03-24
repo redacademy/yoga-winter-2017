@@ -58,17 +58,17 @@ get_header(); ?>
     <h2>Get Involed!</h2>
      <div class="involved-wrap">
         <img class="involvedimage-one" src="<?php echo get_template_directory_uri(); ?>/images/Volunteer_desktop.png"/>
-        <img class ="involvedimage-two" src="<?php echo get_template_directory_uri(); ?>/images/Partner_desktop.png"/>
+        <img class="involvedimage-two" src="<?php echo get_template_directory_uri(); ?>/images/Partner_desktop.png"/>
         <img class="involvedimage-one" src="<?php echo get_template_directory_uri(); ?>/images/SupportUs_desktop.png"/>   
       </div>
     <div class="accent-square"></div>
 </section>
-<div class ="testimonal-container">
-				<ul class ="testimonial-list main-carousel">
+<div class="testimonal-container">
+				<ul class="testimonial-list main-carousel">
 					<?php
 					$testimonials = CFS()->get('testimonial_item');
 					foreach ( $testimonials as $testimonial): ?>
-					<li class ="carousel-cell">
+					<li class="carousel-cell">
             <p><?php echo $testimonial ['testimonial'];?></p>
             <div class="carousel-picture">
               <img src="<?php echo $testimonial ['testimonial_image'];?>" />
@@ -77,13 +77,13 @@ get_header(); ?>
 					<?php endforeach ?>
 				</ul>
 			</div><!--testimonial-container-->
-<div class ="team-container">
+<div class="team-container">
       <h2>Get to Know the team</h2>
-				<ul class ="team-list main-carousel">
+				<ul class="team-list main-carousel">
 					<?php
 					$teams = CFS()->get('team_item');
 					foreach ( $teams as $team): ?>
-					<li class ="carousel-cell">
+					<li class="carousel-cell">
           <img class="carousel-picture" src="<?php echo $team ['team_image'];?>" />
           <p><?php echo $team ['team'];?></p>
           </li>
