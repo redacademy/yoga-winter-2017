@@ -10,8 +10,8 @@ get_header(); ?>
 			<header class = "general-template-section">
 				<h1 class ="page-title-header"><?php the_title(); ?></h1>
 				<div class ="general-button-container">
-					<button class = "general-button grey-button">Research</button>
-					<button class = "general-button teal-button">Media and Videos</button>
+					<a href ="resources" class = "general-button grey-button">Research</a>
+					<a href ="#"class = "general-button teal-button">Media and Videos</a>
 				</div>
 			</header><!--general-template-section-->
 			<div class ="main-h3-container section-15px-padding">
@@ -63,7 +63,7 @@ get_header(); ?>
 			</section><!--media-article-section-->
 			<section class = "video-list-section">
 				<h2 class ="video-list-heading">Why Yoga Outreach</h2>
-				<ul class ="media-video-list show-videos">
+				<ul class ="media-video-list">
 					<?php 
 					$videos = CFS()->get('video_list');
 					foreach ( $videos as $video ):

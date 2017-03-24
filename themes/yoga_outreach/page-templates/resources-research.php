@@ -31,7 +31,7 @@ get_header(); ?>
 			<section class ="resources-article-pdf-list-container section-15px-padding">
 				<div class ="info-dropdown">
 					<h3>Articles</h3>
-					<span>+</span>
+					<span class ="plus-sign">+</span>
 				</div><!--info-dropdown-->
 				<div class ="info-field">
 				<ul class ="resource-pdf-list">

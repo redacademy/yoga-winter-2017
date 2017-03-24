@@ -7,7 +7,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<header class = "general-template-section custom-hero-image">
+				<div class ="page-title-container">
 				<h1 class ="page-title-header"><?php the_title(); ?></h1>
+				</div>
 				<?php
                 while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
                     <div class="entry-content-page">
@@ -18,8 +20,8 @@ get_header(); ?>
                 wp_reset_query(); //resetting the page query
                 ?>
 				<div class ="general-button-container">
-					<button class = "general-button teal-button black-text">Core Training</button>
-					<button class = "general-button grey-button">For Facilities</button>
+					<a href ="#" class = "general-button teal-button black-text">Core Training</a>
+					<a href ="#" class = "general-button grey-button">For Facilities</a>
 				</div><!--general-button-container-->
 			</header><!--general-template-section core-hero-->
             <section class ="section-15px-padding">
@@ -125,12 +127,12 @@ get_header(); ?>
 					endif; 
 					?>
                     <?php if(!empty($infoContent)): ?>
-					<div class ="info-dropdown tools-first-heading">
+					<div class ="info-dropdown">
 						<h3 class = "yoga-info-title"><?php echo $infoItem ['list_title']; ?></h3>
 						<span>+</span>
 					</div><!--tools-first-heading-->
 					<div class ="info-field">
-                    	<p><?php echo $infoItem ['list_content']; ?></p>
+                    	<p class ="info-list-content"><?php echo $infoItem ['list_content']; ?></p>
 					</div><!--info-field-->
 					<?php endif; ?>
                 </li><!--training-list-item-->
