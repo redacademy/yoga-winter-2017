@@ -2,7 +2,7 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package RED_Starter_Theme
+ * @package Yoga_Outreach_Theme
  */
 
 /**
@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function red_starter_body_classes( $classes ) {
+function yoga_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -19,14 +19,14 @@ function red_starter_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'red_starter_body_classes' );
+add_filter( 'body_class', 'yoga_body_classes' );
 
 /**
  * Custom hero image styles method
  *
  * 
  */
-function pagetemplate_styles() {
+function yoga_pagetemplate_styles() {
 
     $pages = ['page-templates/support.php', 'page-templates/volunteer.php', 'page-templates/partner.php', 'page-templates/about-us.php', 'page-templates/training.php', 'page-templates/core-training.php', 'page-templates/resources-research.php', 'front-page.php', 'page-templates/archive-events.php', 'page-templates/about-us.php'];
 
@@ -43,9 +43,9 @@ function pagetemplate_styles() {
         background: url({$image}) no-repeat center top;
         background-size: cover, cover;
         }"; 
-    wp_add_inline_style( 'red-starter-style', $hero_css );
+    wp_add_inline_style( 'yoga-outreach-style', $hero_css );
 }
-add_action( 'wp_enqueue_scripts', 'pagetemplate_styles' );
+add_action( 'wp_enqueue_scripts', 'yoga_pagetemplate_styles' );
 
 
 /**
@@ -53,7 +53,7 @@ add_action( 'wp_enqueue_scripts', 'pagetemplate_styles' );
  *
  * 
  */
-function formstemplate_styles() {
+function yoga_formstemplate_styles() {
 
     $pages = ['page-templates/forms-template.php'];
 
@@ -70,22 +70,22 @@ function formstemplate_styles() {
         background: url({$image}) no-repeat center 70%;
         background-size: cover, cover;
         }"; 
-    wp_add_inline_style( 'red-starter-style', $hero_css );
+    wp_add_inline_style( 'yoga-outreach-style', $hero_css );
 }
-add_action( 'wp_enqueue_scripts', 'formstemplate_styles' );
+add_action( 'wp_enqueue_scripts', 'yoga_formstemplate_styles' );
 
 /**
  * Custom Training Modules archive title
  *
  */
 					
-function modify_modules_archive_title( $title ) {	
+function yoga_modify_modules_archive_title( $title ) {	
     if(is_post_type_archive('training_modules')){
         $title = "Course Modules";
     }
     return $title;
 }
-add_filter( 'get_the_archive_title', 'modify_modules_archive_title');
+add_filter( 'get_the_archive_title', 'yoga_modify_modules_archive_title');
 
 
  /**
@@ -93,7 +93,7 @@ add_filter( 'get_the_archive_title', 'modify_modules_archive_title');
  *
  * 
  */
-function change_sort_order($query){
+function yoga_change_sort_order($query){
     if(is_post_type_archive()):
         //If you wanted it for the archive of a custom post type use: is_post_type_archive( $post_type )
         //Set the order ASC or DESC
@@ -102,4 +102,4 @@ function change_sort_order($query){
         $query->set( 'orderby', 'title' );
     endif;    
 };
-add_action( 'pre_get_posts', 'change_sort_order');
+add_action( 'pre_get_posts', 'yoga_change_sort_order');

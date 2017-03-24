@@ -14,15 +14,15 @@ class RF_General {
    public function __construct() {
 
       // General housekeeping
-      add_filter( 'http_request_args', array( $this, 'hide_plugin_from_updates' ), 5, 2 );
-      add_action( 'admin_notices', array( $this, 'hide_update_notice_nonadmins' ), 1 );
+      add_filter( 'http_request_args', array( $this, 'yoga_hide_plugin_from_updates' ), 5, 2 );
+      add_action( 'admin_notices', array( $this, 'yoga_hide_update_notice_nonadmins' ), 1 );
 
       // Admin bar and menus customization
-      add_action( 'admin_menu', array( $this, 'remove_menus' ) );
-      add_action( 'admin_menu', array( $this, 'remove_submenus' ), 110 );
+      add_action( 'admin_menu', array( $this, 'yoga_remove_menus' ) );
+      add_action( 'admin_menu', array( $this, 'yoga_remove_submenus' ), 110 );
 
       // Customize post type UI
-      add_filter( 'post_updated_messages', array( $this, 'set_updated_messages' ) );
+      add_filter( 'post_updated_messages', array( $this, 'yoga_set_updated_messages' ) );
 
    }
 
@@ -31,7 +31,7 @@ class RF_General {
     *
     * @since 1.0.0
     */
-   public static function plugin_activation() {
+   public static function yoga_plugin_activation() {
       if ( ! current_user_can( 'activate_plugins' ) )
          return;
 
@@ -60,7 +60,7 @@ class RF_General {
     * @return array       Request arguments
     */
 
-   public function hide_plugin_from_updates( $r, $url ) {
+   public function yoga_hide_plugin_from_updates( $r, $url ) {
    	if ( 0 !== strpos( $url, 'http://api.wordpress.org/plugins/update-check' ) )
    		return $r; // Not a plugin update request. Bail immediately.
 
@@ -76,7 +76,7 @@ class RF_General {
     *
     * @since 1.1.0
     */
-   public function hide_update_notice_nonadmins() {
+   public function yoga_hide_update_notice_nonadmins() {
    	if ( ! current_user_can( 'update_core' ) ) {
    		remove_action( 'admin_notices', 'update_nag', 3 );
    	}
@@ -87,7 +87,7 @@ class RF_General {
     *
     * @since 1.0.0
     */
-   public function remove_menus() {
+   public function yoga_remove_menus() {
    	global $menu;
    	$restricted = array();
    	// Example:
@@ -104,7 +104,7 @@ class RF_General {
     *
     * @since 1.0.0
     */
-   public function remove_submenus() {
+   public function yoga_remove_submenus() {
    	remove_submenu_page( 'themes.php', 'theme-editor.php' );
    	remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
    }
@@ -114,7 +114,7 @@ class RF_General {
     *
     * @since 1.0.0
     */
-   public function set_updated_messages( $messages ) {
+   public function yoga_set_updated_messages( $messages ) {
       global $post, $post_ID;
 
       $post_type = get_post_type( $post_ID );
