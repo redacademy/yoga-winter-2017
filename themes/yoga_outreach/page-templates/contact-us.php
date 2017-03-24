@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image hero-text">
                 <h1 class="header-title"><?php the_title(); ?></h1>
-                <p>We can be reached at</p>
+                <p>We can be reached at:</p>
                 <p class="hero-phone"><?php echo CFS()->get( 'phone_number' ); ?></p>
             </header>
             
@@ -36,7 +36,7 @@ get_header(); ?>
             <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold email from loop-->    
                 <?php if(!empty($fields)): ?>
                     <?php foreach( $fields as $field ): ?>
-
+                    <section class="info-section">
                     <div class="info-dropdown">
                         <h3><?php echo $field[ 'info_title' ]; ?></h3><span>+</span>
                     </div>
@@ -49,6 +49,7 @@ get_header(); ?>
                             <?php endforeach; ?>
                         <?php endif; ?>
                     </div>
+                    </section>
 
                 <?php endforeach; ?>
             <?php endif; ?> 

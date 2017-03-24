@@ -1103,8 +1103,9 @@ footer {
 .page-template-contact-us #site-navigation .menu-main-menu-container a {
   color: #4a4a4a; }
 
-.page-template-contact-us #main {
-  padding-top: 200px; }
+@media (min-width: 720px) {
+  .page-template-contact-us #main {
+    padding-top: 200px; } }
 
 .page-template-contact-us .hero-text {
   height: 225px;
@@ -1121,7 +1122,13 @@ footer {
       flex-direction: column; }
   .page-template-contact-us .hero-text h1 {
     font-size: 1.5rem;
-    margin: 50px; }
+    margin: 1.5rem; }
+    @media (min-width: 720px) {
+      .page-template-contact-us .hero-text h1 {
+        font-size: 40px; } }
+  @media (min-width: 720px) {
+    .page-template-contact-us .hero-text p {
+      font-size: 24px; } }
   .page-template-contact-us .hero-text .hero-phone {
     font-size: 2rem; }
 
@@ -1137,9 +1144,15 @@ footer {
   .page-template-contact-us .email-inquiries h2 {
     font-size: 1.5rem;
     padding-bottom: 21px; }
+    @media (min-width: 720px) {
+      .page-template-contact-us .email-inquiries h2 {
+        font-size: 40px; } }
   .page-template-contact-us .email-inquiries p {
     font-size: .9rem;
     padding-bottom: 8px; }
+    @media (min-width: 720px) {
+      .page-template-contact-us .email-inquiries p {
+        font-size: 24px; } }
   .page-template-contact-us .email-inquiries a {
     width: 230px;
     height: 44px;
@@ -1163,13 +1176,22 @@ footer {
     margin-bottom: 54px; }
   .page-template-contact-us .email-inquiries .email-info {
     width: 100%; }
+    @media (min-width: 720px) {
+      .page-template-contact-us .email-inquiries .email-info {
+        font-size: 20px; } }
     .page-template-contact-us .email-inquiries .email-info h5 {
       text-transform: uppercase;
       font-weight: bold; }
+      @media (min-width: 720px) {
+        .page-template-contact-us .email-inquiries .email-info h5 {
+          font-size: 20px; } }
     .page-template-contact-us .email-inquiries .email-info p {
       font-size: 0.9rem;
       font-weight: lighter;
       padding-bottom: 20px; }
+      @media (min-width: 720px) {
+        .page-template-contact-us .email-inquiries .email-info p {
+          font-size: 20px; } }
 
 .page-template-contact-us .info-dropdown {
   padding: 15px;
