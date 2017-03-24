@@ -55,10 +55,9 @@
 
 	.training-yoga-tools-section,.training-yoga-work-section{
 			margin-top:39px;
-	}
-
-	.info-list-title{
-
+				@include desktop{
+					margin-top:10px;
+				}
 	}
 
 	.info-dropdown{
@@ -80,6 +79,10 @@
 		font-size:20px;
 		color: black;
 		font-weight:600;
+			@include desktop{
+				margin-left:0;
+				font-size:40px;
+			}
 	}
 
 	.train-plus-button, .train-minus-button{
@@ -108,6 +111,11 @@
 		background-color:#6B747D;
 		margin-top:18px;
 	}
+
+	.carousel-cell.is-selected{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 
 	.testimonal-slideshow-container{
 		min-width:320px;
