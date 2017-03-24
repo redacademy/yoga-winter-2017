@@ -1487,7 +1487,7 @@ footer {
         flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center; }
-  .article-slider a {
+  .article-slider p {
     font-size: 3vh;
     color: #fff;
     text-align: center;
@@ -1501,6 +1501,38 @@ footer {
     list-style-type: none; }
     .article-slider ul button {
       display: none; }
+
+.full-article article {
+  display: none;
+  padding-bottom: 20px; }
+  .full-article article img {
+    height: 133px;
+    width: 100%;
+    object-fit: cover; }
+
+.full-article .article-head {
+  height: 100%;
+  background-color: #BFE9FD;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.full-article h2 {
+  font-size: 4vh;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px; }
+
+.full-article h3 {
+  text-align: center;
+  margin: 10px; }
+
+.full-article p {
+  padding: 0 15px; }
 
 /*--------------------------------------------------------------
 # Forms
