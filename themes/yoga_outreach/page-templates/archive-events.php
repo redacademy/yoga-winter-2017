@@ -21,7 +21,7 @@ get_header(); ?>
                     ?>
 				<div class="general-button-container">
 					<button class="general-button grey-button"><a href="#workshop" class="button">workshop</a></button>
-					<button class="general-button teal-button"><a href="#retreat">retreat</a></button>
+					<button class="general-button grey-button"><a href="#retreat">retreat</a></button>
 				</div>
 			</header><!--general-template-section-->
 

@@ -627,7 +627,13 @@ button {
   z-index: -1; }
   @media (min-width: 720px) {
     .general-template-section {
-      height: 642px; } }
+      height: 642px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center; } }
 
 .black-text {
   color: black; }
@@ -2700,6 +2706,14 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+@media (min-width: 720px) {
+  .page-template-archive-events h1 {
+    font-size: 40px; } }
+
+@media (min-width: 720px) {
+  .page-template-archive-events .entry-content-page p {
+    font-size: 24px; } }
+
 .page-template-archive-events .general-button-container {
   height: 130px;
   bottom: 17px;
@@ -2709,26 +2723,28 @@ object {
       flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-
-.page-template-archive-events button {
-  width: 230px;
-  height: 44px;
-  display: block;
-  margin: 0 auto;
-  font-size: 14px;
-  text-transform: uppercase;
-  box-shadow: none;
-  text-shadow: none;
-  box-shadow: none;
-  text-shadow: none;
-  color: white;
-  border-radius: 8px;
-  border: none;
-  font-family: 'raleway',sans-serif;
-  font-size: 14px; }
-
-.page-template-archive-events .teal-button {
-  color: #4a4a4a; }
+  .page-template-archive-events .general-button-container button {
+    width: 230px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px; }
+    .page-template-archive-events .general-button-container button a {
+      text-decoration: none; }
+  @media (min-width: 720px) {
+    .page-template-archive-events .general-button-container {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
 
 .page-template-archive-events .container, .page-template-archive-events .container2 {
   color: #6b747d; }

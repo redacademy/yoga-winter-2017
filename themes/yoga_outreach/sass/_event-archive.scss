@@ -1,18 +1,31 @@
 .page-template-archive-events {
+    h1{
+      @include desktop{
+        font-size: 40px;
+      }
+    }
+    .entry-content-page{
+      p{
+        @include desktop{
+          font-size: 24px;
+        }
+      }
+    }
     .general-button-container {
-        height: 130px;
-        bottom: 17px;
-        
-        @include flex-column;
-        justify-content: space-around;
-    }
-    button {
+      height: 130px;
+      bottom: 17px;
+      @include flex-column;
+      justify-content: space-around;
+        button {
         @include general-button;
-    }
-    .teal-button {
-        color: $darktext_color;
-    }
-
+        a{
+          text-decoration: none;
+        }
+      }
+      @include desktop{
+        flex-direction: row;
+      }
+    }  
     .container {
         color: $lighttext_color;
         h2 {

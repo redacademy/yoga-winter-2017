@@ -137,10 +137,13 @@
 	background-color:lightgreen;
 	width:100%;
 	position:relative;
-    z-index:-1;
-        @include desktop{
-            height:642px;   
-        }
+  z-index:-1;
+    @include desktop{
+        height:642px;   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 	}
 
 .black-text{
