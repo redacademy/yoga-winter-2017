@@ -680,6 +680,8 @@ button {
   height: 400px;
   background-color: lightgreen;
   width: 100%;
+  position: relative;
+  z-index: -1;
   z-index: -1; }
   @media (min-width: 720px) {
     .general-template-section {
@@ -690,6 +692,9 @@ button {
           flex-direction: column;
       -ms-flex-pack: center;
           justify-content: center; } }
+  @media (min-width: 720px) {
+    .general-template-section {
+      height: 642px; } }
 
 .black-text {
   color: black; }
@@ -2937,11 +2942,9 @@ object {
       flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-<<<<<<< HEAD
   .page-template-archive-events .general-button-container button {
     width: 230px;
     height: 44px;
-    display: block;
     margin: 0 auto;
     font-size: 14px;
     text-transform: uppercase;
@@ -2953,41 +2956,20 @@ object {
     border-radius: 8px;
     border: none;
     font-family: 'raleway',sans-serif;
-    font-size: 14px; }
+    font-size: 14px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none; }
     .page-template-archive-events .general-button-container button a {
       text-decoration: none; }
   @media (min-width: 720px) {
     .page-template-archive-events .general-button-container {
       -ms-flex-direction: row;
           flex-direction: row; } }
-=======
-
-.page-template-archive-events button {
-  width: 230px;
-  height: 44px;
-  margin: 0 auto;
-  font-size: 14px;
-  text-transform: uppercase;
-  box-shadow: none;
-  text-shadow: none;
-  box-shadow: none;
-  text-shadow: none;
-  color: white;
-  border-radius: 8px;
-  border: none;
-  font-family: 'raleway',sans-serif;
-  font-size: 14px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  text-decoration: none; }
-
-.page-template-archive-events .teal-button {
-  color: #4a4a4a; }
->>>>>>> core-training
 
 .page-template-archive-events .container, .page-template-archive-events .container2 {
   color: #6b747d; }
