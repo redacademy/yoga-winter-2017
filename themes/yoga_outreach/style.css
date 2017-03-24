@@ -705,8 +705,7 @@ button {
 
 .general-button-container {
   position: relative;
-  width: 100%;
-  bottom: 30px; }
+  width: 100%; }
   @media (min-width: 720px) {
     .general-button-container {
       display: -ms-flexbox;
@@ -1526,7 +1525,50 @@ footer {
     text-align: center;
     margin: 10px; }
   .blog-content .full-article p {
-    padding: 0 15px; }
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .article-slider ul {
+    /* carousel height */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .article-slider ul button {
+      display: none; }
+
+.full-article article {
+  display: none;
+  padding-bottom: 20px; }
+  .full-article article img {
+    height: 133px;
+    width: 100%;
+    object-fit: cover; }
+
+.full-article .article-head {
+  height: 100%;
+  background-color: #BFE9FD;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.full-article h2 {
+  font-size: 4vh;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px; }
+
+.full-article h3 {
+  text-align: center;
+  margin: 10px; }
+
+.full-article p {
+  padding: 0 15px; }
+>>>>>>> core-training
 
 /*--------------------------------------------------------------
 # Forms
@@ -1994,6 +2036,13 @@ a:hover, a:active {
     @media (min-width: 720px) {
       .training-content .training-color-bar {
         width: 320px; } }
+  .training-content .general-button-container {
+    top: 60px; }
+    @media (min-width: 720px) {
+      .training-content .general-button-container {
+        top: 0rem;
+        bottom: 30px;
+        margin-bottom: 29px; } }
   .training-content .training-image-bar-container:nth-of-type(3) {
     margin-bottom: 60px; }
   .training-content .training-color-bar.grey-bar {
@@ -2113,6 +2162,10 @@ a:hover, a:active {
 .page-template-training .carousel-cell.is-selected {
   padding-left: 2rem;
   padding-right: 2rem; }
+  @media (min-width: 720px) {
+    .page-template-training .carousel-cell.is-selected {
+      padding-left: 5rem;
+      padding-right: 5rem; } }
 
 .page-template-training .testimonal-slideshow-container {
   min-width: 320px;
@@ -2171,6 +2224,14 @@ a:hover, a:active {
   background-color: #fff;
   margin-bottom: 0; }
 
+.page-template-training .general-button-container {
+  top: 60px; }
+  @media (min-width: 720px) {
+    .page-template-training .general-button-container {
+      top: 0rem;
+      bottom: 30px;
+      margin-bottom: 29px; } }
+
 .core-training-content .main-carousel {
   width: 100%;
   padding-top: 20px;
@@ -2204,11 +2265,13 @@ a:hover, a:active {
   padding-left: 2rem;
   padding-right: 2rem; }
 
-@media (min-width: 720px) {
-  .core-training-content .general-button-container {
-    top: 0rem;
-    bottom: 30px;
-    margin-bottom: 29px; } }
+.core-training-content .general-button-container {
+  bottom: 25px; }
+  @media (min-width: 720px) {
+    .core-training-content .general-button-container {
+      top: 0rem;
+      bottom: 30px;
+      margin-bottom: 29px; } }
 
 .core-training-content .core-header {
   margin: 0;
@@ -3955,6 +4018,10 @@ object {
 .page-template-training .carousel-cell.is-selected {
   padding-left: 2rem;
   padding-right: 2rem; }
+  @media (min-width: 720px) {
+    .page-template-training .carousel-cell.is-selected {
+      padding-left: 5rem;
+      padding-right: 5rem; } }
 
 .page-template-training .testimonal-slideshow-container {
   min-width: 320px;
@@ -4013,6 +4080,14 @@ object {
   background-color: #fff;
   margin-bottom: 0; }
 
+.page-template-training .general-button-container {
+  top: 60px; }
+  @media (min-width: 720px) {
+    .page-template-training .general-button-container {
+      top: 0rem;
+      bottom: 30px;
+      margin-bottom: 29px; } }
+
 .core-training-content .main-carousel {
   width: 100%;
   padding-top: 20px;
@@ -4046,11 +4121,13 @@ object {
   padding-left: 2rem;
   padding-right: 2rem; }
 
-@media (min-width: 720px) {
-  .core-training-content .general-button-container {
-    top: 0rem;
-    bottom: 30px;
-    margin-bottom: 29px; } }
+.core-training-content .general-button-container {
+  bottom: 25px; }
+  @media (min-width: 720px) {
+    .core-training-content .general-button-container {
+      top: 0rem;
+      bottom: 30px;
+      margin-bottom: 29px; } }
 
 .core-training-content .core-header {
   margin: 0;

@@ -22,7 +22,7 @@ get_header(); ?>
                 ?>
 				<div class="general-button-container">
 					<a class="general-button teal-button black-text">Research</a>
-					<a class="general-button grey-button">For Facilities</a>
+					<a href ="training-for-facilities"class="general-button grey-button">For Facilities</a>
 				</div>
 			</header><!--general-template-section-->
             <div class="main-h3-container section-15px-padding">
