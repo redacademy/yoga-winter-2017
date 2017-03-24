@@ -19,60 +19,60 @@ get_header(); ?>
                 endwhile; //resetting the page loop
                 wp_reset_query(); //resetting the page query
                 ?>
-				<div class ="general-button-container">
-					<a href ="#" class = "general-button teal-button black-text">Core Training</a>
-					<a href ="#" class = "general-button grey-button">For Facilities</a>
+				<div class="general-button-container">
+					<a href="#" class="general-button teal-button black-text">Core Training</a>
+					<a href="#" class="general-button grey-button">For Facilities</a>
 				</div><!--general-button-container-->
 			</header><!--general-template-section core-hero-->
-            <section class ="section-15px-padding">
-				<div class ="core-h3-container">
+            <section class="section-15px-padding">
+				<div class="core-h3-container">
                 	<p class="core-header">Yoga Outreach Core Training ™</p>
 				</div><!--core-h3-container-->
-				<div class ="register-button-para-container">
-					<button class ="book-training-button register-online-button">Register Online</button>
-					<div class ="small-para-container">
-						<p class ="small-para">- Yoga Alliance 24 Continuing Education Non-Contact hrs</p>
-						<p class ="small-para">- BCRPA Continuing Education Credits</p>
+				<div class="register-button-para-container">
+					<button class="book-training-button register-online-button">Register Online</button>
+					<div class="small-para-container">
+						<p class="small-para">- Yoga Alliance 24 Continuing Education Non-Contact hrs</p>
+						<p class="small-para">- BCRPA Continuing Education Credits</p>
 					</div><!--small-para-container"-->
 				</div><!--register-button-para-cotnainer-->
-				<div class ="avail-online-heading-container">
-					<div class ="earth-logo-change"></div>
-					<h3 class ="avail-online-h3">available online and in-classroom format!</h3>
+				<div class="avail-online-heading-container">
+					<div class="earth-logo-change"></div>
+					<h3 class="avail-online-h3">available online and in-classroom format!</h3>
 				</div><!--avail-online-heading-container-->
-				<div class ="main-paragraph-container">
-					<p class = "light-first-para"><?php echo CFS()->get('first_core_para'); ?></p>
-					<p class = "dark-second-para"><?php echo CFS()->get('second_core_para'); ?></p>
+				<div class="main-paragraph-container">
+					<p class="light-first-para"><?php echo CFS()->get('first_core_para'); ?></p>
+					<p class="dark-second-para"><?php echo CFS()->get('second_core_para'); ?></p>
 				</div><!--main-paragraph-container-->
 			</section><!--section-15px-padding-->
-			<div class ="testimonal-container">
-				<ul class ="testimonial-list main-carousel">
+			<div class="testimonal-container">
+				<ul class="testimonial-list main-carousel">
 					<?php
 					$testimonials = CFS()->get('testimonial_list');
 					if (!empty($testimonials)):
 					foreach ( $testimonials as $testimonial): ?>
-					<li class ="carousel-cell"><?php echo $testimonial ['testimonial'];?></li>
+					<li class="carousel-cell"><?php echo $testimonial ['testimonial'];?></li>
 					<?php endforeach ?>
 					<?php endif ?>
 				</ul>
 			</div><!--testimonial-container-->
-			<div class = "table-section-container">
-				<section class ="section-15px-padding online-dates-section">
-					<div class ="online-class-icon-heading-container">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/earth_icon.svg" class = "earth-logo" alt = "earth_icon">
+			<div class="table-section-container">
+				<section class="section-15px-padding online-dates-section">
+					<div class="online-class-icon-heading-container">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/earth_icon.svg" class="earth-logo" alt = "earth_icon">
 						<h3>2017 Training Dates Online (8 weeks)</h3>
 					</div><!--online-class-icon-heading-container-->
-					<table class ="dates-table">
+					<table class="dates-table">
 					<?php $dates = CFS()->get('online_dates_container');?>
 					<?php 	if (!empty($dates)):
 							foreach ($dates as $date):?>
 						<tr>
-							<td class ="training-table-data">
-								<p class ="table-heading">Date</p>
-								<p class ="table-content"><?php echo $date ['date'];?></p>
+							<td class="training-table-data">
+								<p class="table-heading">Date</p>
+								<p class="table-content"><?php echo $date ['date'];?></p>
 							</td>
-							<td class ="training-table-data">
-								<p class ="table-heading">Price</p>
-								<p class ="table-content"><?php echo $date ['price'];?></p>
+							<td class="training-table-data">
+								<p class="table-heading">Price</p>
+								<p class="table-content"><?php echo $date ['price'];?></p>
 							</td>
 						<?php endforeach ?>
 						<?php endif ?>
@@ -81,27 +81,27 @@ get_header(); ?>
 					<p>Now you can take the training online in an eight week format.</p>
 					<p>This 8 week online training is comprised of weekly videos, reading, assignments and online interaction. Each week is a new section and will build on the previous . . .</p>
 				</section>
-				<section class ="classroom-dates-section section-15px-padding">
-					<div class ="core-training-text-image-container">
+				<section class="classroom-dates-section section-15px-padding">
+					<div class="core-training-text-image-container">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/house_icon.svg" class ="house-logo" alt="house logo">
 						<h3>2017 Training Dates Classroom (18 hours)</h3>
 					</div><!--core-training-text-iamge-container-->
-					<table class ="dates-table">
+					<table class="dates-table">
 						<?php $classroomDates = CFS()->get('classroom_dates_container');?>
 						<?php if(!empty($classroomDates)): ?>
 						<?php foreach ($classroomDates as $classroomDate):?>
-							<tr class ="classroom-tr">
-								<td class ="training-table-data">
-									<p class ="table-heading">Date</p>
-									<p class ="table-content"><?php echo $classroomDate ['date'];?></p>
+							<tr class="classroom-tr">
+								<td class="training-table-data">
+									<p class="table-heading">Date</p>
+									<p class="table-content"><?php echo $classroomDate ['date'];?></p>
 								</td>
-								<td class ="training-table-data">
-									<p class ="table-heading">Location</p>
-									<p class ="table-content"><?php echo $classroomDate ['location'];?></p>
+								<td class="training-table-data">
+									<p class="table-heading">Location</p>
+									<p class="table-content"><?php echo $classroomDate ['location'];?></p>
 								</td>
-								<td class ="training-table-data">
-									<p class ="table-heading">Price (CAD)</p>
-									<p class ="table-content"><?php echo $classroomDate ['price'];?></p>
+								<td class="training-table-data">
+									<p class="table-heading">Price (CAD)</p>
+									<p class="table-content"><?php echo $classroomDate ['price'];?></p>
 								</td>
 							</tr>
 							<?php endforeach ?>
@@ -118,7 +118,7 @@ get_header(); ?>
                 $infoContent = $infoItem ['list_content'];
 				?>
                 <li class="training-list-item">
-					<div id = "training-pdf-container">
+					<div id="training-pdf-container">
 						<?php if(!empty($infoPDF)): ?>
 						<h3><?php echo $infoItem ['list_title'];?></h3>
                     	<a href ="<?php echo $infoItem ['list_file_upload'];?>">PDF</a>
@@ -128,11 +128,11 @@ get_header(); ?>
 					?>
                     <?php if(!empty($infoContent)): ?>
 					<div class ="info-dropdown">
-						<h3 class = "yoga-info-title"><?php echo $infoItem ['list_title']; ?></h3>
+						<h3 class="yoga-info-title"><?php echo $infoItem ['list_title']; ?></h3>
 						<span>+</span>
 					</div><!--tools-first-heading-->
-					<div class ="info-field">
-                    	<p class ="info-list-content"><?php echo $infoItem ['list_content']; ?></p>
+					<div class="info-field">
+                    	<p class="info-list-content"><?php echo $infoItem ['list_content']; ?></p>
 					</div><!--info-field-->
 					<?php endif; ?>
                 </li><!--training-list-item-->
