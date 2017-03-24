@@ -3312,26 +3312,26 @@ object {
     .home .get-involved h2 {
       padding: 1rem; }
     @media (min-width: 720px) {
-      .home .get-involved .involvedWrap {
+      .home .get-involved .involved-wrap {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
             justify-content: center;
         max-width: 1020px;
         margin: 0 auto; } }
-    .home .get-involved .involvedimage_one {
+    .home .get-involved .involvedimage-one {
       width: 23.8%;
       height: 30%;
       border-radius: 8px;
       margin: 0 0.5rem; }
       @media (min-width: 720px) {
-        .home .get-involved .involvedimage_one {
+        .home .get-involved .involvedimage-one {
           margin: 0 2.5rem 5% 2.5rem; } }
-    .home .get-involved .involvedimage_two {
+    .home .get-involved .involvedimage-two {
       width: 28%;
       border-radius: 8px; }
       @media (min-width: 720px) {
-        .home .get-involved .involvedimage_two {
+        .home .get-involved .involvedimage-two {
           margin-top: 3%; } }
     .home .get-involved .accent-square {
       position: absolute;
