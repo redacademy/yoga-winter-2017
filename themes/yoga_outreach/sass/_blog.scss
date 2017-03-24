@@ -2,19 +2,70 @@
     background-color: #fff;
 }
 
+
 .article-slider {
     height: 300px;
     background-color: $logo_color;
 
-    .carousel-cell { /* cell inherit height from carousel */
-        height: 100%;
-        width: 150px;
-        background-color: white;
+    /* cell inherit height from carousel */
+    .carousel-cell {
+        height: 210px;
+        width: 100%;
+        margin: 45px;
         
-        .postcell {
-            height: 175px;
-            width: 125px;
+        article {
+            height: 100%;
+            @include flex-column;
+            justify-content: space-between;
+
+            text-align: center;
         }
+
+        .cell-head {
+            align-self: center;
+        }
+    }
+
+    /* move page dots into carousel */
+    .flickity-page-dots {
+        bottom: 17.5px; 
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            opacity: 1;
+            background: transparent;
+            border: 2px solid white;
+        }
+    }
+
+    /* fill-in selected dot */
+    .flickity-page-dots .dot.is-selected {
+    background: white;
+    }
+
+    article {
+        width: 100%;
+        position: relative;
+
+        @include flex-column;
+    }
+
+    .cell-img {
+        background-position: center;
+        width: 225px;
+        height: 175px;
+        padding: 25px;
+        @include flex-column;
+        justify-content: center;
+    }
+
+    a {
+        font-size: 1.2rem;
+        color: $basetext_color;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
     }
 }
 
@@ -23,10 +74,5 @@ ul { /* carousel height */
     height: 100%;
     margin: 0;
     padding: 0;
-}
-
-
-/* move page dots into carousel */
-.flickity-page-dots { 
-    bottom: 10px;
+    list-style-type: none;
 }
