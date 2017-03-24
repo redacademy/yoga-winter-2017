@@ -8,8 +8,8 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<header class = "general-template-section custom-hero-image">
-				<h1 class ="page-title-header"><?php the_title(); ?></h1>
+			<header class="general-template-section custom-hero-image">
+				<h1 class="page-title-header"><?php the_title(); ?></h1>
 				<?php
                 while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
                     <div class="entry-content-page">
@@ -19,29 +19,29 @@ get_header(); ?>
                 endwhile; //resetting the page loop
                 wp_reset_query(); //resetting the page query
                 ?>
-				<div class ="general-button-container">
-					<button class = "general-button teal-button black-text">Research</button>
-					<button class = "general-button grey-button">For Facilities</button>
+				<div class="general-button-container">
+					<button class="general-button teal-button black-text">Research</button>
+					<button class="general-button grey-button">For Facilities</button>
 				</div>
 			</header><!--general-template-section-->
-            <div class ="main-h3-container section-15px-padding">
+            <div class="main-h3-container section-15px-padding">
                 <h3>Research</h3>
                 <p>Trauma sensitive yoga research from around the globe.</p>
             </div><!--research-h3-container-->
-			<section class ="resources-article-pdf-list-container section-15px-padding">
-				<div class ="info-dropdown">
+			<section class="resources-article-pdf-list-container section-15px-padding">
+				<div class="info-dropdown">
 					<h3>Articles</h3>
-					<span class ="plus-sign">+</span>
+					<span class="plus-sign">+</span>
 				</div><!--info-dropdown-->
-				<div class ="info-field">
-				<ul class ="resource-pdf-list">
-					<p class ="resource-link-text"><?php echo CFS()->get('resource_link_text'); ?></p>
+				<div class="info-field">
+				<ul class="resource-pdf-list">
+					<p class="resource-link-text"><?php echo CFS()->get('resource_link_text'); ?></p>
 					<?php 
 					$pdfs = CFS()->get('pdf_list');
 					foreach ( $pdfs as $pdf ):
 					?>
-					<li class ="pdf-item">
-						<a href ="<?php echo $pdf ['pdf_item'];?>" class ="pdf-button">PDF</a>
+					<li class="pdf-item">
+						<a href ="<?php echo $pdf ['pdf_item'];?>" class="pdf-button">PDF</a>
 						<p><?php echo $pdf['name_of_pdf'];?></p>
 					</li>
 					<?php endforeach ?>
@@ -49,11 +49,11 @@ get_header(); ?>
 				</div><!--info-field-->
 			</section>
 			<section class="resources-links-container section-15px-padding">
-				<div class ="links-button-container info-dropdown">
+				<div class="links-button-container info-dropdown">
 					<h3>Links</h3>
 					<span>+</span>
 				</div>
-				<ul class ="link-list info-field">
+				<ul class="link-list info-field">
 					<p><?php echo CFS()->get('link_text'); ?></p>
 					<?php
 					$links = CFS()->get('link_list');
