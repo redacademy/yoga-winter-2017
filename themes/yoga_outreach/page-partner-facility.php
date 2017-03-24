@@ -7,7 +7,7 @@
  
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area partner-facility-content">
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image">
                 <div class="header-info">   

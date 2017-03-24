@@ -1,7 +1,6 @@
 <?php 
-/*Template Name: Resources Media
-
- * @package Yoga_Outreach
+/*
+ * @package Yoga_Outreach_Theme
  */
 
 get_header(); ?>
@@ -77,6 +76,4 @@ get_header(); ?>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

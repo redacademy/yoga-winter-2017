@@ -1,4 +1,4 @@
-.page-id-38, .page-id-36, .page-id-40 {
+.volunteer-content, .partner-facility-content, .support-us-content {
     .site-main {
         @include flex-column;
         justify-content: center;
@@ -274,7 +274,7 @@
 }
 
 /* Volunteer */
-.page-id-36{
+.volunteer-content{
 ol { 
     counter-reset: item;
     list-style-type: none;

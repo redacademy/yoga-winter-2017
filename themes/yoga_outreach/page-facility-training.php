@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Training Template
+ * 
  *
- * @package Yoga_Outreach
+ * @package Yoga_Outreach_Theme
  */
 
 get_header(); ?>
@@ -82,6 +82,4 @@ get_header(); ?>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
