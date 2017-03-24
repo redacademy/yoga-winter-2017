@@ -5,7 +5,7 @@
  */
 
 get_header(); ?>
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area blog-content">
 		<main id="main" class="site-main" role="main">
             <section class="article-slider">
                 <ul class="carousel main-carousel">
