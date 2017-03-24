@@ -77,14 +77,23 @@ footer{
       display: inline-flex;
       margin: 0;
     }
-  }
-  p{
-    margin: 0;
-    font-size: 14px;
-    @include desktop{
-      padding: 1rem;
+    p{
+      margin: 0;
+      font-size: 14px;
+      @include desktop{
+        padding: 1rem;
+      }
+        a{
+        text-decoration: none;
+        color: $mediumtheme_color;
+        &:hover{
+          color: #C1D3DA;
+        }
+        }
+      
     }
   }
+ 
   .socialmedia-icons{
     color:#9FABB7;
     font-size: 1.2rem;
