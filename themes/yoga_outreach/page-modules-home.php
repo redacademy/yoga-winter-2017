@@ -4,7 +4,7 @@
  */
 
 get_header(); ?>
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area modules-home-content">
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image">
                     <h1 class="header-title">Welcome to your online course</h1>

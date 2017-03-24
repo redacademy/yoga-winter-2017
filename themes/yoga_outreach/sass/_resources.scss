@@ -22,6 +22,20 @@
             margin-bottom:29px;
 	}
 
+    .general-button-container{
+        bottom:auto;
+            @include desktop{
+                bottom:25px;
+                top:auto;
+        }
+    }
+
+    .page-title-header{
+        @include desktop{
+            color:#fff;
+        }
+    }
+
 
     .info-heading-subtitle{
         color:#4A4A4A;

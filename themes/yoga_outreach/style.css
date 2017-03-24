@@ -610,7 +610,9 @@ button {
     -ms-flex-pack: center;
         justify-content: center;
     -ms-flex-align: center;
-        align-items: center; } }
+        align-items: center;
+    position: relative;
+    top: 7rem; } }
 
 .entry-content-page {
   font-size: 1rem;
@@ -618,7 +620,8 @@ button {
   @media (min-width: 720px) {
     .entry-content-page {
       position: relative;
-      bottom: 180px; } }
+      bottom: 55px;
+      font-size: 24px; } }
 
 .teal-button {
   background-color: #6cfffe; }
@@ -685,7 +688,6 @@ button {
   height: 400px;
   background-color: lightgreen;
   width: 100%;
-  position: relative;
   z-index: -1;
   z-index: -1; }
   @media (min-width: 720px) {
@@ -700,9 +702,6 @@ button {
   @media (min-width: 720px) {
     .general-template-section {
       height: 642px; } }
-
-.black-text {
-  color: black; }
 
 .general-button-container {
   position: relative;
@@ -1502,6 +1501,9 @@ footer {
     .article-slider ul button {
       display: none; }
 
+.pop {
+  display: none; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -2181,7 +2183,8 @@ a:hover, a:active {
 @media (min-width: 720px) {
   .core-training-content .general-button-container {
     top: 0rem;
-    bottom: 30px; } }
+    bottom: 30px;
+    margin-bottom: 29px; } }
 
 .core-training-content .core-header {
   margin: 0;
@@ -2295,6 +2298,12 @@ a:hover, a:active {
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
     margin-top: 12px; } }
+
+.core-training-content .general-template-section {
+  height: 430px; }
+  @media (min-width: 720px) {
+    .core-training-content .general-template-section {
+      height: 100vh; } }
 
 .core-training-content .earth-logo-change {
   width: 40px;
@@ -2550,6 +2559,17 @@ a:hover, a:active {
   text-decoration: none;
   margin-bottom: 29px; }
 
+.resources-research-content .general-button-container {
+  bottom: auto; }
+  @media (min-width: 720px) {
+    .resources-research-content .general-button-container {
+      bottom: 25px;
+      top: auto; } }
+
+@media (min-width: 720px) {
+  .resources-research-content .page-title-header, .resources-research-content .entry-content-page {
+    color: #fff; } }
+
 .resources-research-content .info-heading-subtitle {
   color: #4A4A4A; }
 
@@ -2797,7 +2817,8 @@ a:hover, a:active {
     background-color: #CFDCEB; } }
 
 .resources-media-content .read-more, .resources-media-content .read-less {
-  font-size: 10px; }
+  font-size: 10px;
+  cursor: pointer; }
 
 @media (min-width: 720px) {
   .resources-media-content .media-heading-flex {
@@ -2820,6 +2841,16 @@ a:hover, a:active {
 
 .resources-media-content .video-item {
   display: block; }
+
+.resources-media-content .black-text {
+  color: black; }
+  @media (min-width: 720px) {
+    .resources-media-content .black-text {
+      color: white; } }
+
+@media (min-width: 720px) {
+  .resources-media-content .teal-button {
+    background-color: #94bfd1; } }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -3992,7 +4023,8 @@ object {
 @media (min-width: 720px) {
   .core-training-content .general-button-container {
     top: 0rem;
-    bottom: 30px; } }
+    bottom: 30px;
+    margin-bottom: 29px; } }
 
 .core-training-content .core-header {
   margin: 0;
@@ -4106,6 +4138,12 @@ object {
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
     margin-top: 12px; } }
+
+.core-training-content .general-template-section {
+  height: 430px; }
+  @media (min-width: 720px) {
+    .core-training-content .general-template-section {
+      height: 100vh; } }
 
 .core-training-content .earth-logo-change {
   width: 40px;
