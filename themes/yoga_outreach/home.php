@@ -12,7 +12,7 @@ get_header(); ?>
                     <?php if ( have_posts() ) : ?>   
                         <?php while ( have_posts() ) : the_post(); ?> <!--start loop-->
                             <li class="carousel-cell">
-                                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                <article id="list-<?php the_ID(); ?>" data-post="<?php the_ID(); ?>" <?php post_class(); ?>>
                                     <div class="cell-head">
                                         <?php if ( has_post_thumbnail() ) : ?>
                                             <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
@@ -32,6 +32,19 @@ get_header(); ?>
                         <?php endwhile; ?>
                     <?php endif; ?>
                 </ul>
+            </section class="full-article" >
+                <?php if ( have_posts() ) : ?>   
+                    <?php while ( have_posts() ) : the_post(); ?> <!--start loop-->
+                        <article id="post-<?php the_ID(); ?>" data-post="<?php the_ID(); ?>" <?php post_class(); ?>>
+                        <?php get_the_post_thumbnail(); ?>
+                        <?php the_title( sprintf( '<h2>',( get_permalink() ) ), '</h2>' ); ?>
+                        <?php get_the_author(); ?> 
+                        <?php the_date('M. d, Y', '<h3>', '</h3>'); ?>
+                        <?php the_content(); ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            <section>
+                img
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
