@@ -53,6 +53,7 @@ p{
     }
   }
   .menu-main-menu-container{
+    display:none;
     @include desktop{
       order:2;
       margin: 0 auto;

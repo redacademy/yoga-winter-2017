@@ -13,12 +13,15 @@ get_header(); ?>
                 <p>We can be reached at:</p>
                 <p class="hero-phone"><?php echo CFS()->get( 'phone_number' ); ?></p>
             </header>
-            
+          <div class="contact-container">
+            <div class="emailinquiry-section">
             <section class="email-inquiries">
                 <h2>Email Inquiries</h2>
                 <p>For staff directory, visit:</p>
                 <a href="<?php echo get_page_link(69); ?>"class="button primary-button">who we are</a>
-
+                </div>
+                <div class="contactinfo-container">
+                <div class="emailinfo-section">
                 <?php $fields= CFS()->get( 'emails' ); ?>  <!--variable to hold email from loop-->    
 
                 <?php if(!empty($fields)): ?>
@@ -29,12 +32,13 @@ get_header(); ?>
                         </div>
                     <?php endforeach; ?>
                 <?php endif; ?> 
+                </div>
             </section>
-            
+            <section class="info-section">
             <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold email from loop-->    
                 <?php if(!empty($fields)): ?>
                     <?php foreach( $fields as $field ): ?>
-                    <section class="info-section">
+                    
                     <div class="info-dropdown">
                         <h3><?php echo $field[ 'info_title' ]; ?></h3><span>+</span>
                     </div>
@@ -47,11 +51,14 @@ get_header(); ?>
                             <?php endforeach; ?>
                         <?php endif; ?>
                     </div>
-                    </section>
+                    
 
                 <?php endforeach; ?>
+              
             <?php endif; ?> 
-        
+          </section> 
+          </div>
+        </div> 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>

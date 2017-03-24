@@ -12,9 +12,12 @@
       color:$darktheme_color;
     }  
   }
+
   #main{
     @include desktop{
     padding-top:200px; 
+    display:flex;
+    flex-direction: column;
     } 
   }
     .hero-text {
@@ -48,7 +51,38 @@
             font-size: 2rem;
         }
     }
-
+    .contactinfo-container{
+      @include desktop{
+      display:flex;
+      }
+    }
+    .email-inquiries{
+      @include desktop{
+      flex-basis: 100%;
+      }
+    }
+    .contact-container{
+      @include desktop{
+      flex-direction: column;
+      }
+    }
+    .emailinfo-section{
+      @include desktop{
+      flex-basis: 50%;
+      align-self: flex-start;
+      }
+    }
+    .info-section{
+      @include desktop{
+        background-color: $lighttheme_color;
+      flex-basis: 50%;
+      }
+      .info-dropdown{
+        @include desktop{
+          background-color: transparent;
+        }
+      }
+    }
     .email-inquiries {
         display: flex;
         flex-direction: column;
@@ -115,6 +149,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include desktop{
+          height: auto;
+        }
 
         #hideshow{
             border: none;

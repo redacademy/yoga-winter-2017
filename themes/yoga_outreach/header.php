@@ -26,7 +26,12 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<span class="responsive-menu">
+					   <div id="header-logo">
+            <div class="logo-image">
+              <?php show_easylogo(); ?>
+            </div>
+					</div>
+          <span class="responsive-menu">
 				    <i class="fa fa-bars" aria-hidden="true"></i>
 		    	</span>
             <div class="menu-dropdown">
@@ -84,11 +89,7 @@
               </ul>
             </div>
               <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
-          <div id="header-logo">
-            <div class="logo-image">
-              <?php show_easylogo(); ?>
-            </div>
-					</div>
+       
           
           <div class="signin-section">
             <div class="wrapper">
