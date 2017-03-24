@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area contact-us-content">
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image hero-text">
                 <h1 class="header-title"><?php the_title(); ?></h1>

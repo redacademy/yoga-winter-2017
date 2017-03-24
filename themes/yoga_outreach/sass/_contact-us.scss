@@ -1,4 +1,4 @@
-.page-template-contact-us {
+.contact-us-content {
     h1, h2, h3, h4, h5{
         margin: 0;
 
@@ -8,6 +8,7 @@
   #site-navigation{
     .menu-main-menu-container
     a{
+      padding:500px;
       color:$darktheme_color;
     }  
   }
