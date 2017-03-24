@@ -844,8 +844,8 @@ p {
           position: absolute;
           width: 30px;
           height: 30px;
-          top: 30px;
-          left: 30px;
+          top: 40px;
+          left: 10%;
           z-index: 3;
           background-color: transparent;
           padding: 0;
@@ -1049,12 +1049,17 @@ footer {
         display: -ms-inline-flexbox;
         display: inline-flex;
         margin: 0; } }
-  footer p {
-    margin: 0;
-    font-size: 14px; }
-    @media (min-width: 720px) {
-      footer p {
-        padding: 1rem; } }
+    footer .siteinfo-text p {
+      margin: 0;
+      font-size: 14px; }
+      @media (min-width: 720px) {
+        footer .siteinfo-text p {
+          padding: 1rem; } }
+      footer .siteinfo-text p a {
+        text-decoration: none;
+        color: #6b747d; }
+        footer .siteinfo-text p a:hover {
+          color: #C1D3DA; }
   footer .socialmedia-icons {
     color: #9FABB7;
     font-size: 1.2rem; }
@@ -4351,3 +4356,32 @@ http://flickity.metafizzy.co
     display: none;
     border: 1px solid #6b747d;
     border-top: none; }
+
+.search .site-main {
+  text-align: center;
+  background-color: #dbe8ff;
+  padding: 2rem; }
+
+.search h1 {
+  font-size: 24px;
+  color: #6b747d; }
+
+.search article {
+  margin: 0; }
+
+.search a {
+  text-decoration: none;
+  color: #6b747d; }
+  .search a:hover {
+    color: #6a99e8; }
+
+.search .entry-title {
+  padding-top: 35px; }
+
+.search .entry-summary {
+  margin: 0; }
+
+.search #site-navigation {
+  position: relative;
+  height: 200px;
+  background-color: #959ba5; }

@@ -19,7 +19,7 @@
     <div class="site-info">
       <div class="siteinfo-text">
         <p><a href="yoga_outreach/contact-us">contact</a></p>
-        <p>privacy policy</p>
+        <p><a href="yoga_outreach/privacy-policy">privacy policy</a></p>
       </div>
       <!--<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>-->
       <section class ="socialmedia-icons">
