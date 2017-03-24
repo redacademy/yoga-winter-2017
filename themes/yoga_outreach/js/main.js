@@ -62,8 +62,6 @@
         }, 500);
     });
 
-    $(el).attr('data-post')
-
     //Click Read More dropdown
     $('.show-videos li:gt(2)').hide();
     $('.read-more').click(function() {
