@@ -72,6 +72,12 @@
     // Changes radio buttons on forms
     $( '.gfield_radio li label' ).prepend( '<span></span>');
 
+    // Blog Page on click cell shows article
+    $(".carousel-cell").click(function () {
+        $('.full-article').attr('data-post').slideToggle();
+        return false;
+    });
+
 })(jQuery); 
 
 

@@ -1,10 +1,8 @@
-<?php /* Template Name: Contact Us ?>
-
-<?php
+<?php 
 /**
- * The template for displaying all pages.
+ * The template for displaying contact us page.
  *
- * @package Yoga_Outreach
+ * @package Yoga_Outreach_Theme
  */
 
 get_header(); ?>
