@@ -923,7 +923,7 @@ p {
           position: absolute;
           width: 30px;
           height: 30px;
-          top: 40px;
+          top: 30px;
           left: 10%;
           z-index: 3;
           background-color: transparent;
@@ -3594,14 +3594,16 @@ object {
       height: 380px;
       background-color: #95afc9;
       bottom: 100px;
-      right: 30px;
+      right: 7%;
       z-index: -1;
-      border-radius: 8px; }
+      border-radius: 8px;
+      opacity: 0.8; }
       @media (min-width: 720px) {
         .home .program-list .yoga-foryouth .accent-line {
           width: 473px;
           height: 75px;
-          right: 0; } }
+          right: 0;
+          opacity: 0.6; } }
   .home .get-involved {
     position: relative; }
     .home .get-involved h2 {

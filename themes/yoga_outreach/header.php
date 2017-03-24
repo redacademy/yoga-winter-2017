@@ -57,7 +57,9 @@
                   </fieldset>
                 </form>
                 <button class="signin-button-dropdown"><a href="">sign in</a></button>
+               
                 <li>
+                
                   <h2>Training</h2>
                   <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
                 </li>
@@ -105,8 +107,8 @@
             </form>
           </div>
           <button class="signin-button"><a href="">sign in
-    <?php if (is_user_logged_in()) : ?>
-    <!--<a href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
+    <!--<?php if (is_user_logged_in()) : ?>
+  <a href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
     <?php endif;?>
     <?php $current_user = wp_get_current_user();
 if ( is_user_logged_in() ) {
