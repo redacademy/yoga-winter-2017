@@ -29,7 +29,6 @@
 @mixin general-button {
 	width:230px;
 	height:44px;
-	display:block;
 	margin:0 auto;
 	font-size:14px;
 	text-transform:uppercase;
@@ -42,6 +41,12 @@
 	border:none;
 	font-family:'raleway',sans-serif;
 	font-size:14px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-decoration:none;
+
+
 }
 
 //general button template

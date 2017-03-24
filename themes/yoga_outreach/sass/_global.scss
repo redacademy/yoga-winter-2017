@@ -1,3 +1,6 @@
+*{
+    font-family:'raleway',sans-serif;
+}
 
 .info-dropdown {
     height: 60px;
@@ -15,8 +18,10 @@
             }
     }
     span {
-        font-size: 4rem;
+        font-size: 2.5rem;
         color: $accentcolor_line;
+        font-family:"montserrat";
+        cursor:pointer;
             @include desktop{
                 display:none;
             }
@@ -39,18 +44,27 @@
 	font-weight:500;
 }
 
-*{
-    font-family:'raleway',sans-serif;
-}
-
 .page-title-header{
 	text-align:center;
     color:$base_color;
 	padding-top:66px;
     font-weight:300;
     font-size:24px;
+        @include desktop{
+            font-size:40px;
+            padding-top:0;
+            padding-bottom:0;
+        }
 }
 
+.page-title-container{
+    @include desktop{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+}
 .entry-content-page {
     @extend .page-title-header;
     font-size: 1rem;
@@ -123,20 +137,20 @@
 }
 
 
-.page-subtitle{
-    color:white;
-    font-size:16px;
-    margin-top:44px;
-    padding:0 1rem;
-    text-align:center;
-    line-height:25px;
+.page-title-container{
+    @include desktop{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
     }
+}
 
 .general-template-section{
 	height:400px;
 	background-color:lightgreen;
 	width:100%;
-	position:relative;
     z-index:-1;
         @include desktop{
             height:642px;   
@@ -150,10 +164,11 @@
 .general-button-container{
 	position: absolute;
 	width:100%;
-	bottom:0;
+	bottom: 150px;
 		@include desktop{
 			display:flex;
-			}
+            bottom: 0;
+		}
 	}
 
 .section-15px-padding{
@@ -162,6 +177,10 @@
             padding: 0 7%;
         }
     }
+
+a{
+    text-decoration:none;
+}
 
 //Training Facilities List
 .training-list{
@@ -187,6 +206,16 @@
 					}
 
 		}
+}
+
+
+.page-subtitle{
+    color:white;
+    font-size:16px;
+    margin-top:44px;
+    padding:0 1rem;
+    text-align:center;
+    line-height:25px;
 }
 
 .primary-button {  // Style for a href buttons

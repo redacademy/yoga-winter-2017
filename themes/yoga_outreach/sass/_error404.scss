@@ -1,0 +1,50 @@
+.error404{
+    .site-main{
+        padding: 1rem;
+    }
+    .page-title{
+        text-align:center;
+    }
+    .general-button{
+        width:150px;
+        border: none;
+        box-shadow: none;
+        color: white;  
+        background-color: $mainbutton_color;
+    }
+    .widget_recent_entries{
+        margin-top:50px;
+        a{
+            color:$darktext_color;
+        }
+    }
+    .page-header{
+        padding: 2rem;
+    }
+    .main-navigation#site-navigation{
+        position:static;
+        background-color:#9c9fa3;
+    }
+    .page-content{
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+
+    fieldset{
+        text-align: center;
+        width: 50%;
+            input{
+                margin: 25px 0;
+                width: 300px;
+            }
+    }
+
+    .widget li{
+        list-style:none;
+        a{
+        text-decoration: none;
+        }
+    }
+
+
+}//error404 wrapper
