@@ -599,7 +599,8 @@ button {
     .page-title-header, .entry-content-page {
       font-size: 40px;
       padding-top: 0;
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      color: #4a4a4a; } }
 
 @media (min-width: 720px) {
   .page-title-container {
@@ -614,6 +615,10 @@ button {
 .entry-content-page {
   font-size: 1rem;
   padding: 44px 20px; }
+  @media (min-width: 720px) {
+    .entry-content-page {
+      position: relative;
+      bottom: 180px; } }
 
 .teal-button {
   background-color: #6cfffe; }
@@ -700,14 +705,14 @@ button {
   color: black; }
 
 .general-button-container {
-  position: absolute;
+  position: relative;
   width: 100%;
-  bottom: 150px; }
+  bottom: 30px; }
   @media (min-width: 720px) {
     .general-button-container {
       display: -ms-flexbox;
       display: flex;
-      bottom: 0; } }
+      bottom: 30px; } }
 
 .section-15px-padding {
   padding: 0 4%; }
@@ -2383,9 +2388,6 @@ a:hover, a:active {
       .page-template-core-training .online-class-icon-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
         width: 100%; } }
 
-.page-template-core-training .online-class-icon-heading-container {
-  border-top: 2px solid #979797; }
-
 .page-template-core-training .training-list-header {
   padding: 0;
   margin: 0;
@@ -2397,7 +2399,7 @@ a:hover, a:active {
 
 @media (min-width: 720px) {
   .page-template-core-training .training-list {
-    padding: 0 87px; } }
+    padding: 29px 87px; } }
 
 .page-template-core-training .training-date-text {
   font-size: 11px;
@@ -4188,9 +4190,6 @@ object {
       .page-template-core-training .online-class-icon-heading-container h3, .page-template-core-training .core-training-text-image-container h3 {
         width: 100%; } }
 
-.page-template-core-training .online-class-icon-heading-container {
-  border-top: 2px solid #979797; }
-
 .page-template-core-training .training-list-header {
   padding: 0;
   margin: 0;
@@ -4202,7 +4201,7 @@ object {
 
 @media (min-width: 720px) {
   .page-template-core-training .training-list {
-    padding: 0 87px; } }
+    padding: 29px 87px; } }
 
 .page-template-core-training .training-date-text {
   font-size: 11px;

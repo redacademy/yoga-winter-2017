@@ -54,6 +54,7 @@
             font-size:40px;
             padding-top:0;
             padding-bottom:0;
+            color:$darktheme_color;
         }
 }
 
@@ -69,6 +70,10 @@
     @extend .page-title-header;
     font-size: 1rem;
     padding: 44px 20px;
+        @include desktop{
+            position: relative;
+            bottom: 180px;
+        }
 }
 
 .teal-button{
@@ -171,12 +176,12 @@
 }
 
 .general-button-container{
-	position: absolute;
-	width:100%;
-	bottom: 150px;
+	position: relative;
+    width: 100%;
+    bottom: 30px;
 		@include desktop{
 			display:flex;
-            bottom: 0;
+            bottom: 30px;
 		}
 }
 
@@ -199,6 +204,7 @@ a{
 	margin:0;
 	list-style:none;
 	padding:19px 15px;
+    
 }
 
 .training-list-item{
