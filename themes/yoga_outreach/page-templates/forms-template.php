@@ -1,8 +1,8 @@
 <?php
 /**
- * Template part for displaying single posts.
+ * Template part for displaying forms.
  * Template Name: Forms
- * @package RED_Starter_Theme
+ * @package Yoga_Outreach_Theme
  */
 get_header(); ?>
 

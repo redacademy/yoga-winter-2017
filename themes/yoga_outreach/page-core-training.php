@@ -1,6 +1,6 @@
 <?php 
-/* Template Name: Core 
- * @package Yoga_Outreach
+/* 
+ * @package Yoga_Outreach_Theme
  */
 
 get_header(); ?>

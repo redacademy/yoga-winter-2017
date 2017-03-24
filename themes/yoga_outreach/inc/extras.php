@@ -28,9 +28,9 @@ add_filter( 'body_class', 'yoga_body_classes' );
  */
 function yoga_pagetemplate_styles() {
 
-    $pages = ['page-templates/support.php', 'page-templates/volunteer.php', 'page-templates/partner.php', 'page-templates/about-us.php', 'page-templates/training.php', 'page-templates/core-training.php', 'page-templates/resources-research.php', 'front-page.php', 'page-templates/archive-events.php', 'page-templates/about-us.php'];
+    $pages = ['support-us', 'volunteer', 'partner-facility', 'about-us', 'facility-training', 'core-training', 'resources-research', 'events'];
 
-    if(!is_page_template($template = $pages) && !is_front_page()){
+    if(!is_page($page = $pages) && !is_front_page()){
         return;
     }
 	$image = CFS()->get( 'hero_image' );
@@ -38,7 +38,7 @@ function yoga_pagetemplate_styles() {
     if(!$image){
         return;
     }
-
+ 
     $hero_css = ".custom-hero-image {
         background: url({$image}) no-repeat center top;
         background-size: cover, cover;

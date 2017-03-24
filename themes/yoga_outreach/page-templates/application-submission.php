@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Successful Submission
+ * Template Name: Successful Submission Templates
  *
  * @package Yoga Outreach
  */
