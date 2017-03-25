@@ -2047,6 +2047,118 @@ a:hover, a:active {
   .training-content .training-color-bar.grey-bar {
     background-color: #C0DAE5; }
 
+.modules-home-content #site-navigation.main-navigation {
+  position: static;
+  height: 80px; }
+
+.modules-home-content .header-title {
+  max-width: 20rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  color: #fff; }
+
+.modules-home-content .custom-hero-image {
+  height: 350px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  padding-bottom: 36px; }
+  @media (min-width: 720px) {
+    .modules-home-content .custom-hero-image {
+      height: 700px; } }
+
+.modules-home-content .general-button {
+  width: 230px;
+  height: 44px;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none; }
+
+.modules-home-content h2:first-of-type {
+  font-size: 24px;
+  color: #6B747D;
+  max-width: 13rem;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+.modules-home-content .bar-text-container {
+  position: relative;
+  border-bottom: 1px solid #979797;
+  margin-bottom: 31px;
+  margin-top: 15px; }
+
+.modules-home-content .yellow-bar {
+  width: 157px;
+  height: 27px;
+  background-color: #EBE5D8;
+  position: absolute;
+  border-radius: 8px;
+  opacity: .6;
+  bottom: -7px;
+  z-index: -1; }
+
+.modules-home-content p:first-of-type {
+  line-height: 30px;
+  color: #6B747D;
+  font-weight: 300;
+  font-size: 16px; }
+
+.modules-home-content h3:first-of-type {
+  font-size: 14px;
+  font-weight: 500; }
+
+.modules-home-content .container-one.declaration {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 15px 0;
+  background-color: #DAE9EF; }
+  .modules-home-content .container-one.declaration img {
+    width: 110px;
+    height: 110px; }
+  .modules-home-content .container-one.declaration p {
+    line-height: 24px;
+    font-size: 14px; }
+
+.modules-home-content .info-dropdown, .modules-home-content .info-field {
+  background-color: #fff; }
+
+.modules-home-content .button-wrap {
+  height: 85px;
+  background-color: #6B747D;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .modules-home-content .button-wrap button {
+    background-color: #fff; }
+    .modules-home-content .button-wrap button a {
+      color: #4A4A4A; }
+
+.modules-home-content .general-button:nth-child(2) {
+  display: none; }
+
 .page-template-training .main-carousel {
   width: 100%;
   padding: 30px;
@@ -2240,7 +2352,7 @@ a:hover, a:active {
     width: 100%;
     height: auto; }
     .core-training-content .main-carousel .carousel-cell p {
-      margin-top: 20px; }
+      margin-topwo: 20px; }
     .core-training-content .main-carousel .carousel-cell h1 {
       color: #4a4a4a; }
   .core-training-content .main-carousel ol {
@@ -2283,9 +2395,6 @@ a:hover, a:active {
     .core-training-content .core-header {
       font-size: 40px;
       width: 700px; } }
-
-.core-training-content .light-first-para, .core-training-content .dark-second-para {
-  word-break: break-all; }
 
 .core-training-content .register-online-button {
   width: 230px;
@@ -4096,7 +4205,7 @@ object {
     width: 100%;
     height: auto; }
     .core-training-content .main-carousel .carousel-cell p {
-      margin-top: 20px; }
+      margin-topwo: 20px; }
     .core-training-content .main-carousel .carousel-cell h1 {
       color: #4a4a4a; }
   .core-training-content .main-carousel ol {
@@ -4139,9 +4248,6 @@ object {
     .core-training-content .core-header {
       font-size: 40px;
       width: 700px; } }
-
-.core-training-content .light-first-para, .core-training-content .dark-second-para {
-  word-break: break-all; }
 
 .core-training-content .register-online-button {
   width: 230px;
