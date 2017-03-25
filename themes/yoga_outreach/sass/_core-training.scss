@@ -8,7 +8,7 @@
                     width: 100%;
                     height: auto;
                     p{
-                        margin-top: 20px;
+                        margin-topwo: 20px;
                     }
                     h1{
                         color: $darktext_color;
@@ -67,9 +67,6 @@
             }
     }
 
-    .light-first-para, .dark-second-para{
-        word-break:break-all;
-    }
 
     .register-online-button{
         @include general-button;
