@@ -136,6 +136,9 @@
 //Links
 
     .resources-links-container{
+        @include desktop{
+            margin-bottom:70px;
+        }
         div{
             display:flex;
             justify-content:space-between;

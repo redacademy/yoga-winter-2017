@@ -219,13 +219,16 @@
     }
 
     .emailinfo-section{
+      padding-left:15px;
         @include desktop{
           padding-left:10%;
         }
     }
 
-    .info-dropdown{
-      margin-top:25px;
-    }
+  .info-dropdown{
+      @include desktop{
+          margin-top:25px;
+      }
+  }
 
 }//Contact-Us Wrapper

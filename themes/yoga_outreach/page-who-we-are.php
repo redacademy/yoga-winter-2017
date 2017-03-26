@@ -33,10 +33,10 @@ get_header(); ?>
                         <?php foreach( $fields as $field ): ?>
 
                         <div class="info-dropdown">
-                            <h3><?php echo $field[ 'title' ]; ?></h3><span>+</span>
+                            <h3 class ="staff-header"><?php echo $field[ 'title' ]; ?></h3><span>+</span>
                         </div>
                             
-                        <div class="info-field">
+                        <div class="info-field staff-item-container">
                             <?php if(!empty($field['staff_member'])): ?>
                                 <?php foreach( $field['staff_member'] as $member): ?>
                                     <?php echo CFS()->get( 'staff_photo','staff_name' ) ?>
