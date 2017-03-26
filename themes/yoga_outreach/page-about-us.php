@@ -61,7 +61,7 @@ get_header(); ?>
                                 </section>
                             </div>
                             <p class="description-desktop"><?php echo CFS()->get( 'dropdown_description' ); ?></p>
-                            <a class="primary-button desktop-button" href="">become a facility partner</a>
+                            <a class="primary-button desktop-button" href="<?php echo get_page_link(174); ?>">become a facility partner</a>
                         </section>
 
                     <?php endforeach; ?>
@@ -85,7 +85,7 @@ get_header(); ?>
 
                                 <?php echo CFS()->get( 'info_field' ) ?>
                                 <p><?php echo $row['info_field'] ?></p>
-                                <a class="primary-button desktop-button" href="">our training programs</a>
+                                <a class="primary-button desktop-button" href="<?php echo get_page_link(234); ?>">our training programs</a>
 
                                 <section class="desktop-article">
                                     <?php if(!empty($articles)): ?>
