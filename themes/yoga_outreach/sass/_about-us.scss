@@ -19,7 +19,8 @@
         align-items: center;
         @include desktop {
             height: 260px;
-            padding: 0px 186px;
+            width: 830px;
+            padding: 0px;
             position: absolute;
             bottom: 60px;
         }

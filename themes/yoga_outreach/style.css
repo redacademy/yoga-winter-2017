@@ -619,13 +619,16 @@ button {
       margin: 0 auto; } }
   .who-we-are-content .info-dropdown:first-of-type {
     margin-bottom: 100px; }
-  .who-we-are-content .staff-item-container {
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: center;
-        justify-content: center; }
+  @media (min-width: 720px) {
+    .who-we-are-content .staff-item-container {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      max-width: 1024px;
+      margin: 0 auto; } }
 
 * {
   font-family: 'raleway',sans-serif; }
@@ -1558,7 +1561,8 @@ footer {
     @media (min-width: 720px) {
       .about-us-content .entry-content-page {
         height: 260px;
-        padding: 0px 186px;
+        width: 830px;
+        padding: 0px;
         position: absolute;
         bottom: 60px; } }
   @media (min-width: 720px) {
