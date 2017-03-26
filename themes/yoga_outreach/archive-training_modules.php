@@ -10,11 +10,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<header class="entry-header custom-hero-image">
-                    <div>
+                    <div class="modules-title">
 						<?php the_archive_title( '<h1 class="header-title">', '</h1>' ); ?>
 						<p>Select your modules below</P>
 					</div>
-                    <button class="main-button grey-button"><a href="" class="button">Groups</a></button>
+                    <div class="groups-button"><a href="" class="main-button dark-button">Groups</a></div>
             </header><!-- .entry-header -->
 
 
@@ -72,7 +72,7 @@ get_header(); ?>
 										<?php if(!empty($content['video_file'])): ?><iframe width="560" height="315" src="<?php echo $content['video_file']?>" frameborder="0" allowfullscreen></iframe><?php endif; ?>
 										<?php if(!empty($quiz)): ?>
 										<p> To proceed you must complete the following quiz and receive a passing grade </p>
-										<button class="main-button grey-button"><a href="" class="button">Proceed to Quiz <?php the_title() ?></a></button>
+										<button class="main-button grey-button"><a href="/module-<?php the_title() ?>-quiz" class="button">Proceed to Quiz <?php the_title() ?></a></button>
 										<?php endif; ?>
 										<?php if(!empty($content['module_homework'])): ?><p><?php echo $content['module_homework'] ?></p><?php endif; ?>
 										<?php if(!empty($content['slides'])): ?>

@@ -619,19 +619,19 @@ button {
       margin: 0 auto; } }
   .who-we-are-content .info-dropdown:first-of-type {
     margin-bottom: 100px; }
-  .who-we-are-content .staff-item-container {
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: center;
-        justify-content: center; }
+  @media (min-width: 720px) {
+    .who-we-are-content .staff-item-container {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      max-width: 1024px;
+      margin: 0 auto; } }
 
 * {
   font-family: 'raleway',sans-serif; }
-
-html {
-  height: 100%; }
 
 body {
   min-height: 100%; }
@@ -1542,7 +1542,9 @@ footer {
     background-position: left 0px top -147px; }
     @media (min-width: 720px) {
       .about-us-content .custom-hero-image {
-        position: relative; } }
+        position: relative;
+        -ms-flex-align: center;
+            align-items: center; } }
   .about-us-content .entry-content-page {
     height: 410px;
     display: -ms-flexbox;
@@ -1556,7 +1558,8 @@ footer {
     @media (min-width: 720px) {
       .about-us-content .entry-content-page {
         height: 260px;
-        padding: 0px 186px;
+        width: 830px;
+        padding: 0px;
         position: absolute;
         bottom: 60px; } }
   @media (min-width: 720px) {
@@ -1618,10 +1621,17 @@ footer {
           text-transform: uppercase;
           display: block; }
       .about-us-content .container .info-container, .about-us-content .event-content .container2 .info-container, .event-content .about-us-content .container2 .info-container {
+        width: 100vw;
+        background-color: #fff;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-pack: center;
+            justify-content: center; }
+      .about-us-content .container .desktop-container, .about-us-content .event-content .container2 .desktop-container, .event-content .about-us-content .container2 .desktop-container {
         -ms-flex-order: 1;
             order: 1;
         height: 383px;
-        width: 100%;
+        width: 1024px;
         padding: 0 102px;
         text-align: left;
         display: -ms-flexbox !important;
@@ -1630,7 +1640,7 @@ footer {
             justify-content: space-between;
         -ms-flex-direction: row;
             flex-direction: row;
-        background-color: #fff; }
+        background-color: transparent; }
       .about-us-content .container .photo-frame, .about-us-content .event-content .container2 .photo-frame, .event-content .about-us-content .container2 .photo-frame {
         width: 253px;
         height: 253px;
@@ -1766,6 +1776,7 @@ footer {
           display: none; } }
   @media (min-width: 720px) {
     .about-us-content section .desktop-article {
+      position: relative;
       width: 1024px;
       height: 100%;
       display: -ms-flexbox;
@@ -1775,8 +1786,7 @@ footer {
       background-color: #94bfd1; } }
   .about-us-content .article {
     text-align: center;
-    padding: 30px 0px;
-    position: fixed; }
+    padding: 30px 0px; }
     @media (min-width: 720px) {
       .about-us-content .article {
         width: 50%;
@@ -5651,10 +5661,26 @@ http://flickity.metafizzy.co
   /* Create an active/current tablink class */
   /* Style the tab content */ }
   .post-type-archive-training_modules .entry-header {
-    padding-top: 210px;
+    padding: 300px 10px 0px;
     max-width: 1020px;
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex; }
+    .post-type-archive-training_modules .entry-header .modules-title {
+      -ms-flex: 1;
+          flex: 1; }
+    .post-type-archive-training_modules .entry-header .groups-button {
+      -ms-flex: 1;
+          flex: 1;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+      margin: 0;
+      padding-top: 10px; }
+      .post-type-archive-training_modules .entry-header .groups-button .main-button {
+        margin: 0; }
   .post-type-archive-training_modules .course-modules {
     max-width: 1020px;
     width: 100%;
@@ -5698,14 +5724,15 @@ http://flickity.metafizzy.co
       text-align: center;
       margin: 15% 0 5%; }
     .post-type-archive-training_modules .lesson-field input[type=checkbox], .post-type-archive-training_modules .lesson-field span {
-      margin: 20px 5px 2% 0;
+      margin: 30px 5px 2% 0;
       float: right;
       height: 21px; }
     .post-type-archive-training_modules .lesson-field input[type=checkbox] {
-      margin-right: 40%; }
+      margin-right: 40%;
+      margin-top: 30px; }
     .post-type-archive-training_modules .lesson-field .main-carousel {
       width: 90%;
-      height: 90%;
+      height: 87%;
       padding: 0 30px;
       margin: 0 auto; }
       .post-type-archive-training_modules .lesson-field .main-carousel .flickity-viewport {

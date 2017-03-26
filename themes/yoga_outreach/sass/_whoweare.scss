@@ -179,9 +179,13 @@
     }
 
     .staff-item-container{
-        display: flex !important;
-        flex-wrap: wrap;
-        justify-content:center;
+        @include desktop {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content:center;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
     }
 
 

@@ -7,6 +7,7 @@
         background-position: left 0px top -147px;
         @include desktop {
             position: relative;
+            align-items: center;
         }
     }
 
@@ -18,7 +19,8 @@
         align-items: center;
         @include desktop {
             height: 260px;
-            padding: 0px 186px;
+            width: 830px;
+            padding: 0px;
             position: absolute;
             bottom: 60px;
         }
@@ -80,15 +82,22 @@
             }
 
             .info-container { // Div for infor-field when hidden or desktop
+                width: 100vw;
+                background-color: $base_color;
+                display: flex !important;
+                justify-content: center;
+            }
+
+            .desktop-container{
                 order: 1;
                 height: 383px;
-                width: 100%;
+                width: 1024px;
                 padding: 0 102px;
                 text-align: left;
                 display: flex !important; 
                 justify-content: space-between;
                 flex-direction: row;
-                background-color: $base_color;
+                background-color: transparent;
             }
 
             .photo-frame {
@@ -259,6 +268,7 @@
 
     section .desktop-article {
         @include desktop {
+            position: relative;
             width: 1024px;
             height: 100%;
             display: flex;
@@ -270,7 +280,6 @@
     .article {
         text-align: center;
         padding: 30px 0px;
-        position: fixed;
         @include desktop {
             width: 50%;
             height: 100%;
