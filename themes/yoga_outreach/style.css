@@ -1204,7 +1204,6 @@ footer {
 
 .contact-us-content h1, .contact-us-content h2, .contact-us-content h3, .contact-us-content h4, .contact-us-content h5 {
   margin: 0;
-  font-family: Raleway;
   font-weight: 300; }
 
 .contact-us-content #site-navigation .menu-main-menu-container a {
@@ -1247,7 +1246,8 @@ footer {
 @media (min-width: 720px) {
   .contact-us-content .contactinfo-container {
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    margin-bottom: 290px; } }
 
 @media (min-width: 720px) {
   .contact-us-content .email-inquiries {
@@ -1266,15 +1266,21 @@ footer {
     -ms-flex-item-align: start;
         align-self: flex-start; } }
 
-@media (min-width: 720px) {
-  .contact-us-content .info-section {
-    background-color: #f4f1ea;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%; } }
-
-@media (min-width: 720px) {
-  .contact-us-content .info-section .info-dropdown {
-    background-color: transparent; } }
+.contact-us-content .info-section {
+  background-color: #f4f1ea; }
+  @media (min-width: 720px) {
+    .contact-us-content .info-section {
+      max-width: 401px;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      background-color: #C2DCE4;
+      height: 320px;
+      border-radius: 8px;
+      z-index: -1; } }
+  @media (min-width: 720px) {
+    .contact-us-content .info-section .info-dropdown {
+      background-color: transparent;
+      padding: 0; } }
 
 .contact-us-content .email-inquiries {
   display: -ms-flexbox;
@@ -1290,13 +1296,16 @@ footer {
     padding-bottom: 21px; }
     @media (min-width: 720px) {
       .contact-us-content .email-inquiries h2 {
-        font-size: 40px; } }
+        font-size: 40px;
+        color: #4A4A4A; } }
   .contact-us-content .email-inquiries p {
     font-size: .9rem;
     padding-bottom: 8px; }
     @media (min-width: 720px) {
       .contact-us-content .email-inquiries p {
-        font-size: 24px; } }
+        font-size: 24px;
+        color: #000;
+        padding-bottom: 22px; } }
   .contact-us-content .email-inquiries a {
     width: 230px;
     height: 44px;
@@ -1366,6 +1375,9 @@ footer {
   .contact-us-content .info-dropdown h3 {
     font-weight: bold;
     font-size: 1.2rem; }
+    @media (min-width: 720px) {
+      .contact-us-content .info-dropdown h3 {
+        font-size: 24px; } }
   .contact-us-content .info-dropdown span {
     font-size: 1.5rem; }
 
@@ -1377,6 +1389,33 @@ footer {
   .contact-us-content .info-field p {
     font-size: 0.9rem;
     font-weight: lighter; }
+
+.contact-us-content .padding-on-sides {
+  padding: 0 15px; }
+  @media (min-width: 720px) {
+    .contact-us-content .padding-on-sides {
+      padding: 0 15px; } }
+
+@media (min-width: 720px) {
+  .contact-us-content .info-text {
+    font-size: 24px; } }
+
+.contact-us-content .email-info {
+  margin-bottom: 20px; }
+  @media (min-width: 720px) {
+    .contact-us-content .email-info {
+      margin-bottom: 34px;
+      font-size: 20px; } }
+  @media (min-width: 720px) and (min-width: 720px) {
+    .contact-us-content .email-info h5 {
+      font-weight: bold; } }
+
+@media (min-width: 720px) {
+  .contact-us-content .emailinfo-section {
+    padding-left: 10%; } }
+
+.contact-us-content .info-dropdown {
+  margin-top: 25px; }
 
 .error404 .site-main {
   padding: 1rem; }
@@ -3140,6 +3179,12 @@ a:hover, a:active {
 @media (min-width: 720px) {
   .resources-media-content .media-purple {
     background-color: #CFDCEB; } }
+
+.resources-media-content .page-title-header, .resources-media-content .entry-content-page {
+  z-index: 1; }
+  @media (min-width: 720px) {
+    .resources-media-content .page-title-header, .resources-media-content .entry-content-page {
+      color: #fff; } }
 
 .resources-media-content .read-more, .resources-media-content .read-less {
   font-size: 10px;

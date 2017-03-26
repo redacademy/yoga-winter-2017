@@ -94,6 +94,13 @@
         }
     }
 
+    .page-title-header{
+        z-index:1;
+        @include desktop{
+            color:#fff;
+        }
+    }
+
     .read-more,.read-less{
       font-size:10px;
       cursor:pointer;

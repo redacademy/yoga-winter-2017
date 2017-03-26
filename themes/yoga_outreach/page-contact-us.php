@@ -29,35 +29,31 @@ get_header(); ?>
                         <div class="email-info">
                             <h5><?php echo $field['email_for']; ?></h5>
                             <p><?php echo $field['email']; ?></p>
-                        </div>
+                        </div><!--email-info-->
                     <?php endforeach; ?>
                 <?php endif; ?> 
                 </div>
-            </section>
-            <section class="info-section">
+            </section><!--email-inuquiries-->
+            <section class="info-section padding-on-sides">
             <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold email from loop-->    
                 <?php if(!empty($fields)): ?>
                     <?php foreach( $fields as $field ): ?>
                     
                     <div class="info-dropdown">
                         <h3><?php echo $field[ 'info_title' ]; ?></h3><span>+</span>
-                    </div>
-                        
+                    </div><!--info-dropdown-->
                     <div class="info-field">
                         <?php if(!empty($field['info_rows'])): ?>
                             <?php foreach( $field['info_rows'] as $row): ?>
-                                <?php echo CFS()->get( 'info_field' ) ?>
-                                <p><?php echo $row['info_field'] ?></p>
+                                <p class="info-text"><?php echo CFS()->get( 'info_field' ) ?></p>
+                                <p class="info-text"><?php echo $row['info_field'] ?></p>
                             <?php endforeach; ?>
                         <?php endif; ?>
-                    </div>
-                    
-
-                <?php endforeach; ?>
-              
-            <?php endif; ?> 
-          </section> 
-          </div>
+                    </div><!--info-field-->
+                    <?php endforeach; ?>
+                <?php endif; ?> 
+            </section><!--info-section-->
+            </div><!--email-info-section-->
         </div> 
 		</main><!-- #main -->
 	</div><!-- #primary -->
