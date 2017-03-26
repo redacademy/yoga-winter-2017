@@ -1,4 +1,10 @@
 .page-template-training{
+  h1{
+    padding-top: 35%;
+    @include desktop{
+      padding-top: 0;
+    }
+  }
 	 	.custom-hero-image{
        @include desktop{
        height:100vh;
@@ -71,8 +77,8 @@
 	.info-dropdown{
 		background-color:#fff;
 		border-bottom:2px solid #4A4A4A;
-    	width: 90vw;
-		margin: 0 auto;
+    width: 90vw;
+		margin: 0 auto 3% auto;
 	}
 
 	.info-field{
@@ -88,6 +94,7 @@
 		color: black;
 		font-weight:600;
 			@include desktop{
+        width:100%;
 				margin-left:0;
 				font-size:40px;
 			}

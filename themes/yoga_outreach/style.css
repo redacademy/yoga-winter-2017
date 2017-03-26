@@ -2851,6 +2851,12 @@ a:hover, a:active {
 .modules-home-content .container-one {
   position: relative; }
 
+.page-template-training h1 {
+  padding-top: 35%; }
+  @media (min-width: 720px) {
+    .page-template-training h1 {
+      padding-top: 0; } }
+
 @media (min-width: 720px) {
   .page-template-training .custom-hero-image {
     height: 100vh; } }
@@ -2929,7 +2935,7 @@ a:hover, a:active {
   background-color: #fff;
   border-bottom: 2px solid #4A4A4A;
   width: 90vw;
-  margin: 0 auto; }
+  margin: 0 auto 3% auto; }
 
 .page-template-training .info-field {
   background-color: #fff; }
@@ -2943,6 +2949,7 @@ a:hover, a:active {
   font-weight: 600; }
   @media (min-width: 720px) {
     .page-template-training .training-h3-heading {
+      width: 100%;
       margin-left: 0;
       font-size: 40px; } }
 
@@ -4804,6 +4811,12 @@ object {
           max-width: 700px;
           margin: auto; } }
 
+.page-template-training h1 {
+  padding-top: 35%; }
+  @media (min-width: 720px) {
+    .page-template-training h1 {
+      padding-top: 0; } }
+
 @media (min-width: 720px) {
   .page-template-training .custom-hero-image {
     height: 100vh; } }
@@ -4882,7 +4895,7 @@ object {
   background-color: #fff;
   border-bottom: 2px solid #4A4A4A;
   width: 90vw;
-  margin: 0 auto; }
+  margin: 0 auto 3% auto; }
 
 .page-template-training .info-field {
   background-color: #fff; }
@@ -4896,6 +4909,7 @@ object {
   font-weight: 600; }
   @media (min-width: 720px) {
     .page-template-training .training-h3-heading {
+      width: 100%;
       margin-left: 0;
       font-size: 40px; } }
 
