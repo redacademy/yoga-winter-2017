@@ -15,10 +15,10 @@ get_header(); ?>
                     <p><?php echo CFS()->get( 'about_facility_partners' ); ?></p>
                 </div>
                 <div class="main-button-holder">
-                    <button class="main-button clear-button"><a href="#provide" class="button">What We Provide</a></button>
-                    <button class="main-button clear-button"><a href="#perspective" class="button">A Facility Perspective</a></button>
-                    <button class="main-button clear-button"><a href="#program" class="button">Receive your Program</a></button>
-                    <button class="main-button clear-button"><a href="#partners" class="button">Our Current Partners</a></button>
+                    <a href="#provide" class="main-button clear-button">What We Provide</a>
+                    <a href="#perspective" class="main-button clear-button">A Facility Perspective</a>
+                    <a href="#program" class="main-button clear-button">Receive your Program</a>
+                    <a href="#partners" class="main-button clear-button">Our Current Partners</a>
                 </div>
             </header><!-- .entry-header -->
             <section id="provide" class="container-one">
@@ -28,7 +28,7 @@ get_header(); ?>
                 <div class="info-dropdown custom-info-container"><h3>Apply for Partnership</h3><span>+</span></div>
                 <div class="info-field custom-info-container drop-down-info">
                     <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
-                    <div class="button-wrap"><button class="small-button white-button"><a href="<?php echo get_page_link(174); ?>" class="button">Apply Now</a></button></div>
+                    <div class="button-wrap"><a href="<?php echo get_page_link(174); ?>" class="small-button white-button">Apply Now</a></div>
                 </div>
             </section>
             <section id="perspective" class="container-two">
@@ -55,7 +55,7 @@ get_header(); ?>
                         <?php endif; ?>
                     </ul> 
                 </div>
-                <div class="button-wrap"><button class="small-button white-button"><a href="<?php echo get_page_link(174); ?>" class="button">Apply Now</a></button></div>
+                <div class="button-wrap"><a href="<?php echo get_page_link(174); ?>" class="small-button white-button">Apply Now</a></div>
             </section>
             <section id="partners" class="container-three partner-facility">
                 <h2 class="h2-holder">Our Current Partners</h2>

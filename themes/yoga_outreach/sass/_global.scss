@@ -2,6 +2,14 @@
     font-family:'raleway',sans-serif;
 }
 
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
 .info-dropdown {
     height: 60px;
     padding: 15px;
@@ -99,6 +107,7 @@
 
 .white-button{
 	background-color: $base_color;
+    color: $darktext_color;
 }
 
 .dark-button{
@@ -251,7 +260,7 @@ a{
     opacity: .5;
     position:absolute;
         @include desktop{
-            height: 107vh;
+            height: 100vh;
             width: 100vw;
             
     }

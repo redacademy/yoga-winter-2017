@@ -123,11 +123,8 @@
 
 }
 
-
-
-
 .forms-header{
-	height: 30vh;
+	height: 38vh;
 }
 
 /* Core Scholarship Training */
@@ -138,13 +135,10 @@
 		margin:0 auto;
 		margin-bottom:29px;
 	}
-
 	body, li:not(.form-sub-heading){
 		max-width:828px;
 		margin:0 auto;
 	}
-
-	
 
 	.core-schol-main-p{
 		color:$mediumtheme_color;
@@ -164,7 +158,6 @@
 		font-size:14px;
 				line-height:18px;
 				margin-left: auto!important;
-
 	}
 
 	.core-details{
@@ -173,13 +166,116 @@
 		font-size:20px;
 		max-width:100vw;
 	}
-
 }
 
+/* Module Quizzes */
+.entry-content{
+	.gform_wrapper{
+		.module-quiz{
+			max-width: $site_container;
+			width: 100%;
+			padding: 10px;
+		}
+		ul li {
+			input[type="radio"] {
+				display:none;
+			}
+			input[type="radio"] + label {
+				color: $lighttext_color;
+				font-family:Arial, sans-serif;
+				font-size:14px;
+			}
+			input[type="radio"] + label span {
+				display:inline-block;
+				width:30px;
+				height:30px;
+				margin:-1px 4px 0 0;
+				vertical-align:middle;
+				cursor:pointer;
+				border: 1px solid $lighttext_color;
+				border-radius:  50%;
+			}
 
+			input[type="radio"] + label span{
+				background-color:transparent;
+				margin: 10px;
+			}
 
+			input[type="radio"]:checked + label span{
+				background-color:$darktext_color;
+			}
+		} 
+		.gform_next_button, .gform_button{
+			@include general-button;
+			color: $lighttext_color;
+			background-color: $mainbutton_color;
+			margin: 15px;
+			display: inline;
+		}
 
+		.gform_previous_button{
+			@include general-button;
+			color: $lighttext_color;
+			background-color: $formbutton_color;
+		}
+		.percentbar_blue{
+			background-color: $logo_color;
+		}
 
+		.gf_progressbar_percentage{
+			background: linear-gradient(to right, $logo_color , $formbutton_color);
+		}
+	}
+}
+
+/* Successful Quiz */
+.page-template-quiz-template{
+	background: linear-gradient(rgba(216,216,216,0.6), rgba(182, 234, 255, 0.7)), url(../../images/deniz-altindas-38128.jpg)no-repeat center top;
+    background-size: cover, cover;
+	header{display:none;}
+	.site-main, .entry-content, .module-quiz_wrapper{
+		margin: 0 auto;
+		height:50%;
+		padding-top:15px;
+	}
+}
+.module-quiz{
+	max-width: $site_container;
+	width: 100%;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: $base_color;
+}
+
+.gform_confirmation_message{
+	padding-top: 10%;
+	text-align: center;
+
+	.main-button{
+		@include general-button; 
+		margin: 25px auto;
+		&.grey-button{
+			background-color: $mainbutton_color;
+			a{
+				color: $base_color;
+			}
+			&:hover{
+				background-color: $brightbutton_color;
+				a{
+					color: $darktext_color;
+				}
+			}
+		}
+	}
+	
+	.gform_button{
+		@include general-button;
+		color: $lighttext_color;
+		background-color: $mainbutton_color;
+		margin: 15px auto;
+	}
+}
 
 /* Buttons */
 

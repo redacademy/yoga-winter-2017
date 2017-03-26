@@ -15,10 +15,10 @@ get_header(); ?>
                     <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
                 </div>
                 <div class="main-button-holder">
-                    <button class="grey-button main-button"><a href="#instructor" class="button">Become a Yoga Teacher</a></button>
-                    <button class="grey-button main-button"><a href="#volunteer" class="button">Community Volunteer</a></button>
-                    <button class="grey-button main-button"><a href="#council" class="button">Advisory Council Member</a></button>
-                    <button class="grey-button main-button"><a href="#opportunities" class="button">Reaching Out with Yoga</a></button>
+                    <a href="#instructor" class="grey-button main-button">Become a Yoga Teacher</a>
+                    <a href="#volunteer" class="grey-button main-button">Community Volunteer</a>
+                    <a href="#council" class="grey-button main-button">Advisory Council Member</a>
+                    <a href="#opportunities" class="grey-button main-button">Reaching Out with Yoga</a>
                 </div>
             </header><!-- .entry-header -->
             <section class="container-one">
@@ -53,31 +53,31 @@ get_header(); ?>
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </ol>
-                <div class="button-wrap"><button class="small-button white-button"><a href="<?php echo get_page_link(176); ?>" class="button">Apply Now</a></button></div>
+                <div class="button-wrap"><a href="<?php echo get_page_link(176); ?>" class="small-button white-button">Apply Now</a></div>
             </section>
             <section id="volunteer" class="container-one">
                 <h2>Volunteer for Community Engagement</h2>
                 <p class="info-paragraph"><?php echo CFS()->get( 'community_engagement' ); ?></p>
-                <button class="grey-button small-button"><a href="<?php echo get_page_link(176); ?>" class="button">Apply Now</a></button>
+                <a href="<?php echo get_page_link(176); ?>" class="grey-button small-button">Apply Now</a>
             </section>
             <section id="council" class="container-three">
                 <h2>Volunteer for Advisory Council</h2>
                 <p class="info-paragraph"><?php echo CFS()->get( 'advisory_council' ); ?></p>
-                <button class="white-button main-button"><a href="<?php echo get_page_link(67); ?>" class="button">Contact Us</a></button>
+                <a href="<?php echo get_page_link(67); ?>" class="main-button white-button">Contact Us</a>
             </section>
 
             <?php if(!empty(CFS()->get( 'new_initiative_title' ))): ?>
                 <section id="council" class="container-one">
                     <h2><?php echo CFS()->get( 'new_initiative_title' ) ?></h2>
                     <p class="info-paragraph"><?php echo CFS()->get( 'new_initiative_description' ) ?></p>
-                    <button class="dark-button main-button"><a href="<?php echo get_page_link(67); ?>" class="button">Contact Us</a></button>
+                    <a href="<?php echo get_page_link(67); ?>" class="dark-button main-button">Contact Us</a>
                 </section>
             <?php endif; ?>
 
             <section id="opportunities" class="container-four">
                 <h2>Volunteer Opportunities</h2>
                 <p></p>
-                <button class="white-button main-button"><a href="<?php echo get_page_link(203); ?>" class="button">View Here</a></button>
+                <a href="<?php echo get_page_link(203); ?>" class="white-button main-button">View Here</a>
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

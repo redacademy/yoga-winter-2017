@@ -630,6 +630,12 @@ button {
 * {
   font-family: 'raleway',sans-serif; }
 
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%; }
+
 .info-dropdown {
   height: 60px;
   padding: 15px;
@@ -718,7 +724,8 @@ button {
       color: #4a4a4a; }
 
 .white-button {
-  background-color: #fff; }
+  background-color: #fff;
+  color: #4a4a4a; }
 
 .dark-button {
   background-color: #6b747d; }
@@ -850,7 +857,7 @@ a {
   position: absolute; }
   @media (min-width: 720px) {
     .color-background {
-      height: 107vh;
+      height: 100vh;
       width: 100vw; } }
 
 p {
@@ -1850,7 +1857,7 @@ footer {
     background-color: #fff; }
 
 .forms-header {
-  height: 30vh; }
+  height: 38vh; }
 
 /* Core Scholarship Training */
 #gform_7 .gform_title, #gform_7 .gform_description {
@@ -1884,6 +1891,174 @@ footer {
   color: #fff;
   font-size: 20px;
   max-width: 100vw; }
+
+/* Module Quizzes */
+.entry-content .gform_wrapper .module-quiz {
+  max-width: 1020px;
+  width: 100%;
+  padding: 10px; }
+
+.entry-content .gform_wrapper ul li input[type="radio"] {
+  display: none; }
+
+.entry-content .gform_wrapper ul li input[type="radio"] + label {
+  color: #6b747d;
+  font-family: Arial, sans-serif;
+  font-size: 14px; }
+
+.entry-content .gform_wrapper ul li input[type="radio"] + label span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #6b747d;
+  border-radius: 50%; }
+
+.entry-content .gform_wrapper ul li input[type="radio"] + label span {
+  background-color: transparent;
+  margin: 10px; }
+
+.entry-content .gform_wrapper ul li input[type="radio"]:checked + label span {
+  background-color: #4a4a4a; }
+
+.entry-content .gform_wrapper .gform_next_button, .entry-content .gform_wrapper .gform_button {
+  width: 230px;
+  height: 44px;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+  color: #6b747d;
+  background-color: #94bfd1;
+  margin: 15px;
+  display: inline; }
+
+.entry-content .gform_wrapper .gform_previous_button {
+  width: 230px;
+  height: 44px;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+  color: #6b747d;
+  background-color: #c1d3da; }
+
+.entry-content .gform_wrapper .percentbar_blue {
+  background-color: #95afc9; }
+
+.entry-content .gform_wrapper .gf_progressbar_percentage {
+  background: linear-gradient(to right, #95afc9, #c1d3da); }
+
+/* Successful Quiz */
+.page-template-quiz-template {
+  background: linear-gradient(rgba(216, 216, 216, 0.6), rgba(182, 234, 255, 0.7)), url(../../images/deniz-altindas-38128.jpg) no-repeat center top;
+  background-size: cover, cover; }
+  .page-template-quiz-template header {
+    display: none; }
+  .page-template-quiz-template .site-main, .page-template-quiz-template .entry-content, .page-template-quiz-template .module-quiz_wrapper {
+    margin: 0 auto;
+    height: 50%;
+    padding-top: 15px; }
+
+.module-quiz {
+  max-width: 1020px;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff; }
+
+.gform_confirmation_message {
+  padding-top: 10%;
+  text-align: center; }
+  .gform_confirmation_message .main-button {
+    width: 230px;
+    height: 44px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none;
+    margin: 25px auto; }
+    .gform_confirmation_message .main-button.grey-button {
+      background-color: #94bfd1; }
+      .gform_confirmation_message .main-button.grey-button a {
+        color: #fff; }
+      .gform_confirmation_message .main-button.grey-button:hover {
+        background-color: #6cfffe; }
+        .gform_confirmation_message .main-button.grey-button:hover a {
+          color: #4a4a4a; }
+  .gform_confirmation_message .gform_button {
+    width: 230px;
+    height: 44px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none;
+    color: #6b747d;
+    background-color: #94bfd1;
+    margin: 15px auto; }
 
 /* Buttons */
 button,
@@ -3671,18 +3846,24 @@ object {
     border: none;
     font-family: 'raleway',sans-serif;
     font-size: 14px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
     @media (min-width: 720px) {
       .volunteer-content .site-main .small-button, .partner-facility-content .site-main .small-button, .support-us-content .site-main .small-button {
         width: 230px; } }
-    .volunteer-content .site-main .small-button a, .partner-facility-content .site-main .small-button a, .support-us-content .site-main .small-button a {
-      color: white;
-      text-decoration: none; }
-  .volunteer-content .site-main #volunteer .small-button, .partner-facility-content .site-main #volunteer .small-button, .support-us-content .site-main #volunteer .small-button {
-    margin-bottom: 26px; }
-  .volunteer-content .site-main .white-button a, .partner-facility-content .site-main .white-button a, .support-us-content .site-main .white-button a {
-    color: #6b747d;
-    text-decoration: none; }
+  .volunteer-content .site-main .white-button, .partner-facility-content .site-main .white-button, .support-us-content .site-main .white-button {
+    text-decoration: none;
+    color: #4a4a4a; }
+    .volunteer-content .site-main .white-button:visited, .partner-facility-content .site-main .white-button:visited, .support-us-content .site-main .white-button:visited {
+      color: #4a4a4a; }
   .volunteer-content .site-main .button-wrap, .partner-facility-content .site-main .button-wrap, .support-us-content .site-main .button-wrap {
     display: -ms-flexbox;
     display: flex;
@@ -3727,7 +3908,7 @@ object {
       max-width: 1020px; }
     @media (min-width: 720px) {
       .volunteer-content .site-main .entry-header, .partner-facility-content .site-main .entry-header, .support-us-content .site-main .entry-header {
-        padding-top: 15%; } }
+        padding-top: 40vh; } }
   .volunteer-content .site-main .drop-down-info, .partner-facility-content .site-main .drop-down-info, .support-us-content .site-main .drop-down-info {
     padding: 0; }
     .volunteer-content .site-main .drop-down-info p, .partner-facility-content .site-main .drop-down-info p, .support-us-content .site-main .drop-down-info p {
@@ -5000,20 +5181,20 @@ http://flickity.metafizzy.co
 /*--------------------------------------------------------------
 # Current Ops
 --------------------------------------------------------------*/
-.page-template-current-ops .site-main {
+.current-ops-content .site-main {
   padding-top: 20%;
   max-width: 1020px;
   width: 100%;
   margin: 0 auto; }
-  .page-template-current-ops .site-main h1 {
+  .current-ops-content .site-main h1 {
     margin: 0 auto;
     text-align: center; }
-  .page-template-current-ops .site-main ul {
+  .current-ops-content .site-main ul {
     list-style: none;
     padding: 0;
     padding-top: 5%;
     margin: 0 auto; }
-    .page-template-current-ops .site-main ul li {
+    .current-ops-content .site-main ul li {
       position: relative;
       height: 500px;
       width: 100%;
@@ -5023,10 +5204,10 @@ http://flickity.metafizzy.co
       -ms-flex-pack: center;
           justify-content: center; }
       @media (min-width: 720px) {
-        .page-template-current-ops .site-main ul li {
+        .current-ops-content .site-main ul li {
           height: 500px;
           width: 70%; } }
-      .page-template-current-ops .site-main ul li .opps-header {
+      .current-ops-content .site-main ul li .opps-header {
         position: absolute;
         background-color: #ebe5d8;
         width: 85%;
@@ -5040,14 +5221,14 @@ http://flickity.metafizzy.co
             align-items: center;
         text-align: center; }
         @media (min-width: 720px) {
-          .page-template-current-ops .site-main ul li .opps-header {
+          .current-ops-content .site-main ul li .opps-header {
             height: 20%;
             width: 50%; } }
-      .page-template-current-ops .site-main ul li:nth-child(odd) .opps-info {
+      .current-ops-content .site-main ul li:nth-child(odd) .opps-info {
         background-color: rgba(149, 175, 201, 0.57); }
-      .page-template-current-ops .site-main ul li:nth-child(even) .opps-info {
+      .current-ops-content .site-main ul li:nth-child(even) .opps-info {
         background-color: rgba(148, 191, 209, 0.57); }
-      .page-template-current-ops .site-main ul li .opps-info {
+      .current-ops-content .site-main ul li .opps-info {
         position: absolute;
         z-index: -1;
         height: 80%;
@@ -5062,15 +5243,15 @@ http://flickity.metafizzy.co
             align-items: center;
         -ms-flex-direction: column;
             flex-direction: column; }
-        .page-template-current-ops .site-main ul li .opps-info p {
+        .current-ops-content .site-main ul li .opps-info p {
           width: 85%;
           text-transform: uppercase;
           font-size: 1.1rem; }
           @media (min-width: 720px) {
-            .page-template-current-ops .site-main ul li .opps-info p {
+            .current-ops-content .site-main ul li .opps-info p {
               width: 70%;
               font-size: 1.2rem; } }
-      .page-template-current-ops .site-main ul li .small-button {
+      .current-ops-content .site-main ul li .small-button {
         position: absolute;
         bottom: 20%;
         width: 173px;
@@ -5088,12 +5269,12 @@ http://flickity.metafizzy.co
         font-size: 14px;
         margin: 0 auto; }
         @media (min-width: 720px) {
-          .page-template-current-ops .site-main ul li .small-button {
+          .current-ops-content .site-main ul li .small-button {
             bottom: 25%; } }
         @media (min-width: 720px) {
-          .page-template-current-ops .site-main ul li .small-button {
+          .current-ops-content .site-main ul li .small-button {
             width: 230px; } }
-        .page-template-current-ops .site-main ul li .small-button a {
+        .current-ops-content .site-main ul li .small-button a {
           color: #6b747d;
           text-decoration: none; }
 
