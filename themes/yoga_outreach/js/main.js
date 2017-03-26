@@ -46,10 +46,12 @@
     function resize() {
       if ($window.width() > 720) {
         $infoField.removeClass('info-field');
-        $infoField.css('display','block'); 
+        $infoField.css('display','block');
+        $('.header-subtitle').text('to your Yoga Outreach Core Training'); 
       } else {
         $infoField.addClass('info-field');
         $infoField.css('display','none');
+        $('.header-subtitle').text('to your online course');
       }
     }
     $window.resize(resize).trigger('resize');
