@@ -50,6 +50,10 @@ get_header(); ?>
                         </article>
                     <?php endwhile; ?>
                 <?php endif; ?>
+                <div class="button-container">
+                    <button type="">Previous article</button>
+                    <button type="">Next article</button>
+                </div>
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

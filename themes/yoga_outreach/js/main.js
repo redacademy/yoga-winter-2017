@@ -74,7 +74,6 @@
     // Changes radio buttons on forms
     $( '.gfield_radio li label' ).prepend( '<span></span>');
 
-
     // Blog Page on click cell shows article
     $('.carousel-cell').on('click', function(e){
       e.preventDefault();
@@ -84,7 +83,35 @@
       $('#' + id).show();
     });
 
+    // Shows first blog post default
     $('.post:first-child').show();
+
+    // Next article button
+    $('.button').on('click', function(e){
+      e.preventDefault();
+      var id = $('article', this).attr('data-post');
+      $('.full-article .post').hide();
+      $('#' + id).show();
+    })
+
+    $('.article-text').each(function(){
+      var max_length = 167; 
+      if($(this).html().length > max_length){ 
+        var short_content 	= $(this).html().substr(0,max_length); 
+        var long_content	= $(this).html().substr(max_length);
+        
+        $(this).html(short_content+
+              '<a href="#" class="read-more"><br/>Read More...</a>'+
+              '<span class="more-text" style="display:none;">'+long_content+'</span>');
+              
+        $(this).find('a.read-more').click(function(event){ 
+  
+          event.preventDefault(); 
+          $(this).hide();
+          $(this).parents('.article-text').find('.more-text').show();
+        });
+      }
+    });
 
 
 })(jQuery); 

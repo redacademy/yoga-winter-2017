@@ -1,4 +1,12 @@
 .event-content {
+    .custom-hero-image {
+        background-size: 270%;
+        background-position: left -120px top -56px;
+        @include desktop {
+            padding: 180px;
+        }
+    }
+    
     h1{
       @include desktop{
         font-size: 40px;
@@ -11,6 +19,7 @@
         }
       }
     }
+    
     .general-button-container {
       height: 130px;
       bottom: 17px;
@@ -92,6 +101,14 @@
 
             p {
                 font-size: 0.6rem;
+            }
+
+            td {
+                padding: 0 9px;
+                h4 {
+                    margin: 0;
+                    width: 69px;
+                }
             }
         }
 
