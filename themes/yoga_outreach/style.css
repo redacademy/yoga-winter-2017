@@ -55,6 +55,20 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @font-face {
   font-family: 'raleway';
+  src: url("../../fonts/raleway-bold-webfont.eot");
+  src: url("../../fonts/raleway-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-bold-webfont.woff2") format("woff2"), url("../../fonts/raleway-bold-webfont.woff") format("woff"), url("../../fonts/raleway-bold-webfont.svg#ralewaybold") format("svg");
+  font-weight: bolder;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../../fonts/raleway-extrabold-webfont.eot");
+  src: url("../../fonts/raleway-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-extrabold-webfont.woff2") format("woff2"), url("../../fonts/raleway-extrabold-webfont.woff") format("woff"), url("../../fonts/raleway-extrabold-webfont.svg#ralewayextrabold") format("svg");
+  font-weight: bolder;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
   src: url("../../fonts/raleway-light-webfont.eot");
   src: url("../../fonts/raleway-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-light-webfont.woff") format("woff"), url("../../fonts/raleway-light-webfont.ttf") format("truetype"), url("../../fonts/raleway-light-webfont.svg#ralewaylight") format("svg");
   font-weight: lighter;
@@ -78,7 +92,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   font-family: 'raleway';
   src: url("../../fonts/raleway-thin-webfont.eot");
   src: url("../../fonts/raleway-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-thin-webfont.woff") format("woff"), url("../../fonts/raleway-thin-webfont.ttf") format("truetype"), url("../../fonts/raleway-thin-webfont.svg#ralewaythin") format("svg");
-  font-weight: normal;
+  font-weight: lighter;
   font-style: normal; }
 
 @font-face {
@@ -836,7 +850,7 @@ a {
   position: absolute; }
   @media (min-width: 720px) {
     .color-background {
-      height: 100vh;
+      height: 107vh;
       width: 100vw; } }
 
 p {
@@ -2171,6 +2185,8 @@ a:hover, a:active {
     margin-bottom: 60px; }
   .training-content .training-color-bar.grey-bar {
     background-color: #C0DAE5; }
+  .training-content .training-find-out-para a {
+    text-decoration: underline; }
 
 .modules-home-content #site-navigation.main-navigation {
   position: static;
@@ -2500,7 +2516,11 @@ a:hover, a:active {
   @media (min-width: 720px) {
     .page-template-training .carousel-cell.is-selected {
       padding-left: 5rem;
-      padding-right: 5rem; } }
+      padding-right: 5rem;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; } }
 
 .page-template-training .testimonal-slideshow-container {
   min-width: 320px;
@@ -2571,12 +2591,14 @@ a:hover, a:active {
   width: 100%;
   padding-top: 20px;
   margin-top: 2rem;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  padding-right: 2rem;
+  height: 8.3rem; }
   .core-training-content .main-carousel .carousel-cell {
     width: 100%;
     height: auto; }
     .core-training-content .main-carousel .carousel-cell p {
-      margin-topwo: 20px; }
+      margin-top: 20px; }
     .core-training-content .main-carousel .carousel-cell h1 {
       color: #4a4a4a; }
   .core-training-content .main-carousel ol {
@@ -2598,7 +2620,14 @@ a:hover, a:active {
 
 .core-training-content .carousel-cell.is-selected {
   padding-left: 2rem;
-  padding-right: 2rem; }
+  padding-right: 2rem;
+  line-height: 20px; }
+  @media (min-width: 720px) {
+    .core-training-content .carousel-cell.is-selected {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; } }
 
 .core-training-content .general-button-container {
   bottom: 25px; }
@@ -2614,7 +2643,8 @@ a:hover, a:active {
   color: #6B747D;
   font-size: 20px;
   line-height: 24px;
-  margin-top: 39px; }
+  margin-top: 35px;
+  font-weight: 600; }
   @media (min-width: 720px) {
     .core-training-content .core-header {
       font-size: 40px;
@@ -2677,6 +2707,9 @@ a:hover, a:active {
   margin: 0;
   padding: 0 15px;
   list-style: none; }
+
+.core-training-content .info-dropdown {
+  background-color: #C7D5E2; }
 
 .core-training-content .info-list-content {
   font-size: 18px;
@@ -2793,8 +2826,12 @@ a:hover, a:active {
 .core-training-content .light-training-para {
   color: #6B747D;
   font-size: 14px;
-  line-height: 2;
+  line-height: 24px;
   max-width: 1024px; }
+
+.core-training-content .small-para {
+  font-size: 11px;
+  line-height: 20px; }
 
 .core-training-content .dark-training-para {
   color: #4A4A4A;
@@ -2817,7 +2854,8 @@ a:hover, a:active {
     font-size: 20px;
     color: #4A4A4A;
     width: 200px;
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    font-weight: 500; }
     @media (min-width: 720px) {
       .core-training-content .online-class-icon-heading-container h3, .core-training-content .core-training-text-image-container h3 {
         width: 100%; } }
@@ -2831,9 +2869,11 @@ a:hover, a:active {
     margin-bottom: 5px;
     padding-left: 5px; }
 
-@media (min-width: 720px) {
-  .core-training-content .training-list {
-    padding: 29px 87px; } }
+.core-training-content .training-list {
+  margin-bottom: 32px; }
+  @media (min-width: 720px) {
+    .core-training-content .training-list {
+      padding: 29px 87px; } }
 
 .core-training-content .training-date-text {
   font-size: 11px;
@@ -2926,6 +2966,9 @@ a:hover, a:active {
     .core-training-content .dates-table {
       width: 45vw; } }
 
+.core-training-content .training-list {
+  background-color: #C7D5E2; }
+
 .core-training-content .dates-table .classroom-tr {
   height: 100px;
   padding-bottom: 1rem;
@@ -2937,7 +2980,7 @@ a:hover, a:active {
       justify-content: space-around; }
 
 .core-training-content .carousel-cell.is-selected {
-  width: 70;
+  width: 100%;
   text-align: center; }
 
 .core-training-content .black-text {
@@ -3246,8 +3289,12 @@ a:hover, a:active {
       color: #fff; } }
 
 .resources-media-content .read-more, .resources-media-content .read-less {
-  font-size: 10px;
-  cursor: pointer; }
+  font-size: 20px;
+  cursor: pointer;
+  transition: font-size 0.5s ease-in; }
+  .resources-media-content .read-more:hover, .resources-media-content .read-less:hover {
+    font-size: 24px;
+    letter-spacing: 5px; }
 
 @media (min-width: 720px) {
   .resources-media-content .media-heading-flex {
@@ -4363,7 +4410,11 @@ object {
   @media (min-width: 720px) {
     .page-template-training .carousel-cell.is-selected {
       padding-left: 5rem;
-      padding-right: 5rem; } }
+      padding-right: 5rem;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; } }
 
 .page-template-training .testimonal-slideshow-container {
   min-width: 320px;
@@ -4434,12 +4485,14 @@ object {
   width: 100%;
   padding-top: 20px;
   margin-top: 2rem;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  padding-right: 2rem;
+  height: 8.3rem; }
   .core-training-content .main-carousel .carousel-cell {
     width: 100%;
     height: auto; }
     .core-training-content .main-carousel .carousel-cell p {
-      margin-topwo: 20px; }
+      margin-top: 20px; }
     .core-training-content .main-carousel .carousel-cell h1 {
       color: #4a4a4a; }
   .core-training-content .main-carousel ol {
@@ -4461,7 +4514,14 @@ object {
 
 .core-training-content .carousel-cell.is-selected {
   padding-left: 2rem;
-  padding-right: 2rem; }
+  padding-right: 2rem;
+  line-height: 20px; }
+  @media (min-width: 720px) {
+    .core-training-content .carousel-cell.is-selected {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; } }
 
 .core-training-content .general-button-container {
   bottom: 25px; }
@@ -4477,7 +4537,8 @@ object {
   color: #6B747D;
   font-size: 20px;
   line-height: 24px;
-  margin-top: 39px; }
+  margin-top: 35px;
+  font-weight: 600; }
   @media (min-width: 720px) {
     .core-training-content .core-header {
       font-size: 40px;
@@ -4540,6 +4601,9 @@ object {
   margin: 0;
   padding: 0 15px;
   list-style: none; }
+
+.core-training-content .info-dropdown {
+  background-color: #C7D5E2; }
 
 .core-training-content .info-list-content {
   font-size: 18px;
@@ -4656,8 +4720,12 @@ object {
 .core-training-content .light-training-para {
   color: #6B747D;
   font-size: 14px;
-  line-height: 2;
+  line-height: 24px;
   max-width: 1024px; }
+
+.core-training-content .small-para {
+  font-size: 11px;
+  line-height: 20px; }
 
 .core-training-content .dark-training-para {
   color: #4A4A4A;
@@ -4680,7 +4748,8 @@ object {
     font-size: 20px;
     color: #4A4A4A;
     width: 200px;
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    font-weight: 500; }
     @media (min-width: 720px) {
       .core-training-content .online-class-icon-heading-container h3, .core-training-content .core-training-text-image-container h3 {
         width: 100%; } }
@@ -4694,9 +4763,11 @@ object {
     margin-bottom: 5px;
     padding-left: 5px; }
 
-@media (min-width: 720px) {
-  .core-training-content .training-list {
-    padding: 29px 87px; } }
+.core-training-content .training-list {
+  margin-bottom: 32px; }
+  @media (min-width: 720px) {
+    .core-training-content .training-list {
+      padding: 29px 87px; } }
 
 .core-training-content .training-date-text {
   font-size: 11px;
@@ -4789,6 +4860,9 @@ object {
     .core-training-content .dates-table {
       width: 45vw; } }
 
+.core-training-content .training-list {
+  background-color: #C7D5E2; }
+
 .core-training-content .dates-table .classroom-tr {
   height: 100px;
   padding-bottom: 1rem;
@@ -4800,7 +4874,7 @@ object {
       justify-content: space-around; }
 
 .core-training-content .carousel-cell.is-selected {
-  width: 70;
+  width: 100%;
   text-align: center; }
 
 .core-training-content .black-text {
@@ -4818,7 +4892,7 @@ http://flickity.metafizzy.co
 .flickity-viewport {
   overflow: hidden;
   position: relative;
-  height: 100%; }
+  height: 120%; }
 
 .flickity-slider {
   position: absolute;

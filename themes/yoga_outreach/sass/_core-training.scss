@@ -4,11 +4,14 @@
             padding-top:20px;
             margin-top:2rem;
             padding-bottom:20px;
+            padding-right:2rem;
+            height: 8.3rem;
+
                 .carousel-cell{
                     width: 100%;
                     height: auto;
                     p{
-                        margin-topwo: 20px;
+                        margin-top: 20px;
                     }
                     h1{
                         color: $darktext_color;
@@ -43,6 +46,11 @@
     .carousel-cell.is-selected{
         padding-left: 2rem;
         padding-right: 2rem;
+        line-height:20px;
+            @include desktop{
+                display: flex;
+                justify-content: center;
+            }
     }
 
     .general-button-container{
@@ -60,7 +68,8 @@
         color:#6B747D;
         font-size:20px;
         line-height:24px;
-        margin-top:39px;
+        margin-top:35px;
+        font-weight:600;
             @include desktop{
                 font-size:40px;
                 width:700px;
@@ -112,6 +121,10 @@
         margin:0;
         padding:0 15px;
         list-style:none;
+    }
+
+    .info-dropdown{
+        background-color:#C7D5E2;
     }
 
     .info-list-content{
@@ -227,8 +240,13 @@
     .light-training-para{
         color:#6B747D;
         font-size:14px;
-        line-height:2;
+        line-height:24px;
         max-width:1024px;
+    }
+
+    .small-para{
+        font-size:11px;
+        line-height:20px;
     }
 
     .dark-training-para{
@@ -252,6 +270,7 @@
                 color:#4A4A4A;
                 width: 200px;
                 margin-left:1rem;
+                font-weight:500;
                     @include desktop{
                         width:100%;
                     }
@@ -270,9 +289,10 @@
     }
 
     .training-list{
-        @include desktop{
-            padding:29px 87px;
-        }
+        margin-bottom:32px;
+            @include desktop{
+                padding:29px 87px;
+            }
     }
             
     .training-date-text{
@@ -382,6 +402,10 @@
                 }
     }
 
+    .training-list{
+        background-color:#C7D5E2;
+    }
+
     .dates-table{
         .classroom-tr{
             height: 100px;
@@ -393,7 +417,7 @@
     }
 
     .carousel-cell.is-selected{
-        width:70;
+        width:100%;
         text-align:center;
     }
 

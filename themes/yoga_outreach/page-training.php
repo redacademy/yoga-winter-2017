@@ -21,8 +21,8 @@ get_header(); ?>
                 wp_reset_query(); //resetting the page query
                 ?>
 				<div class ="general-button-container">
-					<button class="general-button grey-button">Core Training</button>
-					<button class="general-button grey-button">For Facilities</button>
+					<a href="core-training" class="general-button grey-button">Core Training</a>
+					<a href="training-for-facilities" class="general-button grey-button">For Facilities</a>
 				</div>
 			</header><!--general-template-section-->
 			<div class="desktop-margin">

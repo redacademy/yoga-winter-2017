@@ -102,18 +102,23 @@
     }
 
     .read-more,.read-less{
-      font-size:10px;
+      font-size:20px;
       cursor:pointer;
+      transition:font-size 0.5s ease-in;
+        &:hover{
+            font-size:24px;
+            letter-spacing:5px;
+        }
     }
 
-  .media-heading-flex{
-      @include desktop{
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          margin-bottom:2.5rem;
-      }
-  }
+    .media-heading-flex{
+        @include desktop{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom:2.5rem;
+        }
+    }
 
   .research-paper-para{
       display:none;

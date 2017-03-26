@@ -46,13 +46,13 @@
         @include desktop{
             padding-bottom:20rem;
         }
-    margin-top:31px;
-    img{
-        height:80px;
-        width:80px;
-        z-index:2;
-            @include desktop{
-                height:auto;
+        margin-top:31px;
+        img{
+            height:80px;
+            width:80px;
+            z-index:2;
+                @include desktop{
+                    height:auto;
             }
         }
     }//for-training-section
@@ -110,6 +110,12 @@
 
     .training-color-bar.grey-bar{
         background-color:#C0DAE5;
+    }
+
+    .training-find-out-para{
+        a{
+            text-decoration:underline;
+        }
     }
 
     
