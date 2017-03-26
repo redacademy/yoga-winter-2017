@@ -9,17 +9,23 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 				<header class="general-template-section custom-hero-image">
+					<div class="color-background"></div>
 					<div class="page-title-container">
 						<h1 class="page-title-header"><?php the_title(); ?></h1>
-						<div>
-							<p class="page-subtitle">Trauma-informed training for your staff.</p>
-						</div>
 					</div>
-					
+					<?php
+                	while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
+                    <div class="entry-content-page">
+                    	<?php the_content(); ?> <!-- Page Content -->
+                    </div><!--entry-content-page-->
+                    <?php
+                	endwhile; //resetting the page loop
+                	wp_reset_query(); //resetting the page query
+                	?>
 					<p class="heading-subtitle"><?php echo CFS()->get('page_subtitle'); ?>
 					<div class="general-button-container">
-						<button class="general-button grey-button">Core Training</button>
-						<button class="general-button teal-button button-black-text">For Facilities</button>
+						<a href="core-training" class="general-button grey-button">Core Training</a>
+						<a class="general-button teal-button button-black-text">For Facilities</a>
 				</header><!--general-template-section-->
 				<section class="training-yoga-tools-section">
 					<div class="info-dropdown">

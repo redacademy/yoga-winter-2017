@@ -1,4 +1,4 @@
-.page-template-resources-research{
+.resources-research-content{
     
     .info-heading{
         font-size:16px;
@@ -21,6 +21,20 @@
 		@include general-button;
             margin-bottom:29px;
 	}
+
+    .general-button-container{
+        bottom:auto;
+            @include desktop{
+                bottom:25px;
+                top:auto;
+        }
+    }
+
+    .page-title-header{
+        @include desktop{
+            color:#fff;
+        }
+    }
 
 
     .info-heading-subtitle{
@@ -122,6 +136,9 @@
 //Links
 
     .resources-links-container{
+        @include desktop{
+            margin-bottom:70px;
+        }
         div{
             display:flex;
             justify-content:space-between;

@@ -115,6 +115,12 @@
 	.carousel-cell.is-selected{
         padding-left: 2rem;
         padding-right: 2rem;
+			@include desktop{
+				padding-left: 5rem;
+    			padding-right: 5rem;
+				display:flex;
+				justify-content:center;
+			}
     }
 
 	.testimonal-slideshow-container{
@@ -177,6 +183,15 @@
 			margin-bottom:0;
 		}
 	}
+
+	.general-button-container{
+		top:60px;
+        @include desktop{
+            top:0rem;
+            bottom:30px;
+            margin-bottom:29px;
+        }
+    }
 
 }//Training Facilities Wrapper
 

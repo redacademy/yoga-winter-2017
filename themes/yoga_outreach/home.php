@@ -5,7 +5,7 @@
  */
 
 get_header(); ?>
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area blog-content">
 		<main id="main" class="site-main" role="main">
             <section class="article-slider">
                 <ul class="carousel main-carousel">
@@ -19,7 +19,7 @@ get_header(); ?>
                                             echo '<li class="cell-img" style="background: url('. $url.') center / cover">'; ?>
                                         <?php endif; ?>
 
-                                        <?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>
+                                        <?php the_title( sprintf( '<p>', esc_url( get_permalink() ) ), '</p>' ); ?>
                                     </div>
                                         
                                     <?php if ( 'post' === get_post_type() ) : ?>
@@ -32,19 +32,24 @@ get_header(); ?>
                         <?php endwhile; ?>
                     <?php endif; ?>
                 </ul>
-            </section class="full-article" >
+            </section>
+            <section class="full-article">
                 <?php if ( have_posts() ) : ?>   
                     <?php while ( have_posts() ) : the_post(); ?> <!--start loop-->
-                        <article id="post-<?php the_ID(); ?>" data-post="<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <?php get_the_post_thumbnail(); ?>
-                        <?php the_title( sprintf( '<h2>',( get_permalink() ) ), '</h2>' ); ?>
-                        <?php get_the_author(); ?> 
-                        <?php the_date('M. d, Y', '<h3>', '</h3>'); ?>
-                        <?php the_content(); ?>
+                        <article id="<?php the_ID(); ?>" class="post" <?php post_class(); ?>>
+                            <div class="article-head">
+                                <?php if ( has_post_thumbnail() ) : ?>
+                                    <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                                    echo get_the_post_thumbnail(); ?>
+                                <?php endif; ?>
+                                <?php the_title( sprintf( '<h2>',( get_permalink() ) ), '</h2>' ); ?>
+                            </div>
+                            <?php get_the_author_meta(); ?> 
+                            <?php the_date('M. d, Y', '<h3>', '</h3>'); ?>
+                            <?php the_content(); ?>
+                        </article>
                     <?php endwhile; ?>
                 <?php endif; ?>
-            <section>
-                img
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

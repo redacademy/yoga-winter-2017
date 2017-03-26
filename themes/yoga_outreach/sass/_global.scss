@@ -67,11 +67,14 @@ body{
 }
 
 .page-title-container{
+    position:relative;
     @include desktop{
         height:100vh;
         display:flex;
         justify-content:center;
         align-items:center;
+        position: relative;
+        top: 7rem
     }
 }
 .entry-content-page {
@@ -80,7 +83,8 @@ body{
     padding: 44px 20px;
         @include desktop{
             position: relative;
-            bottom: 180px;
+            bottom: 55px;
+            font-size:24px;
         }
 }
 
@@ -162,12 +166,10 @@ body{
 
 .general-template-section{
 	height:400px;
-	background-color:lightgreen;
 	width:100%;
-	position:relative;
-  z-index:-1;
+    z-index:-1;
     @include desktop{
-        height:642px;   
+        height:630px;   
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -175,21 +177,17 @@ body{
 
     z-index:-1;
         @include desktop{
-            height:642px;   
+            height:630px;   
         }
     }
 
-.black-text{
-    color:black;
-}
 
 .general-button-container{
 	position: relative;
     width: 100%;
-    bottom: 30px;
 		@include desktop{
 			display:flex;
-            bottom: 30px;
+            top:11rem;
 		}
 }
 
@@ -251,4 +249,18 @@ a{
     text-transform: uppercase;
     color: white;
     background-color: $accentcolor_bar;
+}
+
+.color-background{
+    height:400px;
+    width:100%;
+    background-size:cover;
+    background-color: #95afc9;
+    opacity: .5;
+    position:absolute;
+        @include desktop{
+            height: 107vh;
+            width: 100vw;
+            
+    }
 }

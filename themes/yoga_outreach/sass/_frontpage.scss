@@ -187,13 +187,15 @@
         height: 380px;
         background-color:$accentcolor_line;
         bottom: 100px;
-        right: 30px;
+        right: 7%;
         z-index:-1;
         border-radius: 8px;
+        opacity:0.8;
         @include desktop{
           width: 473px;
           height: 75px;
           right: 0;
+          opacity:0.6;
         }
       }
     }

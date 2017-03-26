@@ -1,19 +1,21 @@
-.page-template-contact-us {
+.contact-us-content {
     h1, h2, h3, h4, h5{
         margin: 0;
-
-        font-family: Raleway;
         font-weight: 300;
     }
   #site-navigation{
     .menu-main-menu-container
     a{
+      padding:500px;
       color:$darktheme_color;
     }  
   }
+
   #main{
     @include desktop{
     padding-top:200px; 
+    display:flex;
+    flex-direction: column;
     } 
   }
     .hero-text {
@@ -47,21 +49,57 @@
             font-size: 2rem;
         }
     }
-
+    .contactinfo-container{
+      @include desktop{
+      display:flex;
+      margin-bottom:290px;
+      }
+    }
+    .email-inquiries{
+      @include desktop{
+      flex-basis: 100%;
+      }
+    }
+    .contact-container{
+      @include desktop{
+      flex-direction: column;
+      }
+    }
+    .emailinfo-section{
+      @include desktop{
+      flex-basis: 50%;
+      align-self: flex-start;
+      }
+    }
+    .info-section{
+      background-color: $lighttheme_color;
+      @include desktop{
+        max-width:401px;
+        flex-basis: 50%;
+        background-color:#C2DCE4;
+        height:320px;
+        border-radius:8px;
+        z-index:-1;
+      }
+      .info-dropdown{
+        @include desktop{
+          background-color: transparent;
+          padding:0;
+        }
+      }
+    }
     .email-inquiries {
         display: flex;
         flex-direction: column;
         align-items: center;
-
         padding: 40px 15px 10px;
-
         color: $lighttext_color;
-    
-        h2 {
+          h2 {
             font-size: 1.5rem;
             padding-bottom: 21px;
              @include desktop{
               font-size: 40px;
+              color:#4A4A4A;
             }
         }
 
@@ -70,6 +108,8 @@
             padding-bottom: 8px;
             @include desktop{
               font-size: 24px;
+              color:#000;
+              padding-bottom:22px;
             }
         }
 
@@ -114,6 +154,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include desktop{
+          height: auto;
+        }
 
         #hideshow{
             border: none;
@@ -127,6 +170,9 @@
         h3 {
             font-weight: bold;
             font-size: 1.2rem;
+              @include desktop{
+                font-size:24px;
+              }
         }
 
         span {
@@ -145,4 +191,44 @@
             font-weight: lighter;
         }
     }
-}
+
+    .padding-on-sides{
+        padding:0 15px;
+            @include desktop{
+              padding:0 15px;
+            }
+    }
+
+    .info-text{
+        @include desktop{
+            font-size:24px;
+        }
+    }
+
+    .email-info{
+      margin-bottom:20px;
+          @include desktop{
+              margin-bottom:34px;
+              font-size:20px;
+                h5{
+                  @include desktop{
+                    font-weight:bold;
+                  }
+                }
+          }
+    }
+
+    .emailinfo-section{
+      padding-left:15px;
+        @include desktop{
+          padding-left:10%;
+        }
+    }
+
+  .info-dropdown{
+      @include desktop{
+          margin-top:25px;
+      }
+  }
+
+}//Contact-Us Wrapper

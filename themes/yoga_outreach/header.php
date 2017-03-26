@@ -26,7 +26,12 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<span class="responsive-menu">
+					   <div id="header-logo">
+            <div class="logo-image">
+              <?php show_easylogo(); ?>
+            </div>
+					</div>
+          <span class="responsive-menu">
 				    <i class="fa fa-bars" aria-hidden="true"></i>
 		    	</span>
             <div class="menu-dropdown">
@@ -57,40 +62,11 @@
                   </fieldset>
                 </form>
                 <button class="signin-button-dropdown"><a href="">sign in</a></button>
-                <li>
-                  <h2>Training</h2>
-                  <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
-                </li>
-                <li>
-                  <h2>Get involed</h2>
-                  <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
-                </li>
-                <li>
-                  <h2>Events</h2>
-                </li>
-                <li>
-                  <h2>About us</h2>
-                  <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
-                </li>
-                <li>
-                  <h2>Resources</h2>
-                  <img class="cross" src="<?php echo get_template_directory_uri(); ?>/images/cross_icon.png"/>
-                </li>
-                <li>
-                  <h2>Blog</h2>
-                </li>
-              </ul>
+               </ul>
             </div>
-      
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
+       
 
-              <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
- 
-          <div id="header-logo">
-            <div class="logo-image">
-              <?php show_easylogo(); ?>
-            </div>
-					</div>
-          
           <div class="signin-section">
             <div class="wrapper">
             <form class="form-signin">       
@@ -105,8 +81,8 @@
             </form>
           </div>
           <button class="signin-button"><a href="">sign in
-    <?php if (is_user_logged_in()) : ?>
-    <!--<a href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
+    <!--<?php if (is_user_logged_in()) : ?>
+  <a href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
     <?php endif;?>
     <?php $current_user = wp_get_current_user();
 if ( is_user_logged_in() ) {
