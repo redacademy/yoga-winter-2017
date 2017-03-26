@@ -124,7 +124,7 @@
 }
 
 .forms-header{
-	height: 30vh;
+	height: 38vh;
 }
 
 /* Core Scholarship Training */
@@ -250,6 +250,24 @@
 
 .gform_confirmation_message{
 	padding-top: 10%;
+	text-align: center;
+
+	.main-button{
+		@include general-button; 
+		margin: 25px auto;
+		&.grey-button{
+			background-color: $mainbutton_color;
+			a{
+				color: $base_color;
+			}
+			&:hover{
+				background-color: $brightbutton_color;
+				a{
+					color: $darktext_color;
+				}
+			}
+		}
+	}
 	
 	.gform_button{
 		@include general-button;
