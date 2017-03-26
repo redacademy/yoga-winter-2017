@@ -2,64 +2,167 @@
     text-align: center;
     color: $lighttext_color;
 
-    .general-button-container {
-        height: 130px;
-        bottom: 17px;
-        
-        @include flex-column;
-        justify-content: space-around;
-        align-items: center;
+    .custom-hero-image {
+        background-size: 300%;
+        background-position: left 0px top -147px;
+        @include desktop {
+            position: relative;
+        }
+    }
 
-        .main-button {  // Style for a href buttons
-            height: 44px;
-            width: 230px;
-            border-radius: 8px;
-            padding: 14px 30px;
-            font-size: 0.8rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: white;
-            background-color: $accentcolor_bar;
+    .entry-content-page {
+        height: 410px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @include desktop {
+            height: 260px;
+            padding: 0px 186px;
+            position: absolute;
+            bottom: 60px;
+        }
+    }
+
+    .page-title-header {
+        @include desktop {
+            color: $basetext_color;
+        }
+    }
+
+    .general-button-container {
+        height: 109px;
+        bottom: 17px;
+        @include flex-column;
+        justify-content: space-between;
+        align-items: center;
+        @include desktop {
+            flex-direction: row;
+            top: 0;
+        }
+    }
+
+    .container {
+        section {
+            .desktop-button {
+                display: none;
+            }
+        }
+        @include desktop { // Styles only when hits desktop view.
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+
+            section {
+                height: 1108px;
+                width: 100%;
+                background-color: $logo_color;
+                @include flex-column;
+                align-items: center;
+                
+                p {
+                    font-size: 1.5rem;
+                    order: 3;
+                }
+                h3 {
+                    font-size: 2.5rem;
+                    background-color: transparent;
+                    order: 2;
+                    padding: 75px 0 53px 0;
+                }
+                .desktop-button {
+                    order: 4;
+                    width: 250px;
+                    background-color: $formtheme_color;
+                    text-transform: uppercase;
+                    display: block;
+                }
+            }
+
+            .info-container { // Div for infor-field when hidden or desktop
+                order: 1;
+                height: 383px;
+                width: 100%;
+                padding: 0 102px;
+                text-align: left;
+                display: flex !important; 
+                justify-content: space-between;
+                flex-direction: row;
+                background-color: $base_color;
+            }
+
+            .photo-frame {
+                width: 253px;
+                height: 253px;
+                border-radius: 50%;
+                background-color: $accentcolor_bar;
+            }
+
+            .list {
+                line-height: 42px;
+                flex-direction: column-reverse;
+                p {
+                    font-size: 2rem;
+                }
+            }
+
+            .description-mobile {
+                display: none;
+            }
+
+            .description-desktop {
+                display: block;
+                width: 830px;
+                margin-bottom: 51px;
+            }
         }
     }
 
     .subtext {
-        h2 {
-            font-size: 1.4rem;
-            padding-bottom: 22px;
-        }
         font-size: 0.8rem;
         line-height: 24px;
-        margin: 40px 23px;
-    }
-
-    .mid-sub-text {
-        position: relative;
-        .accent-name-shape{
-            width: 200px;
-            height: 25px;
-            border-radius: 8px;
-            background-color: $accentcolor_bar2;
-            position: absolute;
-            bottom: 50px;
-            left: 35px;
-            z-index: -1
+        margin: 40px 30px;
+        @include desktop {
+            height: 261px;
+            width: 830px;
+            margin: 90px 0;
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            p {
+                font-size: 1.5rem;
+                line-height: 35px;
+                width: 50%;
+            }
+            .photo-frame {
+                height: 180px;
+                width: 373.5px;
+                border-radius: 8px;
+                background-color: $accentcolor_bar;
+            }
         }
-    }
-    .bottom-sub-text {
-        background-color: $accentcolor_bar2;
-        padding: 23px;
 
-        p {
-            line-height: 16px;
-            font-size: 0.7rem;
-            margin: 0
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 100;
+            padding-bottom: 22px;
+            @include desktop {
+                font-size: 2rem;
+                width: 100%;
+            }
         }
     }
 
     .info-dropdown {
-        height: 100%;
         text-align: left;
+        @include desktop {
+            background-color: transparent;
+            font-size: 2.2rem;
+            text-align: center;
+            width: 830px;
+            padding: 138px 0 71px;
+        }
     }
 
     .info-field {
@@ -68,46 +171,209 @@
         text-align: left;
         padding: 0;
 
-        ul {
-            margin: 0 0 .5rem 1rem;
-
-            li {
-                padding: 5px 0;
-                font-weight: 100;
-            }
+        p{
+            padding: 15px;
+        }
+        .desktop-button {
+            display: none;
+        }
+    }
+    .training-contain {
+        @include desktop {
+            display: flex !important; 
+            flex-direction: column;
+            align-items: center;
         }
 
         p {
-            padding: 15px;
+            @include desktop {
+                width: 830px;
+                margin-bottom: 47px;
+                text-align: left;
+                font-size: 1.5rem;
+            }
+        }
+        
+        .desktop-button {
+            width: 250px;
+            margin-bottom: 100px;
+            background-color: $accentcolor_line;
+            text-transform: uppercase;
+        }
+    }
+
+    ul {
+        margin: 0 0 .5rem 1rem;
+        @include desktop {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 5px 0;
+            font-weight: 100;
+            @include desktop {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+    .description-desktop {
+        display: none;
+    }
+
+    .mid-sub-text {
+        @include desktop {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: $another_color;
+        }
+        position: relative;
+        p {
+            @include desktop {
+                width: 830px;
+                height: 100%;
+                font-size: 1.5rem;
+                line-height: 44px;
+                text-align: center;
+                margin: 0;
+                padding: 40px;
+            }
+        }
+        .accent-name-shape{
+            width: 200px;
+            height: 25px;
+            border-radius: 8px;
+            background-color: $accentcolor_bar2;
+            position: absolute;
+            bottom: 50px;
+            left: 35px;
+            z-index: -1;
+            @include desktop {
+                display: none;
+            }
+        }
+    }
+
+    section .desktop-article {
+        @include desktop {
+            width: 1024px;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            background-color: $accentcolor_bar;
         }
     }
 
     .article {
         text-align: center;
         padding: 30px 0px;
+        @include desktop {
+            width: 50%;
+            height: 100%;
+            padding: 0;
+            color: $darktext_color;
+            text-align: center;
+            @include flex-column;
+            align-items: center;
+        }
 
         h2 {
             font-size: 1.6rem;
             font-weight: 100;
             padding: 0 50px 10px;
+            @include desktop {
+                font-size: 2.2rem;
+                padding: 35px;
+            }
         }
 
-        .imgcontain {
-            overflow: hidden;
-            height: 245px;
-            width: 100%;
-            margin-bottom: 30px;
+        .read-more {
+            font-size: 0.6rem;
+            color: $darktext_color;
+        }
+        .more-text {
+            color: $lighttext_color;
+        }
+    }
 
-            img {
-                height: 100%;
+    .article:nth-child(even) {
+        background-color: $base_color;
+        @include desktop {
+            background-color: $logo_color;
+        }
+    }
+
+    .img-contain {
+        overflow: hidden;
+        height: 245px;
+        width: 100%;
+        margin-bottom: 30px;
+        @include desktop {
+            height: 200px;
+            width: 322px;
+        }
+
+        img {
+            width: 100%;
+            @include desktop {
+                border-radius: 8px;
+            }
+        }
+    }
+
+    .article-text {
+        @include desktop {
+            display: flex;
+            justify-content: center;
+        }
+        p {
+            @include desktop {
+                font-size: 1rem;
+                width: 343px;
+                text-align: left;
+            }
+        }
+        a.read-more{
+            @include desktop {
+                text-align: center;
+            }
+        }
+    }
+
+    .bottom-sub-text {
+        background-color: $accentcolor_bar2;
+        padding: 23px;
+        @include desktop {
+            width: 830px;
+            height: 168px;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            padding: 31px 0;
+        }
+
+        .photo-frame {
+            display: none;
+            @include desktop {
+                display: block;
+                height: 113px;
+                width: 101px;
+                border-radius: 8px;
             }
         }
 
         p {
-            padding-bottom: 20px;
+            line-height: 16px;
+            font-size: 0.7rem;
+            margin: 0;
+            @include desktop {
+                width: 685px;
+                font-size: 1rem;
+                line-height: 22px;
+            }
         }
-    }
-    .article:nth-child(even) {
-        background-color: $base_color;
     }
 }

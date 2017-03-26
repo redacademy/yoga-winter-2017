@@ -3,7 +3,6 @@
 }
 
 .info-dropdown {
-    height: 60px;
     padding: 15px;
     background-color: $lighttheme_color;
     display: flex;
@@ -19,6 +18,7 @@
     }
     span {
         font-size: 2.5rem;
+        margin-left: 45px;
         color: $accentcolor_line;
         font-family:"montserrat";
         cursor:pointer;
