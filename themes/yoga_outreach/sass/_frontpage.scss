@@ -61,11 +61,11 @@
       box-shadow:none;
       border:none;
       margin-top: 80px;
+      border-radius: 8px;
       @include desktop{
         width: 150px;
         height: 45px;
         background-color: #B6EAFF;
-        border-radius: 8px;
       }
       a {
         color: white;

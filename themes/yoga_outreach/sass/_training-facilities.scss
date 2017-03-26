@@ -63,6 +63,10 @@
 					margin-top:10px;
 				}
 	}
+  .content-container{
+    max-width: 1020px;
+    margin: 0 auto;
+  }
 
 	.info-dropdown{
 		background-color:#fff;
@@ -132,13 +136,16 @@
 		height:100px;
 		background-color:#EBE5D8;
 }
-	.training-list-item{
-		background-color:#95afc9;
-	}
+.traininglist-container{
+    background-color:#95afc9;
+}
+.training-list{
+    max-width: 1020px;
+    margin: 0 auto;
+}
 
 	.info-list-content, .info-list-title{
 		background-color:#95afc9;
-		margin-left:0;
 	}
 
 

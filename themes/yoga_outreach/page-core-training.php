@@ -9,7 +9,7 @@ get_header(); ?>
 			<header class = "general-template-section custom-hero-image">
 				<div class ="page-title-container">
 				<h1 class ="page-title-header"><?php the_title(); ?></h1>
-				</div>
+				
 				<?php
                 while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
                     <div class="entry-content-page">
@@ -23,6 +23,7 @@ get_header(); ?>
 					<a href="#" class="general-button teal-button black-text">Core Training</a>
 					<a href="#" class="general-button grey-button">For Facilities</a>
 				</div><!--general-button-container-->
+      </div><!--page-title-container-->
 			</header><!--general-template-section core-hero-->
             <section class="section-15px-padding">
 				<div class="core-h3-container">
@@ -44,7 +45,7 @@ get_header(); ?>
 					<p class="dark-second-para"><?php echo CFS()->get('second_core_para'); ?></p>
 				</div><!--main-paragraph-container-->
 			</section><!--section-15px-padding-->
-			<div class="testimonal-container">
+			<div class="testimonial-container">
 				<ul class="testimonial-list main-carousel">
 					<?php
 					$testimonials = CFS()->get('testimonial_list');
@@ -109,35 +110,37 @@ get_header(); ?>
 					</table>
 				</section><!--classroom-dates-section-->
 			</div><!--table-section-->
-			<ul class="training-list">
-            	<?php
-        		$infoItems = CFS()->get('yoga_info_list');
-				// if (!empty($infoItems)): FIX TMR
-        		foreach ( $infoItems as $infoItem ):
-                $infoPDF = $infoItem ['list_file_upload'];
-                $infoContent = $infoItem ['list_content'];
-				?>
-                <li class="training-list-item">
-					<div id="training-pdf-container">
-						<?php if(!empty($infoPDF)): ?>
-						<h3><?php echo $infoItem ['list_title'];?></h3>
-                    	<a href ="<?php echo $infoItem ['list_file_upload'];?>">PDF</a>
-					</div><!--training-pdf-container-->
-					<?php 
-					endif; 
-					?>
-                    <?php if(!empty($infoContent)): ?>
-					<div class ="info-dropdown">
-						<h3 class="yoga-info-title"><?php echo $infoItem ['list_title']; ?></h3>
-						<span>+</span>
-					</div><!--tools-first-heading-->
-					<div class="info-field">
-                    	<p class="info-list-content"><?php echo $infoItem ['list_content']; ?></p>
-					</div><!--info-field-->
-					<?php endif; ?>
-                </li><!--training-list-item-->
-                <?php endforeach; ?>
-            </ul>
+      <div class="traininglist-container">
+        <ul class="training-list">
+                <?php
+              $infoItems = CFS()->get('yoga_info_list');
+          // if (!empty($infoItems)): FIX TMR
+              foreach ( $infoItems as $infoItem ):
+                  $infoPDF = $infoItem ['list_file_upload'];
+                  $infoContent = $infoItem ['list_content'];
+          ?>
+                  <li class="training-list-item">
+            <div id="training-pdf-container">
+              <?php if(!empty($infoPDF)): ?>
+              <h3><?php echo $infoItem ['list_title'];?></h3>
+                        <a href ="<?php echo $infoItem ['list_file_upload'];?>">PDF</a>
+            </div><!--training-pdf-container-->
+            <?php 
+            endif; 
+            ?>
+                      <?php if(!empty($infoContent)): ?>
+            <div class ="info-dropdown">
+              <h3 class="yoga-info-title"><?php echo $infoItem ['list_title']; ?></h3>
+              <span>+</span>
+            </div><!--tools-first-heading-->
+            <div class="info-field">
+                        <p class="info-list-content"><?php echo $infoItem ['list_content']; ?></p>
+            </div><!--info-field-->
+            <?php endif; ?>
+                  </li><!--training-list-item-->
+                  <?php endforeach; ?>
+        </ul>
+      </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
