@@ -45,18 +45,20 @@ get_header(); ?>
                             
 
                             <div class="info-field info-container">
-                                <div class="photo-frame"></div>
-                                <div class="list">
-                                    <p class="list-title"><?php echo CFS()->get( 'list_title' ); ?>:</p>
-                                    <?php if(!empty($items)): ?>
-                                        <?php foreach( $items as $item ): ?>
-                                            <ul>
-                                                <li><?php echo $item[ 'list_item' ]; ?></li>
-                                            </ul>
-                                        <?php endforeach ?>
-                                    <?php endif; ?>
-                                </div> <!--class list-->
-                                <p class="description-mobile"><?php echo CFS()->get( 'dropdown_description' ); ?></p>
+                                <section class="desktop-container">
+                                    <div class="photo-frame"></div>
+                                    <div class="list">
+                                        <p class="list-title"><?php echo CFS()->get( 'list_title' ); ?>:</p>
+                                        <?php if(!empty($items)): ?>
+                                            <?php foreach( $items as $item ): ?>
+                                                <ul>
+                                                    <li><?php echo $item[ 'list_item' ]; ?></li>
+                                                </ul>
+                                            <?php endforeach ?>
+                                        <?php endif; ?>
+                                    </div> <!--class list-->
+                                    <p class="description-mobile"><?php echo CFS()->get( 'dropdown_description' ); ?></p>
+                                </section>
                             </div>
                             <p class="description-desktop"><?php echo CFS()->get( 'dropdown_description' ); ?></p>
                             <a class="primary-button desktop-button" href="">become a facility partner</a>

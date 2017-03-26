@@ -1542,7 +1542,9 @@ footer {
     background-position: left 0px top -147px; }
     @media (min-width: 720px) {
       .about-us-content .custom-hero-image {
-        position: relative; } }
+        position: relative;
+        -ms-flex-align: center;
+            align-items: center; } }
   .about-us-content .entry-content-page {
     height: 410px;
     display: -ms-flexbox;
@@ -1618,10 +1620,17 @@ footer {
           text-transform: uppercase;
           display: block; }
       .about-us-content .container .info-container, .about-us-content .event-content .container2 .info-container, .event-content .about-us-content .container2 .info-container {
+        width: 100vw;
+        background-color: #fff;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-pack: center;
+            justify-content: center; }
+      .about-us-content .container .desktop-container, .about-us-content .event-content .container2 .desktop-container, .event-content .about-us-content .container2 .desktop-container {
         -ms-flex-order: 1;
             order: 1;
         height: 383px;
-        width: 100%;
+        width: 1024px;
         padding: 0 102px;
         text-align: left;
         display: -ms-flexbox !important;
@@ -1630,7 +1639,7 @@ footer {
             justify-content: space-between;
         -ms-flex-direction: row;
             flex-direction: row;
-        background-color: #fff; }
+        background-color: transparent; }
       .about-us-content .container .photo-frame, .about-us-content .event-content .container2 .photo-frame, .event-content .about-us-content .container2 .photo-frame {
         width: 253px;
         height: 253px;
@@ -1766,6 +1775,7 @@ footer {
           display: none; } }
   @media (min-width: 720px) {
     .about-us-content section .desktop-article {
+      position: relative;
       width: 1024px;
       height: 100%;
       display: -ms-flexbox;
@@ -1775,8 +1785,7 @@ footer {
       background-color: #94bfd1; } }
   .about-us-content .article {
     text-align: center;
-    padding: 30px 0px;
-    position: fixed; }
+    padding: 30px 0px; }
     @media (min-width: 720px) {
       .about-us-content .article {
         width: 50%;
