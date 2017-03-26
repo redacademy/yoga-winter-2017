@@ -3968,18 +3968,18 @@ object {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
-    height: 400px; }
+    height: 80vh; }
     @media (min-width: 720px) {
       .home .hero-banner {
-        height: 642px; } }
+        height: 100vh; } }
     .home .hero-banner .herobanner-text {
-      margin: 70px auto;
+      margin: 35% auto;
       bottom: 7%;
       left: 10%;
       color: white; }
       @media (min-width: 720px) {
         .home .hero-banner .herobanner-text {
-          margin: 270px auto; } }
+          margin: 28% auto; } }
       .home .hero-banner .herobanner-text h2 {
         text-transform: capitalize;
         font-size: 24px; }

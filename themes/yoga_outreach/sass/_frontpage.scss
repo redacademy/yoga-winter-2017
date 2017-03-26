@@ -23,17 +23,17 @@
   .hero-banner{
     display: flex;
     justify-content: center;
-    height: 400px;
+    height:80vh;
     @include desktop{
-      height: 642px;
+    height: 100vh;
     }
     .herobanner-text{
-      margin: 70px auto;
+      margin: 35% auto;
       bottom: 7%;
       left: 10%;
       color: white;
       @include desktop{
-        margin: 270px auto;
+        margin: 28% auto;
       }
       h2{
         text-transform: capitalize;
