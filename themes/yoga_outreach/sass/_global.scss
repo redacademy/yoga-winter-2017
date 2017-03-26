@@ -166,11 +166,11 @@ body{
 }
 
 .general-template-section{
-	height:400px;
+	height:80vh;
 	width:100%;
     z-index:-1;
     @include desktop{
-        height:630px;   
+        height:100vh;  
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -253,7 +253,7 @@ a{
 }
 
 .color-background{
-    height:400px;
+    height:80vh;
     width:100%;
     background-size:cover;
     background-color: #95afc9;
