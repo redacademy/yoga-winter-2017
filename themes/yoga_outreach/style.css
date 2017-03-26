@@ -724,7 +724,8 @@ body {
       color: #4a4a4a; }
 
 .white-button {
-  background-color: #fff; }
+  background-color: #fff;
+  color: #4a4a4a; }
 
 .dark-button {
   background-color: #6b747d; }
@@ -1856,7 +1857,7 @@ footer {
     background-color: #fff; }
 
 .forms-header {
-  height: 30vh; }
+  height: 38vh; }
 
 /* Core Scholarship Training */
 #gform_7 .gform_title, #gform_7 .gform_description {
@@ -2000,7 +2001,39 @@ footer {
   background-color: #fff; }
 
 .gform_confirmation_message {
-  padding-top: 10%; }
+  padding-top: 10%;
+  text-align: center; }
+  .gform_confirmation_message .main-button {
+    width: 230px;
+    height: 44px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none;
+    margin: 25px auto; }
+    .gform_confirmation_message .main-button.grey-button {
+      background-color: #94bfd1; }
+      .gform_confirmation_message .main-button.grey-button a {
+        color: #fff; }
+      .gform_confirmation_message .main-button.grey-button:hover {
+        background-color: #6cfffe; }
+        .gform_confirmation_message .main-button.grey-button:hover a {
+          color: #4a4a4a; }
   .gform_confirmation_message .gform_button {
     width: 230px;
     height: 44px;
@@ -3813,18 +3846,24 @@ object {
     border: none;
     font-family: 'raleway',sans-serif;
     font-size: 14px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
     @media (min-width: 720px) {
       .volunteer-content .site-main .small-button, .partner-facility-content .site-main .small-button, .support-us-content .site-main .small-button {
         width: 230px; } }
-    .volunteer-content .site-main .small-button a, .partner-facility-content .site-main .small-button a, .support-us-content .site-main .small-button a {
-      color: white;
-      text-decoration: none; }
-  .volunteer-content .site-main #volunteer .small-button, .partner-facility-content .site-main #volunteer .small-button, .support-us-content .site-main #volunteer .small-button {
-    margin-bottom: 26px; }
-  .volunteer-content .site-main .white-button a, .partner-facility-content .site-main .white-button a, .support-us-content .site-main .white-button a {
-    color: #6b747d;
-    text-decoration: none; }
+  .volunteer-content .site-main .white-button, .partner-facility-content .site-main .white-button, .support-us-content .site-main .white-button {
+    text-decoration: none;
+    color: #4a4a4a; }
+    .volunteer-content .site-main .white-button:visited, .partner-facility-content .site-main .white-button:visited, .support-us-content .site-main .white-button:visited {
+      color: #4a4a4a; }
   .volunteer-content .site-main .button-wrap, .partner-facility-content .site-main .button-wrap, .support-us-content .site-main .button-wrap {
     display: -ms-flexbox;
     display: flex;
@@ -3869,7 +3908,7 @@ object {
       max-width: 1020px; }
     @media (min-width: 720px) {
       .volunteer-content .site-main .entry-header, .partner-facility-content .site-main .entry-header, .support-us-content .site-main .entry-header {
-        padding-top: 15%; } }
+        padding-top: 40vh; } }
   .volunteer-content .site-main .drop-down-info, .partner-facility-content .site-main .drop-down-info, .support-us-content .site-main .drop-down-info {
     padding: 0; }
     .volunteer-content .site-main .drop-down-info p, .partner-facility-content .site-main .drop-down-info p, .support-us-content .site-main .drop-down-info p {

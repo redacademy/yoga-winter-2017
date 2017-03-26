@@ -45,21 +45,19 @@
         .small-button{
             @include small-button;
             margin: 0 auto;
-            a{
-                color: white;
-                text-decoration: none;
-            }
+            color: $base_color;
+            text-decoration: none;
+            padding:15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        #volunteer{
-            .small-button{
-                margin-bottom: 26px;
-            }
-        }
         .white-button{
-            a{
-                color: $lighttext_color;
-                text-decoration: none;
+            text-decoration: none;
+            color: $darktext_color;
+            &:visited{
+                color: $darktext_color;
             }
         }
         .button-wrap{
@@ -102,7 +100,7 @@
                 max-width: 1020px;
             }
             @include desktop {
-                padding-top: 15%;
+                padding-top: 40vh;
             }
         }
 
