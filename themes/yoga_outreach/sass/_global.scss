@@ -2,6 +2,14 @@
     font-family:'raleway',sans-serif;
 }
 
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
 .info-dropdown {
     height: 60px;
     padding: 15px;
