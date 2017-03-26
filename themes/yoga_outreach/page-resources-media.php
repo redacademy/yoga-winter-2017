@@ -7,6 +7,7 @@ get_header(); ?>
 	<div id="primary" class="content-area resources-media-content">
 		<main id="main" class="site-main" role="main">
 			<header class="general-template-section custom-hero-image">
+				<div class="color-background"></div>
 				<h1 class="page-title-header"><?php the_title(); ?></h1>
 				<?php
                 while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->

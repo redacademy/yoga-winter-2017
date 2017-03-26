@@ -59,6 +59,7 @@
 }
 
 .page-title-container{
+    position:relative;
     @include desktop{
         height:100vh;
         display:flex;
@@ -157,11 +158,10 @@
 
 .general-template-section{
 	height:400px;
-	background-color:lightgreen;
 	width:100%;
     z-index:-1;
     @include desktop{
-        height:642px;   
+        height:630px;   
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -169,7 +169,7 @@
 
     z-index:-1;
         @include desktop{
-            height:642px;   
+            height:630px;   
         }
     }
 
@@ -241,4 +241,18 @@ a{
     text-transform: uppercase;
     color: white;
     background-color: $accentcolor_bar;
+}
+
+.color-background{
+    height:400px;
+    width:100%;
+    background-size:cover;
+    background-color: #95afc9;
+    opacity: .5;
+    position:absolute;
+        @include desktop{
+            height: 100vh;
+            width: 100vw;
+            
+    }
 }

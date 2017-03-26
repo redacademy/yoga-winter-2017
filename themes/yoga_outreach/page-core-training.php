@@ -79,7 +79,7 @@ get_header(); ?>
 						</tr>
 					</table>
 					<p>Now you can take the training online in an eight week format.</p>
-					<p>This 8 week online training is comprised of weekly videos, reading, assignments and online interaction. Each week is a new section and will build on the previous . . .</p>
+					<p><?php echo CFS()->get('training_dates_paragraph')?></p>
 				</section>
 				<section class="classroom-dates-section section-15px-padding">
 					<div class="core-training-text-image-container">
