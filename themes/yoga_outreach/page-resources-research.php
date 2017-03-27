@@ -11,8 +11,8 @@ get_header(); ?>
 				<div class="color-background"></div>
 				<?php
                 while ( have_posts() ) : the_post(); ?>
-				<h1 class="page-title-header"><?php the_title(); ?></h1> <!--the_content() works only inside a WP Loop -->
-                <div class="entry-content-page">
+				<div class="entry-content-page">
+					<h1 class="page-title-header"><?php the_title(); ?></h1> <!--the_content() works only inside a WP Loop -->
                 	<?php the_content(); ?> <!-- Page Content -->
 					<div class="general-button-container">
 						<a class="general-button teal-button black-text">Research</a>

@@ -681,13 +681,14 @@ body {
   padding-top: 66px;
   font-weight: 300;
   font-size: 24px;
-  position: relative; }
+  position: relative;
+  bottom: 80px; }
   @media (min-width: 720px) {
     .page-title-header, .entry-content-page {
       font-size: 40px;
       padding-top: 0;
       padding-bottom: 0;
-      top: 13rem; } }
+      top: -20px; } }
 
 .page-title-container {
   position: relative; }
@@ -706,7 +707,8 @@ body {
 .entry-content-page {
   font-size: 1rem;
   padding: 44px 0px;
-  position: relative; }
+  position: relative;
+  top: 7rem; }
   @media (min-width: 720px) {
     .entry-content-page {
       top: 12rem;
@@ -1593,7 +1595,9 @@ footer {
       .about-us-content .custom-hero-image {
         position: relative;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center;
+        background-size: 100%;
+        background-position: left 0 top 0; } }
   .about-us-content .entry-content-page {
     height: 410px;
     display: -ms-flexbox;
@@ -1828,17 +1832,13 @@ footer {
       position: relative;
       width: 1024px;
       height: 100%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row;
       background-color: #94bfd1; } }
   .about-us-content .article {
     text-align: center;
     padding: 30px 0px; }
     @media (min-width: 720px) {
       .about-us-content .article {
-        width: 50%;
+        width: 100%;
         height: 100%;
         padding: 0;
         color: #4a4a4a;
@@ -1862,6 +1862,9 @@ footer {
       color: #4a4a4a; }
     .about-us-content .article .more-text {
       color: #6b747d; }
+      @media (min-width: 720px) {
+        .about-us-content .article .more-text {
+          color: #4a4a4a; } }
   .about-us-content .article:nth-child(even) {
     background-color: #fff; }
     @media (min-width: 720px) {
@@ -1890,7 +1893,7 @@ footer {
   @media (min-width: 720px) {
     .about-us-content .article-text p {
       font-size: 1rem;
-      width: 343px;
+      max-width: 830px;
       text-align: left; } }
   @media (min-width: 720px) {
     .about-us-content .article-text a.read-more {
@@ -2289,6 +2292,9 @@ footer {
   max-width: 100vw; }
 
 /* Module Quizzes */
+.page-template-quiz-template {
+  min-height: 100vh; }
+
 .entry-content .gform_wrapper .module-quiz {
   max-width: 1024px;
   width: 100%;
@@ -2381,7 +2387,7 @@ footer {
 .page-template-quiz-template {
   background: linear-gradient(rgba(216, 216, 216, 0.6), rgba(182, 234, 255, 0.7)), url(../../images/deniz-altindas-38128.jpg) no-repeat center top;
   background-size: cover, cover; }
-  .page-template-quiz-template header {
+  .page-template-quiz-template header, .page-template-quiz-template footer {
     display: none; }
   .page-template-quiz-template .site-main, .page-template-quiz-template .entry-content, .page-template-quiz-template .module-quiz_wrapper {
     margin: 0 auto;
@@ -2759,14 +2765,14 @@ a:hover, a:active {
   color: #fff; }
   @media (min-width: 720px) {
     .modules-home-content .header-title {
-      color: #6B747D;
+      color: #4a4a4a;
       max-width: 100%;
       font-size: 40px;
       margin-bottom: 46px; } }
 
 @media (min-width: 720px) {
   .modules-home-content .header-subtitle {
-    color: #6B747D;
+    color: #4a4a4a;
     font-weight: 100;
     display: block;
     font-size: 24px;

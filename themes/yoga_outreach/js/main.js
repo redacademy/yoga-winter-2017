@@ -87,6 +87,7 @@
     // Changes radio buttons on forms
     $( '.gfield_radio li label' ).prepend( '<span></span>');
 
+
     // Blog Page on click cell shows article
     $('.carousel-cell').on('click', function(e){
       e.preventDefault();
@@ -96,7 +97,6 @@
       $('#' + id).show();
     });
 
-    // Shows first blog post default
     $('.post:first-child').show();
 
     // Letter Count for read more text 
@@ -127,6 +127,15 @@
       }
     }
     $(window).resize(containRemove);
+
+    function showText(){
+      var len = $('.dropdown-paragraph').length;
+      if(len > 10){
+        $(this).text($(this).text().substr(0,10)+'..');
+      }
+    }
+
+    showText();
     
 
 })(jQuery); 
