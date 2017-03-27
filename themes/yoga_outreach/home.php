@@ -53,8 +53,8 @@ get_header(); ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <div class="button-container">
-                    <button type="">Previous article</button>
-                    <button type="">Next article</button>
+                    <button class="blog-prev-button" type="">Previous article</button>
+                    <button class="blog-next-button" type="">Next article</button>
                 </div>
             </section>
 		</main><!-- #main -->

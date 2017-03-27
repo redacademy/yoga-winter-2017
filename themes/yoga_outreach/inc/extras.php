@@ -73,7 +73,7 @@ function yoga_formstemplate_styles() {
     }
 
     $hero_css = ".custom-hero-image {
-        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),url({$image}) no-repeat center bottom;
+        background: url({$image}) no-repeat center;
         background-size: cover, cover;
         }"; 
     wp_add_inline_style( 'yoga-outreach-style', $hero_css );
@@ -101,10 +101,7 @@ add_filter( 'get_the_archive_title', 'yoga_modify_modules_archive_title');
  */
 function yoga_change_sort_order($query){
     if(is_post_type_archive()):
-        //If you wanted it for the archive of a custom post type use: is_post_type_archive( $post_type )
-        //Set the order ASC or DESC
         $query->set( 'order', 'ASC' );
-        //Set the orderby
         $query->set( 'orderby', 'title' );
     endif;    
 };

@@ -2228,7 +2228,7 @@ footer {
     background-color: #fff; }
 
 .forms-header {
-  height: 38vh; }
+  height: 40vh; }
 
 /* Core Scholarship Training */
 #gform_7 .gform_title, #gform_7 .gform_description {
@@ -2375,7 +2375,6 @@ footer {
   background-color: #fff; }
 
 .gform_confirmation_message {
-  padding-top: 10%;
   text-align: center; }
   .gform_confirmation_message .main-button {
     width: 230px;
@@ -4400,6 +4399,8 @@ object {
     margin-bottom: 26px; }
     .volunteer-content .site-main .main-button.clear-button, .partner-facility-content .site-main .main-button.clear-button, .support-us-content .site-main .main-button.clear-button {
       border: 1px solid white; }
+      .volunteer-content .site-main .main-button.clear-button:hover, .partner-facility-content .site-main .main-button.clear-button:hover, .support-us-content .site-main .main-button.clear-button:hover {
+        color: #4a4a4a; }
     @media (min-width: 720px) {
       .volunteer-content .site-main .main-button, .partner-facility-content .site-main .main-button, .support-us-content .site-main .main-button {
         margin-bottom: 35px; } }
