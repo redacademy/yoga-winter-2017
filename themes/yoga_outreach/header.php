@@ -63,12 +63,10 @@
                     </label>
                   </fieldset>
                 </form>
-                <!--<button class="signin-button-dropdown"><a href="">sign in</a></button>-->
                </ul>
                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
             </div>
-         
-
+        
           <div class="signin-section">
             <div class="wrapper">
             <form class="form-signin">       
@@ -92,9 +90,12 @@ if ( is_user_logged_in() ) {
 } else {
     echo 'Welcome, visitor!';
 }?>-->
-</a></button>
+          </a></button>
           </div>
-          
+              <div class="mainmenu-list">
+                <i class="fa fa-search desktop-search"></i>
+                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
+            </div>
         </nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

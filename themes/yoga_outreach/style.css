@@ -912,20 +912,48 @@ p {
         order: 3; }
     @media (min-width: 720px) {
       #site-navigation .fa-bars {
-        display: none; } }
+        display: none;
+        position: absolute;
+        right: 50px; } }
+  #site-navigation .desktop-search {
+    display: none; }
+    @media (min-width: 720px) {
+      #site-navigation .desktop-search {
+        display: block;
+        color: white;
+        position: absolute;
+        right: -26px;
+        font-size: 21px;
+        top: 18px; } }
+  #site-navigation .mainmenu-list {
+    display: none; }
+    @media (min-width: 720px) {
+      #site-navigation .mainmenu-list {
+        display: block;
+        z-index: 2;
+        position: relative; } }
   #site-navigation #primary-menu {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    position: inherit;
-    box-shadow: none; }
+    box-shadow: none;
+    position: absolute;
+    top: 18%;
+    left: 33%;
+    z-index: 2; }
     @media (min-width: 720px) {
       #site-navigation #primary-menu {
-        -ms-flex-direction: row;
-            flex-direction: row; } }
+        display: block;
+        position: inherit; } }
     #site-navigation #primary-menu li {
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding: 1rem; }
+      #site-navigation #primary-menu li a {
+        color: #6b747d; }
+        @media (min-width: 720px) {
+          #site-navigation #primary-menu li a {
+            color: white; } }
   @media (min-width: 720px) {
     #site-navigation .menu-main-menu-container {
       display: block;
