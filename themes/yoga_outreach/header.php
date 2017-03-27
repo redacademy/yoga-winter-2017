@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Yoga_Outreach_Theme
  */
 
 ?><!DOCTYPE html>
@@ -21,7 +21,10 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>hello</a></h1>
+					<h1 class="site-title screen-reader-text">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+            <?php bloginfo( 'name' ); ?>hello</a>
+          </h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
@@ -44,7 +47,9 @@
                   <label class="checkbox">
                     <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
                   </label>
-                  <button class="btn btn-lg btn-primary btn-block dropdown-btn" type="submit"><a href="">sign in</a></button>   
+                  <button class="btn btn-lg btn-primary btn-block dropdown-btn" type="submit">
+                    <a href="">sign in</a>
+                  </button>   
                 </form>
               </div>
             </div>
@@ -58,46 +63,44 @@
                   <label class="checkbox">
                     <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
                   </label>
-                  <button class="btn btn-lg btn-primary btn-block dropdown-btn" type="submit"><a href="">sign in</a></button>   
+                  <button class="btn btn-lg btn-primary btn-block dropdown-btn" type="submit">
+                    <a href="">sign in</a>
+                  </button>   
                 </form>
               </div>
-             <ul class="dropdown-menu-list">
-                <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-                  <fieldset>
-                    <button class="search-submit">
-                      <span class="icon-search" aria-hidden="true">
-                        <i class="fa fa-search"></i>
-                      </span>
-                    </button>
-                    <label>
-                      <input type="search" class="search-field" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
-                      <span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
-                    </label>
-                  </fieldset>
-                </form>
-               </ul>
-               <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
+              <ul class="dropdown-menu-list">
+              <?php get_search_form();?>
+              </ul>
+              <?php wp_nav_menu( 
+                array( 'theme_location' => 'primary', 
+                      'menu_id' => 'primary-menu') ); 
+              ?>
             </div>
-        
-          <div class="signin-section">
-            <div class="wrapper">
-            <form class="form-signin">       
-              <h3>username</h3>
-              <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
-              <h3>password</h3>
-              <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
-              <label class="checkbox">
-                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-              </label>
-              <button class="btn btn-lg btn-primary btn-block" type="submit"><a href="">sign in</a></button>   
-            </form>
-          </div>
-          <button class="signin-button"><a href="">sign in
-          </a></button>
-          </div>
-              <div class="mainmenu-list">
-                <i class="fa fa-search desktop-search"></i>
-                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
+
+            <div class="signin-section">
+              <div class="wrapper">
+              <form class="form-signin">       
+                <h3>username</h3>
+                <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+                <h3>password</h3>
+                <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+                <label class="checkbox">
+                  <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                </label>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                  <a href="">sign in</a>
+                </button>   
+              </form>
+            </div>
+            <button class="signin-button"><a href="">sign in
+            </a></button>
+            </div>
+            <div class="mainmenu-list">
+              <?php wp_nav_menu( 
+                array( 'theme_location' => 'primary', 
+                       'menu_id' => 'primary-menu') ); 
+              ?>
+              <?php get_search_form();?>
             </div>
         </nav><!-- #site-navigation -->
 			</header><!-- #masthead -->

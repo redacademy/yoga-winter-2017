@@ -34,6 +34,16 @@
       $('.signin-button').hide();
     });
     
+    //making search form appear on desktop
+     $('.fa-search').on('click', function(event){
+        event.preventDefault();
+        $('.search-field').toggleClass('searchAppear');
+        $('.search-field').focus();    
+    });
+    $('.search-field').blur(function() {
+        $('.fa-search').click();
+    });
+
     // Drop down category
     $('.info-dropdown').click(function () {
       if ($(this).next('.info-field').is(':hidden')) {
