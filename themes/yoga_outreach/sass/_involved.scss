@@ -29,6 +29,9 @@
             @include general-button; 
             &.clear-button{
                 border: 1px solid white;
+                &:hover{
+                    color: $darktext_color;
+                }
             }
             margin-bottom: 26px;
             @include desktop {
