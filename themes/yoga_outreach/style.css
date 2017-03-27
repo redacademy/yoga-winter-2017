@@ -681,13 +681,14 @@ body {
   padding-top: 66px;
   font-weight: 300;
   font-size: 24px;
-  position: relative; }
+  position: relative;
+  bottom: 80px; }
   @media (min-width: 720px) {
     .page-title-header, .entry-content-page {
       font-size: 40px;
       padding-top: 0;
       padding-bottom: 0;
-      top: 13rem; } }
+      top: -20px; } }
 
 .page-title-container {
   position: relative; }
@@ -706,7 +707,8 @@ body {
 .entry-content-page {
   font-size: 1rem;
   padding: 44px 0px;
-  position: relative; }
+  position: relative;
+  top: 7rem; }
   @media (min-width: 720px) {
     .entry-content-page {
       top: 12rem;

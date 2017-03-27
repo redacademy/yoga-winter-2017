@@ -117,6 +117,15 @@
       }
     }
     $(window).resize(containRemove);
+
+    function showText(){
+      var len = $('.dropdown-paragraph').length;
+      if(len > 10){
+        $(this).text($(this).text().substr(0,10)+'..');
+      }
+    }
+
+    showText();
     
 
 })(jQuery); 

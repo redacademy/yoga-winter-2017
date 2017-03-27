@@ -10,8 +10,8 @@ get_header(); ?>
 				<div class="color-background"></div>
 					<?php
                 	while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
-					<h1 class="page-title-header"><?php the_title(); ?></h1>
-                    <div class="entry-content-page">
+					<div class="entry-content-page">
+						<h1 class="page-title-header"><?php the_title(); ?></h1>
                     	<?php the_content(); ?> <!-- Page Content -->
 						<div class ="general-button-container">
 							<a href="core-training" class="general-button grey-button">Core Training</a>

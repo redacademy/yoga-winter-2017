@@ -9,8 +9,8 @@ get_header(); ?>
 			<header class = "general-template-section custom-hero-image">
 				<?php
                 while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
-				<h1 class ="page-title-header"><?php the_title(); ?></h1>
-                <div class="entry-content-page">
+				<div class="entry-content-page">
+					<h1 class ="page-title-header"><?php the_title(); ?></h1>
                 	<?php the_content(); ?> <!-- Page Content -->
 					<div class="general-button-container">
 						<a href="#" class="general-button teal-button black-text">Core Training</a>
@@ -77,7 +77,8 @@ get_header(); ?>
 						</tr>
 					</table>
 					<p>Now you can take the training online in an eight week format.</p>
-					<p><?php echo CFS()->get('training_dates_paragraph')?></p>
+					<p class ="dropdown-paragraph"><?php echo CFS()->get('training_dates_paragraph')?></p>
+					<h5>Read More</h5>
 				</section>
 				<section class="classroom-dates-section section-15px-padding">
 					<div class="core-training-text-image-container">
