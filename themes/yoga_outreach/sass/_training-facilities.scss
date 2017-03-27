@@ -50,6 +50,7 @@
 
 	.general-button, .book-training-button{
 		@include general-button;
+		margin-bottom:29px;
 	}
 
 	.button-black-text{

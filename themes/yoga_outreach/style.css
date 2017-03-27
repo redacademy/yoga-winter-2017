@@ -789,12 +789,13 @@ body {
 
 .general-button-container {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  top: 8rem; }
   @media (min-width: 720px) {
     .general-button-container {
       display: -ms-flexbox;
       display: flex;
-      top: 11rem; } }
+      top: auto; } }
 
 .section-15px-padding {
   padding: 0 4%; }
@@ -829,7 +830,6 @@ a {
 .page-subtitle {
   color: white;
   font-size: 16px;
-  margin-top: 44px;
   padding: 0 1rem;
   text-align: center;
   line-height: 25px; }
@@ -2621,7 +2621,8 @@ a:hover, a:active {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    text-decoration: none; }
+    text-decoration: none;
+    margin-bottom: 29px; }
   .training-content .training-image-bar-container {
     position: relative;
     margin-top: 1.5rem; }
@@ -2931,7 +2932,8 @@ a:hover, a:active {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 .training-for-facilities-content .button-black-text {
   color: black; }
@@ -3066,8 +3068,6 @@ a:hover, a:active {
 
 .core-training-content .entry-content-page {
   font-size: 16px;
-  line-height: 1.5;
-  margin-top: 5%;
   padding: 15px; }
 
 .core-training-content .testimonial-container {
@@ -3226,7 +3226,8 @@ a:hover, a:active {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 @media (min-width: 720px) {
   .core-training-content .register-online-button {
@@ -3512,13 +3513,12 @@ a:hover, a:active {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 29px; }
 
-.resources-research-content .general-button-container {
-  bottom: auto; }
-  @media (min-width: 720px) {
-    .resources-research-content .general-button-container {
-      top: auto; } }
+@media (min-width: 720px) {
+  .resources-research-content .general-button-container {
+    top: auto; } }
 
 @media (min-width: 720px) {
   .resources-research-content .page-title-header, .resources-research-content .entry-content-page {
@@ -3680,7 +3680,8 @@ a:hover, a:active {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 .resources-media-content .main-h3-container h3 {
   padding-top: 35px;
@@ -5015,7 +5016,8 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 .training-for-facilities-content .button-black-text {
   color: black; }
@@ -5150,8 +5152,6 @@ object {
 
 .core-training-content .entry-content-page {
   font-size: 16px;
-  line-height: 1.5;
-  margin-top: 5%;
   padding: 15px; }
 
 .core-training-content .testimonial-container {
@@ -5310,7 +5310,8 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 @media (min-width: 720px) {
   .core-training-content .register-online-button {

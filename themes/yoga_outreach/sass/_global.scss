@@ -177,9 +177,10 @@ body{
 .general-button-container{
 	position: relative;
     width: 100%;
+    top: 8rem;
 		@include desktop{
 			display:flex;
-            top:11rem;
+            top:auto;
 		}
 }
 
@@ -226,7 +227,6 @@ a{
 .page-subtitle{
     color:white;
     font-size:16px;
-    margin-top:44px;
     padding:0 1rem;
     text-align:center;
     line-height:25px;

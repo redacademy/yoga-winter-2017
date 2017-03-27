@@ -60,6 +60,7 @@
 
     .general-button{
         @include general-button;
+        margin-bottom:29px;
     }
 
     .training-image-bar-container{

@@ -10,7 +10,6 @@ get_header(); ?>
 				<div class="color-background"></div>
 				<div class="page-title-container">
 					<h1 class="page-title-header"><?php the_title(); ?></h1>
-				</div>
 				<?php
                 while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
                     <div class="entry-content-page">
@@ -20,6 +19,7 @@ get_header(); ?>
                 endwhile; //resetting the page loop
                 wp_reset_query(); //resetting the page query
                 ?>
+				</div>
 				<div class="general-button-container">
 					<a href ="resources-research" class="general-button grey-button">Research</a>
 					<a href ="#"class = "general-button teal-button black-text">Media and Videos</a>
