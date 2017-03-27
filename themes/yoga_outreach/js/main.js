@@ -8,23 +8,13 @@
         event.preventDefault();
         $('.show-dropdown').toggleClass('show');
         $('.show-dropdown').show();
+        $('#primary-menu').show();
+        $('.mainmenu-list').hide();
         $('.wrapper').hide();
         $('.fa-bars').hide();
         $('.logo-image').hide();
         $('#content').hide();
         $('#colophon').hide();
-    });
-    //when on clicking signin button rest of content hides
-    $('.signin-button-dropdown').on('click', function (event) {
-      event.preventDefault();
-      $('.wrapper').toggleClass('popup');
-      $('.wrapper').show();
-      $('.signin-button-dropdown').hide();
-      $('.dropdown-menu-list').hide();
-      $('.fa-bars').hide();
-      $('.logo-image').hide();
-      $('#content').hide();
-      $('#colophon').hide();
     });
 
     //dropdown signin section on clicking signin button
@@ -118,8 +108,14 @@
       }
     });
 
+    function containRemove() {
+    if ($(window).width() < 720) {
+          $('#retreat').addClass('container2');
+      } else {
+          $('#retreat').removeClass('container2');
+      }
+    }
+    $(window).resize(containRemove);
 
 })(jQuery); 
 
-
-    
