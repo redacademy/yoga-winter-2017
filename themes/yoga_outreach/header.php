@@ -93,15 +93,6 @@
             </form>
           </div>
           <button class="signin-button"><a href="">sign in
-    <!--<?php if (is_user_logged_in()) : ?>
-  <a href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
-    <?php endif;?>
-    <?php $current_user = wp_get_current_user();
-if ( is_user_logged_in() ) {
-    echo 'welcome, ' . $current_user->user_login;
-} else {
-    echo 'Welcome, visitor!';
-}?>-->
           </a></button>
           </div>
               <div class="mainmenu-list">

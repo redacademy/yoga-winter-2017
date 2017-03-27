@@ -7,17 +7,23 @@
     $('.fa-bars').on('click', function (event) {
         event.preventDefault();
         $('.show-dropdown').slideToggle();
-        $('.mainmenu-list').hide();
         $('.wrapper').hide();
         $('#content').show();
         $('#colophon').show();
     });
 
+    //on clicking menu on dropdown, submenu Shows
+    // $('.menu-item-253').on('click', function(event){
+    //   event.preventDefault();
+    //   $('.').slideToggle();
+    // });
+
     //on mobile when clicking signin button
     $('.menu-item-73').on('click', function (event) {
         event.preventDefault();
         $('.wrapper').show();
-        $('.signin-button').hide();
+        $('#content').hide();
+        $('#colophon').hide();
     });
 
     //dropdown signin section on clicking signin button
@@ -27,8 +33,7 @@
       $('.wrapper').show();
       $('.signin-button').hide();
     });
-
-
+    
     // Drop down category
     $('.info-dropdown').click(function () {
       if ($(this).next('.info-field').is(':hidden')) {

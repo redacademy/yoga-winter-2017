@@ -934,6 +934,9 @@ p {
         display: block;
         z-index: 2;
         position: relative; } }
+    @media (min-width: 720px) {
+      #site-navigation .mainmenu-list .menu li:nth-child(1) {
+        display: none; } }
   #site-navigation #primary-menu {
     display: -ms-flexbox;
     display: flex;
@@ -987,50 +990,48 @@ p {
   text-align: center; }
   @media (min-width: 720px) {
     .show-dropdown {
-      display: none; } }
+      display: block; } }
   .show-dropdown .wrapper {
-    display: none;
-    z-index: 4; }
-  .show-dropdown .popup {
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background-color: #F6FCFF;
     position: absolute;
     top: 0;
-    right: 0; }
-    .show-dropdown .popup .form-signin {
+    right: 0;
+    z-index: 6; }
+    .show-dropdown .wrapper .form-signin {
       padding: 40px 28px 45px;
       margin: 0 auto; }
-      .show-dropdown .popup .form-signin h3 {
+      .show-dropdown .wrapper .form-signin h3 {
         text-transform: uppercase;
         font-weight: lighter;
         text-align: center;
         font-size: 14px;
         padding: 10px; }
-      .show-dropdown .popup .form-signin .form-signin-heading,
-      .show-dropdown .popup .form-signin .checkbox {
+      .show-dropdown .wrapper .form-signin .form-signin-heading,
+      .show-dropdown .wrapper .form-signin .checkbox {
         margin-bottom: 30px; }
-      .show-dropdown .popup .form-signin .checkbox {
+      .show-dropdown .wrapper .form-signin .checkbox {
         font-weight: lighter;
         margin-left: 20%;
         margin-top: 10px;
         float: left; }
-      .show-dropdown .popup .form-signin .form-control {
+      .show-dropdown .wrapper .form-signin .form-control {
         position: relative;
         font-size: 16px;
         height: auto;
         padding: 10px; }
-        .show-dropdown .popup .form-signin .form-control:focus {
+        .show-dropdown .wrapper .form-signin .form-control:focus {
           z-index: 2; }
-      .show-dropdown .popup .form-signin input[type="text"] {
+      .show-dropdown .wrapper .form-signin input[type="text"] {
         width: 80%;
         margin-bottom: -1px;
         border-radius: 8px; }
-      .show-dropdown .popup .form-signin input[type="password"] {
+      .show-dropdown .wrapper .form-signin input[type="password"] {
         width: 80%;
         margin-bottom: 20px;
         border-radius: 8px; }
-    .show-dropdown .popup .btn {
+    .show-dropdown .wrapper .btn {
       display: block;
       width: 200px;
       height: 45px;
@@ -1038,7 +1039,7 @@ p {
       border-radius: 8px;
       box-shadow: none;
       border: none; }
-      .show-dropdown .popup .btn a {
+      .show-dropdown .wrapper .btn a {
         text-shadow: none;
         text-decoration: none;
         text-transform: uppercase;
@@ -1059,14 +1060,8 @@ p {
         flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center; }
-    @media (min-width: 720px) {
-      .show-dropdown .dropdown-menu-list {
-        display: none; } }
     .show-dropdown .dropdown-menu-list fieldset {
       border: none; }
-      @media (min-width: 720px) {
-        .show-dropdown .dropdown-menu-list fieldset {
-          display: none; } }
       .show-dropdown .dropdown-menu-list fieldset button {
         position: absolute;
         width: 30px;
@@ -1121,7 +1116,8 @@ p {
     border-radius: 8px;
     position: absolute;
     top: 0;
-    right: 130px; }
+    right: 130px;
+    z-index: 3; }
     .signin-section .popup .form-signin {
       padding: 40px 28px 45px;
       margin: 0 auto; }
