@@ -18,7 +18,7 @@ get_header(); ?>
                                     <div class="cell-head">
                                         <?php if ( has_post_thumbnail() ) : ?>
                                             <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-                                            echo '<li class="cell-img" style="background: url('. $url.') center / cover">'; ?>
+                                            echo '<li class="cell-img" style="background:linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('. $url.') center / cover ">'; ?>
                                         <?php endif; ?>
 
                                         <?php the_title( sprintf( '<p>', esc_url( get_permalink() ) ), '</p>' ); ?>
@@ -45,9 +45,9 @@ get_header(); ?>
                                     echo get_the_post_thumbnail(); ?>
                                 <?php endif; ?>
                                 <?php the_title( sprintf( '<h2>',( get_permalink() ) ), '</h2>' ); ?>
+                                <?php get_the_author_meta(); ?> 
+                                <?php the_date('M. d, Y', '<h3>', '</h3>'); ?>
                             </div>
-                            <?php get_the_author_meta(); ?> 
-                            <?php the_date('M. d, Y', '<h3>', '</h3>'); ?>
                             <?php the_content(); ?>
                         </article>
                     <?php endwhile; ?>

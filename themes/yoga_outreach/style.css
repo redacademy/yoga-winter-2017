@@ -1923,6 +1923,10 @@ footer {
     background-color: #95afc9;
     /* move page dots into carousel */
     /* fill-in selected dot */ }
+    @media (min-width: 720px) {
+      .blog-content .article-slider {
+        background-color: transparent;
+        margin-bottom: 150px; } }
     .blog-content .article-slider article {
       height: 100%;
       display: -ms-flexbox;
@@ -1936,16 +1940,28 @@ footer {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center; }
+    @media (min-width: 720px) {
+      .blog-content .article-slider .flickity-slider {
+        margin: 0 auto; } }
     .blog-content .article-slider .flickity-page-dots {
       bottom: 17.5px; }
+      @media (min-width: 720px) {
+        .blog-content .article-slider .flickity-page-dots {
+          bottom: -30px; } }
       .blog-content .article-slider .flickity-page-dots .dot {
         width: 12px;
         height: 12px;
         opacity: 1;
         background: transparent;
         border: 2px solid white; }
+        @media (min-width: 720px) {
+          .blog-content .article-slider .flickity-page-dots .dot {
+            border: 2px solid #4a4a4a; } }
     .blog-content .article-slider .flickity-page-dots .dot.is-selected {
       background: white; }
+      @media (min-width: 720px) {
+        .blog-content .article-slider .flickity-page-dots .dot.is-selected {
+          background: #4a4a4a; } }
     .blog-content .article-slider article {
       width: 100%;
       position: relative;
@@ -1984,12 +2000,17 @@ footer {
       list-style-type: none; }
       .blog-content .article-slider ul button {
         display: none; }
+      @media (min-width: 720px) {
+        .blog-content .article-slider ul {
+          height: 280px;
+          background-color: #d8d8d8; } }
   .blog-content .carousel-cell {
     height: 210px;
     width: 100%;
     margin: 45px; }
     @media (min-width: 720px) {
       .blog-content .carousel-cell {
+        height: 220px;
         margin-right: 10px; } }
   .blog-content .full-article article {
     display: none;
@@ -2010,6 +2031,10 @@ footer {
         flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center; }
+    @media (min-width: 720px) {
+      .blog-content .full-article .article-head {
+        position: relative;
+        margin-bottom: 50px; } }
   .blog-content .full-article h2 {
     font-size: 4vh;
     font-weight: bold;
@@ -2018,12 +2043,25 @@ footer {
     padding: 15px; }
     @media (min-width: 720px) {
       .blog-content .full-article h2 {
-        font-size: 3.5vw;
+        position: absolute;
+        top: 0;
+        font-weight: 700;
+        text-align: left;
+        background-color: #94bfd1;
+        font-size: 2rem;
         max-width: 830px;
         margin: 0 auto; } }
   .blog-content .full-article h3 {
     text-align: center;
-    margin: 10px; }
+    padding: 10px;
+    background-color: #fff; }
+    @media (min-width: 720px) {
+      .blog-content .full-article h3 {
+        position: absolute;
+        padding: 10px 25px;
+        background-color: #94bfd1;
+        bottom: 0;
+        right: 0; } }
   .blog-content .full-article p {
     padding: 0 15px; }
     @media (min-width: 720px) {
