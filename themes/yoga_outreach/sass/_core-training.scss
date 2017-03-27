@@ -137,10 +137,9 @@
         }
     }
     .section-15px-padding{
-      // padding: 7%;
       @include desktop{
       max-width: 1020px;
-      margin: 0 auto;
+      margin: 0 auto 3% auto;
       }
     }
     .core-training-info-list{

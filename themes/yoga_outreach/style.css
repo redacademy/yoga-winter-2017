@@ -804,7 +804,8 @@ body {
   padding: 0 4%; }
   @media (min-width: 720px) {
     .section-15px-padding {
-      padding: 0 7%; } }
+      padding: 0;
+      margin: 0 auto 3% auto; } }
 
 a {
   text-decoration: none; }
@@ -2934,7 +2935,6 @@ a:hover, a:active {
 .page-template-training .info-dropdown {
   background-color: #fff;
   border-bottom: 2px solid #4A4A4A;
-  width: 90vw;
   margin: 0 auto 3% auto; }
 
 .page-template-training .info-field {
@@ -2994,12 +2994,12 @@ a:hover, a:active {
   height: 100px;
   background-color: #EBE5D8; }
 
-.page-template-training .traininglist-container {
-  background-color: #95afc9; }
-
 .page-template-training .training-list {
   max-width: 1020px;
   margin: 0 auto; }
+
+.page-template-training .traininglist-container {
+  background-color: #95afc9; }
 
 .page-template-training .info-list-content, .page-template-training .info-list-title {
   background-color: #95afc9; }
@@ -3196,7 +3196,7 @@ a:hover, a:active {
 @media (min-width: 720px) {
   .core-training-content .section-15px-padding {
     max-width: 1020px;
-    margin: 0 auto; } }
+    margin: 0 auto 3% auto; } }
 
 .core-training-content .core-training-info-list {
   margin: 0;
@@ -4894,7 +4894,6 @@ object {
 .page-template-training .info-dropdown {
   background-color: #fff;
   border-bottom: 2px solid #4A4A4A;
-  width: 90vw;
   margin: 0 auto 3% auto; }
 
 .page-template-training .info-field {
@@ -4954,12 +4953,12 @@ object {
   height: 100px;
   background-color: #EBE5D8; }
 
-.page-template-training .traininglist-container {
-  background-color: #95afc9; }
-
 .page-template-training .training-list {
   max-width: 1020px;
   margin: 0 auto; }
+
+.page-template-training .traininglist-container {
+  background-color: #95afc9; }
 
 .page-template-training .info-list-content, .page-template-training .info-list-title {
   background-color: #95afc9; }
@@ -5156,7 +5155,7 @@ object {
 @media (min-width: 720px) {
   .core-training-content .section-15px-padding {
     max-width: 1020px;
-    margin: 0 auto; } }
+    margin: 0 auto 3% auto; } }
 
 .core-training-content .core-training-info-list {
   margin: 0;
