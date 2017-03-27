@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area training-for-facilities-content">
 		<main id="main" class="site-main" role="main">
 				<header class="general-template-section custom-hero-image">
 					<div class="color-background"></div>
