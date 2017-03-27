@@ -12,7 +12,7 @@
         margin-bottom:22px;
         color:#fff;
             @include desktop{
-                color:#6B747D;
+                color:$darktext_color;
                 max-width:100%;
                 font-size:40px;
                 margin-bottom:46px;
@@ -21,7 +21,7 @@
 
     .header-subtitle{
         @include desktop{
-            color:#6B747D;
+            color:$darktext_color;
             font-weight:100;
             display:block;
             font-size:24px;
