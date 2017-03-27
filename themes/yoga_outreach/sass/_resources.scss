@@ -5,13 +5,11 @@
         font-weight:100;
     }
 
-        
     .info-dropdown{
         @include desktop{
             padding:0;
         }
     }
-
 
     .teal-button.black-text{
         color:black;
@@ -23,11 +21,7 @@
 
 	}
 
-    .general-button-container{
-            @include desktop{
-                top:auto;
-        }
-    }
+
 
     .page-title-header{
         @include desktop{
@@ -130,7 +124,6 @@
         }
     }
 
-
 //Links
 
     .resources-links-container{
@@ -186,9 +179,6 @@
                 }
         }
     }
-
-  
-
 
 }//Resource Wrapper
 

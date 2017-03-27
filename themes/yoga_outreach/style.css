@@ -703,10 +703,10 @@ body {
 
 .entry-content-page {
   font-size: 1rem;
-  padding: 44px 20px; }
+  padding: 44px 0px;
+  position: relative; }
   @media (min-width: 720px) {
     .entry-content-page {
-      position: relative;
       bottom: 55px;
       font-size: 24px; } }
 
@@ -795,7 +795,9 @@ body {
     .general-button-container {
       display: -ms-flexbox;
       display: flex;
-      top: auto; } }
+      top: auto;
+      max-width: 1024px;
+      margin: 0 auto; } }
 
 .section-15px-padding {
   padding: 0 4%; }
@@ -2601,8 +2603,6 @@ a:hover, a:active {
   .training-content .main-h3-container a {
     color: #000;
     font-weight: bold; }
-  .training-content .desktop-margin {
-    margin-left: 6%; }
   .training-content .training-para-left {
     text-align: left; }
   .training-content .for-training-section {
@@ -2665,14 +2665,6 @@ a:hover, a:active {
     @media (min-width: 720px) {
       .training-content .training-color-bar {
         width: 320px; } }
-  @media (min-width: 720px) {
-    .training-content .general-button-container {
-      top: 0rem;
-      bottom: 30px;
-      margin-bottom: 29px;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      width: 100vw; } }
   .training-content .training-image-bar-container:nth-of-type(3) {
     margin-bottom: 60px; }
   .training-content .training-color-bar.grey-bar {
@@ -3082,10 +3074,6 @@ a:hover, a:active {
 
 .training-for-facilities-content .traininglist-container {
   background-color: #95afc9; }
-
-.core-training-content .entry-content-page {
-  font-size: 16px;
-  padding: 15px; }
 
 .core-training-content .testimonial-container {
   background-color: #ebe5d8; }
@@ -3532,10 +3520,6 @@ a:hover, a:active {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
-
-@media (min-width: 720px) {
-  .resources-research-content .general-button-container {
-    top: auto; } }
 
 @media (min-width: 720px) {
   .resources-research-content .page-title-header, .resources-research-content .entry-content-page {
@@ -5166,10 +5150,6 @@ object {
 
 .training-for-facilities-content .traininglist-container {
   background-color: #95afc9; }
-
-.core-training-content .entry-content-page {
-  font-size: 16px;
-  padding: 15px; }
 
 .core-training-content .testimonial-container {
   background-color: #ebe5d8; }
