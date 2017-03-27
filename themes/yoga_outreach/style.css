@@ -789,7 +789,9 @@ body {
       display: flex;
       top: 1.5rem;
       max-width: 1024px;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 .section-15px-padding {
   padding: 0 4%; }
@@ -1245,7 +1247,7 @@ footer {
       width: 100%;
       -ms-flex-pack: justify;
           justify-content: space-between;
-      max-width: 1020px; } }
+      max-width: 1024px; } }
   footer .siteinfo-text {
     margin-top: 50px;
     text-align: center; }
@@ -1569,42 +1571,6 @@ footer {
         position: relative;
         -ms-flex-align: center;
             align-items: center; } }
-  .about-us-content .entry-content-page {
-    height: 410px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center; }
-    @media (min-width: 720px) {
-      .about-us-content .entry-content-page {
-        height: 260px;
-        width: 830px;
-        padding: 0px;
-        position: absolute;
-        bottom: 60px; } }
-  @media (min-width: 720px) {
-    .about-us-content .page-title-header, .about-us-content .entry-content-page {
-      color: #fff; } }
-  .about-us-content .general-button-container {
-    height: 109px;
-    bottom: 17px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center; }
-    @media (min-width: 720px) {
-      .about-us-content .general-button-container {
-        -ms-flex-direction: row;
-            flex-direction: row;
-        top: 0; } }
   .about-us-content .container section .desktop-button, .about-us-content .event-content .container2 section .desktop-button, .event-content .about-us-content .container2 section .desktop-button {
     display: none; }
   @media (min-width: 720px) {
@@ -2196,7 +2162,7 @@ footer {
   max-width: 100vw;
   text-transform: uppercase;
   font-size: 1.5rem; }
-  @media (min-width: 1020px) {
+  @media (min-width: 1024px) {
     .page-template-forms-template .app-form .gform_body .form-sub-heading {
       padding-left: 14%; } }
 
@@ -2265,7 +2231,7 @@ footer {
 
 /* Module Quizzes */
 .entry-content .gform_wrapper .module-quiz {
-  max-width: 1020px;
+  max-width: 1024px;
   width: 100%;
   padding: 10px; }
 
@@ -2364,7 +2330,7 @@ footer {
     padding-top: 15px; }
 
 .module-quiz {
-  max-width: 1020px;
+  max-width: 1024px;
   width: 100%;
   padding: 10px;
   margin: 0 auto;
@@ -4813,7 +4779,7 @@ object {
     .home .program-list {
       display: -ms-inline-flexbox;
       display: inline-flex;
-      max-width: 1020px; } }
+      max-width: 1024px; } }
   .home .program-list .programlist-text {
     padding: 0 8%; }
     .home .program-list .programlist-text h4 {
@@ -4885,7 +4851,7 @@ object {
         display: flex;
         -ms-flex-pack: center;
             justify-content: center;
-        max-width: 1020px;
+        max-width: 1024px;
         margin: 0 auto; } }
     .home .get-involved .involvedimage-one {
       width: 23.8%;

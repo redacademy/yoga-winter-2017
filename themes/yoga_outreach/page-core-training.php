@@ -78,7 +78,6 @@ get_header(); ?>
 					</table>
 					<p>Now you can take the training online in an eight week format.</p>
 					<p class ="dropdown-paragraph"><?php echo CFS()->get('training_dates_paragraph')?></p>
-					<h5>Read More</h5>
 				</section>
 				<section class="classroom-dates-section section-15px-padding">
 					<div class="core-training-text-image-container">
