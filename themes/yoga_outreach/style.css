@@ -1331,7 +1331,7 @@ footer {
 
 @media (min-width: 720px) {
   .contact-us-content #main {
-    padding-top: 200px;
+    padding-top: 270px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -1593,7 +1593,6 @@ footer {
     background-position: left 0px top -147px; }
     @media (min-width: 720px) {
       .about-us-content .custom-hero-image {
-        position: relative;
         -ms-flex-align: center;
             align-items: center;
         background-size: 100%;
@@ -1612,9 +1611,8 @@ footer {
       .about-us-content .entry-content-page {
         height: 260px;
         width: 830px;
-        padding: 0px;
-        position: absolute;
-        bottom: 60px; } }
+        margin-bottom: 100px;
+        padding: 0px; } }
   @media (min-width: 720px) {
     .about-us-content .page-title-header, .about-us-content .entry-content-page {
       color: #fff; } }
@@ -1632,8 +1630,29 @@ footer {
     @media (min-width: 720px) {
       .about-us-content .general-button-container {
         -ms-flex-direction: row;
-            flex-direction: row;
-        top: 0; } }
+            flex-direction: row; }
+        .about-us-content .general-button-container a {
+          width: 230px;
+          height: 44px;
+          margin: 0 auto;
+          font-size: 14px;
+          text-transform: uppercase;
+          box-shadow: none;
+          text-shadow: none;
+          box-shadow: none;
+          text-shadow: none;
+          color: white;
+          border-radius: 8px;
+          border: none;
+          font-family: 'raleway',sans-serif;
+          font-size: 14px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center;
+          text-decoration: none; } }
   .about-us-content .container section .desktop-button, .about-us-content .event-content .container2 section .desktop-button, .event-content .about-us-content .container2 section .desktop-button {
     display: none; }
   @media (min-width: 720px) {
@@ -4057,9 +4076,14 @@ object {
 .event-content .custom-hero-image {
   background-size: 270%;
   background-position: left -120px top -56px;
-  position: relative;
   -ms-flex-align: center;
       align-items: center; }
+  @media (min-width: 720px) {
+    .event-content .custom-hero-image {
+      -ms-flex-align: center;
+          align-items: center;
+      background-size: 100%;
+      background-position: left 0 top 0; } }
 
 .event-content .entry-content-page {
   height: 410px;
@@ -4075,10 +4099,8 @@ object {
     .event-content .entry-content-page {
       height: 260px;
       width: 830px;
-      padding: 0px;
-      margin: 0 auto;
-      position: absolute;
-      bottom: 60px; } }
+      margin-bottom: 100px;
+      padding: 0px; } }
   @media (min-width: 720px) {
     .event-content .entry-content-page h1 {
       font-size: 40px; } }

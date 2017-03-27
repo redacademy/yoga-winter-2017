@@ -2,8 +2,12 @@
     .custom-hero-image {
         background-size: 270%;
         background-position: left -120px top -56px;
-        position: relative;
         align-items: center;
+        @include desktop {
+            align-items: center;
+            background-size: 100%;
+            background-position: left 0 top 0;
+        }
     }
     .entry-content-page{
         height: 410px;
@@ -14,10 +18,8 @@
         @include desktop {
             height: 260px;
             width: 830px;
+            margin-bottom: 100px;
             padding: 0px;
-            margin: 0 auto;
-            position: absolute;
-            bottom: 60px;
         }
         h1 {
             @include desktop{
