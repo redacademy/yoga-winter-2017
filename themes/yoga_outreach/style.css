@@ -680,12 +680,14 @@ body {
   color: #fff;
   padding-top: 66px;
   font-weight: 300;
-  font-size: 24px; }
+  font-size: 24px;
+  position: relative; }
   @media (min-width: 720px) {
     .page-title-header, .entry-content-page {
       font-size: 40px;
       padding-top: 0;
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      top: 13rem; } }
 
 .page-title-container {
   position: relative; }
@@ -707,7 +709,7 @@ body {
   position: relative; }
   @media (min-width: 720px) {
     .entry-content-page {
-      bottom: 55px;
+      top: 12rem;
       font-size: 24px; } }
 
 .teal-button {
@@ -760,18 +762,6 @@ body {
     display: -ms-flexbox;
     display: flex; }
 
-@media (min-width: 720px) {
-  .page-title-container {
-    height: 100vh;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-direction: column;
-        flex-direction: column; } }
-
 .general-template-section {
   height: 80vh;
   width: 100%;
@@ -790,12 +780,12 @@ body {
 .general-button-container {
   position: relative;
   width: 100%;
-  top: 8rem; }
+  top: 4rem; }
   @media (min-width: 720px) {
     .general-button-container {
       display: -ms-flexbox;
       display: flex;
-      top: auto;
+      top: 1.5rem;
       max-width: 1024px;
       margin: 0 auto; } }
 
@@ -858,6 +848,10 @@ a {
     .color-background {
       height: 100vh;
       width: 100vw; } }
+
+.max-width-1024 {
+  max-width: 1024px;
+  margin: 0 auto; }
 
 p {
   margin-bottom: 0;
@@ -3121,12 +3115,6 @@ a:hover, a:active {
       -ms-flex-pack: center;
           justify-content: center; } }
 
-@media (min-width: 720px) {
-  .core-training-content .general-button-container {
-    top: 0rem;
-    bottom: 30px;
-    margin-bottom: 29px; } }
-
 .core-training-content .core-header {
   margin: 0;
   width: 175px;
@@ -3493,6 +3481,13 @@ a:hover, a:active {
 @media (min-width: 720px) {
   .resources-research-content .info-dropdown {
     padding: 0; } }
+  @media (min-width: 720px) and (min-width: 720px) {
+    .resources-research-content .info-dropdown h3 {
+      font-size: 20px; } }
+
+.resources-research-content .first-dropdown {
+  margin-top: 45px;
+  height: 50px; }
 
 .resources-research-content .teal-button.black-text {
   color: black; }
@@ -3525,6 +3520,12 @@ a:hover, a:active {
   .resources-research-content .page-title-header, .resources-research-content .entry-content-page {
     color: #fff; } }
 
+.resources-research-content .max-width-1024 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
 .resources-research-content .info-heading-subtitle {
   color: #4A4A4A; }
 
@@ -3540,6 +3541,9 @@ a:hover, a:active {
   @media (min-width: 720px) {
     .resources-research-content .main-h3-container h3 {
       font-size: 40px; } }
+  @media (min-width: 720px) {
+    .resources-research-content .main-h3-container h3 {
+      color: #4A4A4A; } }
 
 .resources-research-content .main-h3-container p {
   font-size: 14px;
@@ -3711,6 +3715,9 @@ a:hover, a:active {
 
 .resources-media-content .info-dropdown {
   padding: 0; }
+  @media (min-width: 720px) {
+    .resources-media-content .info-dropdown h3 {
+      font-size: 20px; } }
 
 .resources-media-content .media-article-list, .resources-media-content .media-video-list, .resources-media-content .press-article-list {
   padding: 0;
@@ -3723,6 +3730,13 @@ a:hover, a:active {
       .resources-media-content .media-article-list li, .resources-media-content .media-video-list li, .resources-media-content .press-article-list li {
         border-top: 2px solid #4A4A4A;
         padding-bottom: 11px; } }
+
+@media (min-width: 720px) {
+  .resources-media-content .media-video-list li {
+    border-top: none; } }
+  @media (min-width: 720px) and (min-width: 720px) {
+    .resources-media-content .media-video-list li h3 {
+      font-size: 24px; } }
 
 .resources-media-content .video-list-section {
   display: -ms-flexbox;
@@ -3738,15 +3752,22 @@ a:hover, a:active {
     font-weight: 300;
     margin-bottom: 10px;
     margin-top: 40px; }
+    @media (min-width: 720px) {
+      .resources-media-content .video-list-section h3 {
+        margin-bottom: 30px; } }
   .resources-media-content .video-list-section li {
     margin-bottom: 25px; }
 
 .resources-media-content .media-article-section {
   z-index: -2;
-  background-color: #f4f1ea; }
+  background-color: #F6F4F0; }
   @media (min-width: 720px) {
     .resources-media-content .media-article-section {
       padding-top: 2rem; } }
+
+@media (min-width: 720px) {
+  .resources-media-content .video-list-heading {
+    font-size: 40px; } }
 
 @media (min-width: 720px) {
   .resources-media-content .media-date {
@@ -3784,9 +3805,12 @@ a:hover, a:active {
 .resources-media-content .read-more, .resources-media-content .read-less {
   font-size: 20px;
   cursor: pointer;
-  transition: font-size 0.5s ease-in; }
+  transition: font-size 1s ease-in; }
+  @media (min-width: 720px) {
+    .resources-media-content .read-more, .resources-media-content .read-less {
+      margin-bottom: 20px; } }
   .resources-media-content .read-more:hover, .resources-media-content .read-less:hover {
-    font-size: 24px;
+    transform: translatex(20px);
     letter-spacing: 5px; }
 
 @media (min-width: 720px) {
@@ -3811,6 +3835,9 @@ a:hover, a:active {
 .resources-media-content .video-item {
   display: block; }
 
+.resources-media-content .video-link p {
+  display: none; }
+
 .resources-media-content .black-text {
   color: black; }
   @media (min-width: 720px) {
@@ -3820,6 +3847,10 @@ a:hover, a:active {
 @media (min-width: 720px) {
   .resources-media-content .teal-button {
     background-color: #94bfd1; } }
+
+.resources-media-content .teal-button.black-text {
+  background-color: #6cfffe;
+  color: black; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -5196,12 +5227,6 @@ object {
       display: flex;
       -ms-flex-pack: center;
           justify-content: center; } }
-
-@media (min-width: 720px) {
-  .core-training-content .general-button-container {
-    top: 0rem;
-    bottom: 30px;
-    margin-bottom: 29px; } }
 
 .core-training-content .core-header {
   margin: 0;

@@ -53,13 +53,6 @@
             }
     }
 
-    .general-button-container{
-        @include desktop{
-            top:0rem;
-            bottom:30px;
-            margin-bottom:29px;
-        }
-    }
 
     .core-header{
         margin:0;
