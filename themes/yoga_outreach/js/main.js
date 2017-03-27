@@ -3,23 +3,18 @@
     var $infoField = $('.info-field');
 
     //dropdown submenu on clicking hamburger icon
+    $('.show-dropdown').hide();
     $('.fa-bars').on('click', function (event) {
         event.preventDefault();
-        $('.menu-dropdown').toggleClass('show-dropdown');
-        $('.menu-dropdown').show();
+        $('.show-dropdown').toggleClass('show');
+        $('.show-dropdown').show();
+        $('#primary-menu').show();
+        $('.mainmenu-list').hide();
         $('.wrapper').hide();
-    });
-    //when on clicking signin button rest of content hides
-    $('.signin-button-dropdown').on('click', function (event) {
-      event.preventDefault();
-      $('.wrapper').toggleClass('popup');
-      $('.wrapper').show();
-      $('.signin-button-dropdown').hide();
-      $('.dropdown-menu-list').hide();
-      $('.fa-bars').hide();
-      $('.logo-image').hide();
-      $('#content').hide();
-      $('#colophon').hide();
+        $('.fa-bars').hide();
+        $('.logo-image').hide();
+        $('#content').hide();
+        $('#colophon').hide();
     });
 
     //dropdown signin section on clicking signin button
@@ -86,5 +81,35 @@
 
     $('.post:first-child').show();
 
+    // Letter Count for read more text 
+    $('.article-text').each(function(){
+      var max_length = 167; 
+      if($(this).html().length > max_length){ 
+        var short_content 	= $(this).html().substr(0,max_length); 
+        var long_content	= $(this).html().substr(max_length);
+        
+        $(this).html(short_content+
+              '<a href="#" class="read-more"><br/>Read More...</a>'+
+              '<span class="more-text" style="display:none;">'+long_content+'</span>');
+              
+        $(this).find('a.read-more').click(function(event){ 
+  
+          event.preventDefault(); 
+          $(this).hide();
+          $(this).parents('.article-text').find('.more-text').show();
+        });
+      }
+    });
 
-})(jQuery);
+    function containRemove() {
+    if ($(window).width() < 720) {
+          $('#retreat').addClass('container2');
+      } else {
+          $('#retreat').removeClass('container2');
+      }
+    }
+    $(window).resize(containRemove);
+    
+
+})(jQuery); 
+

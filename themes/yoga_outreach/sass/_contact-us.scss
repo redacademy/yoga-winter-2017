@@ -52,7 +52,11 @@
     .contactinfo-container{
       @include desktop{
       display:flex;
+      width: 830px;
+      margin: 0 auto;
       margin-bottom:290px;
+      justify-content: space-between;
+      
       }
     }
     .email-inquiries{
@@ -69,6 +73,7 @@
       @include desktop{
       flex-basis: 50%;
       align-self: flex-start;
+      padding: 0;
       }
     }
     .info-section{
@@ -221,7 +226,7 @@
     .emailinfo-section{
       padding-left:15px;
         @include desktop{
-          padding-left:10%;
+          padding-left:0;
         }
     }
 

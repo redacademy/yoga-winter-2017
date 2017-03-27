@@ -36,18 +36,20 @@
 		    	</span>
             <div class="menu-dropdown">
               <div class="wrapper">
-            <form class="form-signin">       
-              <h3>username</h3>
-              <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
-              <h3>password</h3>
-              <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
-              <label class="checkbox">
-                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-              </label>
-              <button class="btn btn-lg btn-primary btn-block dropdown-btn" type="submit"><a href="">sign in</a></button>   
-            </form>
-          </div>
-              <ul class="dropdown-menu-list">
+                <form class="form-signin">       
+                  <h3>username</h3>
+                  <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+                  <h3>password</h3>
+                  <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+                  <label class="checkbox">
+                    <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                  </label>
+                  <button class="btn btn-lg btn-primary btn-block dropdown-btn" type="submit"><a href="">sign in</a></button>   
+                </form>
+              </div>
+            </div>
+           <div class="show-dropdown show">
+             <ul class="dropdown-menu-list">
                 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
                   <fieldset>
                     <button class="search-submit">
@@ -61,12 +63,10 @@
                     </label>
                   </fieldset>
                 </form>
-                <button class="signin-button-dropdown"><a href="">sign in</a></button>
                </ul>
+               <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
             </div>
-            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
-       
-
+        
           <div class="signin-section">
             <div class="wrapper">
             <form class="form-signin">       
@@ -90,9 +90,12 @@ if ( is_user_logged_in() ) {
 } else {
     echo 'Welcome, visitor!';
 }?>-->
-</a></button>
+          </a></button>
           </div>
-          
+              <div class="mainmenu-list">
+                <i class="fa fa-search desktop-search"></i>
+                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?>
+            </div>
         </nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

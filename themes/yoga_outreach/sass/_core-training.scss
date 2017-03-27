@@ -1,12 +1,20 @@
 .core-training-content{
-        .main-carousel{
-            width: 100%;
-            padding-top:20px;
-            margin-top:2rem;
-            padding-bottom:20px;
-            padding-right:2rem;
-            height: 8.3rem;
-
+    
+    .testimonial-container{
+        background-color: #ebe5d8;
+    }
+    
+    .main-carousel{
+        width: 100%;
+        padding-top:20px;
+        margin-top:2rem;
+        padding-bottom:20px;
+        padding-right:2rem;
+        height: 8.3rem;
+            @include desktop{
+                max-width: 1020px;
+                margin: 0 auto;
+            }
                 .carousel-cell{
                     width: 100%;
                     height: auto;
@@ -26,14 +34,6 @@
                     box-shadow: none;
                     padding: 0;
                 }
-                .flickity-prev-next-button.next {
-                }
-                .flickity-prev-next-button.previous {
-                }
-    }
-
-    .section-15px-padding{
-        padding:0 15px;
     }
 
     .core-h3-container{
@@ -54,7 +54,6 @@
     }
 
     .general-button-container{
-        bottom:25px;
         @include desktop{
             top:0rem;
             bottom:30px;
@@ -84,10 +83,11 @@
 
     .table-section-container{
         @include desktop{
+            max-width: 1020px;
             display:flex;
             justify-content:space-around;
-            margin-top: 3rem;
-            margin-bottom: 6rem;
+            margin: 30px auto;
+           
         }
     }
 
@@ -116,7 +116,12 @@
             max-width:400px;
         }
     }
-
+    .section-15px-padding{
+      @include desktop{
+      max-width: 1020px;
+      margin: 0 auto 3% auto;
+      }
+    }
     .core-training-info-list{
         margin:0;
         padding:0 15px;
@@ -135,7 +140,7 @@
 
     .general-button{
         @include general-button;
-        margin-bottom:29px;
+            margin-bottom:29px;
     }
 
 
@@ -150,7 +155,6 @@
             display: flex;
             flex-direction: row-reverse;
             margin-top: 12px;
-
         }
     }
 
@@ -233,7 +237,6 @@
         @include desktop{
             width:100%;
             margin-top: 12px;
-
         }
     }
     
@@ -287,26 +290,31 @@
                 padding-left:5px;
             }
     }
+    .traininglist-container{
+      background-color:#C7D5E2;
+      margin-bottom: 3%;
+    }
 
     .training-list{
         margin-bottom:32px;
-            @include desktop{
-                padding:29px 87px;
-            }
+        @include desktop{
+          max-width: 1020px;
+          margin: 0 auto;
+        }
     }
             
     .training-date-text{
-                font-size:11px;
-                color:#4A4A4A;
-                line-height:2;
-                font-weight:bold;
-                text-transform:uppercase;
-                    span{
-                        text-transform:none;
-                        font-weight:300;
-                        margin-left:45px;
-                    }
+        font-size:11px;
+        color:#4A4A4A;
+        line-height:2;
+        font-weight:bold;
+        text-transform:uppercase;
+            span{
+                text-transform:none;
+                font-weight:300;
+                margin-left:45px;
             }
+    }
 
     .training-date-list{
         span{
@@ -348,7 +356,6 @@
                 width:6rem;
                 height:45.65px;
             }
-            
     }
 
     .table-heading{

@@ -50,15 +50,14 @@ body{
 
 .page-title-header{
 	text-align:center;
-    color:$base_color;
+  color:$base_color;
 	padding-top:66px;
     font-weight:300;
     font-size:24px;
         @include desktop{
-            font-size:40px;
-            padding-top:0;
-            padding-bottom:0;
-            color:$darktheme_color;
+          font-size:40px;
+          padding-top:0;
+          padding-bottom:0;
         }
 }
 
@@ -76,9 +75,9 @@ body{
 .entry-content-page {
     @extend .page-title-header;
     font-size: 1rem;
-    padding: 44px 20px;
+    padding: 44px 0px;
+    position:relative;
         @include desktop{
-            position: relative;
             bottom: 55px;
             font-size:24px;
         }
@@ -170,28 +169,28 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    z-index:-1;
-        @include desktop{
-            height:630px;   
+        z-index:-1;
         }
-    }
+}
 
 
 .general-button-container{
 	position: relative;
     width: 100%;
+    top: 8rem;
 		@include desktop{
 			display:flex;
-            top:11rem;
+            top:auto;
+            max-width:1024px;
+            margin:0 auto;
 		}
 }
 
 .section-15px-padding{
     padding:0 4%;
         @include desktop{
-            padding: 0 7%;
+            padding: 0;
+            margin: 0 auto 3% auto;
         }
 }
 
@@ -230,7 +229,6 @@ a{
 .page-subtitle{
     color:white;
     font-size:16px;
-    margin-top:44px;
     padding:0 1rem;
     text-align:center;
     line-height:25px;

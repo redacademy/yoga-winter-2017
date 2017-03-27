@@ -51,27 +51,71 @@ p{
     order:3;
     @include desktop{
       display: none;
+      position: absolute;
+      right: 50px;
+    }
+  }
+  .desktop-search{
+    display:none; 
+    @include desktop{
+    display:block;
+    color: white;
+    position:absolute;
+    right: -26px;
+    font-size:21px;
+    top:18px;
+    }
+  }
+  .mainmenu-list{
+    display:none;
+    @include desktop{
+    display:block;
+    z-index: 2;
+    position:relative;
+    }
+  }
+ 
+  #primary-menu{
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    position: absolute;
+    top: 18%;
+    left: 33%;
+    z-index: 2;
+    @include desktop{
+      display: block;
+      position: inherit;
+    }
+    li{
+      margin:0 auto;
+      padding: 1rem;
+      a{
+        color:$mediumtheme_color;
+        @include desktop{
+        color:white;
+        font-size:16px;
+        }
+      }
     }
   }
   .menu-main-menu-container{
-    display: none;
     @include desktop{
       display:block;
       order:2;
       margin: 0 auto;
     } 
     #menu-item-73{
-      @include desktop{
-        display:none;
+      display: block;
+      width: 150px;
+      height: 45px;
+      background-color: #b6eaff;
+      border-radius: 8px;
+      a{
+        font-size: 14px;
+        color: #4a4a4a;
+        }
       }
-    }
-    a{
-      @include desktop{
-        color:white;
-        padding: 0 1rem;
-        font-size: 16px;
-        font-weight: lighter;
-      } 
     }
   }
   .menu-dropdown{
@@ -79,7 +123,7 @@ p{
   }
   .show-dropdown{
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background-color: #F6FCFF;
     z-index: 2;
     order:2;
@@ -204,25 +248,7 @@ p{
             outline:none;
         }
       }
-      .signin-button-dropdown{
-        display:block;
-        width: 150px;
-        height: 45px;
-        background-color: #B6EAFF;
-        border-radius: 8px;
-        box-shadow:none;
-        border:none;
-        @include desktop{
-          display: none;
-        }
-        a {
-          text-shadow: none;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 14px;
-          color:$darktext_color;
-        }
-      }
+
     } 
     li{
       display: inline-flex;
@@ -324,4 +350,3 @@ p{
       margin-left:0;
     }
   }   
-}
