@@ -97,6 +97,26 @@
       $('#' + id).show();
     });
 
+    // Blog Page on click next shows correct article
+    $('.blog-next-button').on('click', function(e){
+      e.preventDefault();
+      var current = $('.full-article .post:visible');
+      if(current.next('.full-article .post').length){
+        current.hide();
+        current.next('.full-article .post').show();
+      }
+    });
+
+    // Blog Page on click prev shows correct article
+    $('.blog-prev-button').on('click', function(e){
+      e.preventDefault();
+      var current = $('.full-article .post:visible');
+      if(current.prev('.full-article .post').length){
+        current.hide();
+        current.prev('.full-article .post').show();
+      }
+    });
+
     $('.post:first-child').show();
 
     // Letter Count for read more text 
