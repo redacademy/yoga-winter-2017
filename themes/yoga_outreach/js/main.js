@@ -2,6 +2,16 @@
     var $window = $(window);
     var $infoField = $('.info-field');
 
+      //making search form appear on desktop
+     $('.fa-search').on('click', function(event){
+        event.preventDefault();
+        $('.search-field').toggleClass('searchAppear');
+        $('.search-field').focus();    
+    });
+    $('.search-field').blur(function() {
+        $('.fa-search').click();
+    });
+
     //dropdown submenu on clicking hamburger icon
     $('.show-dropdown').hide();
     $('.fa-bars').on('click', function (event) {
@@ -11,12 +21,6 @@
         $('#content').show();
         $('#colophon').show();
     });
-
-    //on clicking menu on dropdown, submenu Shows
-    // $('.menu-item-253').on('click', function(event){
-    //   event.preventDefault();
-    //   $('.').slideToggle();
-    // });
 
     //on mobile when clicking signin button
     $('.menu-item-73').on('click', function (event) {
@@ -32,16 +36,6 @@
       $('.wrapper').toggleClass('popup');
       $('.wrapper').show();
       $('.signin-button').hide();
-    });
-    
-    //making search form appear on desktop
-     $('.fa-search').on('click', function(event){
-        event.preventDefault();
-        $('.search-field').toggleClass('searchAppear');
-        $('.search-field').focus();    
-    });
-    $('.search-field').blur(function() {
-        $('.fa-search').click();
     });
 
     // Drop down category

@@ -921,7 +921,8 @@ p {
         z-index: 2;
         position: relative;
         max-width: 1024px;
-        width: 85%; } }
+        width: 67%;
+        min-width: 950px; } }
     @media (min-width: 720px) {
       #site-navigation .mainmenu-list .menu li:nth-child(1) {
         display: none; } }
@@ -936,6 +937,7 @@ p {
     #site-navigation .mainmenu-list .search-field {
       transition: all 1s; }
     #site-navigation .mainmenu-list fieldset {
+      width: 251px;
       border: 0; }
       #site-navigation .mainmenu-list fieldset input {
         width: 0;
@@ -946,6 +948,8 @@ p {
         #site-navigation .mainmenu-list fieldset input:focus {
           outline: none; }
       #site-navigation .mainmenu-list fieldset button {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
         background-color: transparent;
         padding: 0;
         border: none;
@@ -1036,9 +1040,9 @@ p {
         margin-bottom: 30px; }
       .show-dropdown .wrapper .form-signin .checkbox {
         font-weight: lighter;
-        margin-left: 20%;
         margin-top: 10px;
-        float: left; }
+        float: left;
+        width: 100%; }
       .show-dropdown .wrapper .form-signin .form-control {
         position: relative;
         font-size: 16px;
