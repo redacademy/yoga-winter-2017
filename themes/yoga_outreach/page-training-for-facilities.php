@@ -53,7 +53,7 @@ get_header(); ?>
           Or perhaps you’d like to use yoga for self-care and stress reduction? 
           Yoga Outreach has developed a training just for you!
           </p>
-        </div>
+        </div><!--content-container-->
 				<div class="testimonal-container">
 					<ul class="testimonial-list main-carousel">
 						<?php
