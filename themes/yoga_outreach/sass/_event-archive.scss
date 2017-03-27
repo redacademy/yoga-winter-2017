@@ -5,7 +5,6 @@
         position: relative;
         align-items: center;
     }
-    
     .entry-content-page{
         height: 410px;
         display: flex;
@@ -83,7 +82,6 @@
             flex-wrap: wrap;
             z-index: 1;
         }
-
         h3{
             font-size: 1.5rem;
             font-weight: 300;
@@ -93,7 +91,6 @@
                 font-size: 2.2rem;
             }
         }
-
         .accent-name-shape{
             width: 157px;
             height: 27px;
@@ -109,7 +106,6 @@
                 left: -50px;
             }
         }
-
         .img-contain{
             display: flex;
             justify-content: center;
@@ -118,7 +114,6 @@
                 justify-content: space-between;
             }
         }
-
         .event-img {
             height: 161px;
             width: 161px;
@@ -126,7 +121,6 @@
             margin-bottom: 47px;
             object-fit: cover;
         }
-
         .photo-frame {
             @include desktop {
                 width: 145px;
@@ -135,7 +129,6 @@
                 background-color: $mediumtheme_color;
             }
         }
-
         table {
             height: 90px;
             border: 1px solid black;
@@ -145,7 +138,6 @@
                 width: 487px;
                 height: 140px;
             }
-
             h4 {
                 font-size: 0.7rem;
                 text-transform: uppercase;
@@ -157,19 +149,16 @@
                     width: 80px;
                 }
             }
-
             p {
                 font-size: 0.6rem;
                 @include desktop {
                     font-size: 1rem;
                 }
             }
-
             td {
                 padding: 0 9px;
             }
         }
-
         article {
             @include desktop { 
                 order: 3;
@@ -204,7 +193,6 @@
             }
         }
     }
-
     .desktop-contain {
         @include desktop {
             @include flex-column;
@@ -212,7 +200,6 @@
             width: 60%;
         }
     }
-
     .desktop-right {
         display: none;
         @include desktop {
@@ -255,19 +242,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         button {
             width: 173px;
-
             margin: 0;
             border: none;
             border-radius: 8px;
-
             font-size: 0.9rem;
             color: $darktext_color;
         }
     }
-
     .info-dropdown {
         @include desktop {
             display: none;
@@ -322,7 +306,6 @@
                 background-color: $brightbutton_color;
             }
         }
-        
     }
 
     #retreat {
