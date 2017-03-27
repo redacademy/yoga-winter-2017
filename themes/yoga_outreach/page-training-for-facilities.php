@@ -64,7 +64,7 @@ get_header(); ?>
 						<?php endforeach ?>
 					</ul>
 				</div><!--testimonial-container-->
-        <div class="traininglist-container">
+        <section class="traininglist-container">
           <ul class="training-list">
                     <?php
                     $infoItems = CFS()->get('yoga_info_list');
@@ -91,7 +91,7 @@ get_header(); ?>
                   </li><!--training-list-item-->
                   <?php endforeach; ?>
               </ul>
-        </div><!--traininglist-container-->
+        </section><!--traininglist-container-->
 			<div class="bottom-button-container">
 				<button class="general-button">Book Training</button>
 			</div>
