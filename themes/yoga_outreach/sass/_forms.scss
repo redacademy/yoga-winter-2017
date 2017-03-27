@@ -169,6 +169,9 @@
 }
 
 /* Module Quizzes */
+.page-template-quiz-template{
+	min-height:100vh;
+}
 .entry-content{
 	.gform_wrapper{
 		.module-quiz{
@@ -232,7 +235,7 @@
 .page-template-quiz-template{
 	background: linear-gradient(rgba(216,216,216,0.6), rgba(182, 234, 255, 0.7)), url(../../images/deniz-altindas-38128.jpg)no-repeat center top;
     background-size: cover, cover;
-	header{display:none;}
+	header, footer{display:none;}
 	.site-main, .entry-content, .module-quiz_wrapper{
 		margin: 0 auto;
 		height:50%;
