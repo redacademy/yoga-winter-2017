@@ -60,7 +60,6 @@
 
     .general-button{
         @include general-button;
-        margin-bottom:29px;
     }
 
     .training-image-bar-container{
@@ -94,7 +93,6 @@
     }
 
     .general-button-container{
-        top:60px;
         @include desktop{
             top:0rem;
             bottom:30px;

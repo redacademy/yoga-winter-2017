@@ -19,13 +19,12 @@
 
     .general-button, .book-training-button{
 		@include general-button;
-            margin-bottom:29px;
+
 	}
 
     .general-button-container{
         bottom:auto;
             @include desktop{
-                bottom:25px;
                 top:auto;
         }
     }

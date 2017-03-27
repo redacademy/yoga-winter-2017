@@ -8,8 +8,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<header class = "general-template-section custom-hero-image">
 				<div class ="page-title-container">
-				<h1 class ="page-title-header"><?php the_title(); ?></h1>
-				
+					<h1 class ="page-title-header"><?php the_title(); ?></h1>
+				</div>
 				<?php
                 while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
                     <div class="entry-content-page">
@@ -23,7 +23,6 @@ get_header(); ?>
 					<a href="#" class="general-button teal-button black-text">Core Training</a>
 					<a href="#" class="general-button grey-button">For Facilities</a>
 				</div><!--general-button-container-->
-      </div><!--page-title-container-->
 			</header><!--general-template-section core-hero-->
             <section class="section-15px-padding">
 				<div class="core-h3-container">

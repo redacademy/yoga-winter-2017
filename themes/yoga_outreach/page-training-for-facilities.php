@@ -4,7 +4,6 @@
  *
  * @package Yoga_Outreach_Theme
  */
-
 get_header(); ?>
 	<div id="primary" class="content-area training-for-facilities-content">
 		<main id="main" class="site-main" role="main">

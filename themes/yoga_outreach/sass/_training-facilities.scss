@@ -1,10 +1,4 @@
 .training-for-facilities-content{
-  h1{
-    padding-top: 35%;
-    @include desktop{
-      padding-top: 0;
-    }
-  }
   .custom-hero-image{
       @include desktop{
       height:100vh;
@@ -56,7 +50,6 @@
 
 	.general-button, .book-training-button{
 		@include general-button;
-		margin-bottom:29px;
 	}
 
 	.button-black-text{
@@ -193,14 +186,6 @@
 		}
 	}
 
-	.general-button-container{
-		top:60px;
-      @include desktop{
-          top:0rem;
-          bottom:30px;
-          margin-bottom:29px;
-      }
-    }
     .content-container{
     max-width: 1020px;
     margin: 0 auto;
