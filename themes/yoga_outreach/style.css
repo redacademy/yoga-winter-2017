@@ -2928,10 +2928,6 @@ a:hover, a:active {
     .page-template-training .training-yoga-tools-section, .page-template-training .training-yoga-work-section {
       margin-top: 10px; } }
 
-.page-template-training .content-container {
-  max-width: 1020px;
-  margin: 0 auto; }
-
 .page-template-training .info-dropdown {
   background-color: #fff;
   border-bottom: 2px solid #4A4A4A;
@@ -2998,9 +2994,6 @@ a:hover, a:active {
   max-width: 1020px;
   margin: 0 auto; }
 
-.page-template-training .traininglist-container {
-  background-color: #95afc9; }
-
 .page-template-training .info-list-content, .page-template-training .info-list-title {
   background-color: #95afc9; }
 
@@ -3039,7 +3032,8 @@ a:hover, a:active {
         align-items: center;
     text-decoration: none;
     border-radius: 8px;
-    border: 1px solid white; }
+    border: 1px solid white;
+    color: #6b747d; }
 
 .page-template-training .yoga-info-title {
   font-size: 16.38px; }
@@ -3056,6 +3050,13 @@ a:hover, a:active {
       top: 0rem;
       bottom: 30px;
       margin-bottom: 29px; } }
+
+.page-template-training .content-container {
+  max-width: 1020px;
+  margin: 0 auto; }
+
+.page-template-training .traininglist-container {
+  background-color: #95afc9; }
 
 .core-training-content .page-title-header, .core-training-content .entry-content-page {
   padding-top: 35%; }
@@ -4887,10 +4888,6 @@ object {
     .page-template-training .training-yoga-tools-section, .page-template-training .training-yoga-work-section {
       margin-top: 10px; } }
 
-.page-template-training .content-container {
-  max-width: 1020px;
-  margin: 0 auto; }
-
 .page-template-training .info-dropdown {
   background-color: #fff;
   border-bottom: 2px solid #4A4A4A;
@@ -4957,9 +4954,6 @@ object {
   max-width: 1020px;
   margin: 0 auto; }
 
-.page-template-training .traininglist-container {
-  background-color: #95afc9; }
-
 .page-template-training .info-list-content, .page-template-training .info-list-title {
   background-color: #95afc9; }
 
@@ -4998,7 +4992,8 @@ object {
         align-items: center;
     text-decoration: none;
     border-radius: 8px;
-    border: 1px solid white; }
+    border: 1px solid white;
+    color: #6b747d; }
 
 .page-template-training .yoga-info-title {
   font-size: 16.38px; }
@@ -5015,6 +5010,13 @@ object {
       top: 0rem;
       bottom: 30px;
       margin-bottom: 29px; } }
+
+.page-template-training .content-container {
+  max-width: 1020px;
+  margin: 0 auto; }
+
+.page-template-training .traininglist-container {
+  background-color: #95afc9; }
 
 .core-training-content .page-title-header, .core-training-content .entry-content-page {
   padding-top: 35%; }
