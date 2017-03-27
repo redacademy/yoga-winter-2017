@@ -789,7 +789,9 @@ body {
       display: flex;
       top: 1.5rem;
       max-width: 1024px;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 .section-15px-padding {
   padding: 0 4%; }
@@ -1594,6 +1596,7 @@ footer {
     @media (min-width: 720px) {
       .about-us-content .custom-hero-image {
         -ms-flex-align: center;
+<<<<<<< HEAD
             align-items: center;
         background-size: 100%;
         background-position: left 0 top 0; } }
@@ -1653,6 +1656,9 @@ footer {
           -ms-flex-align: center;
               align-items: center;
           text-decoration: none; } }
+=======
+            align-items: center; } }
+>>>>>>> core-training
   .about-us-content .container section .desktop-button, .about-us-content .event-content .container2 section .desktop-button, .event-content .about-us-content .container2 section .desktop-button {
     display: none; }
   @media (min-width: 720px) {

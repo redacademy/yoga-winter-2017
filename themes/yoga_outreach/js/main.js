@@ -128,14 +128,24 @@
     }
     $(window).resize(containRemove);
 
-    function showText(){
-      var len = $('.dropdown-paragraph').length;
-      if(len > 10){
-        $(this).text($(this).text().substr(0,10)+'..');
+    $('.dropdown-paragraph').each(function(){
+      var max_length = 50; 
+      if($(this).html().length > max_length){ 
+        var short_content 	= $(this).html().substr(0,max_length); 
+        var long_content	= $(this).html().substr(max_length);
+        
+        $(this).html(short_content+'<span class="more-text" style="display:none;">'+long_content+'</span>'+
+              '<a href="#" class="read-more"><br/>Read More</a>'
+              );
+              
+        $(this).find('a.read-more').click(function(event){ 
+          event.preventDefault(); 
+          // $(this).hide();
+          $(this).parents('.dropdown-paragraph').find('.more-text').toggle('2000','swing');
+          $(this).text($(this).text() == 'Read More' ? 'Read Less' : 'Read More');
+        });
       }
-    }
-
-    showText();
+    });
     
 
 })(jQuery); 
