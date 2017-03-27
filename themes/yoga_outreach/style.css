@@ -953,7 +953,8 @@ p {
         color: #6b747d; }
         @media (min-width: 720px) {
           #site-navigation #primary-menu li a {
-            color: white; } }
+            color: white;
+            font-size: 16px; } }
   @media (min-width: 720px) {
     #site-navigation .menu-main-menu-container {
       display: block;
@@ -966,217 +967,213 @@ p {
     height: 45px;
     background-color: #b6eaff;
     border-radius: 8px; }
-    @media (min-width: 720px) {
-      #site-navigation .menu-main-menu-container #menu-item-73 {
-        display: none; } }
     #site-navigation .menu-main-menu-container #menu-item-73 a {
       font-size: 14px;
       color: #4a4a4a; }
-      @media (min-width: 720px) {
-        #site-navigation .menu-main-menu-container #menu-item-73 a {
-          color: white;
-          padding: 0 1rem;
-          font-size: 16px;
-          font-weight: lighter; } }
-  #site-navigation .menu-dropdown {
-    display: none; }
-  #site-navigation .show-dropdown {
-    width: 100%;
-    height: 100vh;
-    background-color: #F6FCFF;
-    z-index: 2;
-    -ms-flex-order: 2;
-        order: 2;
-    position: relative;
-    text-align: center; }
-    @media (min-width: 720px) {
-      #site-navigation .show-dropdown {
-        display: none; } }
-    #site-navigation .show-dropdown .wrapper {
-      display: none;
-      z-index: 4; }
-    #site-navigation .show-dropdown .popup {
-      width: 100%;
-      height: 500px;
-      background-color: #F6FCFF;
-      position: absolute;
-      top: 0;
-      right: 0; }
-      #site-navigation .show-dropdown .popup .form-signin {
-        padding: 40px 28px 45px;
-        margin: 0 auto; }
-        #site-navigation .show-dropdown .popup .form-signin h3 {
-          text-transform: uppercase;
-          font-weight: lighter;
-          text-align: center;
-          font-size: 14px;
-          padding: 10px; }
-        #site-navigation .show-dropdown .popup .form-signin .form-signin-heading,
-        #site-navigation .show-dropdown .popup .form-signin .checkbox {
-          margin-bottom: 30px; }
-        #site-navigation .show-dropdown .popup .form-signin .checkbox {
-          font-weight: lighter;
-          margin-left: 20%;
-          margin-top: 10px;
-          float: left; }
-        #site-navigation .show-dropdown .popup .form-signin .form-control {
-          position: relative;
-          font-size: 16px;
-          height: auto;
-          padding: 10px; }
-          #site-navigation .show-dropdown .popup .form-signin .form-control:focus {
-            z-index: 2; }
-        #site-navigation .show-dropdown .popup .form-signin input[type="text"] {
-          width: 80%;
-          margin-bottom: -1px;
-          border-radius: 8px; }
-        #site-navigation .show-dropdown .popup .form-signin input[type="password"] {
-          width: 80%;
-          margin-bottom: 20px;
-          border-radius: 8px; }
-      #site-navigation .show-dropdown .popup .btn {
-        display: block;
-        width: 200px;
-        height: 45px;
-        background-color: #94BFD1;
-        border-radius: 8px;
-        box-shadow: none;
-        border: none; }
-        #site-navigation .show-dropdown .popup .btn a {
-          text-shadow: none;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 14px;
-          font-weight: lighter;
-          color: white; }
-    #site-navigation .show-dropdown .cross {
-      width: 16px;
-      height: 15px; }
-    #site-navigation .show-dropdown .submenu-down {
-      width: 100%;
-      height: 100px;
-      background-color: white; }
-    #site-navigation .show-dropdown .dropdown-menu-list {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-pack: center;
-          justify-content: center; }
-      @media (min-width: 720px) {
-        #site-navigation .show-dropdown .dropdown-menu-list {
-          display: none; } }
-      #site-navigation .show-dropdown .dropdown-menu-list fieldset {
-        border: none; }
-        @media (min-width: 720px) {
-          #site-navigation .show-dropdown .dropdown-menu-list fieldset {
-            display: none; } }
-        #site-navigation .show-dropdown .dropdown-menu-list fieldset button {
-          position: absolute;
-          width: 30px;
-          height: 30px;
-          top: 30px;
-          left: 10%;
-          z-index: 3;
-          background-color: transparent;
-          padding: 0;
-          border: none;
-          box-shadow: none; }
-          #site-navigation .show-dropdown .dropdown-menu-list fieldset button:focus {
-            outline: none; }
-      #site-navigation .show-dropdown .dropdown-menu-list input {
-        margin-top: 20px;
-        padding-left: 40px;
-        position: relative;
-        width: 80%;
-        height: 30px; }
-        #site-navigation .show-dropdown .dropdown-menu-list input:focus {
-          outline: none; }
-    #site-navigation .show-dropdown li {
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      -ms-flex-align: center;
-          align-items: center;
-      padding: 1rem; }
-      #site-navigation .show-dropdown li h2 {
-        margin: 0 auto;
-        text-transform: uppercase;
-        font-size: 18px; }
+
+.menu-dropdown {
+  display: none; }
+
+.show-dropdown {
+  width: 100%;
+  height: 100vh;
+  background-color: #F6FCFF;
+  z-index: 2;
+  -ms-flex-order: 2;
+      order: 2;
+  position: relative;
+  text-align: center; }
   @media (min-width: 720px) {
-    #site-navigation #header-logo {
-      z-index: 1;
-      width: 50%; } }
-  #site-navigation .signin-section {
-    display: none; }
-    @media (min-width: 720px) {
-      #site-navigation .signin-section {
-        display: block; } }
-    #site-navigation .signin-section .wrapper {
-      display: none; }
-    #site-navigation .signin-section .popup {
-      width: 250px;
-      height: 350px;
-      margin-top: 40px;
-      background-color: #F6FCFF;
+    .show-dropdown {
+      display: none; } }
+  .show-dropdown .wrapper {
+    display: none;
+    z-index: 4; }
+  .show-dropdown .popup {
+    width: 100%;
+    height: 500px;
+    background-color: #F6FCFF;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .show-dropdown .popup .form-signin {
+      padding: 40px 28px 45px;
+      margin: 0 auto; }
+      .show-dropdown .popup .form-signin h3 {
+        text-transform: uppercase;
+        font-weight: lighter;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px; }
+      .show-dropdown .popup .form-signin .form-signin-heading,
+      .show-dropdown .popup .form-signin .checkbox {
+        margin-bottom: 30px; }
+      .show-dropdown .popup .form-signin .checkbox {
+        font-weight: lighter;
+        margin-left: 20%;
+        margin-top: 10px;
+        float: left; }
+      .show-dropdown .popup .form-signin .form-control {
+        position: relative;
+        font-size: 16px;
+        height: auto;
+        padding: 10px; }
+        .show-dropdown .popup .form-signin .form-control:focus {
+          z-index: 2; }
+      .show-dropdown .popup .form-signin input[type="text"] {
+        width: 80%;
+        margin-bottom: -1px;
+        border-radius: 8px; }
+      .show-dropdown .popup .form-signin input[type="password"] {
+        width: 80%;
+        margin-bottom: 20px;
+        border-radius: 8px; }
+    .show-dropdown .popup .btn {
+      display: block;
+      width: 200px;
+      height: 45px;
+      background-color: #94BFD1;
       border-radius: 8px;
-      position: absolute;
-      top: 0;
-      right: 130px; }
-      #site-navigation .signin-section .popup .form-signin {
-        padding: 40px 28px 45px;
-        margin: 0 auto; }
-        #site-navigation .signin-section .popup .form-signin h3 {
-          text-transform: uppercase;
-          font-weight: lighter;
-          text-align: left;
-          font-size: 14px; }
-        #site-navigation .signin-section .popup .form-signin .form-signin-heading,
-        #site-navigation .signin-section .popup .form-signin .checkbox {
-          margin-bottom: 30px; }
-        #site-navigation .signin-section .popup .form-signin .checkbox {
-          font-weight: lighter;
-          margin-top: 10px;
-          float: left; }
-        #site-navigation .signin-section .popup .form-signin .form-control {
-          position: relative;
-          font-size: 16px;
-          height: auto;
-          padding: 10px; }
-          #site-navigation .signin-section .popup .form-signin .form-control:focus {
-            z-index: 2; }
-        #site-navigation .signin-section .popup .form-signin input[type="text"] {
-          width: 200px;
-          margin-bottom: -1px;
-          border-radius: 8px; }
-        #site-navigation .signin-section .popup .form-signin input[type="password"] {
-          width: 200px;
-          margin-bottom: 20px;
-          border-radius: 8px; }
-      #site-navigation .signin-section .popup .btn {
-        display: block;
-        width: 200px;
-        height: 45px;
-        background-color: #94BFD1;
-        border-radius: 8px;
-        box-shadow: none;
-        border: none; }
-        #site-navigation .signin-section .popup .btn a {
-          text-shadow: none;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 14px;
-          font-weight: lighter;
-          color: white; }
-  #site-navigation .logo-image {
-    width: 90px;
-    padding: 0.5rem 0.8rem;
-    -ms-flex-order: 1;
-        order: 1; }
+      box-shadow: none;
+      border: none; }
+      .show-dropdown .popup .btn a {
+        text-shadow: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: lighter;
+        color: white; }
+  .show-dropdown .cross {
+    width: 16px;
+    height: 15px; }
+  .show-dropdown .submenu-down {
+    width: 100%;
+    height: 100px;
+    background-color: white; }
+  .show-dropdown .dropdown-menu-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center; }
     @media (min-width: 720px) {
-      #site-navigation .logo-image {
-        margin-left: 0; } }
+      .show-dropdown .dropdown-menu-list {
+        display: none; } }
+    .show-dropdown .dropdown-menu-list fieldset {
+      border: none; }
+      @media (min-width: 720px) {
+        .show-dropdown .dropdown-menu-list fieldset {
+          display: none; } }
+      .show-dropdown .dropdown-menu-list fieldset button {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 30px;
+        left: 10%;
+        z-index: 3;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        box-shadow: none; }
+        .show-dropdown .dropdown-menu-list fieldset button:focus {
+          outline: none; }
+    .show-dropdown .dropdown-menu-list input {
+      margin-top: 20px;
+      padding-left: 40px;
+      position: relative;
+      width: 80%;
+      height: 30px; }
+      .show-dropdown .dropdown-menu-list input:focus {
+        outline: none; }
+  .show-dropdown li {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 1rem; }
+    .show-dropdown li h2 {
+      margin: 0 auto;
+      text-transform: uppercase;
+      font-size: 18px; }
+
+@media (min-width: 720px) {
+  #header-logo {
+    z-index: 1;
+    width: 50%; } }
+
+.signin-section {
+  display: none; }
+  @media (min-width: 720px) {
+    .signin-section {
+      display: block; } }
+  .signin-section .wrapper {
+    display: none; }
+  .signin-section .popup {
+    width: 250px;
+    height: 350px;
+    margin-top: 40px;
+    background-color: #F6FCFF;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    right: 130px; }
+    .signin-section .popup .form-signin {
+      padding: 40px 28px 45px;
+      margin: 0 auto; }
+      .signin-section .popup .form-signin h3 {
+        text-transform: uppercase;
+        font-weight: lighter;
+        text-align: left;
+        font-size: 14px; }
+      .signin-section .popup .form-signin .form-signin-heading,
+      .signin-section .popup .form-signin .checkbox {
+        margin-bottom: 30px; }
+      .signin-section .popup .form-signin .checkbox {
+        font-weight: lighter;
+        margin-top: 10px;
+        float: left; }
+      .signin-section .popup .form-signin .form-control {
+        position: relative;
+        font-size: 16px;
+        height: auto;
+        padding: 10px; }
+        .signin-section .popup .form-signin .form-control:focus {
+          z-index: 2; }
+      .signin-section .popup .form-signin input[type="text"] {
+        width: 200px;
+        margin-bottom: -1px;
+        border-radius: 8px; }
+      .signin-section .popup .form-signin input[type="password"] {
+        width: 200px;
+        margin-bottom: 20px;
+        border-radius: 8px; }
+    .signin-section .popup .btn {
+      display: block;
+      width: 200px;
+      height: 45px;
+      background-color: #94BFD1;
+      border-radius: 8px;
+      box-shadow: none;
+      border: none; }
+      .signin-section .popup .btn a {
+        text-shadow: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: lighter;
+        color: white; }
+
+.logo-image {
+  width: 90px;
+  padding: 0.5rem 0.8rem;
+  -ms-flex-order: 1;
+      order: 1; }
+  @media (min-width: 720px) {
+    .logo-image {
+      margin-left: 0; } }
 
 footer {
   display: -ms-flexbox;
