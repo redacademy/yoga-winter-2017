@@ -6,15 +6,18 @@
     $('.show-dropdown').hide();
     $('.fa-bars').on('click', function (event) {
         event.preventDefault();
-        $('.show-dropdown').toggleClass('show');
-        $('.show-dropdown').show();
-        $('#primary-menu').show();
+        $('.show-dropdown').slideToggle();
         $('.mainmenu-list').hide();
         $('.wrapper').hide();
-        $('.fa-bars').hide();
-        $('.logo-image').hide();
-        $('#content').hide();
-        $('#colophon').hide();
+        $('#content').show();
+        $('#colophon').show();
+    });
+
+    //on mobile when clicking signin button
+    $('.menu-item-73').on('click', function (event) {
+        event.preventDefault();
+        $('.wrapper').show();
+        $('.signin-button').hide();
     });
 
     //dropdown signin section on clicking signin button

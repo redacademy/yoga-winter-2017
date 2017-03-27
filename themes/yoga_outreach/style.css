@@ -905,7 +905,7 @@ p {
     text-transform: uppercase;
     font-size: 1.2rem; }
   #site-navigation .fa-bars {
-    color: #9FABB7;
+    color: #9fabb7;
     font-size: 2.3rem;
     padding: 1rem;
     -ms-flex-order: 3;
@@ -920,7 +920,7 @@ p {
     @media (min-width: 720px) {
       #site-navigation .desktop-search {
         display: block;
-        color: white;
+        color: #fff;
         position: absolute;
         right: -26px;
         font-size: 21px;
@@ -953,7 +953,7 @@ p {
         color: #6b747d; }
         @media (min-width: 720px) {
           #site-navigation #primary-menu li a {
-            color: white;
+            color: #fff;
             font-size: 16px; } }
   @media (min-width: 720px) {
     #site-navigation .menu-main-menu-container {
@@ -1032,7 +1032,7 @@ p {
       display: block;
       width: 200px;
       height: 45px;
-      background-color: #94BFD1;
+      background-color: #94bfd1;
       border-radius: 8px;
       box-shadow: none;
       border: none; }
@@ -1042,14 +1042,14 @@ p {
         text-transform: uppercase;
         font-size: 14px;
         font-weight: lighter;
-        color: white; }
+        color: #fff; }
   .show-dropdown .cross {
     width: 16px;
     height: 15px; }
   .show-dropdown .submenu-down {
     width: 100%;
     height: 100px;
-    background-color: white; }
+    background-color: #fff; }
   .show-dropdown .dropdown-menu-list {
     display: -ms-flexbox;
     display: flex;
@@ -1154,7 +1154,7 @@ p {
       display: block;
       width: 200px;
       height: 45px;
-      background-color: #94BFD1;
+      background-color: #94bfd1;
       border-radius: 8px;
       box-shadow: none;
       border: none; }
@@ -1164,7 +1164,7 @@ p {
         text-transform: uppercase;
         font-size: 14px;
         font-weight: lighter;
-        color: white; }
+        color: #fff; }
 
 .logo-image {
   width: 90px;
@@ -4613,7 +4613,7 @@ object {
   text-align: center;
   font-family: raleway;
   font-weight: lighter;
-  color: #6B747D; }
+  color: #6b747d; }
   .home h2 {
     text-transform: capitalize;
     font-size: 24px; }
@@ -4640,7 +4640,7 @@ object {
       margin: 35% auto;
       bottom: 7%;
       left: 10%;
-      color: white; }
+      color: #fff; }
       @media (min-width: 720px) {
         .home .hero-banner .herobanner-text {
           margin: 28% auto; } }
@@ -4672,9 +4672,9 @@ object {
         .home .hero-banner .aboutus-button {
           width: 150px;
           height: 45px;
-          background-color: #B6EAFF; } }
+          background-color: #b6eaff; } }
       .home .hero-banner .aboutus-button a {
-        color: white;
+        color: #fff;
         text-shadow: none;
         text-decoration: none;
         text-transform: uppercase;
@@ -4824,7 +4824,7 @@ object {
         .home .get-involved .accent-square {
           height: 130px; } }
   .home .testimonal-container .testimonial-list.main-carousel {
-    background-color: white; }
+    background-color: #fff; }
     @media (min-width: 720px) {
       .home .testimonal-container .testimonial-list.main-carousel {
         background-color: #CBE8EA; } }
@@ -4892,7 +4892,7 @@ object {
         .home .testimonal-container .main-carousel .flickity-prev-next-button.previous {
           left: 10%; } }
   .home .team-container .team-list.main-carousel {
-    background-color: white; }
+    background-color: #fff; }
   .home .team-container .main-carousel {
     width: 100%;
     padding: 30px;
