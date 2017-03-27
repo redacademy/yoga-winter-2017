@@ -14,8 +14,8 @@ get_header(); ?>
                             <h1 class="page-title-header"><?php the_title(); ?></h1>
                             <?php the_content(); ?> <!-- Page Content -->
                             <div class="general-button-container">
-                                <a href="<?php echo get_page_link(69); ?>"class="primary-button">who we are</a>
-                                <a href="<?php echo get_page_link(67); ?>"class="primary-button">contact us</a>
+                                <a class="primary-button" href="<?php echo get_page_link(69); ?>">who we are</a>
+                                <a class="primary-button" href="<?php echo get_page_link(67); ?>">contact us</a>
                             </div>
                         </div>
                     <?php
@@ -37,7 +37,7 @@ get_header(); ?>
                         <div class="subtext">
                             <h2><?php echo CFS()->get( 'what_we_do' ); ?></h2>
                             <p><?php echo $sub[ 'subtext_one' ]; ?></p>
-                            <div class="photo-frame"></div>
+                            <img class="photo-frame" src="<?php echo CFS()->get( 'image1' ); ?>" alt="what we do image">
                         </div>
 
                         <section>
@@ -46,7 +46,7 @@ get_header(); ?>
 
                             <div class="info-field info-container">
                                 <section class="desktop-container">
-                                    <div class="photo-frame"></div>
+                                    <img class="photo-frame" src="<?php echo CFS()->get( 'image2' ); ?>" alt="what we do image">
                                     <div class="list">
                                         <p class="list-title"><?php echo CFS()->get( 'list_title' ); ?>:</p>
                                         <?php if(!empty($items)): ?>
@@ -110,7 +110,7 @@ get_header(); ?>
                     </div>
 
                     <div class="bottom-sub-text">
-                        <div class="photo-frame"></div>
+                        <img class="photo-frame" src="<?php echo CFS()->get( 'image3' ); ?>" alt="what we do image">
                         <p class="subtext" ><?php echo $sub[ 'subtext_three' ]; ?></p>
                     </div>
 
