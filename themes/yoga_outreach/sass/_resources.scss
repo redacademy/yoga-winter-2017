@@ -8,8 +8,21 @@
     .info-dropdown{
         @include desktop{
             padding:0;
+                h3{
+                    @include desktop{
+                        font-size:20px;
+                    }
+
+                }
         }
     }
+
+    .first-dropdown{
+        margin-top:45px;
+        height:50px;
+    }
+
+    
 
     .teal-button.black-text{
         color:black;
@@ -28,6 +41,11 @@
             color:#fff;
         }
     }
+    
+    .max-width-1024{
+        display:flex;
+        flex-direction:column;
+    }
 
 
     .info-heading-subtitle{
@@ -37,6 +55,9 @@
     .main-h3-container{
         h3{
             @include main-h3;
+            @include desktop{
+                color:#4A4A4A;
+            }
         }
     }
 

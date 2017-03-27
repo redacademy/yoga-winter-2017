@@ -12,6 +12,10 @@
     .article-slider {
         height: 300px;
         background-color: $logo_color;
+        @include desktop {
+            background-color: transparent;
+            margin-bottom: 150px;
+        }
 
         article {
             height: 100%;
@@ -26,11 +30,15 @@
         .flickity-slider {
             @include desktop {
                 // width: 300px;
+                margin: 0 auto;
             }
         }
         /* move page dots into carousel */
         .flickity-page-dots {
             bottom: 17.5px; 
+            @include desktop {
+                bottom: -30px;
+            }
 
             .dot {
                 width: 12px;
@@ -38,16 +46,21 @@
                 opacity: 1;
                 background: transparent;
                 border: 2px solid white;
+                @include desktop {
+                    border: 2px solid $darktheme_color;
+                }
             }
         }
         /* fill-in selected dot */
         .flickity-page-dots .dot.is-selected {
             background: white;
+            @include desktop {
+                background: $darktheme_color;
+            }
         }
         article {
             width: 100%;
             position: relative;
-
             @include flex-column;
         }
         .cell-img {
@@ -79,6 +92,10 @@
             button {
                 display: none;
             }
+            @include desktop {
+                height: 280px;
+                background-color: rgba(216,216,216,1);
+            }
         }
     }
 
@@ -88,6 +105,7 @@
         width: 100%;
         margin: 45px;
         @include desktop {
+            height: 220px;
             margin-right: 10px;
         }
     }
@@ -112,6 +130,10 @@
             background-color: #BFE9FD;
             @include flex-column;
             justify-content: center;
+            @include desktop {
+                position: relative;
+                margin-bottom: 50px;
+            }
         }
         h2 {
             font-size: 4vh;
@@ -120,7 +142,12 @@
             text-transform: uppercase;
             padding: 15px;
             @include desktop {
-                font-size: 3.5vw;
+                position: absolute;
+                top: 0;
+                font-weight: 700;
+                text-align: left;
+                background-color: $accentcolor_bar;
+                font-size: 2rem;
                 max-width: 830px;
                 margin: 0 auto;
             }
@@ -128,7 +155,15 @@
         }
         h3 {
             text-align: center;
-            margin: 10px;
+            padding: 10px;
+            background-color: $base_color;
+            @include desktop {
+                position: absolute;
+                padding: 10px 25px;
+                background-color: $accentcolor_bar;
+                bottom: 0;
+                right: 0;
+            }
         }
         
         p {
