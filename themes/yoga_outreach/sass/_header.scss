@@ -53,25 +53,43 @@ p{
       display: none;
     }
   }
+  #primary-menu{
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    box-shadow: none;
+    @include desktop{
+      flex-direction:row;
+    }
+    li{
+      margin:0 auto;
+    }
+  }
   .menu-main-menu-container{
-    display: none;
     @include desktop{
       display:block;
       order:2;
       margin: 0 auto;
     } 
     #menu-item-73{
+      display: block;
+      width: 150px;
+      height: 45px;
+      background-color: #b6eaff;
+      border-radius: 8px;
       @include desktop{
-        display:none;
+        display:none; 
       }
-    }
-    a{
-      @include desktop{
-        color:white;
-        padding: 0 1rem;
-        font-size: 16px;
-        font-weight: lighter;
-      } 
+      a{
+        font-size: 14px;
+        color: #4a4a4a;
+        @include desktop{
+          color:white;
+          padding: 0 1rem;
+          font-size: 16px;
+          font-weight: lighter;
+        }  
+      }
     }
   }
   .menu-dropdown{
@@ -79,7 +97,7 @@ p{
   }
   .show-dropdown{
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background-color: #F6FCFF;
     z-index: 2;
     order:2;
@@ -204,25 +222,7 @@ p{
             outline:none;
         }
       }
-      .signin-button-dropdown{
-        display:block;
-        width: 150px;
-        height: 45px;
-        background-color: #B6EAFF;
-        border-radius: 8px;
-        box-shadow:none;
-        border:none;
-        @include desktop{
-          display: none;
-        }
-        a {
-          text-shadow: none;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 14px;
-          color:$darktext_color;
-        }
-      }
+
     } 
     li{
       display: inline-flex;
