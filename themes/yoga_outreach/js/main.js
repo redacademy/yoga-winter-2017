@@ -108,8 +108,14 @@
       }
     });
 
+    function containRemove() {
+    if ($(window).width() < 720) {
+          $('#retreat').addClass('container2');
+      } else {
+          $('#retreat').removeClass('container2');
+      }
+    }
+    $(window).resize(containRemove);
 
 })(jQuery); 
 
-
-    
