@@ -1,16 +1,17 @@
 .blog-content{
     background-color: #fff;
 
+    .custom-hero-image{
+        display: none; 
+        @include desktop {
+            display: block;
+            height: 200px;
+        }
+    }
+
     .article-slider {
         height: 300px;
         background-color: $logo_color;
-
-        /* cell inherit height from carousel */
-        .carousel-cell {
-            height: 210px;
-            width: 100%;
-            margin: 45px;
-        }
 
         article {
             height: 100%;
@@ -19,11 +20,14 @@
 
             text-align: center;
         }
-
         .cell-head {
             align-self: center;
         }
-
+        .flickity-slider {
+            @include desktop {
+                // width: 300px;
+            }
+        }
         /* move page dots into carousel */
         .flickity-page-dots {
             bottom: 17.5px; 
@@ -36,19 +40,16 @@
                 border: 2px solid white;
             }
         }
-
         /* fill-in selected dot */
         .flickity-page-dots .dot.is-selected {
-        background: white;
+            background: white;
         }
-
         article {
             width: 100%;
             position: relative;
 
             @include flex-column;
         }
-
         .cell-img {
             background-position: center;
             width: 225px;
@@ -56,25 +57,38 @@
             padding: 25px;
             @include flex-column;
             justify-content: center;
+            @include desktop {
+                padding: 0;
+            }
         }
-
         p {
             font-size: 3vh;
             color: $basetext_color;
             text-align: center;
             text-decoration: none;
             text-transform: uppercase;
+            @include desktop {
+                font-size: 1rem;
+            }
         }
-
         ul { /* carousel height */
             height: 100%;
             margin: 0;
             padding: 0;
             list-style-type: none;
-
             button {
                 display: none;
             }
+        }
+    }
+
+    /* cell inherit height from carousel */
+    .carousel-cell {
+        height: 210px;
+        width: 100%;
+        margin: 45px;
+        @include desktop {
+            margin-right: 10px;
         }
     }
 
@@ -87,6 +101,10 @@
                 height: 133px;
                 width: 100%;
                 object-fit: cover;
+                @include desktop {
+                    height: 400px;
+                    
+                }
             }
         }
         .article-head {
@@ -101,6 +119,11 @@
             text-align: center;
             text-transform: uppercase;
             padding: 15px;
+            @include desktop {
+                font-size: 3.5vw;
+                max-width: 830px;
+                margin: 0 auto;
+            }
 
         }
         h3 {
@@ -110,6 +133,10 @@
         
         p {
             padding: 0 15px;
+            @include desktop {
+                width: 830px;
+                margin: 0 auto;
+            }
         }
     }
 
@@ -118,11 +145,16 @@
         display: flex;
         justify-content: space-between;
         margin: 25px;
+        @include desktop {
+            width: 830px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
     }
 
     button {
         height: 30px;
-        width: 50px;
+        width: 70px;
         margin: 0;
         padding: 0;
         border: none;

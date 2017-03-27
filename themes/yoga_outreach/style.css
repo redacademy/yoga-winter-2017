@@ -703,10 +703,10 @@ body {
 
 .entry-content-page {
   font-size: 1rem;
-  padding: 44px 20px; }
+  padding: 44px 0px;
+  position: relative; }
   @media (min-width: 720px) {
     .entry-content-page {
-      position: relative;
       bottom: 55px;
       font-size: 24px; } }
 
@@ -789,12 +789,15 @@ body {
 
 .general-button-container {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  top: 8rem; }
   @media (min-width: 720px) {
     .general-button-container {
       display: -ms-flexbox;
       display: flex;
-      top: 11rem; } }
+      top: auto;
+      max-width: 1024px;
+      margin: 0 auto; } }
 
 .section-15px-padding {
   padding: 0 4%; }
@@ -829,7 +832,6 @@ a {
 .page-subtitle {
   color: white;
   font-size: 16px;
-  margin-top: 44px;
   padding: 0 1rem;
   text-align: center;
   line-height: 25px; }
@@ -1345,7 +1347,11 @@ footer {
   .contact-us-content .contactinfo-container {
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 290px; } }
+    width: 830px;
+    margin: 0 auto;
+    margin-bottom: 290px;
+    -ms-flex-pack: justify;
+        justify-content: space-between; } }
 
 @media (min-width: 720px) {
   .contact-us-content .email-inquiries {
@@ -1362,7 +1368,8 @@ footer {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     -ms-flex-item-align: start;
-        align-self: flex-start; } }
+        align-self: flex-start;
+    padding: 0; } }
 
 .contact-us-content .info-section {
   background-color: #f4f1ea; }
@@ -1512,7 +1519,7 @@ footer {
   padding-left: 15px; }
   @media (min-width: 720px) {
     .contact-us-content .emailinfo-section {
-      padding-left: 10%; } }
+      padding-left: 0; } }
 
 @media (min-width: 720px) {
   .contact-us-content .info-dropdown {
@@ -1903,17 +1910,19 @@ footer {
           line-height: 22px; } }
 
 .blog-content {
-  background-color: #fff; }
+  background-color: #fff;
+  /* cell inherit height from carousel */ }
+  .blog-content .custom-hero-image {
+    display: none; }
+    @media (min-width: 720px) {
+      .blog-content .custom-hero-image {
+        display: block;
+        height: 200px; } }
   .blog-content .article-slider {
     height: 300px;
     background-color: #95afc9;
-    /* cell inherit height from carousel */
     /* move page dots into carousel */
     /* fill-in selected dot */ }
-    .blog-content .article-slider .carousel-cell {
-      height: 210px;
-      width: 100%;
-      margin: 45px; }
     .blog-content .article-slider article {
       height: 100%;
       display: -ms-flexbox;
@@ -1955,12 +1964,18 @@ footer {
           flex-direction: column;
       -ms-flex-pack: center;
           justify-content: center; }
+      @media (min-width: 720px) {
+        .blog-content .article-slider .cell-img {
+          padding: 0; } }
     .blog-content .article-slider p {
       font-size: 3vh;
       color: #fff;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase; }
+      @media (min-width: 720px) {
+        .blog-content .article-slider p {
+          font-size: 1rem; } }
     .blog-content .article-slider ul {
       /* carousel height */
       height: 100%;
@@ -1969,6 +1984,13 @@ footer {
       list-style-type: none; }
       .blog-content .article-slider ul button {
         display: none; }
+  .blog-content .carousel-cell {
+    height: 210px;
+    width: 100%;
+    margin: 45px; }
+    @media (min-width: 720px) {
+      .blog-content .carousel-cell {
+        margin-right: 10px; } }
   .blog-content .full-article article {
     display: none;
     padding-bottom: 20px; }
@@ -1976,6 +1998,9 @@ footer {
       height: 133px;
       width: 100%;
       object-fit: cover; }
+      @media (min-width: 720px) {
+        .blog-content .full-article article img {
+          height: 400px; } }
   .blog-content .full-article .article-head {
     height: 100%;
     background-color: #BFE9FD;
@@ -1991,11 +2016,20 @@ footer {
     text-align: center;
     text-transform: uppercase;
     padding: 15px; }
+    @media (min-width: 720px) {
+      .blog-content .full-article h2 {
+        font-size: 3.5vw;
+        max-width: 830px;
+        margin: 0 auto; } }
   .blog-content .full-article h3 {
     text-align: center;
     margin: 10px; }
   .blog-content .full-article p {
     padding: 0 15px; }
+    @media (min-width: 720px) {
+      .blog-content .full-article p {
+        width: 830px;
+        margin: 0 auto; } }
   .blog-content .button-container {
     height: 30px;
     display: -ms-flexbox;
@@ -2003,9 +2037,14 @@ footer {
     -ms-flex-pack: justify;
         justify-content: space-between;
     margin: 25px; }
+    @media (min-width: 720px) {
+      .blog-content .button-container {
+        width: 830px;
+        margin: 0 auto;
+        margin-bottom: 30px; } }
   .blog-content button {
     height: 30px;
-    width: 50px;
+    width: 70px;
     margin: 0;
     padding: 0;
     border: none;
@@ -2584,8 +2623,6 @@ a:hover, a:active {
   .training-content .main-h3-container a {
     color: #000;
     font-weight: bold; }
-  .training-content .desktop-margin {
-    margin-left: 6%; }
   .training-content .training-para-left {
     text-align: left; }
   .training-content .for-training-section {
@@ -2621,7 +2658,8 @@ a:hover, a:active {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    text-decoration: none; }
+    text-decoration: none;
+    margin-bottom: 29px; }
   .training-content .training-image-bar-container {
     position: relative;
     margin-top: 1.5rem; }
@@ -2647,14 +2685,6 @@ a:hover, a:active {
     @media (min-width: 720px) {
       .training-content .training-color-bar {
         width: 320px; } }
-  @media (min-width: 720px) {
-    .training-content .general-button-container {
-      top: 0rem;
-      bottom: 30px;
-      margin-bottom: 29px;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      width: 100vw; } }
   .training-content .training-image-bar-container:nth-of-type(3) {
     margin-bottom: 60px; }
   .training-content .training-color-bar.grey-bar {
@@ -2931,7 +2961,8 @@ a:hover, a:active {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 .training-for-facilities-content .button-black-text {
   color: black; }
@@ -3063,12 +3094,6 @@ a:hover, a:active {
 
 .training-for-facilities-content .traininglist-container {
   background-color: #95afc9; }
-
-.core-training-content .entry-content-page {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-top: 5%;
-  padding: 15px; }
 
 .core-training-content .testimonial-container {
   background-color: #ebe5d8; }
@@ -3226,7 +3251,8 @@ a:hover, a:active {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 @media (min-width: 720px) {
   .core-training-content .register-online-button {
@@ -3512,13 +3538,8 @@ a:hover, a:active {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  text-decoration: none; }
-
-.resources-research-content .general-button-container {
-  bottom: auto; }
-  @media (min-width: 720px) {
-    .resources-research-content .general-button-container {
-      top: auto; } }
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 @media (min-width: 720px) {
   .resources-research-content .page-title-header, .resources-research-content .entry-content-page {
@@ -3680,7 +3701,8 @@ a:hover, a:active {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 .resources-media-content .main-h3-container h3 {
   padding-top: 35px;
@@ -5015,7 +5037,8 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 .training-for-facilities-content .button-black-text {
   color: black; }
@@ -5147,12 +5170,6 @@ object {
 
 .training-for-facilities-content .traininglist-container {
   background-color: #95afc9; }
-
-.core-training-content .entry-content-page {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-top: 5%;
-  padding: 15px; }
 
 .core-training-content .testimonial-container {
   background-color: #ebe5d8; }
@@ -5310,7 +5327,8 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 @media (min-width: 720px) {
   .core-training-content .register-online-button {

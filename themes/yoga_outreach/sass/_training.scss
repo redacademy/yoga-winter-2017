@@ -33,9 +33,9 @@
             }
     }//main-h3-container
 
-    .desktop-margin{
-        margin-left:6%;
-    }
+    // .desktop-margin{
+    //     margin-left:6%;
+    // }
 
 
     .training-para-left{
@@ -60,6 +60,7 @@
 
     .general-button{
         @include general-button;
+        margin-bottom:29px;
     }
 
     .training-image-bar-container{
@@ -90,16 +91,6 @@
             @include desktop{
                 width:320px;
             }
-    }
-
-    .general-button-container{
-        @include desktop{
-            top:0rem;
-            bottom:30px;
-            margin-bottom:29px;
-            justify-content: space-between;
-            width: 100vw;
-        }
     }
 
     .training-image-bar-container:nth-of-type(3){

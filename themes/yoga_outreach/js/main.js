@@ -84,14 +84,7 @@
     // Shows first blog post default
     $('.post:first-child').show();
 
-    // Next article button
-    $('.button').on('click', function(e){
-      e.preventDefault();
-      var id = $('article', this).attr('data-post');
-      $('.full-article .post').hide();
-      $('#' + id).show();
-    })
-
+    // Letter Count for read more text 
     $('.article-text').each(function(){
       var max_length = 167; 
       if($(this).html().length > max_length){ 
@@ -119,6 +112,7 @@
       }
     }
     $(window).resize(containRemove);
+    
 
 })(jQuery); 
 

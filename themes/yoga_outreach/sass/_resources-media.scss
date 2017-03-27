@@ -2,6 +2,7 @@
 
     .general-button{
         @include general-button;
+            margin-bottom:29px;
         
     }
     
@@ -17,7 +18,6 @@
     .info-dropdown{
         padding:0;
     }
-
 
     .media-article-list, .media-video-list, .press-article-list{
         padding:0;
@@ -146,7 +146,5 @@
           background-color: #94bfd1;
       }
   }
-
-
 
 }//Resources Media Wrapper
