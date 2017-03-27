@@ -89,6 +89,7 @@
       $('#' + id).show();
     })
 
+    // Letter Count for read more text 
     $('.article-text').each(function(){
       var max_length = 167; 
       if($(this).html().length > max_length){ 
@@ -116,6 +117,7 @@
       }
     }
     $(window).resize(containRemove);
+    
 
 })(jQuery); 
 

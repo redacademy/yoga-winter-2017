@@ -1348,7 +1348,11 @@ footer {
   .contact-us-content .contactinfo-container {
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 290px; } }
+    width: 830px;
+    margin: 0 auto;
+    margin-bottom: 290px;
+    -ms-flex-pack: justify;
+        justify-content: space-between; } }
 
 @media (min-width: 720px) {
   .contact-us-content .email-inquiries {
@@ -1365,7 +1369,8 @@ footer {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     -ms-flex-item-align: start;
-        align-self: flex-start; } }
+        align-self: flex-start;
+    padding: 0; } }
 
 .contact-us-content .info-section {
   background-color: #f4f1ea; }
@@ -1515,7 +1520,7 @@ footer {
   padding-left: 15px; }
   @media (min-width: 720px) {
     .contact-us-content .emailinfo-section {
-      padding-left: 10%; } }
+      padding-left: 0; } }
 
 @media (min-width: 720px) {
   .contact-us-content .info-dropdown {
@@ -1907,6 +1912,12 @@ footer {
 
 .blog-content {
   background-color: #fff; }
+  .blog-content .custom-hero-image {
+    display: none; }
+    @media (min-width: 720px) {
+      .blog-content .custom-hero-image {
+        display: block;
+        height: 200px; } }
   .blog-content .article-slider {
     height: 300px;
     background-color: #95afc9;
@@ -1964,6 +1975,9 @@ footer {
       text-align: center;
       text-decoration: none;
       text-transform: uppercase; }
+      @media (min-width: 720px) {
+        .blog-content .article-slider p {
+          font-size: 1rem; } }
     .blog-content .article-slider ul {
       /* carousel height */
       height: 100%;
@@ -1979,6 +1993,9 @@ footer {
       height: 133px;
       width: 100%;
       object-fit: cover; }
+      @media (min-width: 720px) {
+        .blog-content .full-article article img {
+          height: 400px; } }
   .blog-content .full-article .article-head {
     height: 100%;
     background-color: #BFE9FD;

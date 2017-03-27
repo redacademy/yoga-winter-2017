@@ -22,16 +22,16 @@ get_header(); ?>
                 </div>
                 <div class="contactinfo-container">
                 <div class="emailinfo-section">
-                <?php $fields= CFS()->get( 'emails' ); ?>  <!--variable to hold email from loop-->    
+                    <?php $fields= CFS()->get( 'emails' ); ?>  <!--variable to hold email from loop-->    
 
-                <?php if(!empty($fields)): ?>
-                    <?php foreach( $fields as $field ): ?>
-                        <div class="email-info">
-                            <h5><?php echo $field['email_for']; ?></h5>
-                            <p><?php echo $field['email']; ?></p>
-                        </div><!--email-info-->
-                    <?php endforeach; ?>
-                <?php endif; ?> 
+                    <?php if(!empty($fields)): ?>
+                        <?php foreach( $fields as $field ): ?>
+                            <div class="email-info">
+                                <h5><?php echo $field['email_for']; ?></h5>
+                                <p><?php echo $field['email']; ?></p>
+                            </div><!--email-info-->
+                        <?php endforeach; ?>
+                    <?php endif; ?> 
                 </div>
             </section><!--email-inuquiries-->
             <section class="info-section padding-on-sides">

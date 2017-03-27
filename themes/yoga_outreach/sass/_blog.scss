@@ -1,6 +1,14 @@
 .blog-content{
     background-color: #fff;
 
+    .custom-hero-image{
+        display: none; 
+        @include desktop {
+            display: block;
+            height: 200px;
+        }
+    }
+
     .article-slider {
         height: 300px;
         background-color: $logo_color;
@@ -64,6 +72,9 @@
             text-align: center;
             text-decoration: none;
             text-transform: uppercase;
+            @include desktop {
+                font-size: 1rem;
+            }
         }
 
         ul { /* carousel height */
@@ -87,6 +98,9 @@
                 height: 133px;
                 width: 100%;
                 object-fit: cover;
+                @include desktop {
+                    height: 400px;
+                }
             }
         }
         .article-head {
