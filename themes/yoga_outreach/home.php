@@ -7,6 +7,8 @@
 get_header(); ?>
 	<div id="primary" class="content-area blog-content">
 		<main id="main" class="site-main" role="main">
+            <header class="general-template-section custom-hero-image">
+			</header><!--general-template-section-->
             <section class="article-slider">
                 <ul class="carousel main-carousel">
                     <?php if ( have_posts() ) : ?>   
