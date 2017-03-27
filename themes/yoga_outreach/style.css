@@ -1908,7 +1908,8 @@ footer {
           line-height: 22px; } }
 
 .blog-content {
-  background-color: #fff; }
+  background-color: #fff;
+  /* cell inherit height from carousel */ }
   .blog-content .custom-hero-image {
     display: none; }
     @media (min-width: 720px) {
@@ -1918,13 +1919,8 @@ footer {
   .blog-content .article-slider {
     height: 300px;
     background-color: #95afc9;
-    /* cell inherit height from carousel */
     /* move page dots into carousel */
     /* fill-in selected dot */ }
-    .blog-content .article-slider .carousel-cell {
-      height: 210px;
-      width: 100%;
-      margin: 45px; }
     .blog-content .article-slider article {
       height: 100%;
       display: -ms-flexbox;
@@ -1966,6 +1962,9 @@ footer {
           flex-direction: column;
       -ms-flex-pack: center;
           justify-content: center; }
+      @media (min-width: 720px) {
+        .blog-content .article-slider .cell-img {
+          padding: 0; } }
     .blog-content .article-slider p {
       font-size: 3vh;
       color: #fff;
@@ -1983,6 +1982,13 @@ footer {
       list-style-type: none; }
       .blog-content .article-slider ul button {
         display: none; }
+  .blog-content .carousel-cell {
+    height: 210px;
+    width: 100%;
+    margin: 45px; }
+    @media (min-width: 720px) {
+      .blog-content .carousel-cell {
+        margin-right: 10px; } }
   .blog-content .full-article article {
     display: none;
     padding-bottom: 20px; }
@@ -2008,11 +2014,20 @@ footer {
     text-align: center;
     text-transform: uppercase;
     padding: 15px; }
+    @media (min-width: 720px) {
+      .blog-content .full-article h2 {
+        font-size: 3.5vw;
+        max-width: 830px;
+        margin: 0 auto; } }
   .blog-content .full-article h3 {
     text-align: center;
     margin: 10px; }
   .blog-content .full-article p {
     padding: 0 15px; }
+    @media (min-width: 720px) {
+      .blog-content .full-article p {
+        width: 830px;
+        margin: 0 auto; } }
   .blog-content .button-container {
     height: 30px;
     display: -ms-flexbox;
@@ -2020,9 +2035,14 @@ footer {
     -ms-flex-pack: justify;
         justify-content: space-between;
     margin: 25px; }
+    @media (min-width: 720px) {
+      .blog-content .button-container {
+        width: 830px;
+        margin: 0 auto;
+        margin-bottom: 30px; } }
   .blog-content button {
     height: 30px;
-    width: 50px;
+    width: 70px;
     margin: 0;
     padding: 0;
     border: none;
