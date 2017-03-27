@@ -49,6 +49,18 @@
               </div>
             </div>
            <div class="show-dropdown show">
+             <div class="wrapper">
+                <form class="form-signin">       
+                  <h3>username</h3>
+                  <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+                  <h3>password</h3>
+                  <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+                  <label class="checkbox">
+                    <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                  </label>
+                  <button class="btn btn-lg btn-primary btn-block dropdown-btn" type="submit"><a href="">sign in</a></button>   
+                </form>
+              </div>
              <ul class="dropdown-menu-list">
                 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
                   <fieldset>
@@ -81,15 +93,6 @@
             </form>
           </div>
           <button class="signin-button"><a href="">sign in
-    <!--<?php if (is_user_logged_in()) : ?>
-  <a href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
-    <?php endif;?>
-    <?php $current_user = wp_get_current_user();
-if ( is_user_logged_in() ) {
-    echo 'welcome, ' . $current_user->user_login;
-} else {
-    echo 'Welcome, visitor!';
-}?>-->
           </a></button>
           </div>
               <div class="mainmenu-list">

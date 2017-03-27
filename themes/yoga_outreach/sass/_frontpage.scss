@@ -3,7 +3,7 @@
   text-align: center;
   font-family: raleway;
   font-weight: lighter;
-  color:#6B747D;
+  color: $mediumtheme_color;
   h2{
     text-transform: capitalize;
     font-size: 24px;
@@ -31,7 +31,7 @@
       margin: 35% auto;
       bottom: 7%;
       left: 10%;
-      color: white;
+      color: $base_color;
       @include desktop{
         margin: 28% auto;
       }
@@ -65,10 +65,10 @@
       @include desktop{
         width: 150px;
         height: 45px;
-        background-color: #B6EAFF;
+        background-color: $button_color2;
       }
       a {
-        color: white;
+        color: $base_color;
         text-shadow: none;
         text-decoration: none;
         text-transform: uppercase;
@@ -247,7 +247,7 @@
   .testimonal-container{
     
     .testimonial-list.main-carousel{
-      background-color:white;
+      background-color:$base_color;
       @include desktop{
         background-color:#CBE8EA;
       }
@@ -323,7 +323,7 @@
   .team-container{
     
     .team-list.main-carousel{
-      background-color:white;
+      background-color:$base_color;
 
     }
     .main-carousel{

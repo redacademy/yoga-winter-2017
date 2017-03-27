@@ -7,22 +7,20 @@ get_header(); ?>
 	<div id="primary" class="content-area core-training-content">
 		<main id="main" class="site-main" role="main">
 			<header class = "general-template-section custom-hero-image">
-				<div class ="page-title-container">
-					<h1 class ="page-title-header"><?php the_title(); ?></h1>
-				</div>
 				<?php
                 while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
-                    <div class="entry-content-page">
-                    	<?php the_content(); ?> <!-- Page Content -->
-                    </div><!--entry-content-page-->
-                    <?php
+				<div class="entry-content-page">
+					<h1 class ="page-title-header"><?php the_title(); ?></h1>
+                	<?php the_content(); ?> <!-- Page Content -->
+					<div class="general-button-container">
+						<a href="#" class="general-button teal-button black-text">Core Training</a>
+						<a href="training-for-facilities" class="general-button grey-button">For Facilities</a>
+					</div><!--general-button-container-->
+                </div><!--entry-content-page-->
+				<?php
                 endwhile; //resetting the page loop
                 wp_reset_query(); //resetting the page query
                 ?>
-				<div class="general-button-container">
-					<a href="#" class="general-button teal-button black-text">Core Training</a>
-					<a href="#" class="general-button grey-button">For Facilities</a>
-				</div><!--general-button-container-->
 			</header><!--general-template-section core-hero-->
             <section class="section-15px-padding">
 				<div class="core-h3-container">
@@ -79,7 +77,8 @@ get_header(); ?>
 						</tr>
 					</table>
 					<p>Now you can take the training online in an eight week format.</p>
-					<p><?php echo CFS()->get('training_dates_paragraph')?></p>
+					<p class ="dropdown-paragraph"><?php echo CFS()->get('training_dates_paragraph')?></p>
+					<h5>Read More</h5>
 				</section>
 				<section class="classroom-dates-section section-15px-padding">
 					<div class="core-training-text-image-container">
