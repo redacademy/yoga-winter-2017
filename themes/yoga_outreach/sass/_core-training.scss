@@ -1,4 +1,5 @@
 .core-training-content{
+   
     .page-title-header{
         padding-top: 35%;
         @include desktop{
@@ -15,19 +16,21 @@
         margin-top: 5%;
         padding: 15px;
     }
+    
     .testimonial-container{
-            background-color: #ebe5d8;
-          }
-        .main-carousel{
-            width: 100%;
-            padding-top:20px;
-            margin-top:2rem;
-            padding-bottom:20px;
-            padding-right:2rem;
-            height: 8.3rem;
+        background-color: #ebe5d8;
+    }
+    
+    .main-carousel{
+        width: 100%;
+        padding-top:20px;
+        margin-top:2rem;
+        padding-bottom:20px;
+        padding-right:2rem;
+        height: 8.3rem;
             @include desktop{
-              max-width: 1020px;
-              margin: 0 auto;
+                max-width: 1020px;
+                margin: 0 auto;
             }
                 .carousel-cell{
                     width: 100%;
@@ -48,10 +51,7 @@
                     box-shadow: none;
                     padding: 0;
                 }
-                .flickity-prev-next-button.next {
-                }
-                .flickity-prev-next-button.previous {
-                }
+
     }
 
     .core-h3-container{

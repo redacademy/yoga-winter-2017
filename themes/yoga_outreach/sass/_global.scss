@@ -169,13 +169,9 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    z-index:-1;
-        @include desktop{
-            height:630px;   
+        z-index:-1;
         }
-    }
+}
 
 
 .general-button-container{
