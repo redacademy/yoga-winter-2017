@@ -5,48 +5,48 @@
       padding-top: 0;
     }
   }
-	 	.custom-hero-image{
-       @include desktop{
-       height:100vh;
-       }
-     }
-		 .main-carousel{
-        	width: 100%;
-            padding: 30px;
-            margin: 0 auto;
-                .carousel-cell{
-                    width: 100%;
-                    height: auto;
-                    p{
-                        margin-top: 20px;
-                    }
-                    h1{
-                        color: $darktext_color;
-                    }
-                }
-                ol{
-                    display: none;
-                }
-                .flickity-prev-next-button{
-                    border: none;
-                    background: none;
-                    box-shadow: none;
-                    padding: 0;
-                }
-                .flickity-prev-next-button.next {
-                    right: 5%;
-                }
-                .flickity-prev-next-button.previous {
-                    left: 5%;
-                }
-            }//main carousel
+  .custom-hero-image{
+      @include desktop{
+      height:100vh;
+      }
+    }
+  .main-carousel{
+      width: 100%;
+      padding: 30px;
+      margin: 0 auto;
+      .carousel-cell{
+          width: 100%;
+          height: auto;
+          p{
+              margin-top: 20px;
+          }
+          h1{
+              color: $darktext_color;
+          }
+      }
+      ol{
+          display: none;
+      }
+      .flickity-prev-next-button{
+          border: none;
+          background: none;
+          box-shadow: none;
+          padding: 0;
+      }
+      .flickity-prev-next-button.next {
+          right: 5%;
+      }
+      .flickity-prev-next-button.previous {
+          left: 5%;
+      }
+  }//main carousel
 
-	.heading-subtitle{
-		color: white;
-		width: 200px;
-		text-align: center;
-		margin: 0 auto;
-	}
+  .heading-subtitle{
+    color: white;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+  }
 
 	.avail-online-h3{
 		@include desktop{
@@ -137,19 +137,16 @@
 		min-width:320px;
 		height:100px;
 		background-color:#EBE5D8;
-}
+  }
 
 .training-list{
     max-width: 1020px;
     margin: 0 auto;
-}
+  }
 
 	.info-list-content, .info-list-title{
 		background-color:#95afc9;
 	}
-
-
-	
 
 	.bottom-button-container{
 		height:85px;
@@ -198,11 +195,11 @@
 
 	.general-button-container{
 		top:60px;
-        @include desktop{
-            top:0rem;
-            bottom:30px;
-            margin-bottom:29px;
-        }
+      @include desktop{
+          top:0rem;
+          bottom:30px;
+          margin-bottom:29px;
+      }
     }
     .content-container{
     max-width: 1020px;

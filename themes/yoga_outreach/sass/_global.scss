@@ -50,15 +50,14 @@ body{
 
 .page-title-header{
 	text-align:center;
-    color:$base_color;
+  color:$base_color;
 	padding-top:66px;
     font-weight:300;
     font-size:24px;
         @include desktop{
-            font-size:40px;
-            padding-top:0;
-            padding-bottom:0;
-            color:$darktheme_color;
+          font-size:40px;
+          padding-top:0;
+          padding-bottom:0;
         }
 }
 

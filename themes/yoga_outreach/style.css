@@ -685,8 +685,7 @@ body {
     .page-title-header, .entry-content-page {
       font-size: 40px;
       padding-top: 0;
-      padding-bottom: 0;
-      color: #4a4a4a; } }
+      padding-bottom: 0; } }
 
 .page-title-container {
   position: relative; }
