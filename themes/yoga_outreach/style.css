@@ -913,28 +913,48 @@ p {
     @media (min-width: 720px) {
       #site-navigation .fa-bars {
         display: none; } }
-  #site-navigation .menu-main-menu-container {
-    display: none; }
+  #site-navigation #primary-menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: inherit;
+    box-shadow: none; }
     @media (min-width: 720px) {
-      #site-navigation .menu-main-menu-container {
-        display: block;
-        -ms-flex-order: 2;
-            order: 2;
-        margin: 0 auto; } }
+      #site-navigation #primary-menu {
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+    #site-navigation #primary-menu li {
+      margin: 0 auto; }
+  @media (min-width: 720px) {
+    #site-navigation .menu-main-menu-container {
+      display: block;
+      -ms-flex-order: 2;
+          order: 2;
+      margin: 0 auto; } }
+  #site-navigation .menu-main-menu-container #menu-item-73 {
+    display: block;
+    width: 150px;
+    height: 45px;
+    background-color: #b6eaff;
+    border-radius: 8px; }
     @media (min-width: 720px) {
       #site-navigation .menu-main-menu-container #menu-item-73 {
         display: none; } }
-    @media (min-width: 720px) {
-      #site-navigation .menu-main-menu-container a {
-        color: white;
-        padding: 0 1rem;
-        font-size: 16px;
-        font-weight: lighter; } }
+    #site-navigation .menu-main-menu-container #menu-item-73 a {
+      font-size: 14px;
+      color: #4a4a4a; }
+      @media (min-width: 720px) {
+        #site-navigation .menu-main-menu-container #menu-item-73 a {
+          color: white;
+          padding: 0 1rem;
+          font-size: 16px;
+          font-weight: lighter; } }
   #site-navigation .menu-dropdown {
     display: none; }
   #site-navigation .show-dropdown {
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background-color: #F6FCFF;
     z-index: 2;
     -ms-flex-order: 2;
@@ -1044,23 +1064,6 @@ p {
         height: 30px; }
         #site-navigation .show-dropdown .dropdown-menu-list input:focus {
           outline: none; }
-      #site-navigation .show-dropdown .dropdown-menu-list .signin-button-dropdown {
-        display: block;
-        width: 150px;
-        height: 45px;
-        background-color: #B6EAFF;
-        border-radius: 8px;
-        box-shadow: none;
-        border: none; }
-        @media (min-width: 720px) {
-          #site-navigation .show-dropdown .dropdown-menu-list .signin-button-dropdown {
-            display: none; } }
-        #site-navigation .show-dropdown .dropdown-menu-list .signin-button-dropdown a {
-          text-shadow: none;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 14px;
-          color: #4a4a4a; }
     #site-navigation .show-dropdown li {
       display: -ms-inline-flexbox;
       display: inline-flex;

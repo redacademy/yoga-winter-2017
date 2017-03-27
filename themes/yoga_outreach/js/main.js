@@ -3,11 +3,16 @@
     var $infoField = $('.info-field');
 
     //dropdown submenu on clicking hamburger icon
+    $('.show-dropdown').hide();
     $('.fa-bars').on('click', function (event) {
         event.preventDefault();
-        $('.menu-dropdown').toggleClass('show-dropdown');
-        $('.menu-dropdown').show();
+        $('.show-dropdown').toggleClass('show');
+        $('.show-dropdown').show();
         $('.wrapper').hide();
+        $('.fa-bars').hide();
+        $('.logo-image').hide();
+        $('#content').hide();
+        $('#colophon').hide();
     });
     //when on clicking signin button rest of content hides
     $('.signin-button-dropdown').on('click', function (event) {
