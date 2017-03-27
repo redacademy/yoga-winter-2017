@@ -91,7 +91,7 @@ get_header(); ?>
                   </li><!--training-list-item-->
                   <?php endforeach; ?>
               </ul>
-        </div>
+        </div><!--traininglist-container-->
 			<div class="bottom-button-container">
 				<button class="general-button">Book Training</button>
 			</div>
