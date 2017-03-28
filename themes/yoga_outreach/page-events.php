@@ -105,7 +105,7 @@ get_header(); ?>
             </section>
 
             <div class="booking-button">
-                <button class="general-button white-button">book workshop</button>
+                <a href="<?php echo get_page_link(); ?>"class="primary-button">book wordshop</a>
             </div>
 
             <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop--> 
@@ -192,7 +192,7 @@ get_header(); ?>
                             </div>
                         </div>
                         <div class="booking-button">
-                            <button class="general-button white-button">Register online</button>
+                            <a href="<?php echo get_page_link(); ?>"class="primary-button">register online</a>
                         </div>
                     <?php endforeach; ?>
                 <?php endif; ?> 

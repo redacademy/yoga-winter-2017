@@ -8,18 +8,17 @@
 get_header(); ?>
 	<div id="primary" class="content-area who-we-are-content">
 		<main id="main" class="site-main" role="main">
-            <header class="entry-header custom-hero-image hero-text">
-                <h1 class="header-title"><?php the_title(); ?></h1>
-                <?php
-                    // TO SHOW THE PAGE CONTENTS
-                    while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
-                        <div class="entry-content-page">
+            <header class="entry-header custom-hero-image">
+                <div class="hero-text">
+                    <?php // TO SHOW THE PAGE CONTENTS
+                        while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
+                            <h1 class="header-title"><?php the_title(); ?></h1>
                             <?php the_content(); ?> <!-- Page Content -->
-                        </div>
-                    <?php
-                    endwhile; //resetting the page loop
-                    wp_reset_query(); //resetting the page query
+                        <?php
+                        endwhile; //resetting the page loop
+                        wp_reset_query(); //resetting the page query
                     ?>
+                </div>
             </header>
             
             <section class="team">

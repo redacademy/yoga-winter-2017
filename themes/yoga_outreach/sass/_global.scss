@@ -87,6 +87,8 @@ body{
         }
 }
 
+//---------- Buttons ----------
+
 .teal-button{
 	background-color: $brightbutton_color;
 }
@@ -139,6 +141,21 @@ body{
 .general-button:hover{
     box-shadow:none;
 }
+
+.primary-button {  // Style for a href buttons
+    height: 44px;
+    width: 230px;
+    border-radius: 8px;
+    padding: 14px 30px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: $accentcolor_bar;
+}
+
+//----------  ----------
 
 .testimonial-list.main-carousel{
 	height:100px;
@@ -227,18 +244,6 @@ a{
     padding:0 1rem;
     text-align:center;
     line-height:25px;
-}
-
-.primary-button {  // Style for a href buttons
-    height: 44px;
-    width: 230px;
-    border-radius: 8px;
-    padding: 14px 30px;
-    font-size: 0.8rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    background-color: $accentcolor_bar;
 }
 
 .color-background{

@@ -12,27 +12,28 @@
         font-weight: 300;
     }
 
-    .hero-text {
+    .entry-header {
         height: 300px;
         width: 100%;
-        padding: 66px 10px 0 10px;
+        padding: 66px 15px;
         margin-bottom: 40px;
-        margin-top:200px;     //Take out once override position absolute on nav
         color: #fff;
         background-color: #95AFC9;
-        font-family: Raleway;
         font-weight: 500;
         text-transform: capitalize;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-            @include desktop{
-                background-color:#EBE5D8;
-                padding-top:20px;
-                padding-bottom:20px;
-                height:225px;
-            }
+        @include desktop{
+            background-color:#EBE5D8;
+            margin-top:200px;     //Take out once override position absolute on nav
+            padding: 20px 0;
+            height:225px;
+        }
+    }
 
+    .hero-text {
+        height: 150px;
+        @include flex-column;
+        justify-content: space-between;
         h1 {
             font-size: 1.5rem;
                 @include desktop{
@@ -40,6 +41,15 @@
                     color:#4A4A4A;
                     margin-bottom: 20px
                 }
+        }
+        p {
+            @include desktop {
+                font-size: 1.5rem;
+                color: $darktext_color;
+                width: 830px;
+                padding: 0 100px;
+                margin: 0 auto;
+            }
         }
     }
 

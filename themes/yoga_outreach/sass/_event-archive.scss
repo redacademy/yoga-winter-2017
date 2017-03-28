@@ -254,12 +254,9 @@
         justify-content: center;
         align-items: center;
 
-        button {
-            width: 173px;
-            margin: 0;
-            border: none;
-            border-radius: 8px;
-            font-size: 0.9rem;
+        .primary-button{
+            width: 200px;
+            background-color: $base_color;
             color: $darktext_color;
         }
     }
