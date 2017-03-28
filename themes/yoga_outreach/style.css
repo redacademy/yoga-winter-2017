@@ -1865,13 +1865,16 @@ footer {
           background-color: #9fabb7;
           text-transform: uppercase;
           display: block; }
+        .about-us-content .container section li, .about-us-content .event-content .container2 section li, .event-content .about-us-content .container2 section li {
+          height: 44px; }
       .about-us-content .container .info-container, .about-us-content .event-content .container2 .info-container, .event-content .about-us-content .container2 .info-container {
         width: 100vw;
         background-color: #fff;
         display: -ms-flexbox !important;
         display: flex !important;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+        padding: 25px 0; }
       .about-us-content .container .desktop-container, .about-us-content .event-content .container2 .desktop-container, .event-content .about-us-content .container2 .desktop-container {
         -ms-flex-order: 1;
             order: 1;
@@ -1889,7 +1892,9 @@ footer {
       .about-us-content .container .list, .about-us-content .event-content .container2 .list, .event-content .about-us-content .container2 .list {
         line-height: 42px;
         -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse; }
+            flex-direction: column-reverse;
+        text-align: left;
+        margin-left: 50px; }
         .about-us-content .container .list p, .about-us-content .event-content .container2 .list p, .event-content .about-us-content .container2 .list p {
           font-size: 2rem; }
       .about-us-content .container .description-mobile, .about-us-content .event-content .container2 .description-mobile, .event-content .about-us-content .container2 .description-mobile {

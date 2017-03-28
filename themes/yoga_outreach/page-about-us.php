@@ -16,8 +16,8 @@ get_header(); ?>
                             <div class="general-button-container">
                                 <a class="general-button grey-button" href="<?php echo get_page_link(69); ?>">who we are</a>
                                 <a class="general-button grey-button" href="<?php echo get_page_link(67); ?>">contact us</a>
-                            </div>
-                        </div>
+                            </div><!--general-button-containe-->
+                        </div><!--entry-content-page-->
                     <?php
                         endwhile; //resetting the page loop
                         wp_reset_query(); //resetting the page query
@@ -37,7 +37,7 @@ get_header(); ?>
                             <h2><?php echo esc_html (CFS()->get( 'what_we_do' )); ?></h2>
                             <p><?php echo $sub[ 'subtext_one' ]; ?></p>
                             <img class="photo-frame" src="<?php echo esc_html(CFS()->get( 'image1' )); ?>" alt="what we do image">
-                        </div>
+                        </div><!--subtext-->
 
                         <section>
                             <h3 class="info-dropdown"><?php echo esc_html(CFS()->get( 'dropdown_title' )); ?><span>+</span></h3>
@@ -55,7 +55,7 @@ get_header(); ?>
                                     <?php endif; ?>
                                 </div> <!--class list-->
                                 <p class="description-mobile"><?php echo esc_html(CFS()->get( 'dropdown_description' )); ?></p>
-                            </div>
+                            </div><!--info-field info-container-->
 
                             <p class="description-desktop"><?php echo esc_html(CFS()->get( 'dropdown_description' )); ?></p>
                             <a class="primary-button desktop-button" href="<?php echo get_page_link(174); ?>">become a facility partner</a>
@@ -67,7 +67,7 @@ get_header(); ?>
                 <div class="mid-sub-text">
                     <p class="subtext" ><?php echo $sub[ 'subtext_two' ]; ?></p>
                     <div class="accent-name-shape"></div>
-                </div>
+                </div><!--mid-sub-text-->
 
                 <?php if(!empty($fields)): ?>
                     <?php foreach( $fields as $field ): ?>
@@ -89,10 +89,10 @@ get_header(); ?>
                                                 <h2><?php echo $article['article_title']; ?></h2>
                                                 <div class="img-contain">
                                                     <img src="<?php echo $article['article_image']; ?>" alt="article image">
-                                                </div>
+                                                </div><!--img-contain-->
                                                 <div class="article-text">
                                                     <p><?php echo $article['article_content']; ?></p>
-                                                </div>
+                                                </div><!--article-text-->
                                             </article> <!-- article -->
 
                                         <?php endforeach; ?>
@@ -101,16 +101,16 @@ get_header(); ?>
         
                             <?php endforeach; ?>
                         <?php endif; ?>
-                    </div>
+                    </div><!--info-field training-contain-->
 
                     <div class="bottom-sub-text">
                         <img class="photo-frame" src="<?php echo esc_html(CFS()->get( 'image3' )); ?>" alt="what we do image">
                         <p class="subtext" ><?php echo $sub[ 'subtext_three' ]; ?></p>
-                    </div>
+                    </div><!--bottom-sub-text-->
 
                     <?php endforeach; ?>
                 <?php endif; ?>
-            </section>
+            </section><!--container-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
