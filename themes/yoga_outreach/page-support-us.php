@@ -2,7 +2,7 @@
 /**
  *
  *
- * @package Yoga Outreach
+ * @package Yoga_Outreach_Theme
  */
  
 get_header(); ?>
