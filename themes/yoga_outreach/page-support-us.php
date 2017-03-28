@@ -11,8 +11,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image">
                 <div>
-                    <h1 class="header-title"><?php the_title(); ?></h1>
-                    <p><?php echo CFS()->get( 'about_sponsors' ); ?></p>
+                    <h1 class="header-title"><?php esc_html(the_title()); ?></h1>
+                    <p><?php echo esc_html(CFS()->get( 'about_sponsors' )); ?></p>
                 </div>
                 <div class="main-button-holder">
                     <a href="#donate" class="main-button clear-button">Donate</a>
@@ -27,38 +27,38 @@ get_header(); ?>
                     $fields = CFS()->get( 'donation_levels' ); // returns an array of posts
                     foreach ( $fields as $field ):?>
                         <div class="carousel-cell">
-                            <h1>$<?php echo $field['donation_level']; ?></h1>
-                            <p><?php echo $field['donation_description']; ?></p>
+                            <h1>$<?php echo esc_html($field['donation_level']); ?></h1>
+                            <p><?php echo esc_html($field['donation_description']); ?></p>
                         </div>
                     <?php endforeach; ?>
                 </div>
             </section> 
             <section id="donate" class="container-one">
                 <h2 class="h2-holder">Donate</h2>
-                <p><?php echo CFS()->get( 'donation_information' ); ?></p>
+                <p><?php echo esc_html(CFS()->get( 'donation_information' )); ?></p>
                 <div class= "decorative-line2"></div>
-                <a href="<?php echo CFS()->get( 'donation_page_url' );?>" class="main-button dark-button">Donate Now</a>
+                <a href="<?php echo esc_url(CFS()->get( 'donation_page_url' ));?>" class="main-button dark-button">Donate Now</a>
             </section>
             <section class="container-one">
                 <div class="accent-background monthly"><div class="background-accent"></div></div>
                 <h2 class="h2-holder">Become a Monthly Contributor</h2>
                     <div class="contributor">
-                        <img src="<?php echo CFS()->get( 'monthly_contributor_image' ); ?>" alt="">
+                        <img src="<?php echo esc_html(CFS()->get( 'monthly_contributor_image' )); ?>" alt="">
                     </div> 
                 <p><?php echo CFS()->get( 'monthly_contributor_info' ); ?></p>
-                <div><a href="<?php echo CFS()->get( 'donation_page_url' );?>" class="main-button dark-button">Donate Now</a></div>
+                <div><a href="<?php echo esc_url(CFS()->get( 'donation_page_url' ));?>" class="main-button dark-button">Donate Now</a></div>
             </section>
             <section id="sponsor" class="container-one">
                 <div class="accent-background"><div class="background-accent"></div></div>
                 <h2 class="h2-holder">Become an Event Sponsor</h2>
-                <p><?php echo CFS()->get( 'event_sponsor' ); ?></p>
+                <p><?php echo esc_html(CFS()->get( 'event_sponsor' )); ?></p>
                 <h3>To become an event sponsor big or small please contact Delanie </h3>
                 <div class="button-wrap"><a href="<?php echo get_page_link(67); ?>" class="small-button white-button">Contact</a></div>
             </section>
             <section id="tshirt" class="container-tshirt">
                 <h2 class="h2-holder">Get a T-Shirt</h2>
                 <p><?php echo CFS()->get( 't_shirt_about' ); ?></p>
-                <div><a href="<?php echo CFS()->get( 't_shirt_shop_url' );?>" class="main-button white-button">Shop T-Shirts</a></div>
+                <div><a href="<?php echo esc_url(CFS()->get( 't_shirt_shop_url' ));?>" class="main-button white-button">Shop T-Shirts</a></div>
             </section>
             <section id="current-sponsor" class="container-one partners-container">
                 <h2 class="h2-holder">Our Current Sponsors</h2>
@@ -70,7 +70,7 @@ get_header(); ?>
                             foreach ( $fields as $field ):?>
                                 <div>
                                     <li>
-                                    <p><?php echo $field['current_sponsor']; ?></p>
+                                    <p><?php echo esc_html($field['current_sponsor']); ?></p>
                                     </li>
                                 </div>
                     <?php endforeach; ?>
