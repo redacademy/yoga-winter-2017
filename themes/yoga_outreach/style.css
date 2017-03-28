@@ -4181,7 +4181,8 @@ object {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      z-index: 1; } }
+      z-index: 1;
+      padding-bottom: 148px; } }
   .event-content .body-info h3 {
     font-size: 1.5rem;
     font-weight: 300;
@@ -4293,7 +4294,13 @@ object {
     -ms-flex-direction: column;
         flex-direction: column;
     margin-right: 10%;
-    width: 60%; } }
+    width: 60%; }
+    .event-content .desktop-contain section {
+      -ms-flex-order: 4;
+          order: 4; }
+      .event-content .desktop-contain section h3 {
+        font-size: 1.5rem;
+        text-transform: capitalize; } }
 
 .event-content .desktop-right {
   display: none; }
