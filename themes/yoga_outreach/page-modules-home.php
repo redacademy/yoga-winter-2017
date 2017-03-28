@@ -1,6 +1,6 @@
 <?php 
-/*
- * @package Yoga_Outreach
+/**
+ * @package Yoga_Outreach_Theme
  */
 
 get_header(); ?>
@@ -9,7 +9,7 @@ get_header(); ?>
             <header class="entry-header custom-hero-image">
                     <h1 class="header-title">Welcome <span class="header-subtitle">to your online course</span></h1>
                     <div class="button-container">
-                    <button class="general-button grey-button"><a href="<?php echo get_page_link(203); ?>" class="button">Go to Modules</a></button>
+                    <button class="general-button grey-button"><a href="<?php echo get_post_type_archive_link( 'training_modules' ); ?>" class="button">Go to Modules</a></button>
                     <button class="general-button grey-button"><a>Groups</a></button>
                     <div>
             </header><!-- .entry-header --> 

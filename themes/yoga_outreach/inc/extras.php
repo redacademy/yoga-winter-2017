@@ -122,7 +122,7 @@ function yoga_headernav_styles() {
         return;
     }
 
-    $header_css = "#site-navigation .desktop-search{
+    $header_css = "#site-navigation .mainmenu-list fieldset button i{
         color: #4a4a4a;}
         #site-navigation #primary-menu li a {
             color: #4a4a4a;

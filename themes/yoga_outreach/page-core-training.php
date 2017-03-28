@@ -1,5 +1,5 @@
 <?php 
-/* 
+/** 
  * @package Yoga_Outreach_Theme
  */
 

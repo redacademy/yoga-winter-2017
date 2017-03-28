@@ -1,7 +1,8 @@
 <?php 
-/*Template Name: Events
-
- * @package Yoga_Outreach
+/**
+ *Template Name: Events
+ *
+ * @package Yoga_Outreach_Theme
  */
 
 get_header(); ?>
