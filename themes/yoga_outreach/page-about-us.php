@@ -14,8 +14,8 @@ get_header(); ?>
                             <h1 class="page-title-header"><?php the_title(); ?></h1>
                             <?php the_content(); ?> <!-- Page Content -->
                             <div class="general-button-container">
-                                <a class="primary-button grey-button" href="<?php echo get_page_link(69); ?>">who we are</a>
-                                <a class="primary-button grey-button" href="<?php echo get_page_link(67); ?>">contact us</a>
+                                <a class="general-button grey-button" href="<?php echo get_page_link(69); ?>">who we are</a>
+                                <a class="general-button grey-button" href="<?php echo get_page_link(67); ?>">contact us</a>
                             </div>
                         </div>
                     <?php
