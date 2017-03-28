@@ -6,6 +6,7 @@
     }
 
     .info-dropdown{
+        padding:0;
         @include desktop{
             padding:0;
                 h3{
@@ -18,8 +19,11 @@
     }
 
     .first-dropdown{
-        margin-top:45px;
-        height:50px;
+        padding:0;
+        @include desktop{
+            margin-top:45px;
+            height:50px;
+        }
     }
 
     
@@ -56,10 +60,18 @@
         h3{
             @include main-h3;
             @include desktop{
-                color:#4A4A4A;
+                color:$darktheme_color;
             }
         }
     }
+
+    a{
+        #read-more{
+            display:block;
+            color:$darktheme_color;
+        }
+    }
+
 
     .main-h3-container{
         p{
@@ -67,7 +79,7 @@
             padding-bottom:22px;
             width:262px;
             margin:0 auto;
-            color:#6B747D;
+            color:$lighttext_color;
             text-align:center;
                 @include desktop{
                     font-size:24px;
@@ -99,11 +111,11 @@
         li{
             display:flex;
         a{
-            background-color:white;
+            background-color:#fff;
             width:60px;
             height:33px;
             margin-bottom:7px;
-            border:1px solid white;
+            border:1px solid #fff;
             border-radius:8px;
             display: flex;
             justify-content: center;

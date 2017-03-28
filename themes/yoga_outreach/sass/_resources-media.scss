@@ -154,7 +154,7 @@
       display:none;
         @include desktop{
             display:block;
-            color:#4A4A4A;
+            color:$darktheme_color;
             font-size:20px;
             padding-bottom:36px;
         }
@@ -179,7 +179,7 @@
 
   .teal-button{
       @include desktop{
-          background-color: #94bfd1;
+          background-color: $button_color2;
       }
   }
 

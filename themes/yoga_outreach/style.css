@@ -797,7 +797,6 @@ body {
   padding: 0 4%; }
   @media (min-width: 720px) {
     .section-15px-padding {
-      padding: 0;
       margin: 0 auto 3% auto; } }
 
 a {
@@ -1600,7 +1599,6 @@ footer {
     @media (min-width: 720px) {
       .about-us-content .custom-hero-image {
         -ms-flex-align: center;
-<<<<<<< HEAD
             align-items: center;
         background-size: 100%;
         background-position: left 0 top 0; } }
@@ -1660,9 +1658,6 @@ footer {
           -ms-flex-align: center;
               align-items: center;
           text-decoration: none; } }
-=======
-            align-items: center; } }
->>>>>>> core-training
   .about-us-content .container section .desktop-button, .about-us-content .event-content .container2 section .desktop-button, .event-content .about-us-content .container2 section .desktop-button {
     display: none; }
   @media (min-width: 720px) {
@@ -2982,7 +2977,7 @@ a:hover, a:active {
     .modules-home-content .blue-bar {
       width: 12px;
       height: 371px;
-      background-color: #B6EAFF;
+      background-color: #b6eaff;
       border-radius: 8px;
       position: absolute;
       left: 1.3rem;
@@ -2990,7 +2985,11 @@ a:hover, a:active {
       display: block; } }
 
 .modules-home-content .container-one {
-  position: relative; }
+  position: relative;
+  max-width: 1024px; }
+
+.modules-home-content .section-15px-padding {
+  max-width: 1024px; }
 
 @media (min-width: 720px) {
   .training-for-facilities-content .custom-hero-image {
@@ -3064,7 +3063,7 @@ a:hover, a:active {
 
 .training-for-facilities-content .info-dropdown {
   background-color: #fff;
-  border-bottom: 2px solid #4A4A4A;
+  border-bottom: 2px solid #4a4a4a;
   margin: 0 auto 3% auto; }
 
 .training-for-facilities-content .info-field {
@@ -3087,7 +3086,7 @@ a:hover, a:active {
   background: transparent;
   border: none;
   box-shadow: none;
-  color: #6B747D;
+  color: #6b747d;
   font-weight: 600;
   float: right; }
 
@@ -3104,7 +3103,7 @@ a:hover, a:active {
   margin-bottom: 20px; }
 
 .training-for-facilities-content .book-training-button {
-  background-color: #6B747D;
+  background-color: #6b747d;
   margin-top: 18px; }
 
 .training-for-facilities-content .carousel-cell.is-selected {
@@ -3134,7 +3133,7 @@ a:hover, a:active {
 .training-for-facilities-content .bottom-button-container {
   height: 85px;
   width: 100%;
-  background-color: #6B747D;
+  background-color: #6b747d;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -3215,7 +3214,7 @@ a:hover, a:active {
 
 .core-training-content .core-h3-container {
   width: 100%;
-  border-bottom: 2px solid #4A4A4A;
+  border-bottom: 2px solid #4a4a4a;
   padding-bottom: 16px;
   margin-bottom: 18px; }
 
@@ -3233,7 +3232,7 @@ a:hover, a:active {
 .core-training-content .core-header {
   margin: 0;
   width: 175px;
-  color: #6B747D;
+  color: #6b747d;
   font-size: 20px;
   line-height: 24px;
   margin-top: 35px;
@@ -3244,6 +3243,8 @@ a:hover, a:active {
       width: 700px; } }
 
 .core-training-content .register-online-button {
+  display: -ms-flexbox;
+  display: flex;
   width: 230px;
   height: 44px;
   margin: 0 auto;
@@ -3258,7 +3259,6 @@ a:hover, a:active {
   border: none;
   font-family: 'raleway',sans-serif;
   font-size: 14px;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
@@ -3266,6 +3266,8 @@ a:hover, a:active {
       align-items: center;
   text-decoration: none;
   background-color: #6B747D; }
+  .core-training-content .register-online-button a {
+    color: white; }
 
 @media (min-width: 720px) {
   .core-training-content .table-section-container {
@@ -3432,7 +3434,7 @@ a:hover, a:active {
   line-height: 20px; }
 
 .core-training-content .dark-training-para {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-size: 14px;
   line-height: 2;
   margin-bottom: 35px; }
@@ -3450,7 +3452,7 @@ a:hover, a:active {
   .core-training-content .online-class-icon-heading-container h3, .core-training-content .core-training-text-image-container h3 {
     margin: 0;
     font-size: 20px;
-    color: #4A4A4A;
+    color: #4a4a4a;
     width: 200px;
     margin-left: 1rem;
     font-weight: 500; }
@@ -3480,7 +3482,7 @@ a:hover, a:active {
 
 .core-training-content .training-date-text {
   font-size: 11px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   line-height: 2;
   font-weight: bold;
   text-transform: uppercase; }
@@ -3593,16 +3595,21 @@ a:hover, a:active {
   font-size: 16px;
   font-weight: 100; }
 
-@media (min-width: 720px) {
-  .resources-research-content .info-dropdown {
-    padding: 0; } }
+.resources-research-content .info-dropdown {
+  padding: 0; }
+  @media (min-width: 720px) {
+    .resources-research-content .info-dropdown {
+      padding: 0; } }
   @media (min-width: 720px) and (min-width: 720px) {
     .resources-research-content .info-dropdown h3 {
       font-size: 20px; } }
 
 .resources-research-content .first-dropdown {
-  margin-top: 45px;
-  height: 50px; }
+  padding: 0; }
+  @media (min-width: 720px) {
+    .resources-research-content .first-dropdown {
+      margin-top: 45px;
+      height: 50px; } }
 
 .resources-research-content .teal-button.black-text {
   color: black; }
@@ -3658,14 +3665,18 @@ a:hover, a:active {
       font-size: 40px; } }
   @media (min-width: 720px) {
     .resources-research-content .main-h3-container h3 {
-      color: #4A4A4A; } }
+      color: #4a4a4a; } }
+
+.resources-research-content a #read-more {
+  display: block;
+  color: #4a4a4a; }
 
 .resources-research-content .main-h3-container p {
   font-size: 14px;
   padding-bottom: 22px;
   width: 262px;
   margin: 0 auto;
-  color: #6B747D;
+  color: #6b747d;
   text-align: center; }
   @media (min-width: 720px) {
     .resources-research-content .main-h3-container p {
@@ -3691,11 +3702,11 @@ a:hover, a:active {
     display: -ms-flexbox;
     display: flex; }
     .resources-research-content .resource-pdf-list li a {
-      background-color: white;
+      background-color: #fff;
       width: 60px;
       height: 33px;
       margin-bottom: 7px;
-      border: 1px solid white;
+      border: 1px solid #fff;
       border-radius: 8px;
       display: -ms-flexbox;
       display: flex;
@@ -3943,7 +3954,7 @@ a:hover, a:active {
   @media (min-width: 720px) {
     .resources-media-content .research-paper-para {
       display: block;
-      color: #4A4A4A;
+      color: #4a4a4a;
       font-size: 20px;
       padding-bottom: 36px; } }
 
@@ -3961,7 +3972,7 @@ a:hover, a:active {
 
 @media (min-width: 720px) {
   .resources-media-content .teal-button {
-    background-color: #94bfd1; } }
+    background-color: #b6eaff; } }
 
 .resources-media-content .teal-button.black-text {
   background-color: #6cfffe;
@@ -5182,7 +5193,7 @@ object {
 
 .training-for-facilities-content .info-dropdown {
   background-color: #fff;
-  border-bottom: 2px solid #4A4A4A;
+  border-bottom: 2px solid #4a4a4a;
   margin: 0 auto 3% auto; }
 
 .training-for-facilities-content .info-field {
@@ -5205,7 +5216,7 @@ object {
   background: transparent;
   border: none;
   box-shadow: none;
-  color: #6B747D;
+  color: #6b747d;
   font-weight: 600;
   float: right; }
 
@@ -5222,7 +5233,7 @@ object {
   margin-bottom: 20px; }
 
 .training-for-facilities-content .book-training-button {
-  background-color: #6B747D;
+  background-color: #6b747d;
   margin-top: 18px; }
 
 .training-for-facilities-content .carousel-cell.is-selected {
@@ -5252,7 +5263,7 @@ object {
 .training-for-facilities-content .bottom-button-container {
   height: 85px;
   width: 100%;
-  background-color: #6B747D;
+  background-color: #6b747d;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -5333,7 +5344,7 @@ object {
 
 .core-training-content .core-h3-container {
   width: 100%;
-  border-bottom: 2px solid #4A4A4A;
+  border-bottom: 2px solid #4a4a4a;
   padding-bottom: 16px;
   margin-bottom: 18px; }
 
@@ -5351,7 +5362,7 @@ object {
 .core-training-content .core-header {
   margin: 0;
   width: 175px;
-  color: #6B747D;
+  color: #6b747d;
   font-size: 20px;
   line-height: 24px;
   margin-top: 35px;
@@ -5362,6 +5373,8 @@ object {
       width: 700px; } }
 
 .core-training-content .register-online-button {
+  display: -ms-flexbox;
+  display: flex;
   width: 230px;
   height: 44px;
   margin: 0 auto;
@@ -5376,7 +5389,6 @@ object {
   border: none;
   font-family: 'raleway',sans-serif;
   font-size: 14px;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
@@ -5384,6 +5396,8 @@ object {
       align-items: center;
   text-decoration: none;
   background-color: #6B747D; }
+  .core-training-content .register-online-button a {
+    color: white; }
 
 @media (min-width: 720px) {
   .core-training-content .table-section-container {
@@ -5550,7 +5564,7 @@ object {
   line-height: 20px; }
 
 .core-training-content .dark-training-para {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-size: 14px;
   line-height: 2;
   margin-bottom: 35px; }
@@ -5568,7 +5582,7 @@ object {
   .core-training-content .online-class-icon-heading-container h3, .core-training-content .core-training-text-image-container h3 {
     margin: 0;
     font-size: 20px;
-    color: #4A4A4A;
+    color: #4a4a4a;
     width: 200px;
     margin-left: 1rem;
     font-weight: 500; }
@@ -5598,7 +5612,7 @@ object {
 
 .core-training-content .training-date-text {
   font-size: 11px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   line-height: 2;
   font-weight: bold;
   text-transform: uppercase; }
