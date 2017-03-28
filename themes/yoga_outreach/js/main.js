@@ -159,6 +159,23 @@
           });
       }
     });
+
+        //Who We Are Popup 
+        $('.member-contain').on('click', function(event){
+            event.preventDefault();
+            $('.popup-description').empty();
+            $('.staff-popup').fadeIn('2000','linear');
+            $('.accent-name-shape').css('display','none');
+            $(this).clone().appendTo('.popup-description');
+            $(this).clone().find('.staff-description').css('display', 'block').appendTo('.popup-description');
+                $('.exit-button').on('click',function(event){
+                event.preventDefault();
+                $('.staff-popup').fadeOut('1000','linear');
+                $('.accent-name-shape').css('display','block');
+            });
+        });
+
+    
     
 
 })(jQuery); 
