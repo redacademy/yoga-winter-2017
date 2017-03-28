@@ -629,6 +629,50 @@ button {
           justify-content: center;
       max-width: 1024px;
       margin: 0 auto; } }
+  .who-we-are-content .staff-popup {
+    background-color: #fff;
+    width: 602px;
+    position: relative;
+    height: 900px;
+    z-index: 10;
+    display: none;
+    margin: 0 auto;
+    top: 80rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 37px; }
+  .who-we-are-content .popup-description {
+    margin: 0 auto;
+    padding-top: 80px; }
+    .who-we-are-content .popup-description .member-contain {
+      margin: 0;
+      width: auto; }
+      .who-we-are-content .popup-description .member-contain img {
+        width: 432px;
+        height: 376px;
+        max-width: none;
+        margin: 0 auto;
+        object-fit: fill; }
+      .who-we-are-content .popup-description .member-contain a {
+        font-size: 36px;
+        color: #000;
+        max-width: 500px;
+        text-align: center; }
+  .who-we-are-content .staff-description {
+    display: none;
+    width: 480px;
+    margin: 0 auto;
+    z-index: 20;
+    font-size: 20px;
+    color: #000;
+    margin-top: 30px; }
+  .who-we-are-content .exit-button {
+    position: absolute;
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-size: 150px;
+    color: #979797;
+    left: 27rem; }
 
 * {
   font-family: 'raleway',sans-serif; }

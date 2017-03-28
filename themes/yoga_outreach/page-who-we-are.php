@@ -7,6 +7,10 @@
 
 get_header(); ?>
 	<div id="primary" class="content-area who-we-are-content">
+    <div class="staff-popup">
+        <button class="exit-button">X</button>
+        <div class="popup-description"></div>
+    </div>
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image hero-text">
                 <h1 class="header-title"><?php the_title(); ?></h1>
@@ -44,6 +48,7 @@ get_header(); ?>
                                         <img src="<?php echo $member['staff_photo']; ?>" alt="staff photo" class="staffphoto">
                                         <a href=""><?php echo $member['staff_name'] ?></a>
                                         <div class="accent-name-shape"></div>
+                                        <p class="staff-description"><?php echo $member['staff_description']; ?></p>
                                     </div>
                                 <?php endforeach; ?>
                             <?php endif; ?>

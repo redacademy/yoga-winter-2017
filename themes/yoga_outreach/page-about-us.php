@@ -5,7 +5,7 @@
 
 get_header(); ?>
 	<div id="primary" class="content-area about-us-content">
-		<main id="main" class="site-main" role="main">
+    <main id="main" class="site-main" role="main">
 			<header class="general-template-section custom-hero-image">
                 <?php
                     // TO SHOW THE PAGE CONTENTS
