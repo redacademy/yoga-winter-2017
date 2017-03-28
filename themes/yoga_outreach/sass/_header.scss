@@ -67,7 +67,7 @@ p {
       left: 9%;
     }
     .menu-item-73 {
-      @include desktop{
+    @include desktop{
       display:none;
       }
     }
@@ -202,26 +202,12 @@ p {
           }
         }
       }
-    .sub-menu{
+    .menu-item{
       padding: 1rem;
+      margin:0 auto;
     }
-    .menu-item-27{
-      margin: 0 auto;
-      padding: 1rem;
-       a {
-        color: $mediumtheme_color;
-        &:hover{
-          color:$button_color2;
-        }
-        @include desktop {
-          color: $base_color;
-          font-size: 16px;
-        }
-      }
-    }
-    .menu-item-30{
-      margin: 0 auto;
-      padding: 1rem;
+
+    .menu-item-type-post_type {
        a {
         color: $mediumtheme_color;
         &:hover{
@@ -234,8 +220,6 @@ p {
       }
     }
     .menu-item-has-children{
-      margin: 0 auto;
-      padding: 1rem;
       a {
         color: $mediumtheme_color;
         &:hover{
