@@ -65,7 +65,8 @@ p {
       position: relative;
       max-width: 1024px;
       width: 67%;
-      min-width: 950px;
+      min-width: 915px;
+      left: 9%;
     }
     .menu-item-73 {
       @include desktop{
@@ -86,22 +87,28 @@ p {
 		transition: all 1s;
 	}
 	fieldset{
+    position:relative;
     width: 251px;
 		border: 0;
-        margin-right: 0;
+    padding: 0;
+    margin-right: 0;
 		input{
+      position: absolute;
+      left: 60px;
+      top: 18px;
 			width: 0;
 			border: 0;
 			padding: 0;
 			font-size: 0.8rem;
 			background-color: transparent;
-      
 			&:focus{
 				outline:none;
 			}
 		}
 		button{
-      display: inline-flex;
+      position: absolute;
+      top: 4px;
+      left: 0;
 			background-color:transparent;
 			padding:0;
       border: none;
@@ -132,7 +139,7 @@ p {
     box-shadow: none;
     position: absolute;
     top: 18%;
-    left: 33%;
+    left: 26%;
     z-index: 2;
     @include desktop {
       display: block;
@@ -197,6 +204,7 @@ p {
       height: 45px;
       background-color: $button_color2;
       border-radius: 8px;
+      margin: 0 auto;
       a {
         font-size: 14px;
         color: $darktheme_color;
