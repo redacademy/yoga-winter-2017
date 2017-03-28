@@ -3233,7 +3233,8 @@ a:hover, a:active {
   margin-top: 39px; }
   @media (min-width: 720px) {
     .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
-      margin-top: 10px; } }
+      max-width: 1024px;
+      margin: 10px auto; } }
 
 .training-for-facilities-content .info-dropdown {
   background-color: #fff;
@@ -3351,11 +3352,11 @@ a:hover, a:active {
   margin-bottom: 0; }
 
 .training-for-facilities-content .content-container {
-  max-width: 1020px;
   margin: 0 auto; }
 
 .training-for-facilities-content .traininglist-container {
-  background-color: #95afc9; }
+  background-color: #95afc9;
+  width: 100%; }
 
 .core-training-content .testimonial-container {
   background-color: #ebe5d8; }
@@ -4982,7 +4983,7 @@ object {
           .home .hero-banner .herobanner-text p {
             font-size: 24px;
             max-width: 650px; } }
-    .home .hero-banner .aboutus-button {
+    .home .hero-banner .general-button {
       width: 230px;
       height: 44px;
       margin: 0 auto;
@@ -5007,18 +5008,18 @@ object {
       background-color: #94bfd1;
       margin-top: 75px; }
       @media (min-width: 720px) {
-        .home .hero-banner .aboutus-button {
+        .home .hero-banner .general-button {
           width: 150px;
           height: 45px;
           background-color: #b6eaff; } }
-      .home .hero-banner .aboutus-button a {
+      .home .hero-banner .general-button a {
         color: #fff;
         text-shadow: none;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 14px; }
         @media (min-width: 720px) {
-          .home .hero-banner .aboutus-button a {
+          .home .hero-banner .general-button a {
             color: #4a4a4a; } }
   .home .trauma-approach {
     padding: 7%;
@@ -5363,7 +5364,8 @@ object {
   margin-top: 39px; }
   @media (min-width: 720px) {
     .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
-      margin-top: 10px; } }
+      max-width: 1024px;
+      margin: 10px auto; } }
 
 .training-for-facilities-content .info-dropdown {
   background-color: #fff;
@@ -5481,11 +5483,11 @@ object {
   margin-bottom: 0; }
 
 .training-for-facilities-content .content-container {
-  max-width: 1020px;
   margin: 0 auto; }
 
 .training-for-facilities-content .traininglist-container {
-  background-color: #95afc9; }
+  background-color: #95afc9;
+  width: 100%; }
 
 .core-training-content .testimonial-container {
   background-color: #ebe5d8; }

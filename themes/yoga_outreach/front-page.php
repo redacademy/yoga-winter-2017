@@ -10,7 +10,7 @@ get_header(); ?>
   <div class="herobanner-text">
     <h2>what we do</h2>
     <p>Our mission is to expand access to trauma-informed yoga programs to heal and connect communities</p>
-    <button class="aboutus-button"><a href="<?php echo get_page_link(18); ?>">about us</a></button>
+    <a href="<?php echo get_page_link(18); ?>" class="general-button">about us</a>
   </div>
 </section>  
 <section class="trauma-approach">

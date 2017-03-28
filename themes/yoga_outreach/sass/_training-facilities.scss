@@ -60,7 +60,8 @@
 	.training-yoga-tools-section,.training-yoga-work-section{
 			margin-top:39px;
 				@include desktop{
-					margin-top:10px;
+          max-width: 1024px;
+          margin: 10px auto;
 				}
 	}
 
@@ -188,11 +189,11 @@
 	}
 
     .content-container{
-    max-width: 1020px;
     margin: 0 auto;
   }
   .traininglist-container{
     background-color:$logo_color;
+    width: 100%;
   }
 }//Training Facilities Wrapper
 
