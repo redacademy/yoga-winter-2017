@@ -116,7 +116,7 @@ add_action( 'pre_get_posts', 'yoga_change_sort_order');
 function yoga_headernav_styles() {
 
     $templates = ['page-templates/forms-template.php', 'page-templates/application-submission.php', 'page-templates/quiz-template.php'];
-    $pages = ['about-us', 'current-opportunities', 'contact-us', 'who-we-are', 'modules-home'];
+    $pages = ['current-opportunities', 'contact-us', 'who-we-are', 'modules-home'];
 
     if(!is_page_template($template = $templates) && !is_page($page = $pages) && !is_post_type_archive( 'training_modules' )){
         return;
@@ -124,9 +124,77 @@ function yoga_headernav_styles() {
 
     $header_css = "#site-navigation .mainmenu-list fieldset button i{
         color: #4a4a4a;}
-        #site-navigation #primary-menu li a {
+        #site-navigation #primary-menu .menu-item-has-children a {
             color: #4a4a4a;
         }"; 
     wp_add_inline_style( 'yoga-outreach-style', $header_css );
 }
 add_action( 'wp_enqueue_scripts', 'yoga_headernav_styles' );
+
+/**
+ * Custom dynamic fields for select events
+ *
+ * 
+ */
+function populate_event_titles( $form ) {
+
+    foreach ( $form['fields'] as &$field ) {
+
+        if ( $field->type != 'select' || strpos( $field->cssClass, 'populate-posts' ) === false ) {
+            continue;
+        }
+
+        $events = CFS()->get( 'new_event', 16 );
+
+        $choices = array();
+
+        foreach ( $events as $event ) {
+            $choices[] = array( 'text' => $event['event_title'], 'value' => $event['event_title'] );
+        }
+
+        $field->placeholder = 'Select an Event';
+        $field->choices = $choices;
+
+    }
+
+    return $form;
+}
+
+add_filter( 'gform_pre_render_8', 'populate_event_titles' );
+add_filter( 'gform_pre_validation_8', 'populate_event_titles' );
+add_filter( 'gform_pre_submission_filter_8', 'populate_event_titles' );
+add_filter( 'gform_admin_pre_render_8', 'populate_event_titles' );
+
+/**
+ * Custom dynamic fields for select retreats
+ *
+ * 
+ */
+function populate_retreat_titles( $form ) {
+
+    foreach ( $form['fields'] as &$field ) {
+
+        if ( $field->type != 'select' || strpos( $field->cssClass, 'populate-retreats' ) === false ) {
+            continue;
+        }
+
+        $retreats = CFS()->get( 'new_retreats', 16 );
+
+        $choices = array();
+
+        foreach ( $retreats as $retreat ) {
+            $choices[] = array( 'text' => $retreat['retreat_title'], 'value' => $retreat['retreat_title'] );
+        }
+
+        $field->placeholder = 'Select a Retreat';
+        $field->choices = $choices;
+
+    }
+
+    return $form;
+}
+
+add_filter( 'gform_pre_render_9', 'populate_retreat_titles' );
+add_filter( 'gform_pre_validation_9', 'populate_retreat_titles' );
+add_filter( 'gform_pre_submission_filter_9', 'populate_retreat_titles' );
+add_filter( 'gform_admin_pre_render_9', 'populate_retreat_titles' );
