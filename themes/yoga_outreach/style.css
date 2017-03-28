@@ -4867,12 +4867,27 @@ object {
     .home .hero-banner .aboutus-button {
       width: 230px;
       height: 44px;
-      background-color: #94bfd1;
+      margin: 0 auto;
+      font-size: 14px;
+      text-transform: uppercase;
       box-shadow: none;
-      border: none;
-      margin-top: 80px;
+      text-shadow: none;
+      box-shadow: none;
+      text-shadow: none;
+      color: white;
       border-radius: 8px;
-      text-align: center; }
+      border: none;
+      font-family: 'raleway',sans-serif;
+      font-size: 14px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      text-decoration: none;
+      background-color: #94bfd1;
+      margin-top: 75px; }
       @media (min-width: 720px) {
         .home .hero-banner .aboutus-button {
           width: 150px;
