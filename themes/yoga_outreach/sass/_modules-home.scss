@@ -199,7 +199,7 @@
             @include desktop{
                 width:12px;
                 height:371px;
-                background-color:#B6EAFF;
+                background-color:$button_color2;
                 border-radius:8px;
                 position:absolute;
                 left: 1.3rem;
@@ -210,6 +210,11 @@
 
     .container-one{
         position:relative;
+        max-width:1024px;
+    }
+
+    .section-15px-padding{
+        max-width:1024px;
     }
 
 

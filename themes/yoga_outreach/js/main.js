@@ -135,15 +135,14 @@
         var long_content	= $(this).html().substr(max_length);
         
         $(this).html(short_content+'<span class="more-text" style="display:none;">'+long_content+'</span>'+
-              '<a href="#" class="read-more"><br/>Read More</a>'
+              '<a href="#" id="read-more"><br/>Read More</a>'
               );
               
-        $(this).find('a.read-more').click(function(event){ 
-          event.preventDefault(); 
-          // $(this).hide();
-          $(this).parents('.dropdown-paragraph').find('.more-text').toggle('2000','swing');
-          $(this).text($(this).text() == 'Read More' ? 'Read Less' : 'Read More');
-        });
+        $(this).find('#read-more').click(function(event){ 
+            event.preventDefault(); 
+            $(this).parents('.dropdown-paragraph').find('.more-text').toggle('2000','swing');
+            $(this).text($(this).text() == 'Read More' ? 'Read Less' : 'Read More');
+          });
       }
     });
     

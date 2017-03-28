@@ -27,7 +27,7 @@ get_header(); ?>
                 	<p class="core-header">Yoga Outreach Core Training ™</p>
 				</div><!--core-h3-container-->
 				<div class="register-button-para-container">
-					<button class="book-training-button register-online-button">Register Online</button>
+					<button class="book-training-button register-online-button"><a href="core-training-application-form">Register Online</a></button>
 					<div class="small-para-container">
 						<p class="small-para">- Yoga Alliance 24 Continuing Education Non-Contact hrs</p>
 						<p class="small-para">- BCRPA Continuing Education Credits</p>
