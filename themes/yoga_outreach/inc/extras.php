@@ -123,8 +123,12 @@ function yoga_headernav_styles() {
     }
 
     $header_css = "#site-navigation .mainmenu-list fieldset button i{
-        color: #4a4a4a;}
+        color: #4a4a4a;
+        }
         #site-navigation #primary-menu .menu-item-has-children a {
+            color: #4a4a4a;
+        }
+        #site-navigation #primary-menu .menu-item-type-post_type a{
             color: #4a4a4a;
         }"; 
     wp_add_inline_style( 'yoga-outreach-style', $header_css );
