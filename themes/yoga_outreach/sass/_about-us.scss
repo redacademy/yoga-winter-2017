@@ -11,38 +11,14 @@
         }
     }
 
-    .entry-content-page {
-        height: 410px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        @include desktop {
-            height: 260px;
-            width: 830px;
-            margin-bottom: 100px;
-            padding: 0px;
-        }
+    .general-button{
+        @include general-button;
+        margin-bottom:29px;
     }
 
     .page-title-header {
         @include desktop {
             color: $basetext_color;
-        }
-    }
-
-    .general-button-container {
-        height: 109px;
-        bottom: 17px;
-        @include flex-column;
-        justify-content: space-between;
-        align-items: center;
-        @include desktop {
-            flex-direction: row;
-            // top: 0;
-            a{
-                @include general-button;
-            }
         }
     }
 
