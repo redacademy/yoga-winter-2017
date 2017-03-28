@@ -640,15 +640,20 @@ button {
       margin: 0 auto; } }
   .who-we-are-content .staff-popup {
     background-color: #fff;
-    width: 602px;
-    position: relative;
-    height: 900px;
+    width: 100vw;
+    position: fixed;
+    height: 100vh;
     z-index: 10;
+    top: 0;
+    left: 0;
     display: none;
     margin: 0 auto;
-    top: 80rem;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     border-radius: 37px; }
+    @media (min-width: 720px) {
+      .who-we-are-content .staff-popup {
+        width: 75%;
+        left: 12%; } }
   .who-we-are-content .popup-description {
     margin: 0 auto;
     padding-top: 80px; }
@@ -656,8 +661,8 @@ button {
       margin: 0;
       width: auto; }
       .who-we-are-content .popup-description .member-contain img {
-        width: 432px;
-        height: 376px;
+        width: 40%;
+        height: 40%;
         max-width: none;
         margin: 0 auto;
         object-fit: fill; }
@@ -668,20 +673,32 @@ button {
         text-align: center; }
   .who-we-are-content .staff-description {
     display: none;
-    width: 480px;
+    padding: 10px;
     margin: 0 auto;
     z-index: 20;
-    font-size: 20px;
+    font-size: 0.5rem;
     color: #000;
-    margin-top: 30px; }
+    margin-top: 10px; }
+    @media (min-width: 720px) {
+      .who-we-are-content .staff-description {
+        font-size: 1rem;
+        margin-top: 10px; } }
+  .who-we-are-content .staff-info {
+    display: none;
+    margin: 0 auto;
+    z-index: 20;
+    font-size: 0.5rem;
+    color: #000; }
+    @media (min-width: 720px) {
+      .who-we-are-content .staff-info {
+        font-size: 1rem; } }
   .who-we-are-content .exit-button {
     position: absolute;
-    background: none;
-    border: none;
-    box-shadow: none;
-    font-size: 150px;
-    color: #979797;
-    left: 27rem; }
+    right: 2%;
+    top: 2%;
+    height: 10%; }
+  .who-we-are-content .fade-background {
+    opacity: 0.1; }
 
 * {
   font-family: 'raleway',sans-serif; }
