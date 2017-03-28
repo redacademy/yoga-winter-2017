@@ -10,6 +10,18 @@
             background-position: left 0 top 0;
         }
     }
+
+//     .custom-hero-image {
+//         background-size: 300%;
+//         background-position: left 0px top -147px;
+//         @include desktop {
+//             align-items: center;
+//             background-size: 100%;
+//             background-position: left 0 top 0;
+//         }
+//     }
+
+
     .general-button{
         @include general-button;
         margin-bottom:29px;

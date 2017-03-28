@@ -111,9 +111,13 @@ $( '.menu-item-has-children' ).append('<img width="10px" height="10px" src="<?ph
     //Click Read More dropdown
     $('.show-videos li:gt(2)').hide();
     $('.read-more').click(function() {
+      if($('.media-item').length <= 3){
+        $('.read-more').text('Sorry there is no futher media');
+      }else{
         $('.show-videos li:gt(2)').slideToggle('2000','linear');
         $(this).text($(this).text() == 'Read More' ? 'Read Less' : 'Read More');
-    });
+      }
+  });
 
     // Changes radio buttons on forms
     $( '.gfield_radio li label' ).prepend( '<span></span>');
