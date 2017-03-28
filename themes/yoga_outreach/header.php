@@ -96,10 +96,7 @@
             </a></button>
             </div>
             <div class="mainmenu-list">
-              <?php wp_nav_menu( 
-                array( 'theme_location' => 'primary', 
-                       'menu_id' => 'primary-menu') ); 
-              ?>
+              <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') );?>
               <?php get_search_form();?>
             </div>
         </nav><!-- #site-navigation -->

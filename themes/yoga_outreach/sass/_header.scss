@@ -67,7 +67,7 @@ p {
       width: 67%;
       min-width: 950px;
     }
-    .menu li:nth-child(1) {
+    .menu-item-73 {
       @include desktop{
       display:none;
       }
@@ -88,6 +88,7 @@ p {
 	fieldset{
     width: 251px;
 		border: 0;
+        margin-right: 0;
 		input{
 			width: 0;
 			border: 0;
@@ -114,6 +115,9 @@ p {
         color: white;
         font-size: 16px;
         text-shadow: none;
+        &:hover{
+          color:$button_color2;
+        }
       }
 		}
     	.searchAppear{
@@ -134,11 +138,45 @@ p {
       display: block;
       position: inherit;
     }
-    li {
+    .sub-menu{
+      padding: 1rem;
+    }
+    .menu-item-27{
+      margin: 0 auto;
+      padding: 1rem;
+       a {
+        color: $mediumtheme_color;
+        &:hover{
+          color:$button_color2;
+        }
+        @include desktop {
+          color: $base_color;
+          font-size: 16px;
+        }
+      }
+    }
+    .menu-item-30{
+      margin: 0 auto;
+      padding: 1rem;
+       a {
+        color: $mediumtheme_color;
+        &:hover{
+          color:$button_color2;
+        }
+        @include desktop {
+          color: $base_color;
+          font-size: 16px;
+        }
+      }
+    }
+    .menu-item-has-children{
       margin: 0 auto;
       padding: 1rem;
       a {
         color: $mediumtheme_color;
+        &:hover{
+          color:$button_color2;
+        }
         @include desktop {
           color: $base_color;
           font-size: 16px;
@@ -151,6 +189,7 @@ p {
       display: block;
       order: 2;
       margin: 0 auto;
+      z-index:10;
     }
     #menu-item-73 {
       display: block;
@@ -161,6 +200,9 @@ p {
       a {
         font-size: 14px;
         color: $darktheme_color;
+        &:hover{
+          color:$button_color2;
+        }
       }
     }
   }
