@@ -10,18 +10,15 @@
             background-position: left 0 top 0;
         }
     }
-
     .general-button{
         @include general-button;
         margin-bottom:29px;
     }
-
     .page-title-header {
         @include desktop {
             color: $basetext_color;
         }
     }
-
     .container {
         section {
             .desktop-button {
@@ -73,7 +70,6 @@
                 justify-content: space-between;
                 flex-direction: row;
                 background-color: transparent;
-
             }
             .list {
                 line-height: 42px;
@@ -101,7 +97,6 @@
             }
         }
     }
-
     .subtext {
         font-size: 0.8rem;
         line-height: 24px;
@@ -139,7 +134,6 @@
             }
         }
     }
-
     .info-dropdown {
         text-align: left;
         @include desktop {
@@ -150,7 +144,6 @@
             padding: 138px 0 71px;
         }
     }
-
     .info-field {
         color: $lighttext_color;
         font-weight: 100;
@@ -200,11 +193,9 @@
             }
         }
     }
-    
     .description-desktop {
         display: none;
     }
-
     .mid-sub-text {
         @include desktop {
             width: 100%;
@@ -238,7 +229,6 @@
             }
         }
     }
-
     section .desktop-article {
         @include desktop {
             position: relative;
@@ -280,14 +270,12 @@
             }
         }
     }
-
     .article:nth-child(even) {
         background-color: $base_color;
         @include desktop {
             background-color: $logo_color;
         }
     }
-
     .img-contain {
         overflow: hidden;
         height: 245px;
@@ -304,7 +292,6 @@
             }
         }
     }
-
     .article-text {
         @include desktop {
             display: flex;
@@ -323,7 +310,6 @@
             }
         }
     }
-
     .bottom-sub-text {
         background-color: $accentcolor_bar2;
         padding: 23px;
@@ -335,7 +321,6 @@
             justify-content: space-between;
             padding: 31px 0;
         }
-
         .photo-frame {
             display: none;
             @include desktop {
@@ -345,7 +330,6 @@
                 border-radius: 8px;
             }
         }
-
         p {
             line-height: 16px;
             font-size: 0.7rem;
@@ -357,5 +341,4 @@
             }
         }
     }
-
 }

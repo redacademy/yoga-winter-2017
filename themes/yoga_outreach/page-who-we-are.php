@@ -21,7 +21,7 @@ get_header(); ?>
                         <?php
                         endwhile; //resetting the page loop
                         wp_reset_query(); //resetting the page query
-                    ?>
+                        ?>
                 </div>
             </header>
             
@@ -42,7 +42,7 @@ get_header(); ?>
                         <div class="info-field staff-item-container">
                             <?php if(!empty($field['staff_member'])): ?>
                                 <?php foreach( $field['staff_member'] as $member): ?>
-                                    <?php echo CFS()->get( 'staff_photo','staff_name' ) ?>
+                                    <?php echo esc_html(CFS()->get( 'staff_photo','staff_name' )); ?>
                                     <div class="member-contain">
                                         <img src="<?php echo $member['staff_photo']; ?>" alt="staff photo" class="staffphoto">
                                         <a href=""><?php echo $member['staff_name'] ?></a>
