@@ -45,7 +45,7 @@ get_header(); ?>
                             
 
                             <div class="info-field info-container">
-                                <section class="desktop-container">
+                                <section class="">
                                     <img class="photo-frame" src="<?php echo CFS()->get( 'image2' ); ?>" alt="what we do image">
                                     <div class="list">
                                         <p class="list-title"><?php echo CFS()->get( 'list_title' ); ?>:</p>

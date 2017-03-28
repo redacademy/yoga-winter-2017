@@ -97,12 +97,7 @@
                 justify-content: space-between;
                 flex-direction: row;
                 background-color: transparent;
-            }
-            .photo-frame {
-                width: 253px;
-                height: 253px;
-                border-radius: 50%;
-                background-color: $accentcolor_bar;
+
             }
             .list {
                 line-height: 42px;
@@ -118,6 +113,15 @@
                 display: block;
                 width: 830px;
                 margin-bottom: 51px;
+            }
+        }
+        .photo-frame {
+            width: 253px;
+            height: 253px;
+            border-radius: 50%;
+            display: none;
+            @include desktop {
+                display: block
             }
         }
     }
@@ -139,12 +143,6 @@
                 line-height: 35px;
                 width: 50%;
             }
-            .photo-frame {
-                height: 180px;
-                width: 373.5px;
-                border-radius: 8px;
-                background-color: $accentcolor_bar;
-            }
         }
         h2 {
             font-size: 1.4rem;
@@ -153,6 +151,15 @@
             @include desktop {
                 font-size: 2rem;
                 width: 100%;
+            }
+        }
+        .photo-frame {
+            height: 180px;
+            width: 373.5px;
+            border-radius: 8px;
+            display: none;
+            @include desktop {
+                display: block
             }
         }
     }
