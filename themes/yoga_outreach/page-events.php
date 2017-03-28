@@ -15,8 +15,8 @@ get_header(); ?>
                             <h1 class="page-title-header"><?php the_title(); ?></h1>
                             <?php the_content(); ?> <!-- Page Content -->
                             <div class="general-button-container">
-                                <button class="general-button grey-button"><a href="#workshop" class="button">workshop</a></button>
-                                <button class="general-button grey-button"><a href="#retreat">retreat</a></button>
+                                <a href="#workshop" class="general-button grey-button">workshop</a>
+                                <a href="#retreat" class="general-button grey-button"">retreat</a>
                             </div>
                         </div>
                     <?php
@@ -107,7 +107,7 @@ get_header(); ?>
             </section>
 
             <div class="booking-button">
-                <a href="<?php echo get_page_link(275); ?>"class="primary-button">book wordshop</a>
+                <a href="<?php echo get_page_link(275); ?>"class="primary-button">book workshop</a>
             </div>
 
             <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop--> 
