@@ -982,7 +982,6 @@ p {
     -ms-flex-direction: column;
         flex-direction: column;
     box-shadow: none;
-    position: absolute;
     top: 18%;
     left: 26%;
     z-index: 2; }
@@ -990,6 +989,70 @@ p {
       #site-navigation #primary-menu {
         display: block;
         position: inherit; } }
+    #site-navigation #primary-menu #menu-item-253 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      #site-navigation #primary-menu #menu-item-253 .sub-menu {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        box-shadow: none;
+        position: static;
+        padding: 0.4rem; }
+        #site-navigation #primary-menu #menu-item-253 .sub-menu li {
+          padding: 0;
+          margin: 0 auto; }
+    #site-navigation #primary-menu #menu-item-141 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      #site-navigation #primary-menu #menu-item-141 .sub-menu {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        box-shadow: none;
+        position: static;
+        padding: 0.4rem; }
+        #site-navigation #primary-menu #menu-item-141 .sub-menu li {
+          padding: 0;
+          margin: 0 auto; }
+    #site-navigation #primary-menu #menu-item-255 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      #site-navigation #primary-menu #menu-item-255 .sub-menu {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        box-shadow: none;
+        position: static;
+        padding: 0.4rem; }
+        #site-navigation #primary-menu #menu-item-255 .sub-menu li {
+          padding: 0;
+          margin: 0 auto; }
+    #site-navigation #primary-menu #menu-item-144 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      #site-navigation #primary-menu #menu-item-144 .sub-menu {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        box-shadow: none;
+        position: static;
+        padding: 0.4rem; }
+        #site-navigation #primary-menu #menu-item-144 .sub-menu li {
+          padding: 0;
+          margin: 0 auto; }
     #site-navigation #primary-menu .sub-menu {
       padding: 1rem; }
     #site-navigation #primary-menu .menu-item-27 {
