@@ -1106,41 +1106,25 @@ p {
         #site-navigation #primary-menu #menu-item-144 .sub-menu li {
           padding: 0;
           margin: 0 auto; }
-    #site-navigation #primary-menu .sub-menu {
-      padding: 1rem; }
-    #site-navigation #primary-menu .menu-item-27 {
-      margin: 0 auto;
-      padding: 1rem; }
-      #site-navigation #primary-menu .menu-item-27 a {
-        color: #6b747d; }
-        #site-navigation #primary-menu .menu-item-27 a:hover {
-          color: #b6eaff; }
-        @media (min-width: 720px) {
-          #site-navigation #primary-menu .menu-item-27 a {
-            color: #fff;
-            font-size: 16px; } }
-    #site-navigation #primary-menu .menu-item-30 {
-      margin: 0 auto;
-      padding: 1rem; }
-      #site-navigation #primary-menu .menu-item-30 a {
-        color: #6b747d; }
-        #site-navigation #primary-menu .menu-item-30 a:hover {
-          color: #b6eaff; }
-        @media (min-width: 720px) {
-          #site-navigation #primary-menu .menu-item-30 a {
-            color: #fff;
-            font-size: 16px; } }
-    #site-navigation #primary-menu .menu-item-has-children {
-      margin: 0 auto;
-      padding: 1rem; }
-      #site-navigation #primary-menu .menu-item-has-children a {
-        color: #6b747d; }
-        #site-navigation #primary-menu .menu-item-has-children a:hover {
-          color: #b6eaff; }
-        @media (min-width: 720px) {
-          #site-navigation #primary-menu .menu-item-has-children a {
-            color: #fff;
-            font-size: 16px; } }
+    #site-navigation #primary-menu .menu-item {
+      padding: 1rem;
+      margin: 0 auto; }
+    #site-navigation #primary-menu .menu-item-type-post_type a {
+      color: #6b747d; }
+      #site-navigation #primary-menu .menu-item-type-post_type a:hover {
+        color: #b6eaff; }
+      @media (min-width: 720px) {
+        #site-navigation #primary-menu .menu-item-type-post_type a {
+          color: #fff;
+          font-size: 16px; } }
+    #site-navigation #primary-menu .menu-item-has-children a {
+      color: #6b747d; }
+      #site-navigation #primary-menu .menu-item-has-children a:hover {
+        color: #b6eaff; }
+      @media (min-width: 720px) {
+        #site-navigation #primary-menu .menu-item-has-children a {
+          color: #fff;
+          font-size: 16px; } }
   @media (min-width: 720px) {
     #site-navigation .menu-main-menu-container {
       display: block;
