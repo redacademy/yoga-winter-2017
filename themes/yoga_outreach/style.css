@@ -783,6 +783,17 @@ body {
       top: 12rem;
       font-size: 24px; } }
 
+.entry-content-page p {
+  position: relative;
+  bottom: 4rem;
+  max-width: 280px;
+  margin: 0 auto; }
+  @media (min-width: 720px) {
+    .entry-content-page p {
+      bottom: auto;
+      margin-bottom: 3rem;
+      max-width: 580px; } }
+
 .teal-button {
   background-color: #6cfffe; }
 
@@ -848,7 +859,13 @@ body {
 .general-template-section {
   height: 80vh;
   width: 100%;
-  z-index: -1; }
+  z-index: -1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   @media (min-width: 720px) {
     .general-template-section {
       height: 100vh;
@@ -861,14 +878,13 @@ body {
       z-index: -1; } }
 
 .general-button-container {
-  position: relative;
-  width: 100%;
-  top: 4rem; }
+  height: 250px;
+  max-height: 255px; }
   @media (min-width: 720px) {
     .general-button-container {
       display: -ms-flexbox;
       display: flex;
-      top: 1.5rem;
+      height: auto;
       max-width: 1024px;
       margin: 0 auto;
       -ms-flex-pack: justify;
@@ -1481,7 +1497,8 @@ footer {
   footer .copyright {
     text-transform: capitalize;
     padding: 10px;
-    font-size: 14px; }
+    font-size: 14px;
+    text-align: center; }
 
 @media (min-width: 720px) {
   .page-id-197 #main {
@@ -1783,62 +1800,32 @@ footer {
             align-items: center;
         background-size: 100%;
         background-position: left 0 top 0; } }
-  .about-us-content .entry-content-page {
-    height: 410px;
+  .about-us-content .general-button {
+    width: 230px;
+    height: 44px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -ms-flex-pack: center;
+        justify-content: center;
     -ms-flex-align: center;
-        align-items: center; }
-    @media (min-width: 720px) {
-      .about-us-content .entry-content-page {
-        height: 260px;
-        width: 830px;
-        margin-bottom: 100px;
-        padding: 0px; } }
+        align-items: center;
+    text-decoration: none;
+    margin-bottom: 29px; }
   @media (min-width: 720px) {
     .about-us-content .page-title-header, .about-us-content .entry-content-page {
       color: #fff; } }
-  .about-us-content .general-button-container {
-    height: 109px;
-    bottom: 17px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center; }
-    @media (min-width: 720px) {
-      .about-us-content .general-button-container {
-        -ms-flex-direction: row;
-            flex-direction: row; }
-        .about-us-content .general-button-container a {
-          width: 230px;
-          height: 44px;
-          margin: 0 auto;
-          font-size: 14px;
-          text-transform: uppercase;
-          box-shadow: none;
-          text-shadow: none;
-          box-shadow: none;
-          text-shadow: none;
-          color: white;
-          border-radius: 8px;
-          border: none;
-          font-family: 'raleway',sans-serif;
-          font-size: 14px;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          -ms-flex-align: center;
-              align-items: center;
-          text-decoration: none; } }
   .about-us-content .container section .desktop-button, .about-us-content .event-content .container2 section .desktop-button, .event-content .about-us-content .container2 section .desktop-button {
     display: none; }
   @media (min-width: 720px) {
@@ -4292,69 +4279,29 @@ object {
       background-size: 100%;
       background-position: left 0 top 0; } }
 
-.event-content .entry-content-page {
-  height: 410px;
+.event-content .general-button {
+  width: 230px;
+  height: 44px;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
-  @media (min-width: 720px) {
-    .event-content .entry-content-page {
-      height: 260px;
-      width: 830px;
-      margin-bottom: 100px;
-      padding: 0px; } }
-  @media (min-width: 720px) {
-    .event-content .entry-content-page h1 {
-      font-size: 40px; } }
-  @media (min-width: 720px) {
-    .event-content .entry-content-page p {
-      font-size: 24px; } }
-
-.event-content .general-button-container {
-  height: 109px;
-  bottom: 17px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center; }
-  @media (min-width: 720px) {
-    .event-content .general-button-container {
-      -ms-flex-direction: row;
-          flex-direction: row;
-      top: 0; } }
-  .event-content .general-button-container button {
-    width: 230px;
-    height: 44px;
-    margin: 0 auto;
-    font-size: 14px;
-    text-transform: uppercase;
-    box-shadow: none;
-    text-shadow: none;
-    box-shadow: none;
-    text-shadow: none;
-    color: white;
-    border-radius: 8px;
-    border: none;
-    font-family: 'raleway',sans-serif;
-    font-size: 14px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    text-decoration: none; }
-    .event-content .general-button-container button a {
-      text-decoration: none; }
+      align-items: center;
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 .event-content .container, .event-content .container2 {
   color: #6b747d; }
