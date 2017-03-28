@@ -2,7 +2,7 @@
 /**
  * The template for displaying modules.
  *
- * @package RED_Starter_Theme
+ * @package Yoga_Outreach_Theme
  */
 
 get_header(); ?>

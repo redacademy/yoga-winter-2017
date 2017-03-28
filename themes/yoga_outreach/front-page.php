@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages.
  *
- * @package Yoga Outreach Theme
+ * @package Yoga_Outreach_Theme
  */
 
 get_header(); ?>

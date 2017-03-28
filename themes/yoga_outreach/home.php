@@ -1,7 +1,8 @@
 <?php 
-/*Template Name: Blog
-
- * @package Yoga_Outreach
+/**
+ *Template Name: Blog
+ *
+ * @package Yoga_Outreach_Theme
  */
 
 get_header(); ?>
