@@ -38,8 +38,9 @@ get_header(); ?>
 					<h3 class="avail-online-h3">available online and in-classroom format!</h3>
 				</div><!--avail-online-heading-container-->
 				<div class="main-paragraph-container">
-					<p class="light-first-para"><?php echo CFS()->get('first_core_para'); ?></p>
-					<p class="dark-second-para"><?php echo CFS()->get('second_core_para'); ?></p>
+					<?php $allowed_html = array('br' => array()); ?> 
+					<p class="light-first-para"><?php echo wp_kses(CFS()->get('first_core_para'),$allowed_html); ?></p>
+					<p class="dark-second-para"><?php echo esc_html(CFS()->get('second_core_para')); ?></p>
 				</div><!--main-paragraph-container-->
 			</section><!--section-15px-padding-->
 			<div class="testimonial-container">
@@ -48,7 +49,7 @@ get_header(); ?>
 					$testimonials = CFS()->get('testimonial_list');
 					if (!empty($testimonials)):
 					foreach ( $testimonials as $testimonial): ?>
-					<li class="carousel-cell"><?php echo $testimonial ['testimonial'];?></li>
+					<li class="carousel-cell"><?php echo esc_html($testimonial ['testimonial']);?></li>
 					<?php endforeach ?>
 					<?php endif ?>
 				</ul>
@@ -66,18 +67,18 @@ get_header(); ?>
 						<tr>
 							<td class="training-table-data">
 								<p class="table-heading">Date</p>
-								<p class="table-content"><?php echo $date ['date'];?></p>
+								<p class="table-content"><?php echo esc_html($date ['date']);?></p>
 							</td>
 							<td class="training-table-data">
 								<p class="table-heading">Price</p>
-								<p class="table-content"><?php echo $date ['price'];?></p>
+								<p class="table-content"><?php echo esc_html($date ['price']);?></p>
 							</td>
 						<?php endforeach ?>
 						<?php endif ?>
 						</tr>
 					</table>
 					<p>Now you can take the training online in an eight week format.</p>
-					<p class ="dropdown-paragraph"><?php echo CFS()->get('training_dates_paragraph')?></p>
+					<p class ="dropdown-paragraph"><?php echo esc_html(CFS()->get('training_dates_paragraph'))?></p>
 				</section>
 				<section class="classroom-dates-section section-15px-padding">
 					<div class="core-training-text-image-container">
@@ -91,15 +92,15 @@ get_header(); ?>
 							<tr class="classroom-tr">
 								<td class="training-table-data">
 									<p class="table-heading">Date</p>
-									<p class="table-content"><?php echo $classroomDate ['date'];?></p>
+									<p class="table-content"><?php echo esc_html($classroomDate ['date']);?></p>
 								</td>
 								<td class="training-table-data">
 									<p class="table-heading">Location</p>
-									<p class="table-content"><?php echo $classroomDate ['location'];?></p>
+									<p class="table-content"><?php echo esc_html($classroomDate ['location']);?></p>
 								</td>
 								<td class="training-table-data">
 									<p class="table-heading">Price (CAD)</p>
-									<p class="table-content"><?php echo $classroomDate ['price'];?></p>
+									<p class="table-content"><?php echo esc_html($classroomDate ['price']);?></p>
 								</td>
 							</tr>
 							<?php endforeach ?>
@@ -119,20 +120,21 @@ get_header(); ?>
                   <li class="training-list-item">
             <div id="training-pdf-container">
               <?php if(!empty($infoPDF)): ?>
-              <h3><?php echo $infoItem ['list_title'];?></h3>
-                        <a href ="<?php echo $infoItem ['list_file_upload'];?>">PDF</a>
+              <h3><?php echo esc_html($infoItem ['list_title']);?></h3>
+                        <a href ="<?php echo esc_html($infoItem ['list_file_upload']);?>">PDF</a>
             </div><!--training-pdf-container-->
             <?php 
             endif; 
             ?>
                       <?php if(!empty($infoContent)): ?>
             <div class ="info-dropdown">
-              <h3 class="yoga-info-title"><?php echo $infoItem ['list_title']; ?></h3>
+              <h3 class="yoga-info-title"><?php echo esc_html($infoItem ['list_title']); ?></h3>
               <span>+</span>
             </div><!--tools-first-heading-->
             <div class="info-field">
-                        <p class="info-list-content"><?php echo $infoItem ['list_content']; ?></p>
-            </div><!--info-field-->
+				<?php $allowed_html = array('br' => array()); ?> 
+                <p class="info-list-content"><?php echo wp_kses($infoItem ['list_content'], $allowed_html); ?></p>
+			</div><!--info-field-->
             <?php endif; ?>
                   </li><!--training-list-item-->
                   <?php endforeach; ?>

@@ -1,15 +1,15 @@
 .about-us-content {
     text-align: center;
     color: $lighttext_color;
-    .custom-hero-image {
-        background-size: 300%;
-        background-position: left 0px top -147px;
-        @include desktop {
-            align-items: center;
-            background-size: 100%;
-            background-position: left 0 top 0;
-        }
-    }
+//     .custom-hero-image {
+//         background-size: 300%;
+//         background-position: left 0px top -147px;
+//         @include desktop {
+//             align-items: center;
+//             background-size: 100%;
+//             background-position: left 0 top 0;
+//         }
+//     }
 
     .general-button{
         @include general-button;

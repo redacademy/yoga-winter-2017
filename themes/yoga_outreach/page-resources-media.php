@@ -7,7 +7,6 @@ get_header(); ?>
 	<div id="primary" class="content-area resources-media-content">
 		<main id="main" class="site-main" role="main">
 			<header class="general-template-section custom-hero-image">
-				<div class="color-background"></div>
 					<?php
                 	while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
 					<div class="entry-content-page">
@@ -42,10 +41,10 @@ get_header(); ?>
 						foreach ( $medias as $media ):
 						?>
 							<li class="media-item">
-								<h4 class="media-date"><?php echo $media ['date'];?>
+								<h4 class="media-date"><?php echo esc_html($media ['date']);?>
 									<div class="media-color media-blue"></div>
 								</h4>
-								<p><?php echo $media['content'];?></p>
+								<p><?php echo esc_html($media['content']);?></p>
 							</li>
 						<?php endforeach ?>
 						</ul><!--media-article-list-->
@@ -67,7 +66,7 @@ get_header(); ?>
 								<h4 class="media-date"><?php echo $article ['date'];?>
 									<div class="media-color media-purple"></div>
 								</h4>
-								<p><?php echo $article ['content'];?></p>
+								<p><?php echo esc_html($article ['content']);?></p>
 							</li>
 						<?php endforeach ?>
 						</ul><!--media-article-list-->
@@ -82,8 +81,8 @@ get_header(); ?>
 					foreach ( $videos as $video ):
 					?>
 					<li>
-						<h3><?php echo $video ['title']; ?></h3>
-						<span class="video-link"><?php echo $video['video_embed_link'];?></span>
+						<h3><?php echo esc_html($video ['title']); ?></h3>
+						<span class="video-link"><?php echo esc_html($video['video_embed_link']);?></span>
 					</li>
 					<?php endforeach ?>
 				</ul>
