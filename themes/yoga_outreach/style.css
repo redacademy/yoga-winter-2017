@@ -1465,7 +1465,8 @@ footer {
   footer .copyright {
     text-transform: capitalize;
     padding: 10px;
-    font-size: 14px; }
+    font-size: 14px;
+    text-align: center; }
 
 @media (min-width: 720px) {
   .page-id-197 #main {
