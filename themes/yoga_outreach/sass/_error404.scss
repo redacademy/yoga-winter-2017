@@ -2,6 +2,20 @@
     .site-main{
         padding: 1rem;
     }
+    .nothing-found{
+        text-align: center;
+    }
+    .search-form{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        fieldset{
+            border: none;
+            display: flex;
+            flex-direction: row;
+        }
+    }
     .page-title{
         text-align:center;
     }

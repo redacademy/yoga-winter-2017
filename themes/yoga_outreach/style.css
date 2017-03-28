@@ -1717,6 +1717,22 @@ footer {
 .error404 .site-main {
   padding: 1rem; }
 
+.error404 .nothing-found {
+  text-align: center; }
+
+.error404 .search-form {
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .error404 .search-form fieldset {
+    border: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+
 .error404 .page-title {
   text-align: center; }
 

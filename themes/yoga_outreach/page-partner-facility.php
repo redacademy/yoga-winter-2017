@@ -12,7 +12,7 @@ get_header(); ?>
             <header class="entry-header custom-hero-image">
                 <div class="header-info">   
                     <h1 class="header-title"><?php the_title(); ?></h1>
-                    <p><?php echo CFS()->get( 'about_facility_partners' ); ?></p>
+                    <p><?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?></p>
                 </div>
                 <div class="main-button-holder">
                     <a href="#provide" class="main-button clear-button">What We Provide</a>
@@ -23,8 +23,8 @@ get_header(); ?>
             </header><!-- .entry-header -->
             <section id="provide" class="container-one">
                 <h2 class="h2-holder">What We Provide</h2>
-                <p><?php echo CFS()->get( 'about_facility_partners' ); ?></p>
-                <p><?php echo CFS()->get( 'what_we_provide' ); ?></p>
+                <p><?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?></p>
+                <p><?php echo esc_html(CFS()->get( 'what_we_provide' )); ?></p>
                 <div class="info-dropdown custom-info-container"><h3>Apply for Partnership</h3><span>+</span></div>
                 <div class="info-field custom-info-container drop-down-info">
                     <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
@@ -48,7 +48,7 @@ get_header(); ?>
                                 <div>
                                     <li>
                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bluecheck.svg"/>
-                                    <p><?php echo $field['facility_requirement']; ?></p>
+                                    <p><?php echo esc_html($field['facility_requirement']); ?></p>
                                     </li>
                                 </div>
                             <?php endforeach; ?>
@@ -68,7 +68,7 @@ get_header(); ?>
                             foreach ( $fields as $field ):?>
                                 <div>
                                     <li>
-                                    <p><?php echo $field['current_partner']; ?></p>
+                                    <p><?php echo esc_html($field['current_partner']); ?></p>
 
                                     </li>
                                 </div>
@@ -83,7 +83,7 @@ get_header(); ?>
                             foreach ( $fields as $field ):?>
                                 <div>
                                     <li>
-                                    <p><?php echo $field['affiliate_program']; ?></p>
+                                    <p><?php echo esc_html($field['affiliate_program']); ?></p>
                                     </li>
                                 </div>
                             <?php endforeach; ?>
@@ -97,7 +97,7 @@ get_header(); ?>
                             foreach ( $fields as $field ):?>
                                 <div>
                                     <li>
-                                    <p><?php echo $field['past_program_partner']; ?></p>
+                                    <p><?php echo esc_html($field['past_program_partner']) ?></p>
                                     </li>
                                 </div>
                             <?php endforeach; ?>

@@ -31,7 +31,7 @@ get_header(); ?>
                         if(!empty($fields)):
                             foreach ( $fields as $field ):?>
                                 <li>
-                                    <p><?php echo $field['volunteer_benefit']; ?></p>
+                                    <p><?php echo esc_html($field['volunteer_benefit']); ?></p>
                                 </li>
                             <?php endforeach; ?>
                         <?php endif; ?>
@@ -47,7 +47,7 @@ get_header(); ?>
                         foreach ( $fields as $field ):?>
                             <div class="volunteer-steps">
                                 <li>
-                                <p class="volunteer-step"><?php echo $field['volunteer_step']; ?></p>
+                                <p class="volunteer-step"><?php echo esc_html($field['volunteer_step']); ?></p>
                                 </li>
                             </div> 
                         <?php endforeach; ?>
@@ -57,7 +57,7 @@ get_header(); ?>
             </section>
             <section id="volunteer" class="container-one">
                 <h2>Volunteer for Community Engagement</h2>
-                <p class="info-paragraph"><?php echo CFS()->get( 'community_engagement' ); ?></p>
+                <p class="info-paragraph"><?php echo esc_html(CFS()->get( 'community_engagement' )); ?></p>
                 <a href="<?php echo get_page_link(176); ?>" class="grey-button small-button">Apply Now</a>
             </section>
             <section id="council" class="container-three">
