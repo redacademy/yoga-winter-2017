@@ -185,17 +185,33 @@ $(window).resize(function() {
         var long_content	= $(this).html().substr(max_length);
         
         $(this).html(short_content+'<span class="more-text" style="display:none;">'+long_content+'</span>'+
-              '<a href="#" class="read-more"><br/>Read More</a>'
+              '<a href="#" id="read-more"><br/>Read More</a>'
               );
               
-        $(this).find('a.read-more').click(function(event){ 
-          event.preventDefault(); 
-          // $(this).hide();
-          $(this).parents('.dropdown-paragraph').find('.more-text').toggle('2000','swing');
-          $(this).text($(this).text() == 'Read More' ? 'Read Less' : 'Read More');
-        });
+        $(this).find('#read-more').click(function(event){ 
+            event.preventDefault(); 
+            $(this).parents('.dropdown-paragraph').find('.more-text').toggle('2000','swing');
+            $(this).text($(this).text() == 'Read More' ? 'Read Less' : 'Read More');
+          });
       }
     });
+
+        //Who We Are Popup 
+        $('.member-contain').on('click', function(event){
+            event.preventDefault();
+            $('.popup-description').empty();
+            $('.staff-popup').fadeIn('2000','linear');
+            $('.accent-name-shape').css('display','none');
+            $(this).clone().appendTo('.popup-description');
+            $(this).clone().find('.staff-description').css('display', 'block').appendTo('.popup-description');
+                $('.exit-button').on('click',function(event){
+                event.preventDefault();
+                $('.staff-popup').fadeOut('1000','linear');
+                $('.accent-name-shape').css('display','block');
+            });
+        });
+
+    
     
 
 })(jQuery); 

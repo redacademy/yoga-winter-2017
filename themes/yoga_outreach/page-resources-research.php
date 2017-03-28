@@ -28,8 +28,8 @@ get_header(); ?>
                 <h3>Research</h3>
                 <p>Trauma sensitive yoga research from around the globe.</p>
             </div><!--main-h3-container-->
-			<section class="resources-article-pdf-list-container section-15px-padding">
-				<div class="max-width-1024">
+			<section class="resources-article-pdf-list-container">
+				<div class="max-width-1024 section-15px-padding">
 					<div class="info-dropdown first-dropdown">
 						<h3>Articles</h3>
 						<span class="plus-sign">+</span>
@@ -50,8 +50,7 @@ get_header(); ?>
 					</div><!--info-field-->
 				</div>
 			</section>
-			<section class="resources-links-container section-15px-padding">
-				<div class="max-width-1024">
+			<section class="resources-links-container section-15px-padding max-width-1024">
 					<div class="links-button-container info-dropdown">
 						<h3>Links</h3>
 						<span>+</span>
@@ -67,7 +66,6 @@ get_header(); ?>
 						</li>
 						<?php endforeach ?>
 					</ul>
-				</div>
 			</section>
 			</main><!-- #main -->
 	</div><!-- #primary -->
