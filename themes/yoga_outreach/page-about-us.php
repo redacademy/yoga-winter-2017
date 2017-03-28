@@ -45,7 +45,6 @@ get_header(); ?>
                             
 
                             <div class="info-field info-container">
-                                <section class="">
                                     <img class="photo-frame" src="<?php echo CFS()->get( 'image2' ); ?>" alt="what we do image">
                                     <div class="list">
                                         <p class="list-title"><?php echo CFS()->get( 'list_title' ); ?>:</p>
@@ -58,7 +57,6 @@ get_header(); ?>
                                         <?php endif; ?>
                                     </div> <!--class list-->
                                     <p class="description-mobile"><?php echo CFS()->get( 'dropdown_description' ); ?></p>
-                                </section>
                             </div>
                             <p class="description-desktop"><?php echo CFS()->get( 'dropdown_description' ); ?></p>
                             <a class="primary-button desktop-button" href="<?php echo get_page_link(174); ?>">become a facility partner</a>
