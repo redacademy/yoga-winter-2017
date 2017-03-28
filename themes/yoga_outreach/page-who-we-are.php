@@ -8,7 +8,7 @@
 get_header(); ?>
 	<div id="primary" class="content-area who-we-are-content">
     <div class="staff-popup">
-        <button class="exit-button">X</button>
+        <img class="exit-button" src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-x.svg"/>
         <div class="popup-description"></div>
     </div>
 		<main id="main" class="site-main" role="main">
@@ -46,6 +46,8 @@ get_header(); ?>
                                     <div class="member-contain">
                                         <img src="<?php echo $member['staff_photo']; ?>" alt="staff photo" class="staffphoto">
                                         <a href=""><?php echo $member['staff_name'] ?></a>
+                                        <p class="staff-info"><?php echo $member['staff_position']; ?></p>
+                                        <p class="staff-info"><?php echo $member['staff_email']; ?></p>
                                         <div class="accent-name-shape"></div>
                                         <p class="staff-description"><?php echo $member['staff_description']; ?></p>
                                     </div>

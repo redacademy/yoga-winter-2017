@@ -9,46 +9,10 @@
             background-position: left 0 top 0;
         }
     }
-    .entry-content-page{
-        height: 410px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        @include desktop {
-            height: 260px;
-            width: 830px;
-            margin-bottom: 100px;
-            padding: 0px;
-        }
-        h1 {
-            @include desktop{
-                font-size: 40px;
-            }
-        }
-        p {
-            @include desktop{
-                font-size: 24px;
-            }
-        }
-    }
 
-    .general-button-container {
-        height: 109px;
-        bottom: 17px;
-        @include flex-column;
-        justify-content: space-between;
-        align-items: center;
-        @include desktop {
-            flex-direction: row;
-            top: 0;
-        }
-        button {
-            @include general-button;
-            a{ 
-                text-decoration: none;
-            }
-        }
+    .general-button{
+        @include general-button;
+        margin-bottom:29px;
     }
 
     .container {
@@ -114,9 +78,17 @@
             justify-content: center;
             @include desktop {
                 order: 2;
+                display: flex;
                 justify-content: space-between;
+                img:not(:first-child) {
+                    display: flex;
+                }
             }
         }
+        img:not(:first-child) {
+                display: none;
+            }
+        
         .event-img {
             height: 161px;
             width: 161px;
@@ -201,8 +173,11 @@
             @include flex-column;
             margin-right: 10%;
             width: 60%;
-
-            section {
+        }
+        section {
+            display: none;
+            @include desktop {
+                display: block;
                 order: 4;
                 h3{
                     font-size: 1.5rem;
@@ -246,7 +221,6 @@
             }
         }
     }
-
     .booking-button {
         height: 85px;
         background-color: #6B747D;
@@ -296,6 +270,7 @@
                 position: absolute;
                 left: -40px;
                 bottom: 8px;
+                opacity: 0.3;
             }
         }
     }
@@ -312,6 +287,7 @@
             background-color: #F2FBFF;
             .accent-name-shape {
                 background-color: $brightbutton_color;
+                opacity: 0.3;
             }
         }
     }
@@ -326,6 +302,15 @@
                     width: 230px;
                     background-color: lightblue;
                 }
+            }
+            .event-dropdown {
+                padding:15px 0;
+            }
+            .event-info {
+                margin-left: 15px;
+            }
+            span {
+                display: block;
             }
         }
     }

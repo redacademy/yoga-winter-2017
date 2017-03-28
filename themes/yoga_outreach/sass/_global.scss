@@ -6,7 +6,7 @@ body{
     min-height: 100%;
 }
 
-.info-dropdown {
+.info-dropdown, .event-dropdown{
     padding: 15px;
     background-color: $lighttheme_color;
     display: flex;
@@ -85,6 +85,21 @@ body{
             top:12rem;
             font-size:24px;
         }
+}
+
+.entry-content-page{
+    p{
+    position:relative;
+    bottom:4rem;
+    max-width: 280px;
+    margin: 0 auto;
+        @include desktop{
+            bottom:auto;
+            margin-bottom:3rem;
+            max-width:580px;
+        }
+    }
+
 }
 
 //---------- Buttons ----------
@@ -175,6 +190,9 @@ body{
 	height:80vh;
 	width:100%;
     z-index:-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     @include desktop{
         height:100vh;  
         display: flex;
@@ -186,12 +204,11 @@ body{
 
 
 .general-button-container{
-	position: relative;
-    width: 100%;
-    top: 4rem;
+	height: 250px;
+    max-height: 255px;
 		@include desktop{
 			display:flex;
-            top:1.5rem;
+            height:auto;
             max-width:1024px;
             margin:0 auto;
             justify-content:space-between;

@@ -76,12 +76,12 @@ $( '.menu-item-has-children' ).append('<img width="10px" height="10px" src="<?ph
     });
 
     // Drop down category
-    $('.info-dropdown').click(function () {
-      if ($(this).next('.info-field').is(':hidden')) {
-        $(this).next('.info-field').slideDown('normal');
+    $('.info-dropdown, .event-dropdown').click(function () {
+      if ($(this).next('.info-field, .event-info').is(':hidden')) {
+        $(this).next('.info-field, .event-info').slideDown('normal');
         $(this).children('span').text('-');
       } else {
-        $(this).next('.info-field').slideUp('normal');
+        $(this).next('.info-field, .event-info').slideUp('normal');
         $(this).children('span').text('+');
       }
     });
@@ -197,23 +197,24 @@ $( '.menu-item-has-children' ).append('<img width="10px" height="10px" src="<?ph
       }
     });
 
-        //Who We Are Popup 
-        $('.member-contain').on('click', function(event){
+    //Who We Are Popup 
+    $('.member-contain').on('click', function(event){
+        event.preventDefault();
+        $('.popup-description').empty();
+        $('.staff-popup').fadeIn('2000','linear');
+        $('.accent-name-shape').css('display','none');
+        $(this).clone().appendTo('.popup-description');
+        $(this).clone().find('.staff-info').css('display', 'block').appendTo('.popup-description');
+        $(this).clone().find('.staff-description').css('display', 'block').appendTo('.popup-description');
+        $('.who-we-are-content main').addClass('fade-background');
+            $('.exit-button').on('click',function(event){
             event.preventDefault();
-            $('.popup-description').empty();
-            $('.staff-popup').fadeIn('2000','linear');
-            $('.accent-name-shape').css('display','none');
-            $(this).clone().appendTo('.popup-description');
-            $(this).clone().find('.staff-description').css('display', 'block').appendTo('.popup-description');
-                $('.exit-button').on('click',function(event){
-                event.preventDefault();
-                $('.staff-popup').fadeOut('1000','linear');
-                $('.accent-name-shape').css('display','block');
-            });
+            $('.staff-popup').fadeOut('1000','linear');
+            $('.who-we-are-content main').removeClass('fade-background');
+            $('.accent-name-shape').css('display','block');
         });
+    });
 
-    
-    
 
 })(jQuery); 
 
