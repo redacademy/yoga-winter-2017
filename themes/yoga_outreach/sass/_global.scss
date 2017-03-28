@@ -6,7 +6,7 @@ body{
     min-height: 100%;
 }
 
-.info-dropdown {
+.info-dropdown, .event-dropdown{
     padding: 15px;
     background-color: $lighttheme_color;
     display: flex;
