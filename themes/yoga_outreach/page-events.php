@@ -20,8 +20,8 @@ get_header(); ?>
                             </div>
                         </div>
                     <?php
-                    endwhile; //resetting the page loop
-                    wp_reset_query(); //resetting the page query
+                        endwhile; //resetting the page loop
+                        wp_reset_query(); //resetting the page query
                     ?>
 			</header><!--general-template-section-->
 
@@ -38,6 +38,7 @@ get_header(); ?>
                                 <a href="<?php echo get_page_link(275); ?>"class="primary-button">book</a>
                                 <div class="accent-name-shape"></div>
                             </div> <!--title-contain -->
+
                             <div class="desktop-contain">
                                 <div class="img-contain">
                                     <img src="<?php echo $event['event_image_1'] ?>" alt="event-image" class="event-img photo-frame">
@@ -68,6 +69,7 @@ get_header(); ?>
                                     <p><?php echo $info['event_info']; ?></p>
                                 </article>
                             </div> <!-- desktop-contain-->
+
                             <aside class="desktop-right">
                                 <h3>About the facilitator</h3>
                                 <?php if(!empty($info['event_facilitator'])): ?>
@@ -105,7 +107,7 @@ get_header(); ?>
             </section>
 
             <div class="booking-button">
-                <a href="<?php echo get_page_link(); ?>"class="primary-button">book wordshop</a>
+                <a href="<?php echo get_page_link(275); ?>"class="primary-button">book wordshop</a>
             </div>
 
             <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop--> 
@@ -151,7 +153,6 @@ get_header(); ?>
                                 <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop-->
                                 <?php $schedules= CFS()->get( 'retreat_schedule' ); ?>  <!--variable to hold the scedule drop down loop-->
 
-
                                 <section>
                                     <?php if(!empty($fields)): ?>
                                         <?php foreach( $fields as $field ): ?>
@@ -159,7 +160,7 @@ get_header(); ?>
                                             <div class="event-info">
                                                 <?php if(!empty($field['info_rows'])): ?>
                                                     <?php foreach( $field['info_rows'] as $row): ?>
-                                                        <?php echo CFS()->get( 'info_field' ) ?>
+                                                        <?php echo esc_html(CFS()->get( 'info_field' )); ?>
                                                         <p><?php echo $row['info_field'] ?></p>
                                                     <?php endforeach ?>
                                                 <?php endif ?>
@@ -167,13 +168,14 @@ get_header(); ?>
                                         <?php endforeach ?>
                                     <?php endif ?>
                                 </section>
+
                                 <section>
                                     <?php if(!empty($schedules)): ?>
                                         <?php foreach( $schedules as $schedule ): ?>
                                             <h3 class="event-dropdown"><?php echo $schedule[ 'retreat_schedule_title' ]; ?><span>+</span></h3>
                                             <?php if(!empty($schedule['schedule_row'])): ?>
                                                 <?php foreach( $schedule['schedule_row'] as $row): ?>
-                                                    <?php echo CFS()->get( 'schedule_upload' ) ?>
+                                                    <?php echo esc_html(CFS()->get( 'schedule_upload' )); ?>
                                                     <p><?php echo $row['schedule_upload'] ?></p>
                                                 <?php endforeach ?>
                                             <?php endif ?>
@@ -193,13 +195,13 @@ get_header(); ?>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="booking-button">
-                            <a href="<?php echo get_page_link(); ?>"class="primary-button">register online</a>
+                            <a href="<?php echo get_page_link(273); ?>"class="primary-button">register online</a>
                         </div>
                     <?php endforeach; ?>
                 <?php endif; ?> 
             </section>
-			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>

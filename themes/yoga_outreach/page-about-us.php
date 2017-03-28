@@ -5,7 +5,7 @@
 
 get_header(); ?>
 	<div id="primary" class="content-area about-us-content">
-    <main id="main" class="site-main" role="main">
+        <main id="main" class="site-main" role="main">
 			<header class="general-template-section custom-hero-image">
                 <?php
                     // TO SHOW THE PAGE CONTENTS
@@ -16,11 +16,11 @@ get_header(); ?>
                             <div class="general-button-container">
                                 <a class="general-button grey-button" href="<?php echo get_page_link(69); ?>">who we are</a>
                                 <a class="general-button grey-button" href="<?php echo get_page_link(67); ?>">contact us</a>
-                            </div>
-                        </div>
+                            </div><!--general-button-containe-->
+                        </div><!--entry-content-page-->
                     <?php
-                    endwhile; //resetting the page loop
-                    wp_reset_query(); //resetting the page query
+                        endwhile; //resetting the page loop
+                        wp_reset_query(); //resetting the page query
                     ?>
 			</header><!--general-template-section-->
 
@@ -30,37 +30,34 @@ get_header(); ?>
             <?php $articles= CFS()->get( 'training_articles' ); ?>  <!--variable to hold training articles from loop--> 
 
             <section class="container">
-
                 <?php if(!empty($subs)): ?>
                     <?php foreach( $subs as $sub ): ?>
 
                         <div class="subtext">
-                            <h2><?php echo CFS()->get( 'what_we_do' ); ?></h2>
+                            <h2><?php echo esc_html (CFS()->get( 'what_we_do' )); ?></h2>
                             <p><?php echo $sub[ 'subtext_one' ]; ?></p>
-                            <img class="photo-frame" src="<?php echo CFS()->get( 'image1' ); ?>" alt="what we do image">
-                        </div>
+                            <img class="photo-frame" src="<?php echo esc_html(CFS()->get( 'image1' )); ?>" alt="what we do image">
+                        </div><!--subtext-->
 
                         <section>
-                            <h3 class="info-dropdown"><?php echo CFS()->get( 'dropdown_title' ); ?><span>+</span></h3>
+                            <h3 class="info-dropdown"><?php echo esc_html(CFS()->get( 'dropdown_title' )); ?><span>+</span></h3>
                             
-
                             <div class="info-field info-container">
-                                <section class="">
-                                    <img class="photo-frame" src="<?php echo CFS()->get( 'image2' ); ?>" alt="what we do image">
-                                    <div class="list">
-                                        <p class="list-title"><?php echo CFS()->get( 'list_title' ); ?>:</p>
-                                        <?php if(!empty($items)): ?>
-                                            <?php foreach( $items as $item ): ?>
-                                                <ul>
-                                                    <li><?php echo $item[ 'list_item' ]; ?></li>
-                                                </ul>
-                                            <?php endforeach ?>
-                                        <?php endif; ?>
-                                    </div> <!--class list-->
-                                    <p class="description-mobile"><?php echo CFS()->get( 'dropdown_description' ); ?></p>
-                                </section>
-                            </div>
-                            <p class="description-desktop"><?php echo CFS()->get( 'dropdown_description' ); ?></p>
+                                <img class="photo-frame" src="<?php echo esc_html(CFS()->get( 'image2' )); ?>" alt="what we do image">
+                                <div class="list">
+                                    <p class="list-title"><?php echo esc_html(CFS()->get( 'list_title' )); ?>:</p>
+                                    <?php if(!empty($items)): ?>
+                                        <?php foreach( $items as $item ): ?>
+                                            <ul>
+                                                <li><?php echo $item[ 'list_item' ]; ?></li>
+                                            </ul>
+                                        <?php endforeach ?>
+                                    <?php endif; ?>
+                                </div> <!--class list-->
+                                <p class="description-mobile"><?php echo esc_html(CFS()->get( 'dropdown_description' )); ?></p>
+                            </div><!--info-field info-container-->
+
+                            <p class="description-desktop"><?php echo esc_html(CFS()->get( 'dropdown_description' )); ?></p>
                             <a class="primary-button desktop-button" href="<?php echo get_page_link(174); ?>">become a facility partner</a>
                         </section>
 
@@ -70,20 +67,17 @@ get_header(); ?>
                 <div class="mid-sub-text">
                     <p class="subtext" ><?php echo $sub[ 'subtext_two' ]; ?></p>
                     <div class="accent-name-shape"></div>
-                </div>
+                </div><!--mid-sub-text-->
 
                 <?php if(!empty($fields)): ?>
                     <?php foreach( $fields as $field ): ?>
 
-                    
                     <h3 class="info-dropdown"><?php echo $field[ 'info_title' ]; ?><span>+</span></h3>
                     
-                        
                     <div class="info-field training-contain">
                         <?php if(!empty($field['info_rows'])): ?>
                             <?php foreach( $field['info_rows'] as $row): ?>
-
-                                <?php echo CFS()->get( 'info_field' ) ?>
+                                <?php echo esc_html(CFS()->get( 'info_field' )); ?>
                                 <p><?php echo $row['info_field'] ?></p>
                                 <a class="primary-button desktop-button" href="<?php echo get_page_link(234); ?>">our training programs</a>
 
@@ -95,10 +89,10 @@ get_header(); ?>
                                                 <h2><?php echo $article['article_title']; ?></h2>
                                                 <div class="img-contain">
                                                     <img src="<?php echo $article['article_image']; ?>" alt="article image">
-                                                </div>
+                                                </div><!--img-contain-->
                                                 <div class="article-text">
                                                     <p><?php echo $article['article_content']; ?></p>
-                                                </div>
+                                                </div><!--article-text-->
                                             </article> <!-- article -->
 
                                         <?php endforeach; ?>
@@ -107,19 +101,16 @@ get_header(); ?>
         
                             <?php endforeach; ?>
                         <?php endif; ?>
-                    </div>
+                    </div><!--info-field training-contain-->
 
                     <div class="bottom-sub-text">
-                        <img class="photo-frame" src="<?php echo CFS()->get( 'image3' ); ?>" alt="what we do image">
+                        <img class="photo-frame" src="<?php echo esc_html(CFS()->get( 'image3' )); ?>" alt="what we do image">
                         <p class="subtext" ><?php echo $sub[ 'subtext_three' ]; ?></p>
-                    </div>
+                    </div><!--bottom-sub-text-->
 
                     <?php endforeach; ?>
                 <?php endif; ?>
-                
-            </section>
-
+            </section><!--container-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php get_footer(); ?>
