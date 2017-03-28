@@ -83,6 +83,7 @@
             display: flex;
             flex-wrap: wrap;
             z-index: 1;
+            padding-bottom: 148px;
         }
         h3{
             font-size: 1.5rem;
@@ -200,6 +201,14 @@
             @include flex-column;
             margin-right: 10%;
             width: 60%;
+
+            section {
+                order: 4;
+                h3{
+                    font-size: 1.5rem;
+                    text-transform: capitalize;
+                }
+            }
         }
     }
     .desktop-right {
