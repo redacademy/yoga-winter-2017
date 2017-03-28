@@ -71,6 +71,10 @@
 		margin: 0 auto 3% auto;
 	}
 
+	.noborder-info-title{
+		border-bottom:none;
+	}
+
 	.info-field{
 		background-color:#fff;
 	}
@@ -141,6 +145,13 @@
 
 	.info-list-content, .info-list-title{
 		background-color:$logo_color;
+	}
+
+	.info-list-content{
+		p{
+			font-size:18px;
+			line-height:30px;
+		}
 	}
 
 	.bottom-button-container{

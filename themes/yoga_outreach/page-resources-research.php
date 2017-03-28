@@ -8,7 +8,6 @@ get_header(); ?>
 	<div id="primary" class="content-area resources-research-content">
 		<main id="main" class="site-main" role="main">
 			<header class="general-template-section custom-hero-image">
-				<div class="color-background"></div>
 				<?php
                 while ( have_posts() ) : the_post(); ?>
 				<div class="entry-content-page">
@@ -36,14 +35,14 @@ get_header(); ?>
 					</div><!--info-dropdown-->
 					<div class="info-field">
 						<ul class="resource-pdf-list">
-							<p class="resource-link-text"><?php echo CFS()->get('resource_link_text'); ?></p>
+							<p class="resource-link-text"><?php echo esc_html(CFS()->get('resource_link_text')); ?></p>
 							<?php 
 							$pdfs = CFS()->get('pdf_list');
 							foreach ( $pdfs as $pdf ):
 							?>
 							<li class="pdf-item">
-								<a href ="<?php echo $pdf ['pdf_item'];?>" class="pdf-button">PDF</a>
-								<p><?php echo $pdf['name_of_pdf'];?></p>
+								<a href ="<?php echo esc_html($pdf ['pdf_item']);?>" class="pdf-button">PDF</a>
+								<p><?php echo esc_html($pdf['name_of_pdf']);?></p>
 							</li>
 						<?php endforeach ?>
 						</ul><!--resource-pdf-list-->
@@ -56,10 +55,10 @@ get_header(); ?>
 						<span>+</span>
 					</div><!--links-button-container-->
 					<ul class="link-list info-field">
-						<p><?php echo CFS()->get('link_text'); ?></p>
+						<p><?php echo esc_html(CFS()->get('link_text')); ?></p>
 						<?php
 						$links = CFS()->get('link_list');
-						foreach ( $links as $link): 
+						foreach ($links as $link): 
 						?>
 						<li>
 							<?php echo $link ['link'];?>

@@ -8,7 +8,6 @@ get_header(); ?>
 	<div id="primary" class="content-area training-for-facilities-content">
 		<main id="main" class="site-main" role="main">
 				<header class="general-template-section custom-hero-image">
-				    <div class="color-background"></div>
 					  <?php
             while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
             <div class="entry-content-page">
@@ -31,7 +30,7 @@ get_header(); ?>
               <span>+</span>
             </div><!--info-drop-down-->
             <div class="info-field">
-              <p><?php echo CFS()->get('tools_for_youth'); ?></p>
+              <p><?php echo esc_html(CFS()->get('tools_for_youth')); ?></p>
             </div><!--info-field-->
           </section><!--training-yoga-tools-section-->
           <section class="training-yoga-work-section">
@@ -40,7 +39,7 @@ get_header(); ?>
               <span>+</span>
             </div><!--info-dropdown-work-->
             <div class="info-field">
-              <p><?php echo CFS()->get('yoga_in_your_work'); ?></p>
+              <p><?php echo esc_html(CFS()->get('yoga_in_your_work')); ?></p>
             </div><!--info-field-work-->
           </section><!--training-yoga-work-section-->
           <button class="book-training-button">Book Training</button>
@@ -56,7 +55,7 @@ get_header(); ?>
 						$testimonials = CFS()->get('testimonial_list');
 						foreach ( $testimonials as $testimonial): 
 						?>
-						<li class="carousel-cell"><?php echo $testimonial ['testimonial'];?></li>
+						<li class="carousel-cell"><?php echo esc_html($testimonial ['testimonial']);?></li>
 						<?php endforeach ?>
 					</ul>
 				</div><!--testimonial-container-->
@@ -71,17 +70,17 @@ get_header(); ?>
             <li class="training-list-item">
               <div id="training-pdf-container">
                 <?php if(!empty($infoPDF)): ?>
-                <h3><?php echo $infoItem ['list_title'];?></h3>
-                <a href="<?php echo $infoItem ['list_file_upload'];?>">PDF</a>
+                <h3><?php echo esc_html($infoItem ['list_title']);?></h3>
+                <a href="<?php echo esc_html($infoItem ['list_file_upload']);?>">PDF</a>
               </div><!--training-pdf-container-->
                 <?php endif; ?>
                       <?php if(!empty($infoContent)): ?>
-              <div class="info-dropdown info-list-title">
-                <h3 class="yoga-info-title"><?php echo $infoItem ['list_title']; ?></h3>
+              <div class="info-dropdown info-list-title noborder-info-title">
+                <h3 class="yoga-info-title"><?php echo esc_html($infoItem ['list_title']); ?></h3>
                 <span>+</span>
               </div><!--info-dropdown-->
             <div class="info-field info-list-content">
-              <p><?php echo $infoItem ['list_content']; ?></p>
+              <p><?php echo esc_html($infoItem ['list_content']); ?></p>
             </div>
             <?php endif; ?>
             </li><!--training-list-item-->
