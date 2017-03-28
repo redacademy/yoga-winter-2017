@@ -75,12 +75,12 @@ $(window).resize(function() {
     });
 
     // Drop down category
-    $('.info-dropdown').click(function () {
-      if ($(this).next('.info-field').is(':hidden')) {
-        $(this).next('.info-field').slideDown('normal');
+    $('.info-dropdown, .event-dropdown').click(function () {
+      if ($(this).next('.info-field, .event-info').is(':hidden')) {
+        $(this).next('.info-field, .event-info').slideDown('normal');
         $(this).children('span').text('-');
       } else {
-        $(this).next('.info-field').slideUp('normal');
+        $(this).next('.info-field, .event-info').slideUp('normal');
         $(this).children('span').text('+');
       }
     });
