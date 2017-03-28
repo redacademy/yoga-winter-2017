@@ -55,13 +55,9 @@
       }
     }
     .aboutus-button{
-      width: 230px;
-      height: 44px;
+      @include general-button;
       background-color: $accentcolor_bar;
-      box-shadow:none;
-      border:none;
-      margin-top: 80px;
-      border-radius: 8px;
+      margin-top: 75px;
       @include desktop{
         width: 150px;
         height: 45px;

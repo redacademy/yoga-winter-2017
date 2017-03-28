@@ -8,8 +8,24 @@
         $('.search-field').toggleClass('searchAppear');
         $('.search-field').focus();    
     });
-    $('.search-field').blur(function() {
-        $('.fa-search').click();
+
+    //click on menu in mobile toggle submenu
+    $('.sub-menu').hide();
+    $('#menu-item-253').on('click', function(event) {
+        event.preventDefault();
+        $('#menu-item-253 > .sub-menu').slideDown();
+    });
+    $('#menu-item-141').on('click', function(event) {
+        event.preventDefault();
+        $('#menu-item-141 > .sub-menu').slideDown();
+    });
+    $('#menu-item-255').on('click', function(event) {
+        event.preventDefault();
+        $('#menu-item-255 > .sub-menu').slideDown();
+    });
+    $('#menu-item-144').on('click', function(event) {
+        event.preventDefault();
+        $('#menu-item-144 > .sub-menu').slideDown();
     });
 
     //dropdown submenu on clicking hamburger icon

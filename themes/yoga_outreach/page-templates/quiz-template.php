@@ -2,7 +2,7 @@
 /**
  * Template Name: Quizzes Template
  *
- * @package RED_Starter_Theme
+ * @package Yoga_Outreach_Theme
  */
 
 get_header(); ?>

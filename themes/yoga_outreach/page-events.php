@@ -1,12 +1,13 @@
 <?php 
-/*
- * @package Yoga_Outreach
+/**
+ * @package Yoga_Outreach_Theme
  */
 
 get_header(); ?>
 	<div id="primary" class="content-area event-content">
 		<main id="main" class="site-main" role="main">
 			<header class="general-template-section custom-hero-image">
+                <div class="color-background"></div>
                 <?php
                     // TO SHOW THE PAGE CONTENTS
                     while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
@@ -34,14 +35,14 @@ get_header(); ?>
                         <div class="body-info">
                             <div class="title-contain">
                                 <h3><?php echo $event['event_title']; ?></h3>
-                                <a href="<?php echo get_page_link(); ?>"class="primary-button">book</a>
+                                <a href="<?php echo get_page_link(275); ?>"class="primary-button">book</a>
                                 <div class="accent-name-shape"></div>
                             </div> <!--title-contain -->
                             <div class="desktop-contain">
                                 <div class="img-contain">
-                                    <img src="<?php echo $event['event_image'] ?>" alt="event-image" class="event-img photo-frame">
-                                    <div class="photo-frame"></div>
-                                    <div class="photo-frame"></div>
+                                    <img src="<?php echo $event['event_image_1'] ?>" alt="event-image" class="event-img photo-frame">
+                                    <img src="<?php echo $event['event_image_2'] ?>" alt="event-image" class="event-img photo-frame">
+                                    <img src="<?php echo $event['event_image_3'] ?>" alt="event-image" class="event-img photo-frame">
                                 </div> <!-- img-contain -->
 
                                 <?php if(!empty($event['event_booking_info'])): ?>
@@ -107,6 +108,8 @@ get_header(); ?>
                 <button class="general-button white-button">book workshop</button>
             </div>
 
+            <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop--> 
+            
             <section id="retreat" class="container">
                 <?php $retreats= CFS()->get( 'new_retreats' ); ?>  <!--variable to hold email from loop-->    
 
@@ -117,7 +120,7 @@ get_header(); ?>
                         <div class="body-info">
                             <div class="title-contain">
                                 <h3><?php echo $retreat['retreat_title']; ?></h3>
-                                <a href="<?php echo get_page_link(); ?>"class="primary-button">register</a>
+                                <a href="<?php echo get_page_link(273); ?>"class="primary-button">register</a>
                                 <div class="accent-name-shape"></div>
                             </div>
 
@@ -144,19 +147,52 @@ get_header(); ?>
                                 <article>
                                     <p><?php echo $info['retreat_info']; ?></p>
                                 </article>
+
+                                <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop-->
+                                <?php $schedules= CFS()->get( 'retreat_schedule' ); ?>  <!--variable to hold the scedule drop down loop-->
+
+
+                                <section>
+                                    <?php if(!empty($fields)): ?>
+                                        <?php foreach( $fields as $field ): ?>
+                                            <h3 class="desktop-info"><?php echo $field[ 'info_title' ]; ?><span>+</span></h3>
+                                            <?php if(!empty($field['info_rows'])): ?>
+                                                <?php foreach( $field['info_rows'] as $row): ?>
+                                                    <?php echo CFS()->get( 'info_field' ) ?>
+                                                    <p><?php echo $row['info_field'] ?></p>
+                                                <?php endforeach ?>
+                                            <?php endif ?>
+                                        <?php endforeach ?>
+                                    <?php endif ?>
+                                </section>
+                                <section>
+                                    <?php if(!empty($schedules)): ?>
+                                        <?php foreach( $schedules as $schedule ): ?>
+                                            <h3 class="desktop-info"><?php echo $schedule[ 'retreat_schedule_title' ]; ?><span>+</span></h3>
+                                            <?php if(!empty($schedule['schedule_row'])): ?>
+                                                <?php foreach( $schedule['schedule_row'] as $row): ?>
+                                                    <?php echo CFS()->get( 'schedule_upload' ) ?>
+                                                    <p><?php echo $row['schedule_upload'] ?></p>
+                                                <?php endforeach ?>
+                                            <?php endif ?>
+                                        <?php endforeach ?>
+                                    <?php endif ?>
+                                </section>
                             </div>
 
                             <div class="desktop-right">
                                 <div class="img-contain">
-                                    <div class="photo-frame"></div> <!--add dynamic photo field-->
-                                    <div class="photo-frame"></div> <!--add dynamic photo field-->
-                                    <div class="photo-frame"></div> <!--add dynamic photo field-->
+                                    <img src="<?php echo $retreat['retreat_image_1'] ?>" class="photo-frame" alt="event-image">
+                                    <img src="<?php echo $retreat['retreat_image_2'] ?>" class="photo-frame" alt="event-image">
+                                    <img src="<?php echo $retreat['retreat_image_3'] ?>" class="photo-frame" alt="event-image">
                                     <?php if(!empty($retreat['retreat_image'])): ?> <!--if there is no image upload do not display anything-->
                                         <img src="<?php echo $retreat['retreat_image'] ?>" alt="retreat-image" class="event-img">
                                     <?php endif; ?>
                                 </div>
                             </div>
-
+                        </div>
+                        <div class="booking-button">
+                            <button class="general-button white-button">Register online</button>
                         </div>
                     <?php endforeach; ?>
                 <?php endif; ?> 
