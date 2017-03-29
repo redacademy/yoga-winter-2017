@@ -9,7 +9,7 @@ http://flickity.metafizzy.co
 .flickity-enabled:focus { outline: none; }
 
 .flickity-viewport {
-  overflow: hidden;
+  overflow-y: hidden;
   position: relative;
   height: 120%;
 }

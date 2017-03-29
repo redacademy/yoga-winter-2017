@@ -1779,6 +1779,15 @@ footer {
 .about-us-content {
   text-align: center;
   color: #6b747d; }
+  .about-us-content .custom-hero-image {
+    background-size: 300%;
+    background-position: left 0px top -147px; }
+    @media (min-width: 720px) {
+      .about-us-content .custom-hero-image {
+        -ms-flex-align: center;
+            align-items: center;
+        background-size: 100%;
+        background-position: left 0 top 0; } }
   .about-us-content .general-button {
     width: 230px;
     height: 44px;
@@ -3158,7 +3167,10 @@ a:hover, a:active {
 
 .training-for-facilities-content .main-carousel {
   width: 100%;
-  padding: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 0;
   margin: 0 auto; }
   .training-for-facilities-content .main-carousel .carousel-cell {
     width: 100%;
@@ -3273,7 +3285,8 @@ a:hover, a:active {
 
 .training-for-facilities-content .carousel-cell.is-selected {
   padding-left: 2rem;
-  padding-right: 2rem; }
+  padding-right: 2rem;
+  font-size: 2vh; }
   @media (min-width: 720px) {
     .training-for-facilities-content .carousel-cell.is-selected {
       padding-left: 5rem;
@@ -5314,7 +5327,10 @@ object {
 
 .training-for-facilities-content .main-carousel {
   width: 100%;
-  padding: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 0;
   margin: 0 auto; }
   .training-for-facilities-content .main-carousel .carousel-cell {
     width: 100%;
@@ -5429,7 +5445,8 @@ object {
 
 .training-for-facilities-content .carousel-cell.is-selected {
   padding-left: 2rem;
-  padding-right: 2rem; }
+  padding-right: 2rem;
+  font-size: 2vh; }
   @media (min-width: 720px) {
     .training-for-facilities-content .carousel-cell.is-selected {
       padding-left: 5rem;
@@ -5944,7 +5961,7 @@ http://flickity.metafizzy.co
   outline: none; }
 
 .flickity-viewport {
-  overflow: hidden;
+  overflow-y: hidden;
   position: relative;
   height: 120%; }
 
