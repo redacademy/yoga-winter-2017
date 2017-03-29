@@ -1280,13 +1280,16 @@ p {
       .show-dropdown .dropdown-menu-list input:focus {
         outline: none; }
   .show-dropdown li {
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
     padding: 1rem; }
+    @media (min-width: 720px) {
+      .show-dropdown li {
+        display: -ms-flexbox;
+        display: flex; } }
     .show-dropdown li h2 {
       margin: 0 auto;
       text-transform: uppercase;
@@ -6111,12 +6114,13 @@ http://flickity.metafizzy.co
       height: 500px;
       width: 100%;
       margin: 0 auto;
-      display: -ms-flexbox;
-      display: flex;
+      display: block;
       -ms-flex-pack: center;
           justify-content: center; }
       @media (min-width: 720px) {
         .current-ops-content .site-main ul li {
+          display: -ms-flexbox;
+          display: flex;
           height: 500px;
           width: 70%; } }
       .current-ops-content .site-main ul li .opps-header {

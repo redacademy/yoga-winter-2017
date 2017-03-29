@@ -390,10 +390,13 @@ p {
     }
   }
   li {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    @include desktop{
+      display: flex;
+    }
     h2 {
       margin: 0 auto;
       text-transform: uppercase;
