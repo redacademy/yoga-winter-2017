@@ -446,6 +446,7 @@ button {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -926,18 +927,6 @@ a {
   text-align: center;
   line-height: 25px; }
 
-.color-background {
-  height: 80vh;
-  width: 100%;
-  background-size: cover;
-  background-color: #95afc9;
-  opacity: .5;
-  position: absolute; }
-  @media (min-width: 720px) {
-    .color-background {
-      height: 100vh;
-      width: 100vw; } }
-
 .max-width-1024 {
   max-width: 1024px;
   margin: 0 auto; }
@@ -1085,8 +1074,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
         box-shadow: none;
-        position: static;
-        padding: 0.4rem; }
+        position: static; }
         #site-navigation #primary-menu #menu-item-253 .sub-menu li {
           padding: 0;
           margin: 0 auto; }
@@ -1141,6 +1129,13 @@ p {
     #site-navigation #primary-menu .menu-item {
       padding: 1rem;
       margin: 0 auto; }
+    @media (min-width: 720px) {
+      #site-navigation #primary-menu .sub-menu {
+        padding-top: 20px; }
+        #site-navigation #primary-menu .sub-menu .menu-item {
+          padding: 0;
+          margin: 0 auto;
+          text-align: left; } }
     #site-navigation #primary-menu .menu-item-type-post_type a {
       color: #6b747d; }
       #site-navigation #primary-menu .menu-item-type-post_type a:hover {
@@ -1373,6 +1368,9 @@ p {
   @media (min-width: 720px) {
     .logo-image {
       margin-left: 0; } }
+
+.hide-menu-drop {
+  display: none; }
 
 footer {
   display: -ms-flexbox;
@@ -1622,6 +1620,7 @@ footer {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -1731,61 +1730,61 @@ footer {
   .contact-us-content .info-dropdown {
     margin-top: 25px; } }
 
-.error404 .site-main {
+.error404 .site-main, .search-no-results .site-main {
   padding: 1rem; }
 
-.error404 .nothing-found {
+.error404 .nothing-found, .search-no-results .nothing-found {
   text-align: center; }
 
-.error404 .search-form {
+.error404 .search-form, .search-no-results .search-form {
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
-  .error404 .search-form fieldset {
+  .error404 .search-form fieldset, .search-no-results .search-form fieldset {
     border: none;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row; }
 
-.error404 .page-title {
+.error404 .page-title, .search-no-results .page-title {
   text-align: center; }
 
-.error404 .general-button {
+.error404 .general-button, .search-no-results .general-button {
   width: 150px;
   border: none;
   box-shadow: none;
   color: white;
   background-color: #94bfd1; }
 
-.error404 .widget_recent_entries {
+.error404 .widget_recent_entries, .search-no-results .widget_recent_entries {
   margin-top: 50px; }
-  .error404 .widget_recent_entries a {
+  .error404 .widget_recent_entries a, .search-no-results .widget_recent_entries a {
     color: #4a4a4a; }
 
-.error404 .page-header {
+.error404 .page-header, .search-no-results .page-header {
   padding: 2rem; }
 
-.error404 .main-navigation#site-navigation {
+.error404 .main-navigation#site-navigation, .search-no-results .main-navigation#site-navigation {
   position: static;
   background-color: #9c9fa3; }
 
-.error404 .page-content {
+.error404 .page-content, .search-no-results .page-content {
   max-width: 1020px;
   margin: 0 auto; }
 
-.error404 fieldset {
+.error404 fieldset, .search-no-results fieldset {
   text-align: center;
   width: 50%; }
-  .error404 fieldset input {
+  .error404 fieldset input, .search-no-results fieldset input {
     margin: 25px 0;
     width: 300px; }
 
-.error404 .widget li {
+.error404 .widget li, .search-no-results .widget li {
   list-style: none; }
-  .error404 .widget li a {
+  .error404 .widget li a, .search-no-results .widget li a {
     text-decoration: none; }
 
 .about-us-content {
@@ -1805,6 +1804,7 @@ footer {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -2433,6 +2433,7 @@ footer {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -2528,6 +2529,7 @@ footer {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -2555,6 +2557,7 @@ footer {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -2607,6 +2610,7 @@ footer {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -2638,6 +2642,7 @@ footer {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -2900,6 +2905,7 @@ a:hover, a:active {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -2993,6 +2999,7 @@ a:hover, a:active {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -3207,6 +3214,7 @@ a:hover, a:active {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -3423,6 +3431,7 @@ a:hover, a:active {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -3494,6 +3503,7 @@ a:hover, a:active {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -3793,6 +3803,7 @@ a:hover, a:active {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -3969,6 +3980,7 @@ a:hover, a:active {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -4284,6 +4296,7 @@ object {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -4608,6 +4621,7 @@ object {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -4987,6 +5001,7 @@ object {
       height: 44px;
       margin: 0 auto;
       font-size: 14px;
+      text-align: center;
       text-transform: uppercase;
       box-shadow: none;
       text-shadow: none;
@@ -5337,6 +5352,7 @@ object {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -5553,6 +5569,7 @@ object {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -5624,6 +5641,7 @@ object {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -6153,6 +6171,7 @@ http://flickity.metafizzy.co
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;

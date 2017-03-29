@@ -116,9 +116,9 @@ add_action( 'pre_get_posts', 'yoga_change_sort_order');
 function yoga_headernav_styles() {
 
     $templates = ['page-templates/forms-template.php', 'page-templates/application-submission.php', 'page-templates/quiz-template.php'];
-    $pages = ['current-opportunities', 'contact-us', 'who-we-are', 'modules-home'];
+    $pages = ['current-opportunities', 'contact-us', 'who-we-are', 'modules-home', 'privacy-policy'];
 
-    if(!is_page_template($template = $templates) && !is_page($page = $pages) && !is_post_type_archive( 'training_modules' )){
+    if(!is_page_template($template = $templates) && !is_page($page = $pages) && !is_post_type_archive( 'training_modules' ) && !is_home()){
         return;
     }
 
@@ -202,3 +202,30 @@ add_filter( 'gform_pre_render_9', 'populate_retreat_titles' );
 add_filter( 'gform_pre_validation_9', 'populate_retreat_titles' );
 add_filter( 'gform_pre_submission_filter_9', 'populate_retreat_titles' );
 add_filter( 'gform_admin_pre_render_9', 'populate_retreat_titles' );
+
+/**
+ * Custom dynamic fields for select retreats
+ *
+ * 
+ */
+function image_scripts() {
+    wp_enqueue_script(
+        'image_script',
+        get_template_directory_uri() . '/build/js/yoga-header.min.js',
+        array('jquery'),
+        null,
+        true
+    );
+    $script_data = array(
+        'image_path' => get_template_directory_uri() . '/images'
+    );
+    wp_localize_script(
+        'image_script',
+        'image_data',
+        $script_data
+    );
+}
+add_action( 'wp_enqueue_scripts', 'image_scripts' );
+
+
+
