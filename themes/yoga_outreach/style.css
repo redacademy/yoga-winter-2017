@@ -912,7 +912,7 @@ a {
   font-weight: 500;
   font-size: 14px; }
   .training-list-item .info-field, .training-list-item .info-dropdown {
-    background-color: #95AFC9;
+    background-color: #C7D5E2;
     border-bottom: none;
     width: 100vw;
     padding: 0; }
@@ -2466,7 +2466,7 @@ footer {
   height: 40vh; }
 
 /* Core Scholarship Training */
-#gform_7 .gform_title, #gform_7 .gform_description {
+#gform_7 .gform_title, #gform_7 .gform_description:not(h3) {
   max-width: 752px;
   margin: 0 auto;
   margin-bottom: 29px; }
