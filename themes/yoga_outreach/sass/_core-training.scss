@@ -53,7 +53,6 @@
             }
     }
 
-
     .core-header{
         margin:0;
         width:175px;
@@ -67,7 +66,6 @@
                 width:700px;
             }
     }
-
 
     .register-online-button{
         display:flex;
@@ -229,6 +227,24 @@
             }
     }
 
+    .page-title-header{
+        @include desktop{
+            color:#4A4A4A;
+        }
+    }
+
+    .entry-content-page{
+        p{
+            color:#6B747D
+        }
+    }
+
+    #read-more{
+        color:black;
+        font-weight:bold;
+        display:block;
+    }
+
     .avail-online-h3{
         width:11rem;
         @include desktop{
@@ -344,7 +360,6 @@
 			}
 	}
 
-
     .house-logo{
         width:27.94px;
         height:28.92px;
@@ -381,6 +396,12 @@
 
     .yoga-info-title{
 		font-size:16.38px;
+        margin-top:36px;
+        font-weight:bold;
+        margin-bottom:10px;
+            @include desktop{
+                font-weight:20px;
+            }
 	}
 
     tr{

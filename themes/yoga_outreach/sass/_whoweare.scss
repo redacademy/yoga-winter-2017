@@ -4,14 +4,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     h1, h2, h3, h4{
         margin: 0;
 
         font-family: Raleway;
         font-weight: 300;
     }
-
     .entry-header {
         height: 300px;
         width: 100%;
@@ -27,7 +25,6 @@
             height:225px;
         }
     }
-
     .hero-text {
         height: 150px;
         @include flex-column;
@@ -50,7 +47,6 @@
             }
         }
     }
-
     .team {
         max-width: 100%;
         height: 100%;
@@ -58,14 +54,12 @@
         font-weight: lighter;
         color: #6B747D;
     }
-
     .teamheader {
         height: 80px;
         font-weight: lighter;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
         h2 {
             font-size: 1.5rem;
                 @include desktop{
@@ -74,7 +68,6 @@
                     margin-bottom:10px;
                 }
         }
-
         p {
             font-size: 0.8rem;
                 @include desktop{
@@ -83,14 +76,12 @@
                 }
         }
     }
-
     .info-dropdown {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         background-color: transparent;
-
         #hideshow{
             border: none;
             border-radius: 0;
@@ -99,7 +90,6 @@
             height: 50px;
             padding: 0;
         }
-
         h3 {
             font-weight: bold;
             font-size: 1.2rem;
@@ -113,7 +103,6 @@
                     margin-top:60px
                 }
         }
-
         span {
             font-size: 1.5rem;
         }
@@ -125,18 +114,17 @@
         @include flex-column;
         align-items: center;
     }
-
     .member-contain {
         width: 100%;
         margin-bottom: 40px;
         position: relative;
+        cursor:pointer;
         @include flex-column;
         align-items: center;
             @include desktop{
                 width: 30%;
                 margin-top:40px;
             }
-
         .staffphoto {
             width: 160px;
             height: 160px;
@@ -144,14 +132,12 @@
             border-radius: 50%;
             margin-bottom: 15px;
         }
-
         a {
             color: $darktext_color;
             font-size: 1.2rem;
             text-decoration: none;
         }
     }
-
     .accent-name-shape {
         height: 25px;
         width: 250px;
@@ -167,7 +153,6 @@
                 left:-10px;
             }
     }
-
     #site-navigation.main-navigation{
         @include desktop{
             position:relative !important;
@@ -182,11 +167,9 @@
             }
         }
     }
-
     .info-dropdown:first-of-type{
         margin-bottom:100px;
     }
-
     .staff-item-container{
         @include desktop {
             display: flex !important;
@@ -196,7 +179,6 @@
             margin: 0 auto;
         }
     }
-
     .staff-popup{
         background-color:#fff;
         width:100vw;
@@ -214,7 +196,6 @@
             left: 12%;
         }
     }
-
     .popup-description{
         margin:0 auto;
         padding-top:80px;
@@ -236,40 +217,37 @@
             }
         }
     }
-
-.staff-description{
-    display:none;
-    padding: 10px;
-    margin:0 auto;
-    z-index:20;
-    font-size:0.5rem;
-    color:#000;
-    margin-top:10px;
-    @include desktop{
-        font-size:1rem;
+    .staff-description{
+        display:none;
+        padding: 10px;
+        margin:0 auto;
+        z-index:20;
+        font-size:0.5rem;
+        color:#000;
         margin-top:10px;
+        @include desktop{
+            font-size:1rem;
+            margin-top:10px;
+        }
     }
-}
-
-.staff-info{
-    display:none;
-    margin:0 auto;
-    z-index:20;
-    font-size:0.5rem;
-    color:#000;
-    @include desktop{
-        font-size:1rem;
+    .staff-info{
+        display:none;
+        margin:0 auto;
+        z-index:20;
+        font-size:0.5rem;
+        color:#000;
+        @include desktop{
+            font-size:1rem;
+        }
     }
-}
-
-.exit-button{
-    position:absolute;
-    right: 2%;
-    top: 2%;
-    height: 10%;
-}
-.fade-background{
-    opacity: 0.1;
-}
+    .exit-button{
+        position:absolute;
+        right: 2%;
+        top: 2%;
+        height: 10%;
+    }
+    .fade-background{
+        opacity: 0.1;
+    }
 }
 

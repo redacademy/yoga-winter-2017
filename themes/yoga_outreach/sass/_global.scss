@@ -55,7 +55,7 @@ body{
     font-weight:300;
     font-size:24px;
     position:relative;
-    bottom:80px;
+    bottom:40px;
         @include desktop{
           font-size:40px;
           padding-top:0;
@@ -90,7 +90,7 @@ body{
 .entry-content-page{
     p{
     position:relative;
-    bottom:4rem;
+    bottom:15px;
     max-width: 280px;
     margin: 0 auto;
         @include desktop{
@@ -204,13 +204,12 @@ body{
 
 
 .general-button-container{
-	height: 250px;
-    max-height: 255px;
+	height: 290px;
 		@include desktop{
 			display:flex;
-            height:auto;
             max-width:1024px;
             margin:0 auto;
+            height:110px;
             justify-content:space-between;
 		}
 }

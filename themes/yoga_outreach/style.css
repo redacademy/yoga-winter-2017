@@ -585,6 +585,7 @@ button {
     width: 100%;
     margin-bottom: 40px;
     position: relative;
+    cursor: pointer;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -752,7 +753,7 @@ body {
   font-weight: 300;
   font-size: 24px;
   position: relative;
-  bottom: 80px; }
+  bottom: 40px; }
   @media (min-width: 720px) {
     .page-title-header, .entry-content-page {
       font-size: 40px;
@@ -786,7 +787,7 @@ body {
 
 .entry-content-page p {
   position: relative;
-  bottom: 4rem;
+  bottom: 15px;
   max-width: 280px;
   margin: 0 auto; }
   @media (min-width: 720px) {
@@ -879,15 +880,14 @@ body {
       z-index: -1; } }
 
 .general-button-container {
-  height: 250px;
-  max-height: 255px; }
+  height: 290px; }
   @media (min-width: 720px) {
     .general-button-container {
       display: -ms-flexbox;
       display: flex;
-      height: auto;
       max-width: 1024px;
       margin: 0 auto;
+      height: 110px;
       -ms-flex-pack: justify;
           justify-content: space-between; } }
 
@@ -1790,15 +1790,6 @@ footer {
 .about-us-content {
   text-align: center;
   color: #6b747d; }
-  .about-us-content .custom-hero-image {
-    background-size: 300%;
-    background-position: left 0px top -147px; }
-    @media (min-width: 720px) {
-      .about-us-content .custom-hero-image {
-        -ms-flex-align: center;
-            align-items: center;
-        background-size: 100%;
-        background-position: left 0 top 0; } }
   .about-us-content .general-button {
     width: 230px;
     height: 44px;
@@ -1865,13 +1856,16 @@ footer {
           background-color: #9fabb7;
           text-transform: uppercase;
           display: block; }
+        .about-us-content .container section li, .about-us-content .event-content .container2 section li, .event-content .about-us-content .container2 section li {
+          height: 44px; }
       .about-us-content .container .info-container, .about-us-content .event-content .container2 .info-container, .event-content .about-us-content .container2 .info-container {
         width: 100vw;
         background-color: #fff;
         display: -ms-flexbox !important;
         display: flex !important;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+        padding: 25px 0; }
       .about-us-content .container .desktop-container, .about-us-content .event-content .container2 .desktop-container, .event-content .about-us-content .container2 .desktop-container {
         -ms-flex-order: 1;
             order: 1;
@@ -1889,7 +1883,9 @@ footer {
       .about-us-content .container .list, .about-us-content .event-content .container2 .list, .event-content .about-us-content .container2 .list {
         line-height: 42px;
         -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse; }
+            flex-direction: column-reverse;
+        text-align: left;
+        margin-left: 50px; }
         .about-us-content .container .list p, .about-us-content .event-content .container2 .list p, .event-content .about-us-content .container2 .list p {
           font-size: 2rem; }
       .about-us-content .container .description-mobile, .about-us-content .event-content .container2 .description-mobile, .event-content .about-us-content .container2 .description-mobile {
@@ -2900,6 +2896,9 @@ a:hover, a:active {
       @media (min-width: 720px) {
         .training-content .for-training-section img {
           height: auto; } }
+  @media (min-width: 720px) {
+    .training-content .page-title-header, .training-content .entry-content-page {
+      color: #4A4A4A; } }
   .training-content .general-button {
     width: 230px;
     height: 44px;
@@ -3241,12 +3240,16 @@ a:hover, a:active {
   margin-top: 39px; }
   @media (min-width: 720px) {
     .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
-      margin-top: 10px; } }
+      max-width: 1024px;
+      margin: 10px auto; } }
 
 .training-for-facilities-content .info-dropdown {
   background-color: #fff;
   border-bottom: 2px solid #4a4a4a;
   margin: 0 auto 3% auto; }
+
+.training-for-facilities-content .noborder-info-title {
+  border-bottom: none; }
 
 .training-for-facilities-content .info-field {
   background-color: #fff; }
@@ -3312,6 +3315,10 @@ a:hover, a:active {
 .training-for-facilities-content .info-list-content, .training-for-facilities-content .info-list-title {
   background-color: #95afc9; }
 
+.training-for-facilities-content .info-list-content p {
+  font-size: 18px;
+  line-height: 30px; }
+
 .training-for-facilities-content .bottom-button-container {
   height: 85px;
   width: 100%;
@@ -3359,11 +3366,11 @@ a:hover, a:active {
   margin-bottom: 0; }
 
 .training-for-facilities-content .content-container {
-  max-width: 1020px;
   margin: 0 auto; }
 
 .training-for-facilities-content .traininglist-container {
-  background-color: #95afc9; }
+  background-color: #95afc9;
+  width: 100%; }
 
 .core-training-content .testimonial-container {
   background-color: #ebe5d8; }
@@ -3600,6 +3607,18 @@ a:hover, a:active {
       .core-training-content .core-training-text-image-container h3 {
         font-size: 20px; } }
 
+@media (min-width: 720px) {
+  .core-training-content .page-title-header, .core-training-content .entry-content-page {
+    color: #4A4A4A; } }
+
+.core-training-content .entry-content-page p {
+  color: #6B747D; }
+
+.core-training-content #read-more {
+  color: black;
+  font-weight: bold;
+  display: block; }
+
 .core-training-content .avail-online-h3 {
   width: 11rem; }
   @media (min-width: 720px) {
@@ -3737,7 +3756,13 @@ a:hover, a:active {
   font-size: 11px; }
 
 .core-training-content .yoga-info-title {
-  font-size: 16.38px; }
+  font-size: 16.38px;
+  margin-top: 36px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+  @media (min-width: 720px) {
+    .core-training-content .yoga-info-title {
+      font-weight: 20px; } }
 
 .core-training-content tr td {
   margin-top: 9px; }
@@ -4996,7 +5021,7 @@ object {
           .home .hero-banner .herobanner-text p {
             font-size: 24px;
             max-width: 650px; } }
-    .home .hero-banner .aboutus-button {
+    .home .hero-banner .general-button {
       width: 230px;
       height: 44px;
       margin: 0 auto;
@@ -5022,18 +5047,18 @@ object {
       background-color: #94bfd1;
       margin-top: 75px; }
       @media (min-width: 720px) {
-        .home .hero-banner .aboutus-button {
+        .home .hero-banner .general-button {
           width: 150px;
           height: 45px;
           background-color: #b6eaff; } }
-      .home .hero-banner .aboutus-button a {
+      .home .hero-banner .general-button a {
         color: #fff;
         text-shadow: none;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 14px; }
         @media (min-width: 720px) {
-          .home .hero-banner .aboutus-button a {
+          .home .hero-banner .general-button a {
             color: #4a4a4a; } }
   .home .trauma-approach {
     padding: 7%;
@@ -5379,12 +5404,16 @@ object {
   margin-top: 39px; }
   @media (min-width: 720px) {
     .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
-      margin-top: 10px; } }
+      max-width: 1024px;
+      margin: 10px auto; } }
 
 .training-for-facilities-content .info-dropdown {
   background-color: #fff;
   border-bottom: 2px solid #4a4a4a;
   margin: 0 auto 3% auto; }
+
+.training-for-facilities-content .noborder-info-title {
+  border-bottom: none; }
 
 .training-for-facilities-content .info-field {
   background-color: #fff; }
@@ -5450,6 +5479,10 @@ object {
 .training-for-facilities-content .info-list-content, .training-for-facilities-content .info-list-title {
   background-color: #95afc9; }
 
+.training-for-facilities-content .info-list-content p {
+  font-size: 18px;
+  line-height: 30px; }
+
 .training-for-facilities-content .bottom-button-container {
   height: 85px;
   width: 100%;
@@ -5497,11 +5530,11 @@ object {
   margin-bottom: 0; }
 
 .training-for-facilities-content .content-container {
-  max-width: 1020px;
   margin: 0 auto; }
 
 .training-for-facilities-content .traininglist-container {
-  background-color: #95afc9; }
+  background-color: #95afc9;
+  width: 100%; }
 
 .core-training-content .testimonial-container {
   background-color: #ebe5d8; }
@@ -5738,6 +5771,18 @@ object {
       .core-training-content .core-training-text-image-container h3 {
         font-size: 20px; } }
 
+@media (min-width: 720px) {
+  .core-training-content .page-title-header, .core-training-content .entry-content-page {
+    color: #4A4A4A; } }
+
+.core-training-content .entry-content-page p {
+  color: #6B747D; }
+
+.core-training-content #read-more {
+  color: black;
+  font-weight: bold;
+  display: block; }
+
 .core-training-content .avail-online-h3 {
   width: 11rem; }
   @media (min-width: 720px) {
@@ -5875,7 +5920,13 @@ object {
   font-size: 11px; }
 
 .core-training-content .yoga-info-title {
-  font-size: 16.38px; }
+  font-size: 16.38px;
+  margin-top: 36px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+  @media (min-width: 720px) {
+    .core-training-content .yoga-info-title {
+      font-weight: 20px; } }
 
 .core-training-content tr td {
   margin-top: 9px; }
@@ -6345,5 +6396,4 @@ http://flickity.metafizzy.co
 
 .search #site-navigation {
   position: relative;
-  height: 200px;
   background-color: #959ba5; }

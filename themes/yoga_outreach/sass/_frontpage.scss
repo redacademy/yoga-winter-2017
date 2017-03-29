@@ -54,7 +54,7 @@
         }
       }
     }
-    .aboutus-button{
+    .general-button{
       @include general-button;
       background-color: $accentcolor_bar;
       margin-top: 75px;
@@ -239,9 +239,7 @@
       }
     }
   }
-
   .testimonal-container{
-    
     .testimonial-list.main-carousel{
       background-color:$base_color;
       @include desktop{
@@ -317,7 +315,6 @@
     }
   }
   .team-container{
-    
     .team-list.main-carousel{
       background-color:$base_color;
 

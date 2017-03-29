@@ -33,11 +33,6 @@
             }
     }//main-h3-container
 
-    // .desktop-margin{
-    //     margin-left:6%;
-    // }
-
-
     .training-para-left{
         text-align:left;
     }
@@ -56,6 +51,12 @@
             }
         }
     }//for-training-section
+
+    .page-title-header{
+        @include desktop{
+            color:#4A4A4A;
+        }
+    }
 
 
     .general-button{

@@ -1,239 +1,216 @@
 .contact-us-content {
-    h1, h2, h3, h4, h5{
-        margin: 0;
-        font-weight: 300;
-    }
-  #site-navigation{
-    .menu-main-menu-container
-    a{
-      padding:500px;
-      color:$darktheme_color;
-    }  
-  }
-
-  #main{
-    @include desktop{
-    padding-top:270px; 
-    display:flex;
-    flex-direction: column;
-    } 
-  }
-    .hero-text {
-        height: 225px;
-        width: 100%;
-
-        color: $darktheme_color;
-        background-color: $another_color;
-
-        font-family: Raleway;
-        font-weight: 500;
-        text-transform: capitalize;
-        text-align: center;
-
-        display: flex;
-        flex-direction: column;
-
-        h1 {
-          font-size: 1.5rem;
-          margin: 1.5rem;
-          @include desktop{
-            font-size: 40px;
-          }
-        }
-        p{
-          @include desktop{
-            font-size: 24px;
-          }
-        }
-        .hero-phone {
-            font-size: 2rem;
-        }
-    }
-    .contactinfo-container{
-      @include desktop{
-      display:flex;
-      width: 830px;
-      margin: 0 auto;
-      margin-bottom:290px;
-      justify-content: space-between;
-      
-      }
-    }
-    .email-inquiries{
-      @include desktop{
-      flex-basis: 100%;
-      }
-    }
-    .contact-container{
-      @include desktop{
-      flex-direction: column;
-      }
-    }
-    .emailinfo-section{
-      @include desktop{
-      flex-basis: 50%;
-      align-self: flex-start;
-      padding: 0;
-      }
-    }
-    .info-section{
-      background-color: $lighttheme_color;
-      @include desktop{
-        max-width:401px;
-        flex-basis: 50%;
-        background-color:#C2DCE4;
-        height:320px;
-        border-radius:8px;
-        z-index:-1;
-      }
-      .info-dropdown{
-        @include desktop{
-          background-color: transparent;
-          padding:0;
-        }
-      }
-    }
-    .email-inquiries {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 15px 10px;
-        color: $lighttext_color;
-          h2 {
-            font-size: 1.5rem;
-            padding-bottom: 21px;
-             @include desktop{
-              font-size: 40px;
-              color:#4A4A4A;
-            }
-        }
-
-        p{
-            font-size: .9rem;
-            padding-bottom: 8px;
-            @include desktop{
-              font-size: 24px;
-              color:#000;
-              padding-bottom:22px;
-            }
-        }
-
-        a{
-            @include general-button;
-            background-color: #6B747D;
-            text-decoration: none;
-            text-align: center;
-            padding: 12px;
-            margin-bottom: 54px;
-            
-        }
-        .email-info {
-            width: 100%;
-            @include desktop{
-              font-size: 20px;
-            }
-            h5 {
-                text-transform: uppercase;
-                font-weight: bold;
-                @include desktop{
-              font-size: 20px;
-            }
-            }
-
-            p {
-                font-size: 0.9rem;
-                font-weight: lighter;
-                padding-bottom: 20px;
-                @include desktop{
-              font-size: 20px;
-            }
-            }
-        }
-    }
-
-    .info-dropdown {
-        padding: 15px;
-        height: 100%;
-
-        background-color: $lighttheme_color;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        @include desktop{
-          height: auto;
-        }
-
-        #hideshow{
-            border: none;
-            border-radius: 0;
-            background: none;
-            box-shadow: none;
-            height: 50px;
-            padding: 0;
-        }
-
-        h3 {
-            font-weight: bold;
-            font-size: 1.2rem;
-              @include desktop{
-                font-size:24px;
-              }
-        }
-
-        span {
-            font-size: 1.5rem;
-        }
-
-    }
-    .info-field {
-        padding: 0 15px 15px;
-        display: none;
-        height: 100%;
-        background-color: $lighttheme_color;
-
-        p {
-            font-size: 0.9rem;
-            font-weight: lighter;
-        }
-    }
-
-    .padding-on-sides{
-        padding:0 15px;
-            @include desktop{
-              padding:0 15px;
-            }
-    }
-
-    .info-text{
-        @include desktop{
-            font-size:24px;
-        }
-    }
-
-    .email-info{
-      margin-bottom:20px;
-          @include desktop{
-              margin-bottom:34px;
-              font-size:20px;
-                h5{
-                  @include desktop{
-                    font-weight:bold;
-                  }
-                }
-          }
-    }
-
-    .emailinfo-section{
-      padding-left:15px;
-        @include desktop{
-          padding-left:0;
-        }
-    }
-
-  .info-dropdown{
-      @include desktop{
-          margin-top:25px;
-      }
-  }
-
+		h1, h2, h3, h4, h5{
+				margin: 0;
+				font-weight: 300;
+		}
+	#site-navigation{
+		.menu-main-menu-container
+		a{
+			padding:500px;
+			color:$darktheme_color;
+		}
+	}
+	#main{
+		@include desktop{
+		padding-top:270px;
+		display:flex;
+		flex-direction: column;
+		}
+	}
+		.hero-text {
+			height: 225px;
+			width: 100%;
+			color: $darktheme_color;
+			background-color: $another_color;
+			font-family: Raleway;
+			font-weight: 500;
+			text-transform: capitalize;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			h1 {
+				font-size: 1.5rem;
+				margin: 1.5rem;
+				@include desktop{
+					font-size: 40px;
+				}
+			}
+			p{
+				@include desktop{
+					font-size: 24px;
+				}
+			}
+			.hero-phone {
+					font-size: 2rem;
+			}
+		}
+		.contactinfo-container{
+			@include desktop{
+			display:flex;
+			width: 830px;
+			margin: 0 auto;
+			margin-bottom:290px;
+			justify-content: space-between;
+			}
+		}
+		.email-inquiries{
+			@include desktop{
+			flex-basis: 100%;
+			}
+		}
+		.contact-container{
+			@include desktop{
+			flex-direction: column;
+			}
+		}
+		.emailinfo-section{
+			@include desktop{
+			flex-basis: 50%;
+			align-self: flex-start;
+			padding: 0;
+			}
+		}
+		.info-section{
+			background-color: $lighttheme_color;
+			@include desktop{
+				max-width:401px;
+				flex-basis: 50%;
+				background-color:#C2DCE4;
+				height:320px;
+				border-radius:8px;
+				z-index:-1;
+			}
+			.info-dropdown{
+				@include desktop{
+					background-color: transparent;
+					padding:0;
+				}
+			}
+		}
+		.email-inquiries {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 40px 15px 10px;
+			color: $lighttext_color;
+				h2 {
+					font-size: 1.5rem;
+					padding-bottom: 21px;
+					 @include desktop{
+						font-size: 40px;
+						color:#4A4A4A;
+					}
+				}
+			p{
+				font-size: .9rem;
+				padding-bottom: 8px;
+				@include desktop{
+					font-size: 24px;
+					color:#000;
+					padding-bottom:22px;
+				}
+			}
+			a{
+				@include general-button;
+				background-color: #6B747D;
+				text-decoration: none;
+				text-align: center;
+				padding: 12px;
+				margin-bottom: 54px;
+			}
+			.email-info {
+				width: 100%;
+				@include desktop{
+					font-size: 20px;
+				}
+				h5 {
+					text-transform: uppercase;
+					font-weight: bold;
+					@include desktop{
+							font-size: 20px;
+					}
+				}
+				p {
+					font-size: 0.9rem;
+					font-weight: lighter;
+					padding-bottom: 20px;
+					@include desktop{
+						font-size: 20px;
+					}
+				}
+			}
+		}
+		.info-dropdown {
+			padding: 15px;
+			height: 100%;
+			background-color: $lighttheme_color;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			@include desktop{
+				height: auto;
+			}
+			#hideshow{
+				border: none;
+				border-radius: 0;
+				background: none;
+				box-shadow: none;
+				height: 50px;
+				padding: 0;
+			}
+			h3 {
+				font-weight: bold;
+				font-size: 1.2rem;
+				@include desktop{
+					font-size:24px;
+				}
+			}
+			span {
+				font-size: 1.5rem;
+			}
+		}
+		.info-field {
+			padding: 0 15px 15px;
+			display: none;
+			height: 100%;
+			background-color: $lighttheme_color;
+			p {
+				font-size: 0.9rem;
+				font-weight: lighter;
+			}
+		}
+		.padding-on-sides{
+			padding:0 15px;
+			@include desktop{
+				padding:0 15px;
+			}
+		}
+		.info-text{
+			@include desktop{
+					font-size:24px;
+			}
+		}
+		.email-info{
+			margin-bottom:20px;
+			@include desktop{
+			margin-bottom:34px;
+			font-size:20px;
+				h5{
+					@include desktop{
+						font-weight:bold;
+					}
+				}
+			}
+		}
+		.emailinfo-section{
+			padding-left:15px;
+			@include desktop{
+				padding-left:0;
+			}
+		}
+	.info-dropdown{
+		@include desktop{
+			margin-top:25px;
+		}
+	}
 }//Contact-Us Wrapper

@@ -60,7 +60,8 @@
 	.training-yoga-tools-section,.training-yoga-work-section{
 			margin-top:39px;
 				@include desktop{
-					margin-top:10px;
+          max-width: 1024px;
+          margin: 10px auto;
 				}
 	}
 
@@ -68,6 +69,10 @@
 		background-color:#fff;
 		border-bottom:2px solid $darktheme_color;
 		margin: 0 auto 3% auto;
+	}
+
+	.noborder-info-title{
+		border-bottom:none;
 	}
 
 	.info-field{
@@ -142,6 +147,13 @@
 		background-color:$logo_color;
 	}
 
+	.info-list-content{
+		p{
+			font-size:18px;
+			line-height:30px;
+		}
+	}
+
 	.bottom-button-container{
 		height:85px;
 		width:100%;
@@ -188,11 +200,11 @@
 	}
 
     .content-container{
-    max-width: 1020px;
     margin: 0 auto;
   }
   .traininglist-container{
     background-color:$logo_color;
+    width: 100%;
   }
 }//Training Facilities Wrapper
 
