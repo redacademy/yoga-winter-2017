@@ -1280,8 +1280,8 @@ p {
       .show-dropdown .dropdown-menu-list input:focus {
         outline: none; }
   .show-dropdown li {
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-align: center;
