@@ -3,37 +3,45 @@
     .testimonial-container{
         background-color: #ebe5d8;
     }
-    
+    .flickity-viewport{
+        overflow: auto;
+        position: static;
+        @include desktop{
+          overflow:hidden;
+          position: relative;
+        }
+    }
     .main-carousel{
         width: 100%;
-        padding-top:20px;
+        padding-top:10px;
         margin-top:2rem;
         padding-bottom:20px;
-        padding-right:2rem;
+        padding-right:5px;
+        padding-left:5px;
         height: 8.3rem;
-            @include desktop{
-                max-width: 1020px;
-                margin: 0 auto;
-            }
-                .carousel-cell{
-                    width: 100%;
-                    height: auto;
-                    p{
-                        margin-top: 20px;
-                    }
-                    h1{
-                        color: $darktext_color;
-                    }
-                }
-                ol{
-                    display: none;
-                }
-                .flickity-prev-next-button{
-                    border: none;
-                    background: none;
-                    box-shadow: none;
-                    padding: 0;
-                }
+        @include desktop{
+           max-width: 1020px;
+           margin: 0 auto;
+        }
+          .carousel-cell{
+              width: 100%;
+              height: auto;
+              p{
+                  margin-top: 20px;
+              }
+              h1{
+                  color: $darktext_color;
+              }
+          }
+          ol{
+              display: none;
+          }    
+          .flickity-prev-next-button{
+              border: none;
+              background: none;
+              box-shadow: none;
+              padding: 0;
+          }
     }
 
     .core-h3-container{
@@ -69,10 +77,13 @@
 
     .register-online-button{
         display:flex;
+        justify-content:center;
+	      align-items:center;
         @include general-button;
              background-color:#6B747D;
                 a{
                     color:white;
+                    text-align:center;
                 }
     }
 
@@ -86,10 +97,13 @@
         }
     }
 
-    .book-training.register-button{
-        margin:0 auto;
-            @include desktop{
-                margin-right:0;
+    .book-training-button{
+        margin:0 auto; 
+        @include desktop{
+            margin-right:0;
+            a{
+                text-align: center;
+            }     
         }
     }
 
@@ -140,9 +154,13 @@
 
 
     .register-online-button{
-        @include desktop{
-            display:inline;
-        }
+      text-align: center;
+       @include desktop{
+          display:inline;
+          a{
+              text-align: center;
+          }
+       }
     }
 
     .register-button-para-container{

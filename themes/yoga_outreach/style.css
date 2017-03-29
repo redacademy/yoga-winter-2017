@@ -3387,12 +3387,21 @@ a:hover, a:active {
 .core-training-content .testimonial-container {
   background-color: #ebe5d8; }
 
+.core-training-content .flickity-viewport {
+  overflow: auto;
+  position: static; }
+  @media (min-width: 720px) {
+    .core-training-content .flickity-viewport {
+      overflow: hidden;
+      position: relative; } }
+
 .core-training-content .main-carousel {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
   margin-top: 2rem;
   padding-bottom: 20px;
-  padding-right: 2rem;
+  padding-right: 5px;
+  padding-left: 5px;
   height: 8.3rem; }
   @media (min-width: 720px) {
     .core-training-content .main-carousel {
@@ -3446,6 +3455,10 @@ a:hover, a:active {
 .core-training-content .register-online-button {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   width: 230px;
   height: 44px;
   margin: 0 auto;
@@ -3462,14 +3475,13 @@ a:hover, a:active {
   font-family: 'raleway',sans-serif;
   font-size: 14px;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   background-color: #6B747D; }
   .core-training-content .register-online-button a {
-    color: white; }
+    color: white;
+    text-align: center; }
 
 @media (min-width: 720px) {
   .core-training-content .table-section-container {
@@ -3480,11 +3492,13 @@ a:hover, a:active {
         justify-content: space-around;
     margin: 30px auto; } }
 
-.core-training-content .book-training.register-button {
+.core-training-content .book-training-button {
   margin: 0 auto; }
   @media (min-width: 720px) {
-    .core-training-content .book-training.register-button {
-      margin-right: 0; } }
+    .core-training-content .book-training-button {
+      margin-right: 0; }
+      .core-training-content .book-training-button a {
+        text-align: center; } }
 
 .core-training-content .small-para-container {
   margin-top: 2rem; }
@@ -3542,9 +3556,13 @@ a:hover, a:active {
   text-decoration: none;
   margin-bottom: 29px; }
 
-@media (min-width: 720px) {
-  .core-training-content .register-online-button {
-    display: inline; } }
+.core-training-content .register-online-button {
+  text-align: center; }
+  @media (min-width: 720px) {
+    .core-training-content .register-online-button {
+      display: inline; }
+      .core-training-content .register-online-button a {
+        text-align: center; } }
 
 @media (min-width: 720px) {
   .core-training-content .register-button-para-container {
@@ -5551,12 +5569,21 @@ object {
 .core-training-content .testimonial-container {
   background-color: #ebe5d8; }
 
+.core-training-content .flickity-viewport {
+  overflow: auto;
+  position: static; }
+  @media (min-width: 720px) {
+    .core-training-content .flickity-viewport {
+      overflow: hidden;
+      position: relative; } }
+
 .core-training-content .main-carousel {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
   margin-top: 2rem;
   padding-bottom: 20px;
-  padding-right: 2rem;
+  padding-right: 5px;
+  padding-left: 5px;
   height: 8.3rem; }
   @media (min-width: 720px) {
     .core-training-content .main-carousel {
@@ -5610,6 +5637,10 @@ object {
 .core-training-content .register-online-button {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   width: 230px;
   height: 44px;
   margin: 0 auto;
@@ -5626,14 +5657,13 @@ object {
   font-family: 'raleway',sans-serif;
   font-size: 14px;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   background-color: #6B747D; }
   .core-training-content .register-online-button a {
-    color: white; }
+    color: white;
+    text-align: center; }
 
 @media (min-width: 720px) {
   .core-training-content .table-section-container {
@@ -5644,11 +5674,13 @@ object {
         justify-content: space-around;
     margin: 30px auto; } }
 
-.core-training-content .book-training.register-button {
+.core-training-content .book-training-button {
   margin: 0 auto; }
   @media (min-width: 720px) {
-    .core-training-content .book-training.register-button {
-      margin-right: 0; } }
+    .core-training-content .book-training-button {
+      margin-right: 0; }
+      .core-training-content .book-training-button a {
+        text-align: center; } }
 
 .core-training-content .small-para-container {
   margin-top: 2rem; }
@@ -5706,9 +5738,13 @@ object {
   text-decoration: none;
   margin-bottom: 29px; }
 
-@media (min-width: 720px) {
-  .core-training-content .register-online-button {
-    display: inline; } }
+.core-training-content .register-online-button {
+  text-align: center; }
+  @media (min-width: 720px) {
+    .core-training-content .register-online-button {
+      display: inline; }
+      .core-training-content .register-online-button a {
+        text-align: center; } }
 
 @media (min-width: 720px) {
   .core-training-content .register-button-para-container {
