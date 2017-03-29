@@ -105,6 +105,7 @@ function yoga_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'yoga_scripts' );
 
+
 /**
  * Custom template tags for this theme.
  */

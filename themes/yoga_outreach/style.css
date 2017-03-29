@@ -446,6 +446,7 @@ button {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -1073,8 +1074,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
         box-shadow: none;
-        position: static;
-        padding: 0.4rem; }
+        position: static; }
         #site-navigation #primary-menu #menu-item-253 .sub-menu li {
           padding: 0;
           margin: 0 auto; }
@@ -1129,6 +1129,13 @@ p {
     #site-navigation #primary-menu .menu-item {
       padding: 1rem;
       margin: 0 auto; }
+    @media (min-width: 720px) {
+      #site-navigation #primary-menu .sub-menu {
+        padding-top: 20px; }
+        #site-navigation #primary-menu .sub-menu .menu-item {
+          padding: 0;
+          margin: 0 auto;
+          text-align: left; } }
     #site-navigation #primary-menu .menu-item-type-post_type a {
       color: #6b747d; }
       #site-navigation #primary-menu .menu-item-type-post_type a:hover {
@@ -1273,13 +1280,16 @@ p {
       .show-dropdown .dropdown-menu-list input:focus {
         outline: none; }
   .show-dropdown li {
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: block;
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
     padding: 1rem; }
+    @media (min-width: 720px) {
+      .show-dropdown li {
+        display: -ms-flexbox;
+        display: flex; } }
     .show-dropdown li h2 {
       margin: 0 auto;
       text-transform: uppercase;
@@ -1361,6 +1371,9 @@ p {
   @media (min-width: 720px) {
     .logo-image {
       margin-left: 0; } }
+
+.hide-menu-drop {
+  display: none; }
 
 footer {
   display: -ms-flexbox;
@@ -1610,6 +1623,7 @@ footer {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -1719,61 +1733,61 @@ footer {
   .contact-us-content .info-dropdown {
     margin-top: 25px; } }
 
-.error404 .site-main {
+.error404 .site-main, .search-no-results .site-main {
   padding: 1rem; }
 
-.error404 .nothing-found {
+.error404 .nothing-found, .search-no-results .nothing-found {
   text-align: center; }
 
-.error404 .search-form {
+.error404 .search-form, .search-no-results .search-form {
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
-  .error404 .search-form fieldset {
+  .error404 .search-form fieldset, .search-no-results .search-form fieldset {
     border: none;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row; }
 
-.error404 .page-title {
+.error404 .page-title, .search-no-results .page-title {
   text-align: center; }
 
-.error404 .general-button {
+.error404 .general-button, .search-no-results .general-button {
   width: 150px;
   border: none;
   box-shadow: none;
   color: white;
   background-color: #94bfd1; }
 
-.error404 .widget_recent_entries {
+.error404 .widget_recent_entries, .search-no-results .widget_recent_entries {
   margin-top: 50px; }
-  .error404 .widget_recent_entries a {
+  .error404 .widget_recent_entries a, .search-no-results .widget_recent_entries a {
     color: #4a4a4a; }
 
-.error404 .page-header {
+.error404 .page-header, .search-no-results .page-header {
   padding: 2rem; }
 
-.error404 .main-navigation#site-navigation {
+.error404 .main-navigation#site-navigation, .search-no-results .main-navigation#site-navigation {
   position: static;
   background-color: #9c9fa3; }
 
-.error404 .page-content {
+.error404 .page-content, .search-no-results .page-content {
   max-width: 1020px;
   margin: 0 auto; }
 
-.error404 fieldset {
+.error404 fieldset, .search-no-results fieldset {
   text-align: center;
   width: 50%; }
-  .error404 fieldset input {
+  .error404 fieldset input, .search-no-results fieldset input {
     margin: 25px 0;
     width: 300px; }
 
-.error404 .widget li {
+.error404 .widget li, .search-no-results .widget li {
   list-style: none; }
-  .error404 .widget li a {
+  .error404 .widget li a, .search-no-results .widget li a {
     text-decoration: none; }
 
 .about-us-content {
@@ -1793,6 +1807,7 @@ footer {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -2426,6 +2441,7 @@ footer {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -2521,6 +2537,7 @@ footer {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -2548,6 +2565,7 @@ footer {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -2600,6 +2618,7 @@ footer {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -2631,6 +2650,7 @@ footer {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -2896,6 +2916,7 @@ a:hover, a:active {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -2989,6 +3010,7 @@ a:hover, a:active {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -3206,6 +3228,7 @@ a:hover, a:active {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -3368,12 +3391,21 @@ a:hover, a:active {
 .core-training-content .testimonial-container {
   background-color: #ebe5d8; }
 
+.core-training-content .flickity-viewport {
+  overflow: auto;
+  position: static; }
+  @media (min-width: 720px) {
+    .core-training-content .flickity-viewport {
+      overflow: hidden;
+      position: relative; } }
+
 .core-training-content .main-carousel {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
   margin-top: 2rem;
   padding-bottom: 20px;
-  padding-right: 2rem;
+  padding-right: 5px;
+  padding-left: 5px;
   height: 8.3rem; }
   @media (min-width: 720px) {
     .core-training-content .main-carousel {
@@ -3427,10 +3459,15 @@ a:hover, a:active {
 .core-training-content .register-online-button {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   width: 230px;
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -3442,14 +3479,13 @@ a:hover, a:active {
   font-family: 'raleway',sans-serif;
   font-size: 14px;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   background-color: #6B747D; }
   .core-training-content .register-online-button a {
-    color: white; }
+    color: white;
+    text-align: center; }
 
 @media (min-width: 720px) {
   .core-training-content .table-section-container {
@@ -3460,11 +3496,13 @@ a:hover, a:active {
         justify-content: space-around;
     margin: 30px auto; } }
 
-.core-training-content .book-training.register-button {
+.core-training-content .book-training-button {
   margin: 0 auto; }
   @media (min-width: 720px) {
-    .core-training-content .book-training.register-button {
-      margin-right: 0; } }
+    .core-training-content .book-training-button {
+      margin-right: 0; }
+      .core-training-content .book-training-button a {
+        text-align: center; } }
 
 .core-training-content .small-para-container {
   margin-top: 2rem; }
@@ -3502,6 +3540,7 @@ a:hover, a:active {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -3521,9 +3560,13 @@ a:hover, a:active {
   text-decoration: none;
   margin-bottom: 29px; }
 
-@media (min-width: 720px) {
-  .core-training-content .register-online-button {
-    display: inline; } }
+.core-training-content .register-online-button {
+  text-align: center; }
+  @media (min-width: 720px) {
+    .core-training-content .register-online-button {
+      display: inline; }
+      .core-training-content .register-online-button a {
+        text-align: center; } }
 
 @media (min-width: 720px) {
   .core-training-content .register-button-para-container {
@@ -3819,6 +3862,7 @@ a:hover, a:active {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -3995,6 +4039,7 @@ a:hover, a:active {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -4310,6 +4355,7 @@ object {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -4634,6 +4680,7 @@ object {
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
@@ -5013,6 +5060,7 @@ object {
       height: 44px;
       margin: 0 auto;
       font-size: 14px;
+      text-align: center;
       text-transform: uppercase;
       box-shadow: none;
       text-shadow: none;
@@ -5366,6 +5414,7 @@ object {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -5528,12 +5577,21 @@ object {
 .core-training-content .testimonial-container {
   background-color: #ebe5d8; }
 
+.core-training-content .flickity-viewport {
+  overflow: auto;
+  position: static; }
+  @media (min-width: 720px) {
+    .core-training-content .flickity-viewport {
+      overflow: hidden;
+      position: relative; } }
+
 .core-training-content .main-carousel {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
   margin-top: 2rem;
   padding-bottom: 20px;
-  padding-right: 2rem;
+  padding-right: 5px;
+  padding-left: 5px;
   height: 8.3rem; }
   @media (min-width: 720px) {
     .core-training-content .main-carousel {
@@ -5587,10 +5645,15 @@ object {
 .core-training-content .register-online-button {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   width: 230px;
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -5602,14 +5665,13 @@ object {
   font-family: 'raleway',sans-serif;
   font-size: 14px;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   background-color: #6B747D; }
   .core-training-content .register-online-button a {
-    color: white; }
+    color: white;
+    text-align: center; }
 
 @media (min-width: 720px) {
   .core-training-content .table-section-container {
@@ -5620,11 +5682,13 @@ object {
         justify-content: space-around;
     margin: 30px auto; } }
 
-.core-training-content .book-training.register-button {
+.core-training-content .book-training-button {
   margin: 0 auto; }
   @media (min-width: 720px) {
-    .core-training-content .book-training.register-button {
-      margin-right: 0; } }
+    .core-training-content .book-training-button {
+      margin-right: 0; }
+      .core-training-content .book-training-button a {
+        text-align: center; } }
 
 .core-training-content .small-para-container {
   margin-top: 2rem; }
@@ -5662,6 +5726,7 @@ object {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   box-shadow: none;
   text-shadow: none;
@@ -5681,9 +5746,13 @@ object {
   text-decoration: none;
   margin-bottom: 29px; }
 
-@media (min-width: 720px) {
-  .core-training-content .register-online-button {
-    display: inline; } }
+.core-training-content .register-online-button {
+  text-align: center; }
+  @media (min-width: 720px) {
+    .core-training-content .register-online-button {
+      display: inline; }
+      .core-training-content .register-online-button a {
+        text-align: center; } }
 
 @media (min-width: 720px) {
   .core-training-content .register-button-para-container {
@@ -6089,12 +6158,13 @@ http://flickity.metafizzy.co
       height: 500px;
       width: 100%;
       margin: 0 auto;
-      display: -ms-flexbox;
-      display: flex;
+      display: block;
       -ms-flex-pack: center;
           justify-content: center; }
       @media (min-width: 720px) {
         .current-ops-content .site-main ul li {
+          display: -ms-flexbox;
+          display: flex;
           height: 500px;
           width: 70%; } }
       .current-ops-content .site-main ul li .opps-header {
@@ -6209,6 +6279,7 @@ http://flickity.metafizzy.co
     height: 44px;
     margin: 0 auto;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;

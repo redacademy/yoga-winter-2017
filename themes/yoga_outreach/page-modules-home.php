@@ -53,6 +53,6 @@ get_header(); ?>
                 </div>
                 <div class="blue-bar"></div>
             </section> 
-            <div class="button-wrap"><button class="general-button grey-button"><a href="<?php echo get_page_link(203); ?>" class="button">Go to Modules</a></button></div>          
+            <div class="button-wrap"><button class="general-button grey-button"><a href="<?php echo get_post_type_archive_link( 'training_modules' ); ?>" class="button">Go to Modules</a></button></div>          
 
 <?php get_footer(); ?>
