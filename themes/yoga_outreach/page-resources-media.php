@@ -82,7 +82,7 @@ get_header(); ?>
 					?>
 					<li>
 						<h3><?php echo esc_html($video ['title']); ?></h3>
-						<span class="video-link"><?php echo esc_url($video['video_embed_link']);?></span>
+						<span class="video-link"><?php echo $video['video_embed_link'];?></span>
 					</li>
 					<?php endforeach ?>
 				</ul>
