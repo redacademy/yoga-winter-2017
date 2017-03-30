@@ -1176,7 +1176,7 @@ p {
   display: none; }
 
 .show-dropdown {
-  display: none;
+  display: block;
   width: 100%;
   height: 100vh;
   background-color: #F6FCFF;
@@ -1187,7 +1187,12 @@ p {
   text-align: center; }
   @media (min-width: 720px) {
     .show-dropdown {
-      display: block; } }
+      display: none; } }
+  .show-dropdown .hide-menu-mobile {
+    display: none; }
+    @media (min-width: 720px) {
+      .show-dropdown .hide-menu-mobile {
+        display: none; } }
   .show-dropdown .wrapper {
     width: 100%;
     height: 100vh;

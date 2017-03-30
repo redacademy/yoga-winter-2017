@@ -50,7 +50,7 @@
               </form>
             </div> <!-- .wrapper -->
           </div><!-- .menu-dropdown -->
-          <div class="show-dropdown show">
+          <div class="show-dropdown show show-menu-mobile">
             <div class="wrapper">
               <form class="form-signin">       
                 <h3>username</h3>
