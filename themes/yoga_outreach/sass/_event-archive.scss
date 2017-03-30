@@ -1,14 +1,4 @@
 .event-content {
-    .custom-hero-image {
-        background-size: 270%;
-        background-position: left -120px top -56px;
-        align-items: center;
-        @include desktop {
-            align-items: center;
-            background-size: 100%;
-            background-position: left 0 top 0;
-        }
-    }
 
     .general-button{
         @include general-button;
