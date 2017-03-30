@@ -204,7 +204,7 @@ add_filter( 'gform_pre_submission_filter_9', 'populate_retreat_titles' );
 add_filter( 'gform_admin_pre_render_9', 'populate_retreat_titles' );
 
 /**
- * Custom dynamic fields for select retreats
+ * Allow php Variables to be localized for use in JS
  *
  * 
  */

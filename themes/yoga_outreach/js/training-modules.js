@@ -35,7 +35,8 @@
                     .children('.progress-icon').removeClass('incomplete').addClass('half-way');
         }
         if($(this).parent().parent().parent().children('.individual-lesson:last-child').children('.lesson-dropdown').hasClass('completed')){
-            console.log($(this).parent().parent().parent().next().children('.individual-lesson').first().children('.lesson-field').addClass('start-lesson'));
+            $(this).parent().parent().parent().next().children('.individual-lesson').first()
+                    .children('.lesson-field').addClass('start-lesson');
             var moduleComp = $(this).parent().parent().parent().next().prop('id');
             $(".tablinks[value= '"+ moduleComp +"']").addClass('start-module');
         }

@@ -76,7 +76,7 @@ get_header(); ?>
 										<?php endif; ?>
 										<?php if(!empty($content['module_homework'])): ?><p><?php echo $content['module_homework'] ?></p><?php endif; ?>
 										<?php if(!empty($content['slides'])): ?>
-											<div class="main-carousel" data-flickity='{ "wrapAround": false }'>
+											<div class="main-carousel">
 												<?php
 												foreach ( $content['slides'] as $slide ):?>
 													<div class="carousel-cell">
