@@ -173,7 +173,7 @@
     $('.member-contain').on('click', function(event){
         event.preventDefault();
         $('.popup-description').empty();
-        $('.staff-popup').fadeIn('2000','linear');
+        $('.staff-popup').fadeIn('1000','linear');
         $('.accent-name-shape').css('display','none');
         $(this).clone().appendTo('.popup-description');
         $(this).clone().find('.staff-info').css('display', 'block').appendTo('.popup-description');
