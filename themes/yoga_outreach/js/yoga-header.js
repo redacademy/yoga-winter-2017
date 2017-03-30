@@ -34,7 +34,10 @@
 
 
     $(window).resize(function() {
-        if ($(window).width() > 720) { $('.menu-dropdown-plus').addClass('hide-menu-drop');}
+        if ($(window).width() > 720) { 
+            $('.menu-dropdown-plus').addClass('hide-menu-drop');
+            $('.show-dropdown').hide();
+        }
     });
 
     $('.sub-menu').hide();
