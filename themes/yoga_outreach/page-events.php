@@ -16,14 +16,14 @@ get_header(); ?>
                             <?php the_content(); ?> <!-- Page Content -->
                             <div class="general-button-container">
                                 <a href="#workshop" class="general-button grey-button">workshop</a>
-                                <a href="#retreat" class="general-button grey-button"">retreat</a>
+                                <a href="#retreat" class="general-button grey-button">retreat</a>
                             </div>
                         </div>
                     <?php
                         endwhile; //resetting the page loop
                         wp_reset_query(); //resetting the page query
                     ?>
-			</header><!--general-template-section-->
+			</header> <!--general-template-section-->
 
             <section id="workshop" class="container">
                 <?php $events= CFS()->get( 'new_event' ); ?>  <!--variable to hold email from loop-->    
