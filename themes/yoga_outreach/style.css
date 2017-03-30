@@ -641,20 +641,20 @@ button {
       margin: 0 auto; } }
   .who-we-are-content .staff-popup {
     background-color: #fff;
-    width: 100vw;
+    width: 75%;
     position: fixed;
     height: 100vh;
     z-index: 10;
     top: 0;
-    left: 0;
+    left: 12%;
     display: none;
     margin: 0 auto;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     border-radius: 37px; }
     @media (min-width: 720px) {
       .who-we-are-content .staff-popup {
-        width: 75%;
-        left: 12%; } }
+        width: 47%;
+        left: 24%; } }
   .who-we-are-content .popup-description {
     margin: 0 auto;
     padding-top: 80px; }
@@ -677,12 +677,12 @@ button {
     padding: 10px;
     margin: 0 auto;
     z-index: 20;
-    font-size: 0.5rem;
+    font-size: 20px;
     color: #000;
     margin-top: 10px; }
     @media (min-width: 720px) {
       .who-we-are-content .staff-description {
-        font-size: 1rem;
+        font-size: 20px;
         margin-top: 10px; } }
   .who-we-are-content .staff-info {
     display: none;
