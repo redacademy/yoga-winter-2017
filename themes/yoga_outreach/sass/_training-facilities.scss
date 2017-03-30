@@ -6,7 +6,10 @@
     }
   .main-carousel{
       width: 100%;
-      padding: 30px;
+      padding-top:30px;
+	  padding-left:30px;
+	  padding-right:30px;
+	  padding-bottom:0;
       margin: 0 auto;
       .carousel-cell{
           width: 100%;
@@ -124,6 +127,7 @@
 	.carousel-cell.is-selected{
         padding-left: 2rem;
         padding-right: 2rem;
+		font-size:2vh;
 			@include desktop{
 				padding-left: 5rem;
     			padding-right: 5rem;

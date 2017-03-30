@@ -42,7 +42,7 @@ get_header(); ?>
               <p><?php echo esc_html(CFS()->get('yoga_in_your_work')); ?></p>
             </div><!--info-field-work-->
           </section><!--training-yoga-work-section-->
-          <button class="book-training-button">Book Training</button>
+          <a href="core-training-application-form" class="book-training-button">Book Training</a>
           <p class="small-para section-15px-padding">-Skills Training for Support Professionals</p>
           <p class="under-skills-training-para section-15px-padding">Are you interested in learning about 
           the practical applications of yoga in your work with clients? 
@@ -88,7 +88,7 @@ get_header(); ?>
         </ul>
       </section><!--traininglist-container-->
 		<div class="bottom-button-container">
-				<button class="general-button">Book Training</button>
+				<a href="core-training-scholr"class="general-button">Book Scholorship</a>
 		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
