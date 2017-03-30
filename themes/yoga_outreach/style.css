@@ -1804,10 +1804,8 @@ footer {
     background-position: left 0px top -147px; }
     @media (min-width: 720px) {
       .about-us-content .custom-hero-image {
-        -ms-flex-align: center;
-            align-items: center;
-        background-size: 100%;
-        background-position: left 0 top 0; } }
+        background-size: cover, cover;
+        background-position: left 0px top 0px; } }
   .about-us-content .general-button {
     width: 230px;
     height: 44px;
@@ -4344,6 +4342,14 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.event-content .custom-hero-image {
+  background-size: 300%;
+  background-position: left 0px top -147px; }
+  @media (min-width: 720px) {
+    .event-content .custom-hero-image {
+      background-size: cover, cover;
+      background-position: left 0px top 0px; } }
+
 .event-content .general-button {
   width: 230px;
   height: 44px;
