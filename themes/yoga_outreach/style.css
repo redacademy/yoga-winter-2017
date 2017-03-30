@@ -4339,18 +4339,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.event-content .custom-hero-image {
-  background-size: 270%;
-  background-position: left -120px top -56px;
-  -ms-flex-align: center;
-      align-items: center; }
-  @media (min-width: 720px) {
-    .event-content .custom-hero-image {
-      -ms-flex-align: center;
-          align-items: center;
-      background-size: 100%;
-      background-position: left 0 top 0; } }
-
 .event-content .general-button {
   width: 230px;
   height: 44px;
