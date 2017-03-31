@@ -181,7 +181,7 @@
     }
     .staff-popup{
         background-color:#fff;
-        width:100vw;
+        width:75%;
         position: fixed;
         height:90vh;
         z-index:10;
@@ -226,7 +226,7 @@
         color:#000;
         margin-top:10px;
         @include desktop{
-            font-size:1rem;
+            font-size:20px;
             margin-top:10px;
         }
     }

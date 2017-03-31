@@ -121,7 +121,7 @@ get_header(); ?>
             <div id="training-pdf-container">
               <?php if(!empty($infoPDF)): ?>
               <h3><?php echo esc_html($infoItem ['list_title']);?></h3>
-                        <a href ="<?php echo esc_html($infoItem ['list_file_upload']);?>">PDF</a>
+                        <a class="pdf-file" href ="<?php echo esc_html($infoItem ['list_file_upload']);?>">PDF</a>
             </div><!--training-pdf-container-->
             <?php 
             endif; 

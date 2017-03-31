@@ -93,6 +93,11 @@
             display:inline;
         }
     }
+    
+    .text{
+        text-decoration:underline;
+        font-weight:20px;
+    }
 
     .resources-article-pdf-list-container{
         background-color:$lighttheme_color;
@@ -187,6 +192,7 @@
         padding:0;
         margin:0;
         list-style:none;
+        background-color:#fff;
             li{
                 margin-bottom:7px;
                     @include desktop{
