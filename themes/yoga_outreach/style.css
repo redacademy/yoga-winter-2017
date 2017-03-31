@@ -3783,6 +3783,9 @@ a:hover, a:active {
   display: -ms-flexbox;
   display: flex; }
 
+.core-training-content .pdf-file {
+  color: #4a4a4a; }
+
 @media (min-width: 720px) {
   .core-training-content .online-dates-section, .core-training-content .classroom-dates-section {
     width: 45vw;
@@ -3934,6 +3937,10 @@ a:hover, a:active {
 .resources-research-content .list-text-container p {
   display: inline; }
 
+.resources-research-content .text {
+  text-decoration: underline;
+  font-weight: 20px; }
+
 .resources-research-content .resources-article-pdf-list-container {
   background-color: #f4f1ea;
   font-size: 14px; }
@@ -4017,7 +4024,8 @@ a:hover, a:active {
 .resources-research-content .link-list {
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  background-color: #fff; }
   .resources-research-content .link-list li {
     margin-bottom: 7px; }
     @media (min-width: 720px) {
@@ -5965,6 +5973,9 @@ object {
 .core-training-content .training-table-data {
   display: -ms-flexbox;
   display: flex; }
+
+.core-training-content .pdf-file {
+  color: #4a4a4a; }
 
 @media (min-width: 720px) {
   .core-training-content .online-dates-section, .core-training-content .classroom-dates-section {
