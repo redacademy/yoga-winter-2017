@@ -645,26 +645,16 @@ button {
     position: fixed;
     height: 90vh;
     z-index: 10;
-<<<<<<< HEAD
     top: 5vh;
     left: 0%;
-=======
-    top: 0;
-    left: 12%;
->>>>>>> 9e3731c2f24e0dc14f1387c1a2ea2bd1f1ae0e16
     display: none;
     margin: 0 auto;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     border-radius: 37px; }
     @media (min-width: 720px) {
       .who-we-are-content .staff-popup {
-<<<<<<< HEAD
         width: 40vw;
         left: 30%; } }
-=======
-        width: 47%;
-        left: 24%; } }
->>>>>>> 9e3731c2f24e0dc14f1387c1a2ea2bd1f1ae0e16
   .who-we-are-content .popup-description {
     margin: 0 auto;
     padding-top: 80px; }
@@ -687,16 +677,11 @@ button {
     padding: 10px;
     margin: 0 auto;
     z-index: 20;
-<<<<<<< HEAD
     font-size: 1rem;
-=======
-    font-size: 20px;
->>>>>>> 9e3731c2f24e0dc14f1387c1a2ea2bd1f1ae0e16
     color: #000;
     margin-top: 10px; }
     @media (min-width: 720px) {
       .who-we-are-content .staff-description {
-        font-size: 20px;
         margin-top: 10px; } }
   .who-we-are-content .staff-info {
     display: none;
