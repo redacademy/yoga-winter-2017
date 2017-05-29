@@ -27,33 +27,6 @@
     @include desktop{
     height: 100vh;
     }
-    .herobanner-text{
-      margin: 35% auto;
-      bottom: 7%;
-      left: 10%;
-      color: $base_color;
-      @include desktop{
-        margin: 28% auto;
-      }
-      h2{
-        text-transform: capitalize;
-        font-size: 24px;
-        @include desktop{
-          font-size: 40px;
-        }
-      }
-      p{
-        font-size: 16px;
-        line-height: 1.5;
-        margin-top: 5%;
-        padding: 15px;
-        font-weight: lighter;
-        @include desktop{
-          font-size: 24px;
-          max-width:650px;
-        }
-      }
-    }
     .general-button{
       @include general-button;
       background-color: $accentcolor_bar;
@@ -75,39 +48,29 @@
       }
     }  
   }
+  .what-we-do{
+    padding: 5% 7%;
+    p{
+      @include desktop{
+        font-size: 24px;
+        max-width:$site_container;
+        text-align: center;
+      }
+    }
+  }
   .trauma-approach{
-    padding: 7%;
+    padding: 5% 7%;
     position: relative;
     font-size: 14px;
     @include desktop{
       font-size:24px;
-    }
+      }
       p{
         @include desktop{
           max-width: 672px;
           margin: auto;
         }
-      }
-      .accent-square{
-        position: absolute;
-        width: 200px;
-        height: 30px;
-        background-color:$accentcolor_bar;
-        opacity: 0.4;
-        left: 10%;
-        bottom: 2%;
-        z-index: -1;
-        border-radius: 4px;
-        @include desktop{
-          width: 574px;
-          height: 75px;
-          position: absolute;
-          left: 0;
-          right: 0;
-          margin: auto;
-          bottom: 10%;
-        }
-      }
+    }
   }
   .training-programs{
     padding: 5% 10%;
@@ -175,23 +138,6 @@
         bottom: 27px;
         @include desktop{
           display:none;
-        }
-      }
-      .accent-line{
-        position: absolute;
-        width: 6px;
-        height: 380px;
-        background-color:$accentcolor_line;
-        bottom: 100px;
-        right: 7%;
-        z-index:-1;
-        border-radius: 8px;
-        opacity:0.8;
-        @include desktop{
-          width: 473px;
-          height: 75px;
-          right: 0;
-          opacity:0.6;
         }
       }
     }
