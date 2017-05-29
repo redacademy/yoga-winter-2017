@@ -50,11 +50,14 @@
   }
   .what-we-do{
     padding: 5% 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     p{
       @include desktop{
         font-size: 24px;
         max-width:$site_container;
-        text-align: center;
       }
     }
   }
