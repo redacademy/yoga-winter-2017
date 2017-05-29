@@ -39,7 +39,7 @@ p {
     }
   }
   a {
-    color: $lighttext_color;
+    color: $darktheme_color;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -117,7 +117,7 @@ p {
 				outline:none;
 			}
       i{
-        color: white;
+        color: $darktheme_color;
         font-size: 16px;
         text-shadow: none;
         &:hover{
@@ -225,7 +225,7 @@ p {
           color:$button_color2;
         }
         @include desktop {
-          color: $base_color;
+          color: $darktheme_color;
           font-size: 16px;
         }
       }
@@ -237,7 +237,7 @@ p {
           color:$button_color2;
         }
         @include desktop {
-          color: $base_color;
+          color: $darktheme_color;
           font-size: 16px;
         }
       }
@@ -494,10 +494,11 @@ p {
   }
 }
 .logo-image {
-  width: 90px;
+  width: 120px;
   padding: 0.5rem 0.8rem;
   order: 1;
   @include desktop {
+    width: 200px;
     margin-left: 0;
   }
 }

@@ -973,7 +973,7 @@ p {
           font-size: 14px;
           color: #4a4a4a; } }
   #site-navigation a {
-    color: #6b747d;
+    color: #4a4a4a;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.2rem; }
@@ -1042,7 +1042,7 @@ p {
         #site-navigation .mainmenu-list fieldset button:focus {
           outline: none; }
         #site-navigation .mainmenu-list fieldset button i {
-          color: white;
+          color: #4a4a4a;
           font-size: 16px;
           text-shadow: none; }
           #site-navigation .mainmenu-list fieldset button i:hover {
@@ -1141,7 +1141,7 @@ p {
         color: #b6eaff; }
       @media (min-width: 720px) {
         #site-navigation #primary-menu .menu-item-type-post_type a {
-          color: #fff;
+          color: #4a4a4a;
           font-size: 16px; } }
     #site-navigation #primary-menu .menu-item-has-children a {
       color: #6b747d; }
@@ -1149,7 +1149,7 @@ p {
         color: #b6eaff; }
       @media (min-width: 720px) {
         #site-navigation #primary-menu .menu-item-has-children a {
-          color: #fff;
+          color: #4a4a4a;
           font-size: 16px; } }
   @media (min-width: 720px) {
     #site-navigation .menu-main-menu-container {
@@ -1369,12 +1369,13 @@ p {
         color: #fff; }
 
 .logo-image {
-  width: 90px;
+  width: 120px;
   padding: 0.5rem 0.8rem;
   -ms-flex-order: 1;
       order: 1; }
   @media (min-width: 720px) {
     .logo-image {
+      width: 200px;
       margin-left: 0; } }
 
 .hide-menu-drop {
