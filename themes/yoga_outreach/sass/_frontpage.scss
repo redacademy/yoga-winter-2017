@@ -27,8 +27,6 @@
     @include desktop{
     height: 100vh;
     }
-<<<<<<< HEAD
-=======
   }
   .what-we-do{
     display:flex;
@@ -45,7 +43,6 @@
         font-size: 24px;
       }
     }
->>>>>>> master
     .general-button{
       @include general-button;
       background-color: $accentcolor_bar;
