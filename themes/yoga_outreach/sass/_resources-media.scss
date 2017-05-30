@@ -50,13 +50,16 @@
         }
     }
 
+    .entry-content-p{
+        color:$darktheme_color;
+    }
+
     .video-list-section{
         display: flex;
         justify-content: center;
         text-align: center;
+        padding-top:1rem;
         flex-direction: column;
-        padding-top:29px;
-        padding: 29px 1rem;
             h3{
                 font-weight:300;
                 margin-bottom:10px;
@@ -121,11 +124,26 @@
     }
 
     .page-title-header{
-        z-index:1;
+        padding-top:0;
+        color:$darktheme_color;
         @include desktop{
-            color:#fff;
+            
         }
     }
+
+    .general-template-section{
+        height:60vh;
+            @include desktop{
+                height:100vh;
+                justify-content:flex-start;
+            }
+    }
+
+    .general-button-container{
+        height:100px;
+    }
+
+
 
     .read-more,.read-less{
       font-size:20px;

@@ -14,7 +14,6 @@ get_header(); ?>
                     	<?php the_content(); ?> <!-- Page Content -->
 						<div class="general-button-container">
 							<a href ="resources-research" class="general-button grey-button">Research</a>
-							<a href ="#"class = "general-button teal-button black-text">Media and Videos</a>
 						</div>
                     </div><!--entry-content-page-->
                     <?php
@@ -22,6 +21,20 @@ get_header(); ?>
                 	wp_reset_query(); //resetting the page query
                 	?>
 			</header><!--general-template-section-->
+			<section class="video-list-section">
+				<h2 class="video-list-heading">Why Yoga Outreach</h2>
+				<ul class="media-video-list">
+					<?php 
+					$videos = CFS()->get('video_list');
+					foreach ( $videos as $video ):
+					?>
+					<li>
+						<h3><?php echo esc_html($video ['title']); ?></h3>
+						<span class="video-link"><?php echo $video['video_embed_link'];?></span>
+					</li>
+					<?php endforeach ?>
+				</ul>
+			</section>
 			<div class="main-h3-container section-15px-padding">
                 <h3>Media & Video</h3>
                 <p>For Inquiries, email communications@yogaoutreach.com</p>
@@ -73,20 +86,6 @@ get_header(); ?>
 					</div><!--info-field-->
 				</div>	
 			</section><!--media-article-section-->
-			<section class="video-list-section">
-				<h2 class="video-list-heading">Why Yoga Outreach</h2>
-				<ul class="media-video-list">
-					<?php 
-					$videos = CFS()->get('video_list');
-					foreach ( $videos as $video ):
-					?>
-					<li>
-						<h3><?php echo esc_html($video ['title']); ?></h3>
-						<span class="video-link"><?php echo $video['video_embed_link'];?></span>
-					</li>
-					<?php endforeach ?>
-				</ul>
-			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>

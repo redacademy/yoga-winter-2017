@@ -26,16 +26,12 @@ get_header(); ?>
             </header>
             
             <section class="team">
-                <div class="teamheader">
-                    <h2>The YO Team</h2>
-                    <p>Click on name for bio and contact info.</p>
-                </div> <!--teamheader-->
-
                 <?php $fields= CFS()->get( 'staff_groups' ); ?>  <!--variable to hold staff from loop-->    
                 <?php if(!empty($fields)): ?>
                     <?php foreach( $fields as $field ): ?>
-                        <div class="info-dropdown">
+                        <div class="info-dropdown header-click-text">
                             <h3 class ="staff-header"><?php echo $field[ 'title' ]; ?></h3><span>+</span>
+                            <p class="click-text">Click on name</p>
                         </div><!--info-dropdown-->
                             
                         <div class="info-field staff-item-container">
@@ -44,11 +40,12 @@ get_header(); ?>
                                     <?php echo esc_html(CFS()->get( 'staff_photo','staff_name' )); ?>
                                     <div class="member-contain">
                                         <img src="<?php echo $member['staff_photo']; ?>" alt="staff photo" class="staffphoto">
-                                        <a href=""><?php echo $member['staff_name'] ?></a>
-                                        <p class="staff-info"><?php echo $member['staff_position']; ?></p>
-                                        <p class="staff-info"><?php echo $member['staff_email']; ?></p>
-                                        <div class="accent-name-shape"></div>
-                                        <p class="staff-description"><?php echo $member['staff_description']; ?></p>
+                                        <div class="accent-bar-container">
+                                            <a href=""><?php echo $member['staff_name'] ?></a>
+                                            <p class="staff-info"><?php echo $member['staff_position']; ?></p>
+                                            <p class="staff-info"><?php echo $member['staff_email']; ?></p>
+                                            <p class="staff-description"><?php echo $member['staff_description']; ?></p>
+                                        </div>
                                     </div> <!-- member-contain -->
                                 <?php endforeach; ?>
                             <?php endif; ?>

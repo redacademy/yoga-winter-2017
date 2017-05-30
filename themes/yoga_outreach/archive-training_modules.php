@@ -12,7 +12,7 @@ get_header(); ?>
 			<header class="entry-header custom-hero-image">
                     <div class="modules-title">
 						<?php the_archive_title( '<h1 class="header-title">', '</h1>' ); ?>
-						<p>Select your modules below</P>
+						<p>Seelect your modules below</P>
 					</div>
                     <div class="groups-button"><a href="" class="main-button dark-button">Groups</a></div>
             </header><!-- .entry-header -->
