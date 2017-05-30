@@ -7,20 +7,17 @@
 
 get_header(); ?>
 <section class="hero-banner custom-hero-image">
-<<<<<<< HEAD
 </section> 
 <section class="what-we-do">
     <h2>what we do</h2>
     <p>Our mission is to expand access to trauma-informed yoga programs to heal and connect communities</p>
 </section>
-=======
 </section>
 <section class="what-we-do">
   <h2>what we do</h2>
     <p>Our mission is to expand access to trauma-informed yoga programs to heal and connect communities</p>
     <a href="<?php echo get_page_link(18); ?>" class="general-button">about us</a>
 </section>  
->>>>>>> master
 <section class="trauma-approach">
   <h2>What is the trauma informed Approach?</h2>
   <p>Creating a safe and healing environment with a no-touch, no-assist approach that inspires and empowers participants to reconnect with their body.</p>
