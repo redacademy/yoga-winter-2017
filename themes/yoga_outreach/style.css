@@ -606,20 +606,6 @@ button {
       color: #4a4a4a;
       font-size: 1.2rem;
       text-decoration: none; }
-  .who-we-are-content .accent-name-shape {
-    height: 25px;
-    width: 250px;
-    border-radius: 8px;
-    background-color: #CBE8EA;
-    position: absolute;
-    right: 87px;
-    bottom: -10px;
-    left: -30px;
-    z-index: -1;
-    opacity: 0.3; }
-    @media (min-width: 720px) {
-      .who-we-are-content .accent-name-shape {
-        left: -10px; } }
   @media (min-width: 720px) {
     .who-we-are-content #site-navigation.main-navigation {
       position: relative !important; } }
@@ -628,7 +614,7 @@ button {
       max-width: 40rem;
       margin: 0 auto; } }
   .who-we-are-content .info-dropdown:first-of-type {
-    margin-bottom: 100px; }
+    margin-bottom: 60px; }
   @media (min-width: 720px) {
     .who-we-are-content .staff-item-container {
       display: -ms-flexbox !important;
@@ -684,7 +670,6 @@ button {
       .who-we-are-content .staff-description {
         margin-top: 10px; } }
   .who-we-are-content .staff-info {
-    display: none;
     margin: 0 auto;
     z-index: 20;
     font-size: 0.75rem;
@@ -699,6 +684,19 @@ button {
     height: 5%; }
   .who-we-are-content .fade-background {
     opacity: 0.1; }
+  .who-we-are-content .click-text {
+    display: none; }
+    @media (min-width: 720px) {
+      .who-we-are-content .click-text {
+        display: block; } }
+  @media (min-width: 720px) {
+    .who-we-are-content .header-click-text {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
+  .who-we-are-content .accent-bar-container {
+    background-color: rgba(203, 232, 234, 0.4);
+    border-radius: 8px;
+    padding: 0.5rem 1rem; }
 
 * {
   font-family: 'raleway',sans-serif; }
@@ -1737,6 +1735,14 @@ footer {
 @media (min-width: 720px) {
   .contact-us-content .info-dropdown {
     margin-top: 25px; } }
+
+.contact-us-content .email-header {
+  padding-left: 15px; }
+  @media (min-width: 720px) {
+    .contact-us-content .email-header {
+      width: 830px;
+      padding-left: 0;
+      margin: 0 auto; } }
 
 .error404 .site-main, .search-no-results .site-main {
   padding: 1rem; }
@@ -3775,7 +3781,7 @@ a:hover, a:active {
 .core-training-content .table-heading {
   display: inline-block;
   width: 70px;
-  font-size: 11px;
+  font-size: 1rem;
   margin-left: 6px; }
 
 .core-training-content .training-table-data {
@@ -3807,24 +3813,20 @@ a:hover, a:active {
 .core-training-content tr td {
   margin-top: 9px; }
 
-.core-training-content .dates-table {
-  border-bottom: 1px solid black; }
-  .core-training-content .dates-table tr {
-    height: 60px;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    margin: 0;
-    padding-top: 9px; }
-  @media (min-width: 720px) {
-    .core-training-content .dates-table {
-      width: 45vw; } }
+.core-training-content .dates-table tr {
+  height: 60px;
+  margin: 0;
+  padding-top: 9px; }
+
+@media (min-width: 720px) {
+  .core-training-content .dates-table {
+    width: 45vw; } }
 
 .core-training-content .training-list {
   background-color: #C7D5E2; }
 
 .core-training-content .dates-table .classroom-tr {
-  height: 100px;
+  height: 140px;
   padding-bottom: 1rem;
   display: -ms-flexbox;
   display: flex;
@@ -4120,16 +4122,18 @@ a:hover, a:active {
     .resources-media-content .media-video-list li h3 {
       font-size: 24px; } }
 
+.resources-media-content .entry-content-p {
+  color: #4a4a4a; }
+
 .resources-media-content .video-list-section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   text-align: center;
+  padding-top: 1rem;
   -ms-flex-direction: column;
-      flex-direction: column;
-  padding-top: 29px;
-  padding: 29px 1rem; }
+      flex-direction: column; }
   .resources-media-content .video-list-section h3 {
     font-weight: 300;
     margin-bottom: 10px;
@@ -4179,10 +4183,19 @@ a:hover, a:active {
     background-color: #CFDCEB; } }
 
 .resources-media-content .page-title-header, .resources-media-content .entry-content-page {
-  z-index: 1; }
+  padding-top: 0;
+  color: #4a4a4a; }
+
+.resources-media-content .general-template-section {
+  height: 60vh; }
   @media (min-width: 720px) {
-    .resources-media-content .page-title-header, .resources-media-content .entry-content-page {
-      color: #fff; } }
+    .resources-media-content .general-template-section {
+      height: 100vh;
+      -ms-flex-pack: start;
+          justify-content: flex-start; } }
+
+.resources-media-content .general-button-container {
+  height: 100px; }
 
 .resources-media-content .read-more, .resources-media-content .read-less {
   font-size: 20px;
@@ -5966,7 +5979,7 @@ object {
 .core-training-content .table-heading {
   display: inline-block;
   width: 70px;
-  font-size: 11px;
+  font-size: 1rem;
   margin-left: 6px; }
 
 .core-training-content .training-table-data {
@@ -5998,24 +6011,20 @@ object {
 .core-training-content tr td {
   margin-top: 9px; }
 
-.core-training-content .dates-table {
-  border-bottom: 1px solid black; }
-  .core-training-content .dates-table tr {
-    height: 60px;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    margin: 0;
-    padding-top: 9px; }
-  @media (min-width: 720px) {
-    .core-training-content .dates-table {
-      width: 45vw; } }
+.core-training-content .dates-table tr {
+  height: 60px;
+  margin: 0;
+  padding-top: 9px; }
+
+@media (min-width: 720px) {
+  .core-training-content .dates-table {
+    width: 45vw; } }
 
 .core-training-content .training-list {
   background-color: #C7D5E2; }
 
 .core-training-content .dates-table .classroom-tr {
-  height: 100px;
+  height: 140px;
   padding-bottom: 1rem;
   display: -ms-flexbox;
   display: flex;
