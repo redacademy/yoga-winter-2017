@@ -78,7 +78,7 @@ p {
       display: none;
       @include desktop {
         display:block;
-        color: $base_color;
+        color: $darktext_color;
       }
   }
 	.search-field{
