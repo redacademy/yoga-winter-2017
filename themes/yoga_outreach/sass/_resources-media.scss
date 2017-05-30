@@ -205,4 +205,13 @@
       color:black;
   }
 
+  .resource-media-content{
+      @include desktop{
+          padding-top: 0rem;
+        color: #4a4a4a;
+        background-color: #D8D8D8;
+        margin-top: 4rem;
+      }
+  }
+
 }//Resources Media Wrapper
