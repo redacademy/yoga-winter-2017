@@ -995,7 +995,7 @@ p {
         position: relative;
         max-width: 1024px;
         width: 67%;
-        min-width: 915px;
+        min-width: 1000px;
         left: 9%; } }
     @media (min-width: 720px) {
       #site-navigation .mainmenu-list .menu-item-73 {
@@ -4248,6 +4248,13 @@ a:hover, a:active {
   background-color: #6cfffe;
   color: black; }
 
+@media (min-width: 720px) {
+  .resources-media-content .page-title-header, .resources-media-content .entry-content-page {
+    padding-top: 0rem;
+    color: #4a4a4a;
+    background-color: #D8D8D8;
+    margin-top: 4rem; } }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -5053,9 +5060,6 @@ object {
     @media (min-width: 720px) {
       .home .hero-banner {
         height: 100vh; } }
-<<<<<<< HEAD
-    .home .hero-banner .general-button {
-=======
   .home .what-we-do {
     display: -ms-flexbox;
     display: flex;
@@ -5072,7 +5076,6 @@ object {
       .home .what-we-do p {
         font-size: 24px; } }
     .home .what-we-do .general-button {
->>>>>>> master
       width: 230px;
       height: 44px;
       margin: 0 auto;
