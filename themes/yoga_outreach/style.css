@@ -973,7 +973,7 @@ p {
           font-size: 14px;
           color: #4a4a4a; } }
   #site-navigation a {
-    color: #6b747d;
+    color: #4a4a4a;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.2rem; }
@@ -1009,7 +1009,7 @@ p {
       @media (min-width: 720px) {
         #site-navigation .mainmenu-list .desktop-search {
           display: block;
-          color: #fff; } }
+          color: #4a4a4a; } }
     #site-navigation .mainmenu-list .search-field {
       transition: all 0.5s; }
     #site-navigation .mainmenu-list fieldset {
@@ -1042,7 +1042,7 @@ p {
         #site-navigation .mainmenu-list fieldset button:focus {
           outline: none; }
         #site-navigation .mainmenu-list fieldset button i {
-          color: white;
+          color: #4a4a4a;
           font-size: 16px;
           text-shadow: none; }
           #site-navigation .mainmenu-list fieldset button i:hover {
@@ -1141,7 +1141,7 @@ p {
         color: #b6eaff; }
       @media (min-width: 720px) {
         #site-navigation #primary-menu .menu-item-type-post_type a {
-          color: #fff;
+          color: #4a4a4a;
           font-size: 16px; } }
     #site-navigation #primary-menu .menu-item-has-children a {
       color: #6b747d; }
@@ -1149,7 +1149,7 @@ p {
         color: #b6eaff; }
       @media (min-width: 720px) {
         #site-navigation #primary-menu .menu-item-has-children a {
-          color: #fff;
+          color: #4a4a4a;
           font-size: 16px; } }
   @media (min-width: 720px) {
     #site-navigation .menu-main-menu-container {
@@ -1369,12 +1369,13 @@ p {
         color: #fff; }
 
 .logo-image {
-  width: 90px;
+  width: 120px;
   padding: 0.5rem 0.8rem;
   -ms-flex-order: 1;
       order: 1; }
   @media (min-width: 720px) {
     .logo-image {
+      width: 200px;
       margin-left: 0; } }
 
 .hide-menu-drop {
@@ -5039,6 +5040,9 @@ object {
     @media (min-width: 720px) {
       .home .hero-banner {
         height: 100vh; } }
+<<<<<<< HEAD
+    .home .hero-banner .general-button {
+=======
   .home .what-we-do {
     display: -ms-flexbox;
     display: flex;
@@ -5055,6 +5059,7 @@ object {
       .home .what-we-do p {
         font-size: 24px; } }
     .home .what-we-do .general-button {
+>>>>>>> master
       width: 230px;
       height: 44px;
       margin: 0 auto;
@@ -5088,8 +5093,15 @@ object {
         @media (min-width: 720px) {
           .home .what-we-do .general-button a {
             color: #4a4a4a; } }
+  .home .what-we-do {
+    padding: 5% 7%; }
+    @media (min-width: 720px) {
+      .home .what-we-do p {
+        font-size: 24px;
+        max-width: 1024px;
+        text-align: center; } }
   .home .trauma-approach {
-    padding: 7%;
+    padding: 5% 7%;
     position: relative;
     font-size: 14px;
     color: #4a4a4a; }
@@ -5101,25 +5113,6 @@ object {
         color: #6b747d;
         max-width: 672px;
         margin: auto; } }
-    .home .trauma-approach .accent-square {
-      position: absolute;
-      width: 200px;
-      height: 30px;
-      background-color: #94bfd1;
-      opacity: 0.4;
-      left: 10%;
-      bottom: 2%;
-      z-index: -1;
-      border-radius: 4px; }
-      @media (min-width: 720px) {
-        .home .trauma-approach .accent-square {
-          width: 574px;
-          height: 75px;
-          position: absolute;
-          left: 0;
-          right: 0;
-          margin: auto;
-          bottom: 10%; } }
   .home .training-programs {
     padding: 5% 10% 2% 10%;
     font-size: 14px;
