@@ -5039,31 +5039,22 @@ object {
     @media (min-width: 720px) {
       .home .hero-banner {
         height: 100vh; } }
-    .home .hero-banner .herobanner-text {
-      margin: 35% auto;
-      bottom: 7%;
-      left: 10%;
-      color: #fff; }
-      @media (min-width: 720px) {
-        .home .hero-banner .herobanner-text {
-          margin: 28% auto; } }
-      .home .hero-banner .herobanner-text h2 {
-        text-transform: capitalize;
-        font-size: 24px; }
-        @media (min-width: 720px) {
-          .home .hero-banner .herobanner-text h2 {
-            font-size: 40px; } }
-      .home .hero-banner .herobanner-text p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-top: 5%;
-        padding: 15px;
-        font-weight: lighter; }
-        @media (min-width: 720px) {
-          .home .hero-banner .herobanner-text p {
-            font-size: 24px;
-            max-width: 650px; } }
-    .home .hero-banner .general-button {
+  .home .what-we-do {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0 auto;
+    padding: 7%;
+    max-width: 1024px; }
+    .home .what-we-do h2 {
+      color: #4a4a4a; }
+    @media (min-width: 720px) {
+      .home .what-we-do p {
+        font-size: 24px; } }
+    .home .what-we-do .general-button {
       width: 230px;
       height: 44px;
       margin: 0 auto;
@@ -5087,30 +5078,27 @@ object {
           align-items: center;
       text-decoration: none;
       background-color: #94bfd1;
-      margin-top: 75px; }
-      @media (min-width: 720px) {
-        .home .hero-banner .general-button {
-          width: 150px;
-          height: 45px;
-          background-color: #b6eaff; } }
-      .home .hero-banner .general-button a {
+      margin-top: 35px; }
+      .home .what-we-do .general-button a {
         color: #fff;
         text-shadow: none;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 14px; }
         @media (min-width: 720px) {
-          .home .hero-banner .general-button a {
+          .home .what-we-do .general-button a {
             color: #4a4a4a; } }
   .home .trauma-approach {
     padding: 7%;
     position: relative;
-    font-size: 14px; }
+    font-size: 14px;
+    color: #4a4a4a; }
     @media (min-width: 720px) {
       .home .trauma-approach {
         font-size: 24px; } }
     @media (min-width: 720px) {
       .home .trauma-approach p {
+        color: #6b747d;
         max-width: 672px;
         margin: auto; } }
     .home .trauma-approach .accent-square {
@@ -5133,18 +5121,23 @@ object {
           margin: auto;
           bottom: 10%; } }
   .home .training-programs {
-    padding: 5% 10%;
-    font-size: 14px; }
-    @media (min-width: 720px) {
-      .home .training-programs p {
-        font-size: 18px;
-        max-width: 340px;
-        margin: 0 auto 20px auto; } }
+    padding: 5% 10% 2% 10%;
+    font-size: 14px;
+    color: #4a4a4a; }
+    .home .training-programs p {
+      color: #6b747d; }
+      @media (min-width: 720px) {
+        .home .training-programs p {
+          font-size: 18px;
+          max-width: 340px;
+          margin: 0 auto 20px auto; } }
   @media (min-width: 720px) {
     .home .program-list {
       display: -ms-inline-flexbox;
       display: inline-flex;
       max-width: 1024px; } }
+  .home .program-list h1 {
+    color: #4a4a4a; }
   .home .program-list .programlist-text {
     padding: 0 8%; }
     .home .program-list .programlist-text h4 {
@@ -5190,26 +5183,11 @@ object {
       @media (min-width: 720px) {
         .home .program-list .yoga-foryouth .background-accent {
           display: none; } }
-    .home .program-list .yoga-foryouth .accent-line {
-      position: absolute;
-      width: 6px;
-      height: 380px;
-      background-color: #95afc9;
-      bottom: 100px;
-      right: 7%;
-      z-index: -1;
-      border-radius: 8px;
-      opacity: 0.8; }
-      @media (min-width: 720px) {
-        .home .program-list .yoga-foryouth .accent-line {
-          width: 473px;
-          height: 75px;
-          right: 0;
-          opacity: 0.6; } }
   .home .get-involved {
     position: relative; }
     .home .get-involved h2 {
-      padding: 1rem; }
+      padding: 1rem;
+      color: #4a4a4a; }
     @media (min-width: 720px) {
       .home .get-involved .involved-wrap {
         display: -ms-flexbox;
@@ -5311,6 +5289,8 @@ object {
       @media (min-width: 720px) {
         .home .testimonal-container .main-carousel .flickity-prev-next-button.previous {
           left: 10%; } }
+  .home .team-container h2 {
+    color: #4a4a4a; }
   .home .team-container .team-list.main-carousel {
     background-color: #fff; }
   .home .team-container .main-carousel {
@@ -5359,9 +5339,9 @@ object {
   .home .thankyou {
     height: 230px;
     background-color: #95afc9;
-    opacity: 0.8;
-    color: #4a4a4a; }
+    opacity: 0.8; }
     .home .thankyou h1 {
+      color: #4a4a4a;
       padding: 30px 0 0 0; }
       @media (min-width: 720px) {
         .home .thankyou h1 {
