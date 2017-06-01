@@ -10,21 +10,19 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image hero-text">
                 <h1 class="header-title"><?php the_title(); ?></h1>
-                <p>We can be reached at:</p>
                 <p class="hero-phone"><?php echo CFS()->get( 'phone_number' ); ?></p>
             </header>
 
             <div class="contact-container">
                 <div class="emailinquiry-section">
                     <section class="email-inquiries">
-                        <h2>Email Inquiries</h2>
                         <p>For staff directory, visit:</p>
                         <a href="<?php echo get_page_link(69); ?>"class="button primary-button">who we are</a>
                         </div>
+                        <h2 class="email-header">Email Us</h2>
                         <div class="contactinfo-container">
                         <div class="emailinfo-section">
                             <?php $fields= CFS()->get( 'emails' ); ?>  <!--variable to hold email from loop-->    
-
                             <?php if(!empty($fields)): ?>
                                 <?php foreach( $fields as $field ): ?>
                                     <div class="email-info">

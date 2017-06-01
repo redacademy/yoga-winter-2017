@@ -391,7 +391,7 @@
     .table-heading{
         display:inline-block;
         width:70px;
-        font-size:11px;
+        font-size:1rem;
         margin-left:6px;
     }
 
@@ -434,12 +434,8 @@
     }
 
     .dates-table{
-        border-bottom:1px solid black;
             tr{
                 height:60px;
-                border-top:1px solid black;
-                border-right:1px solid black;
-                border-left:1px solid black;
                 margin:0;
                 padding-top:9px;
             }
@@ -455,7 +451,7 @@
 
     .dates-table{
         .classroom-tr{
-            height: 100px;
+            height: 140px;
             padding-bottom: 1rem;
             display: flex;
             flex-direction: column;
