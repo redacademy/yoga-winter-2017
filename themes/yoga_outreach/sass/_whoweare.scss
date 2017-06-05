@@ -138,21 +138,7 @@
             text-decoration: none;
         }
     }
-    .accent-name-shape {
-        height: 25px;
-        width: 250px;
-        border-radius: 8px;
-        background-color: #CBE8EA;
-        position: absolute;
-        right: 87px;
-        bottom: -10px;
-        left: -30px;
-        z-index: -1;
-        opacity: 0.3;
-            @include desktop{
-                left:-10px;
-            }
-    }
+    
     #site-navigation.main-navigation{
         @include desktop{
             position:relative !important;
@@ -168,7 +154,7 @@
         }
     }
     .info-dropdown:first-of-type{
-        margin-bottom:100px;
+        margin-bottom:60px;
     }
     .staff-item-container{
         @include desktop {
@@ -181,19 +167,19 @@
     }
     .staff-popup{
         background-color:#fff;
-        width:100vw;
+        width:75%;
         position: fixed;
-        height:100vh;
+        height:90vh;
         z-index:10;
-        top: 0; 
-        left: 0;
+        top: 5vh; 
+        left: 0%;
         display:none;
         margin: 0 auto;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
         border-radius: 37px;
         @include desktop{
-            width:75%;
-            left: 12%;
+            width:40vw;
+            left: 30%;
         }
     }
     .popup-description{
@@ -222,19 +208,17 @@
         padding: 10px;
         margin:0 auto;
         z-index:20;
-        font-size:0.5rem;
+        font-size:1rem;
         color:#000;
         margin-top:10px;
         @include desktop{
-            font-size:1rem;
             margin-top:10px;
         }
     }
     .staff-info{
-        display:none;
         margin:0 auto;
         z-index:20;
-        font-size:0.5rem;
+        font-size:0.75rem;
         color:#000;
         @include desktop{
             font-size:1rem;
@@ -244,10 +228,29 @@
         position:absolute;
         right: 2%;
         top: 2%;
-        height: 10%;
+        height: 5%;
     }
     .fade-background{
         opacity: 0.1;
+    }
+
+    .click-text{
+        display:none;
+            @include desktop{
+                display:block;
+            }
+    }
+
+    .header-click-text{
+        @include desktop{
+            flex-direction:column;
+        }
+    }
+
+    .accent-bar-container{
+        background-color: rgba(203, 232, 234,0.4);
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
     }
 }
 

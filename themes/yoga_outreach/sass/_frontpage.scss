@@ -27,42 +27,26 @@
     @include desktop{
     height: 100vh;
     }
-    .herobanner-text{
-      margin: 35% auto;
-      bottom: 7%;
-      left: 10%;
-      color: $base_color;
+  }
+  .what-we-do{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding:7%;
+    max-width: $site_container;
+    h2{
+      color: $darktext_color;
+    }
+    p{
       @include desktop{
-        margin: 28% auto;
-      }
-      h2{
-        text-transform: capitalize;
         font-size: 24px;
-        @include desktop{
-          font-size: 40px;
-        }
-      }
-      p{
-        font-size: 16px;
-        line-height: 1.5;
-        margin-top: 5%;
-        padding: 15px;
-        font-weight: lighter;
-        @include desktop{
-          font-size: 24px;
-          max-width:650px;
-        }
       }
     }
     .general-button{
       @include general-button;
       background-color: $accentcolor_bar;
-      margin-top: 75px;
-      @include desktop{
-        width: 150px;
-        height: 45px;
-        background-color: $button_color2;
-      }
+      margin-top: 35px;
       a {
         color: $base_color;
         text-shadow: none;
@@ -75,44 +59,41 @@
       }
     }  
   }
+  .what-we-do{
+    padding: 5% 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+      @include desktop{
+        font-size: 24px;
+        max-width:$site_container;
+      }
+    }
+  }
   .trauma-approach{
-    padding: 7%;
+    padding: 5% 7%;
     position: relative;
     font-size: 14px;
+    color:$darktext_color;
     @include desktop{
       font-size:24px;
-    }
+      }
       p{
         @include desktop{
+          color:$lighttext_color;
           max-width: 672px;
           margin: auto;
         }
-      }
-      .accent-square{
-        position: absolute;
-        width: 200px;
-        height: 30px;
-        background-color:$accentcolor_bar;
-        opacity: 0.4;
-        left: 10%;
-        bottom: 2%;
-        z-index: -1;
-        border-radius: 4px;
-        @include desktop{
-          width: 574px;
-          height: 75px;
-          position: absolute;
-          left: 0;
-          right: 0;
-          margin: auto;
-          bottom: 10%;
-        }
-      }
+    }
   }
   .training-programs{
-    padding: 5% 10%;
+    padding: 5% 10% 2% 10%;
     font-size: 14px;
+    color:$darktext_color;
     p{
+      color:$lighttext_color;
       @include desktop{
         font-size:18px;
         max-width: 340px;
@@ -124,6 +105,9 @@
     @include desktop{
       display: inline-flex;
       max-width: $site_container;
+    }
+    h1{
+      color: $darktext_color;
     }
     .programlist-text{
       padding: 0 8%;
@@ -177,29 +161,13 @@
           display:none;
         }
       }
-      .accent-line{
-        position: absolute;
-        width: 6px;
-        height: 380px;
-        background-color:$accentcolor_line;
-        bottom: 100px;
-        right: 7%;
-        z-index:-1;
-        border-radius: 8px;
-        opacity:0.8;
-        @include desktop{
-          width: 473px;
-          height: 75px;
-          right: 0;
-          opacity:0.6;
-        }
-      }
     }
   }
   .get-involved{
     position: relative;
     h2{
       padding: 1rem;
+      color: $darktext_color;
     }
     .involved-wrap{
       @include desktop{
@@ -315,6 +283,9 @@
     }
   }
   .team-container{
+    h2{
+      color: $darktext_color;
+    }
     .team-list.main-carousel{
       background-color:$base_color;
 
@@ -375,8 +346,8 @@
     height: 230px;
     background-color: $logo_color;
     opacity: 0.8;
-    color: $darktheme_color;
     h1{
+      color: $darktext_color;
       padding: 30px 0 0 0;
       @include desktop{
         padding: 25px 0 0 0;

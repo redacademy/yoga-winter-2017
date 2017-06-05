@@ -51,20 +51,6 @@
             </div> <!-- .wrapper -->
           </div><!-- .menu-dropdown -->
           <div class="show-dropdown show show-menu-mobile">
-            <div class="wrapper">
-              <form class="form-signin">       
-                <h3>username</h3>
-                <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
-                <h3>password</h3>
-                <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
-                <label class="checkbox">
-                  <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-                </label>
-                <button class="btn btn-lg btn-primary btn-block dropdown-btn" type="submit">
-                  <a href="">sign in</a>
-                </button>   
-              </form>
-            </div><!-- .wrapper -->
             <ul class="dropdown-menu-list">
               <?php get_search_form();?>
             </ul>
@@ -73,25 +59,6 @@
                     'menu_id' => 'primary-menu') ); 
             ?>
           </div><!-- .show-dropdown .show -->
-          <div class="signin-section">
-            <div class="wrapper">
-            <form class="form-signin">       
-              <h3>username</h3>
-              <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
-              <h3>password</h3>
-              <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
-              <label class="checkbox">
-                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-              </label>
-              <button class="btn btn-lg btn-primary btn-block" type="submit">
-                <a href="">sign in</a>
-              </button>   
-            </form>
-          </div><!-- .wrapper -->
-          <button class="signin-button">
-            <a href="">sign in</a>
-          </button>
-          </div><!-- .signin-section -->
           <div class="mainmenu-list">
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') );?>
             <?php get_search_form();?>

@@ -13,7 +13,6 @@ get_header(); ?>
 					<h1 class ="page-title-header"><?php the_title(); ?></h1>
                 	<?php the_content(); ?> <!-- Page Content -->
 					<div class="general-button-container">
-						<a href="#" class="general-button teal-button black-text">Core Training</a>
 						<a href="training-for-facilities" class="general-button grey-button">For Facilities</a>
 					</div><!--general-button-container-->
                 </div><!--entry-content-page-->
@@ -77,8 +76,6 @@ get_header(); ?>
 						<?php endif ?>
 						</tr>
 					</table>
-					<p>Now you can take the training online in an eight week format.</p>
-					<p class ="dropdown-paragraph"><?php echo esc_html(CFS()->get('training_dates_paragraph'))?></p>
 				</section>
 				<section class="classroom-dates-section section-15px-padding">
 					<div class="core-training-text-image-container">
@@ -121,7 +118,7 @@ get_header(); ?>
             <div id="training-pdf-container">
               <?php if(!empty($infoPDF)): ?>
               <h3><?php echo esc_html($infoItem ['list_title']);?></h3>
-                        <a href ="<?php echo esc_html($infoItem ['list_file_upload']);?>">PDF</a>
+                        <a class="pdf-file" href ="<?php echo esc_html($infoItem ['list_file_upload']);?>">PDF</a>
             </div><!--training-pdf-container-->
             <?php 
             endif; 
