@@ -4559,7 +4559,7 @@ object {
   text-align: center;
   font-family: raleway, arial;
   font-weight: lighter;
-  color: #6b747d;
+  color: #4a4a4a;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -4698,18 +4698,29 @@ object {
     padding: 15px; }
   .volunteer-content .site-main section .info-paragraph, .partner-facility-content .site-main section .info-paragraph, .support-us-content .site-main section .info-paragraph {
     text-align: left; }
+  .volunteer-content .site-main .container-blue, .partner-facility-content .site-main .container-blue, .support-us-content .site-main .container-blue {
+    background-color: rgba(159, 171, 183, 0.6); }
   .volunteer-content .site-main .container-one, .partner-facility-content .site-main .container-one, .support-us-content .site-main .container-one {
-    padding: 5% 0;
+    padding: 2% 0;
     position: relative; }
     .volunteer-content .site-main .container-one h2, .volunteer-content .site-main .container-one p, .volunteer-content .site-main .container-one .info-dropdown, .partner-facility-content .site-main .container-one h2, .partner-facility-content .site-main .container-one p, .partner-facility-content .site-main .container-one .info-dropdown, .support-us-content .site-main .container-one h2, .support-us-content .site-main .container-one p, .support-us-content .site-main .container-one .info-dropdown {
       margin: 0 auto;
       width: 100%;
-      max-width: 1020px; }
+      max-width: 1020px;
+      color: #4a4a4a; }
+    .volunteer-content .site-main .container-one h3, .partner-facility-content .site-main .container-one h3, .support-us-content .site-main .container-one h3 {
+      color: white;
+      margin-bottom: 10px; }
     .volunteer-content .site-main .container-one .contributor, .partner-facility-content .site-main .container-one .contributor, .support-us-content .site-main .container-one .contributor {
       background-color: lightgrey;
-      height: 200px;
-      width: 50%;
-      margin: 0 auto; }
+      height: 300px;
+      width: 300px;
+      margin: 0 auto;
+      padding: 0; }
+      .volunteer-content .site-main .container-one .contributor img, .partner-facility-content .site-main .container-one .contributor img, .support-us-content .site-main .container-one .contributor img {
+        height: 100%;
+        width: 100%;
+        margin: 0; }
     .volunteer-content .site-main .container-one .custom-info-container, .partner-facility-content .site-main .container-one .custom-info-container, .support-us-content .site-main .container-one .custom-info-container {
       background-color: #fff; }
     .volunteer-content .site-main .container-one .list-container, .partner-facility-content .site-main .container-one .list-container, .support-us-content .site-main .container-one .list-container {
@@ -4730,17 +4741,17 @@ object {
       .volunteer-content .site-main .container-one .accent-background .background-accent, .partner-facility-content .site-main .container-one .accent-background .background-accent, .support-us-content .site-main .container-one .accent-background .background-accent {
         position: absolute;
         width: 100%;
-        height: 400px;
+        height: 100%;
         background-color: #f4f1ea;
         z-index: -1;
         top: -10px; }
     .volunteer-content .site-main .container-one .decorative-line, .partner-facility-content .site-main .container-one .decorative-line, .support-us-content .site-main .container-one .decorative-line {
       position: absolute;
-      top: 230px;
+      top: 180px;
       width: 13px;
       height: 250px;
       border-radius: 30px;
-      background-color: #cce8ea; }
+      background-color: #95afc9; }
     .volunteer-content .site-main .container-one .decorative-line2, .partner-facility-content .site-main .container-one .decorative-line2, .support-us-content .site-main .container-one .decorative-line2 {
       position: absolute;
       width: 150px;
