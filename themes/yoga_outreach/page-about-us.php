@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * @package Yoga_Outreach_Theme
  */
@@ -7,31 +7,30 @@ get_header(); ?>
 	<div id="primary" class="content-area about-us-content">
         <main id="main" class="site-main" role="main">
 			<header class="general-template-section custom-hero-image">
-                <?php
-                    // TO SHOW THE PAGE CONTENTS
-                    while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
-                        <div class="entry-content-page">
-                            <h1 class="page-title-header"><?php the_title(); ?></h1>
-                            <?php the_content(); ?> <!-- Page Content -->
-                            <div class="general-button-container">
-                                <a class="general-button grey-button" href="<?php echo get_page_link(69); ?>">who we are</a>
-                                <a class="general-button grey-button" href="<?php echo get_page_link(67); ?>">contact us</a>
-                            </div><!--general-button-containe-->
-                        </div><!--entry-content-page-->
-                    <?php
-                        endwhile; //resetting the page loop
-                        wp_reset_query(); //resetting the page query
-                    ?>
+
 			</header><!--general-template-section-->
 
-            <?php $subs = CFS()->get( 'subtexts' ); ?>  <!--variable to hold sub texts from loop--> 
+            <?php $subs = CFS()->get( 'subtexts' ); ?>  <!--variable to hold sub texts from loop-->
             <?php $items = CFS()->get( 'list_of_items' ); ?>  <!--variable to hold list items from loop-->
-            <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop--> 
-            <?php $articles= CFS()->get( 'training_articles' ); ?>  <!--variable to hold training articles from loop--> 
+            <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop-->
+            <?php $articles= CFS()->get( 'training_articles' ); ?>  <!--variable to hold training articles from loop-->
 
             <section class="container">
                 <?php if(!empty($subs)): ?>
                     <?php foreach( $subs as $sub ): ?>
+
+                        <div class="page-main-header"><!--// TO SHOW THE PAGE CONTENTS-->
+                            <?php while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
+                                    <h1><?php the_title(); ?></h1>
+                                    <?php the_content(); ?> <!-- Page Content -->
+                                    <div class="button-container">
+                                        <a class="general-button grey-button" href="<?php echo get_page_link(69); ?>">who we are</a>
+                                        <a class="general-button grey-button" href="<?php echo get_page_link(67); ?>">contact us</a>
+                                    </div><!--general-button-containe-->
+                            <?php endwhile; //resetting the page loop
+                                wp_reset_query(); //resetting the page query
+                            ?>
+                        </div>
 
                         <div class="subtext">
                             <h2><?php echo esc_html (CFS()->get( 'what_we_do' )); ?></h2>
@@ -41,7 +40,7 @@ get_header(); ?>
 
                         <section>
                             <h3 class="info-dropdown"><?php echo esc_html(CFS()->get( 'dropdown_title' )); ?><span>+</span></h3>
-                            
+
                             <div class="info-field info-container">
                                 <img class="photo-frame" src="<?php echo esc_html(CFS()->get( 'image2' )); ?>" alt="what we do image">
                                 <div class="list">
@@ -73,7 +72,7 @@ get_header(); ?>
                     <?php foreach( $fields as $field ): ?>
 
                     <h3 class="info-dropdown"><?php echo $field[ 'info_title' ]; ?><span>+</span></h3>
-                    
+
                     <div class="info-field training-contain">
                         <?php if(!empty($field['info_rows'])): ?>
                             <?php foreach( $field['info_rows'] as $row): ?>
@@ -98,7 +97,7 @@ get_header(); ?>
                                         <?php endforeach; ?>
                                     <?php endif; ?>
                                 </section> <!-- desktop-article -->
-        
+
                             <?php endforeach; ?>
                         <?php endif; ?>
                     </div><!--info-field training-contain-->

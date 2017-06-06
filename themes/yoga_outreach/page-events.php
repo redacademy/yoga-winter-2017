@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * @package Yoga_Outreach_Theme
  */
@@ -8,13 +8,20 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<header class="general-template-section custom-hero-image">
                 <div class="color-background"></div>
-                <?php
+
+			</header> <!--general-template-section-->
+
+            <section id="workshop" class="container">
+                <?php $events= CFS()->get( 'new_event' ); ?>  <!--variable to hold email from loop-->
+
+                <?php if(!empty($events)): ?>
+                    <?php
                     // TO SHOW THE PAGE CONTENTS
                     while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
-                        <div class="entry-content-page">
-                            <h1 class="page-title-header"><?php the_title(); ?></h1>
+                        <div class="page-main-header">
+                            <h1> <?php the_title(); ?></h1>
                             <?php the_content(); ?> <!-- Page Content -->
-                            <div class="general-button-container">
+                            <div class="button-container">
                                 <a href="#workshop" class="general-button grey-button">workshop</a>
                                 <a href="#retreat" class="general-button grey-button">retreat</a>
                             </div>
@@ -23,12 +30,6 @@ get_header(); ?>
                         endwhile; //resetting the page loop
                         wp_reset_query(); //resetting the page query
                     ?>
-			</header> <!--general-template-section-->
-
-            <section id="workshop" class="container">
-                <?php $events= CFS()->get( 'new_event' ); ?>  <!--variable to hold email from loop-->    
-
-                <?php if(!empty($events)): ?>
                     <?php foreach( $events as $event ): ?>
                         <h2><?php echo $event['event_header']; ?></h2>
 
@@ -88,7 +89,7 @@ get_header(); ?>
                         <div class="info-dropdown">
                             <h3>About the facilitator</h3><span>+</span>
                         </div>
-                                
+
                         <div class="info-field info-container">
                             <?php if(!empty($info['event_facilitator'])): ?>
                                 <?php foreach( $info['event_facilitator'] as $facilitator): ?>
@@ -103,17 +104,17 @@ get_header(); ?>
                         </div>
 
                     <?php endforeach; ?>
-                <?php endif; ?> 
+                <?php endif; ?>
             </section>
 
             <div class="booking-button">
                 <a href="<?php echo get_page_link(275); ?>"class="primary-button">book workshop</a>
             </div>
 
-            <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop--> 
-            
+            <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop-->
+
             <section id="retreat" class="container">
-                <?php $retreats= CFS()->get( 'new_retreats' ); ?>  <!--variable to hold email from loop-->    
+                <?php $retreats= CFS()->get( 'new_retreats' ); ?>  <!--variable to hold email from loop-->
 
                 <?php if(!empty($retreats)): ?>
                     <?php foreach( $retreats as $retreat ): ?>
@@ -195,12 +196,12 @@ get_header(); ?>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="booking-button">
                             <a href="<?php echo get_page_link(273); ?>"class="primary-button">register online</a>
                         </div>
                     <?php endforeach; ?>
-                <?php endif; ?> 
+                <?php endif; ?>
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

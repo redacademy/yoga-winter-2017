@@ -99,7 +99,33 @@ body{
             max-width:580px;
         }
     }
+}
 
+.page-main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    padding: 25px;
+    background-color: #f4f1ea;
+}
+
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    @include desktop {
+        width: 50%;
+
+    }
+}
+
+.main-header-contain {
+    padding-top: 250px;
 }
 
 //---------- Buttons ----------

@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * @package Yoga_Outreach_Theme
  */
@@ -6,25 +6,25 @@
 get_header(); ?>
 	<div id="primary" class="content-area resources-media-content">
 		<main id="main" class="site-main" role="main">
-			<header class="general-template-section custom-hero-image">
-					<?php
+			<div class="main-header-contain">
+				<?php
                 	while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
-					<div class="entry-content-page">
-						<h1 class="page-title-header"><?php the_title(); ?></h1>
-                    	<?php the_content(); ?> <!-- Page Content -->
-						<div class="general-button-container">
-							<a href ="resources-research" class="general-button grey-button">Research</a>
+						<div class="page-main-header ">
+							<h1><?php the_title(); ?></h1>
+							<?php the_content(); ?> <!-- Page Content -->
+							<div class="button-container">
+								<a href ="resources-research" class="general-button grey-button">Research</a>
+							</div>
 						</div>
-                    </div><!--entry-content-page-->
                     <?php
                 	endwhile; //resetting the page loop
                 	wp_reset_query(); //resetting the page query
                 	?>
-			</header><!--general-template-section-->
+			</div>
 			<section class="video-list-section">
 				<h2 class="video-list-heading">Why Yoga Outreach</h2>
 				<ul class="media-video-list">
-					<?php 
+					<?php
 					$videos = CFS()->get('video_list');
 					foreach ( $videos as $video ):
 					?>
@@ -46,10 +46,10 @@ get_header(); ?>
 						<span>+</span>
 							<p class="research-paper-para">Research papers & interesting articles about trauma-sensitive yoga.</p>
 					</div><!--info-dropdown-->
-				
+
 					<div class="info-field">
 						<ul class="media-article-list show-videos">
-						<?php 
+						<?php
 						$medias = CFS()->get('in_the_media');
 						foreach ( $medias as $media ):
 						?>
@@ -69,9 +69,9 @@ get_header(); ?>
 					</div><!--info-dropdown-->
 					<div class="info-field">
 						<ul class="press-article-list">
-						<?php 
+						<?php
 						$articles = CFS()->get('in_the_press');
-						
+
 						foreach ( $articles as $article ):
 						?>
 						<p class="research-paper-para">Research papers & interesting articles about trauma-sensitive yoga.</p>
@@ -84,7 +84,7 @@ get_header(); ?>
 						<?php endforeach ?>
 						</ul><!--media-article-list-->
 					</div><!--info-field-->
-				</div>	
+				</div>
 			</section><!--media-article-section-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
