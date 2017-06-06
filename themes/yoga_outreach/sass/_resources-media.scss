@@ -2,9 +2,9 @@
 
     .general-button{
         @include general-button;
-            margin-bottom:29px;
+            margin: 0 auto 26px;
     }
-    
+
     .main-h3-container{
         h3{
             @include main-h3;
@@ -12,7 +12,7 @@
         p{
             @include main-p;
         }
-    }       
+    }
 
     .info-dropdown{
         padding:0;
@@ -88,13 +88,13 @@
     }
 
 
-  .media-date{
-      @include desktop{
-          position:relative;
-          font-size:20px;
-          margin-top:1rem;
-          z-index:10;
-          padding-bottom:1rem;
+    .media-date{
+        @include desktop{
+            position:relative;
+            font-size:20px;
+            margin-top:1rem;
+            z-index:10;
+            padding-bottom:1rem;
         }
     }
 
@@ -124,31 +124,20 @@
     }
 
     .page-title-header{
-        padding-top:0;
-        color:$darktheme_color;
-        @include desktop{
-            
-        }
+        color:$basetext_color;
     }
 
     .general-template-section{
         height:60vh;
             @include desktop{
                 height:100vh;
-                justify-content:flex-start;
             }
     }
 
-    .general-button-container{
-        height:100px;
-    }
-
-
-
     .read-more,.read-less{
-      font-size:20px;
-      cursor:pointer;
-      transition:font-size 1s ease-in;
+        font-size:20px;
+        cursor:pointer;
+        transition:font-size 1s ease-in;
         @include desktop{
             margin-bottom:20px;
         }
@@ -186,7 +175,7 @@
           display:none;
       }
   }
-  
+
   .black-text{
       color:black;
         @include desktop{

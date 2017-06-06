@@ -101,7 +101,7 @@
 		background:transparent;
 		border:none;
 		box-shadow:none;
-		color:$lighttext_color;
+		color:$darktext_color;
 		font-weight:600;
 		float:right;
 	}
@@ -110,7 +110,7 @@
 		font-size:11px;
 		margin-bottom:5px;
 	}
-		
+
 	.under-skills-training-para{
 		color:#6B747D;
 		font-size: 14px;
@@ -118,9 +118,9 @@
 		line-height:24px;
 		margin-bottom:20px;	}
 
-		
+
 	.book-training-button{
-		background-color:$lighttext_color;
+		background-color:$darktext_color;
 		margin-top:18px;
 	}
 
@@ -200,6 +200,7 @@
 			color:#4A4A4A;
 			background-color:#fff;
 			margin-bottom:0;
+			margin: 0 auto;
 		}
 	}
 

@@ -92,11 +92,11 @@
 			flex-direction: column;
 			align-items: center;
 			padding: 40px 15px 10px;
-			color: $lighttext_color;
+			color: $darktext_color;
 				h2 {
 					font-size: 1.5rem;
 					padding-bottom: 21px;
-					 @include desktop{
+					@include desktop{
 						font-size: 40px;
 						color:#4A4A4A;
 					}
@@ -218,7 +218,7 @@
 		padding-left:15px;
 			@include desktop{
 				width: 830px;
-				padding-left:0;	
+				padding-left:0;
 				margin: 0 auto;
 			}
 	}

@@ -24,7 +24,7 @@ add_filter( 'body_class', 'yoga_body_classes' );
 /**
  * Custom hero image styles method
  *
- * 
+ *
  */
 function yoga_pagetemplate_styles() {
 
@@ -44,12 +44,12 @@ function yoga_pagetemplate_styles() {
     if(!$image){
         return;
     }
- 
+
     $hero_css = ".custom-hero-image {
         background: linear-gradient( to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100% ),
         url({$image}) no-repeat center top;
         background-size: cover, cover;
-        }"; 
+        }";
     wp_add_inline_style( 'yoga-outreach-style', $hero_css );
 }
 add_action( 'wp_enqueue_scripts', 'yoga_pagetemplate_styles' );
@@ -58,7 +58,7 @@ add_action( 'wp_enqueue_scripts', 'yoga_pagetemplate_styles' );
 /**
  * Custom hero image styles method for forms & blog pages
  *
- * 
+ *
  */
 function yoga_formstemplate_styles() {
 
@@ -76,7 +76,7 @@ function yoga_formstemplate_styles() {
     $hero_css = ".custom-hero-image {
         background: url({$image}) no-repeat center;
         background-size: cover, cover;
-        }"; 
+        }";
     wp_add_inline_style( 'yoga-outreach-style', $hero_css );
 }
 add_action( 'wp_enqueue_scripts', 'yoga_formstemplate_styles' );
@@ -85,8 +85,8 @@ add_action( 'wp_enqueue_scripts', 'yoga_formstemplate_styles' );
  * Custom Training Modules archive title
  *
  */
-					
-function yoga_modify_modules_archive_title( $title ) {	
+
+function yoga_modify_modules_archive_title( $title ) {
     if(is_post_type_archive('training_modules')){
         $title = "Course Modules";
     }
@@ -98,13 +98,13 @@ add_filter( 'get_the_archive_title', 'yoga_modify_modules_archive_title');
  /**
  * Sort Training Modules by ascending title
  *
- * 
+ *
  */
 function yoga_change_sort_order($query){
     if(is_post_type_archive()):
         $query->set( 'order', 'ASC' );
         $query->set( 'orderby', 'title' );
-    endif;    
+    endif;
 };
 add_action( 'pre_get_posts', 'yoga_change_sort_order');
 
@@ -112,7 +112,7 @@ add_action( 'pre_get_posts', 'yoga_change_sort_order');
 /**
  * Custom header text color for pages
  *
- * 
+ *
  */
 function yoga_headernav_styles() {
 
@@ -131,7 +131,7 @@ function yoga_headernav_styles() {
         }
         #site-navigation #primary-menu .menu-item-type-post_type a{
             color: #4a4a4a;
-        }"; 
+        }";
     wp_add_inline_style( 'yoga-outreach-style', $header_css );
 }
 add_action( 'wp_enqueue_scripts', 'yoga_headernav_styles' );
@@ -139,7 +139,7 @@ add_action( 'wp_enqueue_scripts', 'yoga_headernav_styles' );
 /**
  * Custom dynamic fields for select events
  *
- * 
+ *
  */
 function populate_event_titles( $form ) {
 
@@ -173,7 +173,7 @@ add_filter( 'gform_admin_pre_render_8', 'populate_event_titles' );
 /**
  * Custom dynamic fields for select retreats
  *
- * 
+ *
  */
 function populate_retreat_titles( $form ) {
 
@@ -207,7 +207,7 @@ add_filter( 'gform_admin_pre_render_9', 'populate_retreat_titles' );
 /**
  * Allow php Variables to be localized for use in JS
  *
- * 
+ *
  */
 function image_scripts() {
     wp_enqueue_script(

@@ -27,7 +27,7 @@
             }
         }
     }
-    
+
 
     .course-modules{
         max-width: 1020px;
@@ -35,7 +35,7 @@
         margin: 5% auto 15% auto;
     }
     .main-button{
-        @include general-button; 
+        @include general-button;
         &.clear-button{
             border: 1px solid white;
         }
@@ -142,7 +142,7 @@
                 background-size: cover, cover;
             }
             .incomplete{
-                background: url("../../images/todo.svg") no-repeat center bottom; 
+                background: url("../../images/todo.svg") no-repeat center bottom;
             }
             .half-way{
                 background: url("../../images/progress.svg") no-repeat center bottom;
@@ -182,7 +182,7 @@
         transition: 0.3s;
         margin: 0;
         font-size: 1.2rem;
-        color:$lighttext_color;
+        color:$darktext_color;
         box-shadow: none;
         border-radius: 0;
     }
