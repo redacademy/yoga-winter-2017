@@ -53,7 +53,7 @@ get_header(); ?>
                 <h2 class="h2-holder">Become a Sponsor</h2>
                 <p><?php echo esc_html(CFS()->get( 'event_sponsor' )); ?></p>
                 <div class="button-wrap">
-                    <h3>To become an event sponsor big or small please contact Delanie </h3>
+                    <h3 class="contact-header">To become an event sponsor big or small please contact Delanie </h3>
                     <a href="<?php echo get_page_link(67); ?>" class="small-button white-button">Contact</a>
                 </div>
             </section>
