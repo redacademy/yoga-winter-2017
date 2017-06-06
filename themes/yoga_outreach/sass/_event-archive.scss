@@ -14,7 +14,7 @@
     }
 
     .container {
-        color: $lighttext_color;
+        color: $darktext_color;
         @include desktop {
             background-color: $lighttheme_color;
             z-index: 999;
@@ -62,7 +62,7 @@
             border-radius: 8px;
             background-color: #EBE5D8;
             position: absolute;
-            bottom: -9px;  
+            bottom: -9px;
             z-index: -1;
             @include desktop {
                 height: 90px;
@@ -86,7 +86,7 @@
         img:not(:first-child) {
                 display: none;
             }
-        
+
         .event-img {
             height: 161px;
             width: 161px;
@@ -133,7 +133,7 @@
             }
         }
         article {
-            @include desktop { 
+            @include desktop {
                 order: 3;
             }
             p {
@@ -148,7 +148,7 @@
     .title-contain {
         position: relative;
         margin-bottom: 35px;
-        border-bottom: 1px solid $lighttext_color;
+        border-bottom: 1px solid $darktext_color;
         @include desktop {
             width: 830px;
             margin: 0 auto;

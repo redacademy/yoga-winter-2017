@@ -26,7 +26,7 @@
 			@include small-button;
 			margin: 0 auto;
 			a{
-				color: $lighttext_color;
+				color: $darktext_color;
 				text-decoration: none;
 			}
 		}
@@ -74,7 +74,7 @@
 					display:none;
 				}
 				input[type="radio"] + label {
-					color: $lighttext_color;
+					color: $darktext_color;
 					font-family:Arial, sans-serif;
 					font-size:14px;
 				}
@@ -85,7 +85,7 @@
 					margin:-1px 4px 0 0;
 					vertical-align:middle;
 					cursor:pointer;
-					border: 1px solid $lighttext_color;
+					border: 1px solid $darktext_color;
 					border-radius:  50%;
 				}
 
@@ -97,7 +97,7 @@
 				input[type="radio"]:checked + label span{
 					background-color:$darktext_color;
 				}
-			} 
+			}
 			.form-sub-heading{
 				padding: 10px;
 				background-color: $accentcolor_bar;
@@ -114,7 +114,7 @@
 			background-color: $accentcolor_box;
 			input.gform_button{
 				@include general-button;
-				color: $lighttext_color;
+				color: $darktext_color;
 				background-color: $base_color;
 			}
 		}
@@ -129,7 +129,7 @@
 
 /* Core Scholarship Training */
 #gform_7{
-	
+
 	.gform_title, .gform_description:not(h3){
 		max-width:752px;
 		margin:0 auto;
@@ -184,7 +184,7 @@
 				display:none;
 			}
 			input[type="radio"] + label {
-				color: $lighttext_color;
+				color: $darktext_color;
 				font-family:Arial, sans-serif;
 				font-size:14px;
 			}
@@ -195,7 +195,7 @@
 				margin:-1px 4px 0 0;
 				vertical-align:middle;
 				cursor:pointer;
-				border: 1px solid $lighttext_color;
+				border: 1px solid $darktext_color;
 				border-radius:  50%;
 			}
 
@@ -207,10 +207,10 @@
 			input[type="radio"]:checked + label span{
 				background-color:$darktext_color;
 			}
-		} 
+		}
 		.gform_next_button, .gform_button{
 			@include general-button;
-			color: $lighttext_color;
+			color: $darktext_color;
 			background-color: $mainbutton_color;
 			margin: 15px;
 			display: inline;
@@ -218,7 +218,7 @@
 
 		.gform_previous_button{
 			@include general-button;
-			color: $lighttext_color;
+			color: $darktext_color;
 			background-color: $formbutton_color;
 		}
 		.percentbar_blue{
@@ -255,7 +255,7 @@
 	text-align: center;
 
 	.main-button{
-		@include general-button; 
+		@include general-button;
 		margin: 25px auto;
 		&.grey-button{
 			background-color: $mainbutton_color;
@@ -270,10 +270,10 @@
 			}
 		}
 	}
-	
+
 	.gform_button{
 		@include general-button;
-		color: $lighttext_color;
+		color: $darktext_color;
 		background-color: $mainbutton_color;
 		margin: 15px auto;
 	}

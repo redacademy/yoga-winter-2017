@@ -3,7 +3,7 @@
   text-align: center;
   font-family: raleway;
   font-weight: lighter;
-  color: $mediumtheme_color;
+  color: $darktext_color;
   h2{
     text-transform: capitalize;
     font-size: 24px;
@@ -57,7 +57,7 @@
           color:$darktext_color;
         }
       }
-    }  
+    }
   }
   .what-we-do{
     padding: 5% 7%;
@@ -82,7 +82,7 @@
       }
       p{
         @include desktop{
-          color:$lighttext_color;
+          color:$darktext_color;
           max-width: 672px;
           margin: auto;
         }
@@ -93,7 +93,7 @@
     font-size: 14px;
     color:$darktext_color;
     p{
-      color:$lighttext_color;
+      color:$darktext_color;
       @include desktop{
         font-size:18px;
         max-width: 340px;
@@ -352,7 +352,7 @@
       @include desktop{
         padding: 25px 0 0 0;
         font-size: 40px;
-      }     
+      }
     }
     p{
       font-size: 1.5rem;
@@ -362,8 +362,8 @@
         padding: 0 20px 20px 20px;
         max-width: 700px;
         margin: auto;
-      }   
+      }
     }
-  }  
+  }
 }
 

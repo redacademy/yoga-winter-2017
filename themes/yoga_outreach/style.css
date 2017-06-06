@@ -1481,7 +1481,7 @@ footer {
   -ms-flex-align: center;
       align-items: center;
   padding: 40px 15px 10px;
-  color: #6b747d; }
+  color: #4a4a4a; }
   .contact-us-content .email-inquiries h2 {
     font-size: 1.5rem;
     padding-bottom: 21px; }
@@ -1679,7 +1679,7 @@ footer {
 
 .about-us-content {
   text-align: center;
-  color: #6b747d; }
+  color: #4a4a4a; }
   .about-us-content .custom-hero-image {
     background-size: 300%;
     background-position: left 0px top -147px; }
@@ -1845,7 +1845,7 @@ footer {
         width: 830px;
         padding: 138px 0 71px; } }
   .about-us-content .info-field {
-    color: #6b747d;
+    color: #4a4a4a;
     font-weight: 100;
     text-align: left;
     padding: 0; }
@@ -1952,7 +1952,7 @@ footer {
       font-size: 0.6rem;
       color: #4a4a4a; }
     .about-us-content .article .more-text {
-      color: #6b747d; }
+      color: #4a4a4a; }
       @media (min-width: 720px) {
         .about-us-content .article .more-text {
           color: #4a4a4a; } }
@@ -2248,7 +2248,7 @@ footer {
       .page-template-application-submission .form-success .small-button {
         width: 230px; } }
     .page-template-application-submission .form-success .small-button a {
-      color: #6b747d;
+      color: #4a4a4a;
       text-decoration: none; }
 
 .page-template-forms-template .entry-header {
@@ -2287,7 +2287,7 @@ footer {
   display: none; }
 
 .page-template-forms-template .app-form .gform_body ul li input[type="radio"] + label {
-  color: #6b747d;
+  color: #4a4a4a;
   font-family: Arial, sans-serif;
   font-size: 14px; }
 
@@ -2298,7 +2298,7 @@ footer {
   margin: -1px 4px 0 0;
   vertical-align: middle;
   cursor: pointer;
-  border: 1px solid #6b747d;
+  border: 1px solid #4a4a4a;
   border-radius: 50%; }
 
 .page-template-forms-template .app-form .gform_body ul li input[type="radio"] + label span {
@@ -2344,7 +2344,7 @@ footer {
     -ms-flex-align: center;
         align-items: center;
     text-decoration: none;
-    color: #6b747d;
+    color: #4a4a4a;
     background-color: #fff; }
 
 .forms-header {
@@ -2396,7 +2396,7 @@ footer {
   display: none; }
 
 .entry-content .gform_wrapper ul li input[type="radio"] + label {
-  color: #6b747d;
+  color: #4a4a4a;
   font-family: Arial, sans-serif;
   font-size: 14px; }
 
@@ -2407,7 +2407,7 @@ footer {
   margin: -1px 4px 0 0;
   vertical-align: middle;
   cursor: pointer;
-  border: 1px solid #6b747d;
+  border: 1px solid #4a4a4a;
   border-radius: 50%; }
 
 .entry-content .gform_wrapper ul li input[type="radio"] + label span {
@@ -2440,7 +2440,7 @@ footer {
   -ms-flex-align: center;
       align-items: center;
   text-decoration: none;
-  color: #6b747d;
+  color: #4a4a4a;
   background-color: #94bfd1;
   margin: 15px;
   display: inline; }
@@ -2468,7 +2468,7 @@ footer {
   -ms-flex-align: center;
       align-items: center;
   text-decoration: none;
-  color: #6b747d;
+  color: #4a4a4a;
   background-color: #c1d3da; }
 
 .entry-content .gform_wrapper .percentbar_blue {
@@ -2553,7 +2553,7 @@ footer {
     -ms-flex-align: center;
         align-items: center;
     text-decoration: none;
-    color: #6b747d;
+    color: #4a4a4a;
     background-color: #94bfd1;
     margin: 15px auto; }
 
@@ -2754,7 +2754,7 @@ a:hover, a:active {
 .training-content {
   font-family: 'raleway',sans-serif; }
   .training-content .main-h3-container h3 {
-    color: #6b747d;
+    color: #4a4a4a;
     font-weight: 200;
     line-height: 29px;
     font-size: 24px;
@@ -2768,7 +2768,7 @@ a:hover, a:active {
         width: 60vw;
         text-align: left; } }
   .training-content .main-h3-container p {
-    color: #6b747d;
+    color: #4a4a4a;
     line-height: 24px;
     margin-top: 21px; }
     @media (min-width: 720px) {
@@ -3171,7 +3171,7 @@ a:hover, a:active {
   background: transparent;
   border: none;
   box-shadow: none;
-  color: #6b747d;
+  color: #4a4a4a;
   font-weight: 600;
   float: right; }
 
@@ -3188,7 +3188,7 @@ a:hover, a:active {
   margin-bottom: 20px; }
 
 .training-for-facilities-content .book-training-button {
-  background-color: #6b747d;
+  background-color: #4a4a4a;
   margin-top: 18px; }
 
 .training-for-facilities-content .carousel-cell.is-selected {
@@ -3804,7 +3804,7 @@ a:hover, a:active {
   padding-bottom: 22px;
   width: 262px;
   margin: 0 auto;
-  color: #6b747d;
+  color: #4a4a4a;
   text-align: center; }
   @media (min-width: 720px) {
     .resources-research-content .main-h3-container p {
@@ -3910,7 +3910,7 @@ a:hover, a:active {
         font-size: 18px;
         line-height: 30px; } }
     .resources-research-content .link-list li a {
-      color: #6b747d;
+      color: #4a4a4a;
       font-weight: 200; }
 
 .resources-research-content .link-list p {
@@ -4279,7 +4279,7 @@ object {
   margin-bottom: 29px; }
 
 .event-content .container, .event-content .container2 {
-  color: #6b747d; }
+  color: #4a4a4a; }
   @media (min-width: 720px) {
     .event-content .container, .event-content .container2 {
       background-color: #f4f1ea;
@@ -4404,7 +4404,7 @@ object {
 .event-content .title-contain {
   position: relative;
   margin-bottom: 35px;
-  border-bottom: 1px solid #6b747d; }
+  border-bottom: 1px solid #4a4a4a; }
   @media (min-width: 720px) {
     .event-content .title-contain {
       width: 830px;
@@ -4923,7 +4923,7 @@ object {
   text-align: center;
   font-family: raleway;
   font-weight: lighter;
-  color: #6b747d; }
+  color: #4a4a4a; }
   .home h2 {
     text-transform: capitalize;
     font-size: 24px; }
@@ -5019,7 +5019,7 @@ object {
         font-size: 24px; } }
     @media (min-width: 720px) {
       .home .trauma-approach p {
-        color: #6b747d;
+        color: #4a4a4a;
         max-width: 672px;
         margin: auto; } }
   .home .training-programs {
@@ -5027,7 +5027,7 @@ object {
     font-size: 14px;
     color: #4a4a4a; }
     .home .training-programs p {
-      color: #6b747d; }
+      color: #4a4a4a; }
       @media (min-width: 720px) {
         .home .training-programs p {
           font-size: 18px;
@@ -5362,7 +5362,7 @@ object {
   background: transparent;
   border: none;
   box-shadow: none;
-  color: #6b747d;
+  color: #4a4a4a;
   font-weight: 600;
   float: right; }
 
@@ -5379,7 +5379,7 @@ object {
   margin-bottom: 20px; }
 
 .training-for-facilities-content .book-training-button {
-  background-color: #6b747d;
+  background-color: #4a4a4a;
   margin-top: 18px; }
 
 .training-for-facilities-content .carousel-cell.is-selected {
@@ -6124,7 +6124,7 @@ http://flickity.metafizzy.co
           .current-ops-content .site-main ul li .small-button {
             width: 230px; } }
         .current-ops-content .site-main ul li .small-button a {
-          color: #6b747d;
+          color: #4a4a4a;
           text-decoration: none; }
 
 /*--------------------------------------------------------------
@@ -6302,7 +6302,7 @@ http://flickity.metafizzy.co
     transition: 0.3s;
     margin: 0;
     font-size: 1.2rem;
-    color: #6b747d;
+    color: #4a4a4a;
     box-shadow: none;
     border-radius: 0; }
   .post-type-archive-training_modules div.tab button:hover {
