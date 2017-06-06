@@ -792,6 +792,34 @@ body {
       margin-bottom: 3rem;
       max-width: 580px; } }
 
+.page-main-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 250px;
+  width: 100%;
+  padding: 25px;
+  background-color: #f4f1ea; }
+
+.button-container {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  @media (min-width: 720px) {
+    .button-container {
+      width: 50%; } }
+
+.main-header-contain {
+  padding-top: 250px; }
+
 .teal-button {
   background-color: #6cfffe; }
 
@@ -2349,22 +2377,8 @@ footer {
     margin: 0 auto;
     background-color: #fff; }
 
-<<<<<<< HEAD
-.forms-header {
-  height: 20vh; }
-
-/* Core Scholarship Training */
-#gform_7 .gform_title, #gform_7 .gform_description:not(h3) {
-  max-width: 752px;
-  margin: 0 auto;
-  margin-bottom: 29px; }
-
-#gform_7 body, #gform_7 li:not(.form-sub-heading) {
-  max-width: 828px;
-=======
 .page-template-forms-template .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) label, .page-template-forms-template .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) div {
   max-width: 1020px !important;
->>>>>>> 3f8d3c7e7ae9425ad0b72be6f192c06a57a37c7c
   margin: 0 auto; }
 
 @media (min-width: 1024px) {
@@ -2372,7 +2386,7 @@ footer {
     padding-left: 5%; } }
 
 .forms-header {
-  height: 40vh; }
+  height: 20vh; }
 
 /* Module Quizzes */
 .page-template-quiz-template {
