@@ -444,7 +444,6 @@ table {
 button {
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -885,8 +884,8 @@ body {
       max-width: 1024px;
       margin: 0 auto;
       height: 110px;
-      -ms-flex-pack: justify;
-          justify-content: space-between; } }
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
 
 .section-15px-padding {
   padding: 0 4%; }
@@ -1500,7 +1499,6 @@ footer {
   .contact-us-content .email-inquiries a {
     width: 230px;
     height: 44px;
-    margin: 0 auto;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -1690,7 +1688,6 @@ footer {
   .about-us-content .general-button {
     width: 230px;
     height: 44px;
-    margin: 0 auto;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -2031,7 +2028,7 @@ footer {
         height: 200px; } }
   .blog-content .article-slider {
     height: 300px;
-    background-color: #95afc9;
+    background-color: transparent;
     /* move page dots into carousel */
     /* fill-in selected dot */ }
     @media (min-width: 720px) {
@@ -2095,7 +2092,6 @@ footer {
         .blog-content .article-slider .cell-img {
           padding: 0; } }
     .blog-content .article-slider p {
-      font-size: 3vh;
       color: #fff;
       text-align: center;
       text-decoration: none;
@@ -2117,7 +2113,7 @@ footer {
           background-color: #d8d8d8; } }
   .blog-content .carousel-cell {
     height: 210px;
-    width: 100%;
+    width: 250px;
     margin: 45px; }
     @media (min-width: 720px) {
       .blog-content .carousel-cell {
@@ -2324,7 +2320,6 @@ footer {
   .page-template-forms-template .app-form .gform_footer input.gform_button {
     width: 230px;
     height: 44px;
-    margin: 0 auto;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -2420,7 +2415,6 @@ footer {
 .entry-content .gform_wrapper .gform_next_button, .entry-content .gform_wrapper .gform_button {
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -2448,7 +2442,6 @@ footer {
 .entry-content .gform_wrapper .gform_previous_button {
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -2501,7 +2494,6 @@ footer {
   .gform_confirmation_message .main-button {
     width: 230px;
     height: 44px;
-    margin: 0 auto;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -2533,7 +2525,6 @@ footer {
   .gform_confirmation_message .gform_button {
     width: 230px;
     height: 44px;
-    margin: 0 auto;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -2793,13 +2784,9 @@ a:hover, a:active {
       @media (min-width: 720px) {
         .training-content .for-training-section img {
           height: auto; } }
-  @media (min-width: 720px) {
-    .training-content .page-title-header, .training-content .entry-content-page {
-      color: #4A4A4A; } }
   .training-content .general-button {
     width: 230px;
     height: 44px;
-    margin: 0 auto;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -2893,7 +2880,6 @@ a:hover, a:active {
 .modules-home-content .general-button {
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -3111,7 +3097,6 @@ a:hover, a:active {
 .training-for-facilities-content .general-button, .training-for-facilities-content .book-training-button {
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -3264,7 +3249,8 @@ a:hover, a:active {
 .training-for-facilities-content .bottom-button-container .general-button {
   color: #4A4A4A;
   background-color: #fff;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin: 0 auto; }
 
 .training-for-facilities-content .content-container {
   margin: 0 auto; }
@@ -3350,7 +3336,6 @@ a:hover, a:active {
       align-items: center;
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -3423,7 +3408,6 @@ a:hover, a:active {
 .core-training-content .general-button {
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -3744,7 +3728,6 @@ a:hover, a:active {
 .resources-research-content .general-button, .resources-research-content .book-training-button {
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -3764,11 +3747,10 @@ a:hover, a:active {
   -ms-flex-align: center;
       align-items: center;
   text-decoration: none;
-  margin-bottom: 29px; }
+  margin: 0 auto 26px; }
 
-@media (min-width: 720px) {
-  .resources-research-content .page-title-header, .resources-research-content .entry-content-page {
-    color: #fff; } }
+.resources-research-content .page-title-header, .resources-research-content .entry-content-page {
+  color: #fff; }
 
 .resources-research-content .max-width-1024 {
   display: -ms-flexbox;
@@ -3847,7 +3829,7 @@ a:hover, a:active {
       -ms-flex-align: center;
           align-items: center;
       text-decoration: none;
-      color: black;
+      color: #4a4a4a;
       font-size: 10px; }
       @media (min-width: 720px) {
         .resources-research-content .resource-pdf-list li a {
@@ -3926,7 +3908,6 @@ a:hover, a:active {
 .resources-media-content .general-button {
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -3946,7 +3927,7 @@ a:hover, a:active {
   -ms-flex-align: center;
       align-items: center;
   text-decoration: none;
-  margin-bottom: 29px; }
+  margin: 0 auto 26px; }
 
 .resources-media-content .main-h3-container h3 {
   padding-top: 35px;
@@ -4059,19 +4040,13 @@ a:hover, a:active {
     background-color: #CFDCEB; } }
 
 .resources-media-content .page-title-header, .resources-media-content .entry-content-page {
-  padding-top: 0;
-  color: #4a4a4a; }
+  color: #fff; }
 
 .resources-media-content .general-template-section {
   height: 60vh; }
   @media (min-width: 720px) {
     .resources-media-content .general-template-section {
-      height: 100vh;
-      -ms-flex-pack: start;
-          justify-content: flex-start; } }
-
-.resources-media-content .general-button-container {
-  height: 100px; }
+      height: 100vh; } }
 
 .resources-media-content .read-more, .resources-media-content .read-less {
   font-size: 20px;
@@ -4256,7 +4231,6 @@ object {
 .event-content .general-button {
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -4581,7 +4555,6 @@ object {
   .volunteer-content .site-main .main-button, .partner-facility-content .site-main .main-button, .support-us-content .site-main .main-button {
     width: 230px;
     height: 44px;
-    margin: 0 auto;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -4601,14 +4574,11 @@ object {
     -ms-flex-align: center;
         align-items: center;
     text-decoration: none;
-    margin-bottom: 26px; }
+    margin: 0 auto 26px; }
     .volunteer-content .site-main .main-button.clear-button, .partner-facility-content .site-main .main-button.clear-button, .support-us-content .site-main .main-button.clear-button {
       border: 1px solid white; }
       .volunteer-content .site-main .main-button.clear-button:hover, .partner-facility-content .site-main .main-button.clear-button:hover, .support-us-content .site-main .main-button.clear-button:hover {
         color: #4a4a4a; }
-    @media (min-width: 720px) {
-      .volunteer-content .site-main .main-button, .partner-facility-content .site-main .main-button, .support-us-content .site-main .main-button {
-        margin-bottom: 35px; } }
     .volunteer-content .site-main .main-button a, .partner-facility-content .site-main .main-button a, .support-us-content .site-main .main-button a {
       text-decoration: none; }
       .volunteer-content .site-main .main-button a a:visited, .partner-facility-content .site-main .main-button a a:visited, .support-us-content .site-main .main-button a a:visited {
@@ -4642,7 +4612,8 @@ object {
         width: 230px; } }
   .volunteer-content .site-main .white-button, .partner-facility-content .site-main .white-button, .support-us-content .site-main .white-button {
     text-decoration: none;
-    color: #4a4a4a; }
+    color: #4a4a4a;
+    margin: 0 auto; }
     .volunteer-content .site-main .white-button:visited, .partner-facility-content .site-main .white-button:visited, .support-us-content .site-main .white-button:visited {
       color: #4a4a4a; }
   .volunteer-content .site-main .button-wrap, .partner-facility-content .site-main .button-wrap, .support-us-content .site-main .button-wrap {
@@ -4685,11 +4656,15 @@ object {
         justify-content: space-around; }
     .volunteer-content .site-main .entry-header div, .partner-facility-content .site-main .entry-header div, .support-us-content .site-main .entry-header div {
       margin: 0 auto;
+      -ms-flex-align: center;
+          align-items: center;
       width: 100%;
       max-width: 1020px; }
     @media (min-width: 720px) {
       .volunteer-content .site-main .entry-header, .partner-facility-content .site-main .entry-header, .support-us-content .site-main .entry-header {
-        padding-top: 40vh; } }
+        padding-top: 40vh;
+        -ms-flex-line-pack: center;
+            align-content: center; } }
   .volunteer-content .site-main .drop-down-info, .partner-facility-content .site-main .drop-down-info, .support-us-content .site-main .drop-down-info {
     padding: 0; }
     .volunteer-content .site-main .drop-down-info p, .partner-facility-content .site-main .drop-down-info p, .support-us-content .site-main .drop-down-info p {
@@ -4964,7 +4939,6 @@ object {
     .home .what-we-do .general-button {
       width: 230px;
       height: 44px;
-      margin: 0 auto;
       font-size: 14px;
       text-align: center;
       text-transform: uppercase;
@@ -5302,7 +5276,6 @@ object {
 .training-for-facilities-content .general-button, .training-for-facilities-content .book-training-button {
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -5455,7 +5428,8 @@ object {
 .training-for-facilities-content .bottom-button-container .general-button {
   color: #4A4A4A;
   background-color: #fff;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin: 0 auto; }
 
 .training-for-facilities-content .content-container {
   margin: 0 auto; }
@@ -5541,7 +5515,6 @@ object {
       align-items: center;
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -5614,7 +5587,6 @@ object {
 .core-training-content .general-button {
   width: 230px;
   height: 44px;
-  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -6166,7 +6138,6 @@ http://flickity.metafizzy.co
   .post-type-archive-training_modules .main-button {
     width: 230px;
     height: 44px;
-    margin: 0 auto;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;

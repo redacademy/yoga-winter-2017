@@ -2,7 +2,7 @@
     background-color: #fff;
 
     .custom-hero-image{
-        display: none; 
+        display: none;
         @include desktop {
             display: block;
             height: 200px;
@@ -11,7 +11,7 @@
 
     .article-slider {
         height: 300px;
-        background-color: $logo_color;
+        background-color: transparent;
         @include desktop {
             background-color: transparent;
             margin-bottom: 150px;
@@ -35,7 +35,7 @@
         }
         /* move page dots into carousel */
         .flickity-page-dots {
-            bottom: 17.5px; 
+            bottom: 17.5px;
             @include desktop {
                 bottom: -30px;
             }
@@ -75,7 +75,6 @@
             }
         }
         p {
-            font-size: 3vh;
             color: $basetext_color;
             text-align: center;
             text-decoration: none;
@@ -102,7 +101,7 @@
     /* cell inherit height from carousel */
     .carousel-cell {
         height: 210px;
-        width: 100%;
+        width: 250px;
         margin: 45px;
         @include desktop {
             height: 220px;
@@ -121,7 +120,7 @@
                 object-fit: cover;
                 @include desktop {
                     height: 400px;
-                    
+
                 }
             }
         }
@@ -165,7 +164,7 @@
                 right: 0;
             }
         }
-        
+
         p {
             padding: 0 15px;
             @include desktop {
