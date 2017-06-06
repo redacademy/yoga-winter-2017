@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  *Template Name: Blog
  *
@@ -11,8 +11,8 @@ get_header(); ?>
             <header class="general-template-section custom-hero-image">
 			</header><!--general-template-section-->
             <section class="article-slider">
-                <ul class="carousel main-carousel">
-                    <?php if ( have_posts() ) : ?>   
+                <ul class="carousel main-carousel" data-flickity='{ "wrapAround": true }'>
+                    <?php if ( have_posts() ) : ?>
                         <?php while ( have_posts() ) : the_post(); ?> <!--start loop-->
                             <li class="carousel-cell">
                                 <article id="list-<?php the_ID(); ?>" data-post="<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -24,7 +24,7 @@ get_header(); ?>
 
                                         <?php the_title( sprintf( '<p>', esc_url( get_permalink() ) ), '</p>' ); ?>
                                     </div>
-                                        
+
                                     <?php if ( 'post' === get_post_type() ) : ?>
                                         <div class="cell-date">
                                             <?php the_date('M. d, Y', '<h3>', '</h3>'); ?>
@@ -37,7 +37,7 @@ get_header(); ?>
                 </ul>
             </section>
             <section class="full-article">
-                <?php if ( have_posts() ) : ?>   
+                <?php if ( have_posts() ) : ?>
                     <?php while ( have_posts() ) : the_post(); ?> <!--start loop-->
                         <article id="<?php the_ID(); ?>" class="post" <?php post_class(); ?>>
                             <div class="article-head">
@@ -46,7 +46,7 @@ get_header(); ?>
                                     echo get_the_post_thumbnail(); ?>
                                 <?php endif; ?>
                                 <?php the_title( sprintf( '<h2>',( get_permalink() ) ), '</h2>' ); ?>
-                                <?php get_the_author_meta(); ?> 
+                                <?php get_the_author_meta(); ?>
                                 <?php the_date('M. d, Y', '<h3>', '</h3>'); ?>
                             </div>
                             <?php the_content(); ?>

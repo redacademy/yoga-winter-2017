@@ -1,6 +1,6 @@
 <?php
 /**
- * 
+ *
  *
  * @package Yoga_Outreach_Theme
  */
@@ -44,16 +44,16 @@ get_header(); ?>
           </section><!--training-yoga-work-section-->
           <a href="core-training-application-form" class="book-training-button">Book Training</a>
           <p class="small-para section-15px-padding">-Skills Training for Support Professionals</p>
-          <p class="under-skills-training-para section-15px-padding">Are you interested in learning about 
-          the practical applications of yoga in your work with clients? 
-          Or perhaps you’d like to use yoga for self-care and stress reduction? 
+          <p class="under-skills-training-para section-15px-padding">Are you interested in learning about
+          the practical applications of yoga in your work with clients?
+          Or perhaps you’d like to use yoga for self-care and stress reduction?
           Yoga Outreach has developed a training just for you!
           </p>
 				<div class="testimonal-container">
 					<ul class="testimonial-list main-carousel">
 						<?php
 						$testimonials = CFS()->get('testimonial_list');
-						foreach ( $testimonials as $testimonial): 
+						foreach ( $testimonials as $testimonial):
 						?>
 						<li class="carousel-cell"><?php echo esc_html($testimonial ['testimonial']);?></li>
 						<?php endforeach ?>
@@ -88,7 +88,7 @@ get_header(); ?>
         </ul>
       </section><!--traininglist-container-->
 		<div class="bottom-button-container">
-				<a href="core-training-scholr"class="general-button">Book Scholorship</a>
+				<a href="core-training-scholr"class="general-button">Book Scholarship</a>
 		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
