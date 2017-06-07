@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /**
  * @package Yoga_Outreach_Theme
@@ -7,13 +7,13 @@
 get_header(); ?>
 	<div id="primary" class="content-area resources-research-content">
 		<main id="main" class="site-main" role="main">
-			<header class="general-template-section custom-hero-image">
+			<div class="main-header-contain">
 				<?php
                 while ( have_posts() ) : the_post(); ?>
-				<div class="entry-content-page">
-					<h1 class="page-title-header"><?php the_title(); ?></h1> <!--the_content() works only inside a WP Loop -->
+				<div class="page-main-header">
+					<h1><?php the_title(); ?></h1> <!--the_content() works only inside a WP Loop -->
                 	<?php the_content(); ?> <!-- Page Content -->
-					<div class="general-button-container">
+					<div class="button-container">
 						<a class="general-button teal-button black-text">Research</a>
 						<a href ="resources-media"class="general-button grey-button">Media & Videos</a>
 					</div><!--general-button-container-->
@@ -22,7 +22,7 @@ get_header(); ?>
                 endwhile; //resetting the page loop
                 wp_reset_query(); //resetting the page query
                 ?>
-			</header><!--general-template-section-->
+			</div>
             <div class="main-h3-container section-15px-padding">
                 <h3>Research</h3>
                 <p>Trauma sensitive yoga research from around the globe.</p>
@@ -36,7 +36,7 @@ get_header(); ?>
 					<div class="info-field">
 						<ul class="resource-pdf-list">
 							<p class="resource-link-text"><?php echo esc_html(CFS()->get('resource_link_text')); ?></p>
-							<?php 
+							<?php
 							$pdfs = CFS()->get('pdf_list');
 							foreach ( $pdfs as $pdf ):
 							?>
@@ -58,7 +58,7 @@ get_header(); ?>
 						<p><?php echo esc_html(CFS()->get('link_text')); ?></p>
 						<?php
 						$links = CFS()->get('link_list');
-						foreach ($links as $link): 
+						foreach ($links as $link):
 						?>
 						<li>
 							<?php echo $link ['link'];?>

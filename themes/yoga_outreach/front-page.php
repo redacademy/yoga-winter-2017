@@ -22,19 +22,19 @@ get_header(); ?>
   <p>Find out more about our training programs for Yoga teachers, and for:</p>
 </section>
 <section class="program-list">
-  <div class="core-training">
-      <div class="programlist-text">
-        <h1>yoga outreach core training™</h1>
-        <h4>For yoga instructors</h4>
-        <p>Get the skills to build trauma-informed classes.</p>
-      </div>
-      <div class="background-accent"></div>
-  </div>
   <div class="yoga-atwork">
       <div class="programlist-text">
         <h1>using yoga in your work™</h1>
         <h4>For facility staff</h4>
         <p>Skills Training for Support Professionals</p>
+      </div>
+      <div class="background-accent"></div>
+  </div>
+   <div class="core-training">
+      <div class="programlist-text">
+        <h1>yoga outreach core training™</h1>
+        <h4>For yoga instructors</h4>
+        <p>Get the skills to build trauma-informed classes.</p>
       </div>
       <div class="background-accent"></div>
   </div>
@@ -60,20 +60,6 @@ get_header(); ?>
       </div>
     <div class="accent-square"></div>
 </section>
-<div class="testimonal-container">
-  <ul class="testimonial-list main-carousel">
-    <?php
-    $testimonials = CFS()->get('testimonial_item');
-    foreach ( $testimonials as $testimonial): ?>
-    <li class="carousel-cell">
-      <p><?php echo $testimonial ['testimonial'];?></p>
-      <div class="carousel-picture">
-        <img src="<?php echo $testimonial ['testimonial_image'];?>" />
-      </div>
-    </li>
-    <?php endforeach ?>
-  </ul>
-</div><!--testimonial-container-->
 <div class="team-container">
   <h2>Get to Know the team</h2>
     <ul class="team-list main-carousel">
@@ -87,6 +73,20 @@ get_header(); ?>
       <?php endforeach ?>
     </ul>
   </div>
+  <div class="testimonal-container">
+  <ul class="testimonial-list main-carousel">
+    <?php
+    $testimonials = CFS()->get('testimonial_item');
+    foreach ( $testimonials as $testimonial): ?>
+    <li class="carousel-cell">
+      <p><?php echo $testimonial ['testimonial'];?></p>
+      <div class="carousel-picture">
+        <img src="<?php echo $testimonial ['testimonial_image'];?>" />
+      </div>
+    </li>
+    <?php endforeach ?>
+  </ul>
+</div><!--testimonial-container-->
 <section class="thankyou">
   <h1>thank you</h1>
   <p>to our sponsors and volunteers - you make our programs possible.</p>
