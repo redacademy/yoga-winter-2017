@@ -12,12 +12,12 @@
 	}
 	#main{
 		@include desktop{
-		padding-top:270px;
 		display:flex;
 		flex-direction: column;
 		}
 	}
 		.hero-text {
+			margin-top: 250px;
 			height: 225px;
 			width: 100%;
 			color: $darktheme_color;
