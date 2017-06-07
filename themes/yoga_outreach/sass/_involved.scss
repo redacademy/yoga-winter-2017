@@ -11,9 +11,10 @@
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+        font-size: 1rem;
         @include desktop{
             h2{
-                font-size: 2rem;
+                font-size: 40px;
             }
         }
         .main-button-holder{
@@ -212,7 +213,7 @@
         .container-two{
             padding: 5% 0;
             width: 100vw;
-            background-color: $logo_color;
+            background-color: $mainbutton_color;
             h2{
                 color: $darktext_color;
             }
@@ -322,7 +323,7 @@ ol {
             background-color: white;
             border-radius: 100%;
             padding: 10% 24% 14%;
-            color: $logo_color;
+            color: $mainbutton_color;
         }
         p{
             padding-top:16%;

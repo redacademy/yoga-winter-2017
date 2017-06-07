@@ -15,10 +15,10 @@ get_header(); ?>
                     <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
                 </div>
                 <div class="main-button-holder">
-                    <a href="#instructor" class="grey-button main-button">Become a Volunteer Teacher</a>
-                    <a href="#volunteer" class="grey-button main-button">Community Volunteer</a>
-                    <a href="#council" class="grey-button main-button">Advisory Council Member</a>
-                    <a href="#opportunities" class="grey-button main-button">Reaching Out with Yoga</a>
+                    <a href="#instructor" class="main-button clear-button">Become a Volunteer Teacher</a>
+                    <a href="#volunteer" class="main-button clear-button">Community Volunteer</a>
+                    <a href="#council" class="main-button clear-button">Advisory Council Member</a>
+                    <a href="#opportunities" class="main-button clear-button">Reaching Out with Yoga</a>
                 </div>
             </header><!-- .entry-header -->
             <section id="instructor" class="container-two">
@@ -40,12 +40,12 @@ get_header(); ?>
             </section>
             <section id="volunteer" class="container-one">
                 <h2>Community Engagement Volunteer</h2>
-                <p class="info-paragraph"><?php echo esc_html(CFS()->get( 'community_engagement' )); ?></p>
+                <div class="info-paragraph"><?php echo esc_html(CFS()->get( 'community_engagement' )); ?></div>
                 <a href="<?php echo get_page_link(176); ?>" class="grey-button small-button">Apply Now</a>
             </section>
             <section id="council" class="container-three">
                 <h2>Community Council Volunteer</h2>
-                <p class="info-paragraph"><?php echo CFS()->get( 'advisory_council' ); ?></p>
+                <div class="info-paragraph"><?php echo CFS()->get( 'advisory_council' ); ?></div>
                 <a href="<?php echo get_page_link(67); ?>" class="main-button white-button">Contact Us</a>
             </section>
             <section class="container-one">

@@ -28,13 +28,7 @@ add_filter( 'body_class', 'yoga_body_classes' );
  */
 function yoga_pagetemplate_styles() {
 
-
-
     $pages = ['support-us', 'volunteer', 'partner-facility', 'about-us', 'facility-training', 'core-training', 'resources-research', 'events', 'training-for-facilities', 'resources-media', 'modules-home', 'training'];
-
-
-
-
 
     if(!is_page($page = $pages) && !is_front_page()){
         return;
@@ -117,7 +111,7 @@ add_action( 'pre_get_posts', 'yoga_change_sort_order');
 function yoga_headernav_styles() {
 
     $templates = ['page-templates/forms-template.php', 'page-templates/application-submission.php', 'page-templates/quiz-template.php'];
-    $pages = ['current-opportunities', 'contact-us', 'who-we-are', 'modules-home', 'privacy-policy'];
+    $pages = ['current-opportunities', 'contact-us', 'who-we-are', 'modules-home', 'privacy-policy', 'resources-research', 'resources-media'];
 
     if(!is_page_template($template = $templates) && !is_page($page = $pages) && !is_post_type_archive( 'training_modules' ) && !is_home()){
         return;

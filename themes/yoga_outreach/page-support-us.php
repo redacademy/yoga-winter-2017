@@ -57,7 +57,7 @@ get_header(); ?>
                     <a href="<?php echo get_page_link(67); ?>" class="small-button white-button">Contact</a>
                 </div>
             </section>
-            <section class="container-one container-blue">
+            <section id="tshirt" class="container-one container-blue">
                 <div class="accent-background monthly"><div class="background-accent"></div></div>
                 <h2 class="h2-holder">Get a T-Shirt</h2>
                     <div class="contributor">

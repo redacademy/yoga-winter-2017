@@ -1,18 +1,18 @@
 <?php
 /**
- * 
+ *
  *
  * @package Yoga_Outreach_Theme
  */
- 
+
 get_header(); ?>
 
 	<div id="primary" class="content-area partner-facility-content">
 		<main id="main" class="site-main" role="main">
             <header class="entry-header custom-hero-image">
-                <div class="header-info">   
+                <div class="header-info">
                     <h1 class="header-title"><?php the_title(); ?></h1>
-                    <p><?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?></p>
+                    <?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?>
                 </div>
                 <div class="main-button-holder">
                     <a href="#provide" class="main-button clear-button">What We Provide</a>
@@ -23,8 +23,8 @@ get_header(); ?>
             </header><!-- .entry-header -->
             <section id="provide" class="container-one">
                 <h2 class="h2-holder">What We Provide</h2>
-                <p><?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?></p>
-                <p><?php echo esc_html(CFS()->get( 'what_we_provide' )); ?></p>
+                <?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?>
+                <?php echo esc_html(CFS()->get( 'what_we_provide' )); ?>
                 <div class="info-dropdown custom-info-container"><h3>Apply for Partnership</h3><span>+</span></div>
                 <div class="info-field custom-info-container drop-down-info">
                     <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
@@ -53,7 +53,7 @@ get_header(); ?>
                                 </div>
                             <?php endforeach; ?>
                         <?php endif; ?>
-                    </ul> 
+                    </ul>
                 </div>
                 <div class="button-wrap"><a href="<?php echo get_page_link(174); ?>" class="small-button white-button">Apply Now</a></div>
             </section>
