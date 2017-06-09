@@ -23,16 +23,16 @@ get_header(); ?>
             </header><!-- .entry-header -->
             <section id="provide" class="container-one">
                 <h2 class="h2-holder">What We Provide</h2>
-                <?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?>
-                <?php echo esc_html(CFS()->get( 'what_we_provide' )); ?>
+                <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?></div>
+                <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'what_we_provide' )); ?></div>
                 <div class="info-dropdown custom-info-container"><h3>Apply for Partnership</h3><span>+</span></div>
                 <div class="info-field custom-info-container drop-down-info">
                     <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
-                    <div class="button-wrap"><a href="<?php echo get_page_link(174); ?>" class="small-button white-button">Apply Now</a></div>
+                    <a href="<?php echo get_page_link(174); ?>" class="dark-button main-button apply-button">Apply Now</a>
                 </div>
             </section>
             <section id="perspective" class="container-two">
-                <h2 class="h2-holder">A Facility Perspective</h2>
+                <h2 class="facility-h2">A Facility Perspective</h2>
                 <?php if(!empty(CFS()->get( 'facility_video' ))): ?><span class="video-link"><?php echo CFS()->get( 'facility_video' )?></span><?php endif; ?>
                 <?php if(empty(CFS()->get( 'facility_video' ))): ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/video-placeholder.jpg" /><?php endif; ?>
             </section>
@@ -55,7 +55,7 @@ get_header(); ?>
                         <?php endif; ?>
                     </ul>
                 </div>
-                <div class="button-wrap"><a href="<?php echo get_page_link(174); ?>" class="small-button white-button">Apply Now</a></div>
+                <a href="<?php echo get_page_link(174); ?>" class="dark-button main-button apply-button">Apply Now</a>
             </section>
             <section id="partners" class="container-three partner-facility">
                 <h2 class="h2-holder">Our Current Partners</h2>

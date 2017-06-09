@@ -51,7 +51,6 @@ get_header(); ?>
             <section class="container-one">
                 <h2>Benefits for Volunteers</h2>
                 <div class = "list-container">
-                    <div class="decorative-line"></div>
                     <ul>
                         <?php
                         $fields = CFS()->get( 'volunteer_benefits' ); // returns an array of posts

@@ -4631,6 +4631,8 @@ object {
       text-decoration: none; }
       .volunteer-content .site-main .main-button a a:visited, .partner-facility-content .site-main .main-button a a:visited, .support-us-content .site-main .main-button a a:visited {
         color: #fff; }
+  .volunteer-content .site-main .apply-button, .partner-facility-content .site-main .apply-button, .support-us-content .site-main .apply-button {
+    margin: 2% auto; }
   .volunteer-content .site-main .small-button, .partner-facility-content .site-main .small-button, .support-us-content .site-main .small-button {
     width: 173px;
     height: 44px;
@@ -4681,12 +4683,11 @@ object {
       margin-bottom: 165px; }
       @media (min-width: 720px) {
         .volunteer-content .site-main #instructor ol, .partner-facility-content .site-main #instructor ol, .support-us-content .site-main #instructor ol {
-          margin-bottom: 50px; } }
+          margin-bottom: 30px; } }
     .volunteer-content .site-main #instructor .button-wrap, .partner-facility-content .site-main #instructor .button-wrap, .support-us-content .site-main #instructor .button-wrap {
       position: absolute;
       -ms-flex-pack: center;
           justify-content: center;
-      bottom: 40px;
       width: 100vw; }
       @media (min-width: 720px) {
         .volunteer-content .site-main #instructor .button-wrap, .partner-facility-content .site-main #instructor .button-wrap, .support-us-content .site-main #instructor .button-wrap {
@@ -4720,11 +4721,17 @@ object {
   .volunteer-content .site-main header, .volunteer-content .site-main section > *, .partner-facility-content .site-main header, .partner-facility-content .site-main section > *, .support-us-content .site-main header, .support-us-content .site-main section > * {
     padding: 15px; }
   .volunteer-content .site-main section .info-paragraph, .partner-facility-content .site-main section .info-paragraph, .support-us-content .site-main section .info-paragraph {
-    text-align: left; }
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1020px;
+    padding: 2% 0; }
+  .volunteer-content .site-main section .info-p-center, .partner-facility-content .site-main section .info-p-center, .support-us-content .site-main section .info-p-center {
+    text-align: center; }
   .volunteer-content .site-main .container-blue, .partner-facility-content .site-main .container-blue, .support-us-content .site-main .container-blue {
     background-color: rgba(159, 171, 183, 0.6); }
   .volunteer-content .site-main .container-one, .partner-facility-content .site-main .container-one, .support-us-content .site-main .container-one {
-    padding: 2% 0;
+    padding: 5% 0;
     position: relative; }
     .volunteer-content .site-main .container-one h2, .volunteer-content .site-main .container-one p, .volunteer-content .site-main .container-one .info-dropdown, .partner-facility-content .site-main .container-one h2, .partner-facility-content .site-main .container-one p, .partner-facility-content .site-main .container-one .info-dropdown, .support-us-content .site-main .container-one h2, .support-us-content .site-main .container-one p, .support-us-content .site-main .container-one .info-dropdown {
       margin: 0 auto;
@@ -4803,6 +4810,8 @@ object {
       margin: 0 auto;
       width: 100%;
       max-width: 1020px; }
+    .volunteer-content .site-main .container-two .facility-h2, .partner-facility-content .site-main .container-two .facility-h2, .support-us-content .site-main .container-two .facility-h2 {
+      color: #fff; }
   .volunteer-content .site-main .container-three, .partner-facility-content .site-main .container-three, .support-us-content .site-main .container-three {
     padding: 5% 0;
     width: 100vw;
@@ -4854,6 +4863,11 @@ object {
     right: 5%; }
   .volunteer-content .main-carousel .flickity-prev-next-button.previous, .partner-facility-content .main-carousel .flickity-prev-next-button.previous, .support-us-content .main-carousel .flickity-prev-next-button.previous {
     left: 5%; }
+
+@media (min-width: 720px) {
+  .volunteer-content .info-dropdown h3, .partner-facility-content .info-dropdown h3, .support-us-content .info-dropdown h3 {
+    margin: 0 auto;
+    text-align: center; } }
 
 /* Volunteer */
 .volunteer-content ol {
