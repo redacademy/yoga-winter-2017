@@ -125,7 +125,10 @@ function yoga_headernav_styles() {
         }
         #site-navigation #primary-menu .menu-item-type-post_type a{
             color: #4a4a4a;
-        }";
+        }
+        .mainmenu-list fieldset .searchAppear::placeholder{
+            color: #4a4a4a;
+		}";
     wp_add_inline_style( 'yoga-outreach-style', $header_css );
 }
 add_action( 'wp_enqueue_scripts', 'yoga_headernav_styles' );

@@ -1063,6 +1063,12 @@ p {
           color: #b6eaff; }
     .mainmenu-list fieldset .searchAppear {
       width: 170px; }
+      .mainmenu-list fieldset .searchAppear::-webkit-input-placeholder {
+        color: white; }
+      .mainmenu-list fieldset .searchAppear:-ms-input-placeholder {
+        color: white; }
+      .mainmenu-list fieldset .searchAppear::placeholder {
+        color: white; }
 
 #primary-menu {
   display: -ms-flexbox;
@@ -1661,28 +1667,36 @@ footer {
 .error404 .nothing-found, .search-no-results .nothing-found {
   text-align: center; }
 
-.error404 .search-form, .search-no-results .search-form {
+.error404 .page-content .search-form, .search-no-results .page-content .search-form {
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
-  .error404 .search-form fieldset, .search-no-results .search-form fieldset {
+  .error404 .page-content .search-form fieldset, .search-no-results .page-content .search-form fieldset {
     border: none;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row; }
 
-.error404 .page-title, .search-no-results .page-title {
+.error404 .page-content .page-title, .search-no-results .page-content .page-title {
   text-align: center; }
 
-.error404 .general-button, .search-no-results .general-button {
+.error404 .page-content .general-button, .search-no-results .page-content .general-button {
   width: 150px;
   border: none;
   box-shadow: none;
   color: white;
-  background-color: #94bfd1; }
+  background-color: #94bfd1;
+  margin: 0 auto; }
+
+.error404 .page-content fieldset, .search-no-results .page-content fieldset {
+  text-align: center;
+  width: 50%; }
+  .error404 .page-content fieldset input, .search-no-results .page-content fieldset input {
+    margin: 25px 0;
+    width: 300px; }
 
 .error404 .widget_recent_entries, .search-no-results .widget_recent_entries {
   margin-top: 50px; }
@@ -1699,13 +1713,6 @@ footer {
 .error404 .page-content, .search-no-results .page-content {
   max-width: 1020px;
   margin: 0 auto; }
-
-.error404 fieldset, .search-no-results fieldset {
-  text-align: center;
-  width: 50%; }
-  .error404 fieldset input, .search-no-results fieldset input {
-    margin: 25px 0;
-    width: 300px; }
 
 .error404 .widget li, .search-no-results .widget li {
   list-style: none; }
@@ -6399,8 +6406,9 @@ http://flickity.metafizzy.co
 
 .search .site-main {
   text-align: center;
-  background-color: #dbe8ff;
-  padding: 2rem; }
+  padding: 2rem;
+  max-width: 1024px;
+  margin: 0 auto; }
 
 .search h1 {
   font-size: 24px;

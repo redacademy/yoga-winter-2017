@@ -5,27 +5,40 @@
     .nothing-found{
         text-align: center;
     }
-    .search-form{
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
+    .page-content{
+        .search-form{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+
+            fieldset{
+                border: none;
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        .page-title{
+            text-align:center;
+        }
+        .general-button{
+            width:150px;
+            border: none;
+            box-shadow: none;
+            color: white;
+            background-color: $mainbutton_color;
+            margin: 0 auto;
+        }
 
         fieldset{
-            border: none;
-            display: flex;
-            flex-direction: row;
+            text-align: center;
+            width: 50%;
+                input{
+                    margin: 25px 0;
+                    width: 300px;
+                }
         }
     }
-    .page-title{
-        text-align:center;
-    }
-    .general-button{
-        width:150px;
-        border: none;
-        box-shadow: none;
-        color: white;  
-        background-color: $mainbutton_color;
-    }
+
     .widget_recent_entries{
         margin-top:50px;
         a{
@@ -42,15 +55,6 @@
     .page-content{
         max-width: 1020px;
         margin: 0 auto;
-    }
-
-    fieldset{
-        text-align: center;
-        width: 50%;
-            input{
-                margin: 25px 0;
-                width: 300px;
-            }
     }
 
     .widget li{

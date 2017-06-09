@@ -1,9 +1,9 @@
 .search{
-
   .site-main{
     text-align: center;
-    background-color: #dbe8ff;
     padding: 2rem;
+    max-width: $site_container;
+    margin: 0 auto;
   }
   h1{
     font-size: 24px;
@@ -15,7 +15,7 @@
   a{
     text-decoration: none;
     color: #6b747d;
-     &:hover{
+    &:hover{
         color:#6a99e8;
       }
   }
