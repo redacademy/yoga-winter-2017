@@ -5050,7 +5050,8 @@ object {
     padding: 5% 7%;
     position: relative;
     font-size: 14px;
-    color: #4a4a4a; }
+    color: #4a4a4a;
+    background: rgba(192, 218, 229, 0.6); }
     @media (min-width: 720px) {
       .home .trauma-approach {
         font-size: 24px; } }
@@ -5128,11 +5129,19 @@ object {
       @media (min-width: 720px) {
         .home .program-list .yoga-foryouth .background-accent {
           display: none; } }
+  .home .video-section {
+    margin-top: 1rem; }
+    @media (min-width: 720px) {
+      .home .video-section {
+        marin-top: 0; } }
   .home .get-involved {
     position: relative; }
     .home .get-involved h2 {
-      padding: 1rem;
+      padding: 1.5rem 1rem 2rem 1rem;
       color: #4a4a4a; }
+      @media (min-width: 720px) {
+        .home .get-involved h2 {
+          padding: 2.5rem 1rem 2rem 1rem; } }
     @media (min-width: 720px) {
       .home .get-involved .involved-wrap {
         display: -ms-flexbox;
@@ -5221,6 +5230,9 @@ object {
     margin-top: 40px; }
     .home .team-container h2 {
       color: #4a4a4a; }
+      @media (min-width: 720px) {
+        .home .team-container h2 {
+          padding: 2.5rem 0 1rem 0; } }
     .home .team-container .team-list.main-carousel {
       background-color: #fff; }
     .home .team-container .main-carousel {
