@@ -1,53 +1,58 @@
-<?php 
-/** 
+<?php
+/**
  * @package Yoga_Outreach_Theme
  */
 
 get_header(); ?>
 	<div id="primary" class="content-area core-training-content">
 		<main id="main" class="site-main" role="main">
-			<header class = "general-template-section custom-hero-image">
+			<header class = "general-template-section custom-hero-image"></header><!--general-template-section core-hero-->
+			<section>
 				<?php
-                while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
-				<div class="entry-content-page">
-					<h1 class ="page-title-header"><?php the_title(); ?></h1>
-                	<?php the_content(); ?> <!-- Page Content -->
-					<div class="general-button-container">
-						<a href="training-for-facilities" class="general-button grey-button">For Facilities</a>
-					</div><!--general-button-container-->
-                </div><!--entry-content-page-->
+				while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside aWP Loop -->
+					<div class="page-main-header">
+						<h1><?php the_title(); ?></h1>
+						<?php the_content(); ?> <!-- Page Content -->
+						<div class="button-container">
+							<a href="training-for-facilities" class="general-button grey-button">For Facilities</a>
+						</div><!--general-button-container-->
+					</div><!--entry-content-page-->
 				<?php
-                endwhile; //resetting the page loop
-                wp_reset_query(); //resetting the page query
-                ?>
-			</header><!--general-template-section core-hero-->
-            <section class="section-15px-padding">
-				<div class="core-h3-container">
-                	<p class="core-header">Yoga Outreach Core Training ™</p>
-				</div><!--core-h3-container-->
-				<div class="register-button-para-container">
-					<button  class="register-online-button">
-						<a href="<?php echo CFS()->get('pdf_file'); ?>">Learning PDF</a>
-					</button>
-					<button class="book-training-button register-online-button register2">
-						<a href="core-training-application-form">Register Online</a>
-					</button>
-					<div class="small-para-container">
-						<p class="small-para">- Yoga Alliance 24 Continuing Education Non-Contact hrs</p>
-						<p class="small-para">- BCRPA Continuing Education Credits</p>
-					</div><!--small-para-container"-->
-				</div><!--register-button-para-cotnainer-->
-				<div class="avail-online-heading-container">
-					<div class="earth-logo-change"></div>
-					<h3 class="avail-online-h3">available online and in-classroom format!</h3>
-				</div><!--avail-online-heading-container-->
-				<div class="main-paragraph-container">
-					<?php $allowed_html = array('br' => array()); ?> 
-					<p class="light-first-para"><?php echo wp_kses(CFS()->get('first_core_para'),$allowed_html); ?></p>
-					<p class="dark-second-para"><?php echo esc_html(CFS()->get('second_core_para')); ?></p>
-				</div><!--main-paragraph-container-->
+				endwhile; //resetting the page loop
+				wp_reset_query(); //resetting the page query
+				?>
+			</section>
+            <section class="training-body-content-contain">
+				<div class="training-body-content">
+					<div class="core-h3-container">
+						<p class="core-header">Yoga Outreach Core Training ™</p>
+					</div><!--core-h3-container-->
+					<div class="register-button-para-container">
+						<button  class="register-online-button">
+							<a href="<?php echo CFS()->get('pdf_file'); ?>">Learning PDF</a>
+						</button>
+						<button class="book-training-button register-online-button register2">
+							<a href="core-training-application-form">Register Online</a>
+						</button>
+						<div class="small-para-container">
+							<p class="small-para">- Yoga Alliance 24 Continuing Education Non-Contact hrs</p>
+							<p class="small-para">- BCRPA Continuing Education Credits</p>
+						</div><!--small-para-container"-->
+					</div><!--register-button-para-cotnainer-->
+					<div class="avail-online-heading-container">
+						<div class="earth-logo-change"></div>
+						<h3 class="avail-online-h3">available online and in-classroom format!</h3>
+					</div><!--avail-online-heading-container-->
+					<div class="main-paragraph-container">
+						<?php $allowed_html = array('br' => array()); ?>
+						<p class="light-first-para"><?php echo wp_kses(CFS()->get('first_core_para'),$allowed_html); ?></p>
+						<p class="dark-second-para"><?php echo esc_html(CFS()->get('second_core_para')); ?></p>
+					</div><!--main-paragraph-container-->
+				</div>
 			</section><!--section-15px-padding-->
+
 			<div class="testimonial-container">
+				<h2 class="testimonial-title">Testimonial</h2>
 				<ul class="testimonial-list main-carousel">
 					<?php
 					$testimonials = CFS()->get('testimonial_list');
@@ -58,6 +63,7 @@ get_header(); ?>
 					<?php endif ?>
 				</ul>
 			</div><!--testimonial-container-->
+
 			<div class="table-section-container">
 				<section class="section-15px-padding online-dates-section">
 					<div class="online-class-icon-heading-container">
@@ -122,11 +128,11 @@ get_header(); ?>
                   <li class="training-list-item">
             <div id="training-pdf-container">
               <?php if(!empty($infoPDF)): ?>
-              <h3><?php echo esc_html($infoItem ['list_title']);?></h3>
+              <h3 class="summary-title"><?php echo esc_html($infoItem ['list_title']);?></h3>
                         <a class="pdf-file" href ="<?php echo esc_html($infoItem ['list_file_upload']);?>">PDF</a>
             </div><!--training-pdf-container-->
-            <?php 
-            endif; 
+            <?php
+            endif;
             ?>
                       <?php if(!empty($infoContent)): ?>
             <div class ="info-dropdown">
@@ -134,7 +140,7 @@ get_header(); ?>
               <span>+</span>
             </div><!--tools-first-heading-->
             <div class="info-field">
-				<?php $allowed_html = array('br' => array()); ?> 
+				<?php $allowed_html = array('br' => array()); ?>
                 <p class="info-list-content"><?php echo wp_kses($infoItem ['list_content'], $allowed_html); ?></p>
 			</div><!--info-field-->
             <?php endif; ?>

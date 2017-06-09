@@ -1,14 +1,37 @@
 .core-training-content{
-    
+
+    .training-body-content-contain{
+        @include desktop{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .training-body-content{
+        padding: 30px 15px;
+        @include desktop{
+            max-width: 1020px;
+            padding: 50px 15px;
+        }
+    }
+
     .testimonial-container{
+        text-align: center;
+        padding-top: 30px;
         background-color: #ebe5d8;
+        .testimonial-title{
+            font-size: 2rem;
+            font-style: italic;
+        }
     }
     .flickity-viewport{
         overflow: auto;
         position: static;
         @include desktop{
-          overflow:hidden;
-          position: relative;
+            height: 100% !important;
+            overflow:hidden;
+            position: relative;
+            padding: 30px;
         }
     }
     .main-carousel{
@@ -22,20 +45,11 @@
         @include desktop{
            max-width: 1020px;
            margin: 0 auto;
+           padding: 15px 30px;
         }
-          .carousel-cell{
-              width: 100%;
-              height: auto;
-              p{
-                  margin-top: 20px;
-              }
-              h1{
-                  color: $darktext_color;
-              }
-          }
           ol{
               display: none;
-          }    
+          }
           .flickity-prev-next-button{
               border: none;
               background: none;
@@ -51,14 +65,26 @@
         margin-bottom:18px;
     }
 
-    .carousel-cell.is-selected{
-        padding-left: 2rem;
-        padding-right: 2rem;
+    .carousel-cell{
+        height: auto;
+        align-items: center;
+        padding: 0 3rem;
         line-height:20px;
-            @include desktop{
-                display: flex;
-                justify-content: center;
-            }
+        @include desktop{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+        margin-top: 20px;
+        }
+        h1{
+            color: $darktext_color;
+        }
+    }
+    .carousel-cell.is-selected{
+        height: auto;
+        width:100%;
+        text-align:center;
     }
 
     .core-header{
@@ -67,13 +93,13 @@
         color:$mediumtheme_color;
         font-size:20px;
         line-height:24px;
-        margin-top:35px;
         font-weight:600;
-            @include desktop{
-                font-size:40px;
-                width:700px;
-            }
+        @include desktop{
+            font-size:40px;
+            width:700px;
+        }
     }
+
 
     .register-online-button{
         display:flex;
@@ -97,17 +123,17 @@
             display:flex;
             justify-content:space-around;
             margin: 30px auto;
-           
+
         }
     }
 
     .book-training-button{
-        margin:0 auto; 
+        margin:0 auto;
         @include desktop{
             margin-right:0;
             a{
                 text-align: center;
-            }     
+            }
         }
     }
 
@@ -149,7 +175,7 @@
             font-size:18px;
             line-height:30px;
         }
- 
+
 
     .general-button{
         @include general-button;
@@ -178,7 +204,7 @@
     .general-template-section{
         height:80vh;
             @include desktop{
-                height:100vh;
+                height:70vh;
             }
     }
 
@@ -274,7 +300,7 @@
             margin-top: 12px;
         }
     }
-    
+
     .light-training-para{
         color:#6B747D;
         font-size:14px;
@@ -327,17 +353,21 @@
     }
     .traininglist-container{
       background-color:#C7D5E2;
-      margin-bottom: 3%;
     }
 
     .training-list{
-        margin-bottom:32px;
+        height:auto;
+        width:100%;
+        margin:0;
+        list-style:none;
+        padding: 50px 15px;
+        background-color:#C7D5E2;
         @include desktop{
           max-width: 1020px;
           margin: 0 auto;
         }
     }
-            
+
     .training-date-text{
         font-size:11px;
         color:$darktheme_color;
@@ -366,21 +396,58 @@
 		margin-bottom:5px;
 		align-items:center;
 		flex-wrap:wrap;
-			a{
-				background-color:#fff;
-				width:80px;
-				height:44px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				text-decoration: none;
-				border-radius:8px;
-				border:1px solid white;
-                    @include desktop{
-                        margin-top:10px;
-                    }
-			}
+		a{
+			background-color:#fff;
+			width:80px;
+			height:44px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			border-radius:8px;
+			border:1px solid white;
+                @include desktop{
+                    margin-top:10px;
+                }
+		}
+        a:hover{
+            background-color: $another_color;
+        }
+        .summary-title {
+            font-size: 2rem;
+        }
 	}
+
+    .training-list-item{
+        font-weight:500;
+        font-size:14px;
+            .info-field, .info-dropdown{
+                background-color:#C7D5E2;
+                border-bottom:none;
+                width:100vw;
+                padding:0;
+                    span{
+                        color:$darktheme_color;
+                            font-weight:200;
+                    }
+
+            }
+    }
+
+    .page-subtitle{
+        color:white;
+        font-size:16px;
+        padding:0 1rem;
+        text-align:center;
+        line-height:25px;
+    }
+
+    .max-width-1024{
+        max-width:1024px;
+        margin:0 auto;
+    }
+
+
 
     .house-logo{
         width:27.94px;
@@ -396,7 +463,8 @@
         display:inline-block;
         width:70px;
         font-size:1rem;
-        margin-left:6px;
+        font-weight: bold;
+        margin-left: 6px;
     }
 
     .training-table-data{
@@ -421,6 +489,7 @@
 
     .online-dates-section,.classroom-dates-section{
         @include desktop{
+            height: 410px;
             width:45vw;
             padding:0;
             max-width:400px;
@@ -429,7 +498,7 @@
     }
 
     .table-content{
-        font-size:11px;
+        font-size: .9rem;
     }
 
     .yoga-info-title{
@@ -443,7 +512,7 @@
 	}
 
     tr{
-       
+
             td{
                 margin-top:9px;
             }
@@ -461,10 +530,6 @@
                 }
     }
 
-    .training-list{
-        background-color:#C7D5E2;
-    }
-
     .dates-table{
         .classroom-tr{
             height: 140px;
@@ -473,11 +538,6 @@
             flex-direction: column;
             justify-content: space-around;
         }
-    }
-
-    .carousel-cell.is-selected{
-        width:100%;
-        text-align:center;
     }
 
      .black-text{
