@@ -808,7 +808,7 @@ body {
   text-align: center;
   -ms-flex-align: center;
       align-items: center;
-  height: 250px;
+  height: 30vh;
   width: 100%;
   padding: 25px;
   background-color: #f4f1ea; }
@@ -3276,6 +3276,7 @@ a:hover, a:active {
 
 @media (min-width: 720px) {
   .core-training-content .training-body-content-contain {
+    height: 70vh;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -3293,8 +3294,16 @@ a:hover, a:active {
   padding-top: 30px;
   background-color: #ebe5d8; }
   .core-training-content .testimonial-container .testimonial-title {
-    font-size: 2rem;
-    font-style: italic; }
+    max-width: 1040px;
+    margin: 0 auto;
+    color: #6b747d;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #6b747d; }
+  @media (min-width: 720px) {
+    .core-training-content .testimonial-container {
+      padding-top: 50px;
+      height: 30vh; } }
 
 .core-training-content .flickity-viewport {
   overflow: auto;
@@ -5565,6 +5574,7 @@ object {
 
 @media (min-width: 720px) {
   .core-training-content .training-body-content-contain {
+    height: 70vh;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -5582,8 +5592,16 @@ object {
   padding-top: 30px;
   background-color: #ebe5d8; }
   .core-training-content .testimonial-container .testimonial-title {
-    font-size: 2rem;
-    font-style: italic; }
+    max-width: 1040px;
+    margin: 0 auto;
+    color: #6b747d;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #6b747d; }
+  @media (min-width: 720px) {
+    .core-training-content .testimonial-container {
+      padding-top: 50px;
+      height: 30vh; } }
 
 .core-training-content .flickity-viewport {
   overflow: auto;
