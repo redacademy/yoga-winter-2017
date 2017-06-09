@@ -9,18 +9,19 @@ get_header(); ?>
 
 	<div id="primary" class="content-area partner-facility-content">
 		<main id="main" class="site-main" role="main">
-            <header class="entry-header custom-hero-image">
-                <div class="header-info">
+            <header class="entry-header custom-hero-image"></header><!-- .entry-header -->
+            <section class="page-main-header">
+                <div>
                     <h1 class="header-title"><?php the_title(); ?></h1>
                     <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?></div>
                 </div>
-                <div class="main-button-holder">
-                    <a href="#provide" class="main-button clear-button">What We Provide</a>
-                    <a href="#perspective" class="main-button clear-button">A Facility Perspective</a>
-                    <a href="#program" class="main-button clear-button">Receive your Program</a>
-                    <a href="#partners" class="main-button clear-button">Our Current Partners</a>
+                <div class="button-container">
+                    <a href="#provide" class="general-button grey-button">What We Provide</a>
+                    <a href="#perspective" class="general-button grey-button">A Facility Perspective</a>
+                    <a href="#program" class="general-button grey-button">Receive your Program</a>
+                    <a href="#partners" class="general-button grey-button">Our Current Partners</a>
                 </div>
-            </header><!-- .entry-header -->
+            </section>
             <section id="provide" class="container-one">
                 <h2 class="h2-holder">What We Provide</h2>
                 <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?></div>

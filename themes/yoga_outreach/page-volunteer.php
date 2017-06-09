@@ -13,7 +13,7 @@ get_header(); ?>
             <section class="page-main-header">
                 <div>
                     <h1 class="header-title"><?php the_title(); ?></h1>
-                    <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
+                    <p class="info-paragraph info-p-center">We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
                 </div>
                 <div class="button-container">
                     <a href="#instructor" class="general-button grey-button">Become a Teacher</a>
