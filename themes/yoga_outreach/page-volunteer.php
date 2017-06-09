@@ -31,7 +31,7 @@ get_header(); ?>
                         foreach ( $fields as $field ):?>
                             <div class="volunteer-steps">
                                 <li>
-                                <p class="volunteer-step"><?php echo esc_html($field['volunteer_step']); ?></p>
+                                <p class="volunteer-step"><?php echo $field['volunteer_step']; ?></p>
                                 </li>
                             </div>
                         <?php endforeach; ?>
@@ -41,7 +41,7 @@ get_header(); ?>
             </section>
             <section id="volunteer" class="container-one">
                 <h2>Community Engagement Volunteer</h2>
-                <div class="info-paragraph"><?php echo esc_html(CFS()->get( 'community_engagement' )); ?></div>
+                <div class="info-paragraph"><?php echo CFS()->get( 'community_engagement' ); ?></div>
                 <a href="<?php echo get_page_link(176); ?>" class="grey-button small-button">Apply Now</a>
             </section>
             <section id="council" class="container-three">
