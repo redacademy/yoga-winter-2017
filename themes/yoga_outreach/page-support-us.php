@@ -48,7 +48,6 @@ get_header(); ?>
                 <div><a href="<?php echo esc_url(CFS()->get( 'donation_page_url' ));?>" target="_blank" class="main-button white-button">Donate Now</a></div>
             </section>
             <section id="sponsor" class="container-one">
-                <div class="accent-background"><div class="background-accent"></div></div>
                 <h2 class="h2-holder">Become a Sponsor</h2>
                 <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'event_sponsor' )); ?></div>
                 <div class="button-wrap">

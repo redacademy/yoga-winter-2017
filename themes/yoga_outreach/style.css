@@ -877,7 +877,6 @@ body {
   background-color: #94bfd1; }
 
 .testimonial-list.main-carousel {
-  height: 100px;
   list-style: none;
   margin: 0;
   text-align: center;
@@ -4704,7 +4703,7 @@ object {
   .volunteer-content .site-main #instructor, .partner-facility-content .site-main #instructor, .support-us-content .site-main #instructor {
     position: relative; }
     .volunteer-content .site-main #instructor ol, .partner-facility-content .site-main #instructor ol, .support-us-content .site-main #instructor ol {
-      margin-bottom: 165px; }
+      margin-bottom: 100px; }
       @media (min-width: 720px) {
         .volunteer-content .site-main #instructor ol, .partner-facility-content .site-main #instructor ol, .support-us-content .site-main #instructor ol {
           margin-bottom: 30px; } }
@@ -4977,7 +4976,7 @@ object {
 
 /* Partner Facility */
 #sponsor {
-  padding: 0; }
+  padding-bottom: 0; }
 
 .home {
   margin: 0 auto;

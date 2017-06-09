@@ -36,7 +36,7 @@ get_header(); ?>
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </ol>
-                <div class="button-wrap"><a href="<?php echo get_page_link(176); ?>" class="small-button white-button">Apply Now</a></div>
+                <a href="<?php echo get_page_link(176); ?>" class="dark-button main-button apply-button">Apply Now</a>
             </section>
             <section id="volunteer" class="container-one">
                 <h2>Community Engagement Volunteer</h2>
