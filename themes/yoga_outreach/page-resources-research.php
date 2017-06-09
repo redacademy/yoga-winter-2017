@@ -7,6 +7,7 @@
 get_header(); ?>
 	<div id="primary" class="content-area resources-research-content">
 		<main id="main" class="site-main" role="main">
+			<header class = "general-template-section custom-hero-image"></header>
 			<div class="main-header-contain">
 				<?php
                 while ( have_posts() ) : the_post(); ?>

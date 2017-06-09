@@ -448,7 +448,7 @@ table {
   width: 100%; }
 
 button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -469,6 +469,9 @@ button {
   -ms-flex-align: center;
       align-items: center;
   text-decoration: none; }
+  @media (min-width: 720px) {
+    button {
+      width: 230px; } }
 
 .who-we-are-content {
   width: 100%;
@@ -784,7 +787,6 @@ body {
   top: 7rem; }
   @media (min-width: 720px) {
     .entry-content-page {
-      top: 12rem;
       font-size: 24px; } }
 
 .entry-content-page p {
@@ -808,10 +810,13 @@ body {
   text-align: center;
   -ms-flex-align: center;
       align-items: center;
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   padding: 25px;
   background-color: #f4f1ea; }
+  @media (min-width: 720px) {
+    .page-main-header {
+      height: 30vh; } }
 
 .button-container {
   width: 100%;
@@ -1510,7 +1515,7 @@ footer {
         color: #000;
         padding-bottom: 22px; } }
   .contact-us-content .email-inquiries a {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -1536,6 +1541,9 @@ footer {
     text-align: center;
     padding: 12px;
     margin-bottom: 54px; }
+    @media (min-width: 720px) {
+      .contact-us-content .email-inquiries a {
+        width: 230px; } }
   .contact-us-content .email-inquiries .email-info {
     width: 100%; }
     @media (min-width: 720px) {
@@ -1700,7 +1708,7 @@ footer {
         background-size: cover, cover;
         background-position: left 0px top 0px; } }
   .about-us-content .general-button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -1722,6 +1730,9 @@ footer {
         align-items: center;
     text-decoration: none;
     margin-bottom: 29px; }
+    @media (min-width: 720px) {
+      .about-us-content .general-button {
+        width: 230px; } }
   @media (min-width: 720px) {
     .about-us-content .page-title-header, .about-us-content .entry-content-page {
       color: #fff; } }
@@ -2338,7 +2349,7 @@ footer {
 .page-template-forms-template .app-form .gform_footer {
   background-color: #f3f0e9; }
   .page-template-forms-template .app-form .gform_footer input.gform_button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -2362,6 +2373,9 @@ footer {
     color: #4a4a4a;
     margin: 0 auto;
     background-color: #fff; }
+    @media (min-width: 720px) {
+      .page-template-forms-template .app-form .gform_footer input.gform_button {
+        width: 230px; } }
 
 .page-template-forms-template .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) label, .page-template-forms-template .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) div {
   max-width: 1020px !important;
@@ -2409,7 +2423,7 @@ footer {
   background-color: #4a4a4a; }
 
 .entry-content .gform_wrapper .gform_next_button, .entry-content .gform_wrapper .gform_button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -2434,9 +2448,12 @@ footer {
   background-color: #94bfd1;
   margin: 15px;
   display: inline; }
+  @media (min-width: 720px) {
+    .entry-content .gform_wrapper .gform_next_button, .entry-content .gform_wrapper .gform_button {
+      width: 230px; } }
 
 .entry-content .gform_wrapper .gform_previous_button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -2459,6 +2476,9 @@ footer {
   text-decoration: none;
   color: #4a4a4a;
   background-color: #c1d3da; }
+  @media (min-width: 720px) {
+    .entry-content .gform_wrapper .gform_previous_button {
+      width: 230px; } }
 
 .entry-content .gform_wrapper .percentbar_blue {
   background-color: #95afc9; }
@@ -2488,7 +2508,7 @@ footer {
 .gform_confirmation_message {
   text-align: center; }
   .gform_confirmation_message .main-button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -2510,6 +2530,9 @@ footer {
         align-items: center;
     text-decoration: none;
     margin: 25px auto; }
+    @media (min-width: 720px) {
+      .gform_confirmation_message .main-button {
+        width: 230px; } }
     .gform_confirmation_message .main-button.grey-button {
       background-color: #94bfd1; }
       .gform_confirmation_message .main-button.grey-button a {
@@ -2519,7 +2542,7 @@ footer {
         .gform_confirmation_message .main-button.grey-button:hover a {
           color: #4a4a4a; }
   .gform_confirmation_message .gform_button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -2543,6 +2566,9 @@ footer {
     color: #4a4a4a;
     background-color: #94bfd1;
     margin: 15px auto; }
+    @media (min-width: 720px) {
+      .gform_confirmation_message .gform_button {
+        width: 230px; } }
 
 /* Buttons */
 button,
@@ -2746,6 +2772,11 @@ a:hover, a:active {
 
 .training-content {
   font-family: 'raleway',sans-serif; }
+  .training-content .training-body-container {
+    background-color: #ebe5d8;
+    padding: 50px; }
+  .training-content .general-template-section {
+    height: 70vh; }
   .training-content .main-h3-container h3 {
     color: #4a4a4a;
     font-weight: 200;
@@ -2759,7 +2790,8 @@ a:hover, a:active {
         font-size: 34px;
         color: #000;
         width: 60vw;
-        text-align: left; } }
+        text-align: left;
+        margin: 0; } }
   .training-content .main-h3-container p {
     color: #4a4a4a;
     line-height: 24px;
@@ -2778,9 +2810,6 @@ a:hover, a:active {
     text-align: left; }
   .training-content .for-training-section {
     margin-top: 31px; }
-    @media (min-width: 720px) {
-      .training-content .for-training-section {
-        padding-bottom: 20rem; } }
     .training-content .for-training-section img {
       height: 80px;
       width: 80px;
@@ -2788,8 +2817,10 @@ a:hover, a:active {
       @media (min-width: 720px) {
         .training-content .for-training-section img {
           height: auto; } }
+  .training-content .page-title-header, .training-content .entry-content-page {
+    padding: 0; }
   .training-content .general-button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -2809,8 +2840,10 @@ a:hover, a:active {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    text-decoration: none;
-    margin-bottom: 29px; }
+    text-decoration: none; }
+    @media (min-width: 720px) {
+      .training-content .general-button {
+        width: 230px; } }
   .training-content .training-image-bar-container {
     position: relative;
     margin-top: 1.5rem; }
@@ -2882,7 +2915,7 @@ a:hover, a:active {
       height: 700px; } }
 
 .modules-home-content .general-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -2903,6 +2936,9 @@ a:hover, a:active {
   -ms-flex-align: center;
       align-items: center;
   text-decoration: none; }
+  @media (min-width: 720px) {
+    .modules-home-content .general-button {
+      width: 230px; } }
 
 .modules-home-content h2:first-of-type {
   font-size: 24px;
@@ -3099,7 +3135,7 @@ a:hover, a:active {
     font-size: 16px; } }
 
 .training-for-facilities-content .general-button, .training-for-facilities-content .book-training-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -3121,6 +3157,9 @@ a:hover, a:active {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .general-button, .training-for-facilities-content .book-training-button {
+      width: 230px; } }
 
 .training-for-facilities-content .book-training-button {
   margin: 0 auto; }
@@ -3154,7 +3193,7 @@ a:hover, a:active {
   color: black; }
 
 .training-for-facilities-content .general-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -3176,6 +3215,9 @@ a:hover, a:active {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .general-button {
+      width: 230px; } }
 
 .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
   margin-top: 39px; }
@@ -3452,7 +3494,7 @@ a:hover, a:active {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -3471,6 +3513,9 @@ a:hover, a:active {
   align-items: center;
   text-decoration: none;
   background-color: #6B747D; }
+  @media (min-width: 720px) {
+    .core-training-content .register-online-button {
+      width: 230px; } }
   .core-training-content .register-online-button a {
     color: white;
     text-align: center; }
@@ -3527,7 +3572,7 @@ a:hover, a:active {
   line-height: 30px; }
 
 .core-training-content .general-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -3549,6 +3594,9 @@ a:hover, a:active {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .core-training-content .general-button {
+      width: 230px; } }
 
 .core-training-content .register-online-button {
   text-align: center; }
@@ -3884,7 +3932,7 @@ a:hover, a:active {
   color: black; }
 
 .resources-research-content .general-button, .resources-research-content .book-training-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -3906,6 +3954,9 @@ a:hover, a:active {
       align-items: center;
   text-decoration: none;
   margin: 0 auto 26px; }
+  @media (min-width: 720px) {
+    .resources-research-content .general-button, .resources-research-content .book-training-button {
+      width: 230px; } }
 
 .resources-research-content .page-title-header, .resources-research-content .entry-content-page {
   color: #fff; }
@@ -4064,7 +4115,7 @@ a:hover, a:active {
       width: 100%; } }
 
 .resources-media-content .general-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -4086,6 +4137,9 @@ a:hover, a:active {
       align-items: center;
   text-decoration: none;
   margin: 0 auto 26px; }
+  @media (min-width: 720px) {
+    .resources-media-content .general-button {
+      width: 230px; } }
 
 .resources-media-content .main-h3-container h3 {
   padding-top: 35px;
@@ -4397,7 +4451,7 @@ object {
       background-position: left 0px top 0px; } }
 
 .event-content .general-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -4419,6 +4473,9 @@ object {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .event-content .general-button {
+      width: 230px; } }
 
 .event-content .primary-button {
   margin: 0 auto;
@@ -4726,7 +4783,7 @@ object {
             flex-wrap: wrap;
         height: 44.5%; } }
   .volunteer-content .site-main .main-button, .partner-facility-content .site-main .main-button, .support-us-content .site-main .main-button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -4748,6 +4805,9 @@ object {
         align-items: center;
     text-decoration: none;
     margin: 0 auto 26px; }
+    @media (min-width: 720px) {
+      .volunteer-content .site-main .main-button, .partner-facility-content .site-main .main-button, .support-us-content .site-main .main-button {
+        width: 230px; } }
     .volunteer-content .site-main .main-button.clear-button, .partner-facility-content .site-main .main-button.clear-button, .support-us-content .site-main .main-button.clear-button {
       border: 1px solid white; }
       .volunteer-content .site-main .main-button.clear-button:hover, .partner-facility-content .site-main .main-button.clear-button:hover, .support-us-content .site-main .main-button.clear-button:hover {
@@ -5124,7 +5184,7 @@ object {
       .home .what-we-do p {
         font-size: 24px; } }
     .home .what-we-do .general-button {
-      width: 230px;
+      width: 130px;
       height: 44px;
       font-size: 14px;
       text-align: center;
@@ -5147,6 +5207,9 @@ object {
       text-decoration: none;
       background-color: #94bfd1;
       margin-top: 35px; }
+      @media (min-width: 720px) {
+        .home .what-we-do .general-button {
+          width: 230px; } }
       .home .what-we-do .general-button a {
         color: #fff;
         text-shadow: none;
@@ -5468,7 +5531,7 @@ object {
     font-size: 16px; } }
 
 .training-for-facilities-content .general-button, .training-for-facilities-content .book-training-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -5490,6 +5553,9 @@ object {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .general-button, .training-for-facilities-content .book-training-button {
+      width: 230px; } }
 
 .training-for-facilities-content .book-training-button {
   margin: 0 auto; }
@@ -5523,7 +5589,7 @@ object {
   color: black; }
 
 .training-for-facilities-content .general-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -5545,6 +5611,9 @@ object {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .general-button {
+      width: 230px; } }
 
 .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
   margin-top: 39px; }
@@ -5821,7 +5890,7 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -5840,6 +5909,9 @@ object {
   align-items: center;
   text-decoration: none;
   background-color: #6B747D; }
+  @media (min-width: 720px) {
+    .core-training-content .register-online-button {
+      width: 230px; } }
   .core-training-content .register-online-button a {
     color: white;
     text-align: center; }
@@ -5896,7 +5968,7 @@ object {
   line-height: 30px; }
 
 .core-training-content .general-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -5918,6 +5990,9 @@ object {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .core-training-content .general-button {
+      width: 230px; } }
 
 .core-training-content .register-online-button {
   text-align: center; }
@@ -6239,13 +6314,9 @@ http://flickity.metafizzy.co
   outline: none; }
 
 .flickity-viewport {
+  overflow-y: hidden;
   position: relative;
   height: 120%; }
-
-.flickity-slider {
-  position: absolute;
-  width: 100%;
-  height: 100%; }
 
 /* draggable */
 .flickity-enabled.is-draggable {
@@ -6483,7 +6554,7 @@ http://flickity.metafizzy.co
     width: 100%;
     margin: 5% auto 15% auto; }
   .post-type-archive-training_modules .main-button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -6505,6 +6576,9 @@ http://flickity.metafizzy.co
         align-items: center;
     text-decoration: none;
     margin-bottom: 26px; }
+    @media (min-width: 720px) {
+      .post-type-archive-training_modules .main-button {
+        width: 230px; } }
     .post-type-archive-training_modules .main-button.clear-button {
       border: 1px solid white; }
     @media (min-width: 720px) {

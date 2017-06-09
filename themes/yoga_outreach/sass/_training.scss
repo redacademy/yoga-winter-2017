@@ -1,6 +1,14 @@
 .training-content{
     font-family:'raleway',sans-serif;
 
+    .training-body-container{
+        background-color: $another_color;
+        padding: 50px;
+    }
+
+    .general-template-section{
+        height: 70vh;
+    }
     .main-h3-container{
         h3{
             color:$darktext_color;
@@ -15,6 +23,7 @@
                     color:#000;
                     width:60vw;
                     text-align:left;
+                    margin: 0
                 }
             }
         p{
@@ -42,9 +51,6 @@
     }
 
     .for-training-section{
-        @include desktop{
-            padding-bottom:20rem;
-        }
         margin-top:31px;
         img{
             height:80px;
@@ -56,16 +62,13 @@
         }
     }//for-training-section
 
-    // .page-title-header{
-    //     @include desktop{
-    //         color:#4A4A4A;
-    //     }
-    // }
+    .page-title-header{
+        padding: 0;
+    }
 
 
     .general-button{
         @include general-button;
-        margin-bottom:29px;
     }
 
     .training-image-bar-container{

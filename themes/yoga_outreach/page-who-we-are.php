@@ -24,16 +24,16 @@ get_header(); ?>
                     ?>
                 </div><!--hero-text-->
             </header>
-            
+
             <section class="team">
-                <?php $fields= CFS()->get( 'staff_groups' ); ?>  <!--variable to hold staff from loop-->    
+                <?php $fields= CFS()->get( 'staff_groups' ); ?>  <!--variable to hold staff from loop-->
                 <?php if(!empty($fields)): ?>
                     <?php foreach( $fields as $field ): ?>
                         <div class="info-dropdown header-click-text">
                             <h3 class ="staff-header"><?php echo $field[ 'title' ]; ?></h3><span>+</span>
                             <p class="click-text">Click on name</p>
                         </div><!--info-dropdown-->
-                            
+
                         <div class="info-field staff-item-container">
                             <?php if(!empty($field['staff_member'])): ?>
                                 <?php foreach( $field['staff_member'] as $member): ?>
