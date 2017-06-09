@@ -1,5 +1,5 @@
 .resources-research-content{
-    
+
     .info-heading{
         font-size:16px;
         font-weight:100;
@@ -26,7 +26,7 @@
         }
     }
 
-    
+
 
     .teal-button.black-text{
         color:black;
@@ -34,18 +34,16 @@
 
     .general-button, .book-training-button{
 		@include general-button;
-            margin-bottom:29px;
+            margin: 0 auto 26px;
 
 	}
 
 
 
     .page-title-header{
-        @include desktop{
-            color:#fff;
-        }
+        color:#fff;
     }
-    
+
     .max-width-1024{
         display:flex;
         flex-direction:column;
@@ -55,7 +53,7 @@
     .info-heading-subtitle{
         color:#4A4A4A;
     }
-        
+
     .main-h3-container{
         h3{
             @include main-h3;
@@ -79,7 +77,7 @@
             padding-bottom:22px;
             width:262px;
             margin:0 auto;
-            color:$lighttext_color;
+            color:$darktext_color;
             text-align:center;
                 @include desktop{
                     font-size:24px;
@@ -93,7 +91,7 @@
             display:inline;
         }
     }
-    
+
     .text{
         text-decoration:underline;
         font-weight:20px;
@@ -102,7 +100,7 @@
     .resources-article-pdf-list-container{
         background-color:$lighttheme_color;
         font-size:14px;
-    } 
+    }
 
     // PDF List
     .resource-pdf-list{
@@ -116,23 +114,23 @@
         li{
             display:flex;
         a{
-            background-color:#fff;
+            background-color:$base_color;
             width:60px;
             height:33px;
             margin-bottom:7px;
-            border:1px solid #fff;
+            border:1px solid $base_color;
             border-radius:8px;
             display: flex;
             justify-content: center;
             align-items: center;
             text-decoration:none;
-            color:black;
+            color:$darktext_color;
             font-size:10px;
                 @include desktop{
-                     width:80px;
-                     height:44px;
-                     margin-bottom:26px;
-                     font-size:14px;
+                    width:80px;
+                    height:44px;
+                    margin-bottom:26px;
+                    font-size:14px;
                 }
         }
         }
@@ -155,7 +153,7 @@
         color:$darktext_color;
         font-weight:300;
         font-size:14px;
-             @include desktop{
+            @include desktop{
                 font-size:18px;
                 margin-top:6px;
             }
@@ -200,7 +198,7 @@
                         line-height:30px;
                     }
             a{
-                color:$lighttext_color;
+                color:$darktext_color;
                 font-weight:200;
             }
             }

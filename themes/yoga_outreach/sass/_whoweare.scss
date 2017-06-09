@@ -20,7 +20,7 @@
         font-weight: 500;
         @include desktop{
             background-color:#EBE5D8;
-            margin-top:200px;     //Take out once override position absolute on nav
+            margin-top:250px;     //Take out once override position absolute on nav
             padding: 20px 0;
             height:225px;
         }
@@ -138,7 +138,7 @@
             text-decoration: none;
         }
     }
-    
+
     #site-navigation.main-navigation{
         @include desktop{
             position:relative !important;
@@ -171,7 +171,7 @@
         position: fixed;
         height:90vh;
         z-index:10;
-        top: 5vh; 
+        top: 5vh;
         left: 0%;
         display:none;
         margin: 0 auto;

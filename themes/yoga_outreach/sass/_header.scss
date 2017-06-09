@@ -8,45 +8,23 @@ p {
   flex-wrap: wrap;
   align-items: center;
   z-index: 10;
+  background-color: #9fabb7;
   @include desktop {
+    background-color:transparent;
     position: absolute;
     display: flex;
     justify-content: center;
     height: 200px;
   }
-  .signinbutton-container {
-    @include desktop {
-      width: 50%;
-    }
-  }
-  .signin-button {
-    display: none;
-    @include desktop {
-      display: block;
-      width: 150px;
-      height: 45px;
-      background-color: #B6EAFF;
-      border-radius: 8px;
-      box-shadow: none;
-      border: none;
-      a {
-        text-shadow: none;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 14px;
-        color: $darktext_color;
-      }
-    }
-  }
   a {
-    color: $darktheme_color;
+    color: $lighttheme_color2;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.2rem;
   }
   .fa-bars {
-    color: $formtheme_color;
-    font-size: 2.3rem;
+    color: $lighttheme_color2;
+    font-size: 3rem;
     padding: 1rem;
     order: 3;
     @include desktop {
@@ -55,6 +33,7 @@ p {
       right: 50px;
     }
   }
+}
   .mainmenu-list {
     display: none;
     @include desktop {
@@ -117,7 +96,7 @@ p {
 				outline:none;
 			}
       i{
-        color: $darktheme_color;
+        color: $lighttheme_color2;
         font-size: 16px;
         text-shadow: none;
         &:hover{
@@ -225,7 +204,7 @@ p {
           color:$button_color2;
         }
         @include desktop {
-          color: $darktheme_color;
+          color: $lighttheme_color2;
           font-size: 16px;
         }
       }
@@ -237,7 +216,7 @@ p {
           color:$button_color2;
         }
         @include desktop {
-          color: $darktheme_color;
+          color: $lighttheme_color2;
           font-size: 16px;
         }
       }
@@ -259,21 +238,21 @@ p {
       margin: 0 auto;
       a {
         font-size: 14px;
-        color: $darktheme_color;
+        color: $lighttheme_color2;
         &:hover{
           color:$button_color2;
         }
       }
     }
   }
-}
+
 .menu-dropdown {
   display: none;
 }
 .show-dropdown {
   display: block;
   width: 100%;
-  height: 100vh;
+  height: 800px;
   background-color: $lighttheme_color2;
   z-index: 2;
   order: 2;
@@ -297,63 +276,6 @@ p {
     top: 0;
     right: 0;
     z-index:6;
-    .form-signin {
-      padding: 40px 28px 45px;
-      margin: 0 auto;
-      h3 {
-        text-transform: uppercase;
-        font-weight: lighter;
-        text-align: center;
-        font-size: 14px;
-        padding: 10px;
-      }
-      .form-signin-heading,
-      .checkbox {
-        margin-bottom: 30px;
-      }
-      .checkbox {
-        font-weight: lighter;
-        margin-top: 10px;
-        float: left;
-        width: 100%;
-      }
-      .form-control {
-        position: relative;
-        font-size: 16px;
-        height: auto;
-        padding: 10px;
-        &:focus {
-          z-index: 2;
-        }
-      }
-      input[type="text"] {
-        width: 80%;
-        margin-bottom: -1px;
-        border-radius: 8px;
-      }
-      input[type="password"] {
-        width: 80%;
-        margin-bottom: 20px;
-        border-radius: 8px;
-      }
-    }
-    .btn {
-      display: block;
-      width: 200px;
-      height: 45px;
-      background-color: $mainbutton_color;
-      border-radius: 8px;
-      box-shadow: none;
-      border: none;
-      a {
-        text-shadow: none;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: lighter;
-        color: $base_color;
-      }
-    }
   }
   .cross {
     width: 16px;
@@ -415,86 +337,10 @@ p {
 #header-logo {
   @include desktop {
     z-index: 1;
-    width: 50%;
-  }
-}
-.signin-section {
-  display: none;
-  @include desktop {
-    display: block;
-  }
-  .wrapper {
-    display: none;
-  }
-  .popup {
-    width: 250px;
-    height: 350px;
-    margin-top: 40px;
-    background-color: $lighttheme_color2;
-    border-radius: 8px;
-    position: absolute;
-    top: 0;
-    right: 130px;
-    z-index:3;
-    .form-signin {
-      padding: 40px 28px 45px;
-      margin: 0 auto;
-      h3 {
-        text-transform: uppercase;
-        font-weight: lighter;
-        text-align: left;
-        font-size: 14px;
-      }
-      .form-signin-heading,
-      .checkbox {
-        margin-bottom: 30px;
-      }
-      .checkbox {
-        font-weight: lighter;
-        margin-top: 10px;
-        float: left;
-      }
-      .form-control {
-        position: relative;
-        font-size: 16px;
-        height: auto;
-        padding: 10px;
-        &:focus {
-          z-index: 2;
-        }
-      }
-      input[type="text"] {
-        width: 200px;
-        margin-bottom: -1px;
-        border-radius: 8px;
-      }
-      input[type="password"] {
-        width: 200px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-      }
-    }
-    .btn {
-      display: block;
-      width: 200px;
-      height: 45px;
-      background-color: $accentcolor_bar;
-      border-radius: 8px;
-      box-shadow: none;
-      border: none;
-      a {
-        text-shadow: none;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: lighter;
-        color: $base_color;
-      }
-    }
   }
 }
 .logo-image {
-  width: 120px;
+  width: 140px;
   padding: 0.5rem 0.8rem;
   order: 1;
   @include desktop {

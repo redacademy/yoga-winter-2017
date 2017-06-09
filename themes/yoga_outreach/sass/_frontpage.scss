@@ -3,7 +3,7 @@
   text-align: center;
   font-family: raleway;
   font-weight: lighter;
-  color: $mediumtheme_color;
+  color: $darktext_color;
   h2{
     text-transform: capitalize;
     font-size: 24px;
@@ -43,7 +43,7 @@
         font-size: 24px;
       }
     }
-    
+
     .general-button{
       @include general-button;
       background-color: $accentcolor_bar;
@@ -58,15 +58,18 @@
           color:$darktext_color;
         }
       }
-    }  
+    }
   }
   .what-we-do{
     padding: 5% 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     p{
       @include desktop{
         font-size: 24px;
         max-width:$site_container;
-        text-align: center;
       }
     }
   }
@@ -80,7 +83,7 @@
       }
       p{
         @include desktop{
-          color:$lighttext_color;
+          color:$darktext_color;
           max-width: 672px;
           margin: auto;
         }
@@ -91,7 +94,7 @@
     font-size: 14px;
     color:$darktext_color;
     p{
-      color:$lighttext_color;
+      color:$darktext_color;
       @include desktop{
         font-size:18px;
         max-width: 340px;
@@ -119,6 +122,7 @@
     .core-training{
       position: relative;
       margin-bottom:10%;
+      flex: 1;
       .background-accent{
         position: absolute;
         width: 100%;
@@ -134,6 +138,7 @@
     .yoga-atwork{
       position: relative;
       margin-bottom:10%;
+      flex: 1;
       .background-accent{
         position: absolute;
         width: 100%;
@@ -148,6 +153,7 @@
     }
     .yoga-foryouth{
       position: relative;
+      flex: 1;
       .background-accent{
         position: absolute;
         width: 100%;
@@ -215,11 +221,13 @@
     .main-carousel{
       width: 100%;
       padding: 15px;
-      margin: 40px auto;
+      margin: auto;
+      margin-bottom: 55px;
       @include desktop{
-          height: 240px;
-          font-size: 24px;
-        }
+        height: 240px;
+        font-size: 24px;
+        margin-bottom: 0;
+      }
       .flickity-viewport{
         @include desktop{
           height: 100%;
@@ -231,31 +239,17 @@
         height: auto;
         @include desktop{
           width:100%;
-          padding: 3% 13%;
+          padding: 6% 13%;
         }
         p{
           @include desktop{
-          flex: 0 0 80%;
+          flex: 0 0 100%;
           align-self:center;
           font-size: 1.2rem;
           }
         }
       }
-      img{
-        border-radius: 50%;
-        align-self: center;
-        width: 80%;
-      }
-      .carousel-picture{
-        display:none;
-        @include desktop{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 0 0 20%;
-        width: 360px;
-        }
-      }
+  
       ol{
         display: none;
       }
@@ -281,6 +275,7 @@
     }
   }
   .team-container{
+    margin-top: 40px;
     h2{
       color: $darktext_color;
     }
@@ -293,7 +288,7 @@
       padding: 30px;
       margin: 0 auto;
       @include desktop{
-          height: 500px;
+          height: 330px;
           font-size: 18px;
         }
       .carousel-cell{
@@ -307,10 +302,12 @@
         display: block;
         width: 118px;
         height: 118px;
+        border-radius: 50%;
         margin: 0 auto;
         @include desktop{
-          width: 370px;
-          height: 370px;
+          width: 200px;
+          height: 200px;
+          margin: 0 auto;
         }
       }
       li{
@@ -341,27 +338,29 @@
     }
   }
   .thankyou{
-    height: 230px;
+    height: 160px;
     background-color: $logo_color;
     opacity: 0.8;
     h1{
       color: $darktext_color;
       padding: 30px 0 0 0;
+      font-size: 23px;
       @include desktop{
         padding: 25px 0 0 0;
-        font-size: 40px;
-      }     
+        font-size: 25px;
+      }
     }
     p{
       font-size: 1.5rem;
       padding: 0 20px 20px 30px;
+      font-size: 20px;
       @include desktop{
-        font-size: 35px;
+        font-size: 22px;
         padding: 0 20px 20px 20px;
         max-width: 700px;
         margin: auto;
-      }   
+      }
     }
-  }  
+  }
 }
 
