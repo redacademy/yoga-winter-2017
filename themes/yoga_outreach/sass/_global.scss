@@ -127,9 +127,6 @@ body{
     }
 }
 
-.main-header-contain {
-    padding-top: 200px;
-}
 
 //---------- Buttons ----------
 
@@ -222,7 +219,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     @include desktop{
-        height:100vh;
+        height:80vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
