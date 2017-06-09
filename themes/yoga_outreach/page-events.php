@@ -30,11 +30,11 @@ get_header(); ?>
                         endwhile; //resetting the page loop
                         wp_reset_query(); //resetting the page query
                     ?>
+                    <h2>Workshops</h2>
                     <?php foreach( $events as $event ): ?>
-                        <h2><?php echo $event['event_header']; ?></h2>
-
                         <div class="body-info">
                             <div class="title-contain">
+                                <h3><?php echo $event['event_title']; ?></h3>
                                 <a href="<?php echo get_page_link(275); ?>"class="primary-button">book</a>
                                 <div class="accent-name-shape"></div>
                             </div> <!--title-contain -->
@@ -114,13 +114,12 @@ get_header(); ?>
 
             <section id="retreat" class="container">
                 <?php $retreats= CFS()->get( 'new_retreats' ); ?>  <!--variable to hold email from loop-->
-
+                <h2>Retreats</h2>
                 <?php if(!empty($retreats)): ?>
                     <?php foreach( $retreats as $retreat ): ?>
-                        <h2><?php echo $retreat['retreat_header']; ?></h2>
-
                         <div class="body-info">
                             <div class="title-contain">
+                                <h3><?php echo $retreat['retreat_title']; ?></h3>
                                 <a href="<?php echo get_page_link(273); ?>"class="primary-button">register</a>
                                 <div class="accent-name-shape"></div>
                             </div>
