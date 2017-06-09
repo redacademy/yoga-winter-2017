@@ -12,8 +12,10 @@ get_header(); ?>
             <div class="popup-description"></div>
         </div><!--staff-popup-->
 		<main id="main" class="site-main" role="main">
-            <header class="entry-header custom-hero-image">
-                <div class="hero-text">
+            <header class="general-template-section custom-hero-image"></header>
+
+            <section>
+                <div class="page-main-header">
                     <?php // TO SHOW THE PAGE CONTENTS
                     while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
                         <h1 class="header-title"><?php the_title(); ?></h1>
@@ -23,7 +25,7 @@ get_header(); ?>
                     wp_reset_query(); //resetting the page query
                     ?>
                 </div><!--hero-text-->
-            </header>
+            </section>
 
             <section class="team">
                 <?php $fields= CFS()->get( 'staff_groups' ); ?>  <!--variable to hold staff from loop-->

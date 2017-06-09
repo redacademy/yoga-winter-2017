@@ -32,6 +32,15 @@ body{
     }
 }
 
+.custom-hero-image {
+    background-size: 300%;
+    background-position: left 0px top -147px;
+    @include desktop {
+        background-size: cover, cover;
+        background-position: left 0px top 0px;
+    }
+}
+
 .info-field, .lesson-field {
     display: none;
     height: 100%;

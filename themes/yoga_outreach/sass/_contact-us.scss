@@ -16,43 +16,14 @@
 		flex-direction: column;
 		}
 	}
-		.hero-text {
-			margin-top:20px;
-			height: 225px;
-			width: 100%;
-			color: $darktheme_color;
-			background-color: $another_color;
-			font-family: Raleway;
-			font-weight: 500;
-			text-transform: capitalize;
-			text-align: center;
-			display: flex;
-			flex-direction: column;
-			@include desktop{
-				margin-top: 200px;
-			}
-			h1 {
-				font-size: 1.5rem;
-				margin: 1.5rem;
-				@include desktop{
-					font-size: 40px;
-				}
-			}
-			p{
-				@include desktop{
-					font-size: 24px;
-				}
-			}
-			.hero-phone {
-					font-size: 2rem;
-			}
+		.page-main-header{
+			height: 100%;
 		}
 		.contactinfo-container{
 			@include desktop{
 			display:flex;
 			width: 830px;
-			margin: 0 auto;
-			margin-bottom:290px;
+			margin: 50px auto;
 			justify-content: space-between;
 			}
 		}

@@ -6,9 +6,7 @@
 get_header(); ?>
 	<div id="primary" class="content-area about-us-content">
         <main id="main" class="site-main" role="main">
-			<header class="general-template-section custom-hero-image">
-
-			</header><!--general-template-section-->
+			<header class="general-template-section custom-hero-image"></header><!--general-template-section-->
 
             <?php $subs = CFS()->get( 'subtexts' ); ?>  <!--variable to hold sub texts from loop-->
             <?php $items = CFS()->get( 'list_of_items' ); ?>  <!--variable to hold list items from loop-->
