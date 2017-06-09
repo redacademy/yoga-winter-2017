@@ -826,7 +826,7 @@ body {
       width: 50%; } }
 
 .main-header-contain {
-  padding-top: 250px; }
+  padding-top: 200px; }
 
 .teal-button {
   background-color: #6cfffe; }
@@ -1430,7 +1430,7 @@ footer {
       flex-direction: column; }
   @media (min-width: 720px) {
     .contact-us-content .hero-text {
-      margin-top: 250px; } }
+      margin-top: 200px; } }
   .contact-us-content .hero-text h1 {
     font-size: 1.5rem;
     margin: 1.5rem; }
