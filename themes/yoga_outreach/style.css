@@ -2671,8 +2671,11 @@ a:hover, a:active {
     display: block;
     text-decoration: none; }
 
+.down-arrow {
+  fill: #b6eaff; }
+
 .menu-dropdown-plus {
-  width: 20px; }
+  width: 15px; }
 
 /* Small menu. */
 .menu-toggle,

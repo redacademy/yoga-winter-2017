@@ -1,8 +1,9 @@
 (function ($) {
 
-    var daImage = image_data.image_path+'/arrow_drop_down_grey_192x192.png';
+    var daImage = image_data.image_path+'/down-arrow-grey.svg';
 
-    $( '.menu-item-has-children > a' ).append('<img class="menu-dropdown-plus" src="'+daImage+'"/>');
+    $( '.menu-item-has-children > a' ).append(' <img class="menu-dropdown-plus" src="'+daImage+'"/>');
+
 
     if ($(window).width() < 720) {
         $('.menu-item-has-children > a').removeClass('hide-menu-drop');
