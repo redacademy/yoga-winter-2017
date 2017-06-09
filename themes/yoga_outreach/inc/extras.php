@@ -111,7 +111,7 @@ add_action( 'pre_get_posts', 'yoga_change_sort_order');
 function yoga_headernav_styles() {
 
     $templates = ['page-templates/forms-template.php', 'page-templates/application-submission.php', 'page-templates/quiz-template.php'];
-    $pages = ['current-opportunities', 'contact-us', 'who-we-are', 'modules-home', 'privacy-policy', 'resources-research', 'resources-media'];
+    $pages = ['current-opportunities', 'modules-home', 'privacy-policy'];
 
     if(!is_page_template($template = $templates) && !is_page($page = $pages) && !is_post_type_archive( 'training_modules' ) && !is_home()){
         return;

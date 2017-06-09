@@ -487,14 +487,13 @@ button {
     height: 300px;
     width: 100%;
     padding: 66px 15px;
-    margin-bottom: 40px;
     color: #fff;
     background-color: #95AFC9;
     font-weight: 500; }
     @media (min-width: 720px) {
       .who-we-are-content .entry-header {
         background-color: #EBE5D8;
-        margin-top: 250px;
+        margin-top: 200px;
         padding: 20px 0;
         height: 225px; } }
   .who-we-are-content .hero-text {
@@ -618,8 +617,6 @@ button {
     .who-we-are-content .entry-content-page p {
       max-width: 40rem;
       margin: 0 auto; } }
-  .who-we-are-content .info-dropdown:first-of-type {
-    margin-bottom: 60px; }
   @media (min-width: 720px) {
     .who-we-are-content .staff-item-container {
       display: -ms-flexbox !important;

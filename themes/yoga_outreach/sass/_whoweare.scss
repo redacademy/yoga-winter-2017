@@ -14,13 +14,12 @@
         height: 300px;
         width: 100%;
         padding: 66px 15px;
-        margin-bottom: 40px;
         color: #fff;
         background-color: #95AFC9;
         font-weight: 500;
         @include desktop{
             background-color:#EBE5D8;
-            margin-top:250px;     //Take out once override position absolute on nav
+            margin-top: 200px;     //Take out once override position absolute on nav
             padding: 20px 0;
             height:225px;
         }
@@ -152,9 +151,6 @@
                 margin: 0 auto;
             }
         }
-    }
-    .info-dropdown:first-of-type{
-        margin-bottom:60px;
     }
     .staff-item-container{
         @include desktop {
