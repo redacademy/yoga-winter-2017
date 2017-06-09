@@ -1,16 +1,16 @@
 .training-for-facilities-content{
   .custom-hero-image{
       @include desktop{
-      height:100vh;
+      height:70vh;
       }
     }
   .main-carousel{
-      width: 100%;
-      padding-top:30px;
-	  padding-left:30px;
-	  padding-right:30px;
-	  padding-bottom:0;
-      margin: 0 auto;
+      	width: 100%;
+	  	padding: 20px 0;
+      	margin: 0 auto;
+	  @include desktop{
+		  	padding: 20px 0;
+	  }
       .carousel-cell{
           width: 100%;
           height: auto;
@@ -68,13 +68,35 @@
 		margin-top:20px;
 	}
 
+    .testimonial-container{
+        text-align: center;
+        padding: 30px 0;
+        background-color: #ebe5d8;
+        .testimonial-title{
+            max-width: 1024px;
+            margin: 0 auto;
+            color: #6b747d;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-bottom: 2px solid #6b747d;
+            @include desktop{
+                font-size: 2.5rem;
+            }
+        }
+        @include desktop{
+            padding: 50px 0;
+            height: 30vh;
+        }
+    }
+
 	.button-black-text{
 		color:black;
 	}
 
-	.grey-button{
-		margin:0 auto;
-	}
+    .general-button{
+        @include general-button;
+            margin-bottom:29px;
+    }
 
 	.training-yoga-tools-section,.training-yoga-work-section{
 			margin-top:39px;
@@ -88,6 +110,10 @@
 		background-color:#fff;
 		border-bottom:2px solid $darktheme_color;
 		margin: 0 auto 3% auto;
+		@include desktop{
+			margin: 0;
+			padding: 20px 0;
+		}
 	}
 
 	.noborder-info-title{
@@ -138,15 +164,17 @@
 	.book-training-button{
 		background-color:$darktext_color;
 		margin-top:18px;
+		@include desktop{
+			margin-top: 50px;
+		}
 	}
 
 	.carousel-cell.is-selected{
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding: 0 3.2rem;
 		font-size:2vh;
 			@include desktop{
-				padding-left: 5rem;
-    			padding-right: 5rem;
+				padding-left: 6rem;
+    			padding-right: 6rem;
 				display:flex;
 				justify-content:center;
 			}
@@ -193,22 +221,38 @@
 		margin-bottom:5px;
 		align-items:center;
 		flex-wrap:wrap;
-			a{
-				background-color:#fff;
-				width:80px;
-				height:44px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				text-decoration: none;
-				border-radius:8px;
-				border:1px solid white;
-        		color: $mediumtheme_color;
+		a{
+			color: #4a4a4a;
+			background-color:#fff;
+			width:80px;
+			height:44px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			border-radius:8px;
+			border:1px solid white;
+			@include desktop{
+				margin-top:10px;
 			}
+		}
+        a:hover{
+            background-color: $another_color;
+        }
+		.summary-title {
+            font-size: 2rem;
+        }
 	}
 
 	.yoga-info-title{
 		font-size:16.38px;
+		@include desktop{
+			font-size: 1.5rem;
+		}
+	}
+
+	.training-list-item{
+		list-style-type: none;
 	}
 
 	.bottom-button-container{
@@ -224,8 +268,16 @@
     margin: 0 auto;
   }
   .traininglist-container{
-    background-color:$logo_color;
-    width: 100%;
+	  display: none;
+	@include desktop{
+		color: #fff;
+		display: block;
+		padding: 20px 0;
+		background-color:$logo_color;
+		height: 50vh;
+    	width: 100%;
+	}
+
   }
 }//Training Facilities Wrapper
 
