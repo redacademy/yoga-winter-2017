@@ -499,28 +499,8 @@ button {
         margin-top: 200px;
         padding: 20px 0;
         height: 225px; } }
-  .who-we-are-content .hero-text {
-    height: 150px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .who-we-are-content .hero-text h1 {
-      font-size: 1.5rem; }
-      @media (min-width: 720px) {
-        .who-we-are-content .hero-text h1 {
-          font-size: 40px;
-          color: #4A4A4A;
-          margin-bottom: 20px; } }
-    @media (min-width: 720px) {
-      .who-we-are-content .hero-text p {
-        font-size: 1.5rem;
-        color: #4a4a4a;
-        width: 830px;
-        padding: 0 100px;
-        margin: 0 auto; } }
+  .who-we-are-content .page-main-header {
+    height: 100%; }
   .who-we-are-content .team {
     max-width: 100%;
     height: 100%;
@@ -590,7 +570,6 @@ button {
         align-items: center; }
   .who-we-are-content .member-contain {
     width: 100%;
-    margin-bottom: 40px;
     position: relative;
     cursor: pointer;
     display: -ms-flexbox;
@@ -632,34 +611,33 @@ button {
       margin: 0 auto; } }
   .who-we-are-content .staff-popup {
     background-color: #fff;
-    width: 75%;
+    width: 90%;
     position: fixed;
     height: 90vh;
     z-index: 10;
     top: 5vh;
-    left: 0%;
+    left: 5vw;
     display: none;
     margin: 0 auto;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 37px; }
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px; }
     @media (min-width: 720px) {
       .who-we-are-content .staff-popup {
         width: 40vw;
         left: 30%; } }
   .who-we-are-content .popup-description {
-    margin: 0 auto;
-    padding-top: 80px; }
+    margin: 0 15px; }
     .who-we-are-content .popup-description .member-contain {
-      margin: 0;
+      margin: 50;
       width: auto; }
       .who-we-are-content .popup-description .member-contain img {
         width: 40%;
         height: 40%;
         max-width: none;
-        margin: 0 auto;
+        margin: 30px auto;
         object-fit: fill; }
       .who-we-are-content .popup-description .member-contain a {
-        font-size: 36px;
+        font-size: 1.5rem;
         color: #000;
         max-width: 500px;
         text-align: center; }
@@ -670,10 +648,13 @@ button {
     z-index: 20;
     font-size: 1rem;
     color: #000;
-    margin-top: 10px; }
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1rem; }
     @media (min-width: 720px) {
       .who-we-are-content .staff-description {
-        margin-top: 10px; } }
+        margin-top: 10px;
+        width: 80%; } }
   .who-we-are-content .staff-info {
     margin: 0 auto;
     z-index: 20;
@@ -686,9 +667,13 @@ button {
     position: absolute;
     right: 2%;
     top: 2%;
-    height: 5%; }
+    margin: 15px;
+    height: 25px;
+    z-index: 999999; }
   .who-we-are-content .fade-background {
-    opacity: 0.1; }
+    opacity: 0.8;
+    filter: blur(5px);
+    background-image: linear-gradient(to top right, rgba(83, 86, 99, 0.8) 0%, rgba(69, 77, 91, 0.6) 100%); }
   .who-we-are-content .click-text {
     display: none; }
     @media (min-width: 720px) {
@@ -701,7 +686,14 @@ button {
   .who-we-are-content .accent-bar-container {
     background-color: rgba(203, 232, 234, 0.4);
     border-radius: 8px;
-    padding: 0.5rem 1rem; }
+    padding: 0.5rem 1rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 90%; }
+    @media (min-width: 720px) {
+      .who-we-are-content .accent-bar-container {
+        width: 80%; } }
 
 * {
   font-family: 'raleway',sans-serif; }
@@ -733,6 +725,14 @@ body {
     @media (min-width: 720px) {
       .info-dropdown span, .event-dropdown span {
         display: none; } }
+
+.custom-hero-image {
+  background-size: 300%;
+  background-position: left 0px top -147px; }
+  @media (min-width: 720px) {
+    .custom-hero-image {
+      background-size: cover, cover;
+      background-position: left 0px top 0px; } }
 
 .info-field, .lesson-field {
   display: none;
@@ -1409,42 +1409,15 @@ footer {
     -ms-flex-direction: column;
         flex-direction: column; } }
 
-.contact-us-content .hero-text {
-  margin-top: 20px;
-  height: 225px;
-  width: 100%;
-  color: #4a4a4a;
-  background-color: #ebe5d8;
-  font-family: Raleway;
-  font-weight: 500;
-  text-transform: capitalize;
-  text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  @media (min-width: 720px) {
-    .contact-us-content .hero-text {
-      margin-top: 200px; } }
-  .contact-us-content .hero-text h1 {
-    font-size: 1.5rem;
-    margin: 1.5rem; }
-    @media (min-width: 720px) {
-      .contact-us-content .hero-text h1 {
-        font-size: 40px; } }
-  @media (min-width: 720px) {
-    .contact-us-content .hero-text p {
-      font-size: 24px; } }
-  .contact-us-content .hero-text .hero-phone {
-    font-size: 2rem; }
+.contact-us-content .page-main-header {
+  height: 100%; }
 
 @media (min-width: 720px) {
   .contact-us-content .contactinfo-container {
     display: -ms-flexbox;
     display: flex;
     width: 830px;
-    margin: 0 auto;
-    margin-bottom: 290px;
+    margin: 50px auto;
     -ms-flex-pack: justify;
         justify-content: space-between; } }
 
@@ -1692,13 +1665,6 @@ footer {
 .about-us-content {
   text-align: center;
   color: #4a4a4a; }
-  .about-us-content .custom-hero-image {
-    background-size: 300%;
-    background-position: left 0px top -147px; }
-    @media (min-width: 720px) {
-      .about-us-content .custom-hero-image {
-        background-size: cover, cover;
-        background-position: left 0px top 0px; } }
   .about-us-content .general-button {
     width: 130px;
     height: 44px;
