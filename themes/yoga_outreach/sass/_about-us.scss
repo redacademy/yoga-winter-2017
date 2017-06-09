@@ -1,14 +1,6 @@
 .about-us-content {
     text-align: center;
     color: $darktext_color;
-    .custom-hero-image {
-        background-size: 300%;
-        background-position: left 0px top -147px;
-        @include desktop {
-            background-size: cover, cover;
-            background-position: left 0px top 0px;
-        }
-    }
 
     .general-button{
         @include general-button;
