@@ -39,8 +39,8 @@ get_header(); ?>
                 <h3>Media & Video</h3>
                 <p>For Inquiries, email communications@yogaoutreach.com</p>
             </div><!--main-h3-container-->
-			<section class="media-article-section section-15px-padding">
-				<div class="max-width-1024">
+			<section class="media-article-section">
+				<div class="section-15px-padding">
 					<div class="info-dropdown media-heading-flex">
 						<h3>In the Media</h3>
 						<span>+</span>

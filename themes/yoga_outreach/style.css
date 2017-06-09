@@ -924,7 +924,9 @@ body {
   padding: 0 4%; }
   @media (min-width: 720px) {
     .section-15px-padding {
-      margin: 0 auto 3% auto; } }
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 0; } }
 
 a {
   text-decoration: none; }
