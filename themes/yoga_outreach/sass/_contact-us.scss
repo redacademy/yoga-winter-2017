@@ -17,7 +17,7 @@
 		}
 	}
 		.hero-text {
-			margin-top: 250px;
+			margin-top:20px;
 			height: 225px;
 			width: 100%;
 			color: $darktheme_color;
@@ -28,6 +28,9 @@
 			text-align: center;
 			display: flex;
 			flex-direction: column;
+			@include desktop{
+				margin-top: 250px;
+			}
 			h1 {
 				font-size: 1.5rem;
 				margin: 1.5rem;

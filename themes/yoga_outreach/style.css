@@ -1437,7 +1437,7 @@ footer {
         flex-direction: column; } }
 
 .contact-us-content .hero-text {
-  margin-top: 250px;
+  margin-top: 20px;
   height: 225px;
   width: 100%;
   color: #4a4a4a;
@@ -1450,6 +1450,9 @@ footer {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+  @media (min-width: 720px) {
+    .contact-us-content .hero-text {
+      margin-top: 250px; } }
   .contact-us-content .hero-text h1 {
     font-size: 1.5rem;
     margin: 1.5rem; }
@@ -3142,6 +3145,12 @@ a:hover, a:active {
 .training-for-facilities-content .book-training-button {
   margin: 0 auto; }
 
+.training-for-facilities-content .under-skills-training-para, .training-for-facilities-content .small-para {
+  max-width: 1024px; }
+
+.training-for-facilities-content .small-para {
+  margin-top: 20px; }
+
 .training-for-facilities-content .button-black-text {
   color: black; }
 
@@ -4301,6 +4310,10 @@ object {
   text-decoration: none;
   margin-bottom: 29px; }
 
+.event-content .primary-button {
+  margin: 0 auto;
+  margin-bottom: 10px; }
+
 .event-content .container, .event-content .container2 {
   color: #4a4a4a; }
   @media (min-width: 720px) {
@@ -5344,6 +5357,12 @@ object {
 
 .training-for-facilities-content .book-training-button {
   margin: 0 auto; }
+
+.training-for-facilities-content .under-skills-training-para, .training-for-facilities-content .small-para {
+  max-width: 1024px; }
+
+.training-for-facilities-content .small-para {
+  margin-top: 20px; }
 
 .training-for-facilities-content .button-black-text {
   color: black; }
