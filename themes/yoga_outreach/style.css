@@ -898,7 +898,7 @@ body {
       justify-content: space-around; }
   @media (min-width: 720px) {
     .general-template-section {
-      height: 80vh;
+      height: 70vh;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
@@ -4262,7 +4262,7 @@ a:hover, a:active {
   height: 60vh; }
   @media (min-width: 720px) {
     .resources-media-content .general-template-section {
-      height: 100vh; } }
+      height: 70vh; } }
 
 .resources-media-content .read-more, .resources-media-content .read-less {
   font-size: 20px;
