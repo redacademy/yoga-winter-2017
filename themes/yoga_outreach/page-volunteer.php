@@ -9,18 +9,19 @@ get_header(); ?>
 
 	<div id="primary" class="content-area volunteer-content">
 		<main id="main" class="site-main" role="main">
-            <header class="entry-header custom-hero-image">
+            <header class="entry-header custom-hero-image"></header><!-- .entry-header -->
+            <section class="page-main-header">
                 <div>
                     <h1 class="header-title"><?php the_title(); ?></h1>
-                    <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
+                    <p class="info-paragraph info-p-center">We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
                 </div>
-                <div class="main-button-holder">
-                    <a href="#instructor" class="main-button clear-button">Become a Teacher</a>
-                    <a href="#volunteer" class="main-button clear-button">Community Volunteer</a>
-                    <a href="#council" class="main-button clear-button">Advisory Council Member</a>
-                    <a href="#opportunities" class="main-button clear-button">Reaching Out with Yoga</a>
+                <div class="button-container">
+                    <a href="#instructor" class="general-button grey-button">Become a Teacher</a>
+                    <a href="#volunteer" class="general-button grey-button">Community Volunteer</a>
+                    <a href="#council" class="general-button grey-button">Advisory Council Member</a>
+                    <a href="#opportunities" class="general-button grey-button">Reaching Out with Yoga</a>
                 </div>
-            </header><!-- .entry-header -->
+            </section>
             <section id="instructor" class="container-two">
                 <h2>Volunteer as a Yoga Instructor</h2>
                 <ol>
@@ -36,7 +37,7 @@ get_header(); ?>
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </ol>
-                <div class="button-wrap"><a href="<?php echo get_page_link(176); ?>" class="small-button white-button">Apply Now</a></div>
+                <a href="<?php echo get_page_link(176); ?>" class="dark-button main-button apply-button">Apply Now</a>
             </section>
             <section id="volunteer" class="container-one">
                 <h2>Community Engagement Volunteer</h2>
