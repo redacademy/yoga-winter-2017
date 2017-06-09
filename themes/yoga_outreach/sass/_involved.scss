@@ -44,6 +44,10 @@
             }
         }
 
+        .general-button{
+            @include general-button;
+        }
+
         .apply-button{
             margin: 2% auto;
         }
@@ -95,7 +99,7 @@
         }
         .entry-header{
             width: 100vw;
-            height: 100vh;
+            height: 70vh;
             top: 0;
             color: $basetext_color;
             @include flex-column;
@@ -107,7 +111,6 @@
                 max-width: 1020px;
             }
             @include desktop {
-                padding-top: 40vh;
                 align-content: center;
             }
         }
@@ -117,9 +120,6 @@
             p{
                 padding: 15px;
             }
-        }
-        header, section > *{
-            padding: 15px;
         }
 
         section {
@@ -283,9 +283,6 @@
         .carousel-cell{
             width: 100%;
             height: auto;
-            p{
-                margin-top: 20px;
-            }
             h1{
                 color: $darktext_color;
             }
@@ -419,3 +416,15 @@
     padding: 0;
 }
 
+// support us
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+    height: 120px;
+    @include desktop {
+        width: 1024px;
+        height: initial;
+    }
+}
