@@ -15,7 +15,6 @@ get_header(); ?>
                 <?php the_content(); ?> <!-- Page Content -->
                 <div class="general-button-container">
 						        <a href="core-training" class="general-button grey-button">Core Training</a>
-						        <a class="general-button teal-button button-black-text">For Facilities</a>
                 </div><!--general-button-container-->
             </div><!--entry-content-page-->
             <?php

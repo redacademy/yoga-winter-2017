@@ -87,6 +87,10 @@
                 }
     }
 
+    .grey-button{
+        margin:0 auto;
+    }
+
     .table-section-container{
         @include desktop{
             max-width: 1020px;
@@ -401,6 +405,18 @@
 
     .pdf-file{
         color:$darktheme_color;
+    }
+
+    .register-online-button{
+        margin:0 auto;
+    }
+
+
+    .register2{
+        margin-top:10px;
+            @include desktop{
+                margin-top:0;
+            }
     }
 
     .online-dates-section,.classroom-dates-section{

@@ -38,6 +38,10 @@
     }
 
     .media-video-list{
+        @include desktop{
+            display: flex;
+            justify-content: space-around;
+        }
         li{
             @include desktop{
                 border-top:none;

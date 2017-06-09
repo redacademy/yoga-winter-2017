@@ -3137,6 +3137,9 @@ a:hover, a:active {
   text-decoration: none;
   margin-bottom: 29px; }
 
+.training-for-facilities-content .book-training-button {
+  margin: 0 auto; }
+
 .training-for-facilities-content .button-black-text {
   color: black; }
 
@@ -3375,6 +3378,9 @@ a:hover, a:active {
   .core-training-content .register-online-button a {
     color: white;
     text-align: center; }
+
+.core-training-content .grey-button {
+  margin: 0 auto; }
 
 @media (min-width: 720px) {
   .core-training-content .table-section-container {
@@ -3669,6 +3675,15 @@ a:hover, a:active {
 
 .core-training-content .pdf-file {
   color: #4a4a4a; }
+
+.core-training-content .register-online-button {
+  margin: 0 auto; }
+
+.core-training-content .register2 {
+  margin-top: 10px; }
+  @media (min-width: 720px) {
+    .core-training-content .register2 {
+      margin-top: 0; } }
 
 @media (min-width: 720px) {
   .core-training-content .online-dates-section, .core-training-content .classroom-dates-section {
@@ -3990,6 +4005,13 @@ a:hover, a:active {
       .resources-media-content .media-article-list li, .resources-media-content .media-video-list li, .resources-media-content .press-article-list li {
         border-top: 2px solid #4A4A4A;
         padding-bottom: 11px; } }
+
+@media (min-width: 720px) {
+  .resources-media-content .media-video-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
 
 @media (min-width: 720px) {
   .resources-media-content .media-video-list li {
@@ -5315,6 +5337,9 @@ object {
   text-decoration: none;
   margin-bottom: 29px; }
 
+.training-for-facilities-content .book-training-button {
+  margin: 0 auto; }
+
 .training-for-facilities-content .button-black-text {
   color: black; }
 
@@ -5553,6 +5578,9 @@ object {
   .core-training-content .register-online-button a {
     color: white;
     text-align: center; }
+
+.core-training-content .grey-button {
+  margin: 0 auto; }
 
 @media (min-width: 720px) {
   .core-training-content .table-section-container {
@@ -5847,6 +5875,15 @@ object {
 
 .core-training-content .pdf-file {
   color: #4a4a4a; }
+
+.core-training-content .register-online-button {
+  margin: 0 auto; }
+
+.core-training-content .register2 {
+  margin-top: 10px; }
+  @media (min-width: 720px) {
+    .core-training-content .register2 {
+      margin-top: 0; } }
 
 @media (min-width: 720px) {
   .core-training-content .online-dates-section, .core-training-content .classroom-dates-section {
