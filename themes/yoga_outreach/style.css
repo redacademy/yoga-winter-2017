@@ -888,7 +888,7 @@ body {
     display: flex; }
 
 .general-template-section {
-  height: 80vh;
+  height: 50vh;
   width: 100%;
   z-index: -1;
   display: -ms-flexbox;
@@ -3058,15 +3058,15 @@ a:hover, a:active {
 
 @media (min-width: 720px) {
   .training-for-facilities-content .custom-hero-image {
-    height: 100vh; } }
+    height: 70vh; } }
 
 .training-for-facilities-content .main-carousel {
   width: 100%;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 0;
+  padding: 20px 0;
   margin: 0 auto; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .main-carousel {
+      padding: 20px 0; } }
   .training-for-facilities-content .main-carousel .carousel-cell {
     width: 100%;
     height: auto; }
@@ -3129,11 +3129,51 @@ a:hover, a:active {
 .training-for-facilities-content .small-para {
   margin-top: 20px; }
 
+.training-for-facilities-content .testimonial-container {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #ebe5d8; }
+  .training-for-facilities-content .testimonial-container .testimonial-title {
+    max-width: 1024px;
+    margin: 0 auto;
+    color: #6b747d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #6b747d; }
+    @media (min-width: 720px) {
+      .training-for-facilities-content .testimonial-container .testimonial-title {
+        font-size: 2.5rem; } }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .testimonial-container {
+      padding: 50px 0;
+      height: 30vh; } }
+
 .training-for-facilities-content .button-black-text {
   color: black; }
 
-.training-for-facilities-content .grey-button {
-  margin: 0 auto; }
+.training-for-facilities-content .general-button {
+  width: 230px;
+  height: 44px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
   margin-top: 39px; }
@@ -3146,6 +3186,10 @@ a:hover, a:active {
   background-color: #fff;
   border-bottom: 2px solid #4a4a4a;
   margin: 0 auto 3% auto; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .info-dropdown {
+      margin: 0;
+      padding: 20px 0; } }
 
 .training-for-facilities-content .noborder-info-title {
   border-bottom: none; }
@@ -3189,15 +3233,17 @@ a:hover, a:active {
 .training-for-facilities-content .book-training-button {
   background-color: #4a4a4a;
   margin-top: 18px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .book-training-button {
+      margin-top: 50px; } }
 
 .training-for-facilities-content .carousel-cell.is-selected {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0 3.2rem;
   font-size: 2vh; }
   @media (min-width: 720px) {
     .training-for-facilities-content .carousel-cell.is-selected {
-      padding-left: 5rem;
-      padding-right: 5rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
@@ -3243,6 +3289,7 @@ a:hover, a:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .training-for-facilities-content #training-pdf-container a {
+    color: #4a4a4a;
     background-color: #fff;
     width: 80px;
     height: 44px;
@@ -3254,11 +3301,23 @@ a:hover, a:active {
         align-items: center;
     text-decoration: none;
     border-radius: 8px;
-    border: 1px solid white;
-    color: #6b747d; }
+    border: 1px solid white; }
+    @media (min-width: 720px) {
+      .training-for-facilities-content #training-pdf-container a {
+        margin-top: 10px; } }
+  .training-for-facilities-content #training-pdf-container a:hover {
+    background-color: #ebe5d8; }
+  .training-for-facilities-content #training-pdf-container .summary-title {
+    font-size: 2rem; }
 
 .training-for-facilities-content .yoga-info-title {
   font-size: 16.38px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .yoga-info-title {
+      font-size: 1.5rem; } }
+
+.training-for-facilities-content .training-list-item {
+  list-style-type: none; }
 
 .training-for-facilities-content .bottom-button-container .general-button {
   color: #4A4A4A;
@@ -3270,8 +3329,15 @@ a:hover, a:active {
   margin: 0 auto; }
 
 .training-for-facilities-content .traininglist-container {
-  background-color: #95afc9;
-  width: 100%; }
+  display: none; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .traininglist-container {
+      color: #fff;
+      display: block;
+      padding: 20px 0;
+      background-color: #95afc9;
+      height: 50vh;
+      width: 100%; } }
 
 @media (min-width: 720px) {
   .core-training-content .training-body-content-contain {
@@ -3284,15 +3350,15 @@ a:hover, a:active {
   padding: 30px 15px; }
   @media (min-width: 720px) {
     .core-training-content .training-body-content {
-      max-width: 1020px;
-      padding: 50px 15px; } }
+      max-width: 1024px;
+      padding: 50px 0; } }
 
 .core-training-content .testimonial-container {
   text-align: center;
   padding: 30px 15px 0 15px;
   background-color: #ebe5d8; }
   .core-training-content .testimonial-container .testimonial-title {
-    max-width: 1040px;
+    max-width: 1024px;
     margin: 0 auto;
     color: #6b747d;
     font-size: 1.5rem;
@@ -3319,10 +3385,10 @@ a:hover, a:active {
 .core-training-content .main-carousel {
   width: 100%;
   padding-top: 10px;
-  margin: 2rem 0;
   padding-bottom: 20px;
   padding-right: 5px;
   padding-left: 5px;
+  margin: 2rem 0;
   height: 8.3rem; }
   @media (min-width: 720px) {
     .core-training-content .main-carousel {
@@ -3412,7 +3478,7 @@ a:hover, a:active {
 
 @media (min-width: 720px) {
   .core-training-content .table-section-container {
-    max-width: 1020px;
+    max-width: 1024px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -3499,7 +3565,7 @@ a:hover, a:active {
     margin-top: 12px; } }
 
 .core-training-content .general-template-section {
-  height: 80vh; }
+  height: 50vh; }
   @media (min-width: 720px) {
     .core-training-content .general-template-section {
       height: 70vh; } }
@@ -3640,8 +3706,9 @@ a:hover, a:active {
   background-color: #C7D5E2; }
   @media (min-width: 720px) {
     .core-training-content .training-list {
-      max-width: 1020px;
-      margin: 0 auto; } }
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 50px 0; } }
 
 .core-training-content .training-date-text {
   font-size: 11px;
@@ -3691,6 +3758,7 @@ a:hover, a:active {
     font-size: 2rem; }
 
 .core-training-content .training-list-item {
+  list-style-type: none;
   font-weight: 500;
   font-size: 14px; }
   .core-training-content .training-list-item .info-field, .core-training-content .training-list-item .info-dropdown {
@@ -5358,15 +5426,15 @@ object {
 
 @media (min-width: 720px) {
   .training-for-facilities-content .custom-hero-image {
-    height: 100vh; } }
+    height: 70vh; } }
 
 .training-for-facilities-content .main-carousel {
   width: 100%;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 0;
+  padding: 20px 0;
   margin: 0 auto; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .main-carousel {
+      padding: 20px 0; } }
   .training-for-facilities-content .main-carousel .carousel-cell {
     width: 100%;
     height: auto; }
@@ -5429,11 +5497,51 @@ object {
 .training-for-facilities-content .small-para {
   margin-top: 20px; }
 
+.training-for-facilities-content .testimonial-container {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #ebe5d8; }
+  .training-for-facilities-content .testimonial-container .testimonial-title {
+    max-width: 1024px;
+    margin: 0 auto;
+    color: #6b747d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #6b747d; }
+    @media (min-width: 720px) {
+      .training-for-facilities-content .testimonial-container .testimonial-title {
+        font-size: 2.5rem; } }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .testimonial-container {
+      padding: 50px 0;
+      height: 30vh; } }
+
 .training-for-facilities-content .button-black-text {
   color: black; }
 
-.training-for-facilities-content .grey-button {
-  margin: 0 auto; }
+.training-for-facilities-content .general-button {
+  width: 230px;
+  height: 44px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+  margin-bottom: 29px; }
 
 .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
   margin-top: 39px; }
@@ -5446,6 +5554,10 @@ object {
   background-color: #fff;
   border-bottom: 2px solid #4a4a4a;
   margin: 0 auto 3% auto; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .info-dropdown {
+      margin: 0;
+      padding: 20px 0; } }
 
 .training-for-facilities-content .noborder-info-title {
   border-bottom: none; }
@@ -5489,15 +5601,17 @@ object {
 .training-for-facilities-content .book-training-button {
   background-color: #4a4a4a;
   margin-top: 18px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .book-training-button {
+      margin-top: 50px; } }
 
 .training-for-facilities-content .carousel-cell.is-selected {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0 3.2rem;
   font-size: 2vh; }
   @media (min-width: 720px) {
     .training-for-facilities-content .carousel-cell.is-selected {
-      padding-left: 5rem;
-      padding-right: 5rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
@@ -5543,6 +5657,7 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .training-for-facilities-content #training-pdf-container a {
+    color: #4a4a4a;
     background-color: #fff;
     width: 80px;
     height: 44px;
@@ -5554,11 +5669,23 @@ object {
         align-items: center;
     text-decoration: none;
     border-radius: 8px;
-    border: 1px solid white;
-    color: #6b747d; }
+    border: 1px solid white; }
+    @media (min-width: 720px) {
+      .training-for-facilities-content #training-pdf-container a {
+        margin-top: 10px; } }
+  .training-for-facilities-content #training-pdf-container a:hover {
+    background-color: #ebe5d8; }
+  .training-for-facilities-content #training-pdf-container .summary-title {
+    font-size: 2rem; }
 
 .training-for-facilities-content .yoga-info-title {
   font-size: 16.38px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .yoga-info-title {
+      font-size: 1.5rem; } }
+
+.training-for-facilities-content .training-list-item {
+  list-style-type: none; }
 
 .training-for-facilities-content .bottom-button-container .general-button {
   color: #4A4A4A;
@@ -5570,8 +5697,15 @@ object {
   margin: 0 auto; }
 
 .training-for-facilities-content .traininglist-container {
-  background-color: #95afc9;
-  width: 100%; }
+  display: none; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .traininglist-container {
+      color: #fff;
+      display: block;
+      padding: 20px 0;
+      background-color: #95afc9;
+      height: 50vh;
+      width: 100%; } }
 
 @media (min-width: 720px) {
   .core-training-content .training-body-content-contain {
@@ -5584,15 +5718,15 @@ object {
   padding: 30px 15px; }
   @media (min-width: 720px) {
     .core-training-content .training-body-content {
-      max-width: 1020px;
-      padding: 50px 15px; } }
+      max-width: 1024px;
+      padding: 50px 0; } }
 
 .core-training-content .testimonial-container {
   text-align: center;
   padding: 30px 15px 0 15px;
   background-color: #ebe5d8; }
   .core-training-content .testimonial-container .testimonial-title {
-    max-width: 1040px;
+    max-width: 1024px;
     margin: 0 auto;
     color: #6b747d;
     font-size: 1.5rem;
@@ -5619,10 +5753,10 @@ object {
 .core-training-content .main-carousel {
   width: 100%;
   padding-top: 10px;
-  margin: 2rem 0;
   padding-bottom: 20px;
   padding-right: 5px;
   padding-left: 5px;
+  margin: 2rem 0;
   height: 8.3rem; }
   @media (min-width: 720px) {
     .core-training-content .main-carousel {
@@ -5712,7 +5846,7 @@ object {
 
 @media (min-width: 720px) {
   .core-training-content .table-section-container {
-    max-width: 1020px;
+    max-width: 1024px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -5799,7 +5933,7 @@ object {
     margin-top: 12px; } }
 
 .core-training-content .general-template-section {
-  height: 80vh; }
+  height: 50vh; }
   @media (min-width: 720px) {
     .core-training-content .general-template-section {
       height: 70vh; } }
@@ -5940,8 +6074,9 @@ object {
   background-color: #C7D5E2; }
   @media (min-width: 720px) {
     .core-training-content .training-list {
-      max-width: 1020px;
-      margin: 0 auto; } }
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 50px 0; } }
 
 .core-training-content .training-date-text {
   font-size: 11px;
@@ -5991,6 +6126,7 @@ object {
     font-size: 2rem; }
 
 .core-training-content .training-list-item {
+  list-style-type: none;
   font-weight: 500;
   font-size: 14px; }
   .core-training-content .training-list-item .info-field, .core-training-content .training-list-item .info-dropdown {
@@ -6100,7 +6236,6 @@ http://flickity.metafizzy.co
   outline: none; }
 
 .flickity-viewport {
-  overflow-y: hidden;
   position: relative;
   height: 120%; }
 

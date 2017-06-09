@@ -10,8 +10,8 @@
     .training-body-content{
         padding: 30px 15px;
         @include desktop{
-            max-width: 1020px;
-            padding: 50px 15px;
+            max-width: 1024px;
+            padding: 50px 0;
         }
     }
 
@@ -20,7 +20,7 @@
         padding: 30px 15px 0 15px;
         background-color: #ebe5d8;
         .testimonial-title{
-            max-width: 1040px;
+            max-width: 1024px;
             margin: 0 auto;
             color: #6b747d;
             font-size: 1.5rem;
@@ -48,10 +48,10 @@
     .main-carousel{
         width: 100%;
         padding-top:10px;
-        margin:2rem 0;
         padding-bottom:20px;
         padding-right:5px;
         padding-left:5px;
+        margin:2rem 0;
         height: 8.3rem;
         @include desktop{
            max-width: 1020px;
@@ -130,7 +130,7 @@
 
     .table-section-container{
         @include desktop{
-            max-width: 1020px;
+            max-width: 1024px;
             display:flex;
             justify-content:space-around;
             margin: 30px auto;
@@ -213,7 +213,7 @@
     }
 
     .general-template-section{
-        height:80vh;
+        height:50vh;
             @include desktop{
                 height:70vh;
             }
@@ -374,8 +374,9 @@
         padding: 50px 15px;
         background-color:#C7D5E2;
         @include desktop{
-          max-width: 1020px;
+          max-width: 1024px;
           margin: 0 auto;
+          padding: 50px 0;
         }
     }
 
@@ -430,6 +431,7 @@
 	}
 
     .training-list-item{
+        list-style-type: none;
         font-weight:500;
         font-size:14px;
             .info-field, .info-dropdown{
@@ -457,7 +459,6 @@
         max-width:1024px;
         margin:0 auto;
     }
-
 
 
     .house-logo{
