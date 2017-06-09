@@ -28,7 +28,6 @@ get_header(); ?>
                     <?php foreach( $events as $event ): ?>
                         <div class="body-info">
                             <div class="title-contain">
-                                <h3><?php echo $event['event_title']; ?></h3>
                                 <a href="<?php echo get_page_link(275); ?>"class="primary-button">book</a>
                                 <div class="accent-name-shape"></div>
                             </div> <!--title-contain -->
@@ -113,7 +112,6 @@ get_header(); ?>
                     <?php foreach( $retreats as $retreat ): ?>
                         <div class="body-info">
                             <div class="title-contain">
-                                <h3><?php echo $retreat['retreat_title']; ?></h3>
                                 <a href="<?php echo get_page_link(273); ?>"class="primary-button">register</a>
                                 <div class="accent-name-shape"></div>
                             </div>
