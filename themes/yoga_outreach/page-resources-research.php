@@ -14,7 +14,6 @@ get_header(); ?>
 					<h1><?php the_title(); ?></h1> <!--the_content() works only inside a WP Loop -->
                 	<?php the_content(); ?> <!-- Page Content -->
 					<div class="button-container">
-						<a class="general-button teal-button black-text">Research</a>
 						<a href ="resources-media"class="general-button grey-button">Media & Videos</a>
 					</div><!--general-button-container-->
                 </div><!--entry-content-page-->
