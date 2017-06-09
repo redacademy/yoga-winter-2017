@@ -2,7 +2,6 @@
 
     .training-body-content-contain{
         @include desktop{
-            height: 70vh;
             display: flex;
             justify-content: center;
         }

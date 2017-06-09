@@ -881,8 +881,7 @@ body {
   list-style: none;
   margin: 0;
   text-align: center;
-  font-size: 12px;
-  background-color: #EBE5D8; }
+  font-size: 12px; }
   .testimonial-list.main-carousel li {
     width: 100%;
     display: -ms-flexbox;
@@ -3276,7 +3275,6 @@ a:hover, a:active {
 
 @media (min-width: 720px) {
   .core-training-content .training-body-content-contain {
-    height: 70vh;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -5577,7 +5575,6 @@ object {
 
 @media (min-width: 720px) {
   .core-training-content .training-body-content-contain {
-    height: 70vh;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
