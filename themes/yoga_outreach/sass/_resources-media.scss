@@ -38,6 +38,10 @@
     }
 
     .media-video-list{
+        @include desktop{
+            display: flex;
+            justify-content: space-around;
+        }
         li{
             @include desktop{
                 border-top:none;
@@ -60,6 +64,9 @@
         text-align: center;
         padding-top:1rem;
         flex-direction: column;
+            @include desktop{
+                margin-top: 5rem;
+            }
             h3{
                 font-weight:300;
                 margin-bottom:10px;
@@ -194,9 +201,9 @@
       color:black;
   }
 
-  .resource-media-content{
+  .page-title-header{
       @include desktop{
-          padding-top: 0rem;
+        padding-top: 0rem;
         color: #4a4a4a;
         background-color: #D8D8D8;
         margin-top: 4rem;

@@ -43,6 +43,7 @@
         font-size: 24px;
       }
     }
+
     .general-button{
       @include general-button;
       background-color: $accentcolor_bar;
