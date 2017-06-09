@@ -2789,6 +2789,8 @@ a:hover, a:active {
   .training-content .main-h3-container a {
     color: #000;
     font-weight: bold; }
+  .training-content .grey-button {
+    margin: 0 auto; }
   .training-content .training-para-left {
     text-align: left; }
   .training-content .for-training-section {
@@ -3142,6 +3144,9 @@ a:hover, a:active {
 
 .training-for-facilities-content .button-black-text {
   color: black; }
+
+.training-for-facilities-content .grey-button {
+  margin: 0 auto; }
 
 .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
   margin-top: 39px; }
@@ -5342,6 +5347,9 @@ object {
 
 .training-for-facilities-content .button-black-text {
   color: black; }
+
+.training-for-facilities-content .grey-button {
+  margin: 0 auto; }
 
 .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
   margin-top: 39px; }
