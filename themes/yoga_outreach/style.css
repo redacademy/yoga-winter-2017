@@ -825,9 +825,6 @@ body {
     .button-container {
       width: 50%; } }
 
-.main-header-contain {
-  padding-top: 200px; }
-
 .teal-button {
   background-color: #6cfffe; }
 
@@ -901,7 +898,7 @@ body {
       justify-content: space-around; }
   @media (min-width: 720px) {
     .general-template-section {
-      height: 100vh;
+      height: 80vh;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
