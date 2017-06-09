@@ -27,7 +27,7 @@
 
 //general button template
 @mixin general-button {
-	width:230px;
+	width:130px;
 	height:44px;
 	font-size:14px;
 	text-align: center;
@@ -45,6 +45,9 @@
 	justify-content:center;
 	align-items:center;
 	text-decoration:none;
+	@include desktop{
+		width:230px;
+	}
 }
 
 //general button template

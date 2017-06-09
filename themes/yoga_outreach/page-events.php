@@ -6,35 +6,28 @@
 get_header(); ?>
 	<div id="primary" class="content-area event-content">
 		<main id="main" class="site-main" role="main">
-			<header class="general-template-section custom-hero-image">
-                <div class="color-background"></div>
-
-			</header> <!--general-template-section-->
-
+			<header class="general-template-section custom-hero-image"></header> <!--general-template-section-->
             <section id="workshop" class="container">
                 <?php $events= CFS()->get( 'new_event' ); ?>  <!--variable to hold email from loop-->
-
                 <?php if(!empty($events)): ?>
-                    <?php
-                    // TO SHOW THE PAGE CONTENTS
+                    <?php // TO SHOW THE PAGE CONTENTS
                     while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
-                        <div class="page-main-header">
-                            <h1> <?php the_title(); ?></h1>
-                            <?php the_content(); ?> <!-- Page Content -->
-                            <div class="button-container">
-                                <a href="#workshop" class="general-button grey-button">workshop</a>
-                                <a href="#retreat" class="general-button grey-button">retreat</a>
-                            </div>
+                    <div class="page-main-header">
+                        <h1> <?php the_title(); ?></h1>
+                        <?php the_content(); ?> <!-- Page Content -->
+                        <div class="button-container">
+                            <a href="#workshop" class="general-button grey-button">workshop</a>
+                            <a href="#retreat" class="general-button grey-button">retreat</a>
                         </div>
+                    </div>
                     <?php
-                        endwhile; //resetting the page loop
-                        wp_reset_query(); //resetting the page query
+                    endwhile; //resetting the page loop
+                    wp_reset_query(); //resetting the page query
                     ?>
                     <h2>Workshops</h2>
                     <?php foreach( $events as $event ): ?>
                         <div class="body-info">
                             <div class="title-contain">
-                                <h3><?php echo $event['event_title']; ?></h3>
                                 <a href="<?php echo get_page_link(275); ?>"class="primary-button">book</a>
                                 <div class="accent-name-shape"></div>
                             </div> <!--title-contain -->
@@ -119,7 +112,6 @@ get_header(); ?>
                     <?php foreach( $retreats as $retreat ): ?>
                         <div class="body-info">
                             <div class="title-contain">
-                                <h3><?php echo $retreat['retreat_title']; ?></h3>
                                 <a href="<?php echo get_page_link(273); ?>"class="primary-button">register</a>
                                 <div class="accent-name-shape"></div>
                             </div>

@@ -6,6 +6,7 @@
 get_header(); ?>
 	<div id="primary" class="content-area resources-media-content">
 		<main id="main" class="site-main" role="main">
+			<header class = "general-template-section custom-hero-image"></header>
 			<div class="main-header-contain">
 				<?php
                 	while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
@@ -39,8 +40,8 @@ get_header(); ?>
                 <h3>Media & Video</h3>
                 <p>For Inquiries, email communications@yogaoutreach.com</p>
             </div><!--main-h3-container-->
-			<section class="media-article-section section-15px-padding">
-				<div class="max-width-1024">
+			<section class="media-article-section">
+				<div class="section-15px-padding">
 					<div class="info-dropdown media-heading-flex">
 						<h3>In the Media</h3>
 						<span>+</span>

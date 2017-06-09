@@ -448,7 +448,7 @@ table {
   width: 100%; }
 
 button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -469,6 +469,9 @@ button {
   -ms-flex-align: center;
       align-items: center;
   text-decoration: none; }
+  @media (min-width: 720px) {
+    button {
+      width: 230px; } }
 
 .who-we-are-content {
   width: 100%;
@@ -487,14 +490,13 @@ button {
     height: 300px;
     width: 100%;
     padding: 66px 15px;
-    margin-bottom: 40px;
     color: #fff;
     background-color: #95AFC9;
     font-weight: 500; }
     @media (min-width: 720px) {
       .who-we-are-content .entry-header {
         background-color: #EBE5D8;
-        margin-top: 250px;
+        margin-top: 200px;
         padding: 20px 0;
         height: 225px; } }
   .who-we-are-content .hero-text {
@@ -618,8 +620,6 @@ button {
     .who-we-are-content .entry-content-page p {
       max-width: 40rem;
       margin: 0 auto; } }
-  .who-we-are-content .info-dropdown:first-of-type {
-    margin-bottom: 60px; }
   @media (min-width: 720px) {
     .who-we-are-content .staff-item-container {
       display: -ms-flexbox !important;
@@ -784,7 +784,6 @@ body {
   top: 7rem; }
   @media (min-width: 720px) {
     .entry-content-page {
-      top: 12rem;
       font-size: 24px; } }
 
 .entry-content-page p {
@@ -808,10 +807,13 @@ body {
   text-align: center;
   -ms-flex-align: center;
       align-items: center;
-  height: 250px;
+  height: 40vh;
   width: 100%;
   padding: 25px;
   background-color: #f4f1ea; }
+  @media (min-width: 720px) {
+    .page-main-header {
+      height: 30vh; } }
 
 .button-container {
   width: 100%;
@@ -822,9 +824,6 @@ body {
   @media (min-width: 720px) {
     .button-container {
       width: 50%; } }
-
-.main-header-contain {
-  padding-top: 250px; }
 
 .teal-button {
   background-color: #6cfffe; }
@@ -880,15 +879,14 @@ body {
   list-style: none;
   margin: 0;
   text-align: center;
-  font-size: 12px;
-  background-color: #EBE5D8; }
+  font-size: 12px; }
   .testimonial-list.main-carousel li {
     width: 100%;
     display: -ms-flexbox;
     display: flex; }
 
 .general-template-section {
-  height: 80vh;
+  height: 50vh;
   width: 100%;
   z-index: -1;
   display: -ms-flexbox;
@@ -899,7 +897,7 @@ body {
       justify-content: space-around; }
   @media (min-width: 720px) {
     .general-template-section {
-      height: 100vh;
+      height: 70vh;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
@@ -924,41 +922,12 @@ body {
   padding: 0 4%; }
   @media (min-width: 720px) {
     .section-15px-padding {
-      margin: 0 auto 3% auto; } }
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 0; } }
 
 a {
   text-decoration: none; }
-
-.training-list {
-  height: auto;
-  width: 100%;
-  background-color: #95AFC9;
-  margin: 0;
-  list-style: none;
-  padding: 19px 15px; }
-
-.training-list-item {
-  font-weight: 500;
-  font-size: 14px; }
-  .training-list-item .info-field, .training-list-item .info-dropdown {
-    background-color: #C7D5E2;
-    border-bottom: none;
-    width: 100vw;
-    padding: 0; }
-    .training-list-item .info-field span, .training-list-item .info-dropdown span {
-      color: #4a4a4a;
-      font-weight: 200; }
-
-.page-subtitle {
-  color: white;
-  font-size: 16px;
-  padding: 0 1rem;
-  text-align: center;
-  line-height: 25px; }
-
-.max-width-1024 {
-  max-width: 1024px;
-  margin: 0 auto; }
 
 p {
   margin-bottom: 0;
@@ -1457,7 +1426,7 @@ footer {
       flex-direction: column; }
   @media (min-width: 720px) {
     .contact-us-content .hero-text {
-      margin-top: 250px; } }
+      margin-top: 200px; } }
   .contact-us-content .hero-text h1 {
     font-size: 1.5rem;
     margin: 1.5rem; }
@@ -1539,7 +1508,7 @@ footer {
         color: #000;
         padding-bottom: 22px; } }
   .contact-us-content .email-inquiries a {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -1565,6 +1534,9 @@ footer {
     text-align: center;
     padding: 12px;
     margin-bottom: 54px; }
+    @media (min-width: 720px) {
+      .contact-us-content .email-inquiries a {
+        width: 230px; } }
   .contact-us-content .email-inquiries .email-info {
     width: 100%; }
     @media (min-width: 720px) {
@@ -1729,7 +1701,7 @@ footer {
         background-size: cover, cover;
         background-position: left 0px top 0px; } }
   .about-us-content .general-button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -1751,6 +1723,9 @@ footer {
         align-items: center;
     text-decoration: none;
     margin-bottom: 29px; }
+    @media (min-width: 720px) {
+      .about-us-content .general-button {
+        width: 230px; } }
   @media (min-width: 720px) {
     .about-us-content .page-title-header, .about-us-content .entry-content-page {
       color: #fff; } }
@@ -2367,7 +2342,7 @@ footer {
 .page-template-forms-template .app-form .gform_footer {
   background-color: #f3f0e9; }
   .page-template-forms-template .app-form .gform_footer input.gform_button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -2391,6 +2366,9 @@ footer {
     color: #4a4a4a;
     margin: 0 auto;
     background-color: #fff; }
+    @media (min-width: 720px) {
+      .page-template-forms-template .app-form .gform_footer input.gform_button {
+        width: 230px; } }
 
 .page-template-forms-template .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) label, .page-template-forms-template .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) div {
   max-width: 1020px !important;
@@ -2438,7 +2416,7 @@ footer {
   background-color: #4a4a4a; }
 
 .entry-content .gform_wrapper .gform_next_button, .entry-content .gform_wrapper .gform_button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -2463,9 +2441,12 @@ footer {
   background-color: #94bfd1;
   margin: 15px;
   display: inline; }
+  @media (min-width: 720px) {
+    .entry-content .gform_wrapper .gform_next_button, .entry-content .gform_wrapper .gform_button {
+      width: 230px; } }
 
 .entry-content .gform_wrapper .gform_previous_button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -2488,6 +2469,9 @@ footer {
   text-decoration: none;
   color: #4a4a4a;
   background-color: #c1d3da; }
+  @media (min-width: 720px) {
+    .entry-content .gform_wrapper .gform_previous_button {
+      width: 230px; } }
 
 .entry-content .gform_wrapper .percentbar_blue {
   background-color: #95afc9; }
@@ -2517,7 +2501,7 @@ footer {
 .gform_confirmation_message {
   text-align: center; }
   .gform_confirmation_message .main-button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -2539,6 +2523,9 @@ footer {
         align-items: center;
     text-decoration: none;
     margin: 25px auto; }
+    @media (min-width: 720px) {
+      .gform_confirmation_message .main-button {
+        width: 230px; } }
     .gform_confirmation_message .main-button.grey-button {
       background-color: #94bfd1; }
       .gform_confirmation_message .main-button.grey-button a {
@@ -2548,7 +2535,7 @@ footer {
         .gform_confirmation_message .main-button.grey-button:hover a {
           color: #4a4a4a; }
   .gform_confirmation_message .gform_button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -2572,6 +2559,9 @@ footer {
     color: #4a4a4a;
     background-color: #94bfd1;
     margin: 15px auto; }
+    @media (min-width: 720px) {
+      .gform_confirmation_message .gform_button {
+        width: 230px; } }
 
 /* Buttons */
 button,
@@ -2775,6 +2765,11 @@ a:hover, a:active {
 
 .training-content {
   font-family: 'raleway',sans-serif; }
+  .training-content .training-body-container {
+    background-color: #ebe5d8;
+    padding: 50px; }
+  .training-content .general-template-section {
+    height: 70vh; }
   .training-content .main-h3-container h3 {
     color: #4a4a4a;
     font-weight: 200;
@@ -2788,7 +2783,8 @@ a:hover, a:active {
         font-size: 34px;
         color: #000;
         width: 60vw;
-        text-align: left; } }
+        text-align: left;
+        margin: 0; } }
   .training-content .main-h3-container p {
     color: #4a4a4a;
     line-height: 24px;
@@ -2807,9 +2803,6 @@ a:hover, a:active {
     text-align: left; }
   .training-content .for-training-section {
     margin-top: 31px; }
-    @media (min-width: 720px) {
-      .training-content .for-training-section {
-        padding-bottom: 20rem; } }
     .training-content .for-training-section img {
       height: 80px;
       width: 80px;
@@ -2817,8 +2810,10 @@ a:hover, a:active {
       @media (min-width: 720px) {
         .training-content .for-training-section img {
           height: auto; } }
+  .training-content .page-title-header, .training-content .entry-content-page {
+    padding: 0; }
   .training-content .general-button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -2838,8 +2833,10 @@ a:hover, a:active {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    text-decoration: none;
-    margin-bottom: 29px; }
+    text-decoration: none; }
+    @media (min-width: 720px) {
+      .training-content .general-button {
+        width: 230px; } }
   .training-content .training-image-bar-container {
     position: relative;
     margin-top: 1.5rem; }
@@ -2911,7 +2908,7 @@ a:hover, a:active {
       height: 700px; } }
 
 .modules-home-content .general-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -2932,6 +2929,9 @@ a:hover, a:active {
   -ms-flex-align: center;
       align-items: center;
   text-decoration: none; }
+  @media (min-width: 720px) {
+    .modules-home-content .general-button {
+      width: 230px; } }
 
 .modules-home-content h2:first-of-type {
   font-size: 24px;
@@ -3089,15 +3089,15 @@ a:hover, a:active {
 
 @media (min-width: 720px) {
   .training-for-facilities-content .custom-hero-image {
-    height: 100vh; } }
+    height: 70vh; } }
 
 .training-for-facilities-content .main-carousel {
   width: 100%;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 0;
+  padding: 20px 0;
   margin: 0 auto; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .main-carousel {
+      padding: 20px 0; } }
   .training-for-facilities-content .main-carousel .carousel-cell {
     width: 100%;
     height: auto; }
@@ -3128,7 +3128,7 @@ a:hover, a:active {
     font-size: 16px; } }
 
 .training-for-facilities-content .general-button, .training-for-facilities-content .book-training-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -3150,6 +3150,9 @@ a:hover, a:active {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .general-button, .training-for-facilities-content .book-training-button {
+      width: 230px; } }
 
 .training-for-facilities-content .book-training-button {
   margin: 0 auto; }
@@ -3160,11 +3163,54 @@ a:hover, a:active {
 .training-for-facilities-content .small-para {
   margin-top: 20px; }
 
+.training-for-facilities-content .testimonial-container {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #ebe5d8; }
+  .training-for-facilities-content .testimonial-container .testimonial-title {
+    max-width: 1024px;
+    margin: 0 auto;
+    color: #6b747d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #6b747d; }
+    @media (min-width: 720px) {
+      .training-for-facilities-content .testimonial-container .testimonial-title {
+        font-size: 2.5rem; } }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .testimonial-container {
+      padding: 50px 0;
+      height: 30vh; } }
+
 .training-for-facilities-content .button-black-text {
   color: black; }
 
-.training-for-facilities-content .grey-button {
-  margin: 0 auto; }
+.training-for-facilities-content .general-button {
+  width: 130px;
+  height: 44px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+  margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .general-button {
+      width: 230px; } }
 
 .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
   margin-top: 39px; }
@@ -3177,6 +3223,10 @@ a:hover, a:active {
   background-color: #fff;
   border-bottom: 2px solid #4a4a4a;
   margin: 0 auto 3% auto; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .info-dropdown {
+      margin: 0;
+      padding: 20px 0; } }
 
 .training-for-facilities-content .noborder-info-title {
   border-bottom: none; }
@@ -3220,15 +3270,17 @@ a:hover, a:active {
 .training-for-facilities-content .book-training-button {
   background-color: #4a4a4a;
   margin-top: 18px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .book-training-button {
+      margin-top: 50px; } }
 
 .training-for-facilities-content .carousel-cell.is-selected {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0 3.2rem;
   font-size: 2vh; }
   @media (min-width: 720px) {
     .training-for-facilities-content .carousel-cell.is-selected {
-      padding-left: 5rem;
-      padding-right: 5rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
@@ -3274,6 +3326,7 @@ a:hover, a:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .training-for-facilities-content #training-pdf-container a {
+    color: #4a4a4a;
     background-color: #fff;
     width: 80px;
     height: 44px;
@@ -3285,11 +3338,23 @@ a:hover, a:active {
         align-items: center;
     text-decoration: none;
     border-radius: 8px;
-    border: 1px solid white;
-    color: #6b747d; }
+    border: 1px solid white; }
+    @media (min-width: 720px) {
+      .training-for-facilities-content #training-pdf-container a {
+        margin-top: 10px; } }
+  .training-for-facilities-content #training-pdf-container a:hover {
+    background-color: #ebe5d8; }
+  .training-for-facilities-content #training-pdf-container .summary-title {
+    font-size: 2rem; }
 
 .training-for-facilities-content .yoga-info-title {
   font-size: 16.38px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .yoga-info-title {
+      font-size: 1.5rem; } }
+
+.training-for-facilities-content .training-list-item {
+  list-style-type: none; }
 
 .training-for-facilities-content .bottom-button-container .general-button {
   color: #4A4A4A;
@@ -3301,39 +3366,72 @@ a:hover, a:active {
   margin: 0 auto; }
 
 .training-for-facilities-content .traininglist-container {
-  background-color: #95afc9;
-  width: 100%; }
+  display: none; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .traininglist-container {
+      color: #fff;
+      display: block;
+      padding: 20px 0;
+      background-color: #95afc9;
+      height: 50vh;
+      width: 100%; } }
+
+@media (min-width: 720px) {
+  .core-training-content .training-body-content-contain {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; } }
+
+.core-training-content .training-body-content {
+  padding: 30px 15px; }
+  @media (min-width: 720px) {
+    .core-training-content .training-body-content {
+      max-width: 1024px;
+      padding: 50px 0; } }
 
 .core-training-content .testimonial-container {
+  text-align: center;
+  padding: 30px 15px 0 15px;
   background-color: #ebe5d8; }
+  .core-training-content .testimonial-container .testimonial-title {
+    max-width: 1024px;
+    margin: 0 auto;
+    color: #6b747d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #6b747d; }
+    @media (min-width: 720px) {
+      .core-training-content .testimonial-container .testimonial-title {
+        font-size: 2.5rem; } }
+  @media (min-width: 720px) {
+    .core-training-content .testimonial-container {
+      padding-top: 50px;
+      height: 30vh; } }
 
 .core-training-content .flickity-viewport {
   overflow: auto;
   position: static; }
   @media (min-width: 720px) {
     .core-training-content .flickity-viewport {
+      height: 100% !important;
       overflow: hidden;
-      position: relative; } }
+      position: relative;
+      padding: 30px; } }
 
 .core-training-content .main-carousel {
   width: 100%;
   padding-top: 10px;
-  margin-top: 2rem;
   padding-bottom: 20px;
   padding-right: 5px;
   padding-left: 5px;
+  margin: 2rem 0;
   height: 8.3rem; }
   @media (min-width: 720px) {
     .core-training-content .main-carousel {
       max-width: 1020px;
-      margin: 0 auto; } }
-  .core-training-content .main-carousel .carousel-cell {
-    width: 100%;
-    height: auto; }
-    .core-training-content .main-carousel .carousel-cell p {
-      margin-top: 20px; }
-    .core-training-content .main-carousel .carousel-cell h1 {
-      color: #4a4a4a; }
+      margin: 0 auto;
+      padding: 15px 30px; } }
   .core-training-content .main-carousel ol {
     display: none; }
   .core-training-content .main-carousel .flickity-prev-next-button {
@@ -3348,16 +3446,27 @@ a:hover, a:active {
   padding-bottom: 16px;
   margin-bottom: 18px; }
 
-.core-training-content .carousel-cell.is-selected {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.core-training-content .carousel-cell {
+  height: auto;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 3rem;
   line-height: 20px; }
   @media (min-width: 720px) {
-    .core-training-content .carousel-cell.is-selected {
+    .core-training-content .carousel-cell {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
           justify-content: center; } }
+  .core-training-content .carousel-cell p {
+    margin-top: 20px; }
+  .core-training-content .carousel-cell h1 {
+    color: #4a4a4a; }
+
+.core-training-content .carousel-cell.is-selected {
+  height: auto;
+  width: 100%;
+  text-align: center; }
 
 .core-training-content .core-header {
   margin: 0;
@@ -3365,7 +3474,6 @@ a:hover, a:active {
   color: #6b747d;
   font-size: 20px;
   line-height: 24px;
-  margin-top: 35px;
   font-weight: 600; }
   @media (min-width: 720px) {
     .core-training-content .core-header {
@@ -3379,7 +3487,7 @@ a:hover, a:active {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -3398,6 +3506,9 @@ a:hover, a:active {
   align-items: center;
   text-decoration: none;
   background-color: #6B747D; }
+  @media (min-width: 720px) {
+    .core-training-content .register-online-button {
+      width: 230px; } }
   .core-training-content .register-online-button a {
     color: white;
     text-align: center; }
@@ -3407,7 +3518,7 @@ a:hover, a:active {
 
 @media (min-width: 720px) {
   .core-training-content .table-section-container {
-    max-width: 1020px;
+    max-width: 1024px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -3454,7 +3565,7 @@ a:hover, a:active {
   line-height: 30px; }
 
 .core-training-content .general-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -3476,6 +3587,9 @@ a:hover, a:active {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .core-training-content .general-button {
+      width: 230px; } }
 
 .core-training-content .register-online-button {
   text-align: center; }
@@ -3494,10 +3608,10 @@ a:hover, a:active {
     margin-top: 12px; } }
 
 .core-training-content .general-template-section {
-  height: 80vh; }
+  height: 50vh; }
   @media (min-width: 720px) {
     .core-training-content .general-template-section {
-      height: 100vh; } }
+      height: 70vh; } }
 
 .core-training-content .earth-logo-change {
   width: 40px;
@@ -3624,15 +3738,20 @@ a:hover, a:active {
     padding-left: 5px; }
 
 .core-training-content .traininglist-container {
-  background-color: #C7D5E2;
-  margin-bottom: 3%; }
+  background-color: #C7D5E2; }
 
 .core-training-content .training-list {
-  margin-bottom: 32px; }
+  height: auto;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  padding: 50px 15px;
+  background-color: #C7D5E2; }
   @media (min-width: 720px) {
     .core-training-content .training-list {
-      max-width: 1020px;
-      margin: 0 auto; } }
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 50px 0; } }
 
 .core-training-content .training-date-text {
   font-size: 11px;
@@ -3676,6 +3795,34 @@ a:hover, a:active {
     @media (min-width: 720px) {
       .core-training-content #training-pdf-container a {
         margin-top: 10px; } }
+  .core-training-content #training-pdf-container a:hover {
+    background-color: #ebe5d8; }
+  .core-training-content #training-pdf-container .summary-title {
+    font-size: 2rem; }
+
+.core-training-content .training-list-item {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 14px; }
+  .core-training-content .training-list-item .info-field, .core-training-content .training-list-item .info-dropdown {
+    background-color: #C7D5E2;
+    border-bottom: none;
+    width: 100vw;
+    padding: 0; }
+    .core-training-content .training-list-item .info-field span, .core-training-content .training-list-item .info-dropdown span {
+      color: #4a4a4a;
+      font-weight: 200; }
+
+.core-training-content .page-subtitle {
+  color: white;
+  font-size: 16px;
+  padding: 0 1rem;
+  text-align: center;
+  line-height: 25px; }
+
+.core-training-content .max-width-1024 {
+  max-width: 1024px;
+  margin: 0 auto; }
 
 .core-training-content .house-logo {
   width: 27.94px;
@@ -3690,6 +3837,7 @@ a:hover, a:active {
   display: inline-block;
   width: 70px;
   font-size: 1rem;
+  font-weight: bold;
   margin-left: 6px; }
 
 .core-training-content .training-table-data {
@@ -3710,13 +3858,14 @@ a:hover, a:active {
 
 @media (min-width: 720px) {
   .core-training-content .online-dates-section, .core-training-content .classroom-dates-section {
+    height: 410px;
     width: 45vw;
     padding: 0;
     max-width: 400px;
     border-top: 1px solid #979797; } }
 
 .core-training-content .table-content {
-  font-size: 11px; }
+  font-size: .9rem; }
 
 .core-training-content .yoga-info-title {
   font-size: 16.38px;
@@ -3739,9 +3888,6 @@ a:hover, a:active {
   .core-training-content .dates-table {
     width: 45vw; } }
 
-.core-training-content .training-list {
-  background-color: #C7D5E2; }
-
 .core-training-content .dates-table .classroom-tr {
   height: 140px;
   padding-bottom: 1rem;
@@ -3751,10 +3897,6 @@ a:hover, a:active {
       flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-
-.core-training-content .carousel-cell.is-selected {
-  width: 100%;
-  text-align: center; }
 
 .core-training-content .black-text {
   color: black; }
@@ -3783,7 +3925,7 @@ a:hover, a:active {
   color: black; }
 
 .resources-research-content .general-button, .resources-research-content .book-training-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -3805,6 +3947,9 @@ a:hover, a:active {
       align-items: center;
   text-decoration: none;
   margin: 0 auto 26px; }
+  @media (min-width: 720px) {
+    .resources-research-content .general-button, .resources-research-content .book-training-button {
+      width: 230px; } }
 
 .resources-research-content .page-title-header, .resources-research-content .entry-content-page {
   color: #fff; }
@@ -3963,7 +4108,7 @@ a:hover, a:active {
       width: 100%; } }
 
 .resources-media-content .general-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -3985,6 +4130,9 @@ a:hover, a:active {
       align-items: center;
   text-decoration: none;
   margin: 0 auto 26px; }
+  @media (min-width: 720px) {
+    .resources-media-content .general-button {
+      width: 230px; } }
 
 .resources-media-content .main-h3-container h3 {
   padding-top: 35px;
@@ -4113,7 +4261,7 @@ a:hover, a:active {
   height: 60vh; }
   @media (min-width: 720px) {
     .resources-media-content .general-template-section {
-      height: 100vh; } }
+      height: 70vh; } }
 
 .resources-media-content .read-more, .resources-media-content .read-less {
   font-size: 20px;
@@ -4296,7 +4444,7 @@ object {
       background-position: left 0px top 0px; } }
 
 .event-content .general-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -4318,8 +4466,12 @@ object {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .event-content .general-button {
+      width: 230px; } }
 
 .event-content .primary-button {
+  margin: 0 auto;
   margin-bottom: 10px; }
 
 .event-content .container, .event-content .container2 {
@@ -4624,7 +4776,7 @@ object {
             flex-wrap: wrap;
         height: 44.5%; } }
   .volunteer-content .site-main .main-button, .partner-facility-content .site-main .main-button, .support-us-content .site-main .main-button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -4646,6 +4798,9 @@ object {
         align-items: center;
     text-decoration: none;
     margin: 0 auto 26px; }
+    @media (min-width: 720px) {
+      .volunteer-content .site-main .main-button, .partner-facility-content .site-main .main-button, .support-us-content .site-main .main-button {
+        width: 230px; } }
     .volunteer-content .site-main .main-button.clear-button, .partner-facility-content .site-main .main-button.clear-button, .support-us-content .site-main .main-button.clear-button {
       border: 1px solid white; }
       .volunteer-content .site-main .main-button.clear-button:hover, .partner-facility-content .site-main .main-button.clear-button:hover, .support-us-content .site-main .main-button.clear-button:hover {
@@ -4654,6 +4809,31 @@ object {
       text-decoration: none; }
       .volunteer-content .site-main .main-button a a:visited, .partner-facility-content .site-main .main-button a a:visited, .support-us-content .site-main .main-button a a:visited {
         color: #fff; }
+  .volunteer-content .site-main .general-button, .partner-facility-content .site-main .general-button, .support-us-content .site-main .general-button {
+    width: 130px;
+    height: 44px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none; }
+    @media (min-width: 720px) {
+      .volunteer-content .site-main .general-button, .partner-facility-content .site-main .general-button, .support-us-content .site-main .general-button {
+        width: 230px; } }
   .volunteer-content .site-main .apply-button, .partner-facility-content .site-main .apply-button, .support-us-content .site-main .apply-button {
     margin: 2% auto; }
   .volunteer-content .site-main .small-button, .partner-facility-content .site-main .small-button, .support-us-content .site-main .small-button {
@@ -4717,7 +4897,7 @@ object {
           position: relative; } }
   .volunteer-content .site-main .entry-header, .partner-facility-content .site-main .entry-header, .support-us-content .site-main .entry-header {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     top: 0;
     color: #fff;
     display: -ms-flexbox;
@@ -4734,15 +4914,12 @@ object {
       max-width: 1020px; }
     @media (min-width: 720px) {
       .volunteer-content .site-main .entry-header, .partner-facility-content .site-main .entry-header, .support-us-content .site-main .entry-header {
-        padding-top: 40vh;
         -ms-flex-line-pack: center;
             align-content: center; } }
   .volunteer-content .site-main .drop-down-info, .partner-facility-content .site-main .drop-down-info, .support-us-content .site-main .drop-down-info {
     padding: 0; }
     .volunteer-content .site-main .drop-down-info p, .partner-facility-content .site-main .drop-down-info p, .support-us-content .site-main .drop-down-info p {
       padding: 15px; }
-  .volunteer-content .site-main header, .volunteer-content .site-main section > *, .partner-facility-content .site-main header, .partner-facility-content .site-main section > *, .support-us-content .site-main header, .support-us-content .site-main section > * {
-    padding: 15px; }
   .volunteer-content .site-main section .info-paragraph, .partner-facility-content .site-main section .info-paragraph, .support-us-content .site-main section .info-paragraph {
     text-align: left;
     margin: 0 auto;
@@ -4869,8 +5046,6 @@ object {
   .volunteer-content .main-carousel .carousel-cell, .partner-facility-content .main-carousel .carousel-cell, .support-us-content .main-carousel .carousel-cell {
     width: 100%;
     height: auto; }
-    .volunteer-content .main-carousel .carousel-cell p, .partner-facility-content .main-carousel .carousel-cell p, .support-us-content .main-carousel .carousel-cell p {
-      margin-top: 20px; }
     .volunteer-content .main-carousel .carousel-cell h1, .partner-facility-content .main-carousel .carousel-cell h1, .support-us-content .main-carousel .carousel-cell h1 {
       color: #4a4a4a; }
   .volunteer-content .main-carousel ol, .partner-facility-content .main-carousel ol, .support-us-content .main-carousel ol {
@@ -4978,6 +5153,19 @@ object {
 #sponsor {
   padding-bottom: 0; }
 
+.button-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+  height: 120px; }
+  @media (min-width: 720px) {
+    .button-container {
+      width: 1024px;
+      height: initial; } }
+
 .home {
   margin: 0 auto;
   text-align: center;
@@ -5022,7 +5210,7 @@ object {
       .home .what-we-do p {
         font-size: 24px; } }
     .home .what-we-do .general-button {
-      width: 230px;
+      width: 130px;
       height: 44px;
       font-size: 14px;
       text-align: center;
@@ -5045,6 +5233,9 @@ object {
       text-decoration: none;
       background-color: #94bfd1;
       margin-top: 35px; }
+      @media (min-width: 720px) {
+        .home .what-we-do .general-button {
+          width: 230px; } }
       .home .what-we-do .general-button a {
         color: #fff;
         text-shadow: none;
@@ -5327,15 +5518,15 @@ object {
 
 @media (min-width: 720px) {
   .training-for-facilities-content .custom-hero-image {
-    height: 100vh; } }
+    height: 70vh; } }
 
 .training-for-facilities-content .main-carousel {
   width: 100%;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 0;
+  padding: 20px 0;
   margin: 0 auto; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .main-carousel {
+      padding: 20px 0; } }
   .training-for-facilities-content .main-carousel .carousel-cell {
     width: 100%;
     height: auto; }
@@ -5366,7 +5557,7 @@ object {
     font-size: 16px; } }
 
 .training-for-facilities-content .general-button, .training-for-facilities-content .book-training-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -5388,6 +5579,9 @@ object {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .general-button, .training-for-facilities-content .book-training-button {
+      width: 230px; } }
 
 .training-for-facilities-content .book-training-button {
   margin: 0 auto; }
@@ -5398,11 +5592,54 @@ object {
 .training-for-facilities-content .small-para {
   margin-top: 20px; }
 
+.training-for-facilities-content .testimonial-container {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #ebe5d8; }
+  .training-for-facilities-content .testimonial-container .testimonial-title {
+    max-width: 1024px;
+    margin: 0 auto;
+    color: #6b747d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #6b747d; }
+    @media (min-width: 720px) {
+      .training-for-facilities-content .testimonial-container .testimonial-title {
+        font-size: 2.5rem; } }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .testimonial-container {
+      padding: 50px 0;
+      height: 30vh; } }
+
 .training-for-facilities-content .button-black-text {
   color: black; }
 
-.training-for-facilities-content .grey-button {
-  margin: 0 auto; }
+.training-for-facilities-content .general-button {
+  width: 130px;
+  height: 44px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: 'raleway',sans-serif;
+  font-size: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+  margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .general-button {
+      width: 230px; } }
 
 .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
   margin-top: 39px; }
@@ -5415,6 +5652,10 @@ object {
   background-color: #fff;
   border-bottom: 2px solid #4a4a4a;
   margin: 0 auto 3% auto; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .info-dropdown {
+      margin: 0;
+      padding: 20px 0; } }
 
 .training-for-facilities-content .noborder-info-title {
   border-bottom: none; }
@@ -5458,15 +5699,17 @@ object {
 .training-for-facilities-content .book-training-button {
   background-color: #4a4a4a;
   margin-top: 18px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .book-training-button {
+      margin-top: 50px; } }
 
 .training-for-facilities-content .carousel-cell.is-selected {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0 3.2rem;
   font-size: 2vh; }
   @media (min-width: 720px) {
     .training-for-facilities-content .carousel-cell.is-selected {
-      padding-left: 5rem;
-      padding-right: 5rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
@@ -5512,6 +5755,7 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .training-for-facilities-content #training-pdf-container a {
+    color: #4a4a4a;
     background-color: #fff;
     width: 80px;
     height: 44px;
@@ -5523,11 +5767,23 @@ object {
         align-items: center;
     text-decoration: none;
     border-radius: 8px;
-    border: 1px solid white;
-    color: #6b747d; }
+    border: 1px solid white; }
+    @media (min-width: 720px) {
+      .training-for-facilities-content #training-pdf-container a {
+        margin-top: 10px; } }
+  .training-for-facilities-content #training-pdf-container a:hover {
+    background-color: #ebe5d8; }
+  .training-for-facilities-content #training-pdf-container .summary-title {
+    font-size: 2rem; }
 
 .training-for-facilities-content .yoga-info-title {
   font-size: 16.38px; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .yoga-info-title {
+      font-size: 1.5rem; } }
+
+.training-for-facilities-content .training-list-item {
+  list-style-type: none; }
 
 .training-for-facilities-content .bottom-button-container .general-button {
   color: #4A4A4A;
@@ -5539,39 +5795,72 @@ object {
   margin: 0 auto; }
 
 .training-for-facilities-content .traininglist-container {
-  background-color: #95afc9;
-  width: 100%; }
+  display: none; }
+  @media (min-width: 720px) {
+    .training-for-facilities-content .traininglist-container {
+      color: #fff;
+      display: block;
+      padding: 20px 0;
+      background-color: #95afc9;
+      height: 50vh;
+      width: 100%; } }
+
+@media (min-width: 720px) {
+  .core-training-content .training-body-content-contain {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; } }
+
+.core-training-content .training-body-content {
+  padding: 30px 15px; }
+  @media (min-width: 720px) {
+    .core-training-content .training-body-content {
+      max-width: 1024px;
+      padding: 50px 0; } }
 
 .core-training-content .testimonial-container {
+  text-align: center;
+  padding: 30px 15px 0 15px;
   background-color: #ebe5d8; }
+  .core-training-content .testimonial-container .testimonial-title {
+    max-width: 1024px;
+    margin: 0 auto;
+    color: #6b747d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #6b747d; }
+    @media (min-width: 720px) {
+      .core-training-content .testimonial-container .testimonial-title {
+        font-size: 2.5rem; } }
+  @media (min-width: 720px) {
+    .core-training-content .testimonial-container {
+      padding-top: 50px;
+      height: 30vh; } }
 
 .core-training-content .flickity-viewport {
   overflow: auto;
   position: static; }
   @media (min-width: 720px) {
     .core-training-content .flickity-viewport {
+      height: 100% !important;
       overflow: hidden;
-      position: relative; } }
+      position: relative;
+      padding: 30px; } }
 
 .core-training-content .main-carousel {
   width: 100%;
   padding-top: 10px;
-  margin-top: 2rem;
   padding-bottom: 20px;
   padding-right: 5px;
   padding-left: 5px;
+  margin: 2rem 0;
   height: 8.3rem; }
   @media (min-width: 720px) {
     .core-training-content .main-carousel {
       max-width: 1020px;
-      margin: 0 auto; } }
-  .core-training-content .main-carousel .carousel-cell {
-    width: 100%;
-    height: auto; }
-    .core-training-content .main-carousel .carousel-cell p {
-      margin-top: 20px; }
-    .core-training-content .main-carousel .carousel-cell h1 {
-      color: #4a4a4a; }
+      margin: 0 auto;
+      padding: 15px 30px; } }
   .core-training-content .main-carousel ol {
     display: none; }
   .core-training-content .main-carousel .flickity-prev-next-button {
@@ -5586,16 +5875,27 @@ object {
   padding-bottom: 16px;
   margin-bottom: 18px; }
 
-.core-training-content .carousel-cell.is-selected {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.core-training-content .carousel-cell {
+  height: auto;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 3rem;
   line-height: 20px; }
   @media (min-width: 720px) {
-    .core-training-content .carousel-cell.is-selected {
+    .core-training-content .carousel-cell {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
           justify-content: center; } }
+  .core-training-content .carousel-cell p {
+    margin-top: 20px; }
+  .core-training-content .carousel-cell h1 {
+    color: #4a4a4a; }
+
+.core-training-content .carousel-cell.is-selected {
+  height: auto;
+  width: 100%;
+  text-align: center; }
 
 .core-training-content .core-header {
   margin: 0;
@@ -5603,7 +5903,6 @@ object {
   color: #6b747d;
   font-size: 20px;
   line-height: 24px;
-  margin-top: 35px;
   font-weight: 600; }
   @media (min-width: 720px) {
     .core-training-content .core-header {
@@ -5617,7 +5916,7 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -5636,6 +5935,9 @@ object {
   align-items: center;
   text-decoration: none;
   background-color: #6B747D; }
+  @media (min-width: 720px) {
+    .core-training-content .register-online-button {
+      width: 230px; } }
   .core-training-content .register-online-button a {
     color: white;
     text-align: center; }
@@ -5645,7 +5947,7 @@ object {
 
 @media (min-width: 720px) {
   .core-training-content .table-section-container {
-    max-width: 1020px;
+    max-width: 1024px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -5692,7 +5994,7 @@ object {
   line-height: 30px; }
 
 .core-training-content .general-button {
-  width: 230px;
+  width: 130px;
   height: 44px;
   font-size: 14px;
   text-align: center;
@@ -5714,6 +6016,9 @@ object {
       align-items: center;
   text-decoration: none;
   margin-bottom: 29px; }
+  @media (min-width: 720px) {
+    .core-training-content .general-button {
+      width: 230px; } }
 
 .core-training-content .register-online-button {
   text-align: center; }
@@ -5732,10 +6037,10 @@ object {
     margin-top: 12px; } }
 
 .core-training-content .general-template-section {
-  height: 80vh; }
+  height: 50vh; }
   @media (min-width: 720px) {
     .core-training-content .general-template-section {
-      height: 100vh; } }
+      height: 70vh; } }
 
 .core-training-content .earth-logo-change {
   width: 40px;
@@ -5862,15 +6167,20 @@ object {
     padding-left: 5px; }
 
 .core-training-content .traininglist-container {
-  background-color: #C7D5E2;
-  margin-bottom: 3%; }
+  background-color: #C7D5E2; }
 
 .core-training-content .training-list {
-  margin-bottom: 32px; }
+  height: auto;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  padding: 50px 15px;
+  background-color: #C7D5E2; }
   @media (min-width: 720px) {
     .core-training-content .training-list {
-      max-width: 1020px;
-      margin: 0 auto; } }
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 50px 0; } }
 
 .core-training-content .training-date-text {
   font-size: 11px;
@@ -5914,6 +6224,34 @@ object {
     @media (min-width: 720px) {
       .core-training-content #training-pdf-container a {
         margin-top: 10px; } }
+  .core-training-content #training-pdf-container a:hover {
+    background-color: #ebe5d8; }
+  .core-training-content #training-pdf-container .summary-title {
+    font-size: 2rem; }
+
+.core-training-content .training-list-item {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 14px; }
+  .core-training-content .training-list-item .info-field, .core-training-content .training-list-item .info-dropdown {
+    background-color: #C7D5E2;
+    border-bottom: none;
+    width: 100vw;
+    padding: 0; }
+    .core-training-content .training-list-item .info-field span, .core-training-content .training-list-item .info-dropdown span {
+      color: #4a4a4a;
+      font-weight: 200; }
+
+.core-training-content .page-subtitle {
+  color: white;
+  font-size: 16px;
+  padding: 0 1rem;
+  text-align: center;
+  line-height: 25px; }
+
+.core-training-content .max-width-1024 {
+  max-width: 1024px;
+  margin: 0 auto; }
 
 .core-training-content .house-logo {
   width: 27.94px;
@@ -5928,6 +6266,7 @@ object {
   display: inline-block;
   width: 70px;
   font-size: 1rem;
+  font-weight: bold;
   margin-left: 6px; }
 
 .core-training-content .training-table-data {
@@ -5948,13 +6287,14 @@ object {
 
 @media (min-width: 720px) {
   .core-training-content .online-dates-section, .core-training-content .classroom-dates-section {
+    height: 410px;
     width: 45vw;
     padding: 0;
     max-width: 400px;
     border-top: 1px solid #979797; } }
 
 .core-training-content .table-content {
-  font-size: 11px; }
+  font-size: .9rem; }
 
 .core-training-content .yoga-info-title {
   font-size: 16.38px;
@@ -5977,9 +6317,6 @@ object {
   .core-training-content .dates-table {
     width: 45vw; } }
 
-.core-training-content .training-list {
-  background-color: #C7D5E2; }
-
 .core-training-content .dates-table .classroom-tr {
   height: 140px;
   padding-bottom: 1rem;
@@ -5989,10 +6326,6 @@ object {
       flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-
-.core-training-content .carousel-cell.is-selected {
-  width: 100%;
-  text-align: center; }
 
 .core-training-content .black-text {
   color: black; }
@@ -6010,11 +6343,6 @@ http://flickity.metafizzy.co
   overflow-y: hidden;
   position: relative;
   height: 120%; }
-
-.flickity-slider {
-  position: absolute;
-  width: 100%;
-  height: 100%; }
 
 /* draggable */
 .flickity-enabled.is-draggable {
@@ -6252,7 +6580,7 @@ http://flickity.metafizzy.co
     width: 100%;
     margin: 5% auto 15% auto; }
   .post-type-archive-training_modules .main-button {
-    width: 230px;
+    width: 130px;
     height: 44px;
     font-size: 14px;
     text-align: center;
@@ -6274,6 +6602,9 @@ http://flickity.metafizzy.co
         align-items: center;
     text-decoration: none;
     margin-bottom: 26px; }
+    @media (min-width: 720px) {
+      .post-type-archive-training_modules .main-button {
+        width: 230px; } }
     .post-type-archive-training_modules .main-button.clear-button {
       border: 1px solid white; }
     @media (min-width: 720px) {
