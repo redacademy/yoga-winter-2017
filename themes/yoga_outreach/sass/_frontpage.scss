@@ -77,6 +77,7 @@
     position: relative;
     font-size: 14px;
     color:$darktext_color;
+    background: rgba(192, 218, 229, 0.6);
     @include desktop{
       font-size:24px;
       }
@@ -166,11 +167,20 @@
       }
     }
   }
+  .video-section{
+    margin-top: 1rem;
+    @include desktop{
+      marin-top: 0;
+    }
+  }
   .get-involved{
     position: relative;
     h2{
-      padding: 1rem;
+      padding: 1.5rem 1rem 2rem 1rem;
       color: $darktext_color;
+      @include desktop{
+        padding: 2.5rem 1rem 2rem 1rem;
+      }
     }
     .involved-wrap{
       @include desktop{
@@ -277,6 +287,9 @@
     margin-top: 40px;
     h2{
       color: $darktext_color;
+      @include desktop{
+      padding: 2.5rem 0 1rem 0;
+      }
     }
     .team-list.main-carousel{
       background-color:$base_color;
