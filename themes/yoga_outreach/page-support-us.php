@@ -9,18 +9,19 @@ get_header(); ?>
 
 	<div id="primary" class="content-area support-us-content">
 		<main id="main" class="site-main" role="main">
-            <header class="entry-header custom-hero-image">
+            <header class="entry-header custom-hero-image"></header><!-- .entry-header -->
+            <section class="page-main-header">
                 <div>
                     <h1 class="header-title"><?php esc_html(the_title()); ?></h1>
                     <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'about_sponsors' )); ?></div>
                 </div>
-                <div class="main-button-holder">
-                    <a href="#donate" class="main-button clear-button">Donate</a>
-                    <a href="#sponsor" class="main-button clear-button">Become a Sponsor</a>
-                    <a href="#tshirt" class="main-button clear-button">Shop T-Shirts</a>
-                    <a href="#current-sponsor" class="main-button clear-button">Current Sponsors</a>
+                <div class="button-container">
+                    <a href="#donate" class="general-button grey-button">Donate</a>
+                    <a href="#sponsor" class="general-button grey-button">Become a Sponsor</a>
+                    <a href="#tshirt" class="general-button grey-button">Shop T-Shirts</a>
+                    <a href="#current-sponsor" class="general-button grey-button">Current Sponsors</a>
                 </div>
-            </header><!-- .entry-header -->
+            </section>
             <section class="container-three">
                 <div class="main-carousel">
                     <?php

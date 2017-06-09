@@ -4816,6 +4816,31 @@ object {
       text-decoration: none; }
       .volunteer-content .site-main .main-button a a:visited, .partner-facility-content .site-main .main-button a a:visited, .support-us-content .site-main .main-button a a:visited {
         color: #fff; }
+  .volunteer-content .site-main .general-button, .partner-facility-content .site-main .general-button, .support-us-content .site-main .general-button {
+    width: 130px;
+    height: 44px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: 'raleway',sans-serif;
+    font-size: 14px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none; }
+    @media (min-width: 720px) {
+      .volunteer-content .site-main .general-button, .partner-facility-content .site-main .general-button, .support-us-content .site-main .general-button {
+        width: 230px; } }
   .volunteer-content .site-main .apply-button, .partner-facility-content .site-main .apply-button, .support-us-content .site-main .apply-button {
     margin: 2% auto; }
   .volunteer-content .site-main .small-button, .partner-facility-content .site-main .small-button, .support-us-content .site-main .small-button {
@@ -4879,7 +4904,7 @@ object {
           position: relative; } }
   .volunteer-content .site-main .entry-header, .partner-facility-content .site-main .entry-header, .support-us-content .site-main .entry-header {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     top: 0;
     color: #fff;
     display: -ms-flexbox;
@@ -4896,15 +4921,12 @@ object {
       max-width: 1020px; }
     @media (min-width: 720px) {
       .volunteer-content .site-main .entry-header, .partner-facility-content .site-main .entry-header, .support-us-content .site-main .entry-header {
-        padding-top: 40vh;
         -ms-flex-line-pack: center;
             align-content: center; } }
   .volunteer-content .site-main .drop-down-info, .partner-facility-content .site-main .drop-down-info, .support-us-content .site-main .drop-down-info {
     padding: 0; }
     .volunteer-content .site-main .drop-down-info p, .partner-facility-content .site-main .drop-down-info p, .support-us-content .site-main .drop-down-info p {
       padding: 15px; }
-  .volunteer-content .site-main header, .volunteer-content .site-main section > *, .partner-facility-content .site-main header, .partner-facility-content .site-main section > *, .support-us-content .site-main header, .support-us-content .site-main section > * {
-    padding: 15px; }
   .volunteer-content .site-main section .info-paragraph, .partner-facility-content .site-main section .info-paragraph, .support-us-content .site-main section .info-paragraph {
     text-align: left;
     margin: 0 auto;
@@ -5031,8 +5053,6 @@ object {
   .volunteer-content .main-carousel .carousel-cell, .partner-facility-content .main-carousel .carousel-cell, .support-us-content .main-carousel .carousel-cell {
     width: 100%;
     height: auto; }
-    .volunteer-content .main-carousel .carousel-cell p, .partner-facility-content .main-carousel .carousel-cell p, .support-us-content .main-carousel .carousel-cell p {
-      margin-top: 20px; }
     .volunteer-content .main-carousel .carousel-cell h1, .partner-facility-content .main-carousel .carousel-cell h1, .support-us-content .main-carousel .carousel-cell h1 {
       color: #4a4a4a; }
   .volunteer-content .main-carousel ol, .partner-facility-content .main-carousel ol, .support-us-content .main-carousel ol {
@@ -5139,6 +5159,19 @@ object {
 /* Partner Facility */
 #sponsor {
   padding: 0; }
+
+.button-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+  height: 120px; }
+  @media (min-width: 720px) {
+    .button-container {
+      width: 1024px;
+      height: initial; } }
 
 .home {
   margin: 0 auto;
