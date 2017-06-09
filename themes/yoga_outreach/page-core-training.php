@@ -22,6 +22,7 @@ get_header(); ?>
 				wp_reset_query(); //resetting the page query
 				?>
 			</section>
+
             <section class="training-body-content-contain">
 				<div class="training-body-content">
 					<div class="core-h3-container">

@@ -3291,15 +3291,18 @@ a:hover, a:active {
 
 .core-training-content .testimonial-container {
   text-align: center;
-  padding-top: 30px;
+  padding: 30px 15px 0 15px;
   background-color: #ebe5d8; }
   .core-training-content .testimonial-container .testimonial-title {
     max-width: 1040px;
     margin: 0 auto;
     color: #6b747d;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     border-bottom: 2px solid #6b747d; }
+    @media (min-width: 720px) {
+      .core-training-content .testimonial-container .testimonial-title {
+        font-size: 2.5rem; } }
   @media (min-width: 720px) {
     .core-training-content .testimonial-container {
       padding-top: 50px;
@@ -3318,7 +3321,7 @@ a:hover, a:active {
 .core-training-content .main-carousel {
   width: 100%;
   padding-top: 10px;
-  margin-top: 2rem;
+  margin: 2rem 0;
   padding-bottom: 20px;
   padding-right: 5px;
   padding-left: 5px;
@@ -5589,15 +5592,18 @@ object {
 
 .core-training-content .testimonial-container {
   text-align: center;
-  padding-top: 30px;
+  padding: 30px 15px 0 15px;
   background-color: #ebe5d8; }
   .core-training-content .testimonial-container .testimonial-title {
     max-width: 1040px;
     margin: 0 auto;
     color: #6b747d;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     border-bottom: 2px solid #6b747d; }
+    @media (min-width: 720px) {
+      .core-training-content .testimonial-container .testimonial-title {
+        font-size: 2.5rem; } }
   @media (min-width: 720px) {
     .core-training-content .testimonial-container {
       padding-top: 50px;
@@ -5616,7 +5622,7 @@ object {
 .core-training-content .main-carousel {
   width: 100%;
   padding-top: 10px;
-  margin-top: 2rem;
+  margin: 2rem 0;
   padding-bottom: 20px;
   padding-right: 5px;
   padding-left: 5px;
