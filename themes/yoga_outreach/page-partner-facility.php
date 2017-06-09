@@ -12,7 +12,7 @@ get_header(); ?>
             <header class="entry-header custom-hero-image">
                 <div class="header-info">
                     <h1 class="header-title"><?php the_title(); ?></h1>
-                    <?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?>
+                    <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?></div>
                 </div>
                 <div class="main-button-holder">
                     <a href="#provide" class="main-button clear-button">What We Provide</a>

@@ -15,7 +15,7 @@ get_header(); ?>
                     <p>We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
                 </div>
                 <div class="main-button-holder">
-                    <a href="#instructor" class="main-button clear-button">Become a Volunteer Teacher</a>
+                    <a href="#instructor" class="main-button clear-button">Become a Teacher</a>
                     <a href="#volunteer" class="main-button clear-button">Community Volunteer</a>
                     <a href="#council" class="main-button clear-button">Advisory Council Member</a>
                     <a href="#opportunities" class="main-button clear-button">Reaching Out with Yoga</a>
@@ -73,7 +73,7 @@ get_header(); ?>
             <?php if(!empty(CFS()->get( 'new_initiative_title' ))): ?>
                 <section id="council" class="container-one">
                     <h2><?php echo CFS()->get( 'new_initiative_title' ) ?></h2>
-                    <p class="info-paragraph"><?php echo CFS()->get( 'new_initiative_description' ) ?></p>
+                    <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'new_initiative_description' ) ?></div>
                     <a href="<?php echo get_page_link(67); ?>" class="dark-button main-button">Contact Us</a>
                 </section>
             <?php endif; ?>

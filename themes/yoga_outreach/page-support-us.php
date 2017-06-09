@@ -12,7 +12,7 @@ get_header(); ?>
             <header class="entry-header custom-hero-image">
                 <div>
                     <h1 class="header-title"><?php esc_html(the_title()); ?></h1>
-                    <p><?php echo esc_html(CFS()->get( 'about_sponsors' )); ?></p>
+                    <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'about_sponsors' )); ?></div>
                 </div>
                 <div class="main-button-holder">
                     <a href="#donate" class="main-button clear-button">Donate</a>
@@ -35,8 +35,7 @@ get_header(); ?>
             </section>
             <section id="donate" class="container-one">
                 <h2 class="h2-holder">Donate</h2>
-                <p><?php echo esc_html(CFS()->get( 'donation_information' )); ?></p>
-                <div class= "decorative-line2"></div>
+                <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'donation_information' )); ?></div>
                 <a href="<?php echo esc_url(CFS()->get( 'donation_page_url' ));?>" target="_blank" class="main-button dark-button">Donate Now</a>
             </section>
             <section class="container-one container-blue">
@@ -45,13 +44,13 @@ get_header(); ?>
                     <div class="contributor">
                         <img src="<?php echo esc_html(CFS()->get( 'monthly_contributor_image' )); ?>" alt="">
                     </div>
-                <p><?php echo CFS()->get( 'monthly_contributor_info' ); ?></p>
+                <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'monthly_contributor_info' ); ?></div>
                 <div><a href="<?php echo esc_url(CFS()->get( 'donation_page_url' ));?>" target="_blank" class="main-button white-button">Donate Now</a></div>
             </section>
             <section id="sponsor" class="container-one">
                 <div class="accent-background"><div class="background-accent"></div></div>
                 <h2 class="h2-holder">Become a Sponsor</h2>
-                <p><?php echo esc_html(CFS()->get( 'event_sponsor' )); ?></p>
+                <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'event_sponsor' )); ?></div>
                 <div class="button-wrap">
                     <h3 class="contact-header">To become an event sponsor big or small please contact Delanie </h3>
                     <a href="<?php echo get_page_link(67); ?>" class="small-button white-button">Contact</a>
@@ -63,7 +62,7 @@ get_header(); ?>
                     <div class="contributor">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/tshirt_mobile.png" alt="tshirt">
                     </div>
-                <p><?php echo CFS()->get( 't_shirt_about' ); ?></p>
+                <div class="info-paragraph info-p-center"><?php echo CFS()->get( 't_shirt_about' ); ?></div>
                 <div><a href="<?php echo esc_url(CFS()->get( 't_shirt_shop_url' ));?>" target="_blank" class="main-button white-button">Shop T-Shirts</a></div>
             </section>
             <section id="current-sponsor" class="container-one partners-container">
@@ -76,7 +75,7 @@ get_header(); ?>
                             foreach ( $fields as $field ):?>
                                 <div>
                                     <li>
-                                    <p><?php echo esc_html($field['current_sponsor']); ?></p>
+                                    <div class="info-paragraph"><?php echo esc_html($field['current_sponsor']); ?></div>
                                     </li>
                                 </div>
                     <?php endforeach; ?>
