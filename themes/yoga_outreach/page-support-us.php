@@ -13,7 +13,7 @@ get_header(); ?>
             <section class="page-main-header">
                 <div>
                     <h1 class="header-title"><?php esc_html(the_title()); ?></h1>
-                    <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'about_sponsors' )); ?></div>
+                    <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'about_sponsors' ); ?></div>
                 </div>
                 <div class="button-container">
                     <a href="#donate" class="general-button grey-button">Donate</a>
@@ -36,7 +36,7 @@ get_header(); ?>
             </section>
             <section id="donate" class="container-one">
                 <h2 class="h2-holder">Donate</h2>
-                <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'donation_information' )); ?></div>
+                <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'donation_information' ); ?></div>
                 <a href="<?php echo esc_url(CFS()->get( 'donation_page_url' ));?>" target="_blank" class="main-button dark-button">Donate Now</a>
             </section>
             <section class="container-one container-blue">
@@ -50,7 +50,7 @@ get_header(); ?>
             </section>
             <section id="sponsor" class="container-one">
                 <h2 class="h2-holder">Become a Sponsor</h2>
-                <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'event_sponsor' )); ?></div>
+                <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'event_sponsor' ); ?></div>
                 <div class="button-wrap">
                     <h3 class="contact-header">To become an event sponsor big or small please contact Delanie </h3>
                     <a href="<?php echo get_page_link(67); ?>" class="small-button white-button">Contact</a>
@@ -75,7 +75,7 @@ get_header(); ?>
                             foreach ( $fields as $field ):?>
                                 <div>
                                     <li>
-                                    <div class="info-paragraph"><?php echo esc_html($field['current_sponsor']); ?></div>
+                                    <div class="info-paragraph"><?php echo $field['current_sponsor']; ?></div>
                                     </li>
                                 </div>
                     <?php endforeach; ?>

@@ -13,7 +13,7 @@ get_header(); ?>
             <section class="page-main-header">
                 <div>
                     <h1 class="header-title"><?php the_title(); ?></h1>
-                    <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?></div>
+                    <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'about_facility_partners' ); ?></div>
                 </div>
                 <div class="button-container">
                     <a href="#provide" class="general-button grey-button">What We Provide</a>
@@ -24,8 +24,8 @@ get_header(); ?>
             </section>
             <section id="provide" class="container-one">
                 <h2 class="h2-holder">What We Provide</h2>
-                <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'about_facility_partners' )); ?></div>
-                <div class="info-paragraph info-p-center"><?php echo esc_html(CFS()->get( 'what_we_provide' )); ?></div>
+                <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'about_facility_partners' ); ?></div>
+                <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'what_we_provide' ); ?></div>
                 <div class="info-dropdown custom-info-container"><h3>Apply for Partnership</h3><span>+</span></div>
                 <div class="info-field custom-info-container drop-down-info">
                     <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
