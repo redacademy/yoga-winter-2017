@@ -812,7 +812,7 @@ body {
   background-color: #f4f1ea; }
   @media (min-width: 720px) {
     .page-main-header {
-      height: 30vh; } }
+      height: 300px; } }
 
 .button-container {
   width: 100%;
@@ -2819,6 +2819,7 @@ a:hover, a:active {
   .training-content .training-color-bar {
     height: 35px;
     width: 250px;
+    opacity: 0.3;
     background-color: #CBE8EA;
     position: absolute;
     top: 2rem;
@@ -3826,8 +3827,7 @@ a:hover, a:active {
     height: 410px;
     width: 45vw;
     padding: 0;
-    max-width: 400px;
-    border-top: 1px solid #979797; } }
+    max-width: 400px; } }
 
 .core-training-content .table-content {
   font-size: .9rem; }
@@ -6254,8 +6254,7 @@ object {
     height: 410px;
     width: 45vw;
     padding: 0;
-    max-width: 400px;
-    border-top: 1px solid #979797; } }
+    max-width: 400px; } }
 
 .core-training-content .table-content {
   font-size: .9rem; }
