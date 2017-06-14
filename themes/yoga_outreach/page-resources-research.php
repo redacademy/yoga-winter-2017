@@ -23,10 +23,6 @@ get_header(); ?>
                 wp_reset_query(); //resetting the page query
                 ?>
 			</div>
-            <div class="main-h3-container section-15px-padding">
-                <h3>Research</h3>
-                <p>Trauma sensitive yoga research from around the globe.</p>
-            </div><!--main-h3-container-->
 			<section class="resources-article-pdf-list-container">
 				<div class="section-15px-padding">
 					<div class="info-dropdown first-dropdown">
