@@ -3373,7 +3373,7 @@ a:hover, a:active {
   @media (min-width: 720px) {
     .core-training-content .testimonial-container {
       padding-top: 50px;
-      height: 30vh; } }
+      height: 40vh; } }
 
 .core-training-content .flickity-viewport {
   overflow: auto;
@@ -5800,7 +5800,7 @@ object {
   @media (min-width: 720px) {
     .core-training-content .testimonial-container {
       padding-top: 50px;
-      height: 30vh; } }
+      height: 40vh; } }
 
 .core-training-content .flickity-viewport {
   overflow: auto;
