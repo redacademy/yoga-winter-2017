@@ -3866,6 +3866,9 @@ a:hover, a:active {
 .core-training-content .black-text {
   color: black; }
 
+.resources-research-content .page-main-header {
+  background-color: white; }
+
 .resources-research-content .info-heading {
   font-size: 16px;
   font-weight: 100; }
