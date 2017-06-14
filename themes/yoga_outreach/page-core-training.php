@@ -51,20 +51,6 @@ get_header(); ?>
 					</div><!--main-paragraph-container-->
 				</div>
 			</section><!--section-15px-padding-->
-
-			<div class="testimonial-container">
-				<h2 class="testimonial-title">Testimonial</h2>
-				<ul class="testimonial-list main-carousel">
-					<?php
-					$testimonials = CFS()->get('testimonial_list');
-					if (!empty($testimonials)):
-					foreach ( $testimonials as $testimonial): ?>
-					<li class="carousel-cell"><?php echo esc_html($testimonial ['testimonial']);?></li>
-					<?php endforeach ?>
-					<?php endif ?>
-				</ul>
-			</div><!--testimonial-container-->
-
 			<div class="table-section-container">
 				<section class="section-15px-padding online-dates-section">
 					<div class="online-class-icon-heading-container">
@@ -117,6 +103,21 @@ get_header(); ?>
 					</table>
 				</section><!--classroom-dates-section-->
 			</div><!--table-section-->
+
+<div class="testimonial-container">
+				<h2 class="testimonial-title">Testimonial</h2>
+				<ul class="testimonial-list main-carousel">
+					<?php
+					$testimonials = CFS()->get('testimonial_list');
+					if (!empty($testimonials)):
+					foreach ( $testimonials as $testimonial): ?>
+					<li class="carousel-cell"><?php echo esc_html($testimonial ['testimonial']);?></li>
+					<?php endforeach ?>
+					<?php endif ?>
+				</ul>
+			</div><!--testimonial-container-->
+
+
       <div class="traininglist-container">
         <ul class="training-list">
                 <?php
