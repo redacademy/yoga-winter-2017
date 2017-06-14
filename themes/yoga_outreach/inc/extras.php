@@ -41,8 +41,8 @@ function yoga_pagetemplate_styles() {
 
     $hero_css = ".custom-hero-image {
         background: linear-gradient( to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100% ),
-        url({$image}) no-repeat center top;
-        background-size: cover, cover;
+        url({$image}) no-repeat center;
+        background-size: cover;
         }";
     wp_add_inline_style( 'yoga-outreach-style', $hero_css );
 }
