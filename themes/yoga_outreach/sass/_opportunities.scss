@@ -68,13 +68,21 @@
                     flex-direction: column;
                     p{
                         width: 85%;
-                        text-transform: uppercase;
-                        font-size: 1.1rem;
                         @include desktop {
                             width: 70%;
                             font-size: 1.2rem;
                         }
+                        .opps-subhead{
+                            text-transform: uppercase;
+                            font-size: 0.75rem;
+                            font-weight: bold;
+                            @include desktop {
+                                width: 70%;
+                                font-size: 1rem;
+                            }
+                        }
                     }
+
                 }
                 .small-button{
                     position: absolute;

@@ -1045,7 +1045,8 @@ p {
         .mainmenu-list fieldset button i:hover {
           color: #b6eaff; }
     .mainmenu-list fieldset .searchAppear {
-      width: 170px; }
+      width: 170px;
+      color: white; }
       .mainmenu-list fieldset .searchAppear::-webkit-input-placeholder {
         color: white; }
       .mainmenu-list fieldset .searchAppear:-ms-input-placeholder {
@@ -2614,6 +2615,13 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.mainmenu-list input[type="search"] {
+  color: #ffffff;
+  text-transform: uppercase; }
+  .mainmenu-list input[type="search"]:focus {
+    color: #ffffff;
+    text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -6495,13 +6503,19 @@ http://flickity.metafizzy.co
         -ms-flex-direction: column;
             flex-direction: column; }
         .current-ops-content .site-main ul li .opps-info p {
-          width: 85%;
-          text-transform: uppercase;
-          font-size: 1.1rem; }
+          width: 85%; }
           @media (min-width: 720px) {
             .current-ops-content .site-main ul li .opps-info p {
               width: 70%;
               font-size: 1.2rem; } }
+          .current-ops-content .site-main ul li .opps-info p .opps-subhead {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: bold; }
+            @media (min-width: 720px) {
+              .current-ops-content .site-main ul li .opps-info p .opps-subhead {
+                width: 70%;
+                font-size: 1rem; } }
       .current-ops-content .site-main ul li .small-button {
         position: absolute;
         bottom: 20%;

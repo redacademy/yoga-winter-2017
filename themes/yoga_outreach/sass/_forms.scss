@@ -313,4 +313,13 @@ textarea {
 	width: 100%;
 }
 
+.mainmenu-list input[type="search"]{
+		color: #ffffff;
+		text-transform: uppercase;
+	&:focus {
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+}
+
 

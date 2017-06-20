@@ -16,16 +16,16 @@ get_header(); ?>
                 <div class = "list-container">
                     <ul>
                         <?php
-                        $fields = CFS()->get( 'volunteer_opportunities' ); // returns an array of posts
+                        $fields = CFS()->get( 'volunteer_opportunities' );
                         if(!empty($fields)):
                             foreach ( $fields as $field ):?>
                                 <li>
                                     <h2 class="opps-header"><?php echo $field['opportunity_name']; ?></h2>
                                     <div class="opps-info">
-                                        <p> Date: <?php echo $field['opportunity_date']; ?></p>
-                                        <p>Time: <?php echo $field['opportunity_time']; ?></p>
-                                        <p>Position: <?php echo $field['volunteer_position']; ?></p>
-                                        <p>Description: <?php echo $field['opportunity_description']; ?></p>
+                                        <p><span class="opps-subhead">Date:</span>  <?php echo $field['opportunity_date']; ?></p>
+                                        <p><span class="opps-subhead">Time:</span>  <?php echo $field['opportunity_time']; ?></p>
+                                        <p><span class="opps-subhead">Position:</span>  <?php echo $field['volunteer_position']; ?></p>
+                                        <p><span class="opps-subhead">Description:</span>  <?php echo $field['opportunity_description']; ?></p>
                                     </div>
                                     <button class="small-button white-button"><a href="<?php echo get_page_link(176); ?>" class="button">Apply Now</a></button>
                                 </li>
