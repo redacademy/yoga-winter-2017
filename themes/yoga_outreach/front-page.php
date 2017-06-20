@@ -80,9 +80,6 @@ get_header(); ?>
     foreach ( $testimonials as $testimonial): ?>
     <li class="carousel-cell">
       <p><?php echo $testimonial ['testimonial'];?></p>
-      <div class="carousel-picture">
-        <img src="<?php echo $testimonial ['testimonial_image'];?>" />
-      </div>
     </li>
     <?php endforeach ?>
   </ul>
