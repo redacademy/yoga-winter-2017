@@ -1,15 +1,8 @@
-
-.page-id-197{
-  #main{
-      @include desktop{
-      padding-top:270px;
-      display:flex;
-      flex-direction: column;
-      }
-    }
-}
-
 #main {
+  @include desktop{
+    display:flex;
+    flex-direction: column;
+  }
   .general-page-content {
     max-width: $site_container;
     margin: 1.5rem auto;
