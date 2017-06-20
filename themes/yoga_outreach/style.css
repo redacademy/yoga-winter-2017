@@ -739,7 +739,7 @@ body {
 
 @media (min-width: 720px) {
   .general-small-page-header {
-    height: 250px;
+    height: 300px;
     display: block;
     background: #6b747d;
     /* Old browsers */
@@ -822,11 +822,11 @@ body {
   -ms-flex-align: center;
       align-items: center;
   width: 100%;
-  padding: 25px;
+  padding: 3vh;
   background-color: #f4f1ea; }
   @media (min-width: 720px) {
     .page-main-header {
-      height: 250px; } }
+      height: 30vh; } }
 
 .button-container {
   width: 100%;
