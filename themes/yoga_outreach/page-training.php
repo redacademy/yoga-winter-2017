@@ -14,7 +14,7 @@ get_header(); ?>
 					<h1><?php the_title(); ?></h1>
                 	<?php the_content(); ?> <!-- Page Content -->
 					<div class ="button-container">
-						<a href="core-training" class="general-button grey-button">Core Training</a>
+						<a href="core-training" class="general-button grey-button">For Teachers</a>
 						<a href="training-for-facilities" class="general-button grey-button">For Facilities</a>
 					</div>
                 </div><!--entry-content-page-->
@@ -24,33 +24,23 @@ get_header(); ?>
                 ?>
 			</div>
 			<div class="max-width-1024">
-				<section class="training-body-container">
-					<div class="main-h3-container section-15px-padding">
-						<h3>Trauma Informed Approach</h3>
-						<p>Creating a safe and healing environment with a no-touch,
-							no-assist approach that inspires and empowers participants to reconnect
-							with their body.</p>
-						<p class="training-find-out-para">Find out more on our <a href ="#">resource page.</a></p>
-					</div><!--main-h3-container-->
-				</section>
-
 				<section class="for-training-section section-15px-padding">
-					<h3>For Yoga Instructors</h3>
+					<h3>For Yoga Instructors™</h3>
 					<div class="training-image-bar-container">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon_yoga.png" alt="training for yoga">
 						<div class="training-color-bar"></div>
-						<h3>Yoga outreach core training</h3>
+						<h3>Yoga outreach core training™</h3>
 					</div><!--training-image-bar-container-->
-					<h3>For Training Facilities</h3>
+					<h3>For Training Facilities™</h3>
 					<div class="training-image-bar-container">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon_work.svg" alt="training for work">
 						<div class="training-color-bar grey-bar"></div>
-						<h3>Using yoga in your work</h3>
+						<h3>Using yoga in your work™</h3>
 					</div><!--training-image-bar-container-2-->
 					<div class="training-image-bar-container">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon_work.svg" alt="training for youth">
 						<div class="training-color-bar grey-bar"></div>
-						<h3>Yoga tools for youth</h3>
+						<h3>Yoga tools for youth™</h3>
 					</div><!--training-image-bar-container-3-->
 				<section><!--for-training-section-->
 			</div>
