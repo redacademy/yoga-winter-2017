@@ -41,6 +41,18 @@ body{
     }
 }
 
+.general-small-page-header {
+    @include desktop {
+        height: 200px;
+        display: block;
+        background: #6b747d; /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #6b747d 0%, #41474c 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #6b747d 0%,#41474c 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #6b747d 0%,#41474c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b747d', endColorstr='#41474c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+}
+
 .info-field, .lesson-field {
     display: none;
     height: 100%;

@@ -734,6 +734,19 @@ body {
       background-size: cover, cover;
       background-position: left 0px top 0px; } }
 
+@media (min-width: 720px) {
+  .general-small-page-header {
+    height: 200px;
+    display: block;
+    background: #6b747d;
+    /* Old browsers */
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #6b747d 0%, #41474c 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b747d', endColorstr='#41474c',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ } }
+
 .info-field, .lesson-field {
   display: none;
   height: 100%;
