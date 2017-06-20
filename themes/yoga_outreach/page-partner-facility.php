@@ -18,7 +18,7 @@ get_header(); ?>
                 <div class="button-container">
                     <a href="#provide" class="general-button grey-button">What We Provide</a>
                     <a href="#perspective" class="general-button grey-button">A Facility Perspective</a>
-                    <a href="#program" class="general-button grey-button">Receive your Program</a>
+                    <a href="#program" class="general-button grey-button">Requirements</a>
                     <a href="#partners" class="general-button grey-button">Our Current Partners</a>
                 </div>
             </section>
@@ -26,8 +26,7 @@ get_header(); ?>
                 <h2 class="h2-holder">What We Provide</h2>
                 <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'about_facility_partners' ); ?></div>
                 <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'what_we_provide' ); ?></div>
-                <div class="info-dropdown custom-info-container"><h3>Apply for Partnership</h3><span>+</span></div>
-                <div class="info-field custom-info-container drop-down-info">
+                <div class="info-field custom-info-container">
                     <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
                     <a href="<?php echo get_page_link(174); ?>" class="dark-button main-button apply-button">Apply Now</a>
                 </div>
@@ -38,7 +37,7 @@ get_header(); ?>
                 <?php if(empty(CFS()->get( 'facility_video' ))): ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/video-placeholder.jpg" /><?php endif; ?>
             </section>
             <section id="program" class="container-one partner-facility">
-                <h2 class="h2-holder">Receive yoga for Outreach Programming</h2>
+                <h2 class="h2-holder">Requirements</h2>
                 <div class = "interested-facility">
                     <h3> Interested in having a yoga program at your facility?</h3>
                     <ul>
@@ -59,7 +58,7 @@ get_header(); ?>
                 <a href="<?php echo get_page_link(174); ?>" class="dark-button main-button apply-button">Apply Now</a>
             </section>
             <section id="partners" class="container-three partner-facility">
-                <h2 class="h2-holder">Our Current Partners</h2>
+                <h2 class="h2-holder">Partners</h2>
                 <div class = "partners-container">
                     <div class="info-dropdown"><h3>Current Facility Partners</h3><span>+</span></div>
                     <div class="info-field"><ul>
