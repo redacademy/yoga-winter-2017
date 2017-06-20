@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * Template part for displaying form content in page.php.
  *
  * @package Yoga_Outreach_Theme
  */
@@ -12,7 +12,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content general-page-content">
+	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

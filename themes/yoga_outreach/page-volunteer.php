@@ -16,7 +16,7 @@ get_header(); ?>
                     <p class="info-paragraph info-p-center">We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
                 </div>
                 <div class="button-container">
-                    <a href="#instructor" class="general-button grey-button">Become a Volunteer Teacher</a>
+                    <a href="#instructor" class="general-button grey-button">Become a Teacher</a>
                     <a href="#volunteer" class="general-button grey-button">Community Volunteer</a>
                     <a href="#council" class="general-button grey-button">Advisory Council Member</a>
                     <a href="#opportunities" class="general-button grey-button">Reaching Out with Yoga</a>

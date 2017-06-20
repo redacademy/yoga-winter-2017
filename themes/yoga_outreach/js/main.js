@@ -3,10 +3,10 @@
     var $infoField = $('.info-field');
 
       //making search form appear on desktop
-     $('.fa-search').on('click', function(event){
+     $('.mainmenu-list .fa-search').on('click', function(event){
         event.preventDefault();
         $('.search-field').toggleClass('searchAppear');
-        $('.search-field').focus();    
+        $('.search-field').focus();
     });
 
     $('.sub-menu').hide();
@@ -57,7 +57,7 @@
       if ($window.width() > 720) {
         $infoField.removeClass('info-field');
         $infoField.css('display','block');
-        $('.header-subtitle').text('to your Yoga Outreach Core Training'); 
+        $('.header-subtitle').text('to your Yoga Outreach Core Training');
       } else {
         $infoField.addClass('info-field');
         $infoField.css('display','none');
@@ -122,20 +122,20 @@
 
     $('.post:first-child').show();
 
-    // Letter Count for read more text 
+    // Letter Count for read more text
     $('.article-text').each(function(){
-      var max_length = 167; 
-      if($(this).html().length > max_length){ 
-        var short_content 	= $(this).html().substr(0,max_length); 
+      var max_length = 167;
+      if($(this).html().length > max_length){
+        var short_content 	= $(this).html().substr(0,max_length);
         var long_content	= $(this).html().substr(max_length);
-        
+
         $(this).html(short_content+
               '<a href="#" class="read-more"><br/>Read More...</a>'+
               '<span class="more-text" style="display:none;">'+long_content+'</span>');
-              
-        $(this).find('a.read-more').click(function(event){ 
-  
-          event.preventDefault(); 
+
+        $(this).find('a.read-more').click(function(event){
+
+          event.preventDefault();
           $(this).hide();
           $(this).parents('.article-text').find('.more-text').show();
         });
@@ -152,31 +152,30 @@
     $(window).resize(containRemove);
 
     $('.dropdown-paragraph').each(function(){
-      var max_length = 200; 
-      if($(this).html().length > max_length){ 
-        var short_content 	= $(this).html().substr(0,max_length); 
+      var max_length = 200;
+      if($(this).html().length > max_length){
+        var short_content 	= $(this).html().substr(0,max_length);
         var long_content	= $(this).html().substr(max_length);
-        
+
         $(this).html(short_content+'<span class="more-text" style="display:none;">'+long_content+'</span>'+
               '<a href="#" id="read-more"><br/>Read More</a>'
               );
-              
-        $(this).find('#read-more').click(function(event){ 
-            event.preventDefault(); 
+
+        $(this).find('#read-more').click(function(event){
+            event.preventDefault();
             $(this).parents('.dropdown-paragraph').find('.more-text').toggle('2000','swing');
             $(this).text($(this).text() == 'Read More' ? 'Read Less' : 'Read More');
           });
       }
     });
 
-    //Who We Are Popup 
+    //Who We Are Popup
     $('.member-contain').on('click', function(event){
         event.preventDefault();
         $('.popup-description').empty();
         $('.staff-popup').fadeIn('1000','linear');
         $('.accent-name-shape').css('display','none');
         $(this).clone().appendTo('.popup-description');
-        $(this).clone().find('.staff-info').css('display', 'block').appendTo('.popup-description');
         $(this).clone().find('.staff-description').css('display', 'block').appendTo('.popup-description');
         $('.who-we-are-content main').addClass('fade-background');
             $('.exit-button').on('click',function(event){
@@ -188,5 +187,5 @@
     });
 
 
-})(jQuery); 
+})(jQuery);
 
