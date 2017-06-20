@@ -43,7 +43,7 @@ get_header(); ?>
                                     <div class="member-contain">
                                         <img src="<?php echo $member['staff_photo']; ?>" alt="staff photo" class="staffphoto">
                                         <div class="accent-bar-container">
-                                            <a href=""><?php echo $member['staff_name'] ?></a>
+                                            <a><?php echo $member['staff_name'] ?></a>
                                             <p class="staff-info"><?php echo $member['staff_position']; ?></p>
                                             <p class="staff-info"><?php echo $member['staff_email']; ?></p>
                                             <p class="staff-description"><?php echo $member['staff_description']; ?></p>

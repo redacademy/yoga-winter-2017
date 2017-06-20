@@ -646,6 +646,8 @@ button {
     padding: 10px;
     margin: 0 auto;
     z-index: 20;
+    overflow-y: scroll;
+    height: 40vh;
     font-size: 1rem;
     color: #000;
     margin-top: 10px;
@@ -654,7 +656,8 @@ button {
     @media (min-width: 720px) {
       .who-we-are-content .staff-description {
         margin-top: 10px;
-        width: 80%; } }
+        width: 80%;
+        height: 30vh; } }
   .who-we-are-content .staff-info {
     margin: 0 auto;
     z-index: 20;
