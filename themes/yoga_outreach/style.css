@@ -888,6 +888,9 @@ body {
   color: white;
   background-color: #94bfd1; }
 
+.page-nobutton-header {
+  margin: auto; }
+
 .testimonial-list.main-carousel {
   list-style: none;
   margin: 0;
@@ -3089,9 +3092,6 @@ a:hover, a:active {
   .training-for-facilities-content .custom-hero-image {
     height: 70vh; } }
 
-.training-for-facilities-content .page-nobutton-header {
-  margin: auto; }
-
 .training-for-facilities-content .main-carousel {
   width: 100%;
   padding: 20px 0;
@@ -3856,7 +3856,6 @@ a:hover, a:active {
 
 @media (min-width: 720px) {
   .core-training-content .online-dates-section, .core-training-content .classroom-dates-section {
-    height: 410px;
     width: 45vw;
     padding: 0;
     max-width: 400px; } }
@@ -5516,9 +5515,6 @@ object {
   .training-for-facilities-content .custom-hero-image {
     height: 70vh; } }
 
-.training-for-facilities-content .page-nobutton-header {
-  margin: auto; }
-
 .training-for-facilities-content .main-carousel {
   width: 100%;
   padding: 20px 0;
@@ -6283,7 +6279,6 @@ object {
 
 @media (min-width: 720px) {
   .core-training-content .online-dates-section, .core-training-content .classroom-dates-section {
-    height: 410px;
     width: 45vw;
     padding: 0;
     max-width: 400px; } }

@@ -11,11 +11,10 @@ get_header(); ?>
 				<?php
 				while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside aWP Loop -->
 					<div class="page-main-header">
-						<h1><?php the_title(); ?></h1>
-						<?php the_content(); ?> <!-- Page Content -->
-						<div class="button-container">
-							<a href="training-for-facilities" class="general-button grey-button">For Facilities</a>
-						</div><!--general-button-container-->
+						<div class="page-nobutton-header">
+							<h1><?php the_title(); ?></h1>
+							<?php the_content(); ?> <!-- Page Content -->
+						</div>
 					</div><!--entry-content-page-->
 				<?php
 				endwhile; //resetting the page loop
