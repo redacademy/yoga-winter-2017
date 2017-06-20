@@ -8,9 +8,7 @@
 get_header(); ?>
 	<div id="primary" class="content-area blog-content">
 		<main id="main" class="site-main" role="main">
-            <header class="general-small-page-header">
-
-			</header><!--general-template-section-->
+            <header class="general-small-page-header"></header><!--general-template-section-->
             <section class="article-slider">
                 <ul class="carousel main-carousel" data-flickity='{ "wrapAround": true }'>
                     <?php if ( have_posts() ) : ?>
