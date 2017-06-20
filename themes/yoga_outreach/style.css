@@ -739,16 +739,14 @@ body {
 
 @media (min-width: 720px) {
   .general-small-page-header {
-    height: 200px;
+    height: 250px;
     display: block;
     background: #6b747d;
     /* Old browsers */
     /* FF3.6-15 */
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, #6b747d 0%, #41474c 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b747d', endColorstr='#41474c',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */ } }
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ } }
 
 .info-field, .lesson-field {
   display: none;
@@ -828,7 +826,7 @@ body {
   background-color: #f4f1ea; }
   @media (min-width: 720px) {
     .page-main-header {
-      height: 300px; } }
+      height: 250px; } }
 
 .button-container {
   width: 100%;
@@ -4946,6 +4944,7 @@ object {
       margin: 0 auto;
       padding: 0; }
       .volunteer-content .site-main .container-one .contributor img, .partner-facility-content .site-main .container-one .contributor img, .support-us-content .site-main .container-one .contributor img {
+        object-fit: cover;
         height: 100%;
         width: 100%;
         margin: 0; }
