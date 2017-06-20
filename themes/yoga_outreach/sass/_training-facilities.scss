@@ -1,16 +1,21 @@
 .training-for-facilities-content{
   .custom-hero-image{
-      @include desktop{
+    @include desktop{
       height:70vh;
       }
     }
+
+  .page-nobutton-header{
+    margin: auto;
+  }
+
   .main-carousel{
-      	width: 100%;
-	  	padding: 20px 0;
-      	margin: 0 auto;
-	  @include desktop{
-		  	padding: 20px 0;
-	  }
+          width: 100%;
+          padding: 20px 0;
+          margin: 0 auto;
+      @include desktop{
+              padding: 20px 0;
+      }
       .carousel-cell{
           width: 100%;
           height: auto;
@@ -45,28 +50,28 @@
     margin: 0 auto;
   }
 
-	.avail-online-h3{
-		@include desktop{
-			font-size:16px;
-		}
-	}
+    .avail-online-h3{
+        @include desktop{
+            font-size:16px;
+        }
+    }
 
-	.general-button, .book-training-button{
-		@include general-button;
-		margin-bottom:29px;
-	}
+    .general-button, .book-training-button{
+        @include general-button;
+        margin-bottom:29px;
+    }
 
-	.book-training-button{
-		margin:0 auto;
-	}
+    .book-training-button{
+        margin:0 auto;
+    }
 
-	.under-skills-training-para, .small-para{
-		max-width:1024px;
-	}
+    .under-skills-training-para, .small-para{
+        max-width:1024px;
+    }
 
-	.small-para{
-		margin-top:20px;
-	}
+    .small-para{
+        margin-top:20px;
+    }
 
     .testimonial-container{
         text-align: center;
@@ -89,101 +94,101 @@
         }
     }
 
-	.button-black-text{
-		color:black;
-	}
+    .button-black-text{
+        color:black;
+    }
 
     .general-button{
         @include general-button;
             margin-bottom:29px;
     }
 
-	.training-yoga-tools-section,.training-yoga-work-section{
-			margin-top:39px;
-				@include desktop{
+    .training-yoga-tools-section,.training-yoga-work-section{
+            margin-top:39px;
+                @include desktop{
           max-width: 1024px;
           margin: 10px auto;
-				}
-	}
-
-	.info-dropdown{
-		background-color:#fff;
-		border-bottom:2px solid $darktheme_color;
-		margin: 0 auto 3% auto;
-		@include desktop{
-			margin: 0;
-			padding: 20px 0;
-		}
-	}
-
-	.noborder-info-title{
-		border-bottom:none;
-	}
-
-	.info-field{
-		background-color:#fff;
-	}
-
-
-	.training-h3-heading{
-		width:293px;
-		height:50px;
-		margin:0 auto;
-		font-size:20px;
-		color: black;
-		font-weight:600;
-			@include desktop{
-        		width:100%;
-				margin-left:0;
-				font-size:40px;
-			}
-	}
-
-	.train-plus-button, .train-minus-button{
-		background:transparent;
-		border:none;
-		box-shadow:none;
-		color:$darktext_color;
-		font-weight:600;
-		float:right;
-	}
-	.small-para{
-		font-weight:300;
-		font-size:11px;
-		margin-bottom:5px;
-	}
-
-	.under-skills-training-para{
-		color:#6B747D;
-		font-size: 14px;
-		min-width:290px;
-		line-height:24px;
-		margin-bottom:20px;	}
-
-
-	.book-training-button{
-		background-color:$darktext_color;
-		margin-top:18px;
-		@include desktop{
-			margin-top: 50px;
-		}
-	}
-
-	.carousel-cell.is-selected{
-        padding: 0 3.2rem;
-		font-size:2vh;
-			@include desktop{
-				padding-left: 6rem;
-    			padding-right: 6rem;
-				display:flex;
-				justify-content:center;
-			}
+                }
     }
 
-	.testimonal-slideshow-container{
-		min-width:320px;
-		height:100px;
-		background-color:#EBE5D8;
+    .info-dropdown{
+        background-color:#fff;
+        border-bottom:2px solid $darktheme_color;
+        margin: 0 auto 3% auto;
+        @include desktop{
+            margin: 0;
+            padding: 20px 0;
+        }
+    }
+
+    .noborder-info-title{
+        border-bottom:none;
+    }
+
+    .info-field{
+        background-color:#fff;
+    }
+
+
+    .training-h3-heading{
+        width:293px;
+        height:50px;
+        margin:0 auto;
+        font-size:20px;
+        color: black;
+        font-weight:600;
+            @include desktop{
+                width:100%;
+                margin-left:0;
+                font-size:40px;
+            }
+    }
+
+    .train-plus-button, .train-minus-button{
+        background:transparent;
+        border:none;
+        box-shadow:none;
+        color:$darktext_color;
+        font-weight:600;
+        float:right;
+    }
+    .small-para{
+        font-weight:300;
+        font-size:11px;
+        margin-bottom:5px;
+    }
+
+    .under-skills-training-para{
+        color:#6B747D;
+        font-size: 14px;
+        min-width:290px;
+        line-height:24px;
+        margin-bottom:20px;	}
+
+
+    .book-training-button{
+        background-color:$darktext_color;
+        margin-top:18px;
+        @include desktop{
+            margin-top: 50px;
+        }
+    }
+
+    .carousel-cell.is-selected{
+        padding: 0 3.2rem;
+        font-size:2vh;
+            @include desktop{
+                padding-left: 6rem;
+                padding-right: 6rem;
+                display:flex;
+                justify-content:center;
+            }
+    }
+
+    .testimonal-slideshow-container{
+        min-width:320px;
+        height:100px;
+        background-color:#EBE5D8;
   }
 
 .training-list{
@@ -191,89 +196,89 @@
     margin: 0 auto;
   }
 
-	.info-list-content, .info-list-title{
-		background-color:$logo_color;
-	}
+    .info-list-content, .info-list-title{
+        background-color:$logo_color;
+    }
 
-	.info-list-content{
-		p{
-			font-size:18px;
-			line-height:30px;
-		}
-	}
+    .info-list-content{
+        p{
+            font-size:18px;
+            line-height:30px;
+        }
+    }
 
-	.bottom-button-container{
-		height:85px;
-		width:100%;
-		background-color:$mediumtheme_color;
-		display:flex;
-		align-items:center;
-	}
+    .bottom-button-container{
+        height:85px;
+        width:100%;
+        background-color:$mediumtheme_color;
+        display:flex;
+        align-items:center;
+    }
 
-	.fill-white{
-		background-color:#fff;
-		color:#4A4A4A;
-	}
+    .fill-white{
+        background-color:#fff;
+        color:#4A4A4A;
+    }
 
-	#training-pdf-container{
-		display:flex;
-		justify-content:space-between;
-		margin-bottom:5px;
-		align-items:center;
-		flex-wrap:wrap;
-		a{
-			color: #4a4a4a;
-			background-color:#fff;
-			width:80px;
-			height:44px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			text-decoration: none;
-			border-radius:8px;
-			border:1px solid white;
-			@include desktop{
-				margin-top:10px;
-			}
-		}
+    #training-pdf-container{
+        display:flex;
+        justify-content:space-between;
+        margin-bottom:5px;
+        align-items:center;
+        flex-wrap:wrap;
+        a{
+            color: #4a4a4a;
+            background-color:#fff;
+            width:80px;
+            height:44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius:8px;
+            border:1px solid white;
+            @include desktop{
+                margin-top:10px;
+            }
+        }
         a:hover{
             background-color: $another_color;
         }
-		.summary-title {
+        .summary-title {
             font-size: 2rem;
         }
-	}
+    }
 
-	.yoga-info-title{
-		font-size:16.38px;
-		@include desktop{
-			font-size: 1.5rem;
-		}
-	}
+    .yoga-info-title{
+        font-size:16.38px;
+        @include desktop{
+            font-size: 1.5rem;
+        }
+    }
 
-	.training-list-item{
-		list-style-type: none;
-	}
+    .training-list-item{
+        list-style-type: none;
+    }
 
-	.bottom-button-container{
-		.general-button{
-			color:#4A4A4A;
-			background-color:#fff;
-			margin-bottom:0;
-			margin: 0 auto;
-		}
-	}
+    .bottom-button-container{
+        .general-button{
+            color:#4A4A4A;
+            background-color:#fff;
+            margin-bottom:0;
+            margin: 0 auto;
+        }
+    }
 
 .traininglist-container{
-	display: none;
-	@include desktop{
-		color: #fff;
-		display: block;
-		padding: 20px 0;
-		background-color:$logo_color;
-		height: 50vh;
-    	width: 100%;
-	}
+    display: none;
+    @include desktop{
+        color: #fff;
+        display: block;
+        padding: 20px 0;
+        background-color:$logo_color;
+        height: 50vh;
+        width: 100%;
+    }
 
   }
 }//Training Facilities Wrapper

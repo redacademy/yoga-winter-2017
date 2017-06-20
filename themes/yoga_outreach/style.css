@@ -3089,6 +3089,9 @@ a:hover, a:active {
   .training-for-facilities-content .custom-hero-image {
     height: 70vh; } }
 
+.training-for-facilities-content .page-nobutton-header {
+  margin: auto; }
+
 .training-for-facilities-content .main-carousel {
   width: 100%;
   padding: 20px 0;
@@ -5512,6 +5515,9 @@ object {
 @media (min-width: 720px) {
   .training-for-facilities-content .custom-hero-image {
     height: 70vh; } }
+
+.training-for-facilities-content .page-nobutton-header {
+  margin: auto; }
 
 .training-for-facilities-content .main-carousel {
   width: 100%;
