@@ -5146,10 +5146,6 @@ object {
     .partners-container ul li p {
       text-align: left; }
 
-/* Partner Facility */
-#sponsor {
-  padding-bottom: 0; }
-
 .button-container {
   display: -ms-flexbox;
   display: flex;
@@ -5418,7 +5414,7 @@ object {
           -ms-flex-item-align: center;
               -ms-grid-row-align: center;
               align-self: center;
-          font-size: 1.2rem; } }
+          font-size: 1.1rem; } }
     .home .testimonal-container .main-carousel ol {
       display: none; }
     .home .testimonal-container .main-carousel .flickity-prev-next-button {

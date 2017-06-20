@@ -51,10 +51,6 @@ get_header(); ?>
             <section id="sponsor" class="container-one">
                 <h2 class="h2-holder">Become a Sponsor</h2>
                 <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'event_sponsor' ); ?></div>
-                <div class="button-wrap">
-                    <h3 class="contact-header">To become an event sponsor big or small please contact Delanie </h3>
-                    <a href="<?php echo get_page_link(67); ?>" class="small-button white-button">Contact</a>
-                </div>
             </section>
             <section id="tshirt" class="container-one container-blue">
                 <div class="accent-background monthly"><div class="background-accent"></div></div>
@@ -68,7 +64,6 @@ get_header(); ?>
             <section id="current-sponsor" class="container-one partners-container">
                 <h2 class="h2-holder">Our Current Sponsors</h2>
                 <p>Yoga Outreach's past 20 years of community service has only been possible thanks to volunteers and individuals like YOU who donate to support the healing of your community.</p>
-                <div class="info-dropdown custom-info-container"><h3>Program Sponsors, In-kind & Financial Support</h3><span>+</span></div>
                     <div class="info-field custom-info-container"><ul>
                         <?php
                         $fields = CFS()->get( 'current_sponsors' ); // returns an array of posts
