@@ -2184,12 +2184,12 @@ footer {
         width: 830px;
         margin: 0 auto; } }
   .blog-content .button-container {
-    height: 30px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    margin: 25px; }
+    margin-bottom: 25px;
+    padding: 10px; }
     @media (min-width: 720px) {
       .blog-content .button-container {
         width: 830px;

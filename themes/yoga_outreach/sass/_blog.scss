@@ -174,10 +174,10 @@
     }
 
     .button-container {
-        height: 30px;
         display: flex;
         justify-content: space-between;
-        margin: 25px;
+        margin-bottom: 25px;
+        padding: 10px;
         @include desktop {
             width: 830px;
             margin: 0 auto;
