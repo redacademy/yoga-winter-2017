@@ -264,11 +264,8 @@
 		}
 	}
 
-    .content-container{
-    margin: 0 auto;
-  }
-  .traininglist-container{
-	  display: none;
+.traininglist-container{
+	display: none;
 	@include desktop{
 		color: #fff;
 		display: block;

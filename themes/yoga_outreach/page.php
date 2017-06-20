@@ -6,8 +6,6 @@
  */
 
 get_header(); ?>
-<header class="general-small-page-header">
-</header><!--general-template-section-->
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

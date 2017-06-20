@@ -1,13 +1,15 @@
 <?php
 /**
- * 
+ *
  *
  * @package Yoga_Outreach_Theme
  */
- 
+
 get_header(); ?>
- 
-	<div id="primary" class="content-area current-ops-content"> 
+<header class="general-small-page-header">
+</header><!--general-template-section-->
+
+	<div id="primary" class="content-area current-ops-content">
 		<main id="main" class="site-main" role="main">
             <h1>Current Volunteer Opportunities</h1>
             <section>
