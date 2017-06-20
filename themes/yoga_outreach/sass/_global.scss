@@ -43,7 +43,7 @@ body{
 
 .general-small-page-header {
     @include desktop {
-        height: 250px;
+        height: 300px;
         display: block;
         background: #6b747d; /* Old browsers */
         background: -moz-linear-gradient(-45deg, #6b747d 0%, #41474c 100%); /* FF3.6-15 */
@@ -127,10 +127,10 @@ body{
     text-align: center;
     align-items: center;
     width: 100%;
-    padding: 25px;
+    padding: 3vh;
     background-color: #f4f1ea;
     @include desktop {
-        height: 250px;
+        height: 30vh;
     }
 
 }
