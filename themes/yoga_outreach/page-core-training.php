@@ -52,29 +52,6 @@ get_header(); ?>
 				</div>
 			</section><!--section-15px-padding-->
 			<div class="table-section-container">
-				<section class="section-15px-padding online-dates-section">
-					<div class="online-class-icon-heading-container">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/earth_icon.svg" class="earth-logo" alt = "earth_icon">
-						<h3>2017 Training Dates Online (8 weeks)</h3>
-					</div><!--online-class-icon-heading-container-->
-					<table class="dates-table">
-					<?php $dates = CFS()->get('online_dates_container');?>
-					<?php 	if (!empty($dates)):
-							foreach ($dates as $date):?>
-						<tr>
-							<td class="training-table-data">
-								<p class="table-heading">Date</p>
-								<p class="table-content"><?php echo esc_html($date ['date']);?></p>
-							</td>
-							<td class="training-table-data">
-								<p class="table-heading">Price</p>
-								<p class="table-content"><?php echo esc_html($date ['price']);?></p>
-							</td>
-						<?php endforeach ?>
-						<?php endif ?>
-						</tr>
-					</table>
-				</section>
 				<section class="classroom-dates-section section-15px-padding">
 					<div class="core-training-text-image-container">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/house_icon.svg" class ="house-logo" alt="house logo">
@@ -102,6 +79,29 @@ get_header(); ?>
 							<?php endif ?>
 					</table>
 				</section><!--classroom-dates-section-->
+				<section class="section-15px-padding online-dates-section">
+					<div class="online-class-icon-heading-container">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/earth_icon.svg" class="earth-logo" alt = "earth_icon">
+						<h3>2017 Training Dates Online (8 weeks)</h3>
+					</div><!--online-class-icon-heading-container-->
+					<table class="dates-table">
+					<?php $dates = CFS()->get('online_dates_container');?>
+					<?php 	if (!empty($dates)):
+							foreach ($dates as $date):?>
+						<tr>
+							<td class="training-table-data">
+								<p class="table-heading">Date</p>
+								<p class="table-content"><?php echo esc_html($date ['date']);?></p>
+							</td>
+							<td class="training-table-data">
+								<p class="table-heading">Price</p>
+								<p class="table-content"><?php echo esc_html($date ['price']);?></p>
+							</td>
+						<?php endforeach ?>
+						<?php endif ?>
+						</tr>
+					</table>
+				</section>
 			</div><!--table-section-->
 
 <div class="testimonial-container">
