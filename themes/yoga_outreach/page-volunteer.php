@@ -17,7 +17,7 @@ get_header(); ?>
                 </div>
                 <div class="button-container">
                     <a href="#instructor" class="general-button grey-button">Become a Teacher</a>
-                    <a href="#volunteer" class="general-button grey-button">Community Volunteer</a>
+                    <a href="#volunteer" class="general-button grey-button">Community Engagment Volunteer</a>
                     <a href="#council" class="general-button grey-button">Advisory Council Member</a>
                     <a href="#opportunities" class="general-button grey-button">Reaching Out with Yoga</a>
                 </div>
@@ -42,12 +42,12 @@ get_header(); ?>
             <section id="volunteer" class="container-one">
                 <h2>Community Engagement Volunteer</h2>
                 <div class="info-paragraph"><?php echo CFS()->get( 'community_engagement' ); ?></div>
-                <a href="<?php echo get_page_link(176); ?>" class="grey-button small-button">Apply Now</a>
+                <a href="<?php echo get_page_link(318); ?>" class="grey-button small-button">Apply Now</a>
             </section>
             <section id="council" class="container-three">
-                <h2>Community Council Volunteer</h2>
+                <h2>Advisory Council Member</h2>
                 <div class="info-paragraph"><?php echo CFS()->get( 'advisory_council' ); ?></div>
-                <a href="<?php echo get_page_link(67); ?>" class="main-button white-button">Contact Us</a>
+                <a href="<?php echo get_page_link(318); ?>" class="main-button white-button">Apply Now</a>
             </section>
             <section class="container-one">
                 <h2>Benefits for Volunteers</h2>
@@ -75,6 +75,13 @@ get_header(); ?>
                 <section id="council" class="container-one">
                     <h2><?php echo CFS()->get( 'new_initiative_title' ) ?></h2>
                     <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'new_initiative_description' ) ?></div>
+                    <a href="<?php echo get_page_link(67); ?>" class="dark-button main-button">Contact Us</a>
+                </section>
+            <?php endif; ?>
+            <?php if(!empty(CFS()->get( 'new_initiative_2_title' ))): ?>
+                <section id="council" class="container-one">
+                    <h2><?php echo CFS()->get( 'new_initiative_2_title' ) ?></h2>
+                    <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'new_initiative_2_description' ) ?></div>
                     <a href="<?php echo get_page_link(67); ?>" class="dark-button main-button">Contact Us</a>
                 </section>
             <?php endif; ?>

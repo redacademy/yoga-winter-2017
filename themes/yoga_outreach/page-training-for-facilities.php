@@ -12,12 +12,11 @@ get_header(); ?>
           <section>
             <?php
             while ( have_posts() ) : the_post(); ?> <!--the_content() works only inside a WP Loop -->
-            <div class="page-main-header">
+            <div class="page-main-header ">
+              <div class="page-nobutton-header">
                 <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?> <!-- Page Content -->
-                <div class="button-containe">
-						        <a href="core-training" class="general-button grey-button">Core Training</a>
-                </div><!--general-button-container-->
+              </div>
             </div><!--entry-content-page-->
             <?php
             endwhile; //resetting the page loop
@@ -27,7 +26,7 @@ get_header(); ?>
 
           <section class="training-yoga-tools-section">
             <div class="info-dropdown">
-              <h3 class="training-h3-heading">Yoga Tools for Youth</h3>
+              <h3 class="training-h3-heading">Yoga Tools for Youth™</h3>
               <span>+</span>
             </div><!--info-drop-down-->
             <div class="info-field">
@@ -37,7 +36,7 @@ get_header(); ?>
 
           <section class="training-yoga-work-section">
             <div class="info-dropdown">
-              <h3 class="training-h3-heading">Using Yoga in Your Work</h3>
+              <h3 class="training-h3-heading">Using Yoga in Your Work™</h3>
               <span>+</span>
             </div><!--info-dropdown-work-->
             <div class="info-field">
@@ -45,7 +44,7 @@ get_header(); ?>
             </div><!--info-field-work-->
           </section><!--training-yoga-work-section-->
 
-          <a href="core-training-application-form" class="book-training-button">Book Training</a>
+          <a href="mailto:delanie@yogaoutreach.com" class="book-training-button">Book Training</a>
           <p class="small-para section-15px-padding">-Skills Training for Support Professionals</p>
           <p class="under-skills-training-para section-15px-padding">Are you interested in learning about
           the practical applications of yoga in your work with clients?
