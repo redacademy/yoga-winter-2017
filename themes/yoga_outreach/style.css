@@ -1394,6 +1394,17 @@ footer {
     -ms-flex-direction: column;
         flex-direction: column; } }
 
+#main .general-page-content {
+  max-width: 1024px;
+  margin: 1.5rem auto;
+  padding: 15px;
+  line-height: 2rem; }
+
+#main .entry-header .entry-title {
+  color: #404040;
+  padding-top: 0;
+  margin: 1rem; }
+
 .contact-us-content h1, .contact-us-content h2, .contact-us-content h3, .contact-us-content h4, .contact-us-content h5 {
   margin: 0;
   font-weight: 300; }

@@ -1,12 +1,27 @@
 
 .page-id-197{
+  #main{
+      @include desktop{
+      padding-top:270px;
+      display:flex;
+      flex-direction: column;
+      }
+    }
+}
 
-#main{
-    @include desktop{
-    padding-top:270px; 
-    display:flex;
-    flex-direction: column;
-    } 
+#main {
+  .general-page-content {
+    max-width: $site_container;
+    margin: 1.5rem auto;
+    padding: 15px;
+    line-height: 2rem;
   }
 
+  .entry-header{
+    .entry-title{
+      color: $color__text-main;
+      padding-top: 0;
+      margin: 1rem;
+    }
+  }
 }

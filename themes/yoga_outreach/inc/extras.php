@@ -108,30 +108,30 @@ add_action( 'pre_get_posts', 'yoga_change_sort_order');
  *
  *
  */
-function yoga_headernav_styles() {
+// function yoga_headernav_styles() {
 
-    $templates = ['page-templates/forms-template.php', 'page-templates/application-submission.php', 'page-templates/quiz-template.php'];
-    $pages = ['current-opportunities', 'modules-home', 'privacy-policy'];
+//     $templates = ['page-templates/forms-template.php', 'page-templates/application-submission.php', 'page-templates/quiz-template.php'];
+//     $pages = ['current-opportunities', 'modules-home', 'privacy-policy'];
 
-    if(!is_page_template($template = $templates) && !is_page($page = $pages) && !is_post_type_archive( 'training_modules' ) && !is_home()){
-        return;
-    }
+//     if(!is_page_template($template = $templates) && !is_page($page = $pages) && !is_post_type_archive( 'training_modules' ) && !is_home()){
+//         return;
+//     }
 
-    $header_css = "#site-navigation .mainmenu-list fieldset button i{
-        color: #4a4a4a;
-        }
-        #site-navigation #primary-menu .menu-item-has-children a {
-            color: #4a4a4a;
-        }
-        #site-navigation #primary-menu .menu-item-type-post_type a{
-            color: #4a4a4a;
-        }
-        .mainmenu-list fieldset .searchAppear::placeholder{
-            color: #4a4a4a;
-		}";
-    wp_add_inline_style( 'yoga-outreach-style', $header_css );
-}
-add_action( 'wp_enqueue_scripts', 'yoga_headernav_styles' );
+//     $header_css = "#site-navigation .mainmenu-list fieldset button i{
+//         color: #4a4a4a;
+//         }
+//         #site-navigation #primary-menu .menu-item-has-children a {
+//             color: #4a4a4a;
+//         }
+//         #site-navigation #primary-menu .menu-item-type-post_type a{
+//             color: #4a4a4a;
+//         }
+//         .mainmenu-list fieldset .searchAppear::placeholder{
+//             color: #4a4a4a;
+// 		}";
+//     wp_add_inline_style( 'yoga-outreach-style', $header_css );
+// }
+// add_action( 'wp_enqueue_scripts', 'yoga_headernav_styles' );
 
 /**
  * Custom dynamic fields for select events

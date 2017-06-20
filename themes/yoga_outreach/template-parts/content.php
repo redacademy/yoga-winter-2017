@@ -21,7 +21,7 @@
 				<?php the_date('m-d-Y', '<h2>', '</h2>'); ?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
-		
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
