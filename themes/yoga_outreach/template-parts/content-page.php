@@ -6,6 +6,7 @@
  */
 
 ?>
+<header class="general-small-page-header"></header><!--general-template-section-->
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
