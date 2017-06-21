@@ -1401,13 +1401,6 @@ footer {
     font-size: 14px;
     text-align: center; }
 
-@media (min-width: 720px) {
-  #main {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; } }
-
 #main .general-page-content {
   max-width: 1024px;
   margin: 1.5rem auto;

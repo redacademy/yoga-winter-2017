@@ -1,8 +1,4 @@
 #main {
-  @include desktop{
-    display:flex;
-    flex-direction: column;
-  }
   .general-page-content {
     max-width: $site_container;
     margin: 1.5rem auto;
