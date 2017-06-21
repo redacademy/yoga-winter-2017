@@ -6331,6 +6331,9 @@ http://flickity.metafizzy.co
   position: relative;
   height: 120%; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 /* draggable */
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
