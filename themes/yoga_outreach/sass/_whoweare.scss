@@ -29,7 +29,7 @@
     }
     .team {
         max-width: 100%;
-        height: 100%;
+        // height: 100%;
         font-family: Raleway;
         font-weight: lighter;
         color: #6B747D;
@@ -62,6 +62,9 @@
         align-items: center;
         justify-content: space-between;
         background-color: transparent;
+        @include desktop{
+            height: auto;
+        }
         #hideshow{
             border: none;
             border-radius: 0;
@@ -93,6 +96,9 @@
         background-color: transparent;
         @include flex-column;
         align-items: center;
+        @include desktop{
+            height: auto;
+        }
     }
     .member-contain {
         width: 100%;

@@ -503,7 +503,6 @@ button {
     height: 100%; }
   .who-we-are-content .team {
     max-width: 100%;
-    height: 100%;
     font-family: Raleway;
     font-weight: lighter;
     color: #6B747D; }
@@ -538,6 +537,9 @@ button {
     -ms-flex-pack: justify;
         justify-content: space-between;
     background-color: transparent; }
+    @media (min-width: 720px) {
+      .who-we-are-content .info-dropdown {
+        height: auto; } }
     .who-we-are-content .info-dropdown #hideshow {
       border: none;
       border-radius: 0;
@@ -568,6 +570,9 @@ button {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center; }
+    @media (min-width: 720px) {
+      .who-we-are-content .info-field {
+        height: auto; } }
   .who-we-are-content .member-contain {
     width: 100%;
     position: relative;
@@ -1403,13 +1408,6 @@ footer {
     padding: 10px;
     font-size: 14px;
     text-align: center; }
-
-@media (min-width: 720px) {
-  #main {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; } }
 
 #main .general-page-content {
   max-width: 1024px;
@@ -4848,7 +4846,7 @@ object {
     border: none;
     font-family: 'raleway',sans-serif;
     font-size: 14px;
-    margin: 0 auto;
+    margin: 0 auto 26px;
     color: #fff;
     text-decoration: none;
     padding: 15px;
@@ -4863,8 +4861,7 @@ object {
         width: 230px; } }
   .volunteer-content .site-main .white-button, .partner-facility-content .site-main .white-button, .support-us-content .site-main .white-button {
     text-decoration: none;
-    color: #4a4a4a;
-    margin: 0 auto; }
+    color: #4a4a4a; }
     .volunteer-content .site-main .white-button:visited, .partner-facility-content .site-main .white-button:visited, .support-us-content .site-main .white-button:visited {
       color: #4a4a4a; }
   .volunteer-content .site-main .button-wrap, .partner-facility-content .site-main .button-wrap, .support-us-content .site-main .button-wrap {
@@ -6333,6 +6330,9 @@ http://flickity.metafizzy.co
   overflow-y: hidden;
   position: relative;
   height: 120%; }
+
+::-webkit-scrollbar {
+  display: none; }
 
 /* draggable */
 .flickity-enabled.is-draggable {
