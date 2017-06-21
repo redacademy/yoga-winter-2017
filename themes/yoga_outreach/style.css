@@ -555,7 +555,7 @@ button {
           margin: 0 auto;
           color: #4A4A4A;
           text-transform: uppercase;
-          font-weight: 100;
+          font-weight: bold;
           margin-top: 60px; } }
     .who-we-are-content .info-dropdown span {
       font-size: 1.5rem; }
@@ -581,7 +581,7 @@ button {
     @media (min-width: 720px) {
       .who-we-are-content .member-contain {
         width: 30%;
-        margin-top: 40px; } }
+        margin: 40px 17px; } }
     .who-we-are-content .member-contain .staffphoto {
       width: 160px;
       height: 160px;
@@ -696,7 +696,7 @@ button {
     width: 90%; }
     @media (min-width: 720px) {
       .who-we-are-content .accent-bar-container {
-        width: 80%; } }
+        width: 100%; } }
 
 * {
   font-family: 'raleway',sans-serif; }
