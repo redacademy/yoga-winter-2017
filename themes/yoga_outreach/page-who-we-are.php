@@ -33,7 +33,6 @@ get_header(); ?>
                     <?php foreach( $fields as $field ): ?>
                         <div class="info-dropdown header-click-text">
                             <h3 class ="staff-header"><?php echo $field[ 'title' ]; ?></h3><span>+</span>
-                            <p class="click-text">Click on name</p>
                         </div><!--info-dropdown-->
 
                         <div class="info-field staff-item-container">
