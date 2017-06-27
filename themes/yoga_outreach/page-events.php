@@ -16,8 +16,8 @@ get_header(); ?>
                         <h1> <?php the_title(); ?></h1>
                         <?php the_content(); ?> <!-- Page Content -->
                         <div class="button-container">
-                            <a href="#workshop" class="general-button grey-button">workshop</a>
-                            <a href="#retreat" class="general-button grey-button">retreat</a>
+                            <a href="#workshop" class="general-button grey-button">workshops</a>
+                            <a href="#retreat" class="general-button grey-button">retreats</a>
                         </div>
                     </div>
                     <?php
@@ -29,7 +29,7 @@ get_header(); ?>
                         <div class="body-info">
                             <div class="title-contain">
                                 <h3><?php echo $event['event_title']; ?></h3>
-                                <a href="<?php echo get_page_link(275); ?>"class="primary-button">book</a>
+                                <a href="<?php echo get_page_link(275); ?>"class="primary-button">register</a>
                                 <div class="accent-name-shape"></div>
                             </div> <!--title-contain -->
 
@@ -101,7 +101,7 @@ get_header(); ?>
             </section>
 
             <div class="booking-button">
-                <a href="<?php echo get_page_link(275); ?>"class="primary-button">book workshop</a>
+                <a href="<?php echo get_page_link(275); ?>"class="primary-button">register</a>
             </div>
 
             <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop-->
@@ -189,7 +189,7 @@ get_header(); ?>
                         </div>
 
                         <div class="booking-button">
-                            <a href="<?php echo get_page_link(273); ?>"class="primary-button">register online</a>
+                            <a href="<?php echo get_page_link(273); ?>"class="primary-button">register</a>
                         </div>
                     <?php endforeach; ?>
                 <?php endif; ?>

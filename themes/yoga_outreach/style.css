@@ -900,7 +900,7 @@ body {
   list-style: none;
   margin: 0;
   text-align: center;
-  font-size: 12px; }
+  font-size: 15px; }
   .testimonial-list.main-carousel li {
     width: 100%;
     display: -ms-flexbox;
@@ -3180,8 +3180,8 @@ a:hover, a:active {
         font-size: 2.5rem; } }
   @media (min-width: 720px) {
     .training-for-facilities-content .testimonial-container {
-      padding: 50px 0;
-      height: 30vh; } }
+      padding: 50px 15px;
+      height: 250px; } }
 
 .training-for-facilities-content .button-black-text {
   color: black; }
@@ -3218,7 +3218,7 @@ a:hover, a:active {
   @media (min-width: 720px) {
     .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
       max-width: 1024px;
-      margin: 10px auto; } }
+      margin: 10px 15px; } }
 
 .training-for-facilities-content .info-dropdown {
   background-color: #fff;
@@ -3270,14 +3270,14 @@ a:hover, a:active {
 
 .training-for-facilities-content .book-training-button {
   background-color: #4a4a4a;
-  margin-top: 18px; }
+  margin-top: 18px;
+  margin-bottom: 18px; }
   @media (min-width: 720px) {
     .training-for-facilities-content .book-training-button {
       margin-top: 50px; } }
 
 .training-for-facilities-content .carousel-cell.is-selected {
-  padding: 0 3.2rem;
-  font-size: 2vh; }
+  padding: 0 3.2rem; }
   @media (min-width: 720px) {
     .training-for-facilities-content .carousel-cell.is-selected {
       padding-left: 6rem;
@@ -3386,7 +3386,7 @@ a:hover, a:active {
   @media (min-width: 720px) {
     .core-training-content .training-body-content {
       max-width: 1024px;
-      padding: 50px 0; } }
+      padding: 50px 15px; } }
 
 .core-training-content .testimonial-container {
   text-align: center;
@@ -3748,8 +3748,7 @@ a:hover, a:active {
   @media (min-width: 720px) {
     .core-training-content .training-list {
       max-width: 1024px;
-      margin: 0 auto;
-      padding: 50px 0; } }
+      margin: 0 auto; } }
 
 .core-training-content .training-date-text {
   font-size: 11px;
@@ -4928,7 +4927,7 @@ object {
   .volunteer-content .site-main .container-blue, .partner-facility-content .site-main .container-blue, .support-us-content .site-main .container-blue {
     background-color: rgba(159, 171, 183, 0.6); }
   .volunteer-content .site-main .container-one, .partner-facility-content .site-main .container-one, .support-us-content .site-main .container-one {
-    padding: 5% 0;
+    padding: 5% 15px;
     position: relative; }
     .volunteer-content .site-main .container-one h2, .volunteer-content .site-main .container-one p, .volunteer-content .site-main .container-one .info-dropdown, .partner-facility-content .site-main .container-one h2, .partner-facility-content .site-main .container-one p, .partner-facility-content .site-main .container-one .info-dropdown, .support-us-content .site-main .container-one h2, .support-us-content .site-main .container-one p, .support-us-content .site-main .container-one .info-dropdown {
       margin: 0 auto;
@@ -4999,7 +4998,7 @@ object {
       .volunteer-content .site-main .container-one ul p, .partner-facility-content .site-main .container-one ul p, .support-us-content .site-main .container-one ul p {
         margin: 0; }
   .volunteer-content .site-main .container-two, .partner-facility-content .site-main .container-two, .support-us-content .site-main .container-two {
-    padding: 5% 0;
+    padding: 5% 15px;
     width: 100vw;
     background-color: #94bfd1; }
     .volunteer-content .site-main .container-two h2, .partner-facility-content .site-main .container-two h2, .support-us-content .site-main .container-two h2 {
@@ -5011,7 +5010,7 @@ object {
     .volunteer-content .site-main .container-two .facility-h2, .partner-facility-content .site-main .container-two .facility-h2, .support-us-content .site-main .container-two .facility-h2 {
       color: #fff; }
   .volunteer-content .site-main .container-three, .partner-facility-content .site-main .container-three, .support-us-content .site-main .container-three {
-    padding: 5% 0;
+    padding: 5% 15px;
     width: 100vw;
     background-color: #f3f0e9; }
     .volunteer-content .site-main .container-three h2, .volunteer-content .site-main .container-three p, .volunteer-content .site-main .container-three .info-dropdown, .partner-facility-content .site-main .container-three h2, .partner-facility-content .site-main .container-three p, .partner-facility-content .site-main .container-three .info-dropdown, .support-us-content .site-main .container-three h2, .support-us-content .site-main .container-three p, .support-us-content .site-main .container-three .info-dropdown {
@@ -5019,7 +5018,7 @@ object {
       width: 100%;
       max-width: 1020px; }
   .volunteer-content .site-main .container-four, .partner-facility-content .site-main .container-four, .support-us-content .site-main .container-four {
-    padding: 5% 0;
+    padding: 5% 15px;
     width: 100vw;
     background-color: #cce8ea; }
     .volunteer-content .site-main .container-four h2, .volunteer-content .site-main .container-four p, .volunteer-content .site-main .container-four .info-dropdown, .partner-facility-content .site-main .container-four h2, .partner-facility-content .site-main .container-four p, .partner-facility-content .site-main .container-four .info-dropdown, .support-us-content .site-main .container-four h2, .support-us-content .site-main .container-four p, .support-us-content .site-main .container-four .info-dropdown {
@@ -5027,7 +5026,7 @@ object {
       width: 100%;
       max-width: 1020px; }
   .volunteer-content .site-main .container-tshirt, .partner-facility-content .site-main .container-tshirt, .support-us-content .site-main .container-tshirt {
-    padding: 5% 0;
+    padding: 5% 15px;
     background: url("../../images/tshirt_mobile.png") no-repeat center bottom;
     background-size: cover, cover;
     width: 100vw;
@@ -5592,8 +5591,8 @@ object {
         font-size: 2.5rem; } }
   @media (min-width: 720px) {
     .training-for-facilities-content .testimonial-container {
-      padding: 50px 0;
-      height: 30vh; } }
+      padding: 50px 15px;
+      height: 250px; } }
 
 .training-for-facilities-content .button-black-text {
   color: black; }
@@ -5630,7 +5629,7 @@ object {
   @media (min-width: 720px) {
     .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
       max-width: 1024px;
-      margin: 10px auto; } }
+      margin: 10px 15px; } }
 
 .training-for-facilities-content .info-dropdown {
   background-color: #fff;
@@ -5682,14 +5681,14 @@ object {
 
 .training-for-facilities-content .book-training-button {
   background-color: #4a4a4a;
-  margin-top: 18px; }
+  margin-top: 18px;
+  margin-bottom: 18px; }
   @media (min-width: 720px) {
     .training-for-facilities-content .book-training-button {
       margin-top: 50px; } }
 
 .training-for-facilities-content .carousel-cell.is-selected {
-  padding: 0 3.2rem;
-  font-size: 2vh; }
+  padding: 0 3.2rem; }
   @media (min-width: 720px) {
     .training-for-facilities-content .carousel-cell.is-selected {
       padding-left: 6rem;
@@ -5798,7 +5797,7 @@ object {
   @media (min-width: 720px) {
     .core-training-content .training-body-content {
       max-width: 1024px;
-      padding: 50px 0; } }
+      padding: 50px 15px; } }
 
 .core-training-content .testimonial-container {
   text-align: center;
@@ -6160,8 +6159,7 @@ object {
   @media (min-width: 720px) {
     .core-training-content .training-list {
       max-width: 1024px;
-      margin: 0 auto;
-      padding: 50px 0; } }
+      margin: 0 auto; } }
 
 .core-training-content .training-date-text {
   font-size: 11px;

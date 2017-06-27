@@ -30,7 +30,7 @@ get_header(); ?>
               <span>+</span>
             </div><!--info-drop-down-->
             <div class="info-field">
-              <p><?php echo esc_html(CFS()->get('tools_for_youth')); ?></p>
+              <p><?php echo CFS()->get('tools_for_youth'); ?></p>
             </div><!--info-field-->
           </section><!--training-yoga-tools-section-->
 
@@ -40,17 +40,11 @@ get_header(); ?>
               <span>+</span>
             </div><!--info-dropdown-work-->
             <div class="info-field">
-              <p><?php echo esc_html(CFS()->get('yoga_in_your_work')); ?></p>
+              <p><?php echo CFS()->get('yoga_in_your_work'); ?></p>
             </div><!--info-field-work-->
           </section><!--training-yoga-work-section-->
 
           <a href="mailto:delanie@yogaoutreach.com" class="book-training-button">Book Training</a>
-          <p class="small-para section-15px-padding">-Skills Training for Support Professionals</p>
-          <p class="under-skills-training-para section-15px-padding">Are you interested in learning about
-          the practical applications of yoga in your work with clients?
-          Or perhaps you’d like to use yoga for self-care and stress reduction?
-          Yoga Outreach has developed a training just for you!
-          </p>
 
 				<div class="testimonial-container">
           <h2 class="testimonial-title">Testimonial</h2>
@@ -63,38 +57,6 @@ get_header(); ?>
 						<?php endforeach ?>
 					</ul>
 				</div><!--testimonial-container-->
-
-        <section class="traininglist-container">
-          <ul class="training-list">
-            <?php
-            $infoItems = CFS()->get('yoga_info_list');
-            foreach ( $infoItems as $infoItem ):
-            $infoPDF = $infoItem ['list_file_upload'];
-            $infoContent = $infoItem ['list_content'];
-            ?>
-            <li class="training-list-item">
-              <div id="training-pdf-container">
-                <?php if(!empty($infoPDF)): ?>
-                <h3 class="summary-title"><?php echo esc_html($infoItem ['list_title']);?></h3>
-                <a href="<?php echo esc_html($infoItem ['list_file_upload']);?>">PDF</a>
-              </div><!--training-pdf-container-->
-                <?php endif; ?>
-                      <?php if(!empty($infoContent)): ?>
-              <div class="info-dropdown info-list-title noborder-info-title">
-                <h3 class="yoga-info-title"><?php echo esc_html($infoItem ['list_title']); ?></h3>
-                <span>+</span>
-              </div><!--info-dropdown-->
-            <div class="info-field info-list-content">
-              <p><?php echo esc_html($infoItem ['list_content']); ?></p>
-            </div>
-            <?php endif; ?>
-            </li><!--training-list-item-->
-            <?php endforeach; ?>
-        </ul>
-      </section><!--traininglist-container-->
-		<div class="bottom-button-container">
-				<a href="core-training-scholr"class="general-button">Book Scholarship</a>
-		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>

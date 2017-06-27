@@ -25,13 +25,13 @@ get_header(); ?>
 			</div>
 			<div class="max-width-1024">
 				<section class="for-training-section section-15px-padding">
-					<h3>For Yoga Instructors™</h3>
+					<h3>For Yoga Instructors</h3>
 					<div class="training-image-bar-container">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon_yoga.png" alt="training for yoga">
 						<div class="training-color-bar"></div>
 						<a href="core-training" class="training-secion-titles">Yoga outreach core training™</a>
 					</div><!--training-image-bar-container-->
-					<h3>For Training Facilities™</h3>
+					<h3>For Training Facilities</h3>
 					<div class="training-image-bar-container">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon_work.svg" alt="training for work">
 						<div class="training-color-bar grey-bar"></div>
