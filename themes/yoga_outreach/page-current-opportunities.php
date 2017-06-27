@@ -27,7 +27,7 @@ get_header(); ?>
                                         <p><span class="opps-subhead">Position:</span>  <?php echo $field['volunteer_position']; ?></p>
                                         <p><span class="opps-subhead">Description:</span>  <?php echo $field['opportunity_description']; ?></p>
                                     </div>
-                                    <button class="small-button white-button"><a href="<?php echo get_page_link(176); ?>" class="button">Apply Now</a></button>
+                                    <button class="small-button white-button"><a href="volunteer-application-form" class="button">Apply Now</a></button>
                                 </li>
                             <?php endforeach; ?>
                         <?php endif; ?>

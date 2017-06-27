@@ -21,7 +21,7 @@ get_header(); ?>
                 <div class="emailinquiry-section">
                     <section class="email-inquiries">
                         <p>For staff directory, visit:</p>
-                        <a href="<?php echo get_page_link(69); ?>"class="button primary-button">who we are</a>
+                        <a href="who-we-are"class="button primary-button">who we are</a>
                         </div>
                         <h2 class="email-header">Email Us</h2>
                         <div class="contactinfo-container">

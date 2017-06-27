@@ -5296,6 +5296,8 @@ object {
     margin-bottom: 10%;
     -ms-flex: 1;
         flex: 1; }
+    .home .program-list .core-training h4, .home .program-list .core-training p {
+      color: #4a4a4a; }
     .home .program-list .core-training .background-accent {
       position: absolute;
       width: 100%;
@@ -5311,6 +5313,8 @@ object {
     margin-bottom: 10%;
     -ms-flex: 1;
         flex: 1; }
+    .home .program-list .yoga-atwork h4, .home .program-list .yoga-atwork p {
+      color: #4a4a4a; }
     .home .program-list .yoga-atwork .background-accent {
       position: absolute;
       width: 100%;
@@ -5325,6 +5329,8 @@ object {
     position: relative;
     -ms-flex: 1;
         flex: 1; }
+    .home .program-list .yoga-foryouth h4, .home .program-list .yoga-foryouth p {
+      color: #4a4a4a; }
     .home .program-list .yoga-foryouth .background-accent {
       position: absolute;
       width: 100%;
