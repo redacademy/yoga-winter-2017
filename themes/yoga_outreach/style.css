@@ -6329,7 +6329,8 @@ http://flickity.metafizzy.co
 .flickity-viewport {
   overflow-y: hidden;
   position: relative;
-  height: 120%; }
+  height: 120%;
+  overflow: -moz-scrollbars-none; }
 
 ::-webkit-scrollbar {
   display: none; }

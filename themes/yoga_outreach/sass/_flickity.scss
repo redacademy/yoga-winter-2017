@@ -12,6 +12,7 @@ http://flickity.metafizzy.co
   overflow-y: hidden;
   position: relative;
   height: 120%;
+  overflow: -moz-scrollbars-none;
 }
 
 ::-webkit-scrollbar {

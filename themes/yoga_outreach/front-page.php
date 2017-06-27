@@ -7,14 +7,14 @@
 
 get_header(); ?>
 <section class="hero-banner custom-hero-image">
-</section> 
+</section>
 <section class="what-we-do">
   <h2>what we do</h2>
     <p>Our mission is to expand access to trauma-informed yoga programs to heal and connect communities</p>
     <a href="<?php echo get_page_link(18); ?>" class="general-button">about us</a>
-</section>  
+</section>
 <section class="trauma-approach">
-  <h2>What is the trauma informed Approach?</h2>
+  <h2>What is a trauma informed Approach?</h2>
   <p>Creating a safe and healing environment with a no-touch, no-assist approach that inspires and empowers participants to reconnect with their body.</p>
 </section>
 <section class="training-programs">
@@ -56,7 +56,7 @@ get_header(); ?>
      <div class="involved-wrap">
         <img class="involvedimage-one" src="<?php echo get_template_directory_uri(); ?>/images/Volunteer_desktop.png"/>
         <img class="involvedimage-two" src="<?php echo get_template_directory_uri(); ?>/images/Partner_desktop.png"/>
-        <img class="involvedimage-one" src="<?php echo get_template_directory_uri(); ?>/images/SupportUs_desktop.png"/>   
+        <img class="involvedimage-one" src="<?php echo get_template_directory_uri(); ?>/images/SupportUs_desktop.png"/>
       </div>
     <div class="accent-square"></div>
 </section>
