@@ -29,18 +29,18 @@ get_header(); ?>
 					<div class="training-image-bar-container">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon_yoga.png" alt="training for yoga">
 						<div class="training-color-bar"></div>
-						<h3>Yoga outreach core training™</h3>
+						<a href="core-training" class="training-secion-titles">Yoga outreach core training™</a>
 					</div><!--training-image-bar-container-->
 					<h3>For Training Facilities™</h3>
 					<div class="training-image-bar-container">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon_work.svg" alt="training for work">
 						<div class="training-color-bar grey-bar"></div>
-						<h3>Using yoga in your work™</h3>
+						<a href="training-for-facilities" class="training-secion-titles">Using yoga in your work™</a>
 					</div><!--training-image-bar-container-2-->
 					<div class="training-image-bar-container">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon_work.svg" alt="training for youth">
 						<div class="training-color-bar grey-bar"></div>
-						<h3>Yoga tools for youth™</h3>
+						<a href="training-for-facilities" class="training-secion-titles">Yoga tools for youth™</a>
 					</div><!--training-image-bar-container-3-->
 				<section><!--for-training-section-->
 			</div>

@@ -2838,14 +2838,16 @@ a:hover, a:active {
   .training-content .training-image-bar-container {
     position: relative;
     margin-top: 1.5rem; }
-    .training-content .training-image-bar-container h3 {
+    .training-content .training-image-bar-container .training-secion-titles {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #4a4a4a;
       position: absolute;
       top: 0.5rem;
       left: 6rem;
-      text-transform: uppercase;
       width: 159px; }
       @media (min-width: 720px) {
-        .training-content .training-image-bar-container h3 {
+        .training-content .training-image-bar-container .training-secion-titles {
           font-size: 26px;
           width: auto;
           top: 17px; } }
