@@ -66,7 +66,6 @@
         padding: 0;
     }
 
-
     .general-button{
         @include general-button;
     }
@@ -74,11 +73,13 @@
     .training-image-bar-container{
         position:relative;
         margin-top:1.5rem;
-            h3{
+            .training-secion-titles{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $darktext_color;
                 position: absolute;
                 top: 0.5rem;
                 left: 6rem;
-                text-transform: uppercase;
                 width: 159px;
                     @include desktop{
                         font-size:26px;

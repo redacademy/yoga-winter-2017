@@ -13,13 +13,13 @@ get_header(); ?>
             <section class="page-main-header">
                 <div>
                     <h1 class="header-title"><?php the_title(); ?></h1>
-                    <p class="info-paragraph info-p-center">We partners with yoga instructors, community organizations, social service agencies, and prisons to provide trauma-informed and strengths-based yoga programming for our community.</p>
+                    <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'about_volunteer_opps' ); ?></div>
                 </div>
                 <div class="button-container">
-                    <a href="#instructor" class="general-button grey-button">Become a Teacher</a>
-                    <a href="#volunteer" class="general-button grey-button">Community Engagment Volunteer</a>
-                    <a href="#council" class="general-button grey-button">Advisory Council Member</a>
-                    <a href="#opportunities" class="general-button grey-button">Reaching Out with Yoga</a>
+                    <a href="#instructor" class="general-button grey-button">Teacher</a>
+                    <a href="#volunteer" class="general-button grey-button">Community Engagment</a>
+                    <a href="#council" class="general-button grey-button">Advisory Council</a>
+                    <a href="#opportunities" class="general-button grey-button">Projects</a>
                 </div>
             </section>
             <section id="instructor" class="container-two">

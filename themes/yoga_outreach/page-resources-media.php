@@ -54,12 +54,14 @@ get_header(); ?>
 						$medias = CFS()->get('in_the_media');
 						foreach ( $medias as $media ):
 						?>
+						<a href="<?php echo esc_html($media['media_link']); ?>">
 							<li class="media-item">
 								<h4 class="media-date"><?php echo esc_html($media ['date']);?>
 									<div class="media-color media-blue"></div>
 								</h4>
 								<p><?php echo esc_html($media['content']);?></p>
 							</li>
+						</a>
 						<?php endforeach ?>
 						</ul><!--media-article-list-->
 						<p class="read-more">Read More</p>
@@ -76,12 +78,14 @@ get_header(); ?>
 						foreach ( $articles as $article ):
 						?>
 						<p class="research-paper-para">Research papers & interesting articles about trauma-sensitive yoga.</p>
+						<a href="<?php echo esc_html($article ['read_article_link']) ?>">
 							<li class="press-item">
 								<h4 class="media-date"><?php echo $article ['date'];?>
 									<div class="media-color media-purple"></div>
 								</h4>
 								<p><?php echo esc_html($article ['content']);?></p>
 							</li>
+						</a>
 						<?php endforeach ?>
 						</ul><!--media-article-list-->
 					</div><!--info-field-->

@@ -85,8 +85,8 @@
             }
         }
         @include desktop{
-            padding: 50px 0;
-            height: 30vh;
+            padding: 50px 15px;
+            height: 250px;
         }
     }
 
@@ -103,7 +103,7 @@
             margin-top:39px;
                 @include desktop{
           max-width: 1024px;
-          margin: 10px auto;
+          margin: 10px 15px;
                 }
     }
 
@@ -165,6 +165,7 @@
     .book-training-button{
         background-color:$darktext_color;
         margin-top:18px;
+        margin-bottom: 18px;
         @include desktop{
             margin-top: 50px;
         }
@@ -172,7 +173,6 @@
 
     .carousel-cell.is-selected{
         padding: 0 3.2rem;
-        font-size:2vh;
             @include desktop{
                 padding-left: 6rem;
                 padding-right: 6rem;
