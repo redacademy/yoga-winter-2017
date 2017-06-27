@@ -54,9 +54,9 @@ get_header(); ?>
 <section class="get-involved">
     <h2>Get Involed!</h2>
      <div class="involved-wrap">
-        <img class="involvedimage-one" src="<?php echo get_template_directory_uri(); ?>/images/Volunteer_desktop.png"/>
-        <img class="involvedimage-two" src="<?php echo get_template_directory_uri(); ?>/images/Partner_desktop.png"/>
-        <img class="involvedimage-one" src="<?php echo get_template_directory_uri(); ?>/images/SupportUs_desktop.png"/>
+        <a href="volunteer" class="involvedimage-one"><img src="<?php echo get_template_directory_uri(); ?>/images/Volunteer_desktop.png"/></a>
+        <a href="partner-facility" class="involvedimage-two"><img src="<?php echo get_template_directory_uri(); ?>/images/Partner_desktop.png"/></a>
+        <a href="support-us" class="involvedimage-one"><img src="<?php echo get_template_directory_uri(); ?>/images/SupportUs_desktop.png"/></a>
       </div>
     <div class="accent-square"></div>
 </section>
@@ -85,7 +85,6 @@ get_header(); ?>
   </ul>
 </div><!--testimonial-container-->
 <section class="thankyou">
-  <h1>thank you</h1>
-  <p>to our sponsors and volunteers - you make our programs possible.</p>
+  <h2>Thank you ​to our sponsors and volunteers - you make our programs possible.​</h2>
 </section>
 <?php get_footer(); ?>

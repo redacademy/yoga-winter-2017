@@ -5491,24 +5491,14 @@ object {
     height: 160px;
     background-color: #95afc9;
     opacity: 0.8; }
-    .home .thankyou h1 {
+    .home .thankyou h2 {
       color: #4a4a4a;
       padding: 30px 0 0 0;
       font-size: 23px; }
       @media (min-width: 720px) {
-        .home .thankyou h1 {
-          padding: 25px 0 0 0;
+        .home .thankyou h2 {
+          padding: 60px 0 0 0;
           font-size: 25px; } }
-    .home .thankyou p {
-      font-size: 1.5rem;
-      padding: 0 20px 20px 30px;
-      font-size: 20px; }
-      @media (min-width: 720px) {
-        .home .thankyou p {
-          font-size: 22px;
-          padding: 0 20px 20px 20px;
-          max-width: 700px;
-          margin: auto; } }
 
 @media (min-width: 720px) {
   .training-for-facilities-content .custom-hero-image {
