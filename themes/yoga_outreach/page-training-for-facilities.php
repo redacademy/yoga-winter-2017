@@ -44,7 +44,7 @@ get_header(); ?>
             </div><!--info-field-work-->
           </section><!--training-yoga-work-section-->
 
-          <a href="mailto:delanie@yogaoutreach.com" class="book-training-button">Book Training</a>
+          <a href="contact-form" class="book-training-button">Contact Us</a>
 
 				<div class="testimonial-container">
           <h2 class="testimonial-title">Testimonial</h2>

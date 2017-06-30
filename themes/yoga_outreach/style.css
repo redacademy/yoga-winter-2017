@@ -894,7 +894,8 @@ body {
   background-color: #94bfd1; }
 
 .page-nobutton-header {
-  margin: auto; }
+  margin: auto;
+  max-width: 1024px; }
 
 .testimonial-list.main-carousel {
   list-style: none;
@@ -3218,7 +3219,7 @@ a:hover, a:active {
   @media (min-width: 720px) {
     .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
       max-width: 1024px;
-      margin: 10px 15px; } }
+      margin: 10px auto; } }
 
 .training-for-facilities-content .info-dropdown {
   background-color: #fff;
@@ -3240,7 +3241,7 @@ a:hover, a:active {
   height: 50px;
   margin: 0 auto;
   font-size: 20px;
-  color: black;
+  color: #4a4a4a;
   font-weight: 600; }
   @media (min-width: 720px) {
     .training-for-facilities-content .training-h3-heading {
@@ -5635,7 +5636,7 @@ object {
   @media (min-width: 720px) {
     .training-for-facilities-content .training-yoga-tools-section, .training-for-facilities-content .training-yoga-work-section {
       max-width: 1024px;
-      margin: 10px 15px; } }
+      margin: 10px auto; } }
 
 .training-for-facilities-content .info-dropdown {
   background-color: #fff;
@@ -5657,7 +5658,7 @@ object {
   height: 50px;
   margin: 0 auto;
   font-size: 20px;
-  color: black;
+  color: #4a4a4a;
   font-weight: 600; }
   @media (min-width: 720px) {
     .training-for-facilities-content .training-h3-heading {
