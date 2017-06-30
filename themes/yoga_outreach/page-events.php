@@ -148,7 +148,7 @@ get_header(); ?>
                                 <section>
                                     <?php if(!empty($fields)): ?>
                                         <?php foreach( $fields as $field ): ?>
-                                            <h3 class="event-dropdown"><?php echo $field[ 'info_title' ]; ?><span>+</span></h3>
+                                            <h3 class="event-dropdown"><?php echo $field[ 'info_title' ]; ?></h3>
                                             <div class="event-info">
                                                 <?php if(!empty($field['info_rows'])): ?>
                                                     <?php foreach( $field['info_rows'] as $row): ?>
@@ -164,7 +164,7 @@ get_header(); ?>
                                 <section>
                                     <?php if(!empty($schedules)): ?>
                                         <?php foreach( $schedules as $schedule ): ?>
-                                            <h3 class="event-dropdown"><?php echo $schedule[ 'retreat_schedule_title' ]; ?><span>+</span></h3>
+                                            <h3 class="event-dropdown"><?php echo $schedule[ 'retreat_schedule_title' ]; ?></h3>
                                             <?php if(!empty($schedule['schedule_row'])): ?>
                                                 <?php foreach( $schedule['schedule_row'] as $row): ?>
                                                     <?php echo esc_html(CFS()->get( 'schedule_upload' )); ?>

@@ -42,7 +42,7 @@
     });
 
     // Drop down category
-    $('.info-dropdown, .event-dropdown').click(function () {
+    $('.info-dropdown').click(function () {
       if ($(this).next('.info-field, .event-info').is(':hidden')) {
         $(this).next('.info-field, .event-info').slideDown('normal');
         $(this).children('span').text('-');
