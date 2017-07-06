@@ -11,7 +11,7 @@ get_header(); ?>
 <section class="what-we-do">
   <h2>what we do</h2>
     <p>Our mission is to expand access to trauma-informed yoga programs to heal and connect communities</p>
-    <a href="<?php echo get_page_link(18); ?>" class="general-button">about us</a>
+    <a href="about-us" class="general-button">about us</a>
 </section>
 <section class="trauma-approach">
   <h2>What is a trauma informed Approach?</h2>
@@ -22,30 +22,36 @@ get_header(); ?>
   <p>Find out more about our training programs for Yoga teachers, and for:</p>
 </section>
 <section class="program-list">
-  <div class="yoga-atwork">
-      <div class="programlist-text">
-        <h1>using yoga in your work™</h1>
-        <h4>For facility staff</h4>
-        <p>Skills Training for Support Professionals</p>
-      </div>
-      <div class="background-accent"></div>
-  </div>
-   <div class="core-training">
-      <div class="programlist-text">
-        <h1>yoga outreach core training™</h1>
-        <h4>For yoga instructors</h4>
-        <p>Get the skills to build trauma-informed classes.</p>
-      </div>
-      <div class="background-accent"></div>
-  </div>
-  <div class="yoga-foryouth">
-      <div class="programlist-text">
-        <h1>yoga tools for youth™</h1>
-        <h4>For facility staff</h4>
-        <p>Skills for self-care and stress reduction</p>
-      </div>
-      <div class="background-accent"></div>
-  </div>
+  <a href="training-for-facilities">
+    <div class="yoga-atwork">
+        <div class="programlist-text">
+          <h1>using yoga in your work™</h1>
+          <h4>For facility staff</h4>
+          <p>Skills Training for Support Professionals</p>
+        </div>
+        <div class="background-accent"></div>
+    </div>
+  </a>
+  <a href="core-training">
+    <div class="core-training">
+        <div class="programlist-text">
+          <h1>yoga outreach core training™</h1>
+          <h4>For yoga instructors</h4>
+          <p>Get the skills to build trauma-informed classes.</p>
+        </div>
+        <div class="background-accent"></div>
+    </div>
+  </a>
+  <a href="training-for-facilities">
+    <div class="yoga-foryouth">
+        <div class="programlist-text">
+          <h1>yoga tools for youth™</h1>
+          <h4>For facility staff</h4>
+          <p>Skills for self-care and stress reduction</p>
+        </div>
+        <div class="background-accent"></div>
+    </div>
+  </a>
 </section>
 <section class="video-section">
   <?php if(!empty(CFS()->get( 'frontpage_video' ))): ?><span class="video-link"><?php echo CFS()->get( 'frontpage_video' )?></span><?php endif; ?>

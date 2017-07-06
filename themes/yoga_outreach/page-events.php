@@ -29,7 +29,7 @@ get_header(); ?>
                         <div class="body-info">
                             <div class="title-contain">
                                 <h3><?php echo $event['event_title']; ?></h3>
-                                <a href="<?php echo get_page_link(275); ?>"class="primary-button">register</a>
+                                <a href="event-registration"class="primary-button">register</a>
                                 <div class="accent-name-shape"></div>
                             </div> <!--title-contain -->
 
@@ -101,7 +101,7 @@ get_header(); ?>
             </section>
 
             <div class="booking-button">
-                <a href="<?php echo get_page_link(275); ?>"class="primary-button">register</a>
+                <a href="event-registration"class="primary-button">register</a>
             </div>
 
             <?php $fields= CFS()->get( 'about_info' ); ?>  <!--variable to hold info category from loop-->
@@ -114,7 +114,7 @@ get_header(); ?>
                         <div class="body-info">
                             <div class="title-contain">
                                 <h3><?php echo $retreat['retreat_title']; ?></h3>
-                                <a href="<?php echo get_page_link(273); ?>"class="primary-button">register</a>
+                                <a href="retreat-registration"class="primary-button">register</a>
                                 <div class="accent-name-shape"></div>
                             </div>
 
@@ -148,7 +148,7 @@ get_header(); ?>
                                 <section>
                                     <?php if(!empty($fields)): ?>
                                         <?php foreach( $fields as $field ): ?>
-                                            <h3 class="event-dropdown"><?php echo $field[ 'info_title' ]; ?><span>+</span></h3>
+                                            <h3 class="event-dropdown"><?php echo $field[ 'info_title' ]; ?></h3>
                                             <div class="event-info">
                                                 <?php if(!empty($field['info_rows'])): ?>
                                                     <?php foreach( $field['info_rows'] as $row): ?>
@@ -164,7 +164,7 @@ get_header(); ?>
                                 <section>
                                     <?php if(!empty($schedules)): ?>
                                         <?php foreach( $schedules as $schedule ): ?>
-                                            <h3 class="event-dropdown"><?php echo $schedule[ 'retreat_schedule_title' ]; ?><span>+</span></h3>
+                                            <h3 class="event-dropdown"><?php echo $schedule[ 'retreat_schedule_title' ]; ?></h3>
                                             <?php if(!empty($schedule['schedule_row'])): ?>
                                                 <?php foreach( $schedule['schedule_row'] as $row): ?>
                                                     <?php echo esc_html(CFS()->get( 'schedule_upload' )); ?>
@@ -189,7 +189,7 @@ get_header(); ?>
                         </div>
 
                         <div class="booking-button">
-                            <a href="<?php echo get_page_link(273); ?>"class="primary-button">register</a>
+                            <a href="retreat-registration"class="primary-button">register</a>
                         </div>
                     <?php endforeach; ?>
                 <?php endif; ?>

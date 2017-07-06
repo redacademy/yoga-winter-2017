@@ -28,7 +28,7 @@ get_header(); ?>
                 <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'what_we_provide' ); ?></div>
                 <div class="info-field custom-info-container">
                     <p>We process new applications on a monthly basis, and will be in touch with you about your application as soon as we can.</p>
-                    <a href="<?php echo get_page_link(174); ?>" class="dark-button main-button apply-button">Apply Now</a>
+                    <a href="facility-partner-application" class="dark-button main-button apply-button">Apply Now</a>
                 </div>
             </section>
             <section id="perspective" class="container-two">
@@ -55,7 +55,7 @@ get_header(); ?>
                         <?php endif; ?>
                     </ul>
                 </div>
-                <a href="<?php echo get_page_link(174); ?>" class="dark-button main-button apply-button">Apply Now</a>
+                <a href="/" class="dark-button main-button apply-button">Apply Now</a>
             </section>
             <section id="partners" class="container-three partner-facility">
                 <h2 class="h2-holder">Partners</h2>

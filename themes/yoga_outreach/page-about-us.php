@@ -22,8 +22,8 @@ get_header(); ?>
                                     <h1><?php the_title(); ?></h1>
                                     <?php the_content(); ?> <!-- Page Content -->
                                     <div class="button-container">
-                                        <a class="general-button grey-button" href="<?php echo get_page_link(69); ?>">who we are</a>
-                                        <a class="general-button grey-button" href="<?php echo get_page_link(67); ?>">contact us</a>
+                                        <a class="general-button grey-button" href="who-we-are">who we are</a>
+                                        <a class="general-button grey-button" href="contact-us">contact us</a>
                                     </div><!--general-button-containe-->
                             <?php endwhile; //resetting the page loop
                                 wp_reset_query(); //resetting the page query
@@ -55,7 +55,7 @@ get_header(); ?>
                             </div><!--info-field info-container-->
 
                             <p class="description-desktop"><?php echo esc_html(CFS()->get( 'dropdown_description' )); ?></p>
-                            <a class="primary-button desktop-button" href="<?php echo get_page_link(174); ?>">become a facility partner</a>
+                            <a class="primary-button desktop-button" href="training-for-facilities">become a facility partner</a>
                         </section>
 
                     <?php endforeach; ?>
@@ -76,7 +76,7 @@ get_header(); ?>
                             <?php foreach( $field['info_rows'] as $row): ?>
                                 <?php echo esc_html(CFS()->get( 'info_field' )); ?>
                                 <p><?php echo $row['info_field'] ?></p>
-                                <a class="primary-button desktop-button" href="<?php echo get_page_link(234); ?>">our training programs</a>
+                                <a class="primary-button desktop-button" href="training">our training programs</a>
 
                                 <section class="desktop-article">
                                     <?php if(!empty($articles)): ?>

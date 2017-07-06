@@ -29,7 +29,7 @@ get_header(); ?>
 					</div><!--core-h3-container-->
 					<div class="register-button-para-container">
 						<button  class="register-online-button">
-							<a href="<?php echo get_page_link(237); ?>">Apply for Scholarship</a>
+							<a href="core-training-scholarship">Apply for Scholarship</a>
 						</button>
 						<button class="book-training-button register-online-button register2">
 							<a href="core-training-application-form">Register Online</a>
