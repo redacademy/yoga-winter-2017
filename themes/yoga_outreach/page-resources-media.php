@@ -42,6 +42,7 @@ get_header(); ?>
             </div><!--main-h3-container-->
 			<section class="media-article-section">
 				<div class="section-15px-padding">
+				<?php if(!empty(CFS()->get( 'in_the_media' ))): ?>
 					<div class="info-dropdown media-heading-flex">
 						<h3>In the Media</h3>
 						<span>+</span>
@@ -64,8 +65,9 @@ get_header(); ?>
 						</a>
 						<?php endforeach ?>
 						</ul><!--media-article-list-->
-						<p class="read-more">Read More</p>
 					</div><!--info-field-->
+					<?php endif; ?>
+
 					<div class="info-dropdown">
 						<h3>In the Press</h3>
 						<span>+</span>
