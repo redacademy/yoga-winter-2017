@@ -41,7 +41,7 @@ get_header(); ?>
                     foreach ( $fields as $field ):?>
                         <div class="volunteer-steps">
                             <li>
-                            <div class="volunteer-step"><?php echo $field['challenge_step']; ?></div>
+                            <p class="volunteer-step"><?php echo $field['challenge_step']; ?></p>
                             </li>
                         </div>
                     <?php endforeach; ?>
