@@ -16,15 +16,23 @@ get_header(); ?>
               <div class="info-paragraph info-p-center"><?php echo CFS()->get( 'about_challenge' ); ?></div>
           </div>
           <div class="button-container">
-              <a href="#instructor" class="general-button grey-button">Teacher</a>
-              <a href="#volunteer" class="general-button grey-button">Community Engagment</a>
-              <a href="#council" class="general-button grey-button">Advisory Council</a>
-              <a href="#opportunities" class="general-button grey-button">Projects</a>
+          <?php if(!empty(CFS()->get( 'button_one' ))): ?>
+            <a href="#steps" class="general-button grey-button"><?php  echo CFS()->get( 'button_one' ) ?></a>
+          <?php endif; ?>
+          <?php if(!empty(CFS()->get( 'button_two' ))): ?>
+            <a href="#general" class="general-button grey-button"><?php  echo CFS()->get( 'button_two' ) ?></a>
+          <?php endif; ?>
+          <?php if(!empty(CFS()->get( 'button_three' ))): ?>
+            <a href="#register" class="general-button grey-button"><?php  echo CFS()->get( 'button_three' ) ?></a>
+          <?php endif; ?>
+          <?php if(!empty(CFS()->get( 'button_four' ))): ?>
+            <a href="#sponsor" class="general-button grey-button"><?php  echo CFS()->get( 'button_four' ) ?></a>
+          <?php endif; ?>
           </div>
       </section>
 
       <?php if(!empty(CFS()->get( 'challenge_steps' ))): ?>
-        <section id="instructor" class="container-two">
+        <section id="steps" class="container-two">
             <h2><?php echo CFS()->get( 'challenge_steps_title' ); ?></h2>
             <ol>
             <?php
@@ -39,17 +47,16 @@ get_header(); ?>
                     <?php endforeach; ?>
                 <?php endif; ?>
             </ol>
-            <a href="volunteer-application-form" class="dark-button main-button apply-button">Register Now</a>
+            <a href="21-day-challenge-registration" class="dark-button main-button apply-button">Register Now</a>
         </section>
       <?php endif; ?>
 
-      <!-- <?php if(!empty(CFS()->get( 'our_sponsors' ))): ?>
-        <section id="volunteer" class="container-one">
-            <h2>Community Engagement Volunteer</h2>
-            <div class="info-paragraph"><?php echo CFS()->get( 'community_engagement' ); ?></div>
-            <a href="non-teaching-volunteer-application-form" class="grey-button small-button">Apply Now</a>
+      <?php if(!empty(CFS()->get( 'general_info' ))): ?>
+        <section id="general" class="container-one">
+            <h2><?php echo CFS()->get( 'general_info_title' ); ?></h2>
+            <div class="info-paragraph"><?php echo CFS()->get( 'general_info' ); ?></div>
         </section>
-      <?php endif; ?> -->
+      <?php endif; ?>
 
       <!-- <?php if(!empty(CFS()->get( 'our_sponsors' ))): ?>
         <section id="council" class="container-three">
@@ -60,15 +67,15 @@ get_header(); ?>
       <?php endif; ?> -->
 
       <?php if(!empty(CFS()->get( 'challenge_registration' ))): ?>
-        <section id="opportunities" class="container-four">
+        <section id="register" class="container-four">
             <h2>Register for the Challenge</h2>
             <div class="info-paragraph"><?php echo CFS()->get( 'challenge_registration' ); ?></div>
-            <a href="current-opportunities" class="white-button main-button">Register</a>
+            <a href="21-day-challenge-registration" class="white-button main-button">Register</a>
         </section>
       <?php endif; ?>
 
       <?php if(!empty(CFS()->get( 'our_sponsors' ))): ?>
-        <section id="current-sponsor" class="container-one partners-container">
+        <section id="sponsor" class="container-one partners-container">
           <h2 class="h2-holder">Our Sponsors</h2>
           <div class="info-field custom-info-container">
             <ul>
