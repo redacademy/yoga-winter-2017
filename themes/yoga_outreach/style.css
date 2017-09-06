@@ -4370,6 +4370,18 @@ a:hover, a:active {
 .bypostauthor {
   display: block; }
 
+.single-page-main {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 15px; }
+  .single-page-main .entry-content h1 {
+    font-size: 24px;
+    text-align: center; }
+  .single-page-main td, .single-page-main tr {
+    border: 1px solid black;
+    text-align: center;
+    padding: 2px; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

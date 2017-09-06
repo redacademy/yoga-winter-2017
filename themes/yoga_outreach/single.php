@@ -9,7 +9,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		<header class="general-small-page-header"></header><!--general-template-section-->
+		<div class="single-page-main">
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
@@ -24,7 +25,7 @@ get_header(); ?>
 			?>
 
 		<?php endwhile; // End of the loop. ?>
-
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
