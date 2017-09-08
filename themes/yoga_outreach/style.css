@@ -4141,7 +4141,8 @@ a:hover, a:active {
   color: #6B747D;
   width: 290px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  width: auto; }
   @media (min-width: 720px) {
     .resources-media-content .main-h3-container h3 {
       font-size: 40px; } }

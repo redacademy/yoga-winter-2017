@@ -8,6 +8,7 @@
     .main-h3-container{
         h3{
             @include main-h3;
+            width:auto;
         }
         p{
             @include main-p;
