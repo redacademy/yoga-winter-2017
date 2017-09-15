@@ -576,6 +576,7 @@ button {
   .who-we-are-content .member-contain {
     width: 100%;
     position: relative;
+    margin: 15px;
     cursor: pointer;
     display: -ms-flexbox;
     display: flex;
@@ -585,8 +586,10 @@ button {
         align-items: center; }
     @media (min-width: 720px) {
       .who-we-are-content .member-contain {
-        width: 30%;
-        margin: 40px 17px; } }
+        width: 45%; } }
+    @media (min-width: 1000px) {
+      .who-we-are-content .member-contain {
+        width: 30%; } }
     .who-we-are-content .member-contain .staffphoto {
       width: 160px;
       height: 160px;
@@ -624,22 +627,30 @@ button {
     left: 5vw;
     display: none;
     margin: 0 auto;
+    padding: 5px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px; }
     @media (min-width: 720px) {
       .who-we-are-content .staff-popup {
         width: 40vw;
-        left: 30%; } }
+        left: 30%;
+        min-width: 480px; } }
   .who-we-are-content .popup-description {
-    margin: 0 15px; }
+    margin: 0 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    height: 100%; }
     .who-we-are-content .popup-description .member-contain {
-      margin: 50;
-      width: auto; }
+      width: auto;
+      margin: 15px 0; }
       .who-we-are-content .popup-description .member-contain img {
         width: 40%;
         height: 40%;
         max-width: none;
-        margin: 30px auto;
         object-fit: fill; }
       .who-we-are-content .popup-description .member-contain a {
         font-size: 1.5rem;
@@ -652,17 +663,16 @@ button {
     margin: 0 auto;
     z-index: 20;
     overflow-y: scroll;
-    height: 40vh;
     font-size: 1rem;
     color: #000;
     margin-top: 10px;
+    -ms-flex: 1;
+        flex: 1;
     text-align: left;
     font-size: 1rem; }
     @media (min-width: 720px) {
       .who-we-are-content .staff-description {
-        margin-top: 10px;
-        width: 80%;
-        height: 30vh; } }
+        padding-top: 10px; } }
   .who-we-are-content .staff-info {
     margin: 0 auto;
     z-index: 20;
@@ -698,10 +708,7 @@ button {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: 90%; }
-    @media (min-width: 720px) {
-      .who-we-are-content .accent-bar-container {
-        width: 100%; } }
+    width: 100%; }
 
 * {
   font-family: 'raleway',sans-serif; }

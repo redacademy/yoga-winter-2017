@@ -5,6 +5,12 @@
 }
 }
 
+@mixin who-we-are {
+	@media (min-width: $who_break) {
+		@content;
+	}
+}
+
 @mixin larger-desktop {
 @media (min-width: $site_container) {
 	@content;
